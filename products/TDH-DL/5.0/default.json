@@ -1,0 +1,12 @@
+{
+  "name": "TDH-DL",
+  "description": "xxxxxx",
+  "edition": "5.0",
+  "components": [
+    "SOPHON-3.3",
+    "YARN-5.0",
+    "TERMINAL-5.0",
+    "TXSQL-5.0",
+    "HDFS-5.0"
+  ]
+}

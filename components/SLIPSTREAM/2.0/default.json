@@ -1,0 +1,100 @@
+{
+  "name": "SLIPSTREAM-2.0",
+  "component_type": "SLIPSTREAM",
+  "description": "xxxxxxx",
+  "edition": "2.0",
+  "category": "TDH",
+  "dependencies": "HDFS, YARN",
+  "configs": [
+    {
+      "name": "hive.cores",
+      "level": "low",
+      "description": "单executor的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "hive.memory",
+      "level": "low",
+      "description": "单executor的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "shuffle_disks",
+      "level": "low",
+      "description": "shuffle数据盘数量",
+      "value": "4"
+    },
+    {
+      "name": "ssd_disks",
+      "level": "low",
+      "description": "单节点ssd盘数量",
+      "value": "0"
+    },
+    {
+      "name": "inceptor_server_memory",
+      "level": "low",
+      "description": "Inceptor server内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "hive.cores",
+      "level": "medium",
+      "description": "单executor的CPU core数量",
+      "value": "11"
+    },
+    {
+      "name": "hive.memory",
+      "level": "medium",
+      "description": "单executor的内存大小",
+      "value": "24576MB"
+    },
+    {
+      "name": "shuffle_disks",
+      "level": "medium",
+      "description": "shuffle数据盘数量",
+      "value": "8"
+    },
+    {
+      "name": "ssd_disks",
+      "level": "medium",
+      "description": "单节点ssd盘数量",
+      "value": "1"
+    },
+    {
+      "name": "inceptor_server_memory",
+      "level": "medium",
+      "description": "Inceptor server内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "hive.cores",
+      "level": "high",
+      "description": "单executor的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "hive.memory",
+      "level": "high",
+      "description": "单executor的内存大小",
+      "value": "36864MB"
+    },
+    {
+      "name": "shuffle_disks",
+      "level": "high",
+      "description": "shuffle数据盘数量",
+      "value": "12"
+    },
+    {
+      "name": "ssd_disks",
+      "level": "high",
+      "description": "单节点ssd盘数量",
+      "value": "3"
+    },
+    {
+      "name": "inceptor_server_memory",
+      "level": "high",
+      "description": "Inceptor server内存大小",
+      "value": "24576MB"
+    }
+  ]
+}

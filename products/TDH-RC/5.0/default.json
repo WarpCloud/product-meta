@@ -1,0 +1,15 @@
+{
+  "name": "TDH-RC",
+  "description": "xxxxxx",
+  "edition": "5.0",
+  "components": [
+    "INCEPTOR-5.0",
+    "SLIPSTREAM-5.0",
+    "GUARDIAN-5.0",
+    "HDFS-5.0",
+    "KAFKA-5.0",
+    "HYPERBASE-5.0",
+    "PILOT-5.0",
+    "TERMINAL-5.0"
+  ]
+}

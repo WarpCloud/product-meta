@@ -1,0 +1,9 @@
+{
+  "name": "TDH-RDB",
+  "description": "xxxxxx",
+  "edition": "5.0",
+  "components": [
+    "TXSQL-5.0",
+    "TERMINAL-5.0"
+  ]
+}

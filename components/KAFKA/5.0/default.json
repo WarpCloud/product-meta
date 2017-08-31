@@ -1,0 +1,10 @@
+{
+  "name": "KAFKA-5.0",
+  "component_type": "KAFKA",
+  "description": "xxxxxxx",
+  "edition": "5.0",
+  "category": "TDH",
+  "dependencies": "",
+  "configs": [
+  ]
+}

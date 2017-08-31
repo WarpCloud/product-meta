@@ -1,0 +1,9 @@
+{
+  "name": "TDH-DW-TEST",
+  "description": "xxxxxx",
+  "edition": "1.0",
+  "components": [
+    "INCEPTOR-2.0",
+    "HDFS-1.0"
+  ]
+}

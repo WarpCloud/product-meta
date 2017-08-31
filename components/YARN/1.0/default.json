@@ -1,0 +1,10 @@
+{
+  "name": "YARN-1.0",
+  "component_type": "YARN",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "TDH",
+  "dependencies": "HDFS",
+  "configs": [
+  ]
+}

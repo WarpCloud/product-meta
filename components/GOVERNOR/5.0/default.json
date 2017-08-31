@@ -1,0 +1,10 @@
+{
+  "name": "GOVERNOR-5.0",
+  "component_type": "GOVERNOR",
+  "description": "xxxxxxx",
+  "edition": "5.0",
+  "category": "STUDIO",
+  "dependencies": "HDFS, HYPERBASE, KAFKA, SEARCH",
+  "configs": [
+  ]
+}

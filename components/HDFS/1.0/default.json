@@ -1,0 +1,10 @@
+{
+  "name": "HDFS-1.0",
+  "component_type": "HDFS",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "TDH",
+  "dependencies": "",
+  "configs": [
+  ]
+}

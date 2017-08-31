@@ -1,0 +1,14 @@
+{
+  "name": "GUARDIAN-5.0",
+  "component_type": "GUARDIAN",
+  "description": "xxxxx",
+  "edition": "5.0",
+  "category": "SYSTEM",
+  "configs": [
+    {
+      "name": "GUARDIAN_CONFIG_EXAMPLE",
+      "value": "GUARDIAN_CONFIG_VALUE",
+      "description": "Example guardian configuration"
+    }
+  ]
+}

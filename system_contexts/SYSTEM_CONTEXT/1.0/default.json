@@ -1,0 +1,12 @@
+{
+  "name": "SYSTEM-CONTEXT-1.0",
+  "description": "xxxxxx",
+  "edition": "1.0",
+  "components": [
+    "SEARCH-1.0",
+    "KIBANA-1.0",
+    "LOGSTASH-1.0",
+    "TXSQL-1.0",
+    "TERMINAL-1.0"
+  ]
+}

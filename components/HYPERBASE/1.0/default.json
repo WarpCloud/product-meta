@@ -1,0 +1,46 @@
+{
+  "name": "HYPERBASE-1.0",
+  "component_type": "HYPERBASE",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "TDH",
+  "dependencies": "HDFS",
+  "configs": [
+    {
+      "name": "REGION_SERVER_HEAPSIZE",
+      "level": "low",
+      "description": "region server使用的堆内存大小",
+      "value": "16384MB"
+    },
+    {
+      "name": "CONTAINER_CPU",
+      "level": "low",
+      "description": "进程可以使用的cpu资源数量",
+      "value": "6"
+    },
+    {
+      "name": "REGION_SERVER_HEAPSIZE",
+      "level": "medium",
+      "description": "region server使用的堆内存大小",
+      "value": "24576MB"
+    },
+    {
+      "name": "CONTAINER_CPU",
+      "level": "medium",
+      "description": "进程可以使用的cpu资源数量",
+      "value": "12"
+    },
+    {
+      "name": "REGION_SERVER_HEAPSIZE",
+      "level": "high",
+      "description": "region server使用的堆内存大小",
+      "value": "32768MB"
+    },
+    {
+      "name": "CONTAINER_CPU",
+      "level": "high",
+      "description": "进程可以使用的cpu资源数量",
+      "value": "16"
+    }
+  ]
+}

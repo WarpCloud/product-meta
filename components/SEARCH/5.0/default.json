@@ -1,0 +1,100 @@
+{
+  "name": "SEARCH-5.0",
+  "component_type": "SEARCH",
+  "description": "xxxxxxx",
+  "edition": "5.0",
+  "category": "TDH",
+  "dependencies": "",
+  "configs": [
+    {
+      "name": "ES_HEAP_SIZE",
+      "level": "low",
+      "description": "配置jvm heap size",
+      "value": "16384MB"
+    },
+    {
+      "name": "SSD",
+      "level": "low",
+      "description": "ES使用的SSD数量",
+      "value": "0"
+    },
+    {
+      "name": "SATA",
+      "level": "low",
+      "description": "ES使用的SATA硬盘数量",
+      "value": "6"
+    },
+    {
+      "name": "CPU",
+      "level": "low",
+      "description": "Container可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "MEMORY",
+      "level": "low",
+      "description": "主机内存",
+      "value": "65536MB"
+    },
+    {
+      "name": "ES_HEAP_SIZE",
+      "level": "medium",
+      "description": "配置jvm heap size",
+      "value": "24576MB"
+    },
+    {
+      "name": "SSD",
+      "level": "medium",
+      "description": "ES使用的SSD数量",
+      "value": "2"
+    },
+    {
+      "name": "SATA",
+      "level": "medium",
+      "description": "ES使用的SATA硬盘数量",
+      "value": "4"
+    },
+    {
+      "name": "CPU",
+      "level": "medium",
+      "description": "Container可以使用的CPU core数量",
+      "value": "8"
+    },
+    {
+      "name": "MEMORY",
+      "level": "medium",
+      "description": "主机内存",
+      "value": "131072MB"
+    },
+    {
+      "name": "ES_HEAP_SIZE",
+      "level": "high",
+      "description": "配置jvm heap size",
+      "value": "32768"
+    },
+    {
+      "name": "SSD",
+      "level": "high",
+      "description": "ES使用的SSD数量",
+      "value": "6"
+    },
+    {
+      "name": "SATA",
+      "level": "high",
+      "description": "ES使用的SATA硬盘数量",
+      "value": "0"
+    },
+    {
+      "name": "CPU",
+      "level": "high",
+      "description": "Container可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "MEMORY",
+      "level": "high",
+      "description": "主机内存",
+      "value": "262144MB"
+    }
+  ]
+}

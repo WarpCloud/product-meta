@@ -1,0 +1,10 @@
+{
+  "name": "TRANSPORTER-1.0",
+  "component_type": "TRANSPORTER",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "STUDIO",
+  "dependencies": "HDFS, INCEPTOR",
+  "configs": [
+  ]
+}

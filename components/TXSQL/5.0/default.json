@@ -1,0 +1,10 @@
+{
+  "name": "TXSQL-5.0",
+  "component_type": "TXSQL",
+  "description": "xxxxxxx",
+  "edition": "5.0",
+  "category": "OTHERS",
+  "dependencies": "",
+  "configs": [
+  ]
+}

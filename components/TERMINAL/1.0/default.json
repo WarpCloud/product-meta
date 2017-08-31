@@ -1,0 +1,10 @@
+{
+  "name": "TERMINAL-1.0",
+  "component_type": "TERMINAL",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "TOS",
+  "dependencies": "",
+  "configs": [
+  ]
+}

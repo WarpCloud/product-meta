@@ -1,0 +1,10 @@
+{
+  "name": "GUARDIAN-1.0",
+  "component_type": "GUARDIAN",
+  "description": "xxxxxxx",
+  "edition": "1.0",
+  "category": "TDH",
+  "dependencies": "",
+  "configs": [
+  ]
+}
