@@ -1,6 +1,6 @@
 {
-  "name": "ZEPPELIN-5.0",
-  "component_type": "ZEPPELIN",
+  "name": "NOTEBOOK-5.0",
+  "component_type": "NOTEBOOK",
   "description": "xxxxxxx",
   "edition": "5.0",
   "category": "MLSTUDIO",
