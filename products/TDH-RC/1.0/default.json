@@ -9,6 +9,7 @@
     "KAFKA-1.0",
     "HYPERBASE-1.0",
     "PILOT-1.0",
-    "TERMINAL-1.0"
+    "TERMINAL-1.0",
+    "TXSQL-1.0"
   ]
 }
