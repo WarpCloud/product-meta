@@ -7,130 +7,94 @@
   "dependencies": "HDFS",
   "configs": [
     {
-      "name": "inceptor_executor_cpu_limit",
-      "display_name": "Executor CPU核数",
+      "name": "hive.cores",
       "level": "low",
       "description": "单executor的CPU core数量",
       "value": "6"
     },
     {
-      "name": "inceptor_executor_memory_limit",
-      "display_name": "Executor内存",
+      "name": "hive.memory",
       "level": "low",
       "description": "单executor的内存大小",
       "value": "12288MB"
     },
     {
-      "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "name": "shuffle_disks",
       "level": "low",
-      "description": "Inceptor server CPU的core数量",
-      "value": "6"
+      "description": "shuffle数据盘数量",
+      "value": "4"
     },
     {
-      "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
+      "name": "ssd_disks",
+      "level": "low",
+      "description": "单节点ssd盘数量",
+      "value": "0"
+    },
+    {
+      "name": "inceptor_server_memory",
       "level": "low",
       "description": "Inceptor server内存大小",
       "value": "8192MB"
     },
     {
-      "name": "inceptor_shuffle_dir_counts",
-      "display_name": "Shuffle数据盘数量",
-      "level": "low",
-      "description": "Shuffle数据盘数量",
-      "value": "4"
-    },
-    {
-      "name": "ssd_disks",
-      "display_name": "单节点SSD盘数量",
-      "level": "low",
-      "description": "单节点SSD盘数量",
-      "value": "0"
-    },
-    {
-      "name": "inceptor_executor_cpu_limit",
-      "display_name": "Executor CPU核数",
+      "name": "hive.cores",
       "level": "medium",
       "description": "单executor的CPU core数量",
       "value": "11"
     },
     {
-      "name": "inceptor_executor_memory_limit",
-      "display_name": "Executor内存",
+      "name": "hive.memory",
       "level": "medium",
       "description": "单executor的内存大小",
       "value": "24576MB"
     },
     {
-      "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "name": "shuffle_disks",
       "level": "medium",
-      "description": "Inceptor server CPU的core数量",
-      "value": "11"
+      "description": "shuffle数据盘数量",
+      "value": "8"
     },
     {
-      "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
+      "name": "ssd_disks",
+      "level": "medium",
+      "description": "单节点ssd盘数量",
+      "value": "1"
+    },
+    {
+      "name": "inceptor_server_memory",
       "level": "medium",
       "description": "Inceptor server内存大小",
       "value": "12288MB"
     },
     {
-      "name": "inceptor_shuffle_dir_counts",
-      "display_name": "Shuffle数据盘数量",
-      "level": "medium",
-      "description": "Shuffle数据盘数量",
-      "value": "8"
-    },
-    {
-      "name": "SSD_disks",
-      "display_name": "单节点SSD盘数量",
-      "level": "medium",
-      "description": "单节点SSD盘数量",
-      "value": "1"
-    },
-    {
-      "name": "inceptor_executor_cpu_limit",
-      "display_name": "Executor CPU核数",
+      "name": "hive.cores",
       "level": "high",
       "description": "单executor的CPU core数量",
       "value": "16"
     },
     {
-      "name": "inceptor_executor_memory_limit",
-      "display_name": "Executor内存",
+      "name": "hive.memory",
       "level": "high",
       "description": "单executor的内存大小",
       "value": "36864MB"
     },
     {
-      "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "name": "shuffle_disks",
       "level": "high",
-      "description": "Inceptor server CPU的core数量",
-      "value": "16"
-    },
-    {
-      "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
-      "level": "high",
-      "description": "Inceptor server内存大小",
-      "value": "24576MB"
-    },
-    {
-      "name": "inceptor_shuffle_dir_counts",
-      "display_name": "Shuffle数据盘数量",
-      "level": "high",
-      "description": "Shuffle数据盘数量",
+      "description": "shuffle数据盘数量",
       "value": "12"
     },
     {
-      "name": "SSD_disks",
-      "display_name": "单节点SSD盘数量",
+      "name": "ssd_disks",
       "level": "high",
-      "description": "单节点SSD盘数量",
+      "description": "单节点ssd盘数量",
       "value": "3"
+    },
+    {
+      "name": "inceptor_server_memory",
+      "level": "high",
+      "description": "Inceptor server内存大小",
+      "value": "24576MB"
     }
   ]
 }

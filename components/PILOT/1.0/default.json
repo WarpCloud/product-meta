@@ -4,8 +4,7 @@
   "description": "xxxxxxx",
   "edition": "1.0",
   "category": "STUDIO",
-  "dependencies": "TXSQL",
+  "dependencies": "",
   "configs": [
-
   ]
 }
