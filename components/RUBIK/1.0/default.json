@@ -4,7 +4,49 @@
   "description": "xxxxxxx",
   "edition": "1.0",
   "category": "STUDIO",
-  "dependencies": "INCEPTOR, TXSQL",
+  "dependencies": "INCEPTOR",
   "configs": [
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "low",
+      "description": "Rubik的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "low",
+      "description": "Rubik的内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "medium",
+      "description": "Rubik的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "medium",
+      "description": "Rubik的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "high",
+      "description": "Rubik的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "high",
+      "description": "Rubik的内存大小",
+      "value": "24576MB"
+    }
   ]
 }

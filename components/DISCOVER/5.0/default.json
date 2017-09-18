@@ -7,39 +7,87 @@
   "dependencies": "HDFS, YARN",
   "configs": [
     {
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
+      "level": "low",
+      "description": "Discover的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "low",
+      "description": "Discover的内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
+      "level": "medium",
+      "description": "Discover的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "medium",
+      "description": "Discover的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
+      "level": "high",
+      "description": "Discover的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "high",
+      "description": "Discover的内存大小",
+      "value": "24576MB"
+    },
+    {
       "name": "spark.driver.memory",
+      "display_name": "Spark driver内存",
       "level": "low",
       "description": "Spark driver进程的内存大小",
       "value": "8192MB"
     },
     {
       "name": "spark.executor.memory",
+      "display_name": "Spark executor内存",
       "level": "low",
-      "description": "Spark executor 进程的内存大小",
+      "description": "Spark executor进程的内存大小",
       "value": "12288MB"
     },
     {
       "name": "spark.driver.memory",
+      "display_name": "Spark driver内存",
       "level": "meidum",
       "description": "Spark driver进程的内存大小",
       "value": "12288MB"
     },
     {
       "name": "spark.executor.memory",
+      "display_name": "Spark executor内存",
       "level": "medium",
-      "description": "Spark executor 进程的内存大小",
+      "description": "Spark executor进程的内存大小",
       "value": "24576MB"
     },
     {
       "name": "spark.driver.memory",
+      "display_name": "Spark driver内存",
       "level": "high",
       "description": "Spark driver进程的内存大小",
       "value": "24576MB"
     },
     {
       "name": "spark.executor.memory",
+      "display_name": "Spark executor内存",
       "level": "high",
-      "description": "Spark executor 进程的内存大小",
+      "description": "Spark executor进程的内存大小",
       "value": "36864MB"
     }
   ]

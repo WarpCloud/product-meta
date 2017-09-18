@@ -6,5 +6,47 @@
   "category": "STUDIO",
   "dependencies": "",
   "configs": [
+    {
+      "name": "workflow_cpu_limit",
+      "display_name": "Workflow CPU核数",
+      "level": "low",
+      "description": "Workflow的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "workflow_memory_limit",
+      "display_name": "Workflow内存",
+      "level": "low",
+      "description": "Workflow的内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "workflow_cpu_limit",
+      "display_name": "Workflow CPU核数",
+      "level": "medium",
+      "description": "Workflow的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "workflow_memory_limit",
+      "display_name": "Workflow内存",
+      "level": "medium",
+      "description": "Workflow的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "workflow_cpu_limit",
+      "display_name": "Workflow CPU核数",
+      "level": "high",
+      "description": "Workflow的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "workflow_memory_limit",
+      "display_name": "Workflow内存",
+      "level": "high",
+      "description": "Workflow的内存大小",
+      "value": "24576MB"
+    }
   ]
 }
