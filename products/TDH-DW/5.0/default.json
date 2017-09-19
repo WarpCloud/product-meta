@@ -13,6 +13,7 @@
     "PILOT-5.0",
     "TERMINAL-5.0",
     "KAFKA-5.0",
-    "SEARCH-5.0"
+    "SEARCH-5.0",
+    "TXSQL-5.0"
   ]
 }

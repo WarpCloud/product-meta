@@ -13,6 +13,7 @@
     "PILOT-1.0",
     "TERMINAL-1.0",
     "KAFKA-1.0",
-    "SEARCH-1.0"
+    "SEARCH-1.0",
+    "TXSQL-1.0"
   ]
 }

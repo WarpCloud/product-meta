@@ -22,16 +22,16 @@
     },
     {
       "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "display_name": "Slipstream server CPU核数",
       "level": "low",
-      "description": "Inceptor server CPU的core数量",
+      "description": "Slipstream server CPU的core数量",
       "value": "6"
     },
     {
       "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
+      "display_name": "Slipstream server内存",
       "level": "low",
-      "description": "Inceptor server内存大小",
+      "description": "Slipstream server内存大小",
       "value": "8192MB"
     },
     {
@@ -64,16 +64,16 @@
     },
     {
       "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "display_name": "Slipstream server CPU核数",
       "level": "medium",
-      "description": "Inceptor server CPU的core数量",
+      "description": "Slipstream server CPU的core数量",
       "value": "11"
     },
     {
       "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
+      "display_name": "Slipstream server内存",
       "level": "medium",
-      "description": "Inceptor server内存大小",
+      "description": "Slipstream server内存大小",
       "value": "12288MB"
     },
     {
@@ -106,16 +106,16 @@
     },
     {
       "name": "inceptor_master_cpu_limit",
-      "display_name": "Inceptor server CPU核数",
+      "display_name": "Slipstream server CPU核数",
       "level": "high",
-      "description": "Inceptor server CPU的core数量",
+      "description": "Slipstream server CPU的core数量",
       "value": "16"
     },
     {
       "name": "inceptor_master_memory_limit",
-      "display_name": "Inceptor server内存",
+      "display_name": "Slipstream server内存",
       "level": "high",
-      "description": "Inceptor server内存大小",
+      "description": "Slipstream server内存大小",
       "value": "24576MB"
     },
     {
