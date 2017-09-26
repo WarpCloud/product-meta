@@ -10,7 +10,7 @@
       "name": "workflow_cpu_limit",
       "display_name": "Workflow CPU核数",
       "level": "low",
-      "description": "Workflow的CPU core数量",
+      "description": "Workflow可以使用的CPU core数量",
       "value": "6"
     },
     {
@@ -24,7 +24,7 @@
       "name": "workflow_cpu_limit",
       "display_name": "Workflow CPU核数",
       "level": "medium",
-      "description": "Workflow的CPU core数量",
+      "description": "Workflow可以使用的CPU core数量",
       "value": "12"
     },
     {
@@ -38,7 +38,7 @@
       "name": "workflow_cpu_limit",
       "display_name": "Workflow CPU核数",
       "level": "high",
-      "description": "Workflow的CPU core数量",
+      "description": "Workflow可以使用的CPU core数量",
       "value": "16"
     },
     {

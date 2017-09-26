@@ -38,14 +38,14 @@
       "name": "hdfs_data_cpu_limit",
       "display_name": "HDFS datanode CPU核数",
       "level": "medium",
-      "description": "HDFS单datanode进程的CPU core数量",
+      "description": "每个HDFS datanode的CPU core数量",
       "value": "12"
     },
     {
       "name": "hdfs_data_memory_limit",
       "display_name": "HDFS datanode内存",
       "level": "medium",
-      "description": "HDFS单datanode的内存大小",
+      "description": "每个HDFS datanode的内存大小",
       "value": "24576MB"
     },
     {
@@ -66,14 +66,14 @@
       "name": "hdfs_data_cpu_limit",
       "display_name": "HDFS datanode CPU核数",
       "level": "high",
-      "description": "HDFS单datanode进程的CPU core数量",
+      "description": "每个HDFS datanode的CPU core数量",
       "value": "16"
     },
     {
       "name": "hdfs_data_memory_limit",
       "display_name": "HDFS datanode内存",
       "level": "high",
-      "description": "HDFS单datanode的内存大小",
+      "description": "每个HDFS datanode的内存大小",
       "value": "36864MB"
     },
     {

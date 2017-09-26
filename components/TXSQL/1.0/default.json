@@ -10,7 +10,7 @@
       "name": "txsql_cpu_limit",
       "display_name": "TXSQL CPU核数",
       "level": "low",
-      "description": "TXSQL的CPU core数量",
+      "description": "TXSQL可以使用的CPU core数量",
       "value": "2"
     },
     {
@@ -24,7 +24,7 @@
       "name": "txsql_cpu_limit",
       "display_name": "TXSQL CPU核数",
       "level": "medium",
-      "description": "TXSQL的CPU core数量",
+      "description": "TXSQL可以使用的CPU core数量",
       "value": "4"
     },
     {
@@ -38,7 +38,7 @@
       "name": "txsql_cpu_limit",
       "display_name": "TXSQL CPU核数",
       "level": "high",
-      "description": "TXSQL的CPU core数量",
+      "description": "TXSQL可以使用的CPU core数量",
       "value": "8"
     },
     {

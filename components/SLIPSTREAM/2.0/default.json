@@ -24,7 +24,7 @@
       "name": "inceptor_master_cpu_limit",
       "display_name": "Slipstream server CPU核数",
       "level": "low",
-      "description": "Slipstream server CPU的core数量",
+      "description": "Slipstream server的CPU core数量",
       "value": "6"
     },
     {
@@ -66,7 +66,7 @@
       "name": "inceptor_master_cpu_limit",
       "display_name": "Slipstream server CPU核数",
       "level": "medium",
-      "description": "Slipstream server CPU的core数量",
+      "description": "Slipstream server的CPU core数量",
       "value": "11"
     },
     {
@@ -108,7 +108,7 @@
       "name": "inceptor_master_cpu_limit",
       "display_name": "Slipstream server CPU核数",
       "level": "high",
-      "description": "Slipstream server CPU的core数量",
+      "description": "Slipstream server的CPU core数量",
       "value": "16"
     },
     {

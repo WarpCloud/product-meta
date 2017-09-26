@@ -10,7 +10,7 @@
       "name": "rubik_cpu_limit",
       "display_name": "Rubik CPU核数",
       "level": "low",
-      "description": "Rubik的CPU core数量",
+      "description": "Rubik可以使用的CPU core数量",
       "value": "6"
     },
     {
@@ -24,7 +24,7 @@
       "name": "rubik_cpu_limit",
       "display_name": "Rubik CPU核数",
       "level": "medium",
-      "description": "Rubik的CPU core数量",
+      "description": "Rubik可以使用的CPU core数量",
       "value": "12"
     },
     {
@@ -38,7 +38,7 @@
       "name": "rubik_cpu_limit",
       "display_name": "Rubik CPU核数",
       "level": "high",
-      "description": "Rubik的CPU core数量",
+      "description": "Rubik可以使用的CPU core数量",
       "value": "16"
     },
     {

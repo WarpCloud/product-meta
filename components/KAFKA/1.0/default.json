@@ -10,7 +10,7 @@
       "name": "kafka_cpu_limit",
       "display_name": "Kafka CPU核数",
       "level": "low",
-      "description": "Kafka的CPU core数量",
+      "description": "Kafka可以使用的CPU core数量",
       "value": "6"
     },
     {
@@ -21,17 +21,10 @@
       "value": "12288MB"
     },
     {
-      "name": "kafka_server_memory",
-      "display_name": "Kafka server内存",
-      "level": "low",
-      "description": "Kafka server的内存大小",
-      "value": "8192MB"
-    },
-    {
       "name": "kafka_cpu_limit",
       "display_name": "Kafka CPU核数",
       "level": "medium",
-      "description": "Kafka的CPU core数量",
+      "description": "Kafka可以使用的CPU core数量",
       "value": "12"
     },
     {
@@ -41,18 +34,11 @@
       "description": "Kafka的内存大小",
       "value": "24576MB"
     },
-    {
-      "name": "kafka_server_memory",
-      "display_name": "Kafka server内存",
-      "level": "medium",
-      "description": "Kafka server的内存大小",
-      "value": "12288MB"
-    },
      {
       "name": "kafka_cpu_limit",
       "display_name": "Kafka CPU核数",
       "level": "high",
-      "description": "Kafka的CPU core数量",
+      "description": "Kafka可以使用的CPU core数量",
       "value": "16"
     },
     {
@@ -61,13 +47,6 @@
       "level": "high",
       "description": "Kafka的内存大小",
       "value": "36864MB"
-    },
-    {
-      "name": "kafka_server_memory",
-      "display_name": "Kafka server内存",
-      "level": "high",
-      "description": "Kafka server的内存大小",
-      "value": "24576MB"
     }
   ]
 }

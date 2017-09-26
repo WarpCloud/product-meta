@@ -10,14 +10,14 @@
       "name": "es_data_cpu_limit",
       "display_name": "Search data节点CPU核数",
       "level": "low",
-      "description": "Search data节点进程的CPU core数量",
+      "description": "每个Search data节点可以使用的CPU core数量",
       "value": "6"
     },
     {
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "low",
-      "description": "Search data节点的内存大小",
+      "description": "每个Search data节点的内存大小",
       "value": "16384MB"
     },
     {
@@ -52,14 +52,14 @@
       "name": "es_data_cpu_limit",
       "display_name": "Search data节点CPU核数",
       "level": "medium",
-      "description": "Search data节点进程的CPU core数量",
+      "description": "每个Search data节点可以使用的CPU core数量",
       "value": "12"
     },
     {
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "medium",
-      "description": "Search data节点的内存大小",
+      "description": "每个Search data节点的内存大小",
       "value": "24576MB"
     },
     {
@@ -94,14 +94,14 @@
       "name": "es_data_cpu_limit",
       "display_name": "Search data节点CPU核数",
       "level": "high",
-      "description": "Search data节点进程的CPU core数量",
+      "description": "每个Search data节点可以使用的CPU core数量",
       "value": "16"
     },
     {
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "high",
-      "description": "Search data节点的内存大小",
+      "description": "每个Search data节点的内存大小",
       "value": "32768MB"
     },
     {

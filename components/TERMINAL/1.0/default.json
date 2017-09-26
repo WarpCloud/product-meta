@@ -10,7 +10,7 @@
       "name": "terminal_cpu_limit",
       "display_name": "Terminal CPU核数",
       "level": "low",
-      "description": "Terminal的CPU core数量",
+      "description": "Terminal可以使用的CPU core数量",
       "value": "6"
     },
     {
@@ -24,7 +24,7 @@
       "name": "terminal_cpu_limit",
       "display_name": "Terminal CPU核数",
       "level": "medium",
-      "description": "Terminal的CPU core数量",
+      "description": "Terminal可以使用的CPU core数量",
       "value": "12"
     },
     {
@@ -38,7 +38,7 @@
       "name": "terminal_cpu_limit",
       "display_name": "Terminal CPU核数",
       "level": "high",
-      "description": "Terminal的CPU core数量",
+      "description": "Terminal可以使用的CPU core数量",
       "value": "16"
     },
     {

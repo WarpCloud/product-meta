@@ -10,7 +10,7 @@
       "name": "discover_cpu_limit",
       "display_name": "Discover CPU核数",
       "level": "low",
-      "description": "Discover的CPU core数量",
+      "description": "Discover可以使用的CPU core数量",
       "value": "6"
     },
     {
@@ -24,7 +24,7 @@
       "name": "discover_cpu_limit",
       "display_name": "Discover CPU核数",
       "level": "medium",
-      "description": "Discover的CPU core数量",
+      "description": "Discover可以使用的CPU core数量",
       "value": "12"
     },
     {
@@ -38,7 +38,7 @@
       "name": "discover_cpu_limit",
       "display_name": "Discover CPU核数",
       "level": "high",
-      "description": "Discover的CPU core数量",
+      "description": "Discover可以使用的CPU core数量",
       "value": "16"
     },
     {
