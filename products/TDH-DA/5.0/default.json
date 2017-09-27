@@ -1,6 +1,6 @@
 {
   "name": "TDH-DA",
-  "description": "xxxxxx",
+  "description": "用于构建数据分析、数据挖掘业务，为数据科学家提供数据清洗、特征工程和建模平台和工具集。",
   "edition": "5.0",
   "components": [
     "INCEPTOR-5.0",
