@@ -1,7 +1,7 @@
 {
   "name": "DISCOVER-5.0",
   "component_type": "DISCOVER",
-  "description": "xxxxxxx",
+  "description": "数据挖掘",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "HDFS, YARN",

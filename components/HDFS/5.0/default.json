@@ -1,7 +1,7 @@
 {
   "name": "HDFS-5.0",
   "component_type": "HDFS",
-  "description": "xxxxxxx",
+  "description": "分布式存储",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "",

@@ -1,7 +1,7 @@
 {
   "name": "GOVERNOR-1.0",
   "component_type": "GOVERNOR",
-  "description": "xxxxxxx",
+  "description": "元数据管理",
   "edition": "1.0",
   "category": "STUDIO",
   "dependencies": "HDFS, HYPERBASE, KAFKA, SEARCH, TXSQL",

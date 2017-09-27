@@ -1,7 +1,7 @@
 {
   "name": "WORKFLOW-1.0",
   "component_type": "WORKFLOW",
-  "description": "xxxxxxx",
+  "description": "调度流",
   "edition": "1.0",
   "category": "STUDIO",
   "dependencies": "",

@@ -1,7 +1,7 @@
 {
   "name": "TRANSPORTER-1.0",
   "component_type": "TRANSPORTER",
-  "description": "xxxxxxx",
+  "description": "数据流",
   "edition": "1.0",
   "category": "STUDIO",
   "dependencies": "HDFS, INCEPTOR",

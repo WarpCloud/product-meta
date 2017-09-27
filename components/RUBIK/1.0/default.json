@@ -1,7 +1,7 @@
 {
   "name": "RUBIK-1.0",
   "component_type": "RUBIK",
-  "description": "xxxxxxx",
+  "description": "OLAP Cube设计工具",
   "edition": "1.0",
   "category": "STUDIO",
   "dependencies": "INCEPTOR",

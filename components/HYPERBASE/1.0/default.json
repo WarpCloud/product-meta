@@ -1,7 +1,7 @@
 {
   "name": "HYPERBASE-1.0",
   "component_type": "HYPERBASE",
-  "description": "xxxxxxx",
+  "description": "快速检索和非结构化数据处理",
   "edition": "1.0",
   "category": "TDH",
   "dependencies": "HDFS",

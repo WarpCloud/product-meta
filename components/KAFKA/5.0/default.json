@@ -1,7 +1,7 @@
 {
   "name": "KAFKA-5.0",
   "component_type": "KAFKA",
-  "description": "xxxxxxx",
+  "description": "消息中间件",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "",

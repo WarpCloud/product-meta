@@ -1,7 +1,7 @@
 {
   "name": "PILOT-5.0",
   "component_type": "PILOT",
-  "description": "xxxxxxx",
+  "description": "报表工具",
   "edition": "5.0",
   "category": "STUDIO",
   "dependencies": "TXSQL",

@@ -1,7 +1,7 @@
 {
   "name": "TXSQL-5.0",
   "component_type": "TXSQL",
-  "description": "xxxxxxx",
+  "description": "关系数据库，存放和计算小数据量的数据",
   "edition": "5.0",
   "category": "OTHERS",
   "dependencies": "",
