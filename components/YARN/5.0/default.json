@@ -6,5 +6,89 @@
   "category": "TDH",
   "dependencies": "HDFS",
   "configs": [
+    {
+      "name": "yarn_node_cpu_limit",
+      "display_name": "YARN NodeManager CPU核数",
+      "level": "low",
+      "description": "YARN NodeManager的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "yarn_node_memory_limit",
+      "display_name": "YARN NodeManager内存",
+      "level": "low",
+      "description": "YARN NodeManager的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "yarn_rm_cpu_limit",
+      "display_name": "YARN ResourceManager CPU核数",
+      "level": "low",
+      "description": "YARN ResourceManager的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "yarn_rm_memory_limit",
+      "display_name": "YARN ResourceManager内存",
+      "level": "low",
+      "description": "YARN ResourceManager的内存大小",
+      "value": "8192MB"
+    },
+     {
+      "name": "yarn_node_cpu_limit",
+      "display_name": "YARN NodeManager CPU核数",
+      "level": "medium",
+      "description": "YARN NodeManager的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "yarn_node_memory_limit",
+      "display_name": "YARN NodeManager内存",
+      "level": "medium",
+      "description": "YARN NodeManager的内存大小",
+      "value": "24576MB"
+    },
+    {
+      "name": "yarn_rm_cpu_limit",
+      "display_name": "YARN ResourceManager CPU核数",
+      "level": "medium",
+      "description": "YARN ResourceManager的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "yarn_rm_memory_limit",
+      "display_name": "YARN ResourceManager内存",
+      "level": "medium",
+      "description": "YARN ResourceManager的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "yarn_node_cpu_limit",
+      "display_name": "YARN NodeManager CPU核数",
+      "level": "high",
+      "description": "YARN NodeManager的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "yarn_node_memory_limit",
+      "display_name": "YARN NodeManager内存",
+      "level": "high",
+      "description": "YARN NodeManager的内存大小",
+      "value": "36864MB"
+    },
+    {
+      "name": "yarn_rm_cpu_limit",
+      "display_name": "YARN ResourceManager CPU核数",
+      "level": "high",
+      "description": "YARN ResourceManager的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "yarn_rm_memory_limit",
+      "display_name": "YARN ResourceManager内存",
+      "level": "high",
+      "description": "YARN ResourceManager的内存大小",
+      "value": "24576MB"
+    }
   ]
 }

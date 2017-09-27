@@ -6,5 +6,89 @@
   "category": "TDH",
   "dependencies": "",
   "configs": [
+    {
+      "name": "hdfs_data_cpu_limit",
+      "display_name": "HDFS datanode CPU核数",
+      "level": "low",
+      "description": "HDFS单datanode进程的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "hdfs_data_memory_limit",
+      "display_name": "HDFS datanode内存",
+      "level": "low",
+      "description": "HDFS单datanode的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "hdfs_name_cpu_limit",
+      "display_name": "HDFS namenode CPU核数",
+      "level": "low",
+      "description": "HDFS namenode的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "hdfs_name_memory_limit",
+      "display_name": "HDFS namenode内存",
+      "level": "low",
+      "description": "HDFS namenode的内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "hdfs_data_cpu_limit",
+      "display_name": "HDFS datanode CPU核数",
+      "level": "medium",
+      "description": "HDFS单datanode进程的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "hdfs_data_memory_limit",
+      "display_name": "HDFS datanode内存",
+      "level": "medium",
+      "description": "HDFS单datanode的内存大小",
+      "value": "24576MB"
+    },
+    {
+      "name": "hdfs_name_cpu_limit",
+      "display_name": "HDFS namenode CPU核数",
+      "level": "medium",
+      "description": "HDFS namenode的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "hdfs_name_memory_limit",
+      "display_name": "HDFS namenode内存",
+      "level": "medium",
+      "description": "HDFS namenode的内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "hdfs_data_cpu_limit",
+      "display_name": "HDFS datanode CPU核数",
+      "level": "high",
+      "description": "HDFS单datanode进程的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "hdfs_data_memory_limit",
+      "display_name": "HDFS datanode内存",
+      "level": "high",
+      "description": "HDFS单datanode的内存大小",
+      "value": "36864MB"
+    },
+    {
+      "name": "hdfs_name_cpu_limit",
+      "display_name": "HDFS namenode CPU核数",
+      "level": "high",
+      "description": "HDFS namenode的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "hdfs_name_memory_limit",
+      "display_name": "HDFS namenode内存",
+      "level": "high",
+      "description": "HDFS namenode的内存大小",
+      "value": "24576MB"
+    }
   ]
 }

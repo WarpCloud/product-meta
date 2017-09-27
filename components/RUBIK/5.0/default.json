@@ -4,7 +4,7 @@
   "description": "xxxxxxx",
   "edition": "5.0",
   "category": "STUDIO",
-  "dependencies": "INCEPTOR, TXSQL",
+  "dependencies": "INCEPTOR",
   "configs": [
   ]
 }
