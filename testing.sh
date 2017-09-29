@@ -1,4 +1,3 @@
-#!/usr/bin/env python
+#!/usr/bin/env bash
 # Testing module for product-meta
-
 
