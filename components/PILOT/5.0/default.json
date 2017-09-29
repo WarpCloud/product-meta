@@ -6,5 +6,47 @@
   "category": "STUDIO",
   "dependencies": "TXSQL",
   "configs": [
+    {
+      "name": "pilot_cpu_limit",
+      "display_name": "Pilot CPU核数",
+      "level": "low",
+      "description": "Pilot可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "pilot_memory_limit",
+      "display_name": "Pilot内存",
+      "level": "low",
+      "description": "Pilot可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "pilot_cpu_limit",
+      "display_name": "Pilot CPU核数",
+      "level": "medium",
+      "description": "Pilot可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "pilot_memory_limit",
+      "display_name": "Pilot内存",
+      "level": "medium",
+      "description": "Pilot可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "pilot_cpu_limit",
+      "display_name": "Pilot CPU核数",
+      "level": "high",
+      "description": "Pilot可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "pilot_memory_limit",
+      "display_name": "Pilot内存",
+      "level": "high",
+      "description": "Pilot可以使用的最大内存",
+      "value": "24576MB"
+    }
   ]
 }

@@ -59,7 +59,7 @@
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "low",
-      "description": "Spark单executor进程可以使用的最大内存",
+      "description": "Spark每个executor进程可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -73,7 +73,7 @@
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "medium",
-      "description": "Spark单executor进程可以使用的最大内存",
+      "description": "Spark每个executor进程可以使用的最大内存",
       "value": "24576MB"
     },
     {
@@ -87,7 +87,7 @@
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "high",
-      "description": "Spark单executor进程可以使用的最大内存",
+      "description": "Spark每个executor进程可以使用的最大内存",
       "value": "36864MB"
     }
   ]

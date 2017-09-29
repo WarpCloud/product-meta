@@ -6,5 +6,47 @@
   "category": "TOS",
   "dependencies": "",
   "configs": [
+    {
+      "name": "terminal_cpu_limit",
+      "display_name": "Terminal CPU核数",
+      "level": "low",
+      "description": "Terminal可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "terminal_memory_limit",
+      "display_name": "Terminal内存",
+      "level": "low",
+      "description": "Terminal可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "terminal_cpu_limit",
+      "display_name": "Terminal CPU核数",
+      "level": "medium",
+      "description": "Terminal可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "terminal_memory_limit",
+      "display_name": "Terminal内存",
+      "level": "medium",
+      "description": "Terminal可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "terminal_cpu_limit",
+      "display_name": "Terminal CPU核数",
+      "level": "high",
+      "description": "Terminal可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "terminal_memory_limit",
+      "display_name": "Terminal内存",
+      "level": "high",
+      "description": "Terminal可以使用的最大内存",
+      "value": "24576MB"
+    }
   ]
 }
