@@ -17,7 +17,7 @@
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "low",
-      "description": "Governor内存的大小",
+      "description": "Governor可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "medium",
-      "description": "Governor内存的大小",
+      "description": "Governor可以使用的最大内存",
       "value": "12288MB"
     },
      {
@@ -45,7 +45,7 @@
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "high",
-      "description": "Governor内存的大小",
+      "description": "Governor可以使用的最大内存",
       "value": "24576MB"
     }
   ]

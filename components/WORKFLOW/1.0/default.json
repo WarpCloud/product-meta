@@ -17,7 +17,7 @@
       "name": "workflow_memory_limit",
       "display_name": "Workflow内存",
       "level": "low",
-      "description": "Workflow的内存大小",
+      "description": "Workflow可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "workflow_memory_limit",
       "display_name": "Workflow内存",
       "level": "medium",
-      "description": "Workflow的内存大小",
+      "description": "Workflow可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -45,7 +45,7 @@
       "name": "workflow_memory_limit",
       "display_name": "Workflow内存",
       "level": "high",
-      "description": "Workflow的内存大小",
+      "description": "Workflow可以使用的最大内存",
       "value": "24576MB"
     }
   ]

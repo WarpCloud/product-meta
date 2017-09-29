@@ -17,7 +17,7 @@
       "name": "yarn_node_memory_limit",
       "display_name": "YARN NodeManager内存",
       "level": "low",
-      "description": "YARN NodeManager的内存大小",
+      "description": "YARN NodeManager可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "yarn_rm_memory_limit",
       "display_name": "YARN ResourceManager内存",
       "level": "low",
-      "description": "YARN ResourceManager的内存大小",
+      "description": "YARN ResourceManager可以使用的最大内存",
       "value": "8192MB"
     },
      {
@@ -45,7 +45,7 @@
       "name": "yarn_node_memory_limit",
       "display_name": "YARN NodeManager内存",
       "level": "medium",
-      "description": "YARN NodeManager的内存大小",
+      "description": "YARN NodeManager可以使用的最大内存",
       "value": "24576MB"
     },
     {
@@ -59,7 +59,7 @@
       "name": "yarn_rm_memory_limit",
       "display_name": "YARN ResourceManager内存",
       "level": "medium",
-      "description": "YARN ResourceManager的内存大小",
+      "description": "YARN ResourceManager可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -73,7 +73,7 @@
       "name": "yarn_node_memory_limit",
       "display_name": "YARN NodeManager内存",
       "level": "high",
-      "description": "YARN NodeManager的内存大小",
+      "description": "YARN NodeManager可以使用的最大内存",
       "value": "36864MB"
     },
     {
@@ -87,7 +87,7 @@
       "name": "yarn_rm_memory_limit",
       "display_name": "YARN ResourceManager内存",
       "level": "high",
-      "description": "YARN ResourceManager的内存大小",
+      "description": "YARN ResourceManager可以使用的最大内存",
       "value": "24576MB"
     }
   ]

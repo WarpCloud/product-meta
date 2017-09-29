@@ -17,7 +17,7 @@
       "name": "hbase_rs_memory_limit",
       "display_name": "HBase region server内存",
       "level": "low",
-      "description": "每个Hyperbase region server的内存大小",
+      "description": "每个Hyperbase region server可以使用的最大内存",
       "value": "16384MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "hbase_master_memory_limit",
       "display_name": "HBase master内存",
       "level": "low",
-      "description": "每个Hyperbase master的内存大小",
+      "description": "每个Hyperbase master可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -45,7 +45,7 @@
       "name": "hbase_rs_memory_limit",
       "display_name": "HBase region server内存",
       "level": "medium",
-      "description": "每个Hyperbase region server的内存大小",
+      "description": "每个Hyperbase region server可以使用的最大内存",
       "value": "24576MB"
     },
     {
@@ -59,7 +59,7 @@
       "name": "hbase_master_memory_limit",
       "display_name": "HBase master内存",
       "level": "medium",
-      "description": "每个Hyperbase master的内存大小",
+      "description": "每个Hyperbase master可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -73,7 +73,7 @@
       "name": "hbase_rs_memory_limit",
       "display_name": "HBase region server内存",
       "level": "high",
-      "description": "每个Hyperbase region server的内存大小",
+      "description": "每个Hyperbase region server可以使用的最大内存",
       "value": "36864MB"
     },
     {
@@ -87,7 +87,7 @@
       "name": "hbase_master_memory_limit",
       "display_name": "HBase master内存",
       "level": "high",
-      "description": "每个Hyperbase master的内存大小",
+      "description": "每个Hyperbase master可以使用的最大内存",
       "value": "24576MB"
     }
   ]

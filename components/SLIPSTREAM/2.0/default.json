@@ -17,7 +17,7 @@
       "name": "inceptor_executor_memory_limit",
       "display_name": "Executor内存",
       "level": "low",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -59,7 +59,7 @@
       "name": "inceptor_executor_memory_limit",
       "display_name": "Executor内存",
       "level": "medium",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "24576MB"
     },
     {
@@ -101,7 +101,7 @@
       "name": "inceptor_executor_memory_limit",
       "display_name": "Executor内存",
       "level": "high",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "36864MB"
     },
     {

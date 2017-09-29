@@ -17,7 +17,7 @@
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "low",
-      "description": "每个Search data节点的内存大小",
+      "description": "每个Search data节点可以使用的最大内存",
       "value": "16384MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "es_master_memory_limit",
       "display_name": "Search主节点内存",
       "level": "low",
-      "description": "Search主节点的内存大小",
+      "description": "Search主节点可以使用的最大内存",
       "value": "65536MB"
     },
     {
@@ -59,7 +59,7 @@
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "medium",
-      "description": "每个Search data节点的内存大小",
+      "description": "每个Search data节点可以使用的最大内存",
       "value": "24576MB"
     },
     {
@@ -73,7 +73,7 @@
       "name": "es_master_memory_limit",
       "display_name": "Search主节点内存",
       "level": "medium",
-      "description": "Search主节点的内存大小",
+      "description": "Search主节点可以使用的最大内存",
       "value": "131072MB"
     },
     {
@@ -101,7 +101,7 @@
       "name": "es_data_memory_limit",
       "display_name": "Search data节点内存",
       "level": "high",
-      "description": "每个Search data节点的内存大小",
+      "description": "每个Search data节点可以使用的最大内存",
       "value": "32768MB"
     },
     {
@@ -115,7 +115,7 @@
       "name": "es_master_memory_limit",
       "display_name": "Search主节点内存",
       "level": "high",
-      "description": "Search主节点的内存大小",
+      "description": "Search主节点可以使用的最大内存",
       "value": "262144MB"
     },
     {

@@ -17,7 +17,7 @@
       "name": "terminal_memory_limit",
       "display_name": "Terminal内存",
       "level": "low",
-      "description": "Terminal的内存大小",
+      "description": "Terminal可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "terminal_memory_limit",
       "display_name": "Terminal内存",
       "level": "medium",
-      "description": "Terminal的内存大小",
+      "description": "Terminal可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -45,7 +45,7 @@
       "name": "terminal_memory_limit",
       "display_name": "Terminal内存",
       "level": "high",
-      "description": "Terminal的内存大小",
+      "description": "Terminal可以使用的最大内存",
       "value": "24576MB"
     }
   ]

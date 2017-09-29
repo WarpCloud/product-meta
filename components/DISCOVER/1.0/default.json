@@ -17,7 +17,7 @@
       "name": "discover_memory_limit",
       "display_name": "Discover内存",
       "level": "low",
-      "description": "Discover的内存大小",
+      "description": "Discover可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "discover_memory_limit",
       "display_name": "Discover内存",
       "level": "medium",
-      "description": "Discover的内存大小",
+      "description": "Discover可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -45,49 +45,49 @@
       "name": "discover_memory_limit",
       "display_name": "Discover内存",
       "level": "high",
-      "description": "Discover的内存大小",
+      "description": "Discover可以使用的最大内存",
       "value": "24576MB"
     },
     {
       "name": "spark.driver.memory",
       "display_name": "Spark driver内存",
       "level": "low",
-      "description": "Spark driver进程的内存大小",
+      "description": "Spark driver进程可以使用的最大内存",
       "value": "8192MB"
     },
     {
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "low",
-      "description": "Spark单executor进程的内存大小",
+      "description": "Spark单executor进程可以使用的最大内存",
       "value": "12288MB"
     },
     {
       "name": "spark.driver.memory",
       "display_name": "Spark driver内存",
       "level": "meidum",
-      "description": "Spark driver进程的内存大小",
+      "description": "Spark driver进程可以使用的最大内存",
       "value": "12288MB"
     },
     {
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "medium",
-      "description": "Spark单executor进程的内存大小",
+      "description": "Spark单executor进程可以使用的最大内存",
       "value": "24576MB"
     },
     {
       "name": "spark.driver.memory",
       "display_name": "Spark driver内存",
       "level": "high",
-      "description": "Spark driver进程的内存大小",
+      "description": "Spark driver进程可以使用的最大内存",
       "value": "24576MB"
     },
     {
       "name": "spark.executor.memory",
       "display_name": "Spark executor内存",
       "level": "high",
-      "description": "Spark单executor进程的内存大小",
+      "description": "Spark单executor进程可以使用的最大内存",
       "value": "36864MB"
     }
   ]

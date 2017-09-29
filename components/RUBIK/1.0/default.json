@@ -17,7 +17,7 @@
       "name": "rubik_memory_limit",
       "display_name": "Rubik内存",
       "level": "low",
-      "description": "Rubik的内存大小",
+      "description": "Rubik可以使用的最大内存",
       "value": "8192MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "rubik_memory_limit",
       "display_name": "Rubik内存",
       "level": "medium",
-      "description": "Rubik的内存大小",
+      "description": "Rubik可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -45,7 +45,7 @@
       "name": "rubik_memory_limit",
       "display_name": "Rubik内存",
       "level": "high",
-      "description": "Rubik的内存大小",
+      "description": "Rubik可以使用的最大内存",
       "value": "24576MB"
     }
   ]

@@ -17,7 +17,7 @@
       "name": "kafka_memory_limit",
       "display_name": "Kafka内存",
       "level": "low",
-      "description": "Kafka的内存大小",
+      "description": "Kafka可以使用的最大内存",
       "value": "12288MB"
     },
     {
@@ -31,7 +31,7 @@
       "name": "kafka_memory_limit",
       "display_name": "Kafka内存",
       "level": "medium",
-      "description": "Kafka的内存大小",
+      "description": "Kafka可以使用的最大内存",
       "value": "24576MB"
     },
      {
@@ -45,7 +45,7 @@
       "name": "kafka_memory_limit",
       "display_name": "Kafka内存",
       "level": "high",
-      "description": "Kafka的内存大小",
+      "description": "Kafka可以使用的最大内存",
       "value": "36864MB"
     }
   ]
