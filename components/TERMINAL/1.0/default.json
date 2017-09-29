@@ -1,7 +1,7 @@
 {
   "name": "TERMINAL-1.0",
   "component_type": "TERMINAL",
-  "description": "xxxxxxx",
+  "description": "Docker命令行工具",
   "edition": "1.0",
   "category": "TOS",
   "dependencies": "",

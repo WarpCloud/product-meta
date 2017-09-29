@@ -1,7 +1,7 @@
 {
   "name": "GUARDIAN-5.0",
   "component_type": "GUARDIAN",
-  "description": "xxxxxxx",
+  "description": "安全、权限和资源管控",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "",

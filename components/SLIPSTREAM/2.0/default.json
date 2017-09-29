@@ -1,7 +1,7 @@
 {
   "name": "SLIPSTREAM-2.0",
   "component_type": "SLIPSTREAM",
-  "description": "xxxxxxx",
+  "description": "实时计算引擎",
   "edition": "2.0",
   "category": "TDH",
   "dependencies": "HDFS, YARN",

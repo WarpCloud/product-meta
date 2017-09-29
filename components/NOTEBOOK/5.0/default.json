@@ -1,7 +1,7 @@
 {
   "name": "NOTEBOOK-5.0",
   "component_type": "NOTEBOOK",
-  "description": "xxxxxxx",
+  "description": "Notebook IDE",
   "edition": "5.0",
   "category": "MLSTUDIO",
   "dependencies": "",

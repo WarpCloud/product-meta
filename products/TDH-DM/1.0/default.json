@@ -1,6 +1,6 @@
 {
   "name": "TDH-DM",
-  "description": "xxxxxx",
+  "description": "用于构建企业的数据集市，对接数据分析业务，提供包括交互式分析、Cube、报表工具和调度工具，可以让用户可以构建自动化的报表应用。",
   "edition": "1.0",
   "components": [
     "INCEPTOR-2.0",

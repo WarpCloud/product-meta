@@ -1,6 +1,6 @@
 {
   "name": "TDH-RDB",
-  "description": "xxxxxx",
+  "description": "企业内部的关系数据库服务，可用于小数据量的OLTP业务。",
   "edition": "5.0",
   "components": [
     "TXSQL-5.0",

@@ -1,7 +1,7 @@
 {
   "name": "SEARCH-1.0",
   "component_type": "SEARCH",
-  "description": "xxxxxxx",
+  "description": "全文检索",
   "edition": "1.0",
   "category": "TDH",
   "dependencies": "",

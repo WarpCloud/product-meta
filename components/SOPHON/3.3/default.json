@@ -1,7 +1,7 @@
 {
   "name": "SOPHON-3.3",
   "component_type": "SOPHON",
-  "description": "xxxxxxx",
+  "description": "交互式数据挖掘，深度学习",
   "edition": "3.3",
   "category": "TDH",
   "dependencies": "HDFS, YARN",

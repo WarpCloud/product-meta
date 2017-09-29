@@ -1,9 +1,5 @@
 {
   "name": "TDH-RDB",
   "description": "企业内部的关系数据库服务，可用于小数据量的OLTP业务。",
-  "edition": "1.0",
-  "components": [
-    "TXSQL-1.0",
-    "TERMINAL-1.0"
-  ]
+  "display_name": "关系型数据库"
 }

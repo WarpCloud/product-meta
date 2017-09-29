@@ -1,7 +1,7 @@
 {
   "name": "YARN-5.0",
   "component_type": "YARN",
-  "description": "xxxxxxx",
+  "description": "Spark资源调度",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "HDFS",

@@ -1,7 +1,7 @@
 {
   "name": "INCEPTOR-2.0",
   "component_type": "INCEPTOR",
-  "description": "xxxxxxx",
+  "description": "分析型数据库",
   "edition": "2.0",
   "category": "TDH",
   "dependencies": "HDFS",

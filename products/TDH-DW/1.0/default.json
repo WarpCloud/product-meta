@@ -1,6 +1,6 @@
 {
   "name": "TDH-DW",
-  "description": "xxxxxx",
+  "description": "构建一站式的基于TDH的数据仓库服务，包括分析数据库、数据整合、模型加工等需要的平台服务和工具。",
   "edition": "1.0",
   "components": [
     "INCEPTOR-2.0",
