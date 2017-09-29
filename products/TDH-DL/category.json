@@ -1,5 +1,7 @@
 {
-  "name": "TDH-DL",
+  "category_name": "TDH-DL",
   "description": "可用于企业构建深度学习或AI应用开发。",
-  "display_name": "深度学习"
+  "display_name": "深度学习",
+  "description_en": "Deep Learning",
+  "display_name_en": "Deep Learning"
 }

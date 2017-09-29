@@ -1,6 +1,5 @@
 {
   "name": "TDH-RC",
-  "description": "可用于企业构建实时数据仓库，或者构建在线的实时应用，如在线反欺诈、传感器数据分析等。",
   "edition": "1.0",
   "components": [
     "SLIPSTREAM-2.0",

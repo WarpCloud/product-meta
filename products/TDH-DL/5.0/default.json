@@ -1,6 +1,5 @@
 {
   "name": "TDH-DL",
-  "description": "可用于企业构建深度学习或AI应用开发。",
   "edition": "5.0",
   "components": [
     "SOPHON-3.3",
