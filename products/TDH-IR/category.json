@@ -1,7 +1,6 @@
 {
-  "category_name": "TDH-IR",
+  "name": "信息检索",
   "description": "构建企业内部的搜索平台和信息检索服务。",
-  "display_name": "信息检索",
   "description_en": "Information Retrieval",
-  "display_name_en": "Information Retrieval"
+  "name_en": "Information Retrieval"
 }

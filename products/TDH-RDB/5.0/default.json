@@ -1,5 +1,4 @@
 {
-  "name": "TDH-RDB",
   "edition": "5.0",
   "components": [
     "TXSQL-5.0",

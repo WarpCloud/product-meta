@@ -1,7 +1,6 @@
 {
-  "category_name": "TDH-RDB",
+  "name": "关系型数据库",
   "description": "企业内部的关系数据库服务，可用于小数据量的OLTP业务。",
-  "display_name": "关系型数据库",
   "description_en": "Relational Database",
-  "display_name_en": "Relational Database"
+  "name_en": "Relational Database"
 }
