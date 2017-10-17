@@ -1,16 +1,14 @@
 {
-  "name": "TDH-DA",
-  "description": "xxxxxx",
   "edition": "5.0",
   "components": [
     "INCEPTOR-5.0",
     "GUARDIAN-5.0",
     "DISCOVER-5.0",
-    "SOPHON-3.3",
     "HDFS-5.0",
     "YARN-5.0",
-    "ZEPPELIN-5.0",
+    "NOTEBOOK-5.0",
     "PILOT-5.0",
-    "TERMINAL-5.0"
+    "TERMINAL-5.0",
+    "TXSQL-5.0"
   ]
 }

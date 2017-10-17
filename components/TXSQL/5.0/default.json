@@ -1,10 +1,52 @@
 {
   "name": "TXSQL-5.0",
   "component_type": "TXSQL",
-  "description": "xxxxxxx",
+  "description": "关系数据库，存放和计算小数据量的数据",
   "edition": "5.0",
   "category": "OTHERS",
   "dependencies": "",
   "configs": [
+    {
+      "name": "txsql_cpu_limit",
+      "display_name": "TXSQL CPU核数",
+      "level": "low",
+      "description": "TXSQL可以使用的CPU core数量",
+      "value": "2"
+    },
+    {
+      "name": "txsql_mem_limit",
+      "display_name": "TXSQL内存",
+      "level": "low",
+      "description": "TXSQL可以使用的最大内存",
+      "value": "4096MB"
+    },
+    {
+      "name": "txsql_cpu_limit",
+      "display_name": "TXSQL CPU核数",
+      "level": "medium",
+      "description": "TXSQL可以使用的CPU core数量",
+      "value": "4"
+    },
+    {
+      "name": "txsql_mem_limit",
+      "display_name": "TXSQL内存",
+      "level": "medium",
+      "description": "TXSQL可以使用的最大内存",
+      "value": "8192MB"
+    },
+      {
+      "name": "txsql_cpu_limit",
+      "display_name": "TXSQL CPU核数",
+      "level": "high",
+      "description": "TXSQL可以使用的CPU core数量",
+      "value": "8"
+    },
+    {
+      "name": "txsql_mem_limit",
+      "display_name": "TXSQL内存",
+      "level": "high",
+      "description": "TXSQL可以使用的最大内存",
+      "value": "12288MB"
+    }
   ]
 }

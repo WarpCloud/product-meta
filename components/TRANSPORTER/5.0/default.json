@@ -1,10 +1,52 @@
 {
   "name": "TRANSPORTER-5.0",
   "component_type": "TRANSPORTER",
-  "description": "xxxxxxx",
+  "description": "数据流",
   "edition": "5.0",
   "category": "STUDIO",
   "dependencies": "HDFS, INCEPTOR",
   "configs": [
+    {
+      "name": "tdt_cpu_limit",
+      "display_name": "Transporter CPU核数",
+      "level": "low",
+      "description": "Transporter可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "tdt_memory_limit",
+      "display_name": "Transporter内存",
+      "level": "low",
+      "description": "Transporter可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "tdt_cpu_limit",
+      "display_name": "Transporter CPU核数",
+      "level": "medium",
+      "description": "Transporter可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "tdt_memory_limit",
+      "display_name": "Transporter内存",
+      "level": "medium",
+      "description": "Transporter可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "tdt_cpu_limit",
+      "display_name": "Transporter CPU核数",
+      "level": "high",
+      "description": "Transporter可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "tdt_memory_limit",
+      "display_name": "Transporter内存",
+      "level": "high",
+      "description": "Transporter可以使用的最大内存",
+      "value": "24576MB"
+    }
   ]
 }

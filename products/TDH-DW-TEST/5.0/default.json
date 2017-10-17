@@ -1,9 +1,0 @@
-{
-  "name": "TDH-DW-TEST",
-  "description": "xxxxxx",
-  "edition": "5.0",
-  "components": [
-    "INCEPTOR-5.0",
-    "HDFS-5.0"
-  ]
-}

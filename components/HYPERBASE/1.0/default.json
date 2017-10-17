@@ -1,46 +1,94 @@
 {
   "name": "HYPERBASE-1.0",
   "component_type": "HYPERBASE",
-  "description": "xxxxxxx",
+  "description": "快速检索和非结构化数据处理",
   "edition": "1.0",
   "category": "TDH",
   "dependencies": "HDFS",
   "configs": [
     {
-      "name": "REGION_SERVER_HEAPSIZE",
+      "name": "hbase_rs_cpu_limit",
+      "display_name": "HBase CPU核数",
       "level": "low",
-      "description": "region server使用的堆内存大小",
-      "value": "16384MB"
-    },
-    {
-      "name": "CONTAINER_CPU",
-      "level": "low",
-      "description": "进程可以使用的cpu资源数量",
+      "description": "每个Hyperbase region server可以使用的CPU资源数量",
       "value": "6"
     },
     {
-      "name": "REGION_SERVER_HEAPSIZE",
-      "level": "medium",
-      "description": "region server使用的堆内存大小",
-      "value": "24576MB"
+      "name": "hbase_rs_memory_limit",
+      "display_name": "HBase region server内存",
+      "level": "low",
+      "description": "每个Hyperbase region server可以使用的最大内存",
+      "value": "16384MB"
     },
     {
-      "name": "CONTAINER_CPU",
+      "name": "hbase_master_cpu_limit",
+      "display_name": "HBase master CPU核数",
+      "level": "low",
+      "description": "每个Hyperbase master的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "hbase_master_memory_limit",
+      "display_name": "HBase master内存",
+      "level": "low",
+      "description": "每个Hyperbase master可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "hbase_rs_cpu_limit",
+      "display_name": "HBase CPU核数",
       "level": "medium",
-      "description": "进程可以使用的cpu资源数量",
+      "description": "每个Hyperbase region server可以使用的CPU资源数量",
       "value": "12"
     },
     {
-      "name": "REGION_SERVER_HEAPSIZE",
-      "level": "high",
-      "description": "region server使用的堆内存大小",
-      "value": "32768MB"
+      "name": "hbase_rs_memory_limit",
+      "display_name": "HBase region server内存",
+      "level": "medium",
+      "description": "每个Hyperbase region server可以使用的最大内存",
+      "value": "24576MB"
     },
     {
-      "name": "CONTAINER_CPU",
+      "name": "hbase_master_cpu_limit",
+      "display_name": "HBase master CPU核数",
+      "level": "medium",
+      "description": "每个Hyperbase master的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "hbase_master_memory_limit",
+      "display_name": "HBase master内存",
+      "level": "medium",
+      "description": "每个Hyperbase master可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "hbase_rs_cpu_limit",
+      "display_name": "HBase CPU核数",
       "level": "high",
-      "description": "进程可以使用的cpu资源数量",
+      "description": "每个Hyperbase region server可以使用的CPU资源数量",
       "value": "16"
+    },
+    {
+      "name": "hbase_rs_memory_limit",
+      "display_name": "HBase region server内存",
+      "level": "high",
+      "description": "每个Hyperbase region server可以使用的最大内存",
+      "value": "36864MB"
+    },
+    {
+      "name": "hbase_master_cpu_limit",
+      "display_name": "HBase master CPU核数",
+      "level": "high",
+      "description": "每个Hyperbase master的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "hbase_master_memory_limit",
+      "display_name": "HBase master内存",
+      "level": "high",
+      "description": "每个Hyperbase master可以使用的最大内存",
+      "value": "24576MB"
     }
   ]
 }

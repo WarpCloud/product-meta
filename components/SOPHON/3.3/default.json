@@ -1,43 +1,43 @@
 {
   "name": "SOPHON-3.3",
   "component_type": "SOPHON",
-  "description": "xxxxxxx",
+  "description": "交互式数据挖掘，深度学习",
   "edition": "3.3",
   "category": "TDH",
   "dependencies": "HDFS, YARN",
   "configs": [
     {
-      "name": "spark.driver.memory",
+      "name": "spark_driver_memory",
       "level": "low",
       "description": "Spark driver进程的内存大小",
       "value": "8192MB"
     },
     {
-      "name": "spark.executor.memory",
+      "name": "spark_executor_memory",
       "level": "low",
       "description": "Spark executor 进程的内存大小",
       "value": "12288MB"
     },
     {
-      "name": "spark.driver.memory",
+      "name": "spark_driver_memory",
       "level": "meidum",
       "description": "Spark driver进程的内存大小",
       "value": "12288MB"
     },
     {
-      "name": "spark.executor.memory",
+      "name": "spark_executor_memory",
       "level": "medium",
       "description": "Spark executor 进程的内存大小",
       "value": "24576MB"
     },
     {
-      "name": "spark.driver.memory",
+      "name": "spark_driver_memory",
       "level": "high",
       "description": "Spark driver进程的内存大小",
       "value": "24576MB"
     },
     {
-      "name": "spark.executor.memory",
+      "name": "spark_executor_memory",
       "level": "high",
       "description": "Spark executor 进程的内存大小",
       "value": "36864MB"

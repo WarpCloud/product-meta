@@ -1,6 +1,4 @@
 {
-  "name": "TDH-DL",
-  "description": "xxxxxx",
   "edition": "5.0",
   "components": [
     "SOPHON-3.3",

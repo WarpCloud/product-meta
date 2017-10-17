@@ -1,0 +1,52 @@
+{
+  "name": "NOTEBOOK-5.0",
+  "component_type": "NOTEBOOK",
+  "description": "Notebook IDE",
+  "edition": "5.0",
+  "category": "MLSTUDIO",
+  "dependencies": "",
+  "configs": [
+    {
+      "name": "notebook_cpu_limit",
+      "display_name": "Notebook CPU核数",
+      "level": "low",
+      "description": "Notebook可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "notebook_memory_limit",
+      "display_name": "Notebook内存",
+      "level": "low",
+      "description": "Notebook可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "notebook_cpu_limit",
+      "display_name": "Notebook CPU核数",
+      "level": "medium",
+      "description": "Notebook可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "notebook_memory_limit",
+      "display_name": "Notebook内存",
+      "level": "medium",
+      "description": "Notebook可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "notebook_cpu_limit",
+      "display_name": "Notebook CPU核数",
+      "level": "high",
+      "description": "Notebook可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "notebook_memory_limit",
+      "display_name": "Notebook内存",
+      "level": "high",
+      "description": "Notebook可以使用的最大内存",
+      "value": "24576MB"
+    }
+  ]
+}

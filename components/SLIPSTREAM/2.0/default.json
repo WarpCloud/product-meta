@@ -1,100 +1,136 @@
 {
   "name": "SLIPSTREAM-2.0",
   "component_type": "SLIPSTREAM",
-  "description": "xxxxxxx",
+  "description": "实时计算引擎",
   "edition": "2.0",
   "category": "TDH",
   "dependencies": "HDFS, YARN",
   "configs": [
     {
-      "name": "hive.cores",
+      "name": "inceptor_executor_cpu_limit",
+      "display_name": "Executor CPU核数",
       "level": "low",
       "description": "单executor的CPU core数量",
       "value": "6"
     },
     {
-      "name": "hive.memory",
+      "name": "inceptor_executor_memory_limit",
+      "display_name": "Executor内存",
       "level": "low",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "12288MB"
     },
     {
-      "name": "shuffle_disks",
+      "name": "inceptor_master_cpu_limit",
+      "display_name": "Slipstream server CPU核数",
       "level": "low",
-      "description": "shuffle数据盘数量",
+      "description": "Slipstream server的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "inceptor_master_memory_limit",
+      "display_name": "Slipstream server内存",
+      "level": "low",
+      "description": "Slipstream server内存大小",
+      "value": "8192MB"
+    },
+    {
+      "name": "inceptor_shuffle_dir_counts",
+      "display_name": "Shuffle数据盘数量",
+      "level": "low",
+      "description": "Shuffle数据盘数量",
       "value": "4"
     },
     {
       "name": "ssd_disks",
+      "display_name": "单节点SSD盘数量",
       "level": "low",
-      "description": "单节点ssd盘数量",
+      "description": "单节点SSD盘数量",
       "value": "0"
     },
     {
-      "name": "inceptor_server_memory",
-      "level": "low",
-      "description": "Inceptor server内存大小",
-      "value": "8192MB"
-    },
-    {
-      "name": "hive.cores",
+      "name": "inceptor_executor_cpu_limit",
+      "display_name": "Executor CPU核数",
       "level": "medium",
       "description": "单executor的CPU core数量",
       "value": "11"
     },
     {
-      "name": "hive.memory",
+      "name": "inceptor_executor_memory_limit",
+      "display_name": "Executor内存",
       "level": "medium",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "24576MB"
     },
     {
-      "name": "shuffle_disks",
+      "name": "inceptor_master_cpu_limit",
+      "display_name": "Slipstream server CPU核数",
       "level": "medium",
-      "description": "shuffle数据盘数量",
+      "description": "Slipstream server的CPU core数量",
+      "value": "11"
+    },
+    {
+      "name": "inceptor_master_memory_limit",
+      "display_name": "Slipstream server内存",
+      "level": "medium",
+      "description": "Slipstream server内存大小",
+      "value": "12288MB"
+    },
+    {
+      "name": "inceptor_shuffle_dir_counts",
+      "display_name": "Shuffle数据盘数量",
+      "level": "medium",
+      "description": "Shuffle数据盘数量",
       "value": "8"
     },
     {
       "name": "ssd_disks",
+      "display_name": "单节点SSD盘数量",
       "level": "medium",
-      "description": "单节点ssd盘数量",
+      "description": "单节点SSD盘数量",
       "value": "1"
     },
     {
-      "name": "inceptor_server_memory",
-      "level": "medium",
-      "description": "Inceptor server内存大小",
-      "value": "12288MB"
-    },
-    {
-      "name": "hive.cores",
+      "name": "inceptor_executor_cpu_limit",
+      "display_name": "Executor CPU核数",
       "level": "high",
       "description": "单executor的CPU core数量",
       "value": "16"
     },
     {
-      "name": "hive.memory",
+      "name": "inceptor_executor_memory_limit",
+      "display_name": "Executor内存",
       "level": "high",
-      "description": "单executor的内存大小",
+      "description": "单executor可以使用的最大内存",
       "value": "36864MB"
     },
     {
-      "name": "shuffle_disks",
+      "name": "inceptor_master_cpu_limit",
+      "display_name": "Slipstream server CPU核数",
       "level": "high",
-      "description": "shuffle数据盘数量",
+      "description": "Slipstream server的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "inceptor_master_memory_limit",
+      "display_name": "Slipstream server内存",
+      "level": "high",
+      "description": "Slipstream server内存大小",
+      "value": "24576MB"
+    },
+    {
+      "name": "inceptor_shuffle_dir_counts",
+      "display_name": "Shuffle数据盘数量",
+      "level": "high",
+      "description": "Shuffle数据盘数量",
       "value": "12"
     },
     {
       "name": "ssd_disks",
+      "display_name": "单节点SSD盘数量",
       "level": "high",
-      "description": "单节点ssd盘数量",
+      "description": "单节点SSD盘数量",
       "value": "3"
-    },
-    {
-      "name": "inceptor_server_memory",
-      "level": "high",
-      "description": "Inceptor server内存大小",
-      "value": "24576MB"
     }
   ]
 }

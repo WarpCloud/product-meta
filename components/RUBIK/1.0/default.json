@@ -1,10 +1,52 @@
 {
   "name": "RUBIK-1.0",
   "component_type": "RUBIK",
-  "description": "xxxxxxx",
+  "description": "OLAP Cube设计工具",
   "edition": "1.0",
   "category": "STUDIO",
-  "dependencies": "INCEPTOR, TXSQL",
+  "dependencies": "INCEPTOR",
   "configs": [
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "low",
+      "description": "Rubik可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "low",
+      "description": "Rubik可以使用的最大内存",
+      "value": "8192MB"
+    },
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "medium",
+      "description": "Rubik可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "medium",
+      "description": "Rubik可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "rubik_cpu_limit",
+      "display_name": "Rubik CPU核数",
+      "level": "high",
+      "description": "Rubik可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "rubik_memory_limit",
+      "display_name": "Rubik内存",
+      "level": "high",
+      "description": "Rubik可以使用的最大内存",
+      "value": "24576MB"
+    }
   ]
 }

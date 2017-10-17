@@ -1,46 +1,52 @@
 {
   "name": "DISCOVER-1.0",
   "component_type": "DISCOVER",
-  "description": "xxxxxxx",
+  "description": "数据挖掘",
   "edition": "1.0",
   "category": "TDH",
   "dependencies": "HDFS, YARN",
   "configs": [
     {
-      "name": "spark.driver.memory",
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
       "level": "low",
-      "description": "Spark driver进程的内存大小",
+      "description": "Discover可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "low",
+      "description": "Discover可以使用的最大内存",
       "value": "8192MB"
     },
     {
-      "name": "spark.executor.memory",
-      "level": "low",
-      "description": "Spark executor 进程的内存大小",
-      "value": "12288MB"
-    },
-    {
-      "name": "spark.driver.memory",
-      "level": "meidum",
-      "description": "Spark driver进程的内存大小",
-      "value": "12288MB"
-    },
-    {
-      "name": "spark.executor.memory",
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
       "level": "medium",
-      "description": "Spark executor 进程的内存大小",
-      "value": "24576MB"
+      "description": "Discover可以使用的CPU core数量",
+      "value": "12"
     },
     {
-      "name": "spark.driver.memory",
-      "level": "high",
-      "description": "Spark driver进程的内存大小",
-      "value": "24576MB"
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "medium",
+      "description": "Discover可以使用的最大内存",
+      "value": "12288MB"
     },
     {
-      "name": "spark.executor.memory",
+      "name": "discover_cpu_limit",
+      "display_name": "Discover CPU核数",
       "level": "high",
-      "description": "Spark executor 进程的内存大小",
-      "value": "36864MB"
+      "description": "Discover可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "discover_memory_limit",
+      "display_name": "Discover内存",
+      "level": "high",
+      "description": "Discover可以使用的最大内存",
+      "value": "24576MB"
     }
   ]
 }

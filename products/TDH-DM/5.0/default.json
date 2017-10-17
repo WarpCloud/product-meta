@@ -1,6 +1,4 @@
 {
-  "name": "TDH-DM",
-  "description": "xxxxxx",
   "edition": "5.0",
   "components": [
     "INCEPTOR-5.0",
@@ -9,6 +7,7 @@
     "WORKFLOW-5.0",
     "RUBIK-5.0",
     "PILOT-5.0",
-    "TERMINAL-5.0"
+    "TERMINAL-5.0",
+    "TXSQL-5.0"
   ]
 }

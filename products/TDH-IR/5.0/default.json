@@ -1,6 +1,4 @@
 {
-  "name": "TDH-IR",
-  "description": "xxxxxx",
   "edition": "5.0",
   "components": [
     "INCEPTOR-5.0",

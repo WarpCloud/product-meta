@@ -1,10 +1,52 @@
 {
   "name": "KAFKA-5.0",
   "component_type": "KAFKA",
-  "description": "xxxxxxx",
+  "description": "消息中间件",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "",
   "configs": [
+    {
+      "name": "kafka_cpu_limit",
+      "display_name": "Kafka CPU核数",
+      "level": "low",
+      "description": "Kafka可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "kafka_memory_limit",
+      "display_name": "Kafka内存",
+      "level": "low",
+      "description": "Kafka可以使用的最大内存",
+      "value": "12288MB"
+    },
+    {
+      "name": "kafka_cpu_limit",
+      "display_name": "Kafka CPU核数",
+      "level": "medium",
+      "description": "Kafka可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "kafka_memory_limit",
+      "display_name": "Kafka内存",
+      "level": "medium",
+      "description": "Kafka可以使用的最大内存",
+      "value": "24576MB"
+    },
+     {
+      "name": "kafka_cpu_limit",
+      "display_name": "Kafka CPU核数",
+      "level": "high",
+      "description": "Kafka可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "kafka_memory_limit",
+      "display_name": "Kafka内存",
+      "level": "high",
+      "description": "Kafka可以使用的最大内存",
+      "value": "36864MB"
+    }
   ]
 }

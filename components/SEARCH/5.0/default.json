@@ -1,100 +1,136 @@
 {
   "name": "SEARCH-5.0",
   "component_type": "SEARCH",
-  "description": "xxxxxxx",
+  "description": "全文检索",
   "edition": "5.0",
   "category": "TDH",
   "dependencies": "",
   "configs": [
     {
-      "name": "ES_HEAP_SIZE",
+      "name": "es_data_cpu_limit",
+      "display_name": "Search data节点CPU核数",
       "level": "low",
-      "description": "配置jvm heap size",
+      "description": "每个Search data节点可以使用的CPU core数量",
+      "value": "6"
+    },
+    {
+      "name": "es_data_memory_limit",
+      "display_name": "Search data节点内存",
+      "level": "low",
+      "description": "每个Search data节点可以使用的最大内存",
       "value": "16384MB"
     },
     {
-      "name": "SSD",
+      "name": "es_master_cpu_limit",
+      "display_name": "Search主节点CPU核数",
       "level": "low",
-      "description": "ES使用的SSD数量",
-      "value": "0"
-    },
-    {
-      "name": "SATA",
-      "level": "low",
-      "description": "ES使用的SATA硬盘数量",
+      "description": "Search主节点可以使用的CPU core数量",
       "value": "6"
     },
     {
-      "name": "CPU",
+      "name": "es_master_memory_limit",
+      "display_name": "Search主节点内存",
       "level": "low",
-      "description": "Container可以使用的CPU core数量",
-      "value": "6"
-    },
-    {
-      "name": "MEMORY",
-      "level": "low",
-      "description": "主机内存",
+      "description": "Search主节点可以使用的最大内存",
       "value": "65536MB"
     },
     {
-      "name": "ES_HEAP_SIZE",
-      "level": "medium",
-      "description": "配置jvm heap size",
-      "value": "24576MB"
-    },
-    {
-      "name": "SSD",
-      "level": "medium",
-      "description": "ES使用的SSD数量",
-      "value": "2"
-    },
-    {
-      "name": "SATA",
-      "level": "medium",
-      "description": "ES使用的SATA硬盘数量",
-      "value": "4"
-    },
-    {
-      "name": "CPU",
-      "level": "medium",
-      "description": "Container可以使用的CPU core数量",
-      "value": "8"
-    },
-    {
-      "name": "MEMORY",
-      "level": "medium",
-      "description": "主机内存",
-      "value": "131072MB"
-    },
-    {
-      "name": "ES_HEAP_SIZE",
-      "level": "high",
-      "description": "配置jvm heap size",
-      "value": "32768"
-    },
-    {
-      "name": "SSD",
-      "level": "high",
-      "description": "ES使用的SSD数量",
-      "value": "6"
-    },
-    {
-      "name": "SATA",
-      "level": "high",
-      "description": "ES使用的SATA硬盘数量",
+      "name": "ssd_disks",
+      "display_name": "Search SSD盘数量",
+      "level": "low",
+      "description": "Search使用的SSD数量",
       "value": "0"
     },
     {
-      "name": "CPU",
+      "name": "sata_disks",
+      "display_name": "Search SATA硬盘数量",
+      "level": "low",
+      "description": "Search使用的SATA硬盘数量",
+      "value": "6"
+    },
+    {
+      "name": "es_data_cpu_limit",
+      "display_name": "Search data节点CPU核数",
+      "level": "medium",
+      "description": "每个Search data节点可以使用的CPU core数量",
+      "value": "12"
+    },
+    {
+      "name": "es_data_memory_limit",
+      "display_name": "Search data节点内存",
+      "level": "medium",
+      "description": "每个Search data节点可以使用的最大内存",
+      "value": "24576MB"
+    },
+    {
+      "name": "es_master_cpu_limit",
+      "display_name": "Search主节点CPU核数",
+      "level": "medium",
+      "description": "Search主节点可以使用的CPU core数量",
+      "value": "8"
+    },
+    {
+      "name": "es_master_memory_limit",
+      "display_name": "Search主节点内存",
+      "level": "medium",
+      "description": "Search主节点可以使用的最大内存",
+      "value": "131072MB"
+    },
+    {
+      "name": "ssd_disks",
+      "display_name": "Search SSD盘数量",
+      "level": "medium",
+      "description": "Search使用的SSD数量",
+      "value": "2"
+    },
+    {
+      "name": "sata_disks",
+      "display_name": "Search SATA硬盘数量",
+      "level": "medium",
+      "description": "Search使用的SATA硬盘数量",
+      "value": "4"
+    },
+    {
+      "name": "es_data_cpu_limit",
+      "display_name": "Search data节点CPU核数",
       "level": "high",
-      "description": "Container可以使用的CPU core数量",
+      "description": "每个Search data节点可以使用的CPU core数量",
       "value": "16"
     },
     {
-      "name": "MEMORY",
+      "name": "es_data_memory_limit",
+      "display_name": "Search data节点内存",
       "level": "high",
-      "description": "主机内存",
+      "description": "每个Search data节点可以使用的最大内存",
+      "value": "32768MB"
+    },
+    {
+      "name": "es_master_cpu_limit",
+      "display_name": "Search主节点CPU核数",
+      "level": "high",
+      "description": "Search主节点可以使用的CPU core数量",
+      "value": "16"
+    },
+    {
+      "name": "es_master_memory_limit",
+      "display_name": "Search主节点内存",
+      "level": "high",
+      "description": "Search主节点可以使用的最大内存",
       "value": "262144MB"
+    },
+    {
+      "name": "ssd_disks",
+      "display_name": "Search SSD盘数量",
+      "level": "high",
+      "description": "Search使用的SSD数量",
+      "value": "6"
+    },
+    {
+      "name": "sata_disks",
+      "display_name": "Search SATA硬盘数量",
+      "level": "high",
+      "description": "Search使用的SATA硬盘数量",
+      "value": "0"
     }
   ]
 }
