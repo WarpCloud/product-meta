@@ -7,8 +7,8 @@
     "HDFS-5.0",
     "YARN-5.0",
     "NOTEBOOK-5.0",
-    "PILOT-5.0",
-    "TERMINAL-5.0",
+    "PILOT-1.0",
+    "TERMINAL-1.0",
     "TXSQL-5.0"
   ]
 }

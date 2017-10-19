@@ -4,10 +4,10 @@
     "INCEPTOR-5.0",
     "GUARDIAN-5.0",
     "HDFS-5.0",
-    "WORKFLOW-5.0",
-    "RUBIK-5.0",
-    "PILOT-5.0",
-    "TERMINAL-5.0",
+    "WORKFLOW-1.1",
+    "RUBIK-1.0",
+    "PILOT-1.0",
+    "TERMINAL-1.0",
     "TXSQL-5.0"
   ]
 }

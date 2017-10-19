@@ -1,9 +1,0 @@
-{
-  "name": "SYSTEM-CONTEXT-TEST",
-  "description": "xxxxxx",
-  "edition": "5.0-beta",
-  "components": [
-    "SEARCH-5.0",
-    "KIBANA-5.0"
-  ]
-}

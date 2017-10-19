@@ -6,8 +6,8 @@
     "HDFS-5.0",
     "KAFKA-5.0",
     "HYPERBASE-5.0",
-    "PILOT-5.0",
-    "TERMINAL-5.0",
+    "PILOT-1.0",
+    "TERMINAL-1.0",
     "TXSQL-5.0"
   ]
 }
