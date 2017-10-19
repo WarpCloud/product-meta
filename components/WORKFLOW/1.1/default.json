@@ -1,8 +1,8 @@
 {
-  "name": "WORKFLOW-5.0",
+  "name": "WORKFLOW-1.1",
   "component_type": "WORKFLOW",
   "description": "调度流",
-  "edition": "5.0",
+  "edition": "1.1",
   "category": "STUDIO",
   "dependencies": "",
   "configs": [
