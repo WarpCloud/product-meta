@@ -1,7 +1,7 @@
 {
-  "name": "SYSTEM-CONTEXT-5.0",
+  "name": "SYSTEM-CONTEXT-5.1",
   "description": "xxxxxx",
-  "edition": "5.0",
+  "edition": "5.1",
   "components": [
     "GUARDIAN-5.0",
     "TCC-1.0",
