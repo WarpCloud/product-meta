@@ -1,7 +1,7 @@
 {
   "category_name": "TDH-RDB",
-  "description": "企业内部的关系数据库服务，可用于小数据量的OLTP业务。",
-  "display_name": "关系型数据库",
+  "description": "构建企业内部的关系数据库服务，可用于处理数据量在500GB以内的OLTP业务。支持复杂的SQL查询，提供高稳定、可扩展、强一致的数据处理服务。",
+  "display_name": "关系数据库",
   "description_en": "Relational Database",
   "display_name_en": "Relational Database"
 }

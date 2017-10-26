@@ -3,7 +3,7 @@
   "component_type": "SLIPSTREAM",
   "description": "实时计算引擎",
   "edition": "5.0",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "HDFS, YARN",
   "configs": [
     {

@@ -3,7 +3,7 @@
   "component_type": "SOPHON",
   "description": "交互式数据挖掘，深度学习",
   "edition": "3.3",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "HDFS, YARN",
   "configs": [
     {

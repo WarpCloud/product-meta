@@ -3,7 +3,7 @@
   "component_type": "WORKFLOW",
   "description": "调度流",
   "edition": "1.1",
-  "category": "STUDIO",
+  "category": "TDH开发套件",
   "dependencies": "",
   "configs": [
     {

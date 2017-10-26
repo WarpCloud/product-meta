@@ -2,7 +2,6 @@
   "edition": "5.0",
   "components": [
     "INCEPTOR-5.0",
-    "GUARDIAN-5.0",
     "HDFS-5.0",
     "WORKFLOW-1.1",
     "RUBIK-1.0",

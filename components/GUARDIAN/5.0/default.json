@@ -3,7 +3,7 @@
   "component_type": "GUARDIAN",
   "description": "安全、权限和资源管控",
   "edition": "5.0",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "",
   "configs": [
   ]

@@ -3,7 +3,7 @@
   "component_type": "NOTEBOOK",
   "description": "Notebook IDE",
   "edition": "5.0",
-  "category": "MLSTUDIO",
+  "category": "TDH开发套件",
   "dependencies": "",
   "configs": [
     {

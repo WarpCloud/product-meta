@@ -3,7 +3,7 @@
   "component_type": "PILOT",
   "description": "报表工具",
   "edition": "1.0",
-  "category": "STUDIO",
+  "category": "TDH开发套件",
   "dependencies": "TXSQL",
   "configs": [
     {

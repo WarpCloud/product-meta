@@ -3,7 +3,7 @@
   "component_type": "SEARCH",
   "description": "全文检索",
   "edition": "5.0",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "",
   "configs": [
     {

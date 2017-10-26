@@ -3,7 +3,7 @@
   "component_type": "HDFS",
   "description": "分布式存储",
   "edition": "5.0",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "",
   "configs": [
     {

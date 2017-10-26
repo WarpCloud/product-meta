@@ -2,7 +2,6 @@
   "edition": "5.0",
   "components": [
     "SLIPSTREAM-5.0",
-    "GUARDIAN-5.0",
     "HDFS-5.0",
     "KAFKA-5.0",
     "HYPERBASE-5.0",

@@ -3,7 +3,7 @@
   "component_type": "RUBIK",
   "description": "OLAP Cube设计工具",
   "edition": "1.0",
-  "category": "STUDIO",
+  "category": "TDH开发套件",
   "dependencies": "INCEPTOR",
   "configs": [
     {

@@ -3,7 +3,7 @@
   "component_type": "TERMINAL",
   "description": "Docker命令行工具",
   "edition": "1.0",
-  "category": "TOS",
+  "category": "运维和开发工具",
   "dependencies": "",
   "configs": [
     {

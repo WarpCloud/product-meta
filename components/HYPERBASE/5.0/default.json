@@ -3,7 +3,7 @@
   "component_type": "HYPERBASE",
   "description": "快速检索和非结构化数据处理",
   "edition": "5.0",
-  "category": "TDH",
+  "category": "TDH平台产品",
   "dependencies": "HDFS",
   "configs": [
     {
