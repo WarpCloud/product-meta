@@ -1,0 +1,8 @@
+{
+  "name": "TICKET-1.0",
+  "component_type": "TICKET",
+  "description": "Ticket management service",
+  "edition": "1.0",
+  "category": "SYSTEM",
+  "configs": []
+}
