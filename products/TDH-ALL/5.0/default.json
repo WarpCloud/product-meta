@@ -3,7 +3,7 @@
   "components": [
     "DISCOVER-5.0",
     "GOVERNOR-1.0",
-    "GUARDIAN-1.0",
+    "GUARDIAN-5.0",
     "HDFS-5.0",
     "HYPERBASE-5.0",
     "INCEPTOR-5.0",
