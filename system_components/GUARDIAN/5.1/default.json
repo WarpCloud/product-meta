@@ -1,8 +1,8 @@
 {
-  "name": "GUARDIAN-5.0",
+  "name": "GUARDIAN-5.1",
   "component_type": "GUARDIAN",
   "description": "The central service for authentication, authorization and audit",
-  "edition": "5.0",
+  "edition": "5.1",
   "category": "SYSTEM",
   "configs": [
     {

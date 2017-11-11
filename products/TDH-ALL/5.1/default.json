@@ -1,0 +1,23 @@
+{
+  "edition": "5.1",
+  "components": [
+    "DISCOVER-5.1",
+    "GOVERNOR-1.0",
+    "GUARDIAN-5.1",
+    "HDFS-5.1",
+    "HYPERBASE-5.1",
+    "INCEPTOR-5.1",
+    "KAFKA-5.1",
+    "NOTEBOOK-5.1",
+    "PILOT-1.0",
+    "RUBIK-1.1",
+    "SEARCH-5.1",
+    "SLIPSTREAM-5.1",
+    "SOPHON-3.3",
+    "TERMINAL-1.0",
+    "TRANSPORTER-1.1",
+    "TXSQL-5.1",
+    "WORKFLOW-1.1",
+    "YARN-5.1"
+  ]
+}

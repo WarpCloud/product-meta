@@ -1,0 +1,7 @@
+{
+  "edition": "5.1",
+  "components": [
+    "TXSQL-5.1",
+    "TERMINAL-1.0"
+  ]
+}

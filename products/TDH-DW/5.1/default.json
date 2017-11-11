@@ -1,0 +1,14 @@
+{
+  "edition": "5.1",
+  "components": [
+    "INCEPTOR-5.1",
+    "HYPERBASE-5.1",
+    "HDFS-5.1",
+    "YARN-5.1",
+    "WORKFLOW-1.1",
+    "TRANSPORTER-1.1",
+    "PILOT-1.0",
+    "TERMINAL-1.0",
+    "TXSQL-5.1"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FILEBEAT-1.0",
+  "component_type": "FILEBEAT",
+  "description": "file changes detection and content consuming service",
+  "edition": "1.0",
+  "category": "SYSTEM",
+  "dependencies": "",
+  "configs": []
+}

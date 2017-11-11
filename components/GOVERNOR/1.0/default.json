@@ -11,42 +11,42 @@
       "display_name": "Governor CPU核数",
       "level": "low",
       "description": "Governor服务可以使用的CPU core数量",
-      "value": "6"
+      "value": "2"
     },
     {
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "low",
       "description": "Governor可以使用的最大内存",
-      "value": "8192MB"
+      "value": "4096MB"
     },
     {
       "name": "governor_cpu_limit",
       "display_name": "Governor CPU核数",
       "level": "medium",
       "description": "Governor服务可以使用的CPU core数量",
-      "value": "12"
+      "value": "3"
     },
     {
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "medium",
       "description": "Governor可以使用的最大内存",
-      "value": "12288MB"
+      "value": "6144MB"
     },
      {
       "name": "governor_cpu_limit",
       "display_name": "Governor CPU核数",
       "level": "high",
       "description": "Governor服务可以使用的CPU core数量",
-      "value": "16"
+      "value": "4"
     },
     {
       "name": "governor_memory_limit",
       "display_name": "Governor内存",
       "level": "high",
       "description": "Governor可以使用的最大内存",
-      "value": "24576MB"
+      "value": "8192MB"
     }
   ]
 }
