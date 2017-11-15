@@ -1,0 +1,10 @@
+{
+  "name": "HMASTER-5.0",
+  "component_type": "HMASTER",
+  "description": "Hyperbase管理运维服务",
+  "edition": "5.0",
+  "category": "TDH平台产品",
+  "dependencies": "HDFS",
+  "configs": [
+  ]
+}
