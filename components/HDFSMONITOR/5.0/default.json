@@ -1,0 +1,10 @@
+{
+  "name": "HDFSMONITOR-5.0",
+  "component_type": "HDFSMONITOR",
+  "description": "HDFS状态监控管理服务",
+  "edition": "5.0",
+  "category": "TDH平台产品",
+  "dependencies": "",
+  "configs": [
+  ]
+}
