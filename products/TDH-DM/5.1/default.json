@@ -3,7 +3,6 @@
   "components": [
     "INCEPTOR-5.1",
     "HDFS-5.1",
-    "HDFSMONITOR-5.1",
     "WORKFLOW-1.1",
     "RUBIK-1.1",
     "PILOT-1.0",
