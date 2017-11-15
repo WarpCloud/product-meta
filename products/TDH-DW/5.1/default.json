@@ -4,6 +4,8 @@
     "INCEPTOR-5.1",
     "HYPERBASE-5.1",
     "HDFS-5.1",
+    "HDFSMONITOR-5.1",
+    "HMASTER-5.1",
     "YARN-5.1",
     "WORKFLOW-1.1",
     "TRANSPORTER-1.1",

@@ -6,6 +6,8 @@
     "YARN-5.1",
     "KAFKA-5.1",
     "HYPERBASE-5.1",
+    "HDFSMONITOR-5.1",
+    "HMASTER-5.1",
     "PILOT-1.0",
     "TERMINAL-1.0",
     "TXSQL-5.1"

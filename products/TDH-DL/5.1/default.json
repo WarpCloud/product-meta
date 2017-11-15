@@ -5,6 +5,7 @@
     "YARN-5.1",
     "TERMINAL-1.0",
     "TXSQL-5.1",
+    "HDFSMONITOR-5.1",
     "HDFS-5.1"
   ]
 }
