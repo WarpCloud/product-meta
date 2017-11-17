@@ -1,0 +1,60 @@
+{
+  "instance_type": "notification",
+  "configs": [
+    {
+      "default": "7999",
+      "groups": [],
+      "name": "notification.http.port",
+      "value": "7999"
+    },
+    {
+      "default": "INFO, console",
+      "groups": [],
+      "name": "notification.root.logger",
+      "value": "INFO, console"
+    },
+    {
+      "default": "64MB",
+      "groups": [],
+      "name": "notification.log.maxfilesize",
+      "value": "64MB"
+    },
+    {
+      "default": "16",
+      "groups": [],
+      "name": "notification.log.maxbackupindex",
+      "value": "16"
+    },
+    {
+      "default": "INFO, console",
+      "groups": [],
+      "name": "notification.security.root.logger",
+      "value": "INFO, console"
+    },
+    {
+      "default": "64MB",
+      "groups": [],
+      "name": "notification.security.log.maxfilesize",
+      "value": "64MB"
+    },
+    {
+      "default": "16",
+      "groups": [],
+      "name": "notification.security.log.maxbackupindex",
+      "value": "16"
+    },
+    {
+      "default": "notificationuser",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionUserName",
+      "value": "notificationuser"
+    },
+    {
+      "default": "password",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionPassword",
+      "value": "password"
+    }
+  ],
+  "version": "1.0"
+}

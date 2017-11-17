@@ -1,0 +1,67 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "localcran": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      },
+      "notebook": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "notebook1",
+            "application_type": "NOTEBOOK"
+         },
+         "configs": {
+            "notebook_cpu_limit": 2,
+            "notebook_cpu_request": 2,
+            "notebook_memory_limit": 4,
+            "notebook_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "yarn",
+               "name": "yarn"
+            },
+            {
+               "moduleName": "localcran",
+               "name": "notebook1-localcran"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "notebook",
+         "name": "notebook1-notebook",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "notebook1",
+            "application_type": "NOTEBOOK"
+         },
+         "configs": {
+            "localcran_cpu_limit": 1,
+            "localcran_cpu_request": 1,
+            "localcran_memory_limit": 2,
+            "localcran_memory_request": 2
+         },
+         "instance_settings": { },
+         "moduleName": "localcran",
+         "name": "notebook1-localcran",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

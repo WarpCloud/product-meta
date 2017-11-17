@@ -1,0 +1,428 @@
+{
+  "instance_type": "yarn",
+  "configs": [
+    {
+      "default": "",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.acl_submit_applications",
+      "value": ""
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.maximum-applications",
+      "value": "10000"
+    },
+    {
+      "default": "100",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.maximum-capacity",
+      "value": "100"
+    },
+    {
+      "default": "0.1",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.maximum-am-resource-percent",
+      "value": "0.1"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.user-limit-factor",
+      "value": "1"
+    },
+    {
+      "default": "RUNNING",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.state",
+      "value": "RUNNING"
+    },
+    {
+      "default": "",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.acl_administer_queue",
+      "value": ""
+    },
+    {
+      "default": "-1",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.node-locality-delay",
+      "value": "-1"
+    },
+    {
+      "default": "default",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.queues",
+      "value": "default"
+    },
+    {
+      "default": "org.apache.hadoop.yarn.util.resource.DominantResourceCalculator",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.resource-calculator",
+      "value": "org.apache.hadoop.yarn.util.resource.DominantResourceCalculator"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.user-limit-factor",
+      "value": "1"
+    },
+    {
+      "default": "100",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.maximum-capacity",
+      "value": "100"
+    },
+    {
+      "default": "100",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.capacity",
+      "value": "100"
+    },
+    {
+      "default": "RUNNING",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.state",
+      "value": "RUNNING"
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.maximum-applications",
+      "value": "10000"
+    },
+    {
+      "default": "0.1",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.maximum-am-resource-percent",
+      "value": "0.1"
+    },
+    {
+      "default": "",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.acl_submit_applications",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.default.acl_administer_queue",
+      "value": ""
+    },
+    {
+      "default": "100",
+      "groups": [
+        "capacity_scheduler"
+      ],
+      "name": "yarn.scheduler.capacity.root.capacity",
+      "value": "100"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.job.max.split.locations",
+      "value": "500"
+    },
+    {
+      "default": "-agentpath:/usr/lib/hadoop/bin/libagent.so -Xmx2048m",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "yarn.app.mapreduce.am.command-opts",
+      "value": "-agentpath:/usr/lib/hadoop/bin/libagent.so -Xmx2048m"
+    },
+    {
+      "default": "yarn",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.framework.name",
+      "value": "yarn"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.map.speculative",
+      "value": "True"
+    },
+    {
+      "default": "300",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "raid.distraid.max.files",
+      "value": "300"
+    },
+    {
+      "default": "-agentpath:/usr/lib/hadoop/bin/libagent.so -Xmx2048m",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapred.child.java.opts",
+      "value": "-agentpath:/usr/lib/hadoop/bin/libagent.so -Xmx2048m"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "mapred.child.heapsize",
+      "value": "2048MB"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "raidnode.files.fix.per.job",
+      "value": "500"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.job.reduce.slowstart.completedmaps",
+      "value": "1"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.job.maps",
+      "value": "1"
+    },
+    {
+      "default": "8033",
+      "groups": [],
+      "name": "resourcemanager.admin.port",
+      "value": "8033"
+    },
+    {
+      "default": "8032",
+      "groups": [],
+      "name": "resourcemanager.port",
+      "value": "8032"
+    },
+    {
+      "default": "8031",
+      "groups": [],
+      "name": "resourcemanager.resource-tracker.port",
+      "value": "8031"
+    },
+    {
+      "default": "8030",
+      "groups": [],
+      "name": "resourcemanager.scheduler.port",
+      "value": "8030"
+    },
+    {
+      "default": "8088",
+      "groups": [],
+      "name": "resourcemanager.webapp.port",
+      "value": "8088"
+    },
+    {
+      "default": "",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.webapp.address",
+      "value": ""
+    },
+    {
+      "default": "10021",
+      "groups": [],
+      "name": "timelineserver.port",
+      "value": "10021"
+    },
+    {
+      "default": "8188",
+      "groups": [],
+      "name": "timelineserver.http.port",
+      "value": "8188"
+    },
+    {
+      "default": "13562",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.shuffle.port",
+      "value": "13562"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "mapreduce.reduce.speculative",
+      "value": "False"
+    },
+    {
+      "default": "10",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "raid.distraid.max.jobs",
+      "value": "10"
+    },
+    {
+      "default": "98304MB",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.scheduler.maximum-allocation-mb",
+      "value": "98304MB"
+    },
+    {
+      "default": "96",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.scheduler.maximum-allocation-vcores",
+      "value": "96"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.vmem-check-enabled",
+      "value": "False"
+    },
+    {
+      "default": "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.resourcemanager.scheduler.class",
+      "value": "org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler"
+    },
+    {
+      "default": "org.apache.hadoop.mapred.ShuffleHandler",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.aux-services.mapreduce_shuffle.class",
+      "value": "org.apache.hadoop.mapred.ShuffleHandler"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.pmem-check-enabled",
+      "value": "False"
+    },
+    {
+      "default": "/usr/lib/hadoop/*,/usr/lib/hadoop/lib/*,/usr/lib/hadoop-hdfs/*,/usr/lib/hadoop-hdfs/lib/*,/usr/lib/hadoop-yarn/*,/usr/lib/hadoop-yarn/lib/*,/usr/lib/hadoop-mapreduce/*,/usr/lib/hadoop-mapreduce/lib/*",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.application.classpath",
+      "value": "/usr/lib/hadoop/*,/usr/lib/hadoop/lib/*,/usr/lib/hadoop-hdfs/*,/usr/lib/hadoop-hdfs/lib/*,/usr/lib/hadoop-yarn/*,/usr/lib/hadoop-yarn/lib/*,/usr/lib/hadoop-mapreduce/*,/usr/lib/hadoop-mapreduce/lib/*"
+    },
+    {
+      "default": "mapreduce_shuffle",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.aux-services",
+      "value": "mapreduce_shuffle"
+    },
+    {
+      "default": "",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.local-dirs",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.log-dirs",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.remote-app-log-dir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "mapred_site"
+      ],
+      "name": "yarn.app.mapreduce.am.staging-dir",
+      "value": ""
+    },
+    {
+      "default": "86400",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.nodemanager.delete.debug-delay-sec",
+      "value": "86400"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "yarn-site.xml"
+      ],
+      "name": "yarn.log-aggregation-enable",
+      "value": "False"
+    },
+    {
+      "default": "19888",
+      "groups": [],
+      "name": "historyserver.http-port",
+      "value": "19888"
+    }
+  ],
+  "version": "5.0"
+}

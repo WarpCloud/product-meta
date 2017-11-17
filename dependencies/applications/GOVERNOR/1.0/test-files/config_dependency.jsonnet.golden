@@ -1,0 +1,85 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "governor": {
+         "c": 1,
+         "m": 2,
+         "s": 2
+      },
+      "notification": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "governor1",
+            "application_type": "GOVERNOR"
+         },
+         "configs": {
+            "notification_cpu_limit": 2,
+            "notification_cpu_request": 2,
+            "notification_memory_limit": 4,
+            "notification_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "notification",
+         "name": "governor1-notification",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "governor1",
+            "application_type": "GOVERNOR"
+         },
+         "configs": {
+            "governor_cpu_limit": 4,
+            "governor_cpu_request": 4,
+            "governor_memory_limit": 8,
+            "governor_memory_request": 8
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
+            },
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
+               "moduleName": "notification",
+               "name": "governor1-notification"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "governor",
+         "name": "governor1-governor",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

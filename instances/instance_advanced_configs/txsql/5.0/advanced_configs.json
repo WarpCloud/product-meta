@@ -1,0 +1,48 @@
+{
+  "instance_type": "txsql",
+  "configs": [
+    {
+      "default": "/hadoop/txsql",
+      "groups": [],
+      "name": "data.dir",
+      "value": "/hadoop/txsql"
+    },
+    {
+      "default": "3316",
+      "groups": [],
+      "name": "mysql.rw.port",
+      "value": "3316"
+    },
+    {
+      "default": "6000",
+      "groups": [],
+      "name": "binlog.port",
+      "value": "6000"
+    },
+    {
+      "default": "13306",
+      "groups": [],
+      "name": "mysql.local.port",
+      "value": "13306"
+    },
+    {
+      "default": "17000",
+      "groups": [],
+      "name": "binlogsvr.rpc.port",
+      "value": "17000"
+    },
+    {
+      "default": "8001",
+      "groups": [],
+      "name": "paxos.port",
+      "value": "8001"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "root.password",
+      "value": ""
+    }
+  ],
+  "version": "5.0"
+}

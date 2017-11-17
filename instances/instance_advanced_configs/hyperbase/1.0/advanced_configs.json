@@ -1,0 +1,424 @@
+{
+  "instance_type": "hyperbase",
+  "configs": [
+    {
+      "default": "",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.rootdir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hregion.index.path",
+      "value": ""
+    },
+    {
+      "default": "10",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.replication.handler.count",
+      "value": "10"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.partition.ignore.unavailable.clusters",
+      "value": "False"
+    },
+    {
+      "default": "30",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hstore.blockingStoreFiles",
+      "value": "30"
+    },
+    {
+      "default": "25",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.search.poolsize",
+      "value": "25"
+    },
+    {
+      "default": "25",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.handler.count",
+      "value": "25"
+    },
+    {
+      "default": "600000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.local.cacheinterval",
+      "value": "600000"
+    },
+    {
+      "default": "300000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.fileSplitTimeout",
+      "value": "300000"
+    },
+    {
+      "default": "3758096384",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hregion.max.filesize",
+      "value": "3758096384"
+    },
+    {
+      "default": "200",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.client.scanner.caching",
+      "value": "200"
+    },
+    {
+      "default": "5",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.scheduler.poolsize",
+      "value": "5"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.abort.disconected.batchmutate",
+      "value": "True"
+    },
+    {
+      "default": "org.apache.hadoop.hbase.master.TransactionMasterObserver",
+      "groups": [],
+      "name": "hbase.coprocessor.master.classes",
+      "value": "org.apache.hadoop.hbase.master.TransactionMasterObserver"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.master.distributed.log.replay",
+      "value": "True"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.assignment.timeout.management",
+      "value": "True"
+    },
+    {
+      "default": "3888",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.zookeeper.leaderport",
+      "value": "3888"
+    },
+    {
+      "default": "300000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.balancer.period",
+      "value": "300000"
+    },
+    {
+      "default": "100",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.handler.count",
+      "value": "100"
+    },
+    {
+      "default": "60000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.client.operation.timeout",
+      "value": "60000"
+    },
+    {
+      "default": "2000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.zookeeper.property.maxClientCnxns",
+      "value": "2000"
+    },
+    {
+      "default": "300000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.scheduler.frequency",
+      "value": "300000"
+    },
+    {
+      "default": "60030",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "regionserver.info.port",
+      "value": "60030"
+    },
+    {
+      "default": "10102",
+      "groups": [],
+      "name": "regionserver.jmx.port",
+      "value": "10102"
+    },
+    {
+      "default": "61000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.port",
+      "value": "61000"
+    },
+    {
+      "default": "600000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.lease.period",
+      "value": "600000"
+    },
+    {
+      "default": "180000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "zookeeper.session.timeout",
+      "value": "180000"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "dfs.support.append",
+      "value": "True"
+    },
+    {
+      "default": "120000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.rpc.timeout",
+      "value": "120000"
+    },
+    {
+      "default": "0",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.table.localrate",
+      "value": "0"
+    },
+    {
+      "default": "600000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.local.mergeinterval",
+      "value": "600000"
+    },
+    {
+      "default": "2888",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.zookeeper.peerport",
+      "value": "2888"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hregion.memstore.mslab.enabled",
+      "value": "True"
+    },
+    {
+      "default": "0.3",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.global.memstore.upperLimit",
+      "value": "0.3"
+    },
+    {
+      "default": "0.3",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hregion.memstore.chunkpool.maxsize",
+      "value": "0.3"
+    },
+    {
+      "default": "60000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.tolerable.timediff",
+      "value": "60000"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.lightweight.snapshotmanager.enable",
+      "value": "True"
+    },
+    {
+      "default": "60010",
+      "groups": [],
+      "name": "master.info.port",
+      "value": "60010"
+    },
+    {
+      "default": "10101",
+      "groups": [],
+      "name": "master.jmx.port",
+      "value": "10101"
+    },
+    {
+      "default": "600000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.master.assignment.timeoutmonitor.period",
+      "value": "600000"
+    },
+    {
+      "default": "67108864",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hregion.memstore.flush.size",
+      "value": "67108864"
+    },
+    {
+      "default": "org.apache.hadoop.hbase.transaction.cp.TransactionServiceImpl,org.apache.hadoop.hbase.transaction.cp.TransactionScanObserver,org.apache.hadoop.hbase.regionserver.TransactionRegionObserver,org.apache.hadoop.hyperbase.coprocessor.LocalIndexerCoprocessor,org.apache.hadoop.hyperbase.secondaryindex.coprocessor.Indexer",
+      "groups": [],
+      "name": "hbase.coprocessor.region.classes",
+      "value": "org.apache.hadoop.hbase.transaction.cp.TransactionServiceImpl,org.apache.hadoop.hbase.transaction.cp.TransactionScanObserver,org.apache.hadoop.hbase.regionserver.TransactionRegionObserver,org.apache.hadoop.hyperbase.coprocessor.LocalIndexerCoprocessor,org.apache.hadoop.hyperbase.secondaryindex.coprocessor.Indexer"
+    },
+    {
+      "default": "60000",
+      "groups": [],
+      "name": "hbase.client.meta.operation.timeout",
+      "value": "60000"
+    },
+    {
+      "default": "50",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.sservice.scan.pagesize",
+      "value": "50"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.use.partition.table",
+      "value": "False"
+    },
+    {
+      "default": "60000",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.client.scanner.timeout.period",
+      "value": "60000"
+    },
+    {
+      "default": "0.0.0.0",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.info.bindAddress",
+      "value": "0.0.0.0"
+    },
+    {
+      "default": "0.1",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hfile.block.cache.size",
+      "value": "0.1"
+    },
+    {
+      "default": "0",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regions.slop",
+      "value": "0"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.cluster.distributed",
+      "value": "True"
+    },
+    {
+      "default": "0.25",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.regionserver.global.memstore.lowerLimit",
+      "value": "0.25"
+    },
+    {
+      "default": "60000",
+      "groups": [],
+      "name": "master.port",
+      "value": "60000"
+    },
+    {
+      "default": "60020",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "regionserver.port",
+      "value": "60020"
+    },
+    {
+      "default": "0 0 1 * * ?",
+      "groups": [
+        "hbase-site.xml"
+      ],
+      "name": "hbase.hregion.majorcompaction.cron",
+      "value": "0 0 1 * * ?"
+    }
+  ],
+  "version": "1.0"
+}

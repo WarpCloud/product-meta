@@ -1,0 +1,32 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "txsql": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "txsql1",
+            "application_type": "TXSQL"
+         },
+         "configs": {
+            "txsql_cpu_limit": 2,
+            "txsql_cpu_request": 2,
+            "txsql_memory_limit": 4,
+            "txsql_memory_request": 4
+         },
+         "instance_settings": { },
+         "moduleName": "txsql",
+         "name": "txsql1-txsql",
+         "version": "5.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

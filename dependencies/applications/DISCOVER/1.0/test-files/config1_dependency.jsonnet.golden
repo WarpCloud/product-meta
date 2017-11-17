@@ -1,0 +1,67 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": true,
+   "TCU": {
+      "discover": {
+         "c": 0.5,
+         "m": 0.25,
+         "s": 0.5
+      },
+      "localcran": {
+         "c": 0.125,
+         "m": 0.25,
+         "s": 0.25
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "discover1",
+            "application_type": "DISCOVER"
+         },
+         "configs": {
+            "discover_cpu_limit": 0.20000000000000001,
+            "discover_cpu_request": 0.20000000000000001,
+            "discover_memory_limit": 4,
+            "discover_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "yarn",
+               "name": "yarn"
+            },
+            {
+               "moduleName": "localcran",
+               "name": "discover1-localcran"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "discover",
+         "name": "discover1-discover",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "discover1",
+            "application_type": "DISCOVER"
+         },
+         "configs": {
+            "localcran_cpu_limit": 0.5,
+            "localcran_cpu_request": 0.5,
+            "localcran_memory_limit": 1,
+            "localcran_memory_request": 1
+         },
+         "instance_settings": { },
+         "moduleName": "localcran",
+         "name": "discover1-localcran",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

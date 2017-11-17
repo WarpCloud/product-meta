@@ -1,0 +1,90 @@
+{
+  "instance_type": "guardian",
+  "configs": [
+    {
+      "default": "",
+      "groups": [],
+      "name": "guardian.apacheds.data.dir",
+      "value": ""
+    },
+    {
+      "default": "10389",
+      "groups": [],
+      "name": "guardian.apacheds.ldap.port",
+      "value": "10389"
+    },
+    {
+      "default": "6088",
+      "groups": [],
+      "name": "guardian.apacheds.kdc.port",
+      "value": "6088"
+    },
+    {
+      "default": "8380",
+      "groups": [],
+      "name": "guardian.server.port",
+      "value": "8380"
+    },
+    {
+      "default": "True",
+      "groups": [],
+      "name": "guardian.server.tls.enabled",
+      "value": "True"
+    },
+    {
+      "default": "admin",
+      "groups": [],
+      "name": "guardian.admin.username",
+      "value": "admin"
+    },
+    {
+      "default": "123",
+      "groups": [],
+      "name": "guardian.admin.password",
+      "value": "123"
+    },
+    {
+      "default": "Transwarp!",
+      "groups": [],
+      "name": "guardian.ds.root.password",
+      "value": "Transwarp!"
+    },
+    {
+      "default": "dc=tdh",
+      "groups": [],
+      "name": "guardian.ds.domain",
+      "value": "dc=tdh"
+    },
+    {
+      "default": "TDH",
+      "groups": [],
+      "name": "guardian.ds.realm",
+      "value": "TDH"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "guardian.ds.ldap.tls.enabled",
+      "value": "False"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "guardian.server.kerberos.password",
+      "value": ""
+    },
+    {
+      "default": "7800",
+      "groups": [],
+      "name": "guardian.cache.repli.bind.port",
+      "value": "7800"
+    },
+    {
+      "default": "True",
+      "groups": [],
+      "name": "guardian.client.cache.enabled",
+      "value": "True"
+    }
+  ],
+  "version": "5.0"
+}

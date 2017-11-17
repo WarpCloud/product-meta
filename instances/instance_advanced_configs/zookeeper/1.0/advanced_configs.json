@@ -1,0 +1,62 @@
+{
+  "instance_type": "zookeeper",
+  "configs": [
+    {
+      "default": "2181",
+      "groups": [],
+      "name": "zookeeper.client.port",
+      "value": "2181"
+    },
+    {
+      "default": "2888",
+      "groups": [],
+      "name": "zookeeper.peer.communicate.port",
+      "value": "2888"
+    },
+    {
+      "default": "3888",
+      "groups": [],
+      "name": "zookeeper.leader.elect.port",
+      "value": "3888"
+    },
+    {
+      "default": "9911",
+      "groups": [],
+      "name": "zookeeper.jmxremote.port",
+      "value": "9911"
+    },
+    {
+      "default": "9000",
+      "groups": [
+        "zoo_cfg"
+      ],
+      "name": "tickTime",
+      "value": "9000"
+    },
+    {
+      "default": "10",
+      "groups": [
+        "zoo_cfg"
+      ],
+      "name": "initLimit",
+      "value": "10"
+    },
+    {
+      "default": "5",
+      "groups": [
+        "zoo_cfg"
+      ],
+      "name": "syncLimit",
+      "value": "5"
+    },
+    {
+      "default": "0",
+      "groups": [
+        "zoo_cfg"
+      ],
+      "name": "maxClientCnxns",
+      "value": "0"
+    }
+  ],
+  "version": "1.0"
+}

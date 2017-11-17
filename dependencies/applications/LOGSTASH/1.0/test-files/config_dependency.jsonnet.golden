@@ -1,0 +1,48 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "logstash": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "logstash1",
+            "application_type": "LOGSTASH",
+            "use_search": "true"
+         },
+         "configs": {
+            "logstash_cpu_limit": 1,
+            "logstash_cpu_request": 1,
+            "logstash_memory_limit": 2,
+            "logstash_memory_request": 2,
+            "logstash_tmp_storage": {
+               "accessMode": "ReadWriteOnce",
+               "limits": {
+                  "blkio.throttle.read_iops_device": 500,
+                  "blkio.throttle.write_iops_device": 500
+               },
+               "size": "10Gi",
+               "storageClass": "silver"
+            }
+         },
+         "dependencies": [
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "logstash",
+         "name": "logstash1-logstash",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

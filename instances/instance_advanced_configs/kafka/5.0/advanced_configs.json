@@ -1,0 +1,344 @@
+{
+  "instance_type": "kafka",
+  "configs": [
+    {
+      "default": "False",
+      "groups": [],
+      "name": "delete.topic.enable",
+      "value": "False"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "listeners",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "advertised.listeners",
+      "value": ""
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "num.network.threads",
+      "value": "2"
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "num.io.threads",
+      "value": "2"
+    },
+    {
+      "default": "1048576",
+      "groups": [],
+      "name": "socket.send.buffer.bytes",
+      "value": "1048576"
+    },
+    {
+      "default": "1048576",
+      "groups": [],
+      "name": "socket.receive.buffer.bytes",
+      "value": "1048576"
+    },
+    {
+      "default": "104857600",
+      "groups": [],
+      "name": "socket.request.max.bytes",
+      "value": "104857600"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "kmq.log.dirs",
+      "value": ""
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "num.partitions",
+      "value": "2"
+    },
+    {
+      "default": "1",
+      "groups": [],
+      "name": "num.recovery.threads.per.data.dir",
+      "value": "1"
+    },
+    {
+      "default": "10000",
+      "groups": [],
+      "name": "log.flush.interval.messages",
+      "value": "10000"
+    },
+    {
+      "default": "1000",
+      "groups": [],
+      "name": "log.flush.interval.ms",
+      "value": "1000"
+    },
+    {
+      "default": "3000",
+      "groups": [],
+      "name": "log.flush.scheduler.interval.ms",
+      "value": "3000"
+    },
+    {
+      "default": "1000000",
+      "groups": [],
+      "name": "log.flush.intervals.ms.per.topic",
+      "value": "1000000"
+    },
+    {
+      "default": "168",
+      "groups": [],
+      "name": "log.retention.hours",
+      "value": "168"
+    },
+    {
+      "default": "-1",
+      "groups": [],
+      "name": "log.retention.bytes",
+      "value": "-1"
+    },
+    {
+      "default": "536870912",
+      "groups": [],
+      "name": "log.segment.bytes",
+      "value": "536870912"
+    },
+    {
+      "default": "300000",
+      "groups": [],
+      "name": "log.retention.check.interval.ms",
+      "value": "300000"
+    },
+    {
+      "default": "168",
+      "groups": [],
+      "name": "log.roll.hours",
+      "value": "168"
+    },
+    {
+      "default": "10485760",
+      "groups": [],
+      "name": "log.index.size.max.bytes",
+      "value": "10485760"
+    },
+    {
+      "default": "4096",
+      "groups": [],
+      "name": "log.index.interval.bytes",
+      "value": "4096"
+    },
+    {
+      "default": "6000",
+      "groups": [],
+      "name": "zookeeper.connection.timeout.ms",
+      "value": "6000"
+    },
+    {
+      "default": "6000",
+      "groups": [],
+      "name": "zookeeper.session.timeout.ms",
+      "value": "6000"
+    },
+    {
+      "default": "2000",
+      "groups": [],
+      "name": "zookeeper.sync.time.ms",
+      "value": "2000"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "queued.max.requests",
+      "value": "500"
+    },
+    {
+      "default": "100000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "log.segment.bytes.per.topic",
+      "value": "100000"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "log.roll.hours.per.topic",
+      "value": "1"
+    },
+    {
+      "default": "300000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "log.flush.interval.ms.per.topic",
+      "value": "300000"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "auto.create.topics.enable",
+      "value": "True"
+    },
+    {
+      "default": "30000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "controller.socket.timeout.ms",
+      "value": "30000"
+    },
+    {
+      "default": "10",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "controller.message.queue.size",
+      "value": "10"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "default.replication.factor",
+      "value": "1"
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.lag.time.max.ms",
+      "value": "10000"
+    },
+    {
+      "default": "30000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.socket.timeout.ms",
+      "value": "30000"
+    },
+    {
+      "default": "65536",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.socket.receive.buffer.bytes",
+      "value": "65536"
+    },
+    {
+      "default": "1000000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.fetch.max.bytes",
+      "value": "1000000"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.fetch.wait.max.ms",
+      "value": "500"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.fetch.min.bytes",
+      "value": "500"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "num.replica.fetchers",
+      "value": "1"
+    },
+    {
+      "default": "5000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "replica.high.watermark.checkpoint.interval.ms",
+      "value": "5000"
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "fetch.purgatory.purge.interval.requests",
+      "value": "10000"
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "producer.purgatory.purge.interval.requests",
+      "value": "10000"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "controlled.shutdown.enable",
+      "value": "False"
+    },
+    {
+      "default": "3",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "controlled.shutdown.max.retries",
+      "value": "3"
+    },
+    {
+      "default": "5000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "controlled.shutdown.retry.backoff.ms",
+      "value": "5000"
+    },
+    {
+      "default": "1000000",
+      "groups": [
+        "server.properties"
+      ],
+      "name": "message.max.bytes",
+      "value": "1000000"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "brokerid.equalsto.dndid",
+      "value": "False"
+    },
+    {
+      "default": "9999",
+      "groups": [],
+      "name": "kafka.jmx.remote.port",
+      "value": "9999"
+    }
+  ],
+  "version": "5.0"
+}
