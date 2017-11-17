@@ -1,0 +1,18 @@
+{
+  "instance_type": "sqoop",
+  "configs": [
+    {
+      "default": "12000",
+      "groups": [],
+      "name": "sqoop.http.port",
+      "value": "12000"
+    },
+    {
+      "default": "12001",
+      "groups": [],
+      "name": "sqoop.admin.port",
+      "value": "12001"
+    }
+  ],
+  "version": "5.0"
+}

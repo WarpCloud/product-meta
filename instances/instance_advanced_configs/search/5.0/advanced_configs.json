@@ -1,0 +1,118 @@
+{
+  "instance_type": "search",
+  "configs": [
+    {
+      "default": "cluster",
+      "groups": [],
+      "name": "cluster.name",
+      "value": "cluster"
+    },
+    {
+      "default": "default",
+      "groups": [],
+      "name": "node.rack",
+      "value": "default"
+    },
+    {
+      "default": "",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "node.master",
+      "value": ""
+    },
+    {
+      "default": "True",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "node.data",
+      "value": "True"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "path.data",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "path.logs",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "network.publish_host",
+      "value": ""
+    },
+    {
+      "default": "5m",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "gateway.recover_after_time",
+      "value": "5m"
+    },
+    {
+      "default": "1",
+      "groups": [],
+      "name": "discovery.zen.minimum_master_nodes",
+      "value": "1"
+    },
+    {
+      "default": "async",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "index.translog.durability",
+      "value": "async"
+    },
+    {
+      "default": "niofs",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "index.store.type",
+      "value": "niofs"
+    },
+    {
+      "default": "50%",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "indices.fielddata.cache.size",
+      "value": "50%"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "discovery.zen.ping.multicast.enabled",
+      "value": "False"
+    },
+    {
+      "default": "9200",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "http.port",
+      "value": "9200"
+    },
+    {
+      "default": "9300",
+      "groups": [
+        "elasticsearch.yml"
+      ],
+      "name": "transport.tcp.port",
+      "value": "9300"
+    }
+  ],
+  "version": "5.0"
+}

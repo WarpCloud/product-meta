@@ -1,0 +1,38 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "ockle": {
+         "c": 0.5,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "ockle1",
+            "application_type": "OCKLE"
+         },
+         "configs": {
+            "ockle_cpu_limit": 1,
+            "ockle_cpu_request": 1,
+            "ockle_memory_limit": 4,
+            "ockle_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "ockle",
+         "name": "ockle1-ockle",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

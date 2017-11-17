@@ -1,0 +1,32 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "simmail": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "simmail1",
+            "application_type": "SIMMAIL"
+         },
+         "configs": {
+            "simmail_cpu_limit": 2,
+            "simmail_cpu_request": 2,
+            "simmail_memory_limit": 4,
+            "simmail_memory_request": 4
+         },
+         "instance_settings": { },
+         "moduleName": "simmail",
+         "name": "simmail1-simmail",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

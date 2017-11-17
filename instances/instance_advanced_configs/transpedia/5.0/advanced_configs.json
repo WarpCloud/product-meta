@@ -1,0 +1,12 @@
+{
+  "instance_type": "transpedia",
+  "configs": [
+    {
+      "default": "8099",
+      "groups": [],
+      "name": "transpedia.port",
+      "value": "8099"
+    }
+  ],
+  "version": "5.0"
+}

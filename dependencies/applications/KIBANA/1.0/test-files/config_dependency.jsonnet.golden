@@ -1,0 +1,39 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "kibana": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "kibana1",
+            "application_type": "KIBANA",
+            "use_search": "true"
+         },
+         "configs": {
+            "kibana_cpu_limit": 1,
+            "kibana_cpu_request": 1,
+            "kibana_memory_limit": 2,
+            "kibana_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "kibana",
+         "name": "kibana1-kibana",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

@@ -1,0 +1,174 @@
+{
+  "instance_type": "sophon",
+  "configs": [
+    {
+      "default": "simple",
+      "groups": [],
+      "name": "livy.cache.type",
+      "value": "simple"
+    },
+    {
+      "default": "9996",
+      "groups": [],
+      "name": "livy.scheduler.port",
+      "value": "9996"
+    },
+    {
+      "default": "/user/midas",
+      "groups": [],
+      "name": "livy.storage.basedir",
+      "value": "/user/midas"
+    },
+    {
+      "default": "6066",
+      "groups": [],
+      "name": "livy.server.port",
+      "value": "6066"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "livy.server.user.manager.open",
+      "value": "False"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "dieu.docker.image.name",
+      "value": ""
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "dieu.worker.instances",
+      "value": "2"
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "dieu.ps.instances",
+      "value": "2"
+    },
+    {
+      "default": "120000",
+      "groups": [],
+      "name": "dieu.running.timeout",
+      "value": "120000"
+    },
+    {
+      "default": "default",
+      "groups": [],
+      "name": "dieu.k8s.namespace",
+      "value": "default"
+    },
+    {
+      "default": "512MB",
+      "groups": [],
+      "name": "midas.server.initial_heapsize",
+      "value": "512MB"
+    },
+    {
+      "default": "1024MB",
+      "groups": [],
+      "name": "midas.server.heapsize",
+      "value": "1024MB"
+    },
+    {
+      "default": "128MB",
+      "groups": [],
+      "name": "midas.server.permsize",
+      "value": "128MB"
+    },
+    {
+      "default": "18432MB",
+      "groups": [],
+      "name": "spark.executor.memory",
+      "value": "18432MB"
+    },
+    {
+      "default": "18432MB",
+      "groups": [],
+      "name": "spark.driver.memory",
+      "value": "18432MB"
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "spark.executor.cores",
+      "value": "2"
+    },
+    {
+      "default": "4",
+      "groups": [],
+      "name": "spark.executor.instances",
+      "value": "4"
+    },
+    {
+      "default": "default",
+      "groups": [],
+      "name": "spark.yarn.queue",
+      "value": "default"
+    },
+    {
+      "default": "file:/usr/lib/midas/warehouse",
+      "groups": [],
+      "name": "spark.sql.warehouse.dir",
+      "value": "file:/usr/lib/midas/warehouse"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.executor.heapsize",
+      "value": "2048MB"
+    },
+    {
+      "default": "128MB",
+      "groups": [],
+      "name": "spark.executor.permsize",
+      "value": "128MB"
+    },
+    {
+      "default": "256MB",
+      "groups": [],
+      "name": "spark.executor.max_permsize",
+      "value": "256MB"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.driver.heapsize",
+      "value": "2048MB"
+    },
+    {
+      "default": "128MB",
+      "groups": [],
+      "name": "spark.driver.permsize",
+      "value": "128MB"
+    },
+    {
+      "default": "256MB",
+      "groups": [],
+      "name": "spark.driver.max_permsize",
+      "value": "256MB"
+    },
+    {
+      "default": "6379",
+      "groups": [],
+      "name": "midas.redis.port",
+      "value": "6379"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "sophon.inceptor.ldap.username",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "sophon.inceptor.ldap.password",
+      "value": ""
+    }
+  ],
+  "version": "1.0"
+}

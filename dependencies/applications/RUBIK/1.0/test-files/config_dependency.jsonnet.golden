@@ -1,0 +1,73 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "notification": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      },
+      "rubik": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "rubik1",
+            "application_type": "RUBIK"
+         },
+         "configs": {
+            "notification_cpu_limit": 1,
+            "notification_cpu_request": 1,
+            "notification_memory_limit": 2,
+            "notification_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "notification",
+         "name": "rubik1-notification",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "rubik1",
+            "application_type": "RUBIK"
+         },
+         "configs": {
+            "rubik_cpu_limit": 2,
+            "rubik_cpu_request": 2,
+            "rubik_memory_limit": 4,
+            "rubik_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "inceptor",
+               "name": "inceptor"
+            },
+            {
+               "moduleName": "notification",
+               "name": "rubik1-notification"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "rubik",
+         "name": "rubik1-rubik",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

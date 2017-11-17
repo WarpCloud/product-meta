@@ -1,0 +1,150 @@
+{
+  "instance_type": "hdfs",
+  "configs": [
+    {
+      "default": "",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.datanode.data.dir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.datanode.failed.volumes.tolerated",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.namenode.name.dir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.datanode.du.reserved",
+      "value": ""
+    },
+    {
+      "default": "8020",
+      "groups": [],
+      "name": "namenode.rpc-port",
+      "value": "8020"
+    },
+    {
+      "default": "50070",
+      "groups": [],
+      "name": "namenode.http-port",
+      "value": "50070"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "namenode.use.wildcard",
+      "value": "False"
+    },
+    {
+      "default": "True",
+      "groups": [],
+      "name": "journalnode.use.wildcard",
+      "value": "True"
+    },
+    {
+      "default": "8485",
+      "groups": [],
+      "name": "journalnode.rpc-port",
+      "value": "8485"
+    },
+    {
+      "default": "8480",
+      "groups": [],
+      "name": "journalnode.http-port",
+      "value": "8480"
+    },
+    {
+      "default": "True",
+      "groups": [],
+      "name": "datanode.use.wildcard",
+      "value": "True"
+    },
+    {
+      "default": "50020",
+      "groups": [],
+      "name": "datanode.ipc-port",
+      "value": "50020"
+    },
+    {
+      "default": "50010",
+      "groups": [],
+      "name": "datanode.port",
+      "value": "50010"
+    },
+    {
+      "default": "50075",
+      "groups": [],
+      "name": "datanode.http-port",
+      "value": "50075"
+    },
+    {
+      "default": "50020",
+      "groups": [],
+      "name": "datanode.ipc-port",
+      "value": "50020"
+    },
+    {
+      "default": "4096MB",
+      "groups": [],
+      "name": "default.heap.size",
+      "value": "4096MB"
+    },
+    {
+      "default": "shell(/bin/true)",
+      "groups": [
+        "core-site.xml"
+      ],
+      "name": "dfs.ha.fencing.methods",
+      "value": "shell(/bin/true)"
+    },
+    {
+      "default": "755",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.datanode.data.dir.perm",
+      "value": "755"
+    },
+    {
+      "default": "hbase",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.permissions.superusergroup",
+      "value": "hbase"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hdfs-site.xml"
+      ],
+      "name": "dfs.namenode.acls.enabled",
+      "value": "True"
+    },
+    {
+      "default": "1440",
+      "groups": [
+        "core-site.xml"
+      ],
+      "name": "fs.trash.interval",
+      "value": "1440"
+    }
+  ],
+  "version": "5.0"
+}

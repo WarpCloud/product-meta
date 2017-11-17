@@ -1,0 +1,290 @@
+{
+  "instance_type": "discover",
+  "configs": [
+    {
+      "default": "default",
+      "groups": [],
+      "name": "discover.yarn.queue",
+      "value": "default"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.client.memory",
+      "value": "2048MB"
+    },
+    {
+      "default": "18080",
+      "groups": [],
+      "name": "spark.master.webui.port",
+      "value": "18080"
+    },
+    {
+      "default": "18081",
+      "groups": [],
+      "name": "spark.worker.webui.port",
+      "value": "18081"
+    },
+    {
+      "default": "7077",
+      "groups": [],
+      "name": "spark.master.port",
+      "value": "7077"
+    },
+    {
+      "default": "7078",
+      "groups": [],
+      "name": "spark.worker.port",
+      "value": "7078"
+    },
+    {
+      "default": "18082",
+      "groups": [],
+      "name": "spark.history.ui.port",
+      "value": "18082"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.driver.memory",
+      "value": "2048MB"
+    },
+    {
+      "default": "1024MB",
+      "groups": [],
+      "name": "spark.excutor.memory",
+      "value": "1024MB"
+    },
+    {
+      "default": "96MB",
+      "groups": [],
+      "name": "spark.reducer.maxSizeInFlight",
+      "value": "96MB"
+    },
+    {
+      "default": "64",
+      "groups": [],
+      "name": "spark.shuffle.file.buffer",
+      "value": "64"
+    },
+    {
+      "default": "90",
+      "groups": [],
+      "name": "spark.files.fetchTimeout",
+      "value": "90"
+    },
+    {
+      "default": "/discover/notebook/",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.dir",
+      "value": "/discover/notebook/"
+    },
+    {
+      "default": "8686",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.server.port",
+      "value": "8686"
+    },
+    {
+      "default": "8443",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.server.ssl.port",
+      "value": "8443"
+    },
+    {
+      "default": "/",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.server.context.path",
+      "value": "/"
+    },
+    {
+      "default": "webapps",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.war.tempdir",
+      "value": "webapps"
+    },
+    {
+      "default": "",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.homescreen",
+      "value": ""
+    },
+    {
+      "default": "False",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.homescreen.hide",
+      "value": "False"
+    },
+    {
+      "default": "org.apache.zeppelin.notebook.repo.GitNotebookRepo",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.storage",
+      "value": "org.apache.zeppelin.notebook.repo.GitNotebookRepo"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.one.way.sync",
+      "value": "False"
+    },
+    {
+      "default": "interpreter",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.interpreter.dir",
+      "value": "interpreter"
+    },
+    {
+      "default": "local-repo",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.interpreter.localRepo",
+      "value": "local-repo"
+    },
+    {
+      "default": "org.apache.zeppelin.rbase.RInterpreter,org.apache.zeppelin.hive.HiveInterpreter,org.apache.zeppelin.spark.SparkInterpreter,org.apache.zeppelin.spark.PySparkInterpreter,org.apache.zeppelin.rinterpreter.RRepl,org.apache.zeppelin.rinterpreter.KnitR,org.apache.zeppelin.spark.SparkRInterpreter,org.apache.zeppelin.spark.SparkSqlInterpreter,org.apache.zeppelin.spark.DepInterpreter,org.apache.zeppelin.markdown.Markdown,org.apache.zeppelin.angular.AngularInterpreter,org.apache.zeppelin.shell.ShellInterpreter,org.apache.zeppelin.file.HDFSFileInterpreter,org.apache.zeppelin.flink.FlinkInterpreter,,org.apache.zeppelin.python.PythonInterpreter,org.apache.zeppelin.python.PythonInterpreterPandasSql,org.apache.zeppelin.python.PythonCondaInterpreter,org.apache.zeppelin.python.PythonDockerInterpreter,org.apache.zeppelin.lens.LensInterpreter,org.apache.zeppelin.ignite.IgniteInterpreter,org.apache.zeppelin.ignite.IgniteSqlInterpreter,org.apache.zeppelin.cassandra.CassandraInterpreter,org.apache.zeppelin.geode.GeodeOqlInterpreter,org.apache.zeppelin.postgresql.PostgreSqlInterpreter,org.apache.zeppelin.jdbc.JDBCInterpreter,org.apache.zeppelin.kylin.KylinInterpreter,org.apache.zeppelin.elasticsearch.ElasticsearchInterpreter,org.apache.zeppelin.scalding.ScaldingInterpreter,org.apache.zeppelin.alluxio.AlluxioInterpreter,org.apache.zeppelin.hbase.HbaseInterpreter,org.apache.zeppelin.livy.LivySparkInterpreter,org.apache.zeppelin.livy.LivyPySparkInterpreter,org.apache.zeppelin.livy.LivyPySpark3Interpreter,org.apache.zeppelin.livy.LivySparkRInterpreter,org.apache.zeppelin.livy.LivySparkSQLInterpreter,org.apache.zeppelin.bigquery.BigQueryInterpreter,org.apache.zeppelin.beam.BeamInterpreter,org.apache.zeppelin.pig.PigInterpreter,org.apache.zeppelin.pig.PigQueryInterpreter,org.apache.zeppelin.scio.ScioInterpreter",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.interpreters",
+      "value": "org.apache.zeppelin.rbase.RInterpreter,org.apache.zeppelin.hive.HiveInterpreter,org.apache.zeppelin.spark.SparkInterpreter,org.apache.zeppelin.spark.PySparkInterpreter,org.apache.zeppelin.rinterpreter.RRepl,org.apache.zeppelin.rinterpreter.KnitR,org.apache.zeppelin.spark.SparkRInterpreter,org.apache.zeppelin.spark.SparkSqlInterpreter,org.apache.zeppelin.spark.DepInterpreter,org.apache.zeppelin.markdown.Markdown,org.apache.zeppelin.angular.AngularInterpreter,org.apache.zeppelin.shell.ShellInterpreter,org.apache.zeppelin.file.HDFSFileInterpreter,org.apache.zeppelin.flink.FlinkInterpreter,,org.apache.zeppelin.python.PythonInterpreter,org.apache.zeppelin.python.PythonInterpreterPandasSql,org.apache.zeppelin.python.PythonCondaInterpreter,org.apache.zeppelin.python.PythonDockerInterpreter,org.apache.zeppelin.lens.LensInterpreter,org.apache.zeppelin.ignite.IgniteInterpreter,org.apache.zeppelin.ignite.IgniteSqlInterpreter,org.apache.zeppelin.cassandra.CassandraInterpreter,org.apache.zeppelin.geode.GeodeOqlInterpreter,org.apache.zeppelin.postgresql.PostgreSqlInterpreter,org.apache.zeppelin.jdbc.JDBCInterpreter,org.apache.zeppelin.kylin.KylinInterpreter,org.apache.zeppelin.elasticsearch.ElasticsearchInterpreter,org.apache.zeppelin.scalding.ScaldingInterpreter,org.apache.zeppelin.alluxio.AlluxioInterpreter,org.apache.zeppelin.hbase.HbaseInterpreter,org.apache.zeppelin.livy.LivySparkInterpreter,org.apache.zeppelin.livy.LivyPySparkInterpreter,org.apache.zeppelin.livy.LivyPySpark3Interpreter,org.apache.zeppelin.livy.LivySparkRInterpreter,org.apache.zeppelin.livy.LivySparkSQLInterpreter,org.apache.zeppelin.bigquery.BigQueryInterpreter,org.apache.zeppelin.beam.BeamInterpreter,org.apache.zeppelin.pig.PigInterpreter,org.apache.zeppelin.pig.PigQueryInterpreter,org.apache.zeppelin.scio.ScioInterpreter"
+    },
+    {
+      "default": "spark,md,angular,sh,livy,alluxio,file,psql,flink,python,ignite,lens,cassandra,geode,kylin,elasticsearch,scalding,jdbc,hbase,bigquery,beam",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.interpreter.group.order",
+      "value": "spark,md,angular,sh,livy,alluxio,file,psql,flink,python,ignite,lens,cassandra,geode,kylin,elasticsearch,scalding,jdbc,hbase,bigquery,beam"
+    },
+    {
+      "default": "30000",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.interpreter.connect.timeout",
+      "value": "30000"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl",
+      "value": "False"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.client.auth",
+      "value": "False"
+    },
+    {
+      "default": "keystore",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.keystore.path",
+      "value": "keystore"
+    },
+    {
+      "default": "JKS",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.keystore.type",
+      "value": "JKS"
+    },
+    {
+      "default": "change me",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.keystore.password",
+      "value": "change me"
+    },
+    {
+      "default": "truststore",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.truststore.path",
+      "value": "truststore"
+    },
+    {
+      "default": "JKS",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.ssl.truststore.type",
+      "value": "JKS"
+    },
+    {
+      "default": "*",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.server.allowed.origins",
+      "value": "*"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.anonymous.allowed",
+      "value": "False"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.notebook.public",
+      "value": "True"
+    },
+    {
+      "default": "1024000",
+      "groups": [
+        "zeppelin-site.xml"
+      ],
+      "name": "zeppelin.websocket.max.text.message.size",
+      "value": "1024000"
+    },
+    {
+      "default": "/discover/ide",
+      "groups": [],
+      "name": "discover.ide.home.dir",
+      "value": "/discover/ide"
+    },
+    {
+      "default": "2121",
+      "groups": [],
+      "name": "discover.local-cran.port",
+      "value": "2121"
+    }
+  ],
+  "version": "1.0"
+}

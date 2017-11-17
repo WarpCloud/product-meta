@@ -1,0 +1,85 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "metastore": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      },
+      "slipstream": {
+         "c": 1,
+         "m": 1,
+         "s": 1
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "slipstream1",
+            "application_type": "SLIPSTREAM"
+         },
+         "configs": {
+            "metastore_cpu_limit": 1,
+            "metastore_cpu_request": 1,
+            "metastore_memory_limit": 2,
+            "metastore_memory_request": 2,
+            "mysql_cpu_limit": 1,
+            "mysql_cpu_request": 1,
+            "mysql_memory_limit": 2,
+            "mysql_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "metastore",
+         "name": "slipstream1-metastore",
+         "version": "5.0"
+      },
+      {
+         "annotations": {
+            "application_name": "slipstream1",
+            "application_type": "SLIPSTREAM"
+         },
+         "configs": {
+            "inceptor_executor_cpu_limit": 1,
+            "inceptor_executor_cpu_request": 1,
+            "inceptor_executor_memory_limit": 4,
+            "inceptor_executor_memory_request": 4,
+            "inceptor_master_cpu_limit": 1,
+            "inceptor_master_cpu_request": 1,
+            "inceptor_master_memory_limit": 4,
+            "inceptor_master_memory_request": 4
+         },
+         "dependencies": [
+            {
+               "moduleName": "metastore",
+               "name": "slipstream1-metastore"
+            },
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "yarn",
+               "name": "yarn"
+            },
+            {
+               "moduleName": "zookeeper",
+               "name": "zookeeper"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "slipstream",
+         "name": "slipstream1-slipstream",
+         "version": "5.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

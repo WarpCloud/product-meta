@@ -1,0 +1,278 @@
+{
+  "instance_type": "inceptor",
+  "configs": [
+    {
+      "default": "",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.exec.scratchdir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.metastore.warehouse.dir",
+      "value": ""
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.metastore.execute.setugi",
+      "value": "True"
+    },
+    {
+      "default": "lib/hive-hwi-0.8.1.war",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.hwi.war.file",
+      "value": "lib/hive-hwi-0.8.1.war"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "plsql.compile.dml.check.semantic",
+      "value": "True"
+    },
+    {
+      "default": "password",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "javax.jdo.option.ConnectionPassword",
+      "value": "password"
+    },
+    {
+      "default": "60000",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.session.check.interval",
+      "value": "60000"
+    },
+    {
+      "default": "hive,hue",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.users.in.admin.role",
+      "value": "hive,hue"
+    },
+    {
+      "default": "yarn",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "mapreduce.framework.name",
+      "value": "yarn"
+    },
+    {
+      "default": "500",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hbase.client.scanner.caching",
+      "value": "500"
+    },
+    {
+      "default": "SchemaTable",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "datanucleus.autoStartMechanism",
+      "value": "SchemaTable"
+    },
+    {
+      "default": "org.apache.hadoop.hive.ql.io.HiveInputFormat",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.input.format",
+      "value": "org.apache.hadoop.hive.ql.io.HiveInputFormat"
+    },
+    {
+      "default": "",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.aux.jars.path",
+      "value": ""
+    },
+    {
+      "default": "14400000",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.idle.session.timeout",
+      "value": "14400000"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "datanucleus.fixedDatastore",
+      "value": "True"
+    },
+    {
+      "default": "com.mysql.jdbc.Driver",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "javax.jdo.option.ConnectionDriverName",
+      "value": "com.mysql.jdbc.Driver"
+    },
+    {
+      "default": "inceptoruser",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "javax.jdo.option.ConnectionUserName",
+      "value": "inceptoruser"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.exec.dynamic.partition",
+      "value": "False"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.exec.compress.output",
+      "value": "False"
+    },
+    {
+      "default": "NONE",
+      "groups": [],
+      "name": "hive.server2.authentication",
+      "value": "NONE"
+    },
+    {
+      "default": "28800000",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.idle.operation.timeout",
+      "value": "28800000"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "datanucleus.autoCreateSchema",
+      "value": "False"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.exec.compress.intermediate",
+      "value": "True"
+    },
+    {
+      "default": "False",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.logging.operation.enabled",
+      "value": "False"
+    },
+    {
+      "default": "True",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.enabled",
+      "value": "True"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "ngmr.fastdisk.dir",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "ngmr.localdir",
+      "value": ""
+    },
+    {
+      "default": "0.5",
+      "groups": [],
+      "name": "ngmr.fastdisk.size",
+      "value": "0.5"
+    },
+    {
+      "default": "0.5",
+      "groups": [],
+      "name": "ngmr.cache.size",
+      "value": "0.5"
+    },
+    {
+      "default": "1",
+      "groups": [],
+      "name": "ngmr.executors.perjob",
+      "value": "1"
+    },
+    {
+      "default": "4040",
+      "groups": [],
+      "name": "inceptor.ui.port",
+      "value": "4040"
+    },
+    {
+      "default": "10000",
+      "groups": [
+        "hive-site.xml"
+      ],
+      "name": "hive.server2.thrift.port",
+      "value": "10000"
+    },
+    {
+      "default": "9083",
+      "groups": [],
+      "name": "hive.metastore.port",
+      "value": "9083"
+    },
+    {
+      "default": "3306",
+      "groups": [],
+      "name": "mysql.port",
+      "value": "3306"
+    },
+    {
+      "default": "",
+      "groups": [],
+      "name": "mysql.datadir",
+      "value": ""
+    },
+    {
+      "default": "1",
+      "groups": [],
+      "name": "executor.number.eachnode",
+      "value": "1"
+    },
+    {
+      "default": "51888",
+      "groups": [],
+      "name": "spark.driver.port",
+      "value": "51888"
+    }
+  ],
+  "version": "2.0"
+}

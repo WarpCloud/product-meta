@@ -1,0 +1,82 @@
+{
+  "instance_type": "transporter",
+  "configs": [
+    {
+      "default": "20000",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.server.thrift.port",
+      "value": "20000"
+    },
+    {
+      "default": "org.apache.hadoop.hive.jdbc.HiveDriver",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.jdbc.driver.class",
+      "value": "org.apache.hadoop.hive.jdbc.HiveDriver"
+    },
+    {
+      "default": "tdtuser",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.jdbc.user.name",
+      "value": "tdtuser"
+    },
+    {
+      "default": "passord",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.jdbc.passord",
+      "value": "passord"
+    },
+    {
+      "default": "0.0.0.0",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.server.thrift.bind.host",
+      "value": "0.0.0.0"
+    },
+    {
+      "default": "tdtuser",
+      "groups": [],
+      "name": "tdt.jdbc.user.name",
+      "value": "tdtuser"
+    },
+    {
+      "default": "password",
+      "groups": [],
+      "name": "tdt.jdbc.password",
+      "value": "password"
+    },
+    {
+      "default": "100",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.jdbc.max.active",
+      "value": "100"
+    },
+    {
+      "default": "10",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.jdbc.initial.size",
+      "value": "10"
+    },
+    {
+      "default": "NONE",
+      "groups": [
+        "tdt-site.xml"
+      ],
+      "name": "tdt.server.authentication",
+      "value": "NONE"
+    }
+  ],
+  "version": "5.0"
+}

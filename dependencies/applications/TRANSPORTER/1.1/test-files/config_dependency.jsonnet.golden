@@ -1,0 +1,55 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "tdt": {
+         "c": 0.5,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "transporter1",
+            "application_type": "TRANSPORTER"
+         },
+         "configs": {
+            "tdt_cpu_limit": 1,
+            "tdt_cpu_request": 1,
+            "tdt_memory_limit": 4,
+            "tdt_memory_request": 4,
+            "tdt_tmp_storage": {
+               "accessMode": "ReadWriteOnce",
+               "limits": {
+                  "blkio.throttle.read_iops_device": 500,
+                  "blkio.throttle.write_iops_device": 500
+               },
+               "size": "10Gi",
+               "storageClass": "silver"
+            }
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "inceptor",
+               "name": "inceptor"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "tdt",
+         "name": "transporter1-tdt",
+         "version": "5.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

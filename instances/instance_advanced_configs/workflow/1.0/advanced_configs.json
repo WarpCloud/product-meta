@@ -1,0 +1,132 @@
+{
+  "instance_type": "workflow",
+  "configs": [
+    {
+      "default": "9091",
+      "groups": [],
+      "name": "workflow.http.port",
+      "value": "9091"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "workflow.access.control.enabled",
+      "value": "False"
+    },
+    {
+      "default": "100",
+      "groups": [],
+      "name": "workflow.execute.pool.size",
+      "value": "100"
+    },
+    {
+      "default": "60000",
+      "groups": [],
+      "name": "workflow.verify.interval.millis",
+      "value": "60000"
+    },
+    {
+      "default": "100",
+      "groups": [],
+      "name": "workflow.global.max.running",
+      "value": "100"
+    },
+    {
+      "default": "20",
+      "groups": [],
+      "name": "workflow.recover.max.running",
+      "value": "20"
+    },
+    {
+      "default": "20",
+      "groups": [],
+      "name": "workflow.in.wf.max.running",
+      "value": "20"
+    },
+    {
+      "default": "100",
+      "groups": [],
+      "name": "workflow.plugin.max.running",
+      "value": "100"
+    },
+    {
+      "default": "100",
+      "groups": [],
+      "name": "workflow.plugin.retry.max.running",
+      "value": "100"
+    },
+    {
+      "default": "600000",
+      "groups": [],
+      "name": "workflow.max.running.delay.millis",
+      "value": "600000"
+    },
+    {
+      "default": "86400",
+      "groups": [],
+      "name": "workflow.recovery.seconds",
+      "value": "86400"
+    },
+    {
+      "default": "workflow",
+      "groups": [],
+      "name": "workflow.datasource.username",
+      "value": "workflow"
+    },
+    {
+      "default": "Workflow_123",
+      "groups": [],
+      "name": "workflow.datasource.password",
+      "value": "Workflow_123"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "workflow.datasource.initialize",
+      "value": "False"
+    },
+    {
+      "default": "workflowuser",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionUserName",
+      "value": "workflowuser"
+    },
+    {
+      "default": "password",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionPassword",
+      "value": "password"
+    },
+    {
+      "default": "workflow",
+      "groups": [],
+      "name": "workflow.pseudo.username",
+      "value": "workflow"
+    },
+    {
+      "default": "Trasnwarp4T",
+      "groups": [],
+      "name": "workflow.pseudo.password",
+      "value": "Trasnwarp4T"
+    },
+    {
+      "default": "1800",
+      "groups": [],
+      "name": "workflow.session.timeout.seconds",
+      "value": "1800"
+    },
+    {
+      "default": "30",
+      "groups": [],
+      "name": "workflow.cookie.rememberme.days",
+      "value": "30"
+    },
+    {
+      "default": "24",
+      "groups": [],
+      "name": "workflow.cookie.maxage.hours",
+      "value": "24"
+    }
+  ],
+  "version": "1.0"
+}

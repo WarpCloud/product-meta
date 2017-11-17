@@ -1,0 +1,121 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "TCU": {
+      "filebeat": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      },
+      "kafka-manager": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      },
+      "logstash": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      },
+      "milano-portal": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "tdcmilano",
+            "application_type": "TDCMILANO"
+         },
+         "configs": {
+            "filebeat_cpu_limit": 1,
+            "filebeat_cpu_request": 1,
+            "filebeat_memory_limit": 2,
+            "filebeat_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "filebeat",
+         "name": "tdcmilano-filebeat",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "tdcmilano",
+            "application_type": "TDCMILANO"
+         },
+         "configs": {
+            "logstash_cpu_limit": 1,
+            "logstash_cpu_request": 1,
+            "logstash_memory_limit": 2,
+            "logstash_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "logstash",
+         "name": "tdcmilano-logstash",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "tdcmilano",
+            "application_type": "TDCMILANO"
+         },
+         "configs": {
+            "kafka_manager_cpu_limit": 1,
+            "kafka_manager_cpu_request": 1,
+            "kafka_manager_memory_limit": 2,
+            "kafka_manager_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
+               "moduleName": "zookeeper",
+               "name": "zookeeper"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "kafka-manager",
+         "name": "tdcmilano-kafka-manager",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "tdcmilano",
+            "application_type": "TDCMILANO"
+         },
+         "configs": {
+            "milano_portal_cpu_limit": 1,
+            "milano_portal_cpu_request": 1,
+            "milano_portal_memory_limit": 2,
+            "milano_portal_memory_request": 2
+         },
+         "instance_settings": { },
+         "moduleName": "milano-portal",
+         "name": "tdcmilano-milano-portal",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

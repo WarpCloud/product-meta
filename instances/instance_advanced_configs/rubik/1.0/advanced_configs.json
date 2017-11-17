@@ -1,0 +1,84 @@
+{
+  "instance_type": "rubik",
+  "configs": [
+    {
+      "default": "32125",
+      "groups": [],
+      "name": "designer.server.port",
+      "value": "32125"
+    },
+    {
+      "default": "30",
+      "groups": [],
+      "name": "connectionpool.expiretime",
+      "value": "30"
+    },
+    {
+      "default": "30000",
+      "groups": [],
+      "name": "cube.group.max.size",
+      "value": "30000"
+    },
+    {
+      "default": "True",
+      "groups": [],
+      "name": "cube.group.optimize",
+      "value": "True"
+    },
+    {
+      "default": "50",
+      "groups": [],
+      "name": "subtask.execute.max.size",
+      "value": "50"
+    },
+    {
+      "default": "False",
+      "groups": [],
+      "name": "cubeparser.enabalejoinhint",
+      "value": "False"
+    },
+    {
+      "default": "3000",
+      "groups": [],
+      "name": "service.rest.sleep.interval.ms",
+      "value": "3000"
+    },
+    {
+      "default": "3",
+      "groups": [],
+      "name": "service.rest.retries",
+      "value": "3"
+    },
+    {
+      "default": "60000",
+      "groups": [],
+      "name": "service.rest.readTimeoutMSecs",
+      "value": "60000"
+    },
+    {
+      "default": "60000",
+      "groups": [],
+      "name": "service.rest.connectTimeoutMSecs",
+      "value": "60000"
+    },
+    {
+      "default": "2",
+      "groups": [],
+      "name": "service.checker.sleep.interval.min",
+      "value": "2"
+    },
+    {
+      "default": "rubikuser",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionUserName",
+      "value": "rubikuser"
+    },
+    {
+      "default": "password",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionPassword",
+      "value": "password"
+    }
+  ],
+  "version": "1.0"
+}

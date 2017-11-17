@@ -1,0 +1,42 @@
+{
+  "instance_type": "governor",
+  "configs": [
+    {
+      "default": "21000",
+      "groups": [],
+      "name": "governor.http.port",
+      "value": "21000"
+    },
+    {
+      "default": "governor",
+      "groups": [],
+      "name": "atlas.graph.storage.hbase.table",
+      "value": "governor"
+    },
+    {
+      "default": "governor",
+      "groups": [],
+      "name": "atlas.graph.index.search.index-name",
+      "value": "governor"
+    },
+    {
+      "default": "governor",
+      "groups": [],
+      "name": "atlas.kafka.hook.group.id",
+      "value": "governor"
+    },
+    {
+      "default": "governoruser",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionUserName",
+      "value": "governoruser"
+    },
+    {
+      "default": "password",
+      "groups": [],
+      "name": "javax.jdo.option.ConnectionPassword",
+      "value": "password"
+    }
+  ],
+  "version": "1.0"
+}
