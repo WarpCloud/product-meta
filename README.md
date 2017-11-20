@@ -6,3 +6,7 @@ Organizing products' and components' meta info, including default configurations
 
 * Add new configurations WITHOUT breaking released logic
 * run `./testing.sh` for validation
+
+## Contact
+
+* xiaming.chen@transwarp.io
