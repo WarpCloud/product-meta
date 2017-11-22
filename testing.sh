@@ -242,14 +242,14 @@ done
 fi
 }
 
-#$PROJROOT$LIBAPPADAPTER/run_test.sh
+$PROJROOT$LIBAPPADAPTER/run_test.sh
 format_all_json $COMPONENTS
 format_all_json $PRODUCTS
 format_all_json $RESOURCES
 format_all_json $SYS_COMPONENTS
 format_all_json $SYS_CONTEXTS
 
-#validate_components $PROJROOT$COMPONENTS
-#validate_components $PROJROOT$SYS_COMPONENTS
-#validate_products $PROJROOT$PRODUCTS $COMPONENTS
-#validate_sys_context $PROJROOT$SYS_CONTEXTS
+validate_components $PROJROOT$COMPONENTS
+validate_components $PROJROOT$SYS_COMPONENTS
+validate_products $PROJROOT$PRODUCTS $COMPONENTS
+validate_sys_context $PROJROOT$SYS_CONTEXTS
