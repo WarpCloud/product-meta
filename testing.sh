@@ -241,7 +241,7 @@ fi
 }
 
 $PROJROOT$LIBAPPADAPTER/run_test.sh
-format_all_json
+#format_all_json
 
 #validate_components $PROJROOT$COMPONENTS
 #validate_components $PROJROOT$SYS_COMPONENTS
