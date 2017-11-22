@@ -6,8 +6,9 @@ set -e
 FILEPATH=$(cd ${0%/*} && echo $PWD/${0##*/})
 PROJROOT=$(cd $(dirname $FILEPATH) && pwd)
 COMPONENTS="/components"
+RESOURCES="/resources"
 SYS_COMPONENTS="/system_components"
-CONTEXTS="/system_contexts"
+SYS_CONTEXTS="/system_contexts"
 PRODUCTS="/products"
 LIBAPPADAPTER="/dependencies"
 LIBAPPADAPTER_PATH="/applications"
@@ -16,7 +17,8 @@ LIBAPPADAPTER_PATH="/applications"
 # verify json format
 # using jq to parse json file
 function format_all_json(){
-    for json in $(find ./ -name "*.json"); do
+    folder=$1
+    for json in $(find .$folder -name "*.json"); do
         result=$(jq . $json 2>&1; echo "\n")
         if [[ ${result:0:1} != "{" ]]; then
             echo -e "=== \033[31m $PROJROOT${json:1}: invalid json! ${result:0:0-3}\033[0m=== "
@@ -241,9 +243,13 @@ fi
 }
 
 #$PROJROOT$LIBAPPADAPTER/run_test.sh
-format_all_json
+format_all_json $COMPONENTS
+format_all_json $PRODUCTS
+format_all_json $RESOURCES
+format_all_json $SYS_COMPONENTS
+format_all_json $SYS_CONTEXTS
 
 #validate_components $PROJROOT$COMPONENTS
 #validate_components $PROJROOT$SYS_COMPONENTS
 #validate_products $PROJROOT$PRODUCTS $COMPONENTS
-#validate_sys_context $PROJROOT$CONTEXTS
+#validate_sys_context $PROJROOT$SYS_CONTEXTS
