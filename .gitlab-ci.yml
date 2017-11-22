@@ -8,6 +8,9 @@ stages:
 precommit_build:
   stage: precommit_build
   script:
+    - wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - rpm -ivh epel-release-latest-7.noarch.rpm
+
     - yum -y install jq
     - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@172.16.1.41:10080/pub/jsonnet.git jsonnet
     - cd jsonnet
