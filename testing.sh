@@ -258,7 +258,7 @@ function is_test_failed() {
   fi
 }
 
-#$PROJROOT$LIBAPPADAPTER/run_test.sh
+$PROJROOT$LIBAPPADAPTER/run_test.sh
 is_fmt_json $COMPONENTS
 is_fmt_json $PRODUCTS
 is_fmt_json $RESOURCES
