@@ -23,4 +23,4 @@ precommit_build:
     - k8s
 
 after_script:
-   - ps aux | grep docker | grep -v "grep" |  awk '{print $2}'
+   - ps aux | grep docker | grep -v "grep" |  awk '{print $2}' | xargs kill -s SIGKILL;exit
