@@ -240,7 +240,7 @@ done
 fi
 }
 
-$PROJROOT$LIBAPPADAPTER/run_test.sh
+#$PROJROOT$LIBAPPADAPTER/run_test.sh
 format_all_json
 
 #validate_components $PROJROOT$COMPONENTS
