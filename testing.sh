@@ -20,7 +20,7 @@ function format_all_json(){
         result=$(jq . $json 2>&1; echo "\n")
         if [[ ${result:0:1} != "{" ]]; then
             echo -e "=== \033[31m $PROJROOT${json:1}: invalid json! ${result:0:0-3}\033[0m=== "
-            exit 1
+#            exit 1
         else
             echo -e "=== \033[31m $PROJROOT${json:1}: valid json! \033[32m PASS \033[0m=== "
         fi
