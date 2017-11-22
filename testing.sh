@@ -13,24 +13,28 @@ PRODUCTS="/products"
 LIBAPPADAPTER="/dependencies"
 LIBAPPADAPTER_PATH="/applications"
 
+FAILED=0
 
+function echo_failed_message(){
+    FAILED=$((FAILED + 1))
+    message=$1
+    echo -e "=== \033[31m FAIL \033[0m $message ==="
+}
 # verify json format
 # using jq to parse json file
-function format_all_json(){
+function is_fmt_json(){
     folder=$1
     for json in $(find .$folder -name "*.json"); do
         result=$(jq . $json 2>&1; echo "\n")
         if [[ ${result:0:1} != "{" ]]; then
-            echo -e "=== \033[31m $PROJROOT${json:1}: invalid json! ${result:0:0-3}\033[0m=== "
-#            exit 1
-        else
-            echo -e "=== \033[31m $PROJROOT${json:1}: valid json! \033[32m PASS \033[0m=== "
+            echo_failed_message "$PROJROOT${json:1}: invalid json!"
+            exit 1
         fi
     done
 }
 
 # compare name,edition and component_type field with dirname of default.json
-validate_default_json_path(){
+function validate_default_json_path(){
     # 1.name=component_type-edition
     # 2.default dirname = $components_root_path/$component_type/edition
     component_root_path=$1
@@ -41,16 +45,16 @@ validate_default_json_path(){
     name=$(jq .'name' $json)
 
     if [[ ${name:1:0-1} != ${component_type:1:0-1}-${edition:1:0-1} ]]; then
-        echo -e "=== \033[31m $json: wrong ['name', 'component_type', 'edition'] pair! \033[0m=== "
+        echo_failed_message "$json: wrong ['name', 'component_type', 'edition'] pair!"
     else
         if [[ $default_dirname != $component_root_path/${component_type:1:0-1}/${edition:1:0-1} ]]; then
-            echo -e "=== \033[31m $json: dirname inconsistent with 'name' field! \033[0m=== "
+            echo_failed_message "$json: dirname inconsistent with 'name' field!"
         fi
     fi
 }
 
 # check if every dependency in default.json can be found in the /components or /system_components
-validate_default_json_dependency(){
+function validate_default_json_dependency(){
     component_root_path=$1
     json=$2
     key=$3
@@ -61,44 +65,43 @@ validate_default_json_dependency(){
         for dependency in $dependencies; do
             dep_path=$component_root_path/$dependency
             if [[ ! -d $dep_path ]];then
-                echo -e "=== \033[31m $json: wrong dependency, cannot find $dependency in $component_root_path! \033[0m=== "
+                echo_failed_message "$json: wrong dependency, cannot find $dependency in $component_root_path!"
             fi
         done
     fi
 }
 
 # every components should be a part of libappadapter/dependencies
-validate_libappadapter_dependency(){
+function validate_libappadapter_dependency(){
     component_path=$1
     product_component=$2
     libappadapter_path=$PROJROOT$LIBAPPADAPTER$LIBAPPADAPTER_PATH
     if [[ ! -d $libappadapter_path/$product_component ]]; then
-        echo -e "=== \033[31m $component_path/$product_component: wrong dependency, cannot find /$product_component in $libappadapter_path! \033[0m=== "
+        echo_failed_message "$component_path/$product_component: wrong dependency, cannot find /$product_component in $libappadapter_path!"
     fi
 }
 
 # validate directory: /components and /system_components
 # validate the directory structure and some fields in default.json
-validate_components(){
+function validate_components(){
     components_root_path=$1
-
     if [[ ! -d $components_root_path  ]]; then
-        echo -e "=== \033[31m $components_root_path: not found! \033[0m=== "
+        echo_failed_message "$components_root_path: not found!"
     else
         for component in $components_root_path/*; do
             if [[ ! -d $component ]];then
-                echo -e "=== \033[31m $component: not a valid component directory! \033[0m=== "
+                echo_failed_message "$component: not a valid component directory!"
             else
             for version in $component/*; do
                 if [[ ! -d $version ]];then
-                    echo -e "=== \033[31m $version: not a valid version directory! \033[0m=== "
+                    echo_failed_message $version:' not a valid version directory!'
                 else
                     # check if every component is in libappadapter
                     component_subdir=$(basename $component)/$(basename $version)
                     validate_libappadapter_dependency $components_root_path $component_subdir
                     default_json_file=$version/default.json
                     if [[ ! -f $default_json_file ]]; then
-                        echo -e "=== \033[31m $default_json_file: not found! \033[0m=== "
+                        echo_failed_message "$default_json_file: not found!"
                     else
                         # if /components/componentX/versionY/default.json exists, validate default.json field
                         validate_default_json_path $components_root_path $default_json_file
@@ -113,25 +116,25 @@ validate_components(){
 
 
 # validate directory: /products
-validate_products(){
+function validate_products(){
     product_root_path=$1
     components=$2
     if [[ ! -d $product_root_path  ]]; then
-        echo -e "=== \033[31m $product_root_path: not found! \033[0m=== "
+        echo_failed_message "$product_root_path: not found!"
     else
         for product in $product_root_path/*; do
 
             # validate /products/productX/category.json
             category=$product/category.json
             if [[ ! -f $category ]]; then
-                echo -e "=== \033[31m $category: not found! \033[0m=== "
+                echo_failed_message "$category: not found!"
             else
                 category_name=$(jq .'category_name' $category)
                 if [[ $category_name == null ]]; then
-                    echo -e "=== \033[31m $category: missing category name! \033[0m=== "
+                    echo_failed_message "$category: missing category name!"
                 else
                     if [[ ${category_name:1:0-1} != ${product##*/} ]]; then
-                        echo -e "=== \033[31m $category: dirname not equals to category name! \033[0m=== "
+                        echo_failed_message "$category: dirname not equals to category name!"
                     fi
                 fi
             fi
@@ -141,15 +144,15 @@ validate_products(){
             for version in $(ls $product -F | grep "/$"); do
                 product_default_file=$product/$version'default.json'
                 if [[ ! -f $product_default_file ]];then
-                    echo -e "=== \033[31m $product/$version: missing default.json! \033[0m=== "
+                    echo_failed_message "$product/$version: missing default.json!"
                 else
                     # validate edition field
                     product_edition=$(jq .'edition' $product_default_file)
                     if [[ $product_edition == null ]];then
-                        echo -e "=== \033[31m $product_default_file: missing edition! \033[0m=== "
+                        echo_failed_message "$product_default_file: missing edition!"
                     else
                         if [[ ${product_edition:1:0-1} != ${version:0:0-1} ]];then
-                            echo -e "=== \033[31m $product_default_file: dirname not equals to edition! \033[0m=== "
+                            echo_failed_message "$product_default_file: dirname not equals to edition!"
                         fi
                     fi
 
@@ -167,7 +170,7 @@ validate_products(){
                         # components in products-default.json should be in the components directory
                         prod_dft_dir=$PROJROOT$COMPONENTS/$prod_dft_component/$prod_dft_version
                         if [[ ! -d $prod_dft_dir ]]; then
-                            echo -e "=== \033[31m $product_default_file: wrong dependency, cannot find $prod_dft_component/$prod_dft_version in $PROJROOT$COMPONENTS \033[0m=== "
+                            echo_failed_message "$product_default_file: wrong dependency, cannot find $prod_dft_component/$prod_dft_version in $PROJROOT$COMPONENTS"
                         fi
                     done
                 fi
@@ -179,40 +182,40 @@ validate_products(){
 
 
 # validate directory: /system_context
-validate_sys_context(){
+function validate_sys_context(){
 context_path=$1
 if [[ ! -d $context_path  ]]; then
-    echo -e "=== \033[31m $context_path: not found! \033[0m=== "
+    echo_failed_message "$context_path: not found!"
 else
 for sys_context in $(ls $context_path | awk -F/ '{print $1}'); do
     if [[ ! -d $context_path/$sys_context ]];then
-        echo -e "=== \033[31m $context_path/$sys_context: not a valid directory! \033[0m=== "
+        echo_failed_message "$context_path/$sys_context: not a valid directory!"
     else
     for version in $(ls $context_path/$sys_context | awk -F/ '{print $1}'); do
 
         # validate default.json file in /contextX/versionY
         context_version_path=$context_path'/'$sys_context'/'$version
-        context_default_file=$context_version_path"/default.json"
+        context_default_file=$context_version_path'/default.json'
         if [[ ! -f $context_default_file ]]; then
-            echo -e "=== \033[31m $context_default_file: not found! \033[0m=== "
+            echo_failed_message "$context_default_file: not found!"
         else
             # compare name, version with dirname
             context_dft_name=$(jq .'name' $context_default_file)
-            context_dft_version=$(jq ."edition" $context_default_file)
+            context_dft_version=$(jq .'edition' $context_default_file)
             if [[ $context_dft_version == null || $context_dft_name == null ]]; then
-                echo -e "=== \033[31m context_default_file : key error, name and edition cannot be null\033[0m=== "
+                echo_failed_message "$context_default_file : key error, name and edition cannot be null"
             else
                 context_dft_name=${context_dft_name:1:0-1}
                 context_dft_version=${context_dft_version:1:0-1}
 
                 context_name=${context_dft_name/-$context_dft_version/}
                 if [[ ${#context_name} == ${#context_dft_name} ]]; then
-                    echo -e "=== \033[31m $context_default_file: wrong [name,edition] pair!\033[0m=== "
+                    echo_failed_message "$context_default_file: wrong [name,edition] pair!"
                 fi
 
                 file_path_from_default=$context_path/${context_name//-/_}/$context_dft_version
                 if [[ $file_path_from_default != $context_version_path ]]; then
-                    echo -e "=== \033[31m $context_default_file: dirname inconsistent with 'name' value \033[0m=== "
+                    echo_failed_message "$context_default_file: dirname inconsistent with 'name' value"
                 fi
             fi
 
@@ -231,7 +234,8 @@ for sys_context in $(ls $context_path | awk -F/ '{print $1}'); do
                     # components in system_context/version/default.json should be in the system_components directory
                     sys_ctxt_dir=$PROJROOT$SYS_COMPONENTS/$sys_ctxt_component/$sys_ctxt_version
                     if [[ ! -d $sys_ctxt_dir ]]; then
-                        echo -e "=== \033[31m $context_default_file: wrong dependency, cannot find $sys_ctxt_component/$version in $context_path\033[0m=== "
+                        FAILED=$((FAILED + 1))
+                        echo_failed_message "$context_default_file: wrong dependency, cannot find $sys_ctxt_component/$version in $context_path"
                     fi
                 done
             fi
@@ -242,14 +246,27 @@ done
 fi
 }
 
-$PROJROOT$LIBAPPADAPTER/run_test.sh
-format_all_json $COMPONENTS
-format_all_json $PRODUCTS
-format_all_json $RESOURCES
-format_all_json $SYS_COMPONENTS
-format_all_json $SYS_CONTEXTS
+
+function is_test_failed() {
+  echo
+  if [[ $FAILED -eq 0 ]]; then
+  	echo "All dependency test pass."
+        exit 0
+  else
+  	echo "FAILED: $FAILED."
+        exit 1
+  fi
+}
+
+#$PROJROOT$LIBAPPADAPTER/run_test.sh
+is_fmt_json $COMPONENTS
+is_fmt_json $PRODUCTS
+is_fmt_json $RESOURCES
+is_fmt_json $SYS_COMPONENTS
+is_fmt_json $SYS_CONTEXTS
 
 validate_components $PROJROOT$COMPONENTS
 validate_components $PROJROOT$SYS_COMPONENTS
 validate_products $PROJROOT$PRODUCTS $COMPONENTS
 validate_sys_context $PROJROOT$SYS_CONTEXTS
+is_test_failed
