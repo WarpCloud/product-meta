@@ -243,7 +243,7 @@ fi
 $PROJROOT$LIBAPPADAPTER/run_test.sh
 format_all_json
 
-validate_components $PROJROOT$COMPONENTS
-validate_components $PROJROOT$SYS_COMPONENTS
-validate_products $PROJROOT$PRODUCTS $COMPONENTS
-validate_sys_context $PROJROOT$CONTEXTS
+#validate_components $PROJROOT$COMPONENTS
+#validate_components $PROJROOT$SYS_COMPONENTS
+#validate_products $PROJROOT$PRODUCTS $COMPONENTS
+#validate_sys_context $PROJROOT$CONTEXTS
