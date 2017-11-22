@@ -21,11 +21,3 @@ precommit_build:
     - /.*_master_\d+/
   tags:
     - k8s
-
-after_script:
-   - ps aux
-   - ps aux | grep docker
-   - ps aux | grep docker | grep -v 'grep'
-   - ps aux | grep docker | grep -v "grep"
-   - ps aux | grep docker | grep -v "grep" | awk '{print $2}'
-   - ps aux | grep docker | grep -v "grep" |  awk '{print $2}' | xargs kill -s SIGKILL;exit
