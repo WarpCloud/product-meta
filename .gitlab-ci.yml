@@ -8,7 +8,11 @@ stages:
 precommit_build:
   stage: precommit_build
   script:
+    - set -e
+    - wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - rpm -ivh epel-release-latest-7.noarch.rpm
     - yum -y install jq
+    - yum -y install python-devel
     - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@172.16.1.41:10080/pub/jsonnet.git jsonnet
     - cd jsonnet
     - make
@@ -22,5 +26,3 @@ precommit_build:
   tags:
     - k8s
 
-after_script:
-   - ps aux | grep docker | grep -v "grep" |  awk '{print $2}' | xargs kill -9
