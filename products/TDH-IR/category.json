@@ -1,6 +1,6 @@
 {
   "category_name": "TDH-IR",
-  "description": "为企业构建一站式内部搜索平台和信息检索服务，提供PB级别的高速全文检索服务，实现毫秒级的响应速度，高并发支持字段精确和模糊检索以及快速统计。",
+  "description": "PB级别的高速全文检索服务，提供高并发支持，以及字段精确、模糊检索和快速统计功能，支持用SQL做内容检索。",
   "display_name": "信息检索",
   "description_en": "Information Retrieval",
   "display_name_en": "Information Retrieval"

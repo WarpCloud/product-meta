@@ -1,6 +1,6 @@
 {
   "category_name": "TDH-RC",
-  "description": "云上的流处理分析平台，可对流数据进行实时采集和实时处理。帮助企业构建实时数据仓库，开发多种在线实时应用，实现对流式信息的充分利用。",
+  "description": "云上的流处理分析平台，对流数据进行实时采集和实时处理，帮助企业构建在线实时应用，充分利用流式数据。",
   "display_name": "实时计算",
   "description_en": "Streaming Computing",
   "display_name_en": "Streaming Computing"

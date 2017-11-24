@@ -1,6 +1,6 @@
 {
   "category_name": "TDH-DM",
-  "description": "用于为企业构建数据集市，面向特定的应用主题，对接数据分析业务，提供包括交互式分析、OLAP Cube设计、报表、调度在内的多种工具，实现自动化的报表应用构建。",
+  "description": "数据集市面向部门级业务，提供各种模型用以组织数据，实现交互式分析以及自动化的报表应用构建。",
   "display_name": "数据集市",
   "description_en": "Data Market",
   "display_name_en": "Data Market"
