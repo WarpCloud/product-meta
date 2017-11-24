@@ -2,6 +2,11 @@
    "Customized_Namespace": "default",
    "Develop": false,
    "TCU": {
+      "cas": {
+         "c": 1.5,
+         "m": 3,
+         "s": 3
+      },
       "guardian": {
          "c": 1,
          "m": 2,
@@ -17,14 +22,30 @@
          },
          "configs": {
             "guardian_cpu_limit": 4,
-            "guardian_cpu_request": 4,
-            "guardian_memory_limit": 8,
-            "guardian_memory_request": 8
+            "guardian_memory_limit": 8
          },
          "instance_settings": { },
          "moduleName": "guardian",
          "name": "guardian1-guardian",
          "version": "5.1"
+      },
+      {
+         "annotations": {
+            "application_name": "guardian1",
+            "application_type": "GUARDIAN"
+         },
+         "configs": {
+            "cas_config_server_cpu_limit": 2,
+            "cas_config_server_memory_limit": 4,
+            "cas_mgnt_server_cpu_limit": 2,
+            "cas_mgnt_server_memory_limit": 4,
+            "cas_server_cpu_limit": 2,
+            "cas_server_memory_limit": 4
+         },
+         "instance_settings": { },
+         "moduleName": "cas",
+         "name": "guardian1-cas",
+         "version": "1.0"
       }
    ],
    "instance_settings": { },

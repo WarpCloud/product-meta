@@ -4,11 +4,5 @@
   "description": "The central service for authentication, authorization and audit",
   "edition": "5.1",
   "category": "SYSTEM",
-  "configs": [
-    {
-      "name": "GUARDIAN_CONFIG_EXAMPLE",
-      "value": "GUARDIAN_CONFIG_VALUE",
-      "description": "Example guardian configuration"
-    }
-  ]
+  "configs": []
 }

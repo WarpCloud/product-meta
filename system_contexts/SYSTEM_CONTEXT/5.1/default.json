@@ -1,11 +1,11 @@
 {
-  "name": "SYSTEM_CONTEXT-5.0",
+  "name": "SYSTEM_CONTEXT-5.1",
   "description": "xxxxxx",
-  "edition": "5.0",
+  "edition": "5.1",
   "components": [
-    "GUARDIAN-5.0",
+    "GUARDIAN-5.1",
     "TCC-1.0",
-    "TXSQL-5.0",
+    "TXSQL-5.1",
     "KIBANA-1.0",
     "TICKET-1.0"
   ]

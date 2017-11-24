@@ -7,21 +7,27 @@ function(config={})
   local appName = config.application_name;
 
   local appVersion = config.application_version;
+  local casVersion = "1.0";
 
+  local _casModuleName = "cas";
   local _guardianModuleName = "guardian";
 
   //-------------------
   // Dependent modules
   //-------------------
 
+  local cas = t.createInstance(_casModuleName, config, casVersion) +
+    r.moduleResource(_casModuleName, config);
+
   local guardian = t.createInstance(_guardianModuleName, config, appVersion) +
     r.moduleResource(_guardianModuleName, config);
 
   local TCU = {
+    [_casModuleName]: r.moduleTCU(_casModuleName, config),
     [_guardianModuleName]: r.moduleTCU(_guardianModuleName, config),
   };
 
   t.getDefaultSettings(config) + {
-    instance_list: [guardian],
+    instance_list: [guardian, cas],
     TCU: TCU,
   }
