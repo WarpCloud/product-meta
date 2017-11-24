@@ -259,14 +259,18 @@ function is_test_failed() {
 }
 
 $PROJROOT$LIBAPPADAPTER/run_test.sh
+
 is_fmt_json $COMPONENTS
 is_fmt_json $PRODUCTS
 is_fmt_json $RESOURCES
 is_fmt_json $SYS_COMPONENTS
 is_fmt_json $SYS_CONTEXTS
 
+$PROJROOT$LIBAPPADAPTER/run_test.sh clean
+
 validate_components $PROJROOT$COMPONENTS
 validate_components $PROJROOT$SYS_COMPONENTS
 validate_products $PROJROOT$PRODUCTS $COMPONENTS
 validate_sys_context $PROJROOT$SYS_CONTEXTS
+
 is_test_failed

@@ -14,15 +14,33 @@ local t = import "../../../applib/utils.libsonnet";
           {
             guardian_cpu_limit: 0.2,
             guardian_memory_limit: 1,
-            guardian_cpu_request: self.guardian_cpu_limit,
-            guardian_memory_request: self.guardian_memory_limit,
           }
         else
           {
             guardian_cpu_limit: t.objectField(config, "guardian_cpu_limit", 4),
             guardian_memory_limit: t.objectField(config, "guardian_memory_limit", 8),
-            guardian_cpu_request: t.objectField(config, "guardian_cpu_request", self.guardian_cpu_limit),
-            guardian_memory_request: t.objectField(config, "guardian_memory_request", self.guardian_memory_limit),
+          },
+      cas:
+        if Debug_Request then
+          {
+            cas_server_cpu_limit: 0.2,
+            cas_server_memory_limit: 1,
+            cas_mgnt_server_cpu_limit: self.cas_server_cpu_limit,
+            cas_mgnt_server_memory_limit: self.cas_server_memory_limit,
+            cas_config_server_cpu_limit: self.cas_server_cpu_limit,
+            cas_config_server_memory_limit: self.cas_server_memory_limit,
+          }
+        else
+          {
+            local cpu_limit = resource.guardian.guardian_cpu_limit,
+            local memory_limit = resource.guardian.guardian_memory_limit,
+
+            cas_server_cpu_limit: t.objectField(config, "cas_server_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+            cas_server_memory_limit: t.objectField(config, "cas_server_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+            cas_mgnt_server_cpu_limit: t.objectField(config, "cas_mgnt_server_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+            cas_mgnt_server_memory_limit: t.objectField(config, "cas_mgnt_server_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+            cas_config_server_cpu_limit: t.objectField(config, "cas_config_server_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+            cas_config_server_memory_limit: t.objectField(config, "cas_config_server_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
           },
     };
 
@@ -52,11 +70,21 @@ local t = import "../../../applib/utils.libsonnet";
       guardian: [
         "guardian_cpu_limit",
       ],
+      cas: [
+        "cas_server_cpu_limit",
+        "cas_mgnt_server_cpu_limit",
+        "cas_config_server_cpu_limit"
+      ],
     };
 
     local mem_metrics = {
       guardian: [
         "guardian_memory_limit",
+      ],
+      cas: [
+        "cas_server_memory_limit",
+        "cas_mgnt_server_memory_limit",
+        "cas_config_server_memory_limit"
       ],
     };
 
