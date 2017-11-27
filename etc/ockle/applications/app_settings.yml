@@ -1,0 +1,74 @@
+#EXAMPLE:
+#  configuration:
+#    advanced_configs:
+#      - example_env_list
+#  optional_dependencies:
+#    - example_dependency
+#  security:
+#
+common:
+  security:
+    guardian_address: Transwarp_Guardian_Address
+    guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
+    auto_injected_volumes: Transwarp_Auto_Injected_Volumes
+
+#DISCOVER:
+
+#GOVERNOR:
+
+#HDFS:
+
+#HYPERBASE:
+
+INCEPTOR:
+  configuration:
+    advanced_configs:
+      - inceptor_master_env_list
+      - inceptor_executor_env_list
+  optional_dependencies:
+    - hyperbase
+    - search
+
+#KAFKA:
+
+KIBANA:
+  optional_dependencies:
+    - search
+
+#KONG:
+
+LOGSTASH:
+  optional_dependencies:
+    - search
+
+#NOTEBOOK:
+
+#NOTIFICATION:
+
+#PILOT:
+
+#RUBIK:
+
+#SEARCH:
+
+SLIPSTREAM:
+  configuration:
+    advanced_configs:
+      - inceptor_master_env_list
+      - inceptor_executor_env_list
+
+TERMINAL:
+  optional_dependencies:
+    - hdfs
+    - hyperbase
+    - inceptor
+    - search
+    - yarn
+
+#TRANSPORTER:
+
+#TXSQL:
+
+#WORKFLOW:
+
+#YARN:

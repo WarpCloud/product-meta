@@ -1,0 +1,395 @@
+#example:
+#  resource:
+#    node_num:
+#     default:
+#       - example_replicas
+#     singleton:
+#       - example_replicas
+#    disks:
+#      sata_disks:
+#        - example_disks
+#  configuration:
+#    advanced_configs:
+#      - example_env_list
+#  database:
+#    name: example_txsql_db_name
+#  image:
+#    default:
+#      - example_image_config
+#  security:
+#   principal_list:
+#     - example_principal_list
+#
+common:
+  security:
+    guardian_address: Transwarp_Guardian_Address
+    guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
+    auto_injected_volumes: Transwarp_Auto_Injected_Volumes
+    kerberos: _mounted_kerberos
+
+discover:
+  image:
+    default:
+      - discover_image
+  security:
+    principal_list:
+      - discover
+    security_on:
+      - discover_mounted_kerberos
+      - discover_authentication_enableguardian
+
+elasticsearch:
+  resource:
+    node_num:
+      default:
+        - es_data_replicas
+      singleton:
+        - es_client_replicas
+        - es_master_replicas
+  image:
+    default:
+      - es_image
+  security:
+    principal_list:
+      - es
+
+filebeat:
+  security:
+    principal_list:
+      - filebeat
+
+filerobot:
+  image:
+      default:
+        - filerobot_image
+  security:
+    principal_list:
+      - filerobot
+    security_on:
+      - filerobot_enable_guardian
+
+governor:
+  database:
+    name: governor_txsql_db_name
+  security:
+    principal_list:
+      - hbase
+      - kafka
+      - zookeeper
+    security_on:
+      - governor_mounted_kerberos
+
+hdfs:
+  resource:
+    node_num:
+      default:
+        - hdfs_data_replicas
+        - hdfs_journal_replicas
+      singleton:
+        - hdfs_httpfs_replicas
+    disks:
+      sata_disks:
+        - hdfs_data_disk_replicas
+  image:
+    default:
+      - hdfs_data_image
+      - hdfs_journal_image
+      - hdfs_name_image
+      - hdfs_zkfc_image
+    hdfshttpfs:
+      - hdfs_httpfs_image
+  security:
+    principal_list:
+      - HTTP
+      - hdfs
+    security_on:
+      - hdfs_mounted_kerberos
+
+hyperbase:
+  resource:
+    node_num:
+      default:
+        - hbase_rs_replicas
+      singleton:
+        - hbase_master_replicas
+        - hbase_thrift_replicas
+        - hbase_rest_replicas
+  image:
+    default:
+      - hbase_master_image
+      - hbase_rs_image
+      - hbase_rest_image
+      - hbase_thrift_image
+  security:
+    principal_list:
+      - HTTP
+      - hbase
+    security_on:
+      - hbase_mounted_kerberos
+
+
+inceptor:
+  resource:
+    node_num:
+      default:
+        - inceptor_executor_replicas
+      singleton:
+        - inceptor_replicas
+    disks:
+      sata_disks:
+        - inceptor_shuffle_dir_counts
+  configuration:
+    advanced_configs:
+      - inceptor_master_env_list
+      - inceptor_executor_env_list
+  image:
+    default:
+      - inceptor_executor_image
+      - inceptor_master_image
+  security:
+    principal_list:
+      - HTTP
+      - hive
+    security_on:
+      - inceptor_mounted_kerberos
+
+
+metastore:
+  resource:
+    node_num:
+      singleton:
+        - metastore_replicas
+  image:
+    default:
+      - metastore_image
+      - mysql_image
+  security:
+    principal_list:
+      - HTTP
+      - hive
+    security_on:
+      - inceptor_mounted_kerberos
+
+
+kafka:
+  resource:
+    node_num:
+      default:
+        - kafka_replicas
+  image:
+    default:
+      - kafka_image
+  security:
+    principal_list:
+      - kafka
+    security_on:
+      - kafka_mounted_kerberos
+
+kibana:
+  resource:
+    node_num:
+      singleton:
+        - kibana_replicas
+  image:
+    default:
+      - kibana_image
+
+kong:
+  resource:
+    node_num:
+      singleton:
+        - kong_replicas
+  image:
+    default:
+      - kong_image
+
+kong-dashboard:
+  resource:
+    node_num:
+      singleton:
+        - kong_dashboard_replicas
+  image:
+    default:
+      - kong_dashboard_image
+
+localcran:
+  image:
+    default:
+      - localcran_image
+
+logstash:
+  resource:
+    node_num:
+      default:
+        - logstash_replicas
+  image:
+    default:
+      - logstash_image
+  security:
+    principal_list:
+      - logstash
+
+notebook:
+  image:
+      default:
+        - notebook_image
+  security:
+    principal_list:
+      - discover
+    security_on:
+      - notebook_mounted_kerberos
+      - notebook_authentication_enableguardian
+
+notification:
+  database:
+    name: notification_txsql_db_name
+  image:
+      default:
+        - notification_image
+
+pilot:
+  image:
+    default:
+      - pilot_image
+  security:
+    principal_list:
+      - pilot
+    security_on:
+      - pilot_mounted_kerberos
+
+rubik:
+  resource:
+    node_num:
+      singleton:
+        - rubik_replicas
+  database:
+    name: MySQL_DATABASE
+  image:
+    default:
+      - rubik_image
+  security:
+    principal_list:
+      - rubik
+    security_on:
+      - RUBIK_AUTHENTICATION_ENABLEGUARDIAN
+
+slipstream:
+  resource:
+    node_num:
+      default:
+        - inceptor_executor_replicas
+      singleton:
+        - inceptor_replicas
+    disks:
+      sata_disks:
+        - inceptor_shuffle_dir_counts
+  configuration:
+    advanced_configs:
+      - inceptor_master_env_list
+      - inceptor_executor_env_list
+  image:
+    default:
+      - inceptor_executor_image
+      - inceptor_master_image
+  security:
+    principal_list:
+      - hive
+      - HTTP
+    security_on:
+      - slipstream_mounted_kerberos
+
+sophon:
+  security:
+    principal_list:
+      - hive
+    security_on:
+      - sophon_mounted_kerberos
+
+terminal:
+  resource:
+    node_num:
+      singleton:
+        - terminal_replicas
+  image:
+    default:
+      - terminal_image
+
+tcc:
+  database:
+    name: tcc_txsql_db_name
+
+tdt:
+  resource:
+    node_num:
+      singleton:
+        - tdt_replicas
+  image:
+    default:
+      - tdt_image
+  security:
+    principal_list:
+      - tdt
+    security_on:
+      - tdt_mounted_kerberos
+
+ticket:
+  database:
+    name: ticket_txsql_db_name
+
+txsql:
+  resource:
+    node_num:
+      singleton:
+        - txsql_replicas
+  image:
+    default:
+      - txsql_image
+
+workflow:
+  resource:
+    node_num:
+      singleton:
+        - workflow_replicas
+  database:
+    name: workflow_txsql_db_name
+  image:
+    default:
+      - workflow_image
+  security:
+    principal_list:
+      - workflow
+    security_on:
+      - workflow_mounted_kerberos
+
+yarn:
+  resource:
+    node_num:
+      default:
+        - yarn_node_replicas
+    disks:
+      sata_disks:
+        - yarn_data_disk_replicas
+  image:
+    default:
+      - history_server_image
+      - node_manager_image
+      - resource_manager_image
+      - timeline_server_image
+  security:
+    principal_list:
+      - HTTP
+      - mapred
+      - yarn
+    security_on:
+      - yarn_mounted_kerberos
+
+zookeeper:
+  image:
+    default:
+      - zk_image
+  security:
+    principal_list:
+      - HTTP
+      - zookeeper
+    security_on:
+      - zk_mounted_kerberos

@@ -1,0 +1,12 @@
+#BaseConfig:
+#   Develop: True
+#   PrometheusUrl: "http://192.168.100.61:31607"
+#   KerberosServer: "192.168.100.61 192.168.100.62"
+#   KerberosPassword: "Transwarp!"
+#   KerberosRealm: "TOS"
+#   OpenldapServer: "ldap://192.168.100.61 ldap://192.168.100.62"
+#   OpenldapBaseDN: "dc=tdh"
+#   OpenldapPassword: "Transwarp!"
+#   OpenldapBindDN: "uid=admin,ou=system"
+#   LicenseZookeeperAddress: "192.168.100.61:2181,192.168.100.62:2181,192.168.100.63:2181"
+#   EndpointIPS: ["192.168.100.61", "192.168.100.62", "192.168.100.63"]
