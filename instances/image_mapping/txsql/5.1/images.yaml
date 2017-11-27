@@ -1,0 +1,15 @@
+hot-fix-ranges:
+- max: '5.7'
+  min: '5.7'
+images:
+- name: mysql
+  variable: txsql_image
+instance-type: txsql
+major-version: '5.1'
+min-ockle-version: 0.1.4
+releases:
+- dependencies: []
+  final: false
+  image-version:
+    txsql_image: '5.7'
+  instance-version: '5.7'

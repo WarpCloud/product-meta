@@ -1,0 +1,21 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-final
+  min: transwarp-5.1.0-final
+images:
+- name: pilot
+  variable: pilot_image
+instance-type: pilot
+major-version: '1.0'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: ''
+    min-version: ''
+    type: filerobot
+  - max-version: '5.7'
+    min-version: '5.7'
+    type: txsql
+  final: true
+  image-version:
+    pilot_image: transwarp-5.1.0-final
+  instance-version: transwarp-5.1.0-final

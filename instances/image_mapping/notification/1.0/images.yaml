@@ -1,0 +1,18 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-final
+  min: transwarp-5.1.0-final
+images:
+- name: notification
+  variable: notification_image
+instance-type: notification
+major-version: '1.0'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: '5.7'
+    min-version: '5.7'
+    type: txsql
+  final: true
+  image-version:
+    notification_image: transwarp-5.1.0-final
+  instance-version: transwarp-5.1.0-final

@@ -1,0 +1,21 @@
+hot-fix-ranges:
+- max: tdc-1.0.0-rc0
+  min: tdc-1.0.0-rc0
+images:
+- name: ticket
+  variable: ticket_image
+instance-type: ticket
+major-version: '1.0'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: '5.7'
+    min-version: '5.7'
+    type: txsql
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: notification
+  final: false
+  image-version:
+    ticket_image: tdc-1.0.0-rc0
+  instance-version: tdc-1.0.0-rc0
