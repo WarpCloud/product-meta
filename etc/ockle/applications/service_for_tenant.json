@@ -1,0 +1,12 @@
+{
+  "GUARDIAN": {
+    "port": 8380,
+    "ldap_port": 10389,
+    "kdc_port": 1088,
+    "protocol": "HTTPS"
+  },
+  "TCC": {
+    "port": 9042,
+    "protocol": "HTTP"
+  }
+}
