@@ -42,6 +42,16 @@
             "cas_server_cpu_limit": 2,
             "cas_server_memory_limit": 4
          },
+         "dependencies": [
+            {
+               "moduleName": "guardian",
+               "name": "guardian1-guardian"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
          "instance_settings": { },
          "moduleName": "cas",
          "name": "guardian1-cas",
