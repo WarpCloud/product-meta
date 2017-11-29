@@ -96,7 +96,7 @@ TCC:
   tcc_cpu_limit: 1
   tcc_priority: 0
   tcc_replicas: 1
-  guardian_server_tls_enabled: "false"
+  guardian_server_tls_enabled: "true"
   guardian_username: "admin"
   guardian_password: "123"
   notification_kafka_url: 172.16.201.243:9092
