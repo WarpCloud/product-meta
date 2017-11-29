@@ -13,7 +13,7 @@ local t = import "../../../applib/utils.libsonnet";
         if Debug_Request then
           {
             guardian_cpu_limit: 0.2,
-            guardian_memory_limit: 1,
+            guardian_memory_limit: 2,
           }
         else
           {
@@ -24,7 +24,7 @@ local t = import "../../../applib/utils.libsonnet";
         if Debug_Request then
           {
             cas_server_cpu_limit: 0.2,
-            cas_server_memory_limit: 1,
+            cas_server_memory_limit: 2,
             cas_mgnt_server_cpu_limit: self.cas_server_cpu_limit,
             cas_mgnt_server_memory_limit: self.cas_server_memory_limit,
             cas_config_server_cpu_limit: self.cas_server_cpu_limit,

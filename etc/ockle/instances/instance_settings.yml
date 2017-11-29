@@ -27,6 +27,10 @@ common:
     auto_injected_volumes: Transwarp_Auto_Injected_Volumes
     kerberos: _mounted_kerberos
 
+cas:
+  database:
+    name: MySQL_DATABASE
+
 discover:
   image:
     default:
