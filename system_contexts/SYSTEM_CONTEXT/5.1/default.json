@@ -7,7 +7,6 @@
     "TCC-1.0",
     "TXSQL-5.1",
     "KIBANA-1.0",
-    "TICKET-1.0",
-    "KAFKA-5.1"
+    "TICKET-1.0"
   ]
 }
