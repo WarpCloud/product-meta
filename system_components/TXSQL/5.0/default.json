@@ -1,8 +1,0 @@
-{
-  "name": "TXSQL-5.0",
-  "component_type": "TXSQL",
-  "description": "the high-available version of MySQL",
-  "edition": "5.0",
-  "category": "SYSTEM",
-  "configs": []
-}

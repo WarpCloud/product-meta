@@ -94,15 +94,9 @@ TCC:
   tcc_image: 172.16.1.41:5000/jenkins/tcc:devel
   tcc_memory_limit: 1.5
   tcc_cpu_limit: 1
-  tcc_priority: 0
   tcc_replicas: 1
-  guardian_server_tls_enabled: "false"
   guardian_username: "admin"
   guardian_password: "123"
-  notification_kafka_url: 172.16.201.243:9092
-  wormhole_server_url: http://wormhole.kube-system.svc:8090
-  tcc_public_url: https://172.16.1.193/k8s-tcc
-  cas_public_url: https://172.16.1.193/cas
 
 TERMINAL:
   terminal_image: 172.16.1.45/transwarp/terminal:test

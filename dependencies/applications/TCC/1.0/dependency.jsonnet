@@ -37,6 +37,9 @@ function(config={})
       },{
         moduleName: _guardianModuleName,
         name: _guardianModuleName,
+      },{
+        moduleName: _kongModuleName,
+        name: _kongModuleName,
       }],
     };
 

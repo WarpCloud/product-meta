@@ -1,8 +1,0 @@
-{
-  "name": "GUARDIAN-5.0",
-  "component_type": "GUARDIAN",
-  "description": "The central service for authentication, authorization and audit",
-  "edition": "5.0",
-  "category": "SYSTEM",
-  "configs": []
-}
