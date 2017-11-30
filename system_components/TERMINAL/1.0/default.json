@@ -1,8 +1,0 @@
-{
-  "name": "TERMINAL-1.0",
-  "component_type": "TERMINAL",
-  "description": "the web based terminal for docker container",
-  "edition": "1.0",
-  "category": "SYSTEM",
-  "configs": []
-}

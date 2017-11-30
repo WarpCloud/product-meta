@@ -1,9 +1,0 @@
-{
-  "name": "SEARCH-5.1",
-  "component_type": "SEARCH",
-  "description": "the distributed Search engine for enterprise",
-  "edition": "5.1",
-  "category": "SYSTEM",
-  "dependencies": "",
-  "configs": []
-}
