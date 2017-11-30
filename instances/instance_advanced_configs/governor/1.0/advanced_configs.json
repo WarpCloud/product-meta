@@ -24,18 +24,6 @@
       "groups": [],
       "name": "atlas.kafka.hook.group.id",
       "value": "governor"
-    },
-    {
-      "default": "governoruser",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionUserName",
-      "value": "governoruser"
-    },
-    {
-      "default": "password",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionPassword",
-      "value": "password"
     }
   ],
   "version": "1.0"

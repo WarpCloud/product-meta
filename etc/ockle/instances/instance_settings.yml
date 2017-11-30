@@ -9,7 +9,7 @@
 #      sata_disks:
 #        - example_disks
 #  configuration:
-#    advanced_configs:
+#    environment:
 #      - example_env_list
 #  database:
 #    name: example_txsql_db_name
@@ -28,10 +28,19 @@ common:
     kerberos: _mounted_kerberos
 
 cas:
+  configuration:
+    environment:
+      - cas_config_server_env_list
+      - cas_server_env_list
+      - cas_mgnt_server_env_list
   database:
     name: MySQL_DATABASE
 
+
 discover:
+  configuration:
+    environment:
+      - discover_env_list
   image:
     default:
       - discover_image
@@ -50,6 +59,11 @@ elasticsearch:
       singleton:
         - es_client_replicas
         - es_master_replicas
+  configuration:
+    environment:
+      - es_master_env_list
+      - es_client_env_list
+      - es_data_env_list
   image:
     default:
       - es_image
@@ -58,6 +72,9 @@ elasticsearch:
       - es
 
 filebeat:
+  configuration:
+    environment:
+      - filebeat_env_list
   security:
     principal_list:
       - filebeat
@@ -73,6 +90,9 @@ filerobot:
       - filerobot_enable_guardian
 
 governor:
+  configuration:
+    environment:
+      - governor_env_list
   database:
     name: governor_txsql_db_name
   security:
@@ -82,6 +102,12 @@ governor:
       - zookeeper
     security_on:
       - governor_mounted_kerberos
+
+guardian:
+  configuration:
+    environment:
+    - apacheds_env_list
+    - guardian_server_env_list
 
 hdfs:
   resource:
@@ -94,6 +120,13 @@ hdfs:
     disks:
       sata_disks:
         - hdfs_data_disk_replicas
+  configuration:
+    environment:
+      - hdfs_name_env_list
+      - hdfs_zkfc_env_list
+      - hdfs_journal_env_list
+      - hdfs_data_env_list
+      - hdfs_httpfs_env_list
   image:
     default:
       - hdfs_data_image
@@ -118,6 +151,12 @@ hyperbase:
         - hbase_master_replicas
         - hbase_thrift_replicas
         - hbase_rest_replicas
+  configuration:
+    environment:
+      - hbase_master_env_list
+      - hbase_rs_env_list
+      - hbase_thrift_env_list
+      - hbase_rest_env_list
   image:
     default:
       - hbase_master_image
@@ -143,7 +182,7 @@ inceptor:
       sata_disks:
         - inceptor_shuffle_dir_counts
   configuration:
-    advanced_configs:
+    environment:
       - inceptor_master_env_list
       - inceptor_executor_env_list
   image:
@@ -163,6 +202,10 @@ metastore:
     node_num:
       singleton:
         - metastore_replicas
+  configuration:
+    environment:
+      - metastore_env_list
+      - mysql_env_list
   image:
     default:
       - metastore_image
@@ -180,6 +223,9 @@ kafka:
     node_num:
       default:
         - kafka_replicas
+  configuration:
+    environment:
+      - kafka_env_list
   image:
     default:
       - kafka_image
@@ -194,6 +240,9 @@ kibana:
     node_num:
       singleton:
         - kibana_replicas
+  configuration:
+    environment:
+      - kibana_env_list
   image:
     default:
       - kibana_image
@@ -203,6 +252,9 @@ kong:
     node_num:
       singleton:
         - kong_replicas
+  configuration:
+    environment:
+      - kong_env_list
   image:
     default:
       - kong_image
@@ -212,11 +264,17 @@ kong-dashboard:
     node_num:
       singleton:
         - kong_dashboard_replicas
+  configuration:
+    environment:
+      - kong_dashboard_env_list
   image:
     default:
       - kong_dashboard_image
 
 localcran:
+  configuration:
+    environment:
+      - localcran_env_list
   image:
     default:
       - localcran_image
@@ -226,6 +284,9 @@ logstash:
     node_num:
       default:
         - logstash_replicas
+  configuration:
+    environment:
+      - logstash_env_list
   image:
     default:
       - logstash_image
@@ -234,6 +295,9 @@ logstash:
       - logstash
 
 notebook:
+  configuration:
+    environment:
+      - notebook_env_list
   image:
       default:
         - notebook_image
@@ -245,6 +309,9 @@ notebook:
       - notebook_authentication_enableguardian
 
 notification:
+  configuration:
+    environment:
+      - notification_env_list
   database:
     name: notification_txsql_db_name
   image:
@@ -266,6 +333,9 @@ rubik:
     node_num:
       singleton:
         - rubik_replicas
+  configuration:
+    environment:
+      - rubik_env_list
   database:
     name: MySQL_DATABASE
   image:
@@ -288,7 +358,7 @@ slipstream:
       sata_disks:
         - inceptor_shuffle_dir_counts
   configuration:
-    advanced_configs:
+    environment:
       - inceptor_master_env_list
       - inceptor_executor_env_list
   image:
@@ -314,11 +384,17 @@ terminal:
     node_num:
       singleton:
         - terminal_replicas
+  configuration:
+    environment:
+      - terminal_env_list
   image:
     default:
       - terminal_image
 
 tcc:
+  configuration:
+    environment:
+      - tcc_env_list
   database:
     name: tcc_txsql_db_name
 
@@ -327,6 +403,9 @@ tdt:
     node_num:
       singleton:
         - tdt_replicas
+  configuration:
+    environment:
+      - tdt_env_list
   image:
     default:
       - tdt_image
@@ -345,6 +424,9 @@ txsql:
     node_num:
       singleton:
         - txsql_replicas
+  configuration:
+    environment:
+      - txsql_env_list
   image:
     default:
       - txsql_image
@@ -354,6 +436,9 @@ workflow:
     node_num:
       singleton:
         - workflow_replicas
+  configuration:
+    environment:
+      - workflow_env_list
   database:
     name: workflow_txsql_db_name
   image:
@@ -373,6 +458,12 @@ yarn:
     disks:
       sata_disks:
         - yarn_data_disk_replicas
+  configuration:
+    environment:
+      - resource_manager_env_list
+      - history_server_env_list
+      - node_manager_env_list
+      - timeline_server_env_list
   image:
     default:
       - history_server_image
@@ -388,6 +479,9 @@ yarn:
       - yarn_mounted_kerberos
 
 zookeeper:
+  configuration:
+    environment:
+      - zk_env_list
   image:
     default:
       - zk_image

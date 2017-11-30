@@ -42,14 +42,6 @@
       "value": "True"
     },
     {
-      "default": "password",
-      "groups": [
-        "hive-site.xml"
-      ],
-      "name": "javax.jdo.option.ConnectionPassword",
-      "value": "password"
-    },
-    {
       "default": "60000",
       "groups": [
         "hive-site.xml"
@@ -120,22 +112,6 @@
       ],
       "name": "datanucleus.fixedDatastore",
       "value": "True"
-    },
-    {
-      "default": "com.mysql.jdbc.Driver",
-      "groups": [
-        "hive-site.xml"
-      ],
-      "name": "javax.jdo.option.ConnectionDriverName",
-      "value": "com.mysql.jdbc.Driver"
-    },
-    {
-      "default": "slipstreamuser",
-      "groups": [
-        "hive-site.xml"
-      ],
-      "name": "javax.jdo.option.ConnectionUserName",
-      "value": "slipstreamuser"
     },
     {
       "default": "False",
