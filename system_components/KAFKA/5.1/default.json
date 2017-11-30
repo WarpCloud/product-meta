@@ -1,0 +1,9 @@
+{
+  "name": "KAFKA-5.1",
+  "component_type": "KAFKA",
+  "description": "消息中间件",
+  "edition": "5.1",
+  "category": "SYSTEM",
+  "dependencies": "",
+  "configs": []
+}

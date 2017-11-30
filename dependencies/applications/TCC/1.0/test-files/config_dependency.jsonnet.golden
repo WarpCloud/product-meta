@@ -41,6 +41,10 @@
             {
                "moduleName": "guardian",
                "name": "guardian"
+            },
+            {
+               "moduleName": "kong",
+               "name": "kong"
             }
          ],
          "instance_settings": { },
