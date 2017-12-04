@@ -14,6 +14,7 @@ function(config={})
   local _simmailModuleName = "simmail";
   local _guardianModuleName = "guardian";
   local _kongModuleName = "kong";
+  local _casModuleName = "cas";
 
   //-------------------
   // Dependent modules
@@ -26,20 +27,14 @@ function(config={})
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
       },{
-        moduleName: _ockleModuleName,
-        name: _ockleModuleName,
-      },{
         moduleName: _ticketModuleName,
         name: _ticketModuleName,
-      },{
-        moduleName: _simmailModuleName,
-        name: _simmailModuleName,
       },{
         moduleName: _guardianModuleName,
         name: _guardianModuleName,
       },{
-        moduleName: _kongModuleName,
-        name: _kongModuleName,
+        moduleName: _casModuleName,
+        name: _casModuleName,
       }],
     };
 

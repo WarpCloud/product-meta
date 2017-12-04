@@ -19,16 +19,16 @@ GUARDIAN:
   guardian_ds_partition_sync_on_write: "false"
   guardian_ds_conf_dir: /etc/guardian-apacheds/conf
   guardian_server_image: 172.16.1.99/transwarp/guardian:transwarp-5.1.0-rc7
-  guardian_init_container_image: 172.16.1.41:5000/transwarp/guardian-init:latest
+  guardian_init_container_image: 172.16.1.99/gold/guardian-init:tdc-1.0
   guardian_server_tls_enabled: true
   guardian_server_key_store: /srv/guardian/server.keystore
   guardian_server_spnego_keytab: /srv/guardian/http.keytab
   guardian_server_key_store_pw: changeit
   fortress_bind_pwd: Transwarp01!
-  cas_config_server_image: 172.16.1.99/zhaol/cas-config-server:latest
-  cas_server_image: 172.16.1.99/zhaol/cas-server:latest
-  cas_mgnt_server_image: 172.16.1.99/zhaol/cas-admin-server:latest
-  gencerts_init_container_image: 172.16.1.99/zhaol/guardian-gencerts
+  cas_config_server_image: 172.16.1.99/transwarp/cas-config-server:tdc-1.0.0-rc0
+  cas_server_image: 172.16.1.99/transwarp/cas-server:tdc-1.0.0-rc0
+  cas_mgnt_server_image: 172.16.1.99/transwarp/cas-admin-server:tdc-1.0.0-rc0
+  gencerts_init_container_image: 172.16.1.99/transwarp/guardian-gencerts:tdc-1.0.0-rc0
 
 HDFS:
   hdfs_data_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-rc7
@@ -62,7 +62,7 @@ KAFKA:
   zk_image: 172.16.1.99/transwarp/zookeeper:transwarp-5.1.0-rc7
 
 KIBANA:
-  kibana_image: 172.16.1.41:5000/tdc/kibana:4.2
+  kibana_image: 172.16.1.99/transwarp/kibana:transwarp-5.1.0-rc7
 
 NOTEBOOK:
   notebook_image: 172.16.1.99/transwarp/discover-notebook:transwarp-5.1.0-rc7
@@ -91,7 +91,7 @@ SOPHON:
   sophon_server_image: 172.16.1.99/postcommit/sophon-server:transwarp-5.1.0-rc7
 
 TCC:
-  tcc_image: 172.16.1.41:5000/jenkins/tcc:devel
+  tcc_image: 172.16.1.99/transwarp/tcc:tdc-1.0.0-rc0
   tcc_memory_limit: 1.5
   tcc_cpu_limit: 1
   tcc_replicas: 1
@@ -99,16 +99,16 @@ TCC:
   GUARDIAN_PASSWORD: "123"
 
 TERMINAL:
-  terminal_image: 172.16.1.45/transwarp/terminal:tdc-1.0.0-rc0
+  terminal_image: 172.16.1.45/transwarp/terminal:test
 
 TICKET:
-  ticket_image: 172.16.1.41:5000/jenkins/ticket:tdc-1.0.0-rc0
+  ticket_image: 172.16.1.99/transwarp/ticket:tdc-1.0.0-rc0
 
 TRANSPORTER:
   tdt_image: 172.16.1.99/transwarp/tdt:transwarp-5.1.0-rc7
 
 TXSQL:
-  txsql_image: 172.16.1.99/transwarp/mysql:5.7
+  txsql_image: 172.16.1.99/transwarp/mysql:5.5
   txsql_rootpassword: password
 
 WORKFLOW:
