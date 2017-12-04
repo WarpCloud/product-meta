@@ -12,8 +12,8 @@ local t = import "../../../applib/utils.libsonnet";
       sophon:
         if Debug_Request then
           {
-            sophon_cpu_limit: 0.5,
-            sophon_memory_limit: 1,
+            sophon_cpu_limit: 1,
+            sophon_memory_limit: 4,
             sophon_cpu_request: self.sophon_cpu_limit,
             sophon_memory_request: self.sophon_memory_limit,
           }
