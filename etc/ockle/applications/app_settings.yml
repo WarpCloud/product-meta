@@ -22,9 +22,7 @@ common:
 
 INCEPTOR:
   configuration:
-    advanced_configs:
-      - inceptor_master_env_list
-      - inceptor_executor_env_list
+    advanced_configs: INCEPTOR_HIVE_SITE_CONFIGS
   optional_dependencies:
     - hyperbase
     - search
@@ -53,9 +51,7 @@ LOGSTASH:
 
 SLIPSTREAM:
   configuration:
-    advanced_configs:
-      - inceptor_master_env_list
-      - inceptor_executor_env_list
+    advanced_configs: INCEPTOR_HIVE_SITE_CONFIGS
 
 TERMINAL:
   optional_dependencies:

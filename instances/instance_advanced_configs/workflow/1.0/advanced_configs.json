@@ -86,18 +86,6 @@
       "value": "False"
     },
     {
-      "default": "workflowuser",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionUserName",
-      "value": "workflowuser"
-    },
-    {
-      "default": "password",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionPassword",
-      "value": "password"
-    },
-    {
       "default": "workflow",
       "groups": [],
       "name": "workflow.pseudo.username",

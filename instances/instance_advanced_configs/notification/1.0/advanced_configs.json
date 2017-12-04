@@ -42,18 +42,6 @@
       "groups": [],
       "name": "notification.security.log.maxbackupindex",
       "value": "16"
-    },
-    {
-      "default": "notificationuser",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionUserName",
-      "value": "notificationuser"
-    },
-    {
-      "default": "password",
-      "groups": [],
-      "name": "javax.jdo.option.ConnectionPassword",
-      "value": "password"
     }
   ],
   "version": "1.0"
