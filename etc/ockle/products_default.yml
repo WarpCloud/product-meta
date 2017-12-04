@@ -3,22 +3,22 @@ common:
   Transwarp_DEBUG: false
 
 DISCOVER:
-  discover_image: 172.16.1.99/gold/discover-ide:transwarp-5.1
-  localcran_image: 172.16.1.99/gold/discover-localcran:transwarp-5.1
+  discover_image: 172.16.1.99/transwarp/discover-ide:transwarp-5.1.0-rc7
+  localcran_image: 172.16.1.99/transwarp/discover-localcran:transwarp-5.1.0-rc7
   discover_ldap_password: Transwarp01!
 
 GOVERNOR:
-  governor_image: 172.16.1.99/gold/governor:transwarp-5.1
-  notification_image: 172.16.1.99/gold/notification:transwarp-5.1
+  governor_image: 172.16.1.99/transwarp/governor:transwarp-5.1.0-rc7
+  notification_image: 172.16.1.99/transwarp/notification:transwarp-5.1.0-rc7
 
 GUARDIAN:
-  apacheds_image: 172.16.1.99/gold/apacheds:transwarp-5.1
+  apacheds_image: 172.16.1.99/transwarp/apacheds:transwarp-5.1.0-rc7
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"
   guardian_ds_ha_enabled: false
   guardian_ds_partition_sync_on_write: "false"
   guardian_ds_conf_dir: /etc/guardian-apacheds/conf
-  guardian_server_image: 172.16.1.99/gold/guardian:transwarp-5.1
+  guardian_server_image: 172.16.1.99/transwarp/guardian:transwarp-5.1.0-rc7
   guardian_init_container_image: 172.16.1.41:5000/transwarp/guardian-init:latest
   guardian_server_tls_enabled: true
   guardian_server_key_store: /srv/guardian/server.keystore
@@ -31,64 +31,64 @@ GUARDIAN:
   gencerts_init_container_image: 172.16.1.99/zhaol/guardian-gencerts
 
 HDFS:
-  hdfs_data_image: 172.16.1.99/gold/hdfs:transwarp-5.1
-  hdfs_journal_image: 172.16.1.99/gold/hdfs:transwarp-5.1
-  hdfs_name_image: 172.16.1.99/gold/hdfs:transwarp-5.1
-  hdfs_zkfc_image: 172.16.1.99/gold/hdfs:transwarp-5.1
-  hdfs_httpfs_image: 172.16.1.99/gold/httpfs:transwarp-5.1
-  zk_image: 172.16.1.99/gold/zookeeper:transwarp-5.1
+  hdfs_data_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-rc7
+  hdfs_journal_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-rc7
+  hdfs_name_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-rc7
+  hdfs_zkfc_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-rc7
+  hdfs_httpfs_image: 172.16.1.99/transwarp/httpfs:transwarp-5.1.0-rc7
+  zk_image: 172.16.1.99/transwarp/zookeeper:transwarp-5.1.0-rc7
 
 HYPERBASE:
 #  YARN_TIMELINE_ADDRESS: 0.0.0.0
-  hbase_rest_image: 172.16.1.99/gold/hbase:transwarp-5.1
-  hbase_thrift_image: 172.16.1.99/gold/hbase:transwarp-5.1
-  hbase_master_image: 172.16.1.99/gold/hbase:transwarp-5.1
-  hbase_rs_image: 172.16.1.99/gold/hbase:transwarp-5.1
-  history_server_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  node_manager_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  resource_manager_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  timeline_server_image: 172.16.1.99/gold/yarn:transwarp-5.1
+  hbase_rest_image: 172.16.1.99/transwarp/hbase:transwarp-5.1.0-rc7
+  hbase_thrift_image: 172.16.1.99/transwarp/hbase:transwarp-5.1.0-rc7
+  hbase_master_image: 172.16.1.99/transwarp/hbase:transwarp-5.1.0-rc7
+  hbase_rs_image: 172.16.1.99/transwarp/hbase:transwarp-5.1.0-rc7
+  history_server_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  node_manager_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  resource_manager_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  timeline_server_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
   Transwarp_Guardian_LDAP_Bind_Dn: uid=groupmapping/guardian,ou=System,ou=People,dc=tdh
   Transwarp_Guardian_LDAP_Bind_Password: Transwarp01!
 
 INCEPTOR:
-  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
 
 KAFKA:
-  kafka_image: 172.16.1.99/gold/kafka:transwarp-5.1
-  zk_image: 172.16.1.99/gold/zookeeper:transwarp-5.1
+  kafka_image: 172.16.1.99/transwarp/kafka:transwarp-5.1.0-rc7
+  zk_image: 172.16.1.99/transwarp/zookeeper:transwarp-5.1.0-rc7
 
 KIBANA:
   kibana_image: 172.16.1.41:5000/tdc/kibana:4.2
 
 NOTEBOOK:
-  notebook_image: 172.16.1.99/gold/discover-notebook:transwarp-5.1
-  localcran_image: 172.16.1.99/gold/discover-localcran:transwarp-5.1
+  notebook_image: 172.16.1.99/transwarp/discover-notebook:transwarp-5.1.0-rc7
+  localcran_image: 172.16.1.99/transwarp/discover-localcran:transwarp-5.1.0-rc7
 
 PILOT:
-  pilot_image: 172.16.1.99/gold/pilot:transwarp-5.1
-  filerobot_image: 172.16.1.99/transwarp/filerobot:transwarp-5.1
+  pilot_image: 172.16.1.99/transwarp/pilot:transwarp-5.1.0-rc7
+  filerobot_image: 172.16.1.99/transwarp/filerobot:transwarp-5.1.0-rc7
   license_check: "False"
 
 RUBIK:
-  notification_image: 172.16.1.99/gold/notification:transwarp-5.1
-  rubik_image: 172.16.1.99/transwarp/rubik:transwarp-5.1.0-rc3
+  notification_image: 172.16.1.99/transwarp/notification:transwarp-5.1.0-rc7
+  rubik_image: 172.16.1.99/transwarp/rubik:transwarp-5.1.0-rc7
 
 SEARCH:
-  es_image: 172.16.1.99/gold/search:transwarp-5.1
-  es_head_image: 172.16.1.99/gold/search-head:transwarp-5.1
+  es_image: 172.16.1.99/transwarp/search:transwarp-5.1.0-rc7
+  es_head_image: 172.16.1.99/transwarp/search-head:transwarp-5.1.0-rc7
 
 SLIPSTREAM:
-  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
+  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.0-rc7
 
 SOPHON:
-  sophon_server_image: 172.16.1.99/postcommit/sophon-server:transwarp-5.1-2017-10-18-17-02-24-272
+  sophon_server_image: 172.16.1.99/postcommit/sophon-server:transwarp-5.1.0-rc7
 
 TCC:
   tcc_image: 172.16.1.41:5000/jenkins/tcc:devel
@@ -99,24 +99,24 @@ TCC:
   guardian_password: "123"
 
 TERMINAL:
-  terminal_image: 172.16.1.45/transwarp/terminal:test
+  terminal_image: 172.16.1.45/transwarp/terminal:tdc-1.0.0-rc0
 
 TICKET:
-  ticket_image: 172.16.1.41:5000/jenkins/ticket:latest
+  ticket_image: 172.16.1.41:5000/jenkins/ticket:tdc-1.0.0-rc0
 
 TRANSPORTER:
-  tdt_image: 172.16.1.99/transwarp/tdt:transwarp-5.1.0-rc3
+  tdt_image: 172.16.1.99/transwarp/tdt:transwarp-5.1.0-rc7
 
 TXSQL:
-  txsql_image: 172.16.1.41:5000/mysql/mysql-server:5.5
+  txsql_image: 172.16.1.99/transwarp/mysql:5.7
   txsql_rootpassword: password
 
 WORKFLOW:
-  workflow_image: 172.16.1.99/gold/workflow_tos:transwarp-5.1
+  workflow_image: 172.16.1.99/transwarp/workflow:transwarp-5.1.0-rc7
 
 YARN:
 #  YARN_TIMELINE_ADDRESS: 0.0.0.0
-  history_server_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  node_manager_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  resource_manager_image: 172.16.1.99/gold/yarn:transwarp-5.1
-  timeline_server_image: 172.16.1.99/gold/yarn:transwarp-5.1
+  history_server_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  node_manager_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  resource_manager_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
+  timeline_server_image: 172.16.1.99/transwarp/yarn:transwarp-5.1.0-rc7
