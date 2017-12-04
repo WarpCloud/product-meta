@@ -95,8 +95,8 @@ TCC:
   tcc_memory_limit: 1.5
   tcc_cpu_limit: 1
   tcc_replicas: 1
-  guardian_username: "admin"
-  guardian_password: "123"
+  GUARDIAN_USERNAME: "admin"
+  GUARDIAN_PASSWORD: "123"
 
 TERMINAL:
   terminal_image: 172.16.1.45/transwarp/terminal:test

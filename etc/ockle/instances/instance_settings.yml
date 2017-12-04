@@ -396,7 +396,7 @@ tcc:
     environment:
       - tcc_env_list
   database:
-    name: tcc_txsql_db_name
+    name: TCC_TXSQL_DB_NAME
 
 tdt:
   resource:
