@@ -12,8 +12,8 @@ local t = import "../../../applib/utils.libsonnet";
       tcc:
         if Debug_Request then
           {
-            tcc_cpu_limit: 0.5,
-            tcc_memory_limit: 1,
+            tcc_cpu_limit: 1,
+            tcc_memory_limit: 1.5,
             tcc_cpu_request: self.tcc_cpu_limit,
             tcc_memory_request: self.tcc_memory_limit,
           }

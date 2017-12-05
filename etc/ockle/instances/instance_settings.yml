@@ -392,6 +392,10 @@ terminal:
       - terminal_image
 
 tcc:
+  resource:
+    node_num:
+      singleton:
+        - tcc_replicas
   configuration:
     environment:
       - tcc_env_list
