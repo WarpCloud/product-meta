@@ -27,24 +27,16 @@
                "name": "txsql"
             },
             {
-               "moduleName": "ockle",
-               "name": "ockle"
-            },
-            {
                "moduleName": "ticket",
                "name": "ticket"
-            },
-            {
-               "moduleName": "simmail",
-               "name": "simmail"
             },
             {
                "moduleName": "guardian",
                "name": "guardian"
             },
             {
-               "moduleName": "kong",
-               "name": "kong"
+               "moduleName": "cas",
+               "name": "cas"
             }
          ],
          "instance_settings": { },

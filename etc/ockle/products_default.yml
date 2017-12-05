@@ -62,7 +62,8 @@ KAFKA:
   zk_image: 172.16.1.99/transwarp/zookeeper:transwarp-5.1.0-rc7
 
 KIBANA:
-  kibana_image: 172.16.1.99/transwarp/kibana:transwarp-5.1.0-rc7
+  # kibana_image: 172.16.1.99/transwarp/kibana:transwarp-5.1.0-rc7
+  kibana_image: 172.16.1.41:5000/tdc/kibana:4.2
 
 NOTEBOOK:
   notebook_image: 172.16.1.99/transwarp/discover-notebook:transwarp-5.1.0-rc7
