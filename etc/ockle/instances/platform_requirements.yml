@@ -12,3 +12,6 @@ platform_requirements:
 
   - application_type: KONG
     instance_type: kong
+
+  - application_type: SEARCH
+    instance_type: elasticsearch
