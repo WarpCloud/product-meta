@@ -3,6 +3,7 @@
     {
       "port": 8086,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "报表工具",
       "display_name_en": "Pilot",
@@ -15,6 +16,7 @@
     {
       "port": 8686,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "数据分析交互平台",
       "display_name_en": "Zeppelin",
@@ -27,6 +29,7 @@
     {
       "port": 9091,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "工作流",
       "display_name_en": "Workflow",
@@ -39,6 +42,7 @@
     {
       "port": 32125,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "Cube设计工具",
       "display_name_en": "Rubik ",
@@ -51,6 +55,7 @@
     {
       "port": 21000,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "数据治理",
       "display_name_en": "Governor",
@@ -63,6 +68,7 @@
     {
       "port": 20000,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "ETL工具",
       "display_name_en": "Transporter",
@@ -75,6 +81,7 @@
     {
       "port": 8380,
       "protocol": "HTTPS",
+      "require_gateway_registration": false,
       "display_name": "安全与权限",
       "display_name_en": "Guardian",
       "description": "统一的安全和资源管理服务平台，Guardian支持Kerberos和LDAP认证，实现租户级别的资源管理，可以做细粒度的权限控制，为整个集群系统加强安全防护。",
@@ -86,6 +93,7 @@
     {
       "port": -1,
       "protocol": "HTTP",
+      "require_gateway_registration": false,
       "path": "/",
       "display_name": "日志服务",
       "display_name_en": "Milano",
@@ -98,11 +106,18 @@
     {
       "port": 4040,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
+      "alias": "INCEPTOR",
       "path": "/jobs",
       "display_name": "Inceptor UI",
       "display_name_en": "Inceptor UI",
       "description": "Inceptor任务监控页面，提供各应用运行状态、Holodesk资源使用情况、环境和Executor信息。",
       "description_en": "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs, so developers can use it for performance tuning and problem diagnosing."
+    },
+    {
+      "port": 10000,
+      "require_gateway_registration": false,
+      "alias": "HiveServer2"
     }
   ],
 
@@ -110,6 +125,7 @@
     {
       "port": 9200,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "display_name": "ES管理器",
       "display_name_en": "ES Head",
       "description": "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询，是ES开发人员的一个非常有用的辅助工具。",
@@ -121,6 +137,7 @@
     {
       "port": 5000,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "命令行终端",
       "display_name_en": "Terminal",
@@ -133,6 +150,7 @@
     {
       "port": 60010,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "display_name": "HyperBase管理",
       "display_name_en": "HyperBase Master",
       "description": "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况，包括基本的配置，HDFS和Zookeeper相关的信息，集群的负载情况，表和region的分布情况，以及split key等。",
@@ -144,6 +162,7 @@
     {
       "port": 50070,
       "protocol": "HTTP",
+      "require_gateway_registration": true,
       "path": "/",
       "display_name": "HDFS管理",
       "display_name_en": "HDFS Namenode UI",

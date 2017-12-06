@@ -100,6 +100,7 @@ TERMINAL:
 
 TICKET:
   ticket_image: 172.16.1.99/transwarp/ticket:tdc-1.0.0-rc0
+  notification_image: 172.16.1.99/transwarp/notification:transwarp-5.1.0-final
 
 TRANSPORTER:
   tdt_image: 172.16.1.99/transwarp/tdt:transwarp-5.1.0-final

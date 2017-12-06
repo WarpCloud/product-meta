@@ -24,6 +24,24 @@ local t = import "../../../applib/utils.libsonnet";
             ticket_cpu_request: t.objectField(config, "ticket_cpu_request", self.ticket_cpu_limit),
             ticket_memory_request: t.objectField(config, "ticket_memory_request", self.ticket_memory_limit),
           },
+      notification:
+        if Debug_Request then
+          {
+            notification_cpu_limit: 0.5,
+            notification_memory_limit: 1,
+            notification_cpu_request: self.notification_cpu_limit,
+            notification_memory_request: self.notification_memory_limit,
+          }
+        else
+          {
+            local cpu_limit = resource.ticket.ticket_cpu_limit,
+            local memory_limit = resource.ticket.ticket_memory_limit,
+
+            notification_cpu_limit: t.objectField(config, "notification_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
+            notification_memory_limit: t.objectField(config, "notification_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+            notification_cpu_request: t.objectField(config, "notification_cpu_request", self.notification_cpu_limit),
+            notification_memory_request: t.objectField(config, "notification_memory_request", self.notification_memory_limit),
+          },
     };
 
     local storage = {};
@@ -52,11 +70,17 @@ local t = import "../../../applib/utils.libsonnet";
       ticket: [
         "ticket_cpu_limit",
       ],
+      notification: [
+        "notification_cpu_limit",
+      ],
     };
 
     local mem_metrics = {
       ticket: [
         "ticket_memory_limit",
+      ],
+      notification: [
+        "notification_memory_limit",
       ],
     };
 
