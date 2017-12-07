@@ -130,12 +130,6 @@
       "value": "False"
     },
     {
-      "default": "NONE",
-      "groups": [],
-      "name": "hive.server2.authentication",
-      "value": "NONE"
-    },
-    {
       "default": "28800000",
       "groups": [
         "hive-site.xml"

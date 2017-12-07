@@ -81,7 +81,7 @@
     {
       "port": 8380,
       "protocol": "HTTPS",
-      "require_gateway_registration": false,
+      "require_gateway_registration": true,
       "display_name": "安全与权限",
       "display_name_en": "Guardian",
       "description": "统一的安全和资源管理服务平台，Guardian支持Kerberos和LDAP认证，实现租户级别的资源管理，可以做细粒度的权限控制，为整个集群系统加强安全防护。",
