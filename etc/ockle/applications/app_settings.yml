@@ -16,7 +16,9 @@ common:
 
 #GOVERNOR:
 
-#HDFS:
+HDFS:
+  configuration:
+    advanced_configs: HDFS_HDFS_SITE_CONFIGS
 
 #HYPERBASE:
 
@@ -67,4 +69,6 @@ TERMINAL:
 
 #WORKFLOW:
 
-#YARN:
+YARN:
+  configuration:
+    advanced_configs: YARN_YARN_SITE_CONFIGS
