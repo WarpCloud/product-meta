@@ -15,6 +15,11 @@ LIBAPPADAPTER_PATH="/applications"
 
 FAILED=0
 
+if ! [ -x "$(command -v jq)" ]; then
+  echo 'Error: jq is not installed. Run `sudo apt-get install jq`' >&2
+  exit 1
+fi
+
 function echo_failed_message(){
     FAILED=$((FAILED + 1))
     message=$1

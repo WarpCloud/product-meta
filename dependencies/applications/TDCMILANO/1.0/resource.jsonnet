@@ -6,7 +6,6 @@ local t = import "../../../applib/utils.libsonnet";
   local _filebeatModuleName = "filebeat",
   local _logstashModuleName = "logstash",
   local _milanoPortalModuleName = "milano-portal",
-  local _kafkaManagerModuleName = "kafka-manager",
 
   /*
    * Define resource metrics for each module
@@ -47,24 +46,6 @@ local t = import "../../../applib/utils.libsonnet";
             logstash_memory_limit: t.objectField(config, "logstash_memory_limit", memory_limit),
             logstash_cpu_request: t.objectField(config, "logstash_cpu_request", self.logstash_cpu_limit),
             logstash_memory_request: t.objectField(config, "logstash_memory_request", self.logstash_memory_limit),
-          },
-      [_kafkaManagerModuleName]:
-        if Debug_Request then
-          {
-            kafka_manager_cpu_limit: 0.5,
-            kafka_manager_memory_limit: 1,
-            kafka_manager_cpu_request: self.kafka_manager_cpu_limit,
-            kafka_manager_memory_request: self.kafka_manager_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource[_filebeatModuleName].filebeat_cpu_limit,
-            local memory_limit = resource[_filebeatModuleName].filebeat_memory_limit,
-
-            kafka_manager_cpu_limit: t.objectField(config, "kafka_manager_cpu_limit", cpu_limit),
-            kafka_manager_memory_limit: t.objectField(config, "kafka_manager_memory_limit", memory_limit),
-            kafka_manager_cpu_request: t.objectField(config, "kafka_manager_cpu_request", self.kafka_manager_cpu_limit),
-            kafka_manager_memory_request: t.objectField(config, "kafka_manager_memory_request", self.kafka_manager_memory_limit),
           },
       [_milanoPortalModuleName]:
         if Debug_Request then
@@ -115,9 +96,6 @@ local t = import "../../../applib/utils.libsonnet";
       [_logstashModuleName]: [
         "logstash_cpu_limit",
       ],
-      [_kafkaManagerModuleName]: [
-        "kafka_manager_cpu_limit",
-      ],
       [_milanoPortalModuleName]: [
         "milano_portal_cpu_limit",
       ],
@@ -129,9 +107,6 @@ local t = import "../../../applib/utils.libsonnet";
       ],
       [_logstashModuleName]: [
         "logstash_memory_limit",
-      ],
-      [_kafkaManagerModuleName]: [
-        "kafka_manager_memory_limit",
       ],
       [_milanoPortalModuleName]: [
         "milano_portal_memory_limit",

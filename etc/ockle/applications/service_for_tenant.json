@@ -20,5 +20,13 @@
       "protocol": "HTTP",
       "require_gateway_registration": true
     }
+  ],
+  "KIBANA": [
+    {
+      "port": 5601,
+      "protocol": "HTTP",
+      "require_gateway_registration": true,
+      "require_display": false
+    }
   ]
 }

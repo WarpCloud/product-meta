@@ -170,7 +170,6 @@ hyperbase:
     security_on:
       - hbase_mounted_kerberos
 
-
 inceptor:
   resource:
     node_num:
@@ -196,7 +195,6 @@ inceptor:
     security_on:
       - inceptor_mounted_kerberos
 
-
 metastore:
   resource:
     node_num:
@@ -217,7 +215,6 @@ metastore:
     security_on:
       - inceptor_mounted_kerberos
 
-
 kafka:
   resource:
     node_num:
@@ -234,6 +231,18 @@ kafka:
       - kafka
     security_on:
       - kafka_mounted_kerberos
+
+kafka-manager:
+  resource:
+    node_num:
+      singleton:
+        - kafka_manager_replicas
+  configuration:
+    environment:
+        - kafka_manager_env_list
+  image:
+    default:
+      - kafka_manager_image
 
 kibana:
   resource:

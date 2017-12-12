@@ -60,6 +60,10 @@
             {
                "moduleName": "txsql",
                "name": "txsql"
+            },
+            {
+               "moduleName": "workflow",
+               "name": "workflow"
             }
          ],
          "instance_settings": { },

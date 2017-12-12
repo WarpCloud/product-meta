@@ -124,7 +124,7 @@ function test() {
 
 
 if [[ $# -eq 0 ]]; then
-  scan_tests
+  scan_tests `dirname $0`
   count
 elif [[ "$1" == "test" ]]; then
   shift 1

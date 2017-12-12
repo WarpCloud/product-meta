@@ -50,6 +50,10 @@
             {
                "moduleName": "txsql",
                "name": "txsql"
+            },
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
             }
          ],
          "instance_settings": { },

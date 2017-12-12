@@ -3,6 +3,9 @@
 local t = import "../../../applib/utils.libsonnet";
 
 {
+  local _kafkaModuleName = "kafka",
+  local _kafkaManagerModuleName = "kafka-manager",
+  
   /*
    * Define resource metrics for each module
    */
@@ -12,7 +15,7 @@ local t = import "../../../applib/utils.libsonnet";
     local s = t.extractStorageParams(config);
 
     local storage = {
-      kafka: {
+      [_kafkaModuleName]: {
         kafka_tmp_storage: {
           storageClass: s.StorageClass,
           limits: {
@@ -35,7 +38,7 @@ local t = import "../../../applib/utils.libsonnet";
     };
 
     local resource = {
-      kafka:
+      [_kafkaModuleName]:
         if Debug_Request then
           {
             kafka_cpu_limit: 0.4,
@@ -49,6 +52,24 @@ local t = import "../../../applib/utils.libsonnet";
             kafka_memory_limit: t.objectField(config, "kafka_memory_limit", 2),
             kafka_cpu_request: t.objectField(config, "kafka_cpu_request", self.kafka_cpu_limit),
             kafka_memory_request: t.objectField(config, "kafka_memory_request", self.kafka_memory_limit),
+          },
+      [_kafkaManagerModuleName]:
+        if Debug_Request then
+          {
+            kafka_manager_cpu_limit: 0.5,
+            kafka_manager_memory_limit: 1,
+            kafka_manager_cpu_request: self.kafka_manager_cpu_limit,
+            kafka_manager_memory_request: self.kafka_manager_memory_limit,
+          }
+        else
+          {
+            local cpu_limit = resource[_kafkaModuleName].kafka_cpu_limit,
+            local memory_limit = resource[_kafkaModuleName].kafka_memory_limit,
+
+            kafka_manager_cpu_limit: t.objectField(config, "kafka_manager_cpu_limit", cpu_limit),
+            kafka_manager_memory_limit: t.objectField(config, "kafka_manager_memory_limit", memory_limit),
+            kafka_manager_cpu_request: t.objectField(config, "kafka_manager_cpu_request", self.kafka_manager_cpu_limit),
+            kafka_manager_memory_request: t.objectField(config, "kafka_manager_memory_request", self.kafka_manager_memory_limit),
           },
     };
     // Return storage and resource specification
@@ -72,15 +93,21 @@ local t = import "../../../applib/utils.libsonnet";
    */
   moduleTCU(moduleName, config={})::
     local cpu_metrics = {
-      kafka: [
+      [_kafkaModuleName]: [
         "kafka_cpu_limit",
       ],
+      [_kafkaManagerModuleName]: [
+        "kafka_manager_cpu_limit",
+      ]
     };
 
     local mem_metrics = {
-      kafka: [
+      [_kafkaModuleName]: [
         "kafka_memory_limit",
       ],
+      [_kafkaManagerModuleName]: [
+        "kafka_manager_memory_limit",
+      ]
     };
 
     local ssd_metrics = {};

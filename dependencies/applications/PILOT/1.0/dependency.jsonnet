@@ -30,6 +30,9 @@ function(config={})
       }, {
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
+      }, {
+        moduleName: _hdfsModuleName,
+        name: _hdfsModuleName,
       }],
     };
 

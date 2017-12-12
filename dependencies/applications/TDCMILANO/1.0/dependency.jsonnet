@@ -11,7 +11,6 @@ function(config={})
   local filebeatVersion = "1.0";
   local logstashVersion = "1.0";
   local milanoPortalVersion = "1.0";
-  local kafkaManagerVersion = "1.0";
   local zkVersion = "5.0";
   local kafkaVersion = "5.0";
 
@@ -20,7 +19,6 @@ function(config={})
   local _logstashModuleName = "logstash";
   local _searchModuleName = "elasticsearch";
   local _milanoPortalModuleName = "milano-portal";
-  local _kafkaManagerModuleName = "kafka-manager";
   local _zookeeperModuleName = "zookeeper";
 
   //-------------------
@@ -49,28 +47,14 @@ function(config={})
       }],
     };
 
-  local kafkaManager = t.createInstance(_kafkaManagerModuleName, config, kafkaManagerVersion) +
-    r.moduleResource(_kafkaManagerModuleName, config) +
-    {
-      dependencies: [{
-        moduleName: _kafkaModuleName,
-        name: _kafkaModuleName,
-      },
-      {
-        moduleName: _zookeeperModuleName,
-        name: _zookeeperModuleName,
-      }],
-    };
-
   local milanoPortal = t.createInstance(_milanoPortalModuleName, config, milanoPortalVersion) +
     r.moduleResource(_milanoPortalModuleName, config);
 
   t.getDefaultSettings(config) + {
-    instance_list: [filebeat, logstash, kafkaManager, milanoPortal],
+    instance_list: [filebeat, logstash, milanoPortal],
     TCU: {
       [_filebeatModuleName]: r.moduleTCU(_filebeatModuleName, config),
       [_logstashModuleName]: r.moduleTCU(_logstashModuleName, config),
-      [_kafkaManagerModuleName]: r.moduleTCU(_kafkaManagerModuleName, config),
       [_milanoPortalModuleName]: r.moduleTCU(_milanoPortalModuleName, config),
     },
   }

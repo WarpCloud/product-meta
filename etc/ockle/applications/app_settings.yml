@@ -67,7 +67,9 @@ TERMINAL:
 
 #TXSQL:
 
-#WORKFLOW:
+WORKFLOW:
+  optional_dependencies:
+    - transporter
 
 YARN:
   configuration:

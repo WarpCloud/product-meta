@@ -48,14 +48,6 @@
       ],
       "name": "syncLimit",
       "value": "5"
-    },
-    {
-      "default": "0",
-      "groups": [
-        "zoo_cfg"
-      ],
-      "name": "maxClientCnxns",
-      "value": "0"
     }
   ],
   "version": "5.1"

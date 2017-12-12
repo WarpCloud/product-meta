@@ -13,6 +13,7 @@ function(config={})
   local _notificationModuleName = "notification";
   local _txsqlModuleName = "txsql";
   local _rubikModuleName = "rubik";
+  local _workflowModuleName = "workflow";
 
   //-------------------
   // Dependent modules
@@ -39,6 +40,9 @@ function(config={})
       },{
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
+      }, {
+        moduleName: _workflowModuleName,
+        name: _workflowModuleName,
       }],
     };
 

@@ -7,11 +7,6 @@
          "m": 0.5,
          "s": 0.5
       },
-      "kafka-manager": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
       "logstash": {
          "c": 0.25,
          "m": 0.5,
@@ -71,32 +66,6 @@
          "instance_settings": { },
          "moduleName": "logstash",
          "name": "tdcmilano-logstash",
-         "version": "1.0"
-      },
-      {
-         "annotations": {
-            "application_name": "tdcmilano",
-            "application_type": "TDCMILANO"
-         },
-         "configs": {
-            "kafka_manager_cpu_limit": 1,
-            "kafka_manager_cpu_request": 1,
-            "kafka_manager_memory_limit": 2,
-            "kafka_manager_memory_request": 2
-         },
-         "dependencies": [
-            {
-               "moduleName": "kafka",
-               "name": "kafka"
-            },
-            {
-               "moduleName": "zookeeper",
-               "name": "zookeeper"
-            }
-         ],
-         "instance_settings": { },
-         "moduleName": "kafka-manager",
-         "name": "tdcmilano-kafka-manager",
          "version": "1.0"
       },
       {

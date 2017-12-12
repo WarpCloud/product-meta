@@ -6,6 +6,11 @@
          "c": 0.25,
          "m": 0.5,
          "s": 0.5
+      },
+      "kafka-manager": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
       }
    },
    "Transwarp_Install_ID": "",
@@ -44,13 +49,39 @@
          "dependencies": [
             {
                "moduleName": "zookeeper",
-               "name": "kafka1-zookeeper"
+               "name": "zookeeper"
             }
          ],
          "instance_settings": { },
          "moduleName": "kafka",
          "name": "kafka1-kafka",
          "version": "5.1"
+      },
+      {
+         "annotations": {
+            "application_name": "kafka1",
+            "application_type": "KAFKA"
+         },
+         "configs": {
+            "kafka_manager_cpu_limit": 1,
+            "kafka_manager_cpu_request": 1,
+            "kafka_manager_memory_limit": 2,
+            "kafka_manager_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "kafka",
+               "name": "kafka1-kafka"
+            },
+            {
+               "moduleName": "zookeeper",
+               "name": "zookeeper"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "kafka-manager",
+         "name": "kafka1-kafka-manager",
+         "version": "1.0"
       }
    ],
    "instance_settings": { },
