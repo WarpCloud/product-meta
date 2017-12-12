@@ -202,12 +202,6 @@
       "value": "-agentpath:/usr/lib/hadoop/bin/libagent.so -Xmx2048m"
     },
     {
-      "default": "2048MB",
-      "groups": [],
-      "name": "mapred.child.heapsize",
-      "value": "2048MB"
-    },
-    {
       "default": "500",
       "groups": [
         "mapred_site"
@@ -304,22 +298,6 @@
       ],
       "name": "raid.distraid.max.jobs",
       "value": "10"
-    },
-    {
-      "default": "98304MB",
-      "groups": [
-        "yarn-site.xml"
-      ],
-      "name": "yarn.scheduler.maximum-allocation-mb",
-      "value": "98304MB"
-    },
-    {
-      "default": "96",
-      "groups": [
-        "yarn-site.xml"
-      ],
-      "name": "yarn.scheduler.maximum-allocation-vcores",
-      "value": "96"
     },
     {
       "default": "False",
