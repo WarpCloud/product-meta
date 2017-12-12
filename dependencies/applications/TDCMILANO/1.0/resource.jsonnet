@@ -18,7 +18,7 @@ local t = import "../../../applib/utils.libsonnet";
         if Debug_Request then
           {
             filebeat_cpu_limit: 0.5,
-            filebeat_memory_limit: 1,
+            filebeat_memory_limit: 2,
             filebeat_cpu_request: self.filebeat_cpu_limit,
             filebeat_memory_request: self.filebeat_memory_limit,
           }
@@ -33,7 +33,7 @@ local t = import "../../../applib/utils.libsonnet";
         if Debug_Request then
           {
             logstash_cpu_limit: 0.5,
-            logstash_memory_limit: 1,
+            logstash_memory_limit: 2,
             logstash_cpu_request: self.logstash_cpu_limit,
             logstash_memory_request: self.logstash_memory_limit,
           }

@@ -19,5 +19,19 @@
     "TXSQL-5.1",
     "WORKFLOW-1.1",
     "YARN-5.1"
+  ],
+  "templates": [
+    {
+        "level": "low",
+        "description": "最低配置"
+    },
+    {
+        "level": "medium",
+        "description": "中级配置"
+    },
+    {
+        "level": "high",
+        "description": "高级配置"
+    }
   ]
 }

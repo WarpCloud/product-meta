@@ -3,5 +3,19 @@
   "components": [
     "TXSQL-5.1",
     "TERMINAL-1.0"
+  ],
+  "templates": [
+    {
+        "level": "low",
+        "description": "最低配置"
+    },
+    {
+        "level": "medium",
+        "description": "中级配置"
+    },
+    {
+        "level": "high",
+        "description": "高级配置"
+    }
   ]
 }

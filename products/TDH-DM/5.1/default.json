@@ -9,5 +9,19 @@
     "TERMINAL-1.0",
     "TRANSPORTER-1.1",
     "TXSQL-5.1"
+  ],
+  "templates": [
+    {
+        "level": "low",
+        "description": "最低配置"
+    },
+    {
+        "level": "medium",
+        "description": "中级配置"
+    },
+    {
+        "level": "high",
+        "description": "高级配置"
+    }
   ]
 }

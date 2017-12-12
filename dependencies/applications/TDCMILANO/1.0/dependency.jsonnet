@@ -44,6 +44,9 @@ function(config={})
       {
         moduleName: _searchModuleName,
         name: _searchModuleName,
+      },{
+        moduleName: _zookeeperModuleName,
+        name: _zookeeperModuleName,
       }],
     };
 

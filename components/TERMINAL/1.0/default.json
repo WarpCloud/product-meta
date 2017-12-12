@@ -1,52 +1,61 @@
 {
-  "name": "TERMINAL-1.0",
+  "category": "运维和开发工具",
   "component_type": "TERMINAL",
+  "dependencies": "",
   "description": "Docker命令行工具",
   "edition": "1.0",
-  "category": "运维和开发工具",
-  "dependencies": "",
-  "configs": [
+  "name": "TERMINAL-1.0",
+  "templates": [
     {
-      "name": "terminal_cpu_limit",
-      "display_name": "Terminal CPU核数",
-      "level": "low",
-      "description": "Terminal可以使用的CPU core数量",
-      "value": "6"
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "terminal_memory_limit",
-      "display_name": "Terminal内存",
-      "level": "low",
-      "description": "Terminal可以使用的最大内存",
-      "value": "8192MB"
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "terminal_cpu_limit",
-      "display_name": "Terminal CPU核数",
-      "level": "medium",
-      "description": "Terminal可以使用的CPU core数量",
-      "value": "12"
-    },
-    {
-      "name": "terminal_memory_limit",
-      "display_name": "Terminal内存",
-      "level": "medium",
-      "description": "Terminal可以使用的最大内存",
-      "value": "12288MB"
-    },
-    {
-      "name": "terminal_cpu_limit",
-      "display_name": "Terminal CPU核数",
-      "level": "high",
-      "description": "Terminal可以使用的CPU core数量",
-      "value": "16"
-    },
-    {
-      "name": "terminal_memory_limit",
-      "display_name": "Terminal内存",
-      "level": "high",
-      "description": "Terminal可以使用的最大内存",
-      "value": "24576MB"
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "24576MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }

@@ -5,6 +5,5 @@
   "edition": "5.1",
   "category": "TDH平台产品",
   "dependencies": "",
-  "configs": [
-  ]
+  "templates": []
 }

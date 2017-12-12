@@ -1,52 +1,61 @@
 {
-  "name": "RUBIK-1.0",
+  "category": "TDH开发套件",
   "component_type": "RUBIK",
+  "dependencies": "INCEPTOR",
   "description": "OLAP Cube设计工具",
   "edition": "1.0",
-  "category": "TDH开发套件",
-  "dependencies": "INCEPTOR",
-  "configs": [
+  "name": "RUBIK-1.0",
+  "templates": [
     {
-      "name": "rubik_cpu_limit",
-      "display_name": "Rubik CPU核数",
-      "level": "low",
-      "description": "Rubik可以使用的CPU core数量",
-      "value": "6"
+      "configs": [
+        {
+          "description": "Rubik可以使用的CPU core数量",
+          "display_name": "Rubik CPU核数",
+          "name": "rubik_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Rubik可以使用的最大内存",
+          "display_name": "Rubik内存",
+          "name": "rubik_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "rubik_memory_limit",
-      "display_name": "Rubik内存",
-      "level": "low",
-      "description": "Rubik可以使用的最大内存",
-      "value": "8192MB"
+      "configs": [
+        {
+          "description": "Rubik可以使用的CPU core数量",
+          "display_name": "Rubik CPU核数",
+          "name": "rubik_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "Rubik可以使用的最大内存",
+          "display_name": "Rubik内存",
+          "name": "rubik_memory_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "rubik_cpu_limit",
-      "display_name": "Rubik CPU核数",
-      "level": "medium",
-      "description": "Rubik可以使用的CPU core数量",
-      "value": "12"
-    },
-    {
-      "name": "rubik_memory_limit",
-      "display_name": "Rubik内存",
-      "level": "medium",
-      "description": "Rubik可以使用的最大内存",
-      "value": "12288MB"
-    },
-    {
-      "name": "rubik_cpu_limit",
-      "display_name": "Rubik CPU核数",
-      "level": "high",
-      "description": "Rubik可以使用的CPU core数量",
-      "value": "16"
-    },
-    {
-      "name": "rubik_memory_limit",
-      "display_name": "Rubik内存",
-      "level": "high",
-      "description": "Rubik可以使用的最大内存",
-      "value": "24576MB"
+      "configs": [
+        {
+          "description": "Rubik可以使用的CPU core数量",
+          "display_name": "Rubik CPU核数",
+          "name": "rubik_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "Rubik可以使用的最大内存",
+          "display_name": "Rubik内存",
+          "name": "rubik_memory_limit",
+          "value": "24576MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }

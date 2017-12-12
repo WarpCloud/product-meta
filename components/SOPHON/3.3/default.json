@@ -1,46 +1,55 @@
 {
-  "name": "SOPHON-3.3",
+  "category": "TDH平台产品",
   "component_type": "SOPHON",
+  "dependencies": "HDFS, YARN",
   "description": "交互式数据挖掘，深度学习",
   "edition": "3.3",
-  "category": "TDH平台产品",
-  "dependencies": "HDFS, YARN",
-  "configs": [
+  "name": "SOPHON-3.3",
+  "templates": [
     {
-      "name": "spark_driver_memory",
-      "level": "low",
-      "description": "Spark driver进程的内存大小",
-      "value": "8192MB"
+      "configs": [
+        {
+          "description": "Spark driver进程的内存大小",
+          "name": "spark_driver_memory",
+          "value": "8192MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小",
+          "name": "spark_executor_memory",
+          "value": "12288MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "spark_executor_memory",
-      "level": "low",
-      "description": "Spark executor 进程的内存大小",
-      "value": "12288MB"
+      "configs": [
+        {
+          "description": "Spark driver进程的内存大小",
+          "name": "spark_driver_memory",
+          "value": "12288MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小",
+          "name": "spark_executor_memory",
+          "value": "24576MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "spark_driver_memory",
-      "level": "meidum",
-      "description": "Spark driver进程的内存大小",
-      "value": "12288MB"
-    },
-    {
-      "name": "spark_executor_memory",
-      "level": "medium",
-      "description": "Spark executor 进程的内存大小",
-      "value": "24576MB"
-    },
-    {
-      "name": "spark_driver_memory",
-      "level": "high",
-      "description": "Spark driver进程的内存大小",
-      "value": "24576MB"
-    },
-    {
-      "name": "spark_executor_memory",
-      "level": "high",
-      "description": "Spark executor 进程的内存大小",
-      "value": "36864MB"
+      "configs": [
+        {
+          "description": "Spark driver进程的内存大小",
+          "name": "spark_driver_memory",
+          "value": "24576MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小",
+          "name": "spark_executor_memory",
+          "value": "36864MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }

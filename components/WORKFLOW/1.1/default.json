@@ -1,52 +1,61 @@
 {
-  "name": "WORKFLOW-1.1",
+  "category": "TDH开发套件",
   "component_type": "WORKFLOW",
+  "dependencies": "",
   "description": "调度流",
   "edition": "1.1",
-  "category": "TDH开发套件",
-  "dependencies": "",
-  "configs": [
+  "name": "WORKFLOW-1.1",
+  "templates": [
     {
-      "name": "workflow_cpu_limit",
-      "display_name": "Workflow CPU核数",
-      "level": "low",
-      "description": "Workflow可以使用的CPU core数量",
-      "value": "6"
+      "configs": [
+        {
+          "description": "Workflow可以使用的CPU core数量",
+          "display_name": "Workflow CPU核数",
+          "name": "workflow_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Workflow可以使用的最大内存",
+          "display_name": "Workflow内存",
+          "name": "workflow_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "workflow_memory_limit",
-      "display_name": "Workflow内存",
-      "level": "low",
-      "description": "Workflow可以使用的最大内存",
-      "value": "8192MB"
+      "configs": [
+        {
+          "description": "Workflow可以使用的CPU core数量",
+          "display_name": "Workflow CPU核数",
+          "name": "workflow_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "Workflow可以使用的最大内存",
+          "display_name": "Workflow内存",
+          "name": "workflow_memory_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "workflow_cpu_limit",
-      "display_name": "Workflow CPU核数",
-      "level": "medium",
-      "description": "Workflow可以使用的CPU core数量",
-      "value": "12"
-    },
-    {
-      "name": "workflow_memory_limit",
-      "display_name": "Workflow内存",
-      "level": "medium",
-      "description": "Workflow可以使用的最大内存",
-      "value": "12288MB"
-    },
-    {
-      "name": "workflow_cpu_limit",
-      "display_name": "Workflow CPU核数",
-      "level": "high",
-      "description": "Workflow可以使用的CPU core数量",
-      "value": "16"
-    },
-    {
-      "name": "workflow_memory_limit",
-      "display_name": "Workflow内存",
-      "level": "high",
-      "description": "Workflow可以使用的最大内存",
-      "value": "24576MB"
+      "configs": [
+        {
+          "description": "Workflow可以使用的CPU core数量",
+          "display_name": "Workflow CPU核数",
+          "name": "workflow_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "Workflow可以使用的最大内存",
+          "display_name": "Workflow内存",
+          "name": "workflow_memory_limit",
+          "value": "24576MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }

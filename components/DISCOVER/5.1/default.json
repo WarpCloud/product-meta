@@ -1,52 +1,61 @@
 {
-  "name": "DISCOVER-5.1",
+  "category": "TDH平台产品",
   "component_type": "DISCOVER",
+  "dependencies": "HDFS, YARN",
   "description": "数据挖掘",
   "edition": "5.1",
-  "category": "TDH平台产品",
-  "dependencies": "HDFS, YARN",
-  "configs": [
+  "name": "DISCOVER-5.1",
+  "templates": [
     {
-      "name": "discover_cpu_limit",
-      "display_name": "Discover CPU核数",
-      "level": "low",
-      "description": "Discover可以使用的CPU core数量",
-      "value": "6"
+      "configs": [
+        {
+          "description": "Discover可以使用的CPU core数量",
+          "display_name": "Discover CPU核数",
+          "name": "discover_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Discover可以使用的最大内存",
+          "display_name": "Discover内存",
+          "name": "discover_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "discover_memory_limit",
-      "display_name": "Discover内存",
-      "level": "low",
-      "description": "Discover可以使用的最大内存",
-      "value": "8192MB"
+      "configs": [
+        {
+          "description": "Discover可以使用的CPU core数量",
+          "display_name": "Discover CPU核数",
+          "name": "discover_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "Discover可以使用的最大内存",
+          "display_name": "Discover内存",
+          "name": "discover_memory_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "discover_cpu_limit",
-      "display_name": "Discover CPU核数",
-      "level": "medium",
-      "description": "Discover可以使用的CPU core数量",
-      "value": "12"
-    },
-    {
-      "name": "discover_memory_limit",
-      "display_name": "Discover内存",
-      "level": "medium",
-      "description": "Discover可以使用的最大内存",
-      "value": "12288MB"
-    },
-    {
-      "name": "discover_cpu_limit",
-      "display_name": "Discover CPU核数",
-      "level": "high",
-      "description": "Discover可以使用的CPU core数量",
-      "value": "16"
-    },
-    {
-      "name": "discover_memory_limit",
-      "display_name": "Discover内存",
-      "level": "high",
-      "description": "Discover可以使用的最大内存",
-      "value": "24576MB"
+      "configs": [
+        {
+          "description": "Discover可以使用的CPU core数量",
+          "display_name": "Discover CPU核数",
+          "name": "discover_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "Discover可以使用的最大内存",
+          "display_name": "Discover内存",
+          "name": "discover_memory_limit",
+          "value": "24576MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }

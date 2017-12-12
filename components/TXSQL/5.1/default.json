@@ -1,52 +1,61 @@
 {
-  "name": "TXSQL-5.1",
+  "category": "运维和开发工具",
   "component_type": "TXSQL",
+  "dependencies": "",
   "description": "关系数据库，存放和计算小数据量的数据",
   "edition": "5.1",
-  "category": "运维和开发工具",
-  "dependencies": "",
-  "configs": [
+  "name": "TXSQL-5.1",
+  "templates": [
     {
-      "name": "txsql_cpu_limit",
-      "display_name": "TXSQL CPU核数",
-      "level": "low",
-      "description": "TXSQL可以使用的CPU core数量",
-      "value": "2"
+      "configs": [
+        {
+          "description": "TXSQL可以使用的CPU core数量",
+          "display_name": "TXSQL CPU核数",
+          "name": "txsql_cpu_limit",
+          "value": "2"
+        },
+        {
+          "description": "TXSQL可以使用的最大内存",
+          "display_name": "TXSQL内存",
+          "name": "txsql_mem_limit",
+          "value": "4096MB"
+        }
+      ],
+      "level": "low"
     },
     {
-      "name": "txsql_mem_limit",
-      "display_name": "TXSQL内存",
-      "level": "low",
-      "description": "TXSQL可以使用的最大内存",
-      "value": "4096MB"
+      "configs": [
+        {
+          "description": "TXSQL可以使用的CPU core数量",
+          "display_name": "TXSQL CPU核数",
+          "name": "txsql_cpu_limit",
+          "value": "4"
+        },
+        {
+          "description": "TXSQL可以使用的最大内存",
+          "display_name": "TXSQL内存",
+          "name": "txsql_mem_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "medium"
     },
     {
-      "name": "txsql_cpu_limit",
-      "display_name": "TXSQL CPU核数",
-      "level": "medium",
-      "description": "TXSQL可以使用的CPU core数量",
-      "value": "4"
-    },
-    {
-      "name": "txsql_mem_limit",
-      "display_name": "TXSQL内存",
-      "level": "medium",
-      "description": "TXSQL可以使用的最大内存",
-      "value": "8192MB"
-    },
-      {
-      "name": "txsql_cpu_limit",
-      "display_name": "TXSQL CPU核数",
-      "level": "high",
-      "description": "TXSQL可以使用的CPU core数量",
-      "value": "8"
-    },
-    {
-      "name": "txsql_mem_limit",
-      "display_name": "TXSQL内存",
-      "level": "high",
-      "description": "TXSQL可以使用的最大内存",
-      "value": "12288MB"
+      "configs": [
+        {
+          "description": "TXSQL可以使用的CPU core数量",
+          "display_name": "TXSQL CPU核数",
+          "name": "txsql_cpu_limit",
+          "value": "8"
+        },
+        {
+          "description": "TXSQL可以使用的最大内存",
+          "display_name": "TXSQL内存",
+          "name": "txsql_mem_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "high"
     }
   ]
 }
