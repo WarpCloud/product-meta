@@ -1,0 +1,18 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-final
+  min: transwarp-5.1.0-final
+images:
+- name: kibana
+  variable: kibana_image
+instance-type: kibana
+major-version: '1.0'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: elasticsearch
+  final: true
+  image-version:
+    kibana_image: transwarp-5.1.0-final
+  instance-version: transwarp-5.1.0-final

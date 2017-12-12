@@ -1,0 +1,33 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-final
+  min: transwarp-5.1.0-final
+images:
+- name: governor
+  variable: governor_image
+instance-type: governor
+major-version: '1.0'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: hdfs
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: hyperbase
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: kafka
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: notification
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: elasticsearch
+  - max-version: '5.7'
+    min-version: '5.7'
+    type: txsql
+  final: true
+  image-version:
+    governor_image: transwarp-5.1.0-final
+  instance-version: transwarp-5.1.0-final

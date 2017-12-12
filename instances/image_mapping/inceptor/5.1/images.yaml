@@ -1,0 +1,33 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-test1
+  min: transwarp-5.1.0-test1
+images:
+- name: inceptor
+  variable: inceptor_master_image
+- name: inceptor
+  variable: inceptor_executor_image
+instance-type: inceptor
+major-version: '5.1'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: transwarp-5.1.0-test1
+    min-version: transwarp-5.1.0-test1
+    type: metastore
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: hdfs
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: zookeeper
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: hyperbase
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: elasticsearch
+  final: false
+  image-version:
+    inceptor_executor_image: transwarp-5.1.0-test1
+    inceptor_master_image: transwarp-5.1.0-test1
+  instance-version: transwarp-5.1.0-test1

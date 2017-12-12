@@ -1,0 +1,14 @@
+instance-type: inceptor
+from-major-version: 5.1
+to-major-version: 5.1
+backups:
+- type: pod
+  pod-filter:
+    type: prefix
+    prefix: metastore
+  pods: any
+  function:
+    type: script
+    mount-name: esdatadir
+    conf-dir: /etc/inceptor/conf
+    dump-dir: /var/transwarp

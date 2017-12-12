@@ -1,0 +1,27 @@
+hot-fix-ranges:
+- max: transwarp-5.1.0-final
+  min: transwarp-5.1.0-final
+images:
+- name: sophon-server
+  variable: sophon_server_image
+instance-type: sophon
+major-version: '3.3'
+min-ockle-version: 0.1.4
+releases:
+- dependencies:
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: hdfs
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: yarn
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: zookeeper
+  - max-version: '5.7'
+    min-version: '5.7'
+    type: txsql
+  final: true
+  image-version:
+    sophon_server_image: transwarp-5.1.0-final
+  instance-version: transwarp-5.1.0-final
