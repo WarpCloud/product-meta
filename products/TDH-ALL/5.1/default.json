@@ -23,15 +23,15 @@
   "templates": [
     {
         "level": "low",
-        "description": "最低配置"
+        "description": "最佳性价比模式"
     },
     {
         "level": "medium",
-        "description": "中级配置"
+        "description": "性能和性价比最佳配比模式"
     },
     {
         "level": "high",
-        "description": "高级配置"
+        "description": "最佳性能模式"
     }
   ]
 }
