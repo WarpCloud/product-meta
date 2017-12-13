@@ -298,7 +298,7 @@
       ],
       "name": "raid.distraid.max.jobs",
       "value": "10"
-    }
+    },
     {
       "default": "False",
       "groups": [
