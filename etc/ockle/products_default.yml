@@ -12,23 +12,23 @@ GOVERNOR:
   notification_image: 172.16.1.99/transwarp/notification:transwarp-5.1.0-final
 
 GUARDIAN:
-  apacheds_image: 172.16.1.99/transwarp/apacheds:transwarp-5.1.0-final
+  apacheds_image: 172.16.1.99/transwarp/apacheds:transwarp-5.1.1-rc0
+  guardian_server_image: 172.16.1.99/transwarp/guardian:transwarp-5.1.1-rc0
+  guardian_init_container_image: 172.16.1.99/gold/guardian-init:tdc-1.0
+  cas_config_server_image: 172.16.1.99/transwarp/cas-config-server:tdc-1.0.0-rc0
+  cas_server_image: 172.16.1.99/transwarp/cas-server:tdc-1.0.0-rc0
+  cas_mgnt_server_image: 172.16.1.99/transwarp/cas-admin-server:tdc-1.0.0-rc0
+  gencerts_init_container_image: 172.16.1.99/transwarp/guardian-gencerts:tdc-1.0.0-rc0
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"
   guardian_ds_ha_enabled: false
   guardian_ds_partition_sync_on_write: "false"
   guardian_ds_conf_dir: /etc/guardian-apacheds/conf
-  guardian_server_image: 172.16.1.99/transwarp/guardian:transwarp-5.1.0-final
-  guardian_init_container_image: 172.16.1.99/gold/guardian-init:tdc-1.0
   guardian_server_tls_enabled: true
   guardian_server_key_store: /srv/guardian/server.keystore
   guardian_server_spnego_keytab: /srv/guardian/http.keytab
   guardian_server_key_store_pw: changeit
   fortress_bind_pwd: Transwarp01!
-  cas_config_server_image: 172.16.1.99/transwarp/cas-config-server:tdc-1.0.0-rc0
-  cas_server_image: 172.16.1.99/transwarp/cas-server:tdc-1.0.0-rc0
-  cas_mgnt_server_image: 172.16.1.99/transwarp/cas-admin-server:tdc-1.0.0-rc0
-  gencerts_init_container_image: 172.16.1.99/transwarp/guardian-gencerts:tdc-1.0.0-rc0
 
 HDFS:
   hdfs_data_image: 172.16.1.99/transwarp/hdfs:transwarp-5.1.0-final
