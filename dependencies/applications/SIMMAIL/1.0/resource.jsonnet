@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       simmail:
         if Debug_Request then
           {
-            simmail_cpu_limit: 0.5,
+            simmail_cpu_limit: 0.1,
             simmail_memory_limit: 1,
             simmail_cpu_request: self.simmail_cpu_limit,
             simmail_memory_request: self.simmail_memory_limit,

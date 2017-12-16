@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       txsql:
         if Debug_Request then
           {
-            txsql_cpu_limit: 0.5,
+            txsql_cpu_limit: 0.1,
             txsql_memory_limit: 1,
             txsql_cpu_request: self.txsql_cpu_limit,
             txsql_memory_request: self.txsql_memory_limit,

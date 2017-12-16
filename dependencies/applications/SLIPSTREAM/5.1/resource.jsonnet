@@ -37,12 +37,12 @@ local t = import "../../../applib/utils.libsonnet";
       metastore:
         if Debug_Request then
           {
-            metastore_cpu_limit: 0.5,
+            metastore_cpu_limit: 0.1,
             metastore_memory_limit: 1,
             metastore_cpu_request: self.metastore_cpu_limit,
             metastore_memory_request: self.metastore_memory_limit,
 
-            mysql_cpu_limit: 0.5,
+            mysql_cpu_limit: 0.1,
             mysql_memory_limit: 1,
             mysql_cpu_request: self.metastore_cpu_limit,
             mysql_memory_request: self.metastore_memory_limit,

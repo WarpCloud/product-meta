@@ -28,7 +28,7 @@ local t = import "../../../applib/utils.libsonnet";
       zookeeper:
         if Debug_Request then
           {
-            zk_cpu_limit: 0.2,
+            zk_cpu_limit: 0.1,
             zk_memory_limit: 1,
             zk_cpu_request: self.zk_cpu_limit,
             zk_memory_request: self.zk_memory_limit,

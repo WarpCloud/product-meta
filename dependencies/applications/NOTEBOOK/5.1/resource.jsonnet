@@ -27,7 +27,7 @@ local t = import "../../../applib/utils.libsonnet";
       localcran:
         if Debug_Request then
           {
-            localcran_cpu_limit: 0.5,
+            localcran_cpu_limit: 0.1,
             localcran_memory_limit: 1,
             localcran_cpu_request: self.localcran_cpu_limit,
             localcran_memory_request: self.localcran_memory_limit,

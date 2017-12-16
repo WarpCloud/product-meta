@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       redis:
         if Debug_Request then
           {
-            redis_cpu_limit: 0.5,
+            redis_cpu_limit: 0.1,
             redis_memory_limit: 1,
             redis_cpu_request: self.redis_cpu_limit,
             redis_memory_request: self.redis_memory_limit,

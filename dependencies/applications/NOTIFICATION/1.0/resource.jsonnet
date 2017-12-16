@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       notification:
         if Debug_Request then
           {
-            notification_cpu_limit: 0.5,
+            notification_cpu_limit: 0.1,
             notification_memory_limit: 0.5,
             notification_cpu_request: self.notification_cpu_limit,
             notification_memory_request: self.notification_memory_limit,

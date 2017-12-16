@@ -47,17 +47,17 @@ local t = import "../../../applib/utils.libsonnet";
       elasticsearch:
         if Debug_Request then
           {
-            es_master_cpu_limit: 0.5,
+            es_master_cpu_limit: 0.1,
             es_master_memory_limit: 2,
             es_master_cpu_request: self.es_master_cpu_limit,
             es_master_memory_request: self.es_master_memory_limit,
 
-            es_data_cpu_limit: 0.5,
+            es_data_cpu_limit: 0.1,
             es_data_memory_limit: 2,
             es_data_cpu_request: self.es_data_cpu_limit,
             es_data_memory_request: self.es_data_memory_limit,
 
-            es_client_cpu_limit: 0.5,
+            es_client_cpu_limit: 0.1,
             es_client_memory_limit: 2,
             es_client_cpu_request: self.es_client_cpu_limit,
             es_client_memory_request: self.es_client_memory_limit,

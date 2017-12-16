@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       filebeat:
         if Debug_Request then
           {
-            filebeat_cpu_limit: 0.2,
+            filebeat_cpu_limit: 0.1,
             filebeat_memory_limit: 1,
           }
         else

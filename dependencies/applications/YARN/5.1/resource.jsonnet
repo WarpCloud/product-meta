@@ -12,12 +12,12 @@ local t = import "../../../applib/utils.libsonnet";
       yarn:
         if Debug_Request then
           {
-            yarn_node_cpu_limit: 0.5,
+            yarn_node_cpu_limit: 0.1,
             yarn_node_memory_limit: 1,
             yarn_node_cpu_request: self.yarn_node_cpu_limit,
             yarn_node_memory_request: self.yarn_node_memory_limit,
 
-            yarn_rm_cpu_limit: 0.5,
+            yarn_rm_cpu_limit: 0.1,
             yarn_rm_memory_limit: 1,
             yarn_rm_cpu_request: self.yarn_rm_cpu_limit,
             yarn_rm_memory_request: self.yarn_rm_memory_limit,

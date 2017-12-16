@@ -14,7 +14,7 @@ local t = import "../../../applib/utils.libsonnet";
       logstash:
         if Debug_Request then
           {
-            logstash_cpu_limit: 0.2,
+            logstash_cpu_limit: 0.1,
             logstash_memory_limit: 1,
             logstash_cpu_request: self.logstash_cpu_limit,
             logstash_memory_request: self.logstash_memory_limit,

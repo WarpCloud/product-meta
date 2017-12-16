@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       tenon:
         if Debug_Request then
           {
-            abacus_cpu_limit: 0.5,
+            abacus_cpu_limit: 0.1,
             abacus_memory_limit: 2,
             scanner_cpu_limit: self.abacus_cpu_limit,
             scanner_memory_limit: self.abacus_memory_limit,
@@ -27,7 +27,7 @@ local t = import "../../../applib/utils.libsonnet";
       gondar:
         if Debug_Request then
           {
-            gondar_udr_cpu_limit: 0.5,
+            gondar_udr_cpu_limit: 0.1,
             gondar_udr_memory_limit: 2,
             gondar_cdr_cpu_limit: self.gondar_udr_cpu_limit,
             gondar_cdr_memory_limit: self.gondar_udr_memory_limit,

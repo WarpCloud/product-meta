@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       ignitor:
         if Debug_Request then
           {
-            ignitor_cpu_limit: 0.5,
+            ignitor_cpu_limit: 0.1,
             ignitor_memory_limit: 1,
             ignitor_cpu_request: self.ignitor_cpu_limit,
             ignitor_memory_request: self.ignitor_memory_limit,

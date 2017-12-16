@@ -17,7 +17,7 @@ local t = import "../../../applib/utils.libsonnet";
       [_filebeatModuleName]:
         if Debug_Request then
           {
-            filebeat_cpu_limit: 0.5,
+            filebeat_cpu_limit: 0.1,
             filebeat_memory_limit: 2,
             filebeat_cpu_request: self.filebeat_cpu_limit,
             filebeat_memory_request: self.filebeat_memory_limit,
@@ -32,7 +32,7 @@ local t = import "../../../applib/utils.libsonnet";
       [_logstashModuleName]:
         if Debug_Request then
           {
-            logstash_cpu_limit: 0.5,
+            logstash_cpu_limit: 0.1,
             logstash_memory_limit: 2,
             logstash_cpu_request: self.logstash_cpu_limit,
             logstash_memory_request: self.logstash_memory_limit,
@@ -50,7 +50,7 @@ local t = import "../../../applib/utils.libsonnet";
       [_milanoPortalModuleName]:
         if Debug_Request then
           {
-            milano_portal_cpu_limit: 0.5,
+            milano_portal_cpu_limit: 0.1,
             milano_portal_memory_limit: 1,
             milano_portal_cpu_request: self.milano_portal_cpu_limit,
             milano_portal_memory_request: self.milano_portal_memory_limit,

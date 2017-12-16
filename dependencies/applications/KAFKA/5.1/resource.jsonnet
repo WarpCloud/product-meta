@@ -5,7 +5,7 @@ local t = import "../../../applib/utils.libsonnet";
 {
   local _kafkaModuleName = "kafka",
   local _kafkaManagerModuleName = "kafka-manager",
-  
+
   /*
    * Define resource metrics for each module
    */
@@ -41,7 +41,7 @@ local t = import "../../../applib/utils.libsonnet";
       [_kafkaModuleName]:
         if Debug_Request then
           {
-            kafka_cpu_limit: 0.4,
+            kafka_cpu_limit: 0.1,
             kafka_memory_limit: 1,
             kafka_cpu_request: self.kafka_cpu_limit,
             kafka_memory_request: self.kafka_memory_limit,
@@ -56,7 +56,7 @@ local t = import "../../../applib/utils.libsonnet";
       [_kafkaManagerModuleName]:
         if Debug_Request then
           {
-            kafka_manager_cpu_limit: 0.5,
+            kafka_manager_cpu_limit: 0.1,
             kafka_manager_memory_limit: 1,
             kafka_manager_cpu_request: self.kafka_manager_cpu_limit,
             kafka_manager_memory_request: self.kafka_manager_memory_limit,

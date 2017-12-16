@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       workflow:
         if Debug_Request then
           {
-            workflow_cpu_limit: 0.5,
+            workflow_cpu_limit: 0.1,
             workflow_memory_limit: 1,
             workflow_cpu_request: self.workflow_cpu_limit,
             workflow_memory_request: self.workflow_memory_limit,

@@ -17,22 +17,22 @@ local t = import "../../../applib/utils.libsonnet";
       hyperbase:
         if Debug_Request then
           {
-            hbase_master_cpu_limit: 0.5,
+            hbase_master_cpu_limit: 0.1,
             hbase_master_memory_limit: 2,
             hbase_master_cpu_request: self.hbase_master_cpu_limit,
             hbase_master_memory_request: self.hbase_master_memory_limit,
 
-            hbase_rs_cpu_limit: 0.5,
+            hbase_rs_cpu_limit: 0.1,
             hbase_rs_memory_limit: 1,
             hbase_rs_cpu_request: self.hbase_rs_cpu_limit,
             hbase_rs_memory_request: self.hbase_rs_memory_limit,
 
-            hbase_rest_cpu_limit: 0.5,
+            hbase_rest_cpu_limit: 0.1,
             hbase_rest_memory_limit: 1,
             hbase_rest_cpu_request: self.hbase_rest_cpu_limit,
             hbase_rest_memory_request: self.hbase_rest_memory_limit,
 
-            hbase_thrift_cpu_limit: 0.5,
+            hbase_thrift_cpu_limit: 0.1,
             hbase_thrift_memory_limit: 1,
             hbase_thrift_cpu_request: self.hbase_thrift_cpu_limit,
             hbase_thrift_memory_request: self.hbase_thrift_memory_limit,

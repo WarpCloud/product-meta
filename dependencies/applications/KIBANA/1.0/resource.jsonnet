@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       kibana:
         if Debug_Request then
           {
-            kibana_cpu_limit: 0.2,
+            kibana_cpu_limit: 0.1,
             kibana_memory_limit: 1,
             kibana_cpu_request: self.kibana_cpu_limit,
             kibana_memory_request: self.kibana_memory_limit,

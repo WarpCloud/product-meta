@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       kong:
         if Debug_Request then
           {
-            kong_cpu_limit: 0.2,
+            kong_cpu_limit: 0.1,
             kong_memory_limit: 1,
             kong_cpu_request: self.kong_cpu_limit,
             kong_memory_request: self.kong_memory_limit,
@@ -27,7 +27,7 @@ local t = import "../../../applib/utils.libsonnet";
       "kong-dashboard":
         if Debug_Request then
           {
-            kong_dashboard_cpu_limit: 0.2,
+            kong_dashboard_cpu_limit: 0.1,
             kong_dashboard_memory_limit: 1,
             kong_dashboard_cpu_request: self.kong_dashboard_cpu_limit,
             kong_dashboard_memory_request: self.kong_dashboard_memory_limit,

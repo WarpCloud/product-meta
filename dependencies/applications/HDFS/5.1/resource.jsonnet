@@ -66,27 +66,27 @@ local t = import "../../../applib/utils.libsonnet";
       hdfs:
         if Debug_Request then
           {
-            hdfs_journal_cpu_limit: 0.2,
+            hdfs_journal_cpu_limit: 0.1,
             hdfs_journal_memory_limit: 1,
             hdfs_journal_cpu_request: self.hdfs_journal_cpu_limit,
             hdfs_journal_memory_request: self.hdfs_journal_memory_limit,
 
-            hdfs_name_cpu_limit: 0.4,
+            hdfs_name_cpu_limit: 0.1,
             hdfs_name_memory_limit: 2,
             hdfs_name_cpu_request: self.hdfs_name_cpu_limit,
             hdfs_name_memory_request: self.hdfs_name_memory_limit,
 
-            hdfs_zkfc_cpu_limit: 0.4,
+            hdfs_zkfc_cpu_limit: 0.1,
             hdfs_zkfc_memory_limit: 2,
             hdfs_zkfc_cpu_request: self.hdfs_zkfc_cpu_limit,
             hdfs_zkfc_memory_request: self.hdfs_zkfc_memory_limit,
 
-            hdfs_data_cpu_limit: 0.2,
+            hdfs_data_cpu_limit: 0.1,
             hdfs_data_memory_limit: 1,
             hdfs_data_cpu_request: self.hdfs_data_cpu_limit,
             hdfs_data_memory_request: self.hdfs_data_memory_limit,
 
-            hdfs_httpfs_cpu_limit: 0.2,
+            hdfs_httpfs_cpu_limit: 0.1,
             hdfs_httpfs_memory_limit: 1,
             hdfs_httpfs_cpu_request: self.hdfs_httpfs_cpu_limit,
             hdfs_httpfs_memory_request: self.hdfs_httpfs_memory_limit,
@@ -127,7 +127,7 @@ local t = import "../../../applib/utils.libsonnet";
       zookeeper:
         if Debug_Request then
           {
-            zk_cpu_limit: 0.2,
+            zk_cpu_limit: 0.1,
             zk_memory_limit: 1,
             zk_cpu_request: self.zk_cpu_limit,
             zk_memory_request: self.zk_memory_limit,

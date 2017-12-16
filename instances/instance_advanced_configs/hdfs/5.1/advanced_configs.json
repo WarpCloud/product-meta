@@ -1,5 +1,4 @@
 {
-  "instance_type": "hdfs",
   "configs": [
     {
       "default": "",
@@ -46,18 +45,6 @@
       "value": "50070"
     },
     {
-      "default": "False",
-      "groups": [],
-      "name": "namenode.use.wildcard",
-      "value": "False"
-    },
-    {
-      "default": "True",
-      "groups": [],
-      "name": "journalnode.use.wildcard",
-      "value": "True"
-    },
-    {
       "default": "8485",
       "groups": [],
       "name": "journalnode.rpc-port",
@@ -68,12 +55,6 @@
       "groups": [],
       "name": "journalnode.http-port",
       "value": "8480"
-    },
-    {
-      "default": "True",
-      "groups": [],
-      "name": "datanode.use.wildcard",
-      "value": "True"
     },
     {
       "default": "50020",
@@ -104,14 +85,6 @@
       "groups": [],
       "name": "default.heap.size",
       "value": "4096MB"
-    },
-    {
-      "default": "shell(/bin/true)",
-      "groups": [
-        "core-site.xml"
-      ],
-      "name": "dfs.ha.fencing.methods",
-      "value": "shell(/bin/true)"
     },
     {
       "default": "755",
@@ -146,5 +119,6 @@
       "value": "1440"
     }
   ],
+  "instance_type": "hdfs",
   "version": "5.1"
 }

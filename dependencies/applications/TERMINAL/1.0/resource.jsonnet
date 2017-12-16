@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       terminal:
         if Debug_Request then
           {
-            terminal_cpu_limit: 0.5,
+            terminal_cpu_limit: 0.1,
             terminal_memory_limit: 1,
             terminal_cpu_request: self.terminal_cpu_limit,
             terminal_memory_request: self.terminal_memory_limit,

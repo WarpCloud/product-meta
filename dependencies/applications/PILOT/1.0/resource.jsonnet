@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       pilot:
         if Debug_Request then
           {
-            pilot_cpu_limit: 0.5,
+            pilot_cpu_limit: 0.1,
             pilot_memory_limit: 1,
             pilot_cpu_request: self.pilot_cpu_limit,
             pilot_memory_request: self.pilot_memory_limit,
@@ -27,7 +27,7 @@ local t = import "../../../applib/utils.libsonnet";
       filerobot:
         if Debug_Request then
           {
-            filerobot_cpu_limit: 0.5,
+            filerobot_cpu_limit: 0.1,
             filerobot_memory_limit: 2,
             filerobot_cpu_request: self.filerobot_cpu_limit,
             filerobot_memory_request: self.filerobot_memory_limit,

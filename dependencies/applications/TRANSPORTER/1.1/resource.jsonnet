@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       tdt:
         if Debug_Request then
           {
-            tdt_cpu_limit: 0.5,
+            tdt_cpu_limit: 0.1,
             tdt_memory_limit: 2,
             tdt_cpu_request: self.tdt_cpu_limit,
             tdt_memory_request: self.tdt_memory_limit,

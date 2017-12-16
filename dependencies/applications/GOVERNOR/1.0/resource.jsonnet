@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       governor:
         if Debug_Request then
           {
-            governor_cpu_limit: 0.2,
+            governor_cpu_limit: 0.1,
             governor_memory_limit: 1,
             governor_cpu_request: self.governor_cpu_limit,
             governor_memory_request: self.governor_memory_limit,
@@ -27,7 +27,7 @@ local t = import "../../../applib/utils.libsonnet";
       notification:
         if Debug_Request then
           {
-            notification_cpu_limit: 0.5,
+            notification_cpu_limit: 0.1,
             notification_memory_limit: 1,
             notification_cpu_request: self.notification_cpu_limit,
             notification_memory_request: self.notification_memory_limit,
