@@ -35,6 +35,8 @@ gold_build:
   stage: gold_build
   script:
       - set -e
+      - startdocker.sh &
+      - sleep 90s
       - export PUB_PROJECT=gold
       - export PUB_TAG_MAJOR=$PUB_HARBOR/$PUB_PROJECT/product-meta:$PUB_MAJOR_VERSION
       - docker build --no-cache --force-rm -f Dockerfile -t $PUB_TAG_MAJOR .
