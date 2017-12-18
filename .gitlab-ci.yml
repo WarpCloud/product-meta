@@ -4,7 +4,6 @@ before_script:
     - source /root/.bashrc
     - export PUB_HARBOR=172.16.1.99
     - export PUB_MAJOR_VERSION=tdc-1.0
-    - export PUB_MINOR_VERSION=tdc-1.0.0-rc1
 
 stages:
   - precommit_build
