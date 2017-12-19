@@ -1,13 +1,26 @@
 #EXAMPLE:
 #  configuration:
 #    advanced_configs:
-#      - example_env_list
+#      default: DEFAULT_CONFIGS
+#      example_site.xml: EXAMPLE_SITE_CONFIGS
 #  optional_dependencies:
 #    - example_dependency
 #  security:
 #
 common:
-  security:
+ configuration:
+    advanced_configs:
+      capacity_scheduler:
+      mapred_site:
+      yarn-site.xml: YARN_YARN_SITE_CONFIGS
+      zeppelin-site.xml:
+      server.properties:
+      zoo_cfg:
+      hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
+      hdfs-site.xml: HDFS_HDFS_SITE_CONFIGS
+      core-site.xml:
+      hbase-site.xml:
+ security:
     guardian_address: Transwarp_Guardian_Address
     guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
     auto_injected_volumes: Transwarp_Auto_Injected_Volumes
@@ -18,13 +31,15 @@ common:
 
 HDFS:
   configuration:
-    advanced_configs: HDFS_HDFS_SITE_CONFIGS
+    advanced_configs:
+      default: HDFS_HDFS_SITE_CONFIGS
 
 #HYPERBASE:
 
 INCEPTOR:
   configuration:
-    advanced_configs: INCEPTOR_HIVE_SITE_CONFIGS
+    advanced_configs:
+      default: INCEPTOR_HIVE_SITE_CONFIGS
   optional_dependencies:
     - hyperbase
     - search
@@ -53,7 +68,8 @@ LOGSTASH:
 
 SLIPSTREAM:
   configuration:
-    advanced_configs: INCEPTOR_HIVE_SITE_CONFIGS
+    advanced_configs:
+      default: INCEPTOR_HIVE_SITE_CONFIGS
 
 TERMINAL:
   optional_dependencies:
@@ -73,4 +89,5 @@ WORKFLOW:
 
 YARN:
   configuration:
-    advanced_configs: YARN_YARN_SITE_CONFIGS
+    advanced_configs:
+      default: YARN_YARN_SITE_CONFIGS
