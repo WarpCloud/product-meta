@@ -10,7 +10,7 @@
 common:
  configuration:
     advanced_configs:
-      capacity_scheduler:
+      capacity_scheduler: YARN_CAPACITY_SCHEDULER_CONFIGS
       mapred_site:
       yarn-site.xml: YARN_YARN_SITE_CONFIGS
       zeppelin-site.xml:
@@ -18,7 +18,7 @@ common:
       zoo_cfg:
       hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
       hdfs-site.xml: HDFS_HDFS_SITE_CONFIGS
-      core-site.xml:
+      core-site.xml: HDFS_CORE_SITE_CONFIGS
       hbase-site.xml:
  security:
     guardian_address: Transwarp_Guardian_Address
