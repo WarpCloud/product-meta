@@ -1,24 +1,24 @@
-instance-type: discover
-major-version: '5.1'
+instance-type: tdt
+major-version: '1.1'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
   - max: transwarp-5.1
     min: transwarp-5.1
 images:
-  - name: discover-ide
-    variable: discover_image
+  - name: tdt
+    variable: tdt
 releases:
-  - release-version: transwarp-5.1
-    dependencies:
+  - dependencies:
       - max-version: transwarp-5.1
         min-version: transwarp-5.1
         type: hdfs
       - max-version: transwarp-5.1
         min-version: transwarp-5.1
-        type: yarn
+        type: inceptor
       - max-version: transwarp-5.1
         min-version: transwarp-5.1
-        type: localcran
+        type: txsql
     final: false
     image-version:
-      discover_image: transwarp-5.1
+      tdt: transwarp-5.1
+    release-version: transwarp-5.1

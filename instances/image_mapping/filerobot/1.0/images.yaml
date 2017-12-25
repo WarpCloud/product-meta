@@ -1,12 +1,15 @@
-hot-fix-ranges:
-- max: ''
-  min: ''
-images: []
 instance-type: filerobot
 major-version: '1.0'
-min-ockle-version: 0.1.4
+min-tdc-version: tdc-1.0.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.1
+    min: transwarp-5.1
+images:
+  - name: filerobot
+    variable: filerobot_image
 releases:
-- dependencies: []
-  final: false
-  image-version: {}
-  instance-version: ''
+  - dependencies: []
+    final: false
+    image-version:
+      filerobot_image: transwarp-5.1
+    release-version: transwarp-5.1
