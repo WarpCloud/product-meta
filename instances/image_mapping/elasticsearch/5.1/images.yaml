@@ -1,18 +1,18 @@
-hot-fix-ranges:
-- max: transwarp-5.1.0-final
-  min: transwarp-5.1.0-final
-images:
-- name: search
-  variable: es_image
-- name: search-head
-  variable: es_head_image
 instance-type: elasticsearch
 major-version: '5.1'
-min-ockle-version: 0.1.4
+min-tdc-version: tdc-1.0.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.1
+    min: transwarp-5.1
+images:
+  - name: search
+    variable: es_image
+  - name: search-head
+    variable: es_head_image
 releases:
-- dependencies: []
-  final: true
-  image-version:
-    es_head_image: transwarp-5.1.0-final
-    es_image: transwarp-5.1.0-final
-  instance-version: transwarp-5.1.0-final
+  - dependencies: []
+    final: false
+    image-version:
+      es_head_image: transwarp-5.1
+      es_image: transwarp-5.1
+    release-version: transwarp-5.1

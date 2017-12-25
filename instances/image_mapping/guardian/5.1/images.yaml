@@ -1,18 +1,18 @@
-hot-fix-ranges:
-- max: transwarp-5.1.0-final
-  min: transwarp-5.1.0-final
-images:
-- name: apacheds
-  variable: apacheds_image
-- name: guardian
-  variable: guardian_server_image
 instance-type: guardian
 major-version: '5.1'
-min-ockle-version: 0.1.4
+min-tdc-version: tdc-1.0.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.1
+    min: transwarp-5.1
+images:
+  - name: apacheds
+    variable: apacheds_image
+  - name: guardian
+    variable: guardian_server_image
 releases:
-- dependencies: []
-  final: true
-  image-version:
-    apacheds_image: transwarp-5.1.0-final
-    guardian_server_image: transwarp-5.1.0-final
-  instance-version: transwarp-5.1.0-final
+  - dependencies: []
+    final: false
+    image-version:
+      apacheds_image: transwarp-5.1
+      guardian_server_image: transwarp-5.1
+    release-version: transwarp-5.1
