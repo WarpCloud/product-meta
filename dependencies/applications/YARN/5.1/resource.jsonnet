@@ -10,30 +10,17 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       yarn:
-        if Debug_Request then
-          {
-            yarn_node_cpu_limit: 0.1,
-            yarn_node_memory_limit: 1,
-            yarn_node_cpu_request: self.yarn_node_cpu_limit,
-            yarn_node_memory_request: self.yarn_node_memory_limit,
+        {
+          yarn_node_cpu_limit: t.objectField(config, "yarn_node_cpu_limit", 1),
+          yarn_node_memory_limit: t.objectField(config, "yarn_node_memory_limit", 2),
+          yarn_node_cpu_request: t.objectField(config, "yarn_node_cpu_request", 0.1),
+          yarn_node_memory_request: t.objectField(config, "yarn_node_memory_request", 1),
 
-            yarn_rm_cpu_limit: 0.1,
-            yarn_rm_memory_limit: 1,
-            yarn_rm_cpu_request: self.yarn_rm_cpu_limit,
-            yarn_rm_memory_request: self.yarn_rm_memory_limit,
-          }
-        else
-          {
-            yarn_node_cpu_limit: t.objectField(config, "yarn_node_cpu_limit", 1),
-            yarn_node_memory_limit: t.objectField(config, "yarn_node_memory_limit", 2),
-            yarn_node_cpu_request: t.objectField(config, "yarn_node_cpu_request", self.yarn_node_cpu_limit),
-            yarn_node_memory_request: t.objectField(config, "yarn_node_memory_request", self.yarn_node_memory_limit),
-
-            yarn_rm_cpu_limit: t.objectField(config, "yarn_rm_cpu_limit", self.yarn_node_cpu_limit),
-            yarn_rm_memory_limit: t.objectField(config, "yarn_rm_memory_limit", self.yarn_node_memory_limit),
-            yarn_rm_cpu_request: t.objectField(config, "yarn_rm_cpu_request", self.yarn_rm_cpu_limit),
-            yarn_rm_memory_request: t.objectField(config, "yarn_rm_memory_request", self.yarn_rm_memory_limit),
-          },
+          yarn_rm_cpu_limit: t.objectField(config, "yarn_rm_cpu_limit", self.yarn_node_cpu_limit),
+          yarn_rm_memory_limit: t.objectField(config, "yarn_rm_memory_limit", self.yarn_node_memory_limit),
+          yarn_rm_cpu_request: t.objectField(config, "yarn_rm_cpu_request", 0.1),
+          yarn_rm_memory_request: t.objectField(config, "yarn_rm_memory_request", 1),
+        },
     };
 
     local s = t.extractStorageParams(config);

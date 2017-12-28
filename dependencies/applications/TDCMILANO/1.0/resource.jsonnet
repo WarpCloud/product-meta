@@ -15,56 +15,32 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       [_filebeatModuleName]:
-        if Debug_Request then
-          {
-            filebeat_cpu_limit: 0.1,
-            filebeat_memory_limit: 2,
-            filebeat_cpu_request: self.filebeat_cpu_limit,
-            filebeat_memory_request: self.filebeat_memory_limit,
-          }
-        else
-          {
-            filebeat_cpu_limit: t.objectField(config, "filebeat_cpu_limit", 1),
-            filebeat_memory_limit: t.objectField(config, "filebeat_memory_limit", 2),
-            filebeat_cpu_request: t.objectField(config, "filebeat_cpu_request", self.filebeat_cpu_limit),
-            filebeat_memory_request: t.objectField(config, "filebeat_memory_request", self.filebeat_memory_limit),
-          },
+        {
+          filebeat_cpu_limit: t.objectField(config, "filebeat_cpu_limit", 1),
+          filebeat_memory_limit: t.objectField(config, "filebeat_memory_limit", 2),
+          filebeat_cpu_request: t.objectField(config, "filebeat_cpu_request", 0.1),
+          filebeat_memory_request: t.objectField(config, "filebeat_memory_request", 1),
+        },
       [_logstashModuleName]:
-        if Debug_Request then
-          {
-            logstash_cpu_limit: 0.1,
-            logstash_memory_limit: 2,
-            logstash_cpu_request: self.logstash_cpu_limit,
-            logstash_memory_request: self.logstash_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource[_filebeatModuleName].filebeat_cpu_limit,
-            local memory_limit = resource[_filebeatModuleName].filebeat_memory_limit,
+        {
+          local cpu_limit = resource[_filebeatModuleName].filebeat_cpu_limit,
+          local memory_limit = resource[_filebeatModuleName].filebeat_memory_limit,
 
-            logstash_cpu_limit: t.objectField(config, "logstash_cpu_limit", cpu_limit),
-            logstash_memory_limit: t.objectField(config, "logstash_memory_limit", memory_limit),
-            logstash_cpu_request: t.objectField(config, "logstash_cpu_request", self.logstash_cpu_limit),
-            logstash_memory_request: t.objectField(config, "logstash_memory_request", self.logstash_memory_limit),
-          },
+          logstash_cpu_limit: t.objectField(config, "logstash_cpu_limit", cpu_limit),
+          logstash_memory_limit: t.objectField(config, "logstash_memory_limit", memory_limit),
+          logstash_cpu_request: t.objectField(config, "logstash_cpu_request", 0.1),
+          logstash_memory_request: t.objectField(config, "logstash_memory_request", 1),
+        },
       [_milanoPortalModuleName]:
-        if Debug_Request then
-          {
-            milano_portal_cpu_limit: 0.1,
-            milano_portal_memory_limit: 1,
-            milano_portal_cpu_request: self.milano_portal_cpu_limit,
-            milano_portal_memory_request: self.milano_portal_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource[_filebeatModuleName].filebeat_cpu_limit,
-            local memory_limit = resource[_filebeatModuleName].filebeat_memory_limit,
+        {
+          local cpu_limit = resource[_filebeatModuleName].filebeat_cpu_limit,
+          local memory_limit = resource[_filebeatModuleName].filebeat_memory_limit,
 
-            milano_portal_cpu_limit: t.objectField(config, "milano_portal_cpu_limit", cpu_limit),
-            milano_portal_memory_limit: t.objectField(config, "milano_portal_memory_limit", memory_limit),
-            milano_portal_cpu_request: t.objectField(config, "milano_portal_cpu_request", self.milano_portal_cpu_limit),
-            milano_portal_memory_request: t.objectField(config, "milano_portal_memory_request", self.milano_portal_memory_limit),
-          },
+          milano_portal_cpu_limit: t.objectField(config, "milano_portal_cpu_limit", cpu_limit),
+          milano_portal_memory_limit: t.objectField(config, "milano_portal_memory_limit", memory_limit),
+          milano_portal_cpu_request: t.objectField(config, "milano_portal_cpu_request", 0.1),
+          milano_portal_memory_request: t.objectField(config, "milano_portal_memory_request", 1),
+        },
     };
 
     local storage = {};

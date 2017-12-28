@@ -17,9 +17,9 @@
          },
          "configs": {
             "redis_cpu_limit": 2,
-            "redis_cpu_request": 2,
+            "redis_cpu_request": 0.10000000000000001,
             "redis_memory_limit": 4,
-            "redis_memory_request": 4
+            "redis_memory_request": 1
          },
          "instance_settings": { },
          "moduleName": "redis",

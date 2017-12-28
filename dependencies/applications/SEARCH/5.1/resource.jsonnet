@@ -45,43 +45,25 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       elasticsearch:
-        if Debug_Request then
-          {
-            es_master_cpu_limit: 0.1,
-            es_master_memory_limit: 2,
-            es_master_cpu_request: self.es_master_cpu_limit,
-            es_master_memory_request: self.es_master_memory_limit,
+        {
+          es_master_cpu_limit: t.objectField(config, "es_master_cpu_limit", 1),
+          es_master_memory_limit: t.objectField(config, "es_master_memory_limit", 4),
+          es_master_cpu_request: t.objectField(config, "es_master_cpu_request", 0.1),
+          es_master_memory_request: t.objectField(config, "es_master_memory_request", 1),
 
-            es_data_cpu_limit: 0.1,
-            es_data_memory_limit: 2,
-            es_data_cpu_request: self.es_data_cpu_limit,
-            es_data_memory_request: self.es_data_memory_limit,
+          local cpu_limit = self.es_master_cpu_limit,
+          local memory_limit = self.es_master_memory_limit,
 
-            es_client_cpu_limit: 0.1,
-            es_client_memory_limit: 2,
-            es_client_cpu_request: self.es_client_cpu_limit,
-            es_client_memory_request: self.es_client_memory_limit,
-          }
-        else
-          {
-            es_master_cpu_limit: t.objectField(config, "es_master_cpu_limit", 1),
-            es_master_memory_limit: t.objectField(config, "es_master_memory_limit", 4),
-            es_master_cpu_request: t.objectField(config, "es_master_cpu_request", self.es_master_cpu_limit),
-            es_master_memory_request: t.objectField(config, "es_master_memory_request", self.es_master_memory_limit),
+          es_data_cpu_limit: t.objectField(config, "es_data_cpu_limit", t.raRange(cpu_limit, min=1, max=cpu_limit)),
+          es_data_memory_limit: t.objectField(config, "es_data_memory_limit", t.raRange(memory_limit, min=1, max=memory_limit)),
+          es_data_cpu_request: t.objectField(config, "es_data_cpu_request", 0.1),
+          es_data_memory_request: t.objectField(config, "es_data_memory_request", 1),
 
-            local cpu_limit = self.es_master_cpu_limit,
-            local memory_limit = self.es_master_memory_limit,
-
-            es_data_cpu_limit: t.objectField(config, "es_data_cpu_limit", t.raRange(cpu_limit, min=1, max=cpu_limit)),
-            es_data_memory_limit: t.objectField(config, "es_data_memory_limit", t.raRange(memory_limit, min=1, max=memory_limit)),
-            es_data_cpu_request: t.objectField(config, "es_data_cpu_request", self.es_data_cpu_limit),
-            es_data_memory_request: t.objectField(config, "es_data_memory_request", self.es_data_memory_limit),
-
-            es_client_cpu_limit: t.objectField(config, "es_client_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-            es_client_memory_limit: t.objectField(config, "es_client_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-            es_client_cpu_request: t.objectField(config, "es_client_cpu_request", self.es_client_cpu_limit),
-            es_client_memory_request: t.objectField(config, "es_client_memory_request", self.es_client_memory_limit),
-          },
+          es_client_cpu_limit: t.objectField(config, "es_client_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+          es_client_memory_limit: t.objectField(config, "es_client_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+          es_client_cpu_request: t.objectField(config, "es_client_cpu_request", 0.1),
+          es_client_memory_request: t.objectField(config, "es_client_memory_request", 1),
+        },
     };
     // Return storage and resource specification
     {
