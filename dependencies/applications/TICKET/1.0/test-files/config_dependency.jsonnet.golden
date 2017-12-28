@@ -23,9 +23,9 @@
          },
          "configs": {
             "notification_cpu_limit": 1,
-            "notification_cpu_request": 0.10000000000000001,
+            "notification_cpu_request": 1,
             "notification_memory_limit": 2,
-            "notification_memory_request": 1
+            "notification_memory_request": 2
          },
          "dependencies": [
             {
@@ -46,9 +46,9 @@
          },
          "configs": {
             "ticket_cpu_limit": 1,
-            "ticket_cpu_request": 0.10000000000000001,
+            "ticket_cpu_request": 1,
             "ticket_memory_limit": 4,
-            "ticket_memory_request": 1
+            "ticket_memory_request": 4
          },
          "dependencies": [
             {

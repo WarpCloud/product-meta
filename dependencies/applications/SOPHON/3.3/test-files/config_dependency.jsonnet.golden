@@ -17,7 +17,7 @@
          },
          "configs": {
             "sophon_cpu_limit": 1,
-            "sophon_cpu_request": 0.10000000000000001,
+            "sophon_cpu_request": 1,
             "sophon_memory_limit": 4,
             "sophon_memory_request": 4
          },

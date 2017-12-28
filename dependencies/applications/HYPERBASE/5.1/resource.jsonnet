@@ -15,31 +15,54 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       hyperbase:
-        {
-          hbase_master_cpu_limit: t.objectField(config, "hbase_master_cpu_limit", 4),
-          hbase_master_memory_limit: t.objectField(config, "hbase_master_memory_limit", 4),
-          hbase_master_cpu_request: t.objectField(config, "hbase_master_cpu_request", 0.1),
-          hbase_master_memory_request: t.objectField(config, "hbase_master_memory_request", 2),
+        if Debug_Request then
+          {
+            hbase_master_cpu_limit: 0.1,
+            hbase_master_memory_limit: 2,
+            hbase_master_cpu_request: self.hbase_master_cpu_limit,
+            hbase_master_memory_request: self.hbase_master_memory_limit,
 
-          hbase_rs_cpu_limit: t.objectField(config, "hbase_rs_cpu_limit", 2),
-          hbase_rs_memory_limit: t.objectField(config, "hbase_rs_memory_limit", 1),
-          hbase_rs_cpu_request: t.objectField(config, "hbase_rs_cpu_request", 0.1),
-          hbase_rs_memory_request: t.objectField(config, "hbase_rs_memory_request", 1),
+            hbase_rs_cpu_limit: 0.1,
+            hbase_rs_memory_limit: 1,
+            hbase_rs_cpu_request: self.hbase_rs_cpu_limit,
+            hbase_rs_memory_request: self.hbase_rs_memory_limit,
 
-          // Use namenode as the achor point in dynamic resource distribution
-          local cpu_limit = self.hbase_rs_cpu_limit,
-          local memory_limit = self.hbase_rs_memory_limit,
+            hbase_rest_cpu_limit: 0.1,
+            hbase_rest_memory_limit: 1,
+            hbase_rest_cpu_request: self.hbase_rest_cpu_limit,
+            hbase_rest_memory_request: self.hbase_rest_memory_limit,
 
-          hbase_rest_cpu_limit: t.objectField(config, "hbase_rest_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-          hbase_rest_memory_limit: t.objectField(config, "hbase_rest_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-          hbase_rest_cpu_request: t.objectField(config, "hbase_rest_cpu_request", 0.1),
-          hbase_rest_memory_request: t.objectField(config, "hbase_rest_memory_request", 1),
+            hbase_thrift_cpu_limit: 0.1,
+            hbase_thrift_memory_limit: 1,
+            hbase_thrift_cpu_request: self.hbase_thrift_cpu_limit,
+            hbase_thrift_memory_request: self.hbase_thrift_memory_limit,
+          }
+        else
+          {
+            hbase_master_cpu_limit: t.objectField(config, "hbase_master_cpu_limit", 4),
+            hbase_master_memory_limit: t.objectField(config, "hbase_master_memory_limit", 4),
+            hbase_master_cpu_request: t.objectField(config, "hbase_master_cpu_request", self.hbase_master_cpu_limit),
+            hbase_master_memory_request: t.objectField(config, "hbase_master_memory_request", self.hbase_master_memory_limit),
 
-          hbase_thrift_cpu_limit: t.objectField(config, "hbase_thrift_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-          hbase_thrift_memory_limit: t.objectField(config, "hbase_thrift_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-          hbase_thrift_cpu_request: t.objectField(config, "hbase_thrift_cpu_request", 0.1),
-          hbase_thrift_memory_request: t.objectField(config, "hbase_thrift_memory_request", 1),
-        },
+            hbase_rs_cpu_limit: t.objectField(config, "hbase_rs_cpu_limit", 2),
+            hbase_rs_memory_limit: t.objectField(config, "hbase_rs_memory_limit", 1),
+            hbase_rs_cpu_request: t.objectField(config, "hbase_rs_cpu_request", self.hbase_rs_cpu_limit),
+            hbase_rs_memory_request: t.objectField(config, "hbase_rs_memory_request", self.hbase_rs_memory_limit),
+
+            // Use namenode as the achor point in dynamic resource distribution
+            local cpu_limit = self.hbase_rs_cpu_limit,
+            local memory_limit = self.hbase_rs_memory_limit,
+
+            hbase_rest_cpu_limit: t.objectField(config, "hbase_rest_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+            hbase_rest_memory_limit: t.objectField(config, "hbase_rest_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+            hbase_rest_cpu_request: t.objectField(config, "hbase_rest_cpu_request", self.hbase_rest_cpu_limit),
+            hbase_rest_memory_request: t.objectField(config, "hbase_rest_memory_request", self.hbase_rest_memory_limit),
+
+            hbase_thrift_cpu_limit: t.objectField(config, "hbase_thrift_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+            hbase_thrift_memory_limit: t.objectField(config, "hbase_thrift_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+            hbase_thrift_cpu_request: t.objectField(config, "hbase_thrift_cpu_request", self.hbase_thrift_cpu_limit),
+            hbase_thrift_memory_request: t.objectField(config, "hbase_thrift_memory_request", self.hbase_thrift_memory_limit),
+          },
     };
     // Return storage and resource specification
     {

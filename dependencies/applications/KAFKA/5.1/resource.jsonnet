@@ -39,22 +39,38 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       [_kafkaModuleName]:
-        {
-          kafka_cpu_limit: t.objectField(config, "kafka_cpu_limit", 1),
-          kafka_memory_limit: t.objectField(config, "kafka_memory_limit", 2),
-          kafka_cpu_request: t.objectField(config, "kafka_cpu_request", 0.1),
-          kafka_memory_request: t.objectField(config, "kafka_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            kafka_cpu_limit: 0.1,
+            kafka_memory_limit: 1,
+            kafka_cpu_request: self.kafka_cpu_limit,
+            kafka_memory_request: self.kafka_memory_limit,
+          }
+        else
+          {
+            kafka_cpu_limit: t.objectField(config, "kafka_cpu_limit", 1),
+            kafka_memory_limit: t.objectField(config, "kafka_memory_limit", 2),
+            kafka_cpu_request: t.objectField(config, "kafka_cpu_request", self.kafka_cpu_limit),
+            kafka_memory_request: t.objectField(config, "kafka_memory_request", self.kafka_memory_limit),
+          },
       [_kafkaManagerModuleName]:
-        {
-          local cpu_limit = resource[_kafkaModuleName].kafka_cpu_limit,
-          local memory_limit = resource[_kafkaModuleName].kafka_memory_limit,
+        if Debug_Request then
+          {
+            kafka_manager_cpu_limit: 0.1,
+            kafka_manager_memory_limit: 1,
+            kafka_manager_cpu_request: self.kafka_manager_cpu_limit,
+            kafka_manager_memory_request: self.kafka_manager_memory_limit,
+          }
+        else
+          {
+            local cpu_limit = resource[_kafkaModuleName].kafka_cpu_limit,
+            local memory_limit = resource[_kafkaModuleName].kafka_memory_limit,
 
-          kafka_manager_cpu_limit: t.objectField(config, "kafka_manager_cpu_limit", cpu_limit),
-          kafka_manager_memory_limit: t.objectField(config, "kafka_manager_memory_limit", memory_limit),
-          kafka_manager_cpu_request: t.objectField(config, "kafka_manager_cpu_request", 0.1),
-          kafka_manager_memory_request: t.objectField(config, "kafka_manager_memory_request", 1),
-        },
+            kafka_manager_cpu_limit: t.objectField(config, "kafka_manager_cpu_limit", cpu_limit),
+            kafka_manager_memory_limit: t.objectField(config, "kafka_manager_memory_limit", memory_limit),
+            kafka_manager_cpu_request: t.objectField(config, "kafka_manager_cpu_request", self.kafka_manager_cpu_limit),
+            kafka_manager_memory_request: t.objectField(config, "kafka_manager_memory_request", self.kafka_manager_memory_limit),
+          },
     };
     // Return storage and resource specification
     {

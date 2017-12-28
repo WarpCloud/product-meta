@@ -10,12 +10,20 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       txsql:
-        {
-          txsql_cpu_limit: t.objectField(config, "txsql_cpu_limit", 2),
-          txsql_memory_limit: t.objectField(config, "txsql_memory_limit", 4),
-          txsql_cpu_request: t.objectField(config, "txsql_cpu_request", 0.1),
-          txsql_memory_request: t.objectField(config, "txsql_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            txsql_cpu_limit: 0.1,
+            txsql_memory_limit: 1,
+            txsql_cpu_request: self.txsql_cpu_limit,
+            txsql_memory_request: self.txsql_memory_limit,
+          }
+        else
+          {
+            txsql_cpu_limit: t.objectField(config, "txsql_cpu_limit", 2),
+            txsql_memory_limit: t.objectField(config, "txsql_memory_limit", 4),
+            txsql_cpu_request: t.objectField(config, "txsql_cpu_request", self.txsql_cpu_limit),
+            txsql_memory_request: t.objectField(config, "txsql_memory_request", self.txsql_memory_limit),
+          },
     };
 
     local storage = {};

@@ -10,12 +10,20 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       tdt:
-        {
-          tdt_cpu_limit: t.objectField(config, "tdt_cpu_limit", 1),
-          tdt_memory_limit: t.objectField(config, "tdt_memory_limit", 4),
-          tdt_cpu_request: t.objectField(config, "tdt_cpu_request", 0.1),
-          tdt_memory_request: t.objectField(config, "tdt_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            tdt_cpu_limit: 0.1,
+            tdt_memory_limit: 2,
+            tdt_cpu_request: self.tdt_cpu_limit,
+            tdt_memory_request: self.tdt_memory_limit,
+          }
+        else
+          {
+            tdt_cpu_limit: t.objectField(config, "tdt_cpu_limit", 1),
+            tdt_memory_limit: t.objectField(config, "tdt_memory_limit", 4),
+            tdt_cpu_request: t.objectField(config, "tdt_cpu_request", self.tdt_cpu_limit),
+            tdt_memory_request: t.objectField(config, "tdt_memory_request", self.tdt_memory_limit),
+          },
     };
 
     local s = t.extractStorageParams(config);

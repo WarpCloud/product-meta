@@ -10,12 +10,20 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       terminal:
-        {
-          terminal_cpu_limit: t.objectField(config, "terminal_cpu_limit", 1),
-          terminal_memory_limit: t.objectField(config, "terminal_memory_limit", 2),
-          terminal_cpu_request: t.objectField(config, "terminal_cpu_request", 0.1),
-          terminal_memory_request: t.objectField(config, "terminal_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            terminal_cpu_limit: 0.1,
+            terminal_memory_limit: 1,
+            terminal_cpu_request: self.terminal_cpu_limit,
+            terminal_memory_request: self.terminal_memory_limit,
+          }
+        else
+          {
+            terminal_cpu_limit: t.objectField(config, "terminal_cpu_limit", 1),
+            terminal_memory_limit: t.objectField(config, "terminal_memory_limit", 2),
+            terminal_cpu_request: t.objectField(config, "terminal_cpu_request", self.terminal_cpu_limit),
+            terminal_memory_request: t.objectField(config, "terminal_memory_request", self.terminal_memory_limit),
+          },
     };
 
     local storage = {};

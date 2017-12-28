@@ -22,9 +22,7 @@
          },
          "configs": {
             "guardian_cpu_limit": 4,
-            "guardian_cpu_request": 0.10000000000000001,
-            "guardian_memory_limit": 8,
-            "guardian_memory_request": 2
+            "guardian_memory_limit": 8
          },
          "instance_settings": { },
          "moduleName": "guardian",
@@ -38,17 +36,11 @@
          },
          "configs": {
             "cas_config_server_cpu_limit": 2,
-            "cas_config_server_cpu_request": 0.10000000000000001,
             "cas_config_server_memory_limit": 4,
-            "cas_config_server_memory_request": 1,
             "cas_mgnt_server_cpu_limit": 2,
-            "cas_mgnt_server_cpu_request": 0.10000000000000001,
             "cas_mgnt_server_memory_limit": 4,
-            "cas_mgnt_server_memory_request": 1,
             "cas_server_cpu_limit": 2,
-            "cas_server_cpu_request": 0.10000000000000001,
-            "cas_server_memory_limit": 4,
-            "cas_server_memory_request": 2
+            "cas_server_memory_limit": 4
          },
          "dependencies": [
             {

@@ -26,9 +26,9 @@
                "storageClass": "silver"
             },
             "yarn_node_cpu_limit": 1,
-            "yarn_node_cpu_request": 0.10000000000000001,
+            "yarn_node_cpu_request": 1,
             "yarn_node_memory_limit": 2,
-            "yarn_node_memory_request": 1,
+            "yarn_node_memory_request": 2,
             "yarn_nodemanager_data_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
@@ -57,9 +57,9 @@
                "storageClass": "silver"
             },
             "yarn_rm_cpu_limit": 1,
-            "yarn_rm_cpu_request": 0.10000000000000001,
+            "yarn_rm_cpu_request": 1,
             "yarn_rm_memory_limit": 2,
-            "yarn_rm_memory_request": 1,
+            "yarn_rm_memory_request": 2,
             "yarn_secondary_tmp_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
