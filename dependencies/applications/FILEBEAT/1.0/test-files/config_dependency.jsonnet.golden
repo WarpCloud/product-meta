@@ -17,7 +17,9 @@
          },
          "configs": {
             "filebeat_cpu_limit": 1,
-            "filebeat_memory_limit": 2
+            "filebeat_cpu_request": 0.10000000000000001,
+            "filebeat_memory_limit": 2,
+            "filebeat_memory_request": 1
          },
          "dependencies": [
             {

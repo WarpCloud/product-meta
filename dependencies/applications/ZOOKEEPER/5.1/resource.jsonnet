@@ -26,20 +26,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       zookeeper:
-        if Debug_Request then
-          {
-            zk_cpu_limit: 0.1,
-            zk_memory_limit: 1,
-            zk_cpu_request: self.zk_cpu_limit,
-            zk_memory_request: self.zk_memory_limit,
-          }
-        else
-          {
-            zk_cpu_limit: t.objectField(config, "zk_cpu_limit", 1),
-            zk_memory_limit: t.objectField(config, "zk_memory_limit", 4),
-            zk_cpu_request: t.objectField(config, "zk_cpu_request", self.zk_cpu_limit),
-            zk_memory_request: t.objectField(config, "zk_memory_request", self.zk_memory_limit),
-          },
+        {
+          zk_cpu_limit: t.objectField(config, "zk_cpu_limit", 1),
+          zk_memory_limit: t.objectField(config, "zk_memory_limit", 4),
+          zk_cpu_request: t.objectField(config, "zk_cpu_request", 0.1),
+          zk_memory_request: t.objectField(config, "zk_memory_request", 1),
+        },
     };
     // Return storage and resource specification
     {

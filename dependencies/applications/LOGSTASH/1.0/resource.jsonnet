@@ -12,20 +12,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       logstash:
-        if Debug_Request then
-          {
-            logstash_cpu_limit: 0.1,
-            logstash_memory_limit: 1,
-            logstash_cpu_request: self.logstash_cpu_limit,
-            logstash_memory_request: self.logstash_memory_limit,
-          }
-        else
-          {
-            logstash_cpu_limit: t.objectField(config, "logstash_cpu_limit", 1),
-            logstash_memory_limit: t.objectField(config, "logstash_memory_limit", 2),
-            logstash_cpu_request: t.objectField(config, "logstash_cpu_request", self.logstash_cpu_limit),
-            logstash_memory_request: t.objectField(config, "logstash_memory_request", self.logstash_memory_limit),
-          },
+        {
+          logstash_cpu_limit: t.objectField(config, "logstash_cpu_limit", 1),
+          logstash_memory_limit: t.objectField(config, "logstash_memory_limit", 2),
+          logstash_cpu_request: t.objectField(config, "logstash_cpu_request", 0.1),
+          logstash_memory_request: t.objectField(config, "logstash_memory_request", 1),
+        },
     };
 
     local storage = {

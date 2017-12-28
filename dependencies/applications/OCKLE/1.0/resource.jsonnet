@@ -10,20 +10,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       ockle:
-        if Debug_Request then
-          {
-            ockle_cpu_limit: 0.5,
-            ockle_memory_limit: 1,
-            ockle_cpu_request: self.ockle_cpu_limit,
-            ockle_memory_request: self.ockle_memory_limit,
-          }
-        else
-          {
-            ockle_cpu_limit: t.objectField(config, "ockle_cpu_limit", 1),
-            ockle_memory_limit: t.objectField(config, "ockle_memory_limit", 4),
-            ockle_cpu_request: t.objectField(config, "ockle_cpu_request", self.ockle_cpu_limit),
-            ockle_memory_request: t.objectField(config, "ockle_memory_request", self.ockle_memory_limit),
-          },
+        {
+          ockle_cpu_limit: t.objectField(config, "ockle_cpu_limit", 1),
+          ockle_memory_limit: t.objectField(config, "ockle_memory_limit", 4),
+          ockle_cpu_request: t.objectField(config, "ockle_cpu_request", 0.1),
+          ockle_memory_request: t.objectField(config, "ockle_memory_request", 1),
+        },
     };
 
     local storage = {};

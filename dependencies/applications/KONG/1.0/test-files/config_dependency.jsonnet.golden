@@ -22,7 +22,7 @@
          },
          "configs": {
             "kong_cpu_limit": 1,
-            "kong_cpu_request": 1,
+            "kong_cpu_request": 0.10000000000000001,
             "kong_memory_limit": 1,
             "kong_memory_request": 1
          },
@@ -44,7 +44,7 @@
          },
          "configs": {
             "kong_dashboard_cpu_limit": 1,
-            "kong_dashboard_cpu_request": 1,
+            "kong_dashboard_cpu_request": 0.10000000000000001,
             "kong_dashboard_memory_limit": 1,
             "kong_dashboard_memory_request": 1
          },

@@ -64,85 +64,47 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       hdfs:
-        if Debug_Request then
-          {
-            hdfs_journal_cpu_limit: 0.1,
-            hdfs_journal_memory_limit: 1,
-            hdfs_journal_cpu_request: self.hdfs_journal_cpu_limit,
-            hdfs_journal_memory_request: self.hdfs_journal_memory_limit,
+        {
+          hdfs_name_cpu_limit: t.objectField(config, "hdfs_name_cpu_limit", 4),
+          hdfs_name_memory_limit: t.objectField(config, "hdfs_name_memory_limit", 8),
+          hdfs_name_cpu_request: t.objectField(config, "hdfs_name_cpu_request", 0.1),
+          hdfs_name_memory_request: t.objectField(config, "hdfs_name_memory_request", 2),
 
-            hdfs_name_cpu_limit: 0.1,
-            hdfs_name_memory_limit: 2,
-            hdfs_name_cpu_request: self.hdfs_name_cpu_limit,
-            hdfs_name_memory_request: self.hdfs_name_memory_limit,
+          hdfs_data_cpu_limit: t.objectField(config, "hdfs_data_cpu_limit", 2),
+          hdfs_data_memory_limit: t.objectField(config, "hdfs_data_memory_limit", 4),
+          hdfs_data_cpu_request: t.objectField(config, "hdfs_data_cpu_request", 0.1),
+          hdfs_data_memory_request: t.objectField(config, "hdfs_data_memory_request", 1),
 
-            hdfs_zkfc_cpu_limit: 0.1,
-            hdfs_zkfc_memory_limit: 2,
-            hdfs_zkfc_cpu_request: self.hdfs_zkfc_cpu_limit,
-            hdfs_zkfc_memory_request: self.hdfs_zkfc_memory_limit,
+          // Use namenode as the achor point in dynamic resource distribution
+          local cpu_limit = self.hdfs_name_cpu_limit,
+          local memory_limit = self.hdfs_name_memory_limit,
 
-            hdfs_data_cpu_limit: 0.1,
-            hdfs_data_memory_limit: 1,
-            hdfs_data_cpu_request: self.hdfs_data_cpu_limit,
-            hdfs_data_memory_request: self.hdfs_data_memory_limit,
+          hdfs_journal_cpu_limit: t.objectField(config, "hdfs_journal_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+          hdfs_journal_memory_limit: t.objectField(config, "hdfs_journal_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+          hdfs_journal_cpu_request: t.objectField(config, "hdfs_journal_cpu_request", 0.1),
+          hdfs_journal_memory_request: t.objectField(config, "hdfs_journal_memory_request", 1),
 
-            hdfs_httpfs_cpu_limit: 0.1,
-            hdfs_httpfs_memory_limit: 1,
-            hdfs_httpfs_cpu_request: self.hdfs_httpfs_cpu_limit,
-            hdfs_httpfs_memory_request: self.hdfs_httpfs_memory_limit,
-          }
-        else
-          {
-            hdfs_name_cpu_limit: t.objectField(config, "hdfs_name_cpu_limit", 4),
-            hdfs_name_memory_limit: t.objectField(config, "hdfs_name_memory_limit", 8),
+          hdfs_zkfc_cpu_limit: t.objectField(config, "hdfs_zkfc_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+          hdfs_zkfc_memory_limit: t.objectField(config, "hdfs_zkfc_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+          hdfs_zkfc_cpu_request: t.objectField(config, "hdfs_zkfc_cpu_request", 0.1),
+          hdfs_zkfc_memory_request: t.objectField(config, "hdfs_zkfc_memory_request", 2),
 
-            hdfs_name_cpu_request: t.objectField(config, "hdfs_name_cpu_request", self.hdfs_name_cpu_limit),
-            hdfs_name_memory_request: t.objectField(config, "hdfs_name_memory_request", self.hdfs_name_memory_limit),
-
-            hdfs_data_cpu_limit: t.objectField(config, "hdfs_data_cpu_limit", 2),
-            hdfs_data_memory_limit: t.objectField(config, "hdfs_data_memory_limit", 4),
-
-            hdfs_data_cpu_request: t.objectField(config, "hdfs_data_cpu_request", self.hdfs_data_cpu_limit),
-            hdfs_data_memory_request: t.objectField(config, "hdfs_data_memory_request", self.hdfs_data_memory_limit),
-
-            // Use namenode as the achor point in dynamic resource distribution
-            local cpu_limit = self.hdfs_name_cpu_limit,
-            local memory_limit = self.hdfs_name_memory_limit,
-
-            hdfs_journal_cpu_limit: t.objectField(config, "hdfs_journal_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-            hdfs_journal_memory_limit: t.objectField(config, "hdfs_journal_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-            hdfs_journal_cpu_request: t.objectField(config, "hdfs_journal_cpu_request", self.hdfs_journal_cpu_limit),
-            hdfs_journal_memory_request: t.objectField(config, "hdfs_journal_memory_request", self.hdfs_journal_memory_limit),
-
-            hdfs_zkfc_cpu_limit: t.objectField(config, "hdfs_zkfc_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-            hdfs_zkfc_memory_limit: t.objectField(config, "hdfs_zkfc_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-            hdfs_zkfc_cpu_request: t.objectField(config, "hdfs_zkfc_cpu_request", self.hdfs_zkfc_cpu_limit),
-            hdfs_zkfc_memory_request: t.objectField(config, "hdfs_zkfc_memory_request", self.hdfs_zkfc_memory_limit),
-
-            hdfs_httpfs_cpu_limit: t.objectField(config, "hdfs_httpfs_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-            hdfs_httpfs_memory_limit: t.objectField(config, "hdfs_httpfs_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-            hdfs_httpfs_cpu_request: t.objectField(config, "hdfs_httpfs_cpu_request", self.hdfs_httpfs_cpu_limit),
-            hdfs_httpfs_memory_request: t.objectField(config, "hdfs_httpfs_memory_request", self.hdfs_httpfs_memory_limit),
-          },
+          hdfs_httpfs_cpu_limit: t.objectField(config, "hdfs_httpfs_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+          hdfs_httpfs_memory_limit: t.objectField(config, "hdfs_httpfs_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+          hdfs_httpfs_cpu_request: t.objectField(config, "hdfs_httpfs_cpu_request", 0.1),
+          hdfs_httpfs_memory_request: t.objectField(config, "hdfs_httpfs_memory_request", 1),
+        },
       zookeeper:
-        if Debug_Request then
-          {
-            zk_cpu_limit: 0.1,
-            zk_memory_limit: 1,
-            zk_cpu_request: self.zk_cpu_limit,
-            zk_memory_request: self.zk_memory_limit,
-          }
-        else
-          {
-            // Use namenode as the achor point
-            local cpu_limit = resource.hdfs.hdfs_name_cpu_limit,
-            local memory_limit = resource.hdfs.hdfs_name_memory_limit,
+        {
+          // Use namenode as the achor point
+          local cpu_limit = resource.hdfs.hdfs_name_cpu_limit,
+          local memory_limit = resource.hdfs.hdfs_name_memory_limit,
 
-            zk_cpu_limit: t.objectField(config, "zk_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
-            zk_memory_limit: t.objectField(config, "zk_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
-            zk_cpu_request: t.objectField(config, "zk_cpu_request", self.zk_cpu_limit),
-            zk_memory_request: t.objectField(config, "zk_memory_request", self.zk_memory_limit),
-          },
+          zk_cpu_limit: t.objectField(config, "zk_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
+          zk_memory_limit: t.objectField(config, "zk_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
+          zk_cpu_request: t.objectField(config, "zk_cpu_request", 0.1),
+          zk_memory_request: t.objectField(config, "zk_memory_request", 1),
+        },
     };
     // Return storage and resource specification
     {

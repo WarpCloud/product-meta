@@ -22,9 +22,9 @@
          },
          "configs": {
             "zk_cpu_limit": 2,
-            "zk_cpu_request": 2,
+            "zk_cpu_request": 0.10000000000000001,
             "zk_memory_limit": 4,
-            "zk_memory_request": 4,
+            "zk_memory_request": 1,
             "zk_storage_config": {
                "accessModes": [
                   "ReadWriteOnce"
@@ -49,9 +49,9 @@
          },
          "configs": {
             "hdfs_data_cpu_limit": 2,
-            "hdfs_data_cpu_request": 2,
+            "hdfs_data_cpu_request": 0.10000000000000001,
             "hdfs_data_memory_limit": 4,
-            "hdfs_data_memory_request": 4,
+            "hdfs_data_memory_request": 1,
             "hdfs_data_storage": {
                "accessModes": [
                   "ReadWriteOnce"
@@ -73,15 +73,15 @@
                "storageClass": "silver"
             },
             "hdfs_httpfs_cpu_limit": 2,
-            "hdfs_httpfs_cpu_request": 2,
+            "hdfs_httpfs_cpu_request": 0.10000000000000001,
             "hdfs_httpfs_memory_limit": 4,
-            "hdfs_httpfs_memory_request": 4,
+            "hdfs_httpfs_memory_request": 1,
             "hdfs_journal_cpu_limit": 2,
-            "hdfs_journal_cpu_request": 2,
+            "hdfs_journal_cpu_request": 0.10000000000000001,
             "hdfs_journal_memory_limit": 4,
-            "hdfs_journal_memory_request": 4,
+            "hdfs_journal_memory_request": 1,
             "hdfs_name_cpu_limit": 4,
-            "hdfs_name_cpu_request": 4,
+            "hdfs_name_cpu_request": 0.10000000000000001,
             "hdfs_name_data_storage": {
                "accessModes": [
                   "ReadWriteOnce"
@@ -94,7 +94,7 @@
                "storageClass": "silver"
             },
             "hdfs_name_memory_limit": 8,
-            "hdfs_name_memory_request": 8,
+            "hdfs_name_memory_request": 2,
             "hdfs_name_tmp_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
@@ -105,9 +105,9 @@
                "storageClass": "silver"
             },
             "hdfs_zkfc_cpu_limit": 2,
-            "hdfs_zkfc_cpu_request": 2,
+            "hdfs_zkfc_cpu_request": 0.10000000000000001,
             "hdfs_zkfc_memory_limit": 4,
-            "hdfs_zkfc_memory_request": 4
+            "hdfs_zkfc_memory_request": 2
          },
          "dependencies": [
             {
