@@ -24,7 +24,7 @@
             "discover_cpu_limit": 4,
             "discover_cpu_request": 0.10000000000000001,
             "discover_memory_limit": 8,
-            "discover_memory_request": 4
+            "discover_memory_request": 1
          },
          "dependencies": [
             {
