@@ -22,9 +22,9 @@
          },
          "configs": {
             "terminal_cpu_limit": 1,
-            "terminal_cpu_request": 1,
+            "terminal_cpu_request": 0.10000000000000001,
             "terminal_memory_limit": 2,
-            "terminal_memory_request": 2
+            "terminal_memory_request": 1
          },
          "dependencies": [
             {

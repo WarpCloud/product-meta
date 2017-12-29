@@ -17,9 +17,9 @@
          },
          "configs": {
             "notification_cpu_limit": 2,
-            "notification_cpu_request": 2,
+            "notification_cpu_request": 0.10000000000000001,
             "notification_memory_limit": 2,
-            "notification_memory_request": 2
+            "notification_memory_request": 0.5
          },
          "dependencies": [
             {

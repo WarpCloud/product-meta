@@ -27,9 +27,9 @@
          },
          "configs": {
             "filebeat_cpu_limit": 1,
-            "filebeat_cpu_request": 1,
+            "filebeat_cpu_request": 0.10000000000000001,
             "filebeat_memory_limit": 2,
-            "filebeat_memory_request": 2
+            "filebeat_memory_request": 1
          },
          "dependencies": [
             {
@@ -49,9 +49,9 @@
          },
          "configs": {
             "logstash_cpu_limit": 1,
-            "logstash_cpu_request": 1,
+            "logstash_cpu_request": 0.10000000000000001,
             "logstash_memory_limit": 2,
-            "logstash_memory_request": 2
+            "logstash_memory_request": 1
          },
          "dependencies": [
             {
@@ -79,9 +79,9 @@
          },
          "configs": {
             "milano_portal_cpu_limit": 1,
-            "milano_portal_cpu_request": 1,
+            "milano_portal_cpu_request": 0.10000000000000001,
             "milano_portal_memory_limit": 2,
-            "milano_portal_memory_request": 2
+            "milano_portal_memory_request": 1
          },
          "instance_settings": { },
          "moduleName": "milano-portal",
