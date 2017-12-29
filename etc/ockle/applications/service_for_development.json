@@ -155,6 +155,21 @@
     }
   ],
 
+  "SOPHON": [
+    {
+      "port": 6066,
+      "protocol": "HTTP",
+      "require_gateway_registration": false,
+      "require_service_type": "NodePort",
+      "display": {
+        "display_name": "深度学习",
+        "display_name_en": "Deep Learning Sophon",
+        "description": "整合了Tensorflow和MXNet的深度学习通用开发平台，帮助企业用户加速落地人工智能应用。",
+        "description_en": "Sophon is a common platform for deep learning development which is integrated with Tensorflow and MXNet. Sophon enables enterprise users to construct artificial intelligence application from scratch in a short period of time."
+      }
+    }
+  ],
+
   "TERMINAL": [
     {
       "port": 5000,
