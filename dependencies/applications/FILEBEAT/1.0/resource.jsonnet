@@ -10,12 +10,16 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       filebeat:
-        {
-          filebeat_cpu_limit: t.objectField(config, "filebeat_cpu_limit", 1),
-          filebeat_memory_limit: t.objectField(config, "filebeat_memory_limit", 2),
-          filebeat_cpu_request: t.objectField(config, "filebeat_cpu_request", 0.1),
-          filebeat_memory_request: t.objectField(config, "filebeat_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            filebeat_cpu_limit: 0.1,
+            filebeat_memory_limit: 1,
+          }
+        else
+          {
+            filebeat_cpu_limit: t.objectField(config, "filebeat_cpu_limit", 1),
+            filebeat_memory_limit: t.objectField(config, "filebeat_memory_limit", 2),
+          },
     };
 
     local storage = {};

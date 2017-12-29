@@ -10,22 +10,38 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       pilot:
-        {
-          pilot_cpu_limit: t.objectField(config, "pilot_cpu_limit", 1),
-          pilot_memory_limit: t.objectField(config, "pilot_memory_limit", 4),
-          pilot_cpu_request: t.objectField(config, "pilot_cpu_request", 0.1),
-          pilot_memory_request: t.objectField(config, "pilot_memory_request", 1),
-        },
+        if Debug_Request then
+          {
+            pilot_cpu_limit: 0.1,
+            pilot_memory_limit: 1,
+            pilot_cpu_request: self.pilot_cpu_limit,
+            pilot_memory_request: self.pilot_memory_limit,
+          }
+        else
+          {
+            pilot_cpu_limit: t.objectField(config, "pilot_cpu_limit", 1),
+            pilot_memory_limit: t.objectField(config, "pilot_memory_limit", 4),
+            pilot_cpu_request: t.objectField(config, "pilot_cpu_request", self.pilot_cpu_limit),
+            pilot_memory_request: t.objectField(config, "pilot_memory_request", self.pilot_memory_limit),
+          },
       filerobot:
-        {
-          local cpu_limit = resource.pilot.pilot_cpu_limit,
-          local memory_limit = resource.pilot.pilot_memory_limit,
+        if Debug_Request then
+          {
+            filerobot_cpu_limit: 0.1,
+            filerobot_memory_limit: 2,
+            filerobot_cpu_request: self.filerobot_cpu_limit,
+            filerobot_memory_request: self.filerobot_memory_limit,
+          }
+        else
+          {
+            local cpu_limit = resource.pilot.pilot_cpu_limit,
+            local memory_limit = resource.pilot.pilot_memory_limit,
 
-          filerobot_cpu_limit: t.objectField(config, "filerobot_cpu_limit", cpu_limit),
-          filerobot_memory_limit: t.objectField(config, "filerobot_memory_limit", memory_limit),
-          filerobot_cpu_request: t.objectField(config, "filerobot_cpu_request", 0.1),
-          filerobot_memory_request: t.objectField(config, "filerobot_memory_request", 1),
-        },
+            filerobot_cpu_limit: t.objectField(config, "filerobot_cpu_limit", cpu_limit),
+            filerobot_memory_limit: t.objectField(config, "filerobot_memory_limit", memory_limit),
+            filerobot_cpu_request: t.objectField(config, "filerobot_cpu_request", self.filerobot_cpu_limit),
+            filerobot_memory_request: t.objectField(config, "filerobot_memory_request", self.filerobot_memory_limit),
+          },
     };
 
     local storage = {};

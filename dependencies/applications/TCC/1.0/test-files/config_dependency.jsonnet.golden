@@ -17,9 +17,9 @@
          },
          "configs": {
             "tcc_cpu_limit": 1,
-            "tcc_cpu_request": 0.10000000000000001,
+            "tcc_cpu_request": 1,
             "tcc_memory_limit": 4,
-            "tcc_memory_request": 1
+            "tcc_memory_request": 4
          },
          "dependencies": [
             {

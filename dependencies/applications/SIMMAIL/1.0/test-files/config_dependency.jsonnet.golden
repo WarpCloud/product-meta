@@ -17,9 +17,9 @@
          },
          "configs": {
             "simmail_cpu_limit": 2,
-            "simmail_cpu_request": 0.10000000000000001,
+            "simmail_cpu_request": 2,
             "simmail_memory_limit": 4,
-            "simmail_memory_request": 1
+            "simmail_memory_request": 4
          },
          "instance_settings": { },
          "moduleName": "simmail",
