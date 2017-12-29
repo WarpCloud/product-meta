@@ -12,6 +12,23 @@
           "description": "Governor服务可以使用的CPU core数量",
           "display_name": "Governor CPU核数",
           "name": "governor_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Governor可以使用的最大内存",
+          "display_name": "Governor内存",
+          "name": "governor_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Governor服务可以使用的CPU core数量",
+          "display_name": "Governor CPU核数",
+          "name": "governor_cpu_limit",
           "value": "2"
         },
         {

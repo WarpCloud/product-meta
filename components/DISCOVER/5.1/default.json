@@ -12,6 +12,23 @@
           "description": "Discover可以使用的CPU core数量",
           "display_name": "Discover CPU核数",
           "name": "discover_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Discover可以使用的最大内存",
+          "display_name": "Discover内存",
+          "name": "discover_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Discover可以使用的CPU core数量",
+          "display_name": "Discover CPU核数",
+          "name": "discover_cpu_limit",
           "value": "6"
         },
         {

@@ -12,6 +12,10 @@
   ],
   "templates": [
     {
+        "level": "demo",
+        "description": "演示模式"
+    },
+    {
         "level": "low",
         "description": "最佳性价比模式"
     },

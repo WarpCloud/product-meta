@@ -12,6 +12,23 @@
           "description": "Rubik可以使用的CPU core数量",
           "display_name": "Rubik CPU核数",
           "name": "rubik_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Rubik可以使用的最大内存",
+          "display_name": "Rubik内存",
+          "name": "rubik_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Rubik可以使用的CPU core数量",
+          "display_name": "Rubik CPU核数",
+          "name": "rubik_cpu_limit",
           "value": "6"
         },
         {

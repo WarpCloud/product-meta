@@ -12,6 +12,23 @@
           "description": "Kafka可以使用的CPU core数量",
           "display_name": "Kafka CPU核数",
           "name": "kafka_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Kafka可以使用的最大内存",
+          "display_name": "Kafka内存",
+          "name": "kafka_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Kafka可以使用的CPU core数量",
+          "display_name": "Kafka CPU核数",
+          "name": "kafka_cpu_limit",
           "value": "6"
         },
         {
