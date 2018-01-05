@@ -18,7 +18,7 @@
           "description": "单executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
-          "value": "2048MB"
+          "value": "3072MB"
         },
         {
           "description": "Slipstream server的CPU core数量",
@@ -30,7 +30,7 @@
           "description": "Slipstream server内存大小",
           "display_name": "Slipstream server内存",
           "name": "inceptor_master_memory_limit",
-          "value": "1024MB"
+          "value": "2048MB"
         },
         {
           "description": "Shuffle数据盘数量",

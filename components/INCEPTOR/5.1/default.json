@@ -18,7 +18,7 @@
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
-          "value": "2048MB"
+          "value": "3072MB"
         },
         {
           "description": "Inceptor server的CPU core数量",
