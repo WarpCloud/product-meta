@@ -29,7 +29,7 @@ precommit_build:
     - /.*_master_\d+/
   tags:
     - k8s
-    
+
 gold_build:
   stage: gold_build
   script:
@@ -43,8 +43,6 @@ gold_build:
       - docker push $PUB_TAG_MAJOR
       - ps aux | grep docker | grep -v "grep" |  awk '{print $2}' | xargs kill -9 || true
   only:
-      - master
+      - master@TDC/product-meta
   tags:
     - k8s
-
-
