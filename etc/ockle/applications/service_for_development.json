@@ -127,7 +127,7 @@
       "require_gateway_registration": true,
       "alias": "INCEPTOR",
       "display": {
-        "display_name": "Inceptor UI",
+        "display_name": "Inceptor任务监控",
         "display_name_en": "Inceptor UI",
         "description": "Inceptor任务监控页面，提供各应用运行状态、Holodesk资源使用情况、环境和Executor信息。",
         "description_en": "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs, so developers can use it for performance tuning and problem diagnosing."
@@ -137,6 +137,21 @@
       "port": 10000,
       "require_gateway_registration": false,
       "alias": "HiveServer2"
+    }
+  ],
+
+  "SLIPSTREAM": [
+    {
+      "port": 4040,
+      "protocol": "HTTP",
+      "path": "/jobs",
+      "require_gateway_registration": true,
+      "display": {
+        "display_name": "Slipstream任务监控",
+        "display_name_en":"Slipstream UI",
+        "description": "Slipstream任务监控页面，提供各流式应用和作业的运行状态以及资源使用情况。",
+        "description_en": "Slipstream UI is a web-based tool for monitoring streaming apps & jobs running on Slipstream as well as resource usage."
+      }
     }
   ],
 

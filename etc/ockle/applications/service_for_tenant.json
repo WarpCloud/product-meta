@@ -28,5 +28,13 @@
       "require_gateway_registration": true,
       "require_display": false
     }
+  ],
+  "TICKET": [
+    {
+      "port": 11997,
+      "protocol": "HTTP",
+      "require_gateway_registration": true,
+      "require_display": false
+    }
   ]
 }
