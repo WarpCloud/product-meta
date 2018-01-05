@@ -7,6 +7,8 @@ hot-fix-ranges:
 images:
   - name: apacheds
     variable: apacheds_image
+  - name: guardian-init
+    variable: guardian_init_container_image
   - name: guardian
     variable: guardian_server_image
 releases:
@@ -14,5 +16,6 @@ releases:
     final: false
     image-version:
       apacheds_image: transwarp-5.1
+      guardian_init_container_image: tdc-1.0
       guardian_server_image: transwarp-5.1
     release-version: transwarp-5.1
