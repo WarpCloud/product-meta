@@ -17,9 +17,9 @@
          },
          "configs": {
             "zk_cpu_limit": 1,
-            "zk_cpu_request": 1,
+            "zk_cpu_request": 0.10000000000000001,
             "zk_memory_limit": 4,
-            "zk_memory_request": 4,
+            "zk_memory_request": 1,
             "zk_storage_config": {
                "accessModes": [
                   "ReadWriteOnce"

@@ -10,38 +10,22 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       discover:
-        if Debug_Request then
-          {
-            discover_cpu_limit: 0.2,
-            discover_memory_limit: 4,
-            discover_cpu_request: self.discover_cpu_limit,
-            discover_memory_request: self.discover_memory_limit,
-          }
-        else
-          {
-            discover_cpu_limit: t.objectField(config, "discover_cpu_limit", 4),
-            discover_memory_limit: t.objectField(config, "discover_memory_limit", 8),
-            discover_cpu_request: t.objectField(config, "discover_cpu_request", self.discover_cpu_limit),
-            discover_memory_request: t.objectField(config, "discover_memory_request", self.discover_memory_limit),
-          },
+        {
+          discover_cpu_limit: t.objectField(config, "discover_cpu_limit", 4),
+          discover_memory_limit: t.objectField(config, "discover_memory_limit", 8),
+          discover_cpu_request: t.objectField(config, "discover_cpu_request", 0.1),
+          discover_memory_request: t.objectField(config, "discover_memory_request", 1),
+        },
       localcran:
-        if Debug_Request then
-          {
-            localcran_cpu_limit: 0.5,
-            localcran_memory_limit: 1,
-            localcran_cpu_request: self.localcran_cpu_limit,
-            localcran_memory_request: self.localcran_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource.discover.discover_cpu_limit,
-            local memory_limit = resource.discover.discover_memory_limit,
+        {
+          local cpu_limit = resource.discover.discover_cpu_limit,
+          local memory_limit = resource.discover.discover_memory_limit,
 
-            localcran_cpu_limit: t.objectField(config, "localcran_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=2)),
-            localcran_memory_limit: t.objectField(config, "localcran_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-            localcran_cpu_request: t.objectField(config, "localcran_cpu_request", self.localcran_cpu_limit),
-            localcran_memory_request: t.objectField(config, "localcran_memory_request", self.localcran_memory_limit),
-          },
+          localcran_cpu_limit: t.objectField(config, "localcran_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=2)),
+          localcran_memory_limit: t.objectField(config, "localcran_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+          localcran_cpu_request: t.objectField(config, "localcran_cpu_request", 0.1),
+          localcran_memory_request: t.objectField(config, "localcran_memory_request", 1),
+        },
     };
 
     local storage = {};

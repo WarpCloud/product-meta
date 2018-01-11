@@ -10,20 +10,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       notification:
-        if Debug_Request then
-          {
-            notification_cpu_limit: 0.5,
-            notification_memory_limit: 0.5,
-            notification_cpu_request: self.notification_cpu_limit,
-            notification_memory_request: self.notification_memory_limit,
-          }
-        else
-          {
-            notification_cpu_limit: t.objectField(config, "notification_cpu_limit", 2),
-            notification_memory_limit: t.objectField(config, "notification_memory_limit", 2),
-            notification_cpu_request: t.objectField(config, "notification_cpu_request", self.notification_cpu_limit),
-            notification_memory_request: t.objectField(config, "notification_memory_request", self.notification_memory_limit),
-          },
+        {
+          notification_cpu_limit: t.objectField(config, "notification_cpu_limit", 2),
+          notification_memory_limit: t.objectField(config, "notification_memory_limit", 2),
+          notification_cpu_request: t.objectField(config, "notification_cpu_request", 0.1),
+          notification_memory_request: t.objectField(config, "notification_memory_request", 0.5),
+        },
     };
 
     local storage = {};

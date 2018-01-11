@@ -17,9 +17,9 @@
          },
          "configs": {
             "ockle_cpu_limit": 1,
-            "ockle_cpu_request": 1,
+            "ockle_cpu_request": 0.10000000000000001,
             "ockle_memory_limit": 4,
-            "ockle_memory_request": 4
+            "ockle_memory_request": 1
          },
          "dependencies": [
             {

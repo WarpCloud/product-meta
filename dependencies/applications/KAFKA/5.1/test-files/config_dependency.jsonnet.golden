@@ -22,9 +22,9 @@
          },
          "configs": {
             "kafka_cpu_limit": 1,
-            "kafka_cpu_request": 1,
+            "kafka_cpu_request": 0.10000000000000001,
             "kafka_memory_limit": 2,
-            "kafka_memory_request": 2,
+            "kafka_memory_request": 1,
             "kafka_storage_config": {
                "accessModes": [
                   "ReadWriteOnce"
@@ -64,9 +64,9 @@
          },
          "configs": {
             "kafka_manager_cpu_limit": 1,
-            "kafka_manager_cpu_request": 1,
+            "kafka_manager_cpu_request": 0.10000000000000001,
             "kafka_manager_memory_limit": 2,
-            "kafka_manager_memory_request": 2
+            "kafka_manager_memory_request": 1
          },
          "dependencies": [
             {

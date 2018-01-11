@@ -87,7 +87,7 @@ filerobot:
     principal_list:
       - filerobot
     security_on:
-      - filerobot_enable_guardian
+      - filerobot_mounted_kerberos
 
 governor:
   configuration:

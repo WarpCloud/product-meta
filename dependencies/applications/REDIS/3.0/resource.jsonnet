@@ -10,20 +10,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       redis:
-        if Debug_Request then
-          {
-            redis_cpu_limit: 0.5,
-            redis_memory_limit: 1,
-            redis_cpu_request: self.redis_cpu_limit,
-            redis_memory_request: self.redis_memory_limit,
-          }
-        else
-          {
-            redis_cpu_limit: t.objectField(config, "redis_cpu_limit", 2),
-            redis_memory_limit: t.objectField(config, "redis_memory_limit", 4),
-            redis_cpu_request: t.objectField(config, "redis_cpu_request", self.redis_cpu_limit),
-            redis_memory_request: t.objectField(config, "redis_memory_request", self.redis_memory_limit),
-          },
+        {
+          redis_cpu_limit: t.objectField(config, "redis_cpu_limit", 2),
+          redis_memory_limit: t.objectField(config, "redis_memory_limit", 4),
+          redis_cpu_request: t.objectField(config, "redis_cpu_request", 0.1),
+          redis_memory_request: t.objectField(config, "redis_memory_request", 1),
+        },
     };
 
     local storage = {};

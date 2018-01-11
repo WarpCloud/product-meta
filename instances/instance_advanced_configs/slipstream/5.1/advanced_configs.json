@@ -130,12 +130,6 @@
       "value": "False"
     },
     {
-      "default": "NONE",
-      "groups": [],
-      "name": "hive.server2.authentication",
-      "value": "NONE"
-    },
-    {
       "default": "28800000",
       "groups": [
         "hive-site.xml"
@@ -176,10 +170,10 @@
       "value": "True"
     },
     {
-      "default": "/mnt/ramdisk/ngmr",
+      "default": "",
       "groups": [],
       "name": "ngmr.fastdisk.dir",
-      "value": "/mnt/ramdisk/ngmr"
+      "value": ""
     },
     {
       "default": "",
@@ -232,136 +226,16 @@
       "value": "3306"
     },
     {
-      "default": "/hadoop/mysql",
+      "default": "",
       "groups": [],
       "name": "mysql.datadir",
-      "value": "/hadoop/mysql"
+      "value": ""
     },
     {
-      "default": "mapred",
+      "default": "1",
       "groups": [],
-      "name": "ngmr.engine.mode",
-      "value": "mapred"
-    },
-    {
-      "default": "0",
-      "groups": [],
-      "name": "ngmr.network.sndrcv.buffer",
-      "value": "0"
-    },
-    {
-      "default": "0",
-      "groups": [],
-      "name": "ngmr.network.server.num.threads",
-      "value": "0"
-    },
-    {
-      "default": "0",
-      "groups": [],
-      "name": "ngmr.network.client.num.threads",
-      "value": "0"
-    },
-    {
-      "default": "10240",
-      "groups": [],
-      "name": "ngmr.network.num.buffers",
-      "value": "10240"
-    },
-    {
-      "default": "5",
-      "groups": [],
-      "name": "ngmr.network.server.backlog",
-      "value": "5"
-    },
-    {
-      "default": "120",
-      "groups": [],
-      "name": "ngmr.network.client.timeout",
-      "value": "120"
-    },
-    {
-      "default": "32768",
-      "groups": [],
-      "name": "ngmr.memsegment.size",
-      "value": "32768"
-    },
-    {
-      "default": "NIO",
-      "groups": [],
-      "name": "ngmr.io.mode",
-      "value": "NIO"
-    },
-    {
-      "default": "True",
-      "groups": [],
-      "name": "ngmr.io.directbufs",
-      "value": "True"
-    },
-    {
-      "default": "5",
-      "groups": [],
-      "name": "ngmr.io.num.connection.perpeer",
-      "value": "5"
-    },
-    {
-      "default": "standalone",
-      "groups": [],
-      "name": "spark.morphling.recovery.mode",
-      "value": "standalone"
-    },
-    {
-      "default": "filesystem",
-      "groups": [],
-      "name": "spark.morphling.taskstate.backend",
-      "value": "filesystem"
-    },
-    {
-      "default": "10000",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.session.timeout",
-      "value": "10000"
-    },
-    {
-      "default": "5000",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.connect.timeout",
-      "value": "5000"
-    },
-    {
-      "default": "3",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.max.retries",
-      "value": "3"
-    },
-    {
-      "default": "5000",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.retry.wait",
-      "value": "5000"
-    },
-    {
-      "default": "/morphling",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.root.path",
-      "value": "/morphling"
-    },
-    {
-      "default": "/${service['sid']}",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.namespace",
-      "value": "/${service['sid']}"
-    },
-    {
-      "default": "/checkpoints",
-      "groups": [],
-      "name": "spark.morphling.zookeeper.checkpoints.path",
-      "value": "/checkpoints"
-    },
-    {
-      "default": "/runningjobs",
-      "groups": [],
-      "name": "spark.morphling.submitted.job.path",
-      "value": "/runningjobs"
+      "name": "executor.number.eachnode",
+      "value": "1"
     },
     {
       "default": "52888",

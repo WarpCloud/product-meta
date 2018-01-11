@@ -12,6 +12,35 @@
           "description": "每个HDFS datanode的CPU core数量",
           "display_name": "HDFS datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "每个HDFS datanode可以使用的最大内存",
+          "display_name": "HDFS datanode内存",
+          "name": "hdfs_data_memory_limit",
+          "value": "4096MB"
+        },
+        {
+          "description": "HDFS namenode的CPU core数量",
+          "display_name": "HDFS namenode CPU核数",
+          "name": "hdfs_name_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "HDFS namenode可以使用的最大内存",
+          "display_name": "HDFS namenode内存",
+          "name": "hdfs_name_memory_limit",
+          "value": "4096MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "每个HDFS datanode的CPU core数量",
+          "display_name": "HDFS datanode CPU核数",
+          "name": "hdfs_data_cpu_limit",
           "value": "6"
         },
         {

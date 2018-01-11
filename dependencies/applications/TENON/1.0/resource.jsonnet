@@ -10,42 +10,37 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       tenon:
-        if Debug_Request then
-          {
-            abacus_cpu_limit: 0.5,
-            abacus_memory_limit: 2,
-            scanner_cpu_limit: self.abacus_cpu_limit,
-            scanner_memory_limit: self.abacus_memory_limit,
-          }
-        else
-          {
-            abacus_cpu_limit: t.objectField(config, "abacus_cpu_limit", 1),
-            abacus_memory_limit: t.objectField(config, "abacus_memory_limit", 4),
-            scanner_cpu_limit: t.objectField(config, "scanner_cpu_limit", self.abacus_cpu_limit),
-            scanner_memory_limit: t.objectField(config, "scanner_memory_limit", self.abacus_memory_limit),
-          },
-      gondar:
-        if Debug_Request then
-          {
-            gondar_udr_cpu_limit: 0.5,
-            gondar_udr_memory_limit: 2,
-            gondar_cdr_cpu_limit: self.gondar_udr_cpu_limit,
-            gondar_cdr_memory_limit: self.gondar_udr_memory_limit,
-            gondar_billing_cpu_limit: self.gondar_udr_cpu_limit,
-            gondar_billing_memory_limit: self.gondar_udr_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource.tenon.abacus_cpu_limit,
-            local memory_limit = resource.tenon.abacus_memory_limit,
+        {
+          abacus_cpu_limit: t.objectField(config, "abacus_cpu_limit", 1),
+          abacus_memory_limit: t.objectField(config, "abacus_memory_limit", 4),
+          abacus_cpu_request: t.objectField(config, "abacus_cpu_request", 0.1),
+          abacus_memory_request: t.objectField(config, "abacus_memory_request", 1),
 
-            gondar_udr_cpu_limit: t.objectField(config, "gondar_udr_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
-            gondar_udr_memory_limit: t.objectField(config, "gondar_udr_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-            gondar_cdr_cpu_limit: t.objectField(config, "gondar_cdr_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
-            gondar_cdr_memory_limit: t.objectField(config, "gondar_cdr_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-            gondar_billing_cpu_limit: t.objectField(config, "gondar_billing_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
-            gondar_billing_memory_limit: t.objectField(config, "gondar_billing_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-          },
+          scanner_cpu_limit: t.objectField(config, "scanner_cpu_limit", 1),
+          scanner_memory_limit: t.objectField(config, "scanner_memory_limit", 4),
+          scanner_cpu_request: t.objectField(config, "scanner_cpu_request", 0.1),
+          scanner_memory_request: t.objectField(config, "scanner_memory_request", 1),
+        },
+      gondar:
+        {
+          local cpu_limit = resource.tenon.abacus_cpu_limit,
+          local memory_limit = resource.tenon.abacus_memory_limit,
+
+          gondar_udr_cpu_limit: t.objectField(config, "gondar_udr_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
+          gondar_udr_memory_limit: t.objectField(config, "gondar_udr_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+          gondar_udr_cpu_request: t.objectField(config, "gondar_udr_cpu_request", 0.1),
+          gondar_udr_memory_request: t.objectField(config, "gondar_udr_memory_request", 1),
+
+          gondar_cdr_cpu_limit: t.objectField(config, "gondar_cdr_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
+          gondar_cdr_memory_limit: t.objectField(config, "gondar_cdr_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+          gondar_cdr_cpu_request: t.objectField(config, "gondar_cdr_cpu_request", 0.1),
+          gondar_cdr_memory_request: t.objectField(config, "gondar_cdr_memory_request", 1),
+
+          gondar_billing_cpu_limit: t.objectField(config, "gondar_billing_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
+          gondar_billing_memory_limit: t.objectField(config, "gondar_billing_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+          gondar_billing_cpu_request: t.objectField(config, "gondar_billing_cpu_request", 0.1),
+          gondar_billing_memory_request: t.objectField(config, "gondar_billing_memory_request", 1),
+        },
     };
 
     local storage = {};

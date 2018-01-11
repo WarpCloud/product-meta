@@ -10,35 +10,19 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       kong:
-        if Debug_Request then
-          {
-            kong_cpu_limit: 0.2,
-            kong_memory_limit: 1,
-            kong_cpu_request: self.kong_cpu_limit,
-            kong_memory_request: self.kong_memory_limit,
-          }
-        else
-          {
-            kong_cpu_limit: t.objectField(config, "kong_cpu_limit", 1),
-            kong_memory_limit: t.objectField(config, "kong_memory_limit", 1),
-            kong_cpu_request: t.objectField(config, "kong_cpu_request", self.kong_cpu_limit),
-            kong_memory_request: t.objectField(config, "kong_memory_request", self.kong_memory_limit),
-          },
+        {
+          kong_cpu_limit: t.objectField(config, "kong_cpu_limit", 1),
+          kong_memory_limit: t.objectField(config, "kong_memory_limit", 1),
+          kong_cpu_request: t.objectField(config, "kong_cpu_request", 0.1),
+          kong_memory_request: t.objectField(config, "kong_memory_request", 1),
+        },
       "kong-dashboard":
-        if Debug_Request then
-          {
-            kong_dashboard_cpu_limit: 0.2,
-            kong_dashboard_memory_limit: 1,
-            kong_dashboard_cpu_request: self.kong_dashboard_cpu_limit,
-            kong_dashboard_memory_request: self.kong_dashboard_memory_limit,
-          }
-        else
-          {
-            kong_dashboard_cpu_limit: t.objectField(config, "kong_dashboard_cpu_limit", 1),
-            kong_dashboard_memory_limit: t.objectField(config, "kong_dashboard_memory_limit", 1),
-            kong_dashboard_cpu_request: t.objectField(config, "kong_dashboard_cpu_request", self.kong_dashboard_cpu_limit),
-            kong_dashboard_memory_request: t.objectField(config, "kong_dashboard_memory_request", self.kong_dashboard_memory_limit),
-          },
+        {
+          kong_dashboard_cpu_limit: t.objectField(config, "kong_dashboard_cpu_limit", 1),
+          kong_dashboard_memory_limit: t.objectField(config, "kong_dashboard_memory_limit", 1),
+          kong_dashboard_cpu_request: t.objectField(config, "kong_dashboard_cpu_request", 0.1),
+          kong_dashboard_memory_request: t.objectField(config, "kong_dashboard_memory_request", 1),
+        },
     };
 
     local storage = {};

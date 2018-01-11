@@ -22,11 +22,17 @@
          },
          "configs": {
             "gondar_billing_cpu_limit": 1,
+            "gondar_billing_cpu_request": 0.10000000000000001,
             "gondar_billing_memory_limit": 2,
+            "gondar_billing_memory_request": 1,
             "gondar_cdr_cpu_limit": 1,
+            "gondar_cdr_cpu_request": 0.10000000000000001,
             "gondar_cdr_memory_limit": 2,
+            "gondar_cdr_memory_request": 1,
             "gondar_udr_cpu_limit": 1,
-            "gondar_udr_memory_limit": 2
+            "gondar_udr_cpu_request": 0.10000000000000001,
+            "gondar_udr_memory_limit": 2,
+            "gondar_udr_memory_request": 1
          },
          "dependencies": [
             {
@@ -50,9 +56,13 @@
          },
          "configs": {
             "abacus_cpu_limit": 1,
+            "abacus_cpu_request": 0.10000000000000001,
             "abacus_memory_limit": 4,
+            "abacus_memory_request": 1,
             "scanner_cpu_limit": 1,
-            "scanner_memory_limit": 4
+            "scanner_cpu_request": 0.10000000000000001,
+            "scanner_memory_limit": 4,
+            "scanner_memory_request": 1
          },
          "dependencies": [
             {

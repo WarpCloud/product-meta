@@ -17,9 +17,9 @@
          },
          "configs": {
             "ignitor_cpu_limit": 1,
-            "ignitor_cpu_request": 1,
+            "ignitor_cpu_request": 0.10000000000000001,
             "ignitor_memory_limit": 4,
-            "ignitor_memory_request": 4
+            "ignitor_memory_request": 1
          },
          "dependencies": [
             {

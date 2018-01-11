@@ -12,6 +12,23 @@
           "description": "Transporter可以使用的CPU core数量",
           "display_name": "Transporter CPU核数",
           "name": "tdt_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Transporter可以使用的最大内存",
+          "display_name": "Transporter内存",
+          "name": "tdt_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Transporter可以使用的CPU core数量",
+          "display_name": "Transporter CPU核数",
+          "name": "tdt_cpu_limit",
           "value": "6"
         },
         {

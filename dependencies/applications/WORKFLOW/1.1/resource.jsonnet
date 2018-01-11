@@ -10,20 +10,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       workflow:
-        if Debug_Request then
-          {
-            workflow_cpu_limit: 0.5,
-            workflow_memory_limit: 1,
-            workflow_cpu_request: self.workflow_cpu_limit,
-            workflow_memory_request: self.workflow_memory_limit,
-          }
-        else
-          {
-            workflow_cpu_limit: t.objectField(config, "workflow_cpu_limit", 2),
-            workflow_memory_limit: t.objectField(config, "workflow_memory_limit", 4),
-            workflow_cpu_request: t.objectField(config, "workflow_cpu_request", self.workflow_cpu_limit),
-            workflow_memory_request: t.objectField(config, "workflow_memory_request", self.workflow_memory_limit),
-          },
+        {
+          workflow_cpu_limit: t.objectField(config, "workflow_cpu_limit", 2),
+          workflow_memory_limit: t.objectField(config, "workflow_memory_limit", 4),
+          workflow_cpu_request: t.objectField(config, "workflow_cpu_request", 0.1),
+          workflow_memory_request: t.objectField(config, "workflow_memory_request", 1),
+        },
     };
 
     local storage = {};

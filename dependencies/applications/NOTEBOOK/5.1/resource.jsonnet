@@ -10,38 +10,22 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       notebook:
-        if Debug_Request then
-          {
-            notebook_cpu_limit: 1,
-            notebook_memory_limit: 4,
-            notebook_cpu_request: self.notebook_cpu_limit,
-            notebook_memory_request: self.notebook_memory_limit,
-          }
-        else
-          {
-            notebook_cpu_limit: t.objectField(config, "notebook_cpu_limit", 2),
-            notebook_memory_limit: t.objectField(config, "notebook_memory_limit", 4),
-            notebook_cpu_request: t.objectField(config, "notebook_cpu_request", self.notebook_cpu_limit),
-            notebook_memory_request: t.objectField(config, "notebook_memory_request", self.notebook_memory_limit),
-          },
+        {
+          notebook_cpu_limit: t.objectField(config, "notebook_cpu_limit", 2),
+          notebook_memory_limit: t.objectField(config, "notebook_memory_limit", 4),
+          notebook_cpu_request: t.objectField(config, "notebook_cpu_request", 0.1),
+          notebook_memory_request: t.objectField(config, "notebook_memory_request", 1),
+        },
       localcran:
-        if Debug_Request then
-          {
-            localcran_cpu_limit: 0.5,
-            localcran_memory_limit: 1,
-            localcran_cpu_request: self.localcran_cpu_limit,
-            localcran_memory_request: self.localcran_memory_limit,
-          }
-        else
-          {
-            local cpu_limit = resource.notebook.notebook_cpu_limit,
-            local memory_limit = resource.notebook.notebook_memory_limit,
+        {
+          local cpu_limit = resource.notebook.notebook_cpu_limit,
+          local memory_limit = resource.notebook.notebook_memory_limit,
 
-            localcran_cpu_limit: t.objectField(config, "localcran_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=2)),
-            localcran_memory_limit: t.objectField(config, "localcran_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-            localcran_cpu_request: t.objectField(config, "localcran_cpu_request", self.localcran_cpu_limit),
-            localcran_memory_request: t.objectField(config, "localcran_memory_request", self.localcran_memory_limit),
-          },
+          localcran_cpu_limit: t.objectField(config, "localcran_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=2)),
+          localcran_memory_limit: t.objectField(config, "localcran_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
+          localcran_cpu_request: t.objectField(config, "localcran_cpu_request", 0.1),
+          localcran_memory_request: t.objectField(config, "localcran_memory_request", 1),
+        },
     };
 
     local storage = {};

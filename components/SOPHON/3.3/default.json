@@ -11,6 +11,21 @@
         {
           "description": "Spark driver进程的内存大小",
           "name": "spark_driver_memory",
+          "value": "1024MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小",
+          "name": "spark_executor_memory",
+          "value": "2048MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Spark driver进程的内存大小",
+          "name": "spark_driver_memory",
           "value": "8192MB"
         },
         {

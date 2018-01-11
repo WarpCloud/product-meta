@@ -12,6 +12,35 @@
           "description": "YARN NodeManager的CPU core数量",
           "display_name": "YARN NodeManager CPU核数",
           "name": "yarn_node_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "YARN NodeManager可以使用的最大内存",
+          "display_name": "YARN NodeManager内存",
+          "name": "yarn_node_memory_limit",
+          "value": "4096MB"
+        },
+        {
+          "description": "YARN ResourceManager的CPU core数量",
+          "display_name": "YARN ResourceManager CPU核数",
+          "name": "yarn_rm_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "YARN ResourceManager可以使用的最大内存",
+          "display_name": "YARN ResourceManager内存",
+          "name": "yarn_rm_memory_limit",
+          "value": "4096MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "YARN NodeManager的CPU core数量",
+          "display_name": "YARN NodeManager CPU核数",
+          "name": "yarn_node_cpu_limit",
           "value": "6"
         },
         {

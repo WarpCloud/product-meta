@@ -10,20 +10,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local resource = {
       kibana:
-        if Debug_Request then
-          {
-            kibana_cpu_limit: 0.2,
-            kibana_memory_limit: 1,
-            kibana_cpu_request: self.kibana_cpu_limit,
-            kibana_memory_request: self.kibana_memory_limit,
-          }
-        else
-          {
-            kibana_cpu_limit: t.objectField(config, "kibana_cpu_limit", 1),
-            kibana_memory_limit: t.objectField(config, "kibana_memory_limit", 2),
-            kibana_cpu_request: t.objectField(config, "kibana_cpu_request", self.kibana_cpu_limit),
-            kibana_memory_request: t.objectField(config, "kibana_memory_request", self.kibana_memory_limit),
-          },
+        {
+          kibana_cpu_limit: t.objectField(config, "kibana_cpu_limit", 1),
+          kibana_memory_limit: t.objectField(config, "kibana_memory_limit", 2),
+          kibana_cpu_request: t.objectField(config, "kibana_cpu_request", 0.1),
+          kibana_memory_request: t.objectField(config, "kibana_memory_request", 1),
+        },
     };
 
     local storage = {};
