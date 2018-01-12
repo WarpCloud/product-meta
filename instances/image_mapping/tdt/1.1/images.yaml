@@ -6,7 +6,7 @@ hot-fix-ranges:
     min: transwarp-5.1
 images:
   - name: tdt
-    variable: tdt
+    variable: tdt_image
 releases:
   - dependencies:
       - max-version: transwarp-5.1
@@ -20,5 +20,5 @@ releases:
         type: txsql
     final: false
     image-version:
-      tdt: transwarp-5.1
+      tdt_image: transwarp-5.1
     release-version: transwarp-5.1

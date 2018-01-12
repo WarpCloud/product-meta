@@ -1,4 +1,4 @@
-#example:
+#instance:
 #  resource:
 #    node_num:
 #     default:
@@ -19,13 +19,14 @@
 #  security:
 #   principal_list:
 #     - example_principal_list
-#
+#   security_on:
+#     - example_security_on_list
+
 common:
   security:
     guardian_address: Transwarp_Guardian_Address
     guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
     auto_injected_volumes: Transwarp_Auto_Injected_Volumes
-    kerberos: _mounted_kerberos
 
 cas:
   configuration:
@@ -81,7 +82,7 @@ filebeat:
 
 filerobot:
   image:
-      default:
+    default:
         - filerobot_image
   security:
     principal_list:

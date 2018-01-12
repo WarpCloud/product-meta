@@ -1,54 +1,46 @@
-#EXAMPLE:
+#APPLICATION:
 #  configuration:
-#    advanced_configs:
-#      default: DEFAULT_CONFIGS
+#    default_file: example_site.xml
+#    environment:
 #      example_site.xml: EXAMPLE_SITE_CONFIGS
 #  optional_dependencies:
 #    - example_dependency
-#  security:
 #
-common:
- configuration:
-    advanced_configs:
-#      capacity_scheduler:
-#      server.properties:
-#      zoo_cfg:
- security:
-    guardian_address: Transwarp_Guardian_Address
-    guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
-    auto_injected_volumes: Transwarp_Auto_Injected_Volumes
-
 DISCOVER:
   configuration:
-    advanced_configs:
-      default: DISCOVER_SPARK_DEFAULTS_CONFIGS
+    default_file: spark-defaults.conf
+    environment:
       spark-defaults.conf: DISCOVER_SPARK_DEFAULTS_CONFIGS
 
 #GOVERNOR:
 
 HDFS:
   configuration:
-    advanced_configs:
-      default: HDFS_HDFS_SITE_CONFIGS
+    default_file: hdfs-site.xml
+    environment:
       hdfs-site.xml: HDFS_HDFS_SITE_CONFIGS
       core-site.xml: HDFS_CORE_SITE_CONFIGS
 
 HYPERBASE:
   configuration:
-    advanced_configs:
-      default: HYPERBASE_HBASE_SITE_CONFIGS
+    default_file: hbase-site.xml
+    environment:
       hbase-site.xml: HYPERBASE_HBASE_SITE_CONFIGS
 
 INCEPTOR:
   configuration:
-    advanced_configs:
-      default: INCEPTOR_HIVE_SITE_CONFIGS
+    default_file: hive-site.xml
+    environment:
       hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
   optional_dependencies:
     - hyperbase
     - search
 
-#KAFKA:
+KAFKA:
+  configuration:
+    default_file: server.properties
+    environment:
+      server.properties: KAFKA_SERVER_PROPERTIES
 
 KIBANA:
   optional_dependencies:
@@ -62,8 +54,8 @@ LOGSTASH:
 
 NOTEBOOK:
   configuration:
-    advanced_configs:
-      default: DISCOVER_ZEPPELIN_SITE_CONFIGS
+    default_file: zeppelin-site.xml
+    environment:
       zeppelin-site.xml: DISCOVER_ZEPPELIN_SITE_CONFIGS
 
 #NOTIFICATION:
@@ -72,17 +64,17 @@ NOTEBOOK:
 
 #RUBIK:
 
-SEARCH:
-  configuration:
-    advanced_configs:
-      default: ELASTICSEARCH_ELASTICSEARCH_YML_CONFIGS
-      elasticsearch.yml: ELASTICSEARCH_ELASTICSEARCH_YML_CONFIGS
+#SEARCH:
+#  configuration:
+#    default_file: elasticsearch.yml
+#    environment:
+#      elasticsearch.yml: ELASTICSEARCH_YML_CONFIGS
 
 
 SLIPSTREAM:
   configuration:
-    advanced_configs:
-      default: INCEPTOR_HIVE_SITE_CONFIGS
+    default_file: hive-site.xml
+    environment:
       hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
 
 TERMINAL:
@@ -103,7 +95,7 @@ WORKFLOW:
 
 YARN:
   configuration:
-    advanced_configs:
-      default: YARN_YARN_SITE_CONFIGS
+    default_file: yarn-site.xml
+    environment:
       mapred_site: YARN_MAPRED_SITE_CONFIGS
       yarn-site.xml: YARN_YARN_SITE_CONFIGS
