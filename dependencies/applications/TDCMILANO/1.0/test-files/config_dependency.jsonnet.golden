@@ -61,10 +61,6 @@
             {
                "moduleName": "elasticsearch",
                "name": "elasticsearch"
-            },
-            {
-               "moduleName": "zookeeper",
-               "name": "zookeeper"
             }
          ],
          "instance_settings": { },

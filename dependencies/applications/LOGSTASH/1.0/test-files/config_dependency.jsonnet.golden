@@ -33,6 +33,10 @@
          },
          "dependencies": [
             {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
                "moduleName": "elasticsearch",
                "name": "elasticsearch"
             }

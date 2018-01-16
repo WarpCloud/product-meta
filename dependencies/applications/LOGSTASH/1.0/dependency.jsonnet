@@ -10,12 +10,7 @@ function(config={})
 
   local _searchModuleName = "elasticsearch";
   local _logstashModuleName = "logstash";
-
-  local depend_search =
-    if use_search then [{
-      moduleName: _searchModuleName,
-      name: _searchModuleName,
-    }] else [];
+  local _kafkaModuleName = "kafka";
 
   //-------------------
   // Dependent modules
@@ -24,7 +19,14 @@ function(config={})
   local logstash = t.createInstance(_logstashModuleName, config, appVersion) +
     r.moduleResource(_logstashModuleName, config) +
     {
-      dependencies: depend_search,
+      dependencies: [{
+        moduleName: _kafkaModuleName,
+        name:  _kafkaModuleName,
+      },
+      {
+        moduleName: _searchModuleName,
+        name: _searchModuleName,
+      }],
     };
 
   t.getDefaultSettings(config) + {

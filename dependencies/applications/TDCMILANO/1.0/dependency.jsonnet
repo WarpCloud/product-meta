@@ -19,7 +19,6 @@ function(config={})
   local _logstashModuleName = "logstash";
   local _searchModuleName = "elasticsearch";
   local _milanoPortalModuleName = "milano-portal";
-  local _zookeeperModuleName = "zookeeper";
 
   //-------------------
   // Dependent modules
@@ -44,9 +43,6 @@ function(config={})
       {
         moduleName: _searchModuleName,
         name: _searchModuleName,
-      },{
-        moduleName: _zookeeperModuleName,
-        name: _zookeeperModuleName,
       }],
     };
 

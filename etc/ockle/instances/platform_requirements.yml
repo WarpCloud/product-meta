@@ -15,3 +15,6 @@ platform_requirements:
 
   - application_type: SEARCH
     instance_type: elasticsearch
+
+  - application_type: KAFKA
+    instance_type: kafka
