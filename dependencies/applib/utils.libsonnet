@@ -209,8 +209,8 @@ local app = import "app.libsonnet";
   /*
    * A unified interface to extract storage settings.
    */
-  extractStorageParams(config, normal_size="100Gi", data_size="400Gi", log_size="10Gi",
-    tmp_size="10Gi", read_iops=500, write_iops=500
+  extractStorageParams(config, normal_size="100Gi", data_size="400Gi", log_size="100Gi",
+    tmp_size="100Gi", read_iops=500, write_iops=500
   )::
     local Debug_Request = $.objectField(config, "Develop", false);
     {

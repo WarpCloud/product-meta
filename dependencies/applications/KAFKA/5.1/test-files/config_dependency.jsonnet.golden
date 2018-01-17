@@ -42,7 +42,7 @@
                   "blkio.throttle.read_iops_device": 500,
                   "blkio.throttle.write_iops_device": 500
                },
-               "size": "10Gi",
+               "size": "100Gi",
                "storageClass": "silver"
             }
          },
