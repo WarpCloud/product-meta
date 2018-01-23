@@ -21,5 +21,6 @@
         "level": "high",
         "description": "最佳性能模式"
     }
-  ]
+  ],
+  "is_distributed": false
 }

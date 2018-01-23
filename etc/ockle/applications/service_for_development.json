@@ -191,6 +191,7 @@
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
+      "require_service_type": "NodePort",
       "display": {
         "display_name": "命令行终端",
         "display_name_en": "Terminal",
