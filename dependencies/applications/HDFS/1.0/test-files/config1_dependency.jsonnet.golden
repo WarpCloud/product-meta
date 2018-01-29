@@ -30,8 +30,8 @@
                   "ReadWriteOnce"
                ],
                "limits": {
-                  "blkio.throttle.read_iops_device": 100,
-                  "blkio.throttle.write_iops_device": 100
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "10Gi",
                "storageClass": "silver"
@@ -59,8 +59,8 @@
                   "ReadWriteOnce"
                ],
                "limits": {
-                  "blkio.throttle.read_iops_device": 100,
-                  "blkio.throttle.write_iops_device": 100
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "10Gi",
                "storageClass": "silver"
@@ -68,8 +68,8 @@
             "hdfs_data_tmp_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
-                  "blkio.throttle.read_iops_device": 100,
-                  "blkio.throttle.write_iops_device": 100
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "10Gi",
                "storageClass": "silver"
@@ -89,8 +89,8 @@
                   "ReadWriteOnce"
                ],
                "limits": {
-                  "blkio.throttle.read_iops_device": 100,
-                  "blkio.throttle.write_iops_device": 100
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "10Gi",
                "storageClass": "silver"
@@ -100,8 +100,8 @@
             "hdfs_name_tmp_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
-                  "blkio.throttle.read_iops_device": 100,
-                  "blkio.throttle.write_iops_device": 100
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "10Gi",
                "storageClass": "silver"

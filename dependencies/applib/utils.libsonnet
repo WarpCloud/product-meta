@@ -219,8 +219,12 @@ local app = import "app.libsonnet";
       DiskLogSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskLogSize", log_size),
       DiskTmpSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskTmpSize", tmp_size),
 
-      ReadIOPS: if Debug_Request then 100 else $.objectField(config, "ReadIOPS", read_iops),
-      WriteIOPS: if Debug_Request then 100 else $.objectField(config, "WriteIOPS", write_iops),
+      /* ReadIOPS: if Debug_Request then 100 else $.objectField(config, "ReadIOPS", read_iops),
+      WriteIOPS: if Debug_Request then 100 else $.objectField(config, "WriteIOPS", write_iops), */
+
+      /* Disable IO limit temporarily. */
+      ReadIOPS: 0,
+      WriteIOPS: 0,
 
       StorageClass: if Debug_Request then "silver" else $.objectField(config, "StorageClass", "silver"),
     },

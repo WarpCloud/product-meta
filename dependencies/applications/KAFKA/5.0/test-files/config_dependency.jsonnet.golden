@@ -25,8 +25,8 @@
                   "ReadWriteOnce"
                ],
                "limits": {
-                  "blkio.throttle.read_iops_device": 500,
-                  "blkio.throttle.write_iops_device": 500
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "400Gi",
                "storageClass": "silver"
@@ -34,8 +34,8 @@
             "kafka_tmp_storage": {
                "accessMode": "ReadWriteOnce",
                "limits": {
-                  "blkio.throttle.read_iops_device": 500,
-                  "blkio.throttle.write_iops_device": 500
+                  "blkio.throttle.read_iops_device": 0,
+                  "blkio.throttle.write_iops_device": 0
                },
                "size": "100Gi",
                "storageClass": "silver"
