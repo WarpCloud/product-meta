@@ -21,15 +21,11 @@ GUARDIAN:
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"
   guardian_ds_ha_enabled: false
-  guardian_ds_partition_sync_on_write: "false"
-  guardian_ds_conf_dir: /etc/guardian-apacheds/conf
+  guardian_ds_ha_password: Transwarp01!
   guardian_server_tls_enabled: true
-  guardian_server_key_store: /srv/guardian/server.keystore
-  guardian_server_spnego_keytab: /srv/guardian/http.keytab
+  guardian_ds_partition_sync_on_write: "false"
   guardian_server_key_store_pw: changeit
   fortress_bind_pwd: Transwarp01!
-  guardian_ds_root_logger: "INFO,console"
-  guardian_server_root_logger: "INFO,console"
 
 HDFS:
   zk_image: 172.16.1.99/gold/zookeeper:transwarp-5.1
@@ -53,10 +49,10 @@ HYPERBASE:
   Transwarp_Guardian_LDAP_Bind_Password: Transwarp01!
 
 INCEPTOR:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
+  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
 
 KAFKA:
   kafka_image: 172.16.1.99/gold/kafka:transwarp-5.1
@@ -83,10 +79,10 @@ SEARCH:
   es_head_image: 172.16.1.99/gold/search-head:transwarp-5.1
 
 SLIPSTREAM:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
+  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
 
 SOPHON:
   sophon_server_image: 172.16.1.99/gold/sophon-server:transwarp-5.1
