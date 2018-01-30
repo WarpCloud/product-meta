@@ -103,7 +103,7 @@ TRANSPORTER:
   tdt_image: 172.16.1.99/gold/tdt:transwarp-5.1
 
 TXSQL:
-  txsql_image: 172.16.1.99/gold/mysql:transwarp-5.1
+  txsql_image: 172.16.1.99/gold/mysql:tdc-1.0
   txsql_rootpassword: password
 
 WORKFLOW:

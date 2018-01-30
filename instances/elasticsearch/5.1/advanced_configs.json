@@ -1,5 +1,5 @@
 {
-  "instance_type": "search",
+  "instance_type": "elasticsearch",
   "configs": [
     {
       "default": "cluster",

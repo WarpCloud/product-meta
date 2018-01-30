@@ -1,5 +1,5 @@
 {
-  "instance_type": "transporter",
+  "instance_type": "tdt",
   "configs": [
     {
       "default": "20000",

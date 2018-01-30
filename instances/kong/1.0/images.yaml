@@ -2,17 +2,37 @@ instance-type: kong
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
+  - max: tdc-1.0.0-rc0
+    min: tdc-1.0.0-rc3
   - max: tdc-1.0
     min: tdc-1.0
 images:
   - name: kong
     variable: kong_image
 releases:
-- dependencies:
-    - max-version: tdc-1.0
-      min-version: tdc-1.0
-      type: txsql
-  final: false
-  image-version:
-    kong_image: tdc-1.0
-  release-version: tdc-1.0
+  - dependencies:
+      - max-version: tdc-1.0.0-rc2
+        min-version: tdc-1.0.0-rc2
+        type: txsql
+    final: true
+    image-version:
+      kong_image: tdc-1.0.0-rc2
+    release-version: tdc-1.0.0-rc2
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc3
+        min-version: tdc-1.0.0-rc3
+        type: txsql
+    final: true
+    image-version:
+      kong_image: tdc-1.0.0-rc3
+    release-version: tdc-1.0.0-rc3
+
+  - dependencies:
+      - max-version: tdc-1.0
+        min-version: tdc-1.0
+        type: txsql
+    final: false
+    image-version:
+      kong_image: tdc-1.0
+    release-version: tdc-1.0

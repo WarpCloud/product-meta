@@ -2,6 +2,8 @@ instance-type: hyperbase
 major-version: '5.1'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
+  - max: transwarp-5.1.0-final
+    min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
 images:
@@ -14,6 +16,24 @@ images:
   - name: hbase
     variable: hbase_rest_image
 releases:
+  - dependencies:
+    - max-version: transwarp-5.1.0-final
+      min-version: transwarp-5.1.0-final
+      type: hdfs
+    - max-version: transwarp-5.1.0-final
+      min-version: transwarp-5.1.0-final
+      type: yarn
+    - max-version: transwarp-5.1.0-final
+      min-version: transwarp-5.1.0-final
+      type: zookeeper
+    final: true
+    image-version:
+      hbase_master_image: transwarp-5.1.0-final
+      hbase_rest_image: transwarp-5.1.0-final
+      hbase_rs_image: transwarp-5.1.0-final
+      hbase_thrift_image: transwarp-5.1.0-final
+    release-version: transwarp-5.1.0-final
+
   - dependencies:
     - max-version: transwarp-5.1
       min-version: transwarp-5.1

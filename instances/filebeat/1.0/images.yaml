@@ -2,12 +2,34 @@ instance-type: filebeat
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
+  - max: tdc-1.0.0-rc2
+    min: tdc-1.0.0-rc2
+  - max: tdc-1.0.0-rc3
+    min: tdc-1.0.0-rc3
   - max: tdc-1.0
     min: tdc-1.0
 images:
   - name: filebeat
     variable: filebeat_image
 releases:
+  - dependencies:
+      - max-version: tdc-1.0.0-rc2
+        min-version: tdc-1.0.0-rc2
+        type: kafka
+    final: true
+    image-version:
+      filebeat_image: tdc-1.0.0-rc2
+    release-version: tdc-1.0.0-rc2
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc3
+        min-version: tdc-1.0.0-rc3
+        type: kafka
+    final: true
+    image-version:
+      filebeat_image: tdc-1.0.0-rc3
+    release-version: tdc-1.0.0-rc3
+
   - dependencies:
       - max-version: tdc-1.0
         min-version: tdc-1.0
