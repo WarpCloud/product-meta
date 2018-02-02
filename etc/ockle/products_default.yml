@@ -20,8 +20,7 @@ GUARDIAN:
   cas_mgnt_server_image: 172.16.1.99/gold/cas-admin-server:tdc-1.0
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"
-  guardian_ds_ha_enabled: false
-  guardian_ds_ha_password: Transwarp01!
+  guardian_ds_ha_enabled: true
   guardian_server_tls_enabled: true
   guardian_ds_partition_sync_on_write: "false"
   guardian_server_key_store_pw: changeit
