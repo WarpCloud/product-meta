@@ -54,7 +54,7 @@
             "inceptor_executor_cpu_limit": 1,
             "inceptor_executor_cpu_request": 1,
             "inceptor_executor_memory_limit": 4,
-            "inceptor_executor_memory_request": 3,
+            "inceptor_executor_memory_request": 4,
             "inceptor_master_cpu_limit": 1,
             "inceptor_master_cpu_request": 1,
             "inceptor_master_memory_limit": 4,
