@@ -28,8 +28,8 @@ releases:
     - max-version: transwarp-5.1.0-final
       min-version: transwarp-5.1.0-final
       type: elasticsearch
-    - max-version: tdc-1.0.0-rc3
-      min-version: tdc-1.0.0-rc0
+    - max-version: tdc-1.0.0-rc2
+      min-version: tdc-1.0.0-rc2
       type: txsql
     final: true
     image-version:
@@ -53,7 +53,7 @@ releases:
       min-version: transwarp-5.1.1-final
       type: elasticsearch
     - max-version: tdc-1.0.0-rc3
-      min-version: tdc-1.0.0-rc0
+      min-version: tdc-1.0.0-rc3
       type: txsql
     final: true
     image-version:
