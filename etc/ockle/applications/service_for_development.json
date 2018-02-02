@@ -95,6 +95,7 @@
       "protocol": "HTTPS",
       "path": "/",
       "require_gateway_registration": true,
+      "alias": "GuardianServer",
       "display": {
         "display_name": "安全与权限",
         "display_name_en": "Guardian",

@@ -21,6 +21,8 @@
 #     - example_principal_list
 #   security_on:
 #     - example_security_on_list
+#   security_service:
+#     type: SERVICE_TYPE
 
 common:
   security:
@@ -35,7 +37,7 @@ cas:
       - cas_server_env_list
       - cas_mgnt_server_env_list
   database:
-    name: MySQL_DATABASE
+    name: cas_database_name
 
 
 discover:
@@ -51,6 +53,8 @@ discover:
     security_on:
       - discover_mounted_kerberos
       - discover_authentication_enableguardian
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 elasticsearch:
   resource:
@@ -142,6 +146,8 @@ hdfs:
       - hdfs
     security_on:
       - hdfs_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 hyperbase:
   resource:
@@ -195,6 +201,8 @@ inceptor:
       - hive
     security_on:
       - inceptor_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 metastore:
   resource:
@@ -215,6 +223,8 @@ metastore:
       - hive
     security_on:
       - inceptor_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 kafka:
   resource:
@@ -317,6 +327,9 @@ notebook:
     security_on:
       - notebook_mounted_kerberos
       - notebook_authentication_enableguardian
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
+      type: DISCOVER
 
 notification:
   configuration:
@@ -381,6 +394,8 @@ slipstream:
       - HTTP
     security_on:
       - slipstream_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 sophon:
   security:
@@ -428,6 +443,8 @@ tdt:
       - tdt
     security_on:
       - tdt_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 ticket:
   database:
@@ -463,6 +480,8 @@ workflow:
       - workflow
     security_on:
       - workflow_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 yarn:
   resource:
@@ -491,6 +510,8 @@ yarn:
       - yarn
     security_on:
       - yarn_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 zookeeper:
   configuration:

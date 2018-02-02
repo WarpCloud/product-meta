@@ -5,7 +5,6 @@
 #      example_site.xml: EXAMPLE_SITE_CONFIGS
 #  optional_dependencies:
 #    - example_dependency
-#
 DISCOVER:
   configuration:
     default_file: spark-defaults.conf
@@ -35,6 +34,9 @@ INCEPTOR:
   optional_dependencies:
     - hyperbase
     - search
+  security:
+    service_refer:
+      metastore: inceptor
 
 KAFKA:
   configuration:
@@ -76,6 +78,9 @@ SLIPSTREAM:
     default_file: hive-site.xml
     environment:
       hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
+  security:
+    service_refer:
+      metastore: slipstream
 
 TERMINAL:
   optional_dependencies:
