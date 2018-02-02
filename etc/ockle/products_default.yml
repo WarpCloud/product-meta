@@ -11,8 +11,8 @@ GOVERNOR:
   notification_image: 172.16.1.99/gold/notification:transwarp-5.1
 
 GUARDIAN:
-  apacheds_image: 172.16.1.99/gold/apacheds:transwarp-5.1
-  guardian_server_image: 172.16.1.99/gold/guardian:transwarp-5.1
+  apacheds_image: 172.16.1.99/gold/apacheds:tdc-1.0
+  guardian_server_image: 172.16.1.99/gold/guardian:tdc-1.0
   guardian_init_container_image: 172.16.1.99/gold/guardian-init:tdc-1.0
   gencerts_init_container_image: 172.16.1.99/gold/guardian-gencerts:tdc-1.0
   cas_config_server_image: 172.16.1.99/gold/cas-config-server:tdc-1.0
@@ -58,7 +58,7 @@ KAFKA:
   kafka_manager_image: 172.16.1.99/gold/kafka-manager:tdc-1.0
 
 KIBANA:
-  kibana_image: 172.16.1.99/gold/kibana:transwarp-5.1
+  kibana_image: 172.16.1.99/gold/kibana:tdc-1.0
 
 NOTEBOOK:
   notebook_image: 172.16.1.99/gold/discover-notebook:transwarp-5.1
@@ -96,7 +96,7 @@ TERMINAL:
 
 TICKET:
   ticket_image: 172.16.1.99/gold/ticket:tdc-1.0
-  notification_image: 172.16.1.99/gold/notification:transwarp-5.1
+  notification_image: 172.16.1.99/gold/notification:tdc-1.0
 
 TRANSPORTER:
   tdt_image: 172.16.1.99/gold/tdt:transwarp-5.1

@@ -19,23 +19,23 @@ releases:
   - dependencies: []
     final: true
     image-version:
-      apacheds_image: transwarp-5.1.0-final
+      apacheds_image: tdc-1.0.0-rc2
       guardian_init_container_image: tdc-1.0.0-rc2
-      guardian_server_image: transwarp-5.1.0-final
-    release-version: transwarp-5.1.0-final
+      guardian_server_image: tdc-1.0.0-rc2
+    release-version: tdc-1.0.0-rc2
 
   - dependencies: []
     final: true
     image-version:
-      apacheds_image: transwarp-5.1.1-final
+      apacheds_image: tdc-1.0.0-rc3
       guardian_init_container_image: tdc-1.0.0-rc3
-      guardian_server_image: transwarp-5.1.1-final
-    release-version: transwarp-5.1.1-final
+      guardian_server_image: tdc-1.0.0-rc3
+    release-version: tdc-1.0.0-rc3
 
   - dependencies: []
     final: false
     image-version:
-      apacheds_image: transwarp-5.1
+      apacheds_image: tdc-1.0
       guardian_init_container_image: tdc-1.0
-      guardian_server_image: transwarp-5.1
-    release-version: transwarp-5.1
+      guardian_server_image: tdc-1.0
+    release-version: tdc-1.0

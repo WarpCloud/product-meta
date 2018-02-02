@@ -18,8 +18,8 @@ images:
 releases:
   - release-version: tdc-1.0.0-rc2
     dependencies:
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: tdc-1.0.0-rc2
+        min-version: tdc-1.0.0-rc2
         type: guardian
       - max-version: tdc-1.0.0-rc2
         min-version: tdc-1.0.0-rc2
@@ -33,8 +33,8 @@ releases:
 
   - release-version: tdc-1.0.0-rc3
     dependencies:
-      - max-version: transwarp-5.1.1-final
-        min-version: transwarp-5.1.1-final
+      - max-version: tdc-1.0.0-rc3
+        min-version: tdc-1.0.0-rc3
         type: guardian
       - max-version: tdc-1.0.0-rc3
         min-version: tdc-1.0.0-rc3
@@ -48,8 +48,8 @@ releases:
 
   - release-version: tdc-1.0
     dependencies:
-      - max-version: transwarp-5.1
-        min-version: transwarp-5.1
+      - max-version: tdc-1.0
+        min-version: tdc-1.0
         type: guardian
       - max-version: tdc-1.0
         min-version: tdc-1.0
