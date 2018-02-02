@@ -37,23 +37,23 @@ releases:
     release-version: tdc-1.0.0-rc2
 
   - dependencies:
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: elasticsearch
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: hdfs
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: hyperbase
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: inceptor
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: metastore
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: yarn
     final: true
     image-version:

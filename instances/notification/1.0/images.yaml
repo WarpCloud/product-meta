@@ -4,6 +4,8 @@ min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
   - max: transwarp-5.1.0-final
     min: transwarp-5.1.0-final
+  - max: transwarp-5.1.1-final
+    min: transwarp-5.1.1-final
   - max: transwarp-5.1
     min: transwarp-5.1
 images:
@@ -18,6 +20,15 @@ releases:
     image-version:
       notification_image: transwarp-5.1.0-final
     release-version: transwarp-5.1.0-final
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc3
+      min-version: tdc-1.0.0-rc0
+      type: txsql
+    final: true
+    image-version:
+      notification_image: transwarp-5.1.1-final
+    release-version: transwarp-5.1.1-final
 
   - dependencies:
     - max-version: tdc-1.0

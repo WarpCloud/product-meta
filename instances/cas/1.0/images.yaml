@@ -33,8 +33,8 @@ releases:
 
   - release-version: tdc-1.0.0-rc3
     dependencies:
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: guardian
       - max-version: tdc-1.0.0-rc3
         min-version: tdc-1.0.0-rc3

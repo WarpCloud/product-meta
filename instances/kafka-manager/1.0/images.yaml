@@ -25,11 +25,11 @@ releases:
     release-version: tdc-1.0.0-rc2
 
   - dependencies:
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: kafka
-      - max-version: transwarp-5.1.0-final
-        min-version: transwarp-5.1.0-final
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: zookeeper
     final: true
     image-version:
