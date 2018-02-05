@@ -1,5 +1,6 @@
 {
   "edition": "5.1",
+  "final": false,
   "components": [
     "DISCOVER-5.1",
     "GOVERNOR-1.0",
@@ -37,5 +38,6 @@
         "level": "high",
         "description": "最佳性能模式"
     }
-  ]
+  ],
+  "is_distributed": true
 }

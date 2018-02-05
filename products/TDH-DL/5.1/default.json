@@ -1,5 +1,6 @@
 {
   "edition": "5.1",
+  "final": true,
   "components": [
     "SOPHON-3.3",
     "YARN-5.1",
@@ -25,5 +26,6 @@
         "level": "high",
         "description": "最佳性能模式"
     }
-  ]
+  ],
+  "is_distributed": true
 }

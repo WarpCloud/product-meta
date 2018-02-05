@@ -1,5 +1,6 @@
 {
   "edition": "5.1",
+  "final": true,
   "components": [
     "INCEPTOR-5.1",
     "HDFS-5.1",
@@ -27,5 +28,6 @@
         "level": "high",
         "description": "最佳性能模式"
     }
-  ]
+  ],
+  "is_distributed": true
 }
