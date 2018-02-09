@@ -22,6 +22,7 @@
 #   security_on:
 #     - example_security_on_list
 #   security_service:
+#     env_cfg: ENV_CONFIG
 #     type: SERVICE_TYPE
 
 common:
@@ -38,7 +39,6 @@ cas:
       - cas_mgnt_server_env_list
   database:
     name: cas_database_name
-
 
 discover:
   configuration:
@@ -107,6 +107,8 @@ governor:
       - zookeeper
     security_on:
       - governor_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 guardian:
   configuration:
@@ -176,6 +178,8 @@ hyperbase:
       - hbase
     security_on:
       - hbase_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 inceptor:
   resource:
@@ -242,6 +246,8 @@ kafka:
       - kafka
     security_on:
       - kafka_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 kafka-manager:
   resource:
@@ -350,6 +356,8 @@ pilot:
       - pilot
     security_on:
       - pilot_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 rubik:
   resource:
@@ -369,6 +377,8 @@ rubik:
       - rubik
     security_on:
       - RUBIK_AUTHENTICATION_ENABLEGUARDIAN
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 slipstream:
   resource:
@@ -403,6 +413,8 @@ sophon:
       - hive
     security_on:
       - sophon_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 terminal:
   resource:

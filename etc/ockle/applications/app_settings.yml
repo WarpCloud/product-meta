@@ -5,6 +5,10 @@
 #      example_site.xml: EXAMPLE_SITE_CONFIGS
 #  optional_dependencies:
 #    - example_dependency
+#  security:
+#    service_refer:
+#      instance_type_1: instance_type_2
+
 DISCOVER:
   configuration:
     default_file: spark-defaults.conf
