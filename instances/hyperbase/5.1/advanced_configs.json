@@ -106,12 +106,6 @@
       "value": "True"
     },
     {
-      "default": "org.apache.hadoop.hbase.master.TransactionMasterObserver",
-      "groups": [],
-      "name": "hbase.coprocessor.master.classes",
-      "value": "org.apache.hadoop.hbase.master.TransactionMasterObserver"
-    },
-    {
       "default": "True",
       "groups": [
         "hbase-site.xml"
@@ -320,12 +314,6 @@
       ],
       "name": "hbase.hregion.memstore.flush.size",
       "value": "67108864"
-    },
-    {
-      "default": "org.apache.hadoop.hbase.transaction.cp.TransactionServiceImpl,org.apache.hadoop.hbase.transaction.cp.TransactionScanObserver,org.apache.hadoop.hbase.regionserver.TransactionRegionObserver,org.apache.hadoop.hyperbase.coprocessor.LocalIndexerCoprocessor,org.apache.hadoop.hyperbase.secondaryindex.coprocessor.Indexer",
-      "groups": [],
-      "name": "hbase.coprocessor.region.classes",
-      "value": "org.apache.hadoop.hbase.transaction.cp.TransactionServiceImpl,org.apache.hadoop.hbase.transaction.cp.TransactionScanObserver,org.apache.hadoop.hbase.regionserver.TransactionRegionObserver,org.apache.hadoop.hyperbase.coprocessor.LocalIndexerCoprocessor,org.apache.hadoop.hyperbase.secondaryindex.coprocessor.Indexer"
     },
     {
       "default": "60000",
