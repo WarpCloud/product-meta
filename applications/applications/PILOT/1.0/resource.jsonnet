@@ -45,30 +45,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      pilot: [
-        "pilot_cpu_limit",
-      ],
-      filerobot: [
-        "filerobot_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      pilot: [
-        "pilot_memory_limit",
-      ],
-      filerobot: [
-        "filerobot_memory_limit",
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }

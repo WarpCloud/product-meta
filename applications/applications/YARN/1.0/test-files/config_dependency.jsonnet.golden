@@ -22,7 +22,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "yarn_node_cpu_limit": 1,
@@ -35,7 +35,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "yarn_nodemanager_tmp_storage": {
@@ -44,7 +44,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "yarn_resourcemanager_tmp_storage": {
@@ -53,7 +53,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "yarn_rm_cpu_limit": 1,
@@ -66,7 +66,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "yarn_timelineserver_tmp_storage": {
@@ -75,7 +75,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             }
          },

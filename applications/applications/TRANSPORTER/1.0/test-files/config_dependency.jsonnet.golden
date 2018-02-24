@@ -1,13 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "tdt": {
-         "c": 0.5,
-         "m": 0.5,
-         "s": 0.5
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
@@ -21,12 +14,14 @@
             "tdt_memory_limit": 4,
             "tdt_memory_request": 4,
             "tdt_tmp_storage": {
-               "accessMode": "ReadWriteOnce",
+               "accessModes": [
+                  "ReadWriteOnce"
+               ],
                "limits": {
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             }
          },

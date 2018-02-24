@@ -25,7 +25,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [ockle],
-    TCU: {
-      [_ockleModuleName]: r.moduleTCU(_ockleModuleName, config),
-    },
   }

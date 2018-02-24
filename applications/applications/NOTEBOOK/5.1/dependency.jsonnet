@@ -38,8 +38,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [notebook, localcran],
-    TCU: {
-      [_notebookModuleName]: r.moduleTCU(_notebookModuleName, config),
-      [_localcranModuleName]: r.moduleTCU(_localcranModuleName, config),
-    },
   }

@@ -41,7 +41,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [ignitor],
-    TCU: {
-      [_ignitorModuleName]: r.moduleTCU(_ignitorModuleName, config),
-    },
   }

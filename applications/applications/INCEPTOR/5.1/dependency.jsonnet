@@ -61,12 +61,6 @@ function(config={})
       }] + depend_hyperbase + depend_search,
     };
 
-  local TCU = {
-    [_metastoreModuleName]: r.moduleTCU(_metastoreModuleName, config),
-    [_inceptorModuleName]: r.moduleTCU(_inceptorModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [metastore, inceptor],
-    TCU: TCU,
   }

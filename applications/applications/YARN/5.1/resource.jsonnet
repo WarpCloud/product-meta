@@ -27,60 +27,12 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       yarn: {
-        yarn_resourcemanager_tmp_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        yarn_secondary_tmp_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        yarn_historyserver_tmp_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        yarn_nodemanager_tmp_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        yarn_nodemanager_data_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        yarn_timelineserver_tmp_storage: {
-          storageClass: "silver",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
+        yarn_resourcemanager_tmp_storage: t.assembleStorageEntry(config, "yarn_resourcemanager_tmp_storage", s.StorageClass, s.DiskTmpSize),
+        yarn_secondary_tmp_storage: t.assembleStorageEntry(config, "yarn_secondary_tmp_storage", s.StorageClass, s.DiskTmpSize),
+        yarn_historyserver_tmp_storage: t.assembleStorageEntry(config, "yarn_historyserver_tmp_storage", s.StorageClass, s.DiskTmpSize),
+        yarn_nodemanager_tmp_storage: t.assembleStorageEntry(config, "yarn_nodemanager_tmp_storage", s.StorageClass, s.DiskTmpSize),
+        yarn_nodemanager_data_storage: t.assembleStorageEntry(config, "yarn_nodemanager_data_storage", s.StorageClass, s.DiskDataSize),
+        yarn_timelineserver_tmp_storage: t.assembleStorageEntry(config, "yarn_timelineserver_tmp_storage", s.StorageClass, s.DiskTmpSize)
       }
     };
 
@@ -99,26 +51,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      yarn: [
-        "yarn_node_cpu_limit",
-        "yarn_rm_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      yarn: [
-        "yarn_node_memory_limit",
-        "yarn_rm_memory_limit",
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }
