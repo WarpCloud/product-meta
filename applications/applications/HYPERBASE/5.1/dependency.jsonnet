@@ -34,11 +34,6 @@ function(config={})
       }],
     };
 
-  local TCU = {
-    [_hyperbaseModuleName]: r.moduleTCU(_hyperbaseModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [hyperbase],
-    TCU: TCU,
   }

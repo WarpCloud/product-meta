@@ -1,18 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "cas": {
-         "c": 1.5,
-         "m": 3,
-         "s": 3
-      },
-      "guardian": {
-         "c": 1,
-         "m": 2,
-         "s": 2
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {

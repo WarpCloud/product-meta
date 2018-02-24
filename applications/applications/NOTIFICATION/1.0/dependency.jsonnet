@@ -27,7 +27,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [notification],
-    TCU: {
-      [_notificationModuleName]: r.moduleTCU(_notificationModuleName, config),
-    },
   }

@@ -1,23 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "filebeat": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
-      "logstash": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
-      "milano-portal": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {

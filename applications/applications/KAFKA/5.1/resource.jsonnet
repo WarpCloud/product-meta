@@ -16,24 +16,8 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       [_kafkaModuleName]: {
-        kafka_tmp_storage: {
-          storageClass: s.StorageClass,
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
-        kafka_storage_config: {
-          storageClass: s.StorageClass,
-          size: s.DiskDataSize,
-          accessModes: ["ReadWriteOnce"],
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
+        kafka_tmp_storage: t.assembleStorageEntry(config, "kafka_tmp_storage", s.StorageClass, s.DiskTmpSize),
+        kafka_storage_config: t.assembleStorageEntry(config, "kafka_storage_config", s.StorageClass, s.DiskDataSize),
       },
     };
 
@@ -71,34 +55,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      [_kafkaModuleName]: [
-        "kafka_cpu_limit",
-      ],
-      [_kafkaManagerModuleName]: [
-        "kafka_manager_cpu_limit",
-      ]
-    };
-
-    local mem_metrics = {
-      [_kafkaModuleName]: [
-        "kafka_memory_limit",
-      ],
-      [_kafkaManagerModuleName]: [
-        "kafka_manager_memory_limit",
-      ]
-    };
-
-    local ssd_metrics = {};
-
-    local disk_metrics = {};
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics, ssd_metrics, disk_metrics),
 }

@@ -30,7 +30,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [yarn],
-    TCU: {
-      [_yarnModuleName]: r.moduleTCU(_yarnModuleName, config),
-    },
   }

@@ -12,53 +12,13 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       hdfs: {
-        hdfs_data_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskDataSize,
-          accessModes: ["ReadWriteOnce"],
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
-        hdfs_data_tmp_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskNormalSize,
-          accessMode: "ReadWriteOnce",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
-        hdfs_name_data_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskDataSize,
-          accessModes: ["ReadWriteOnce"],
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
-        hdfs_name_tmp_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskNormalSize,
-          accessMode: "ReadWriteOnce",
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
+        hdfs_data_storage: t.assembleStorageEntry(config, "hdfs_data_storage", s.StorageClass, s.DiskDataSize),
+        hdfs_data_tmp_storage: t.assembleStorageEntry(config, "hdfs_data_tmp_storage", s.StorageClass, s.DiskNormalSize),
+        hdfs_name_data_storage: t.assembleStorageEntry(config, "hdfs_name_data_storage", s.StorageClass, s.DiskDataSize),
+        hdfs_name_tmp_storage: t.assembleStorageEntry(config, "hdfs_name_tmp_storage", s.StorageClass, s.DiskNormalSize),
       },
       zookeeper: {
-        zk_storage_config: {
-          storageClass: s.StorageClass,
-          size: s.DiskNormalSize,
-          accessModes: ["ReadWriteOnce"],
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-        },
+        zk_storage_config: t.assembleStorageEntry(config, "zk_storage_config", s.StorageClass, s.DiskNormalSize),
       }
     };
 
@@ -121,47 +81,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-
-    local cpu_metrics = {
-      hdfs: [
-        "hdfs_name_cpu_limit",
-        "hdfs_data_cpu_limit",
-        "hdfs_zkfc_cpu_limit",
-        "hdfs_httpfs_cpu_limit",
-        "hdfs_journal_cpu_limit",
-      ],
-      zookeeper: [
-        "zk_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      hdfs: [
-        "hdfs_name_memory_limit",
-        "hdfs_data_memory_limit",
-        "hdfs_zkfc_memory_limit",
-        "hdfs_httpfs_memory_limit",
-        "hdfs_journal_memory_limit",
-      ],
-      zookeeper: [
-        "zk_memory_limit",
-      ],
-    };
-
-    local ssd_metrics = {
-
-    };
-
-    local disk_metrics = {
-
-    };
-
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics, ssd_metrics, disk_metrics),
 }

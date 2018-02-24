@@ -18,7 +18,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [redis],
-    TCU: {
-      [_redisModuleName]: r.moduleTCU(_redisModuleName, config),
-    },
   }

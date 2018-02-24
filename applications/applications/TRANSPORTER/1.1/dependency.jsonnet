@@ -33,7 +33,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [transporter],
-    TCU: {
-      [_transporterModuleName]: r.moduleTCU(_transporterModuleName, config),
-    },
   }

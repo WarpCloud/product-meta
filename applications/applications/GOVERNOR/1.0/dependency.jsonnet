@@ -53,13 +53,7 @@ function(config={})
         name: _txsqlModuleName,
       }],
     };
-
-  local TCU = {
-    [_notificationModuleName]: r.moduleTCU(_notificationModuleName, config),
-    [_governorModuleName]: r.moduleTCU(_governorModuleName, config),
-  };
-
+    
   t.getDefaultSettings(config) + {
     instance_list: [notification, governor],
-    TCU: TCU,
   }
