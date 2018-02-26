@@ -30,4 +30,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [kibana],
+    TCU: {
+      [_kibanaModuleName]: r.moduleTCU(_kibanaModuleName, config),
+    },
   }

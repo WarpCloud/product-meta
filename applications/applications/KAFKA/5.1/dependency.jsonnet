@@ -40,4 +40,8 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [kafka, kafkaManager],
+    TCU: {
+      [_kafkaManagerModuleName]: r.moduleTCU(_kafkaManagerModuleName, config),
+      [_kafkaModuleName]: r.moduleTCU(_kafkaModuleName, config),
+    },
   }

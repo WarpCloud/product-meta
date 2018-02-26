@@ -30,6 +30,12 @@ function(config={})
   local kongdashboard = t.createInstance(_kongdashboardModuleName, config, kongdashboardVersion) +
     r.moduleResource(_kongdashboardModuleName, config);
 
+  local TCU = {
+    [_kongModuleName]: r.moduleTCU(_kongModuleName, config),
+    [_kongdashboardModuleName]: r.moduleTCU(_kongdashboardModuleName, config),
+  };
+
   t.getDefaultSettings(config) + {
     instance_list: [kong, kongdashboard],
+    TCU: TCU,
   }

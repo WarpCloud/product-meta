@@ -38,4 +38,8 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [filerobot, pilot],
+    TCU: {
+      [_filerobotModuleName]: r.moduleTCU(_filerobotModuleName, config),
+      [_pilotModuleName]: r.moduleTCU(_pilotModuleName, config),
+    },
   }

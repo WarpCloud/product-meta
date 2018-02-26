@@ -1,6 +1,13 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
+   "TCU": {
+      "ockle": {
+         "c": 0.5,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {

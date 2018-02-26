@@ -40,4 +40,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [tcc],
+    TCU: {
+      [_tccModuleName]: r.moduleTCU(_tccModuleName, config),
+    },
   }

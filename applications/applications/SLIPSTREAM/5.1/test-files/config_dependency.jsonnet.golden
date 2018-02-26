@@ -1,6 +1,18 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
+   "TCU": {
+      "metastore": {
+         "c": 0.5,
+         "m": 1,
+         "s": 1
+      },
+      "slipstream": {
+         "c": 1,
+         "m": 1,
+         "s": 1
+      }
+   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
