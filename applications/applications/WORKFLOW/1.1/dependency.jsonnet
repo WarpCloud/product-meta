@@ -38,4 +38,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [workflow],
+    TCU: {
+      [_workflowModuleName]: r.moduleTCU(_workflowModuleName, config),
+    },
   }

@@ -18,6 +18,11 @@ function(config={})
   local zookeeper = t.createInstance(_zkModuleName, config, zkVersion) +
     r.moduleResource(_zkModuleName, config);
 
+  local TCU = {
+    [_zkModuleName]: r.moduleTCU(_zkModuleName, config),
+  };
+
   t.getDefaultSettings(config) + {
     instance_list: [zookeeper],
+    TCU: TCU,
   }

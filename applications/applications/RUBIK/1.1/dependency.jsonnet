@@ -46,6 +46,12 @@ function(config={})
       }],
     };
 
+  local TCU = {
+    [_notificationModuleName]: r.moduleTCU(_notificationModuleName, config),
+    [_rubikModuleName]: r.moduleTCU(_rubikModuleName, config),
+  };
+
   t.getDefaultSettings(config) + {
     instance_list: [notification, rubik],
+    TCU: TCU,
   }

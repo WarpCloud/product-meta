@@ -45,6 +45,12 @@ function(config={})
       }],
     };
 
+  local TCU = {
+    [_gondarModuleName]: r.moduleTCU(_gondarModuleName, config),
+    [_tenonModuleName]: r.moduleTCU(_tenonModuleName, config),
+  };
+
   t.getDefaultSettings(config) + {
     instance_list: [gondar, tenon],
+    TCU: TCU,
   }

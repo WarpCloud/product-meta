@@ -1,6 +1,13 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
+   "TCU": {
+      "logstash": {
+         "c": 0.25,
+         "m": 0.5,
+         "s": 0.5
+      }
+   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
@@ -15,14 +22,12 @@
             "logstash_memory_limit": 2,
             "logstash_memory_request": 1,
             "logstash_tmp_storage": {
-               "accessModes": [
-                  "ReadWriteOnce"
-               ],
+               "accessMode": "ReadWriteOnce",
                "limits": {
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "100Gi",
                "storageClass": "silver"
             }
          },

@@ -19,4 +19,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [txsql],
+    TCU: {
+      [_txsqlModuleName]: r.moduleTCU(_txsqlModuleName, config),
+    },
   }

@@ -54,4 +54,34 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
+
+  /*
+   * Define TCU calculation for each module
+   */
+  moduleTCU(moduleName, config={})::
+    local cpu_metrics = {
+      guardian: [
+        "guardian_cpu_limit",
+      ],
+      cas: [
+        "cas_server_cpu_limit",
+        "cas_mgnt_server_cpu_limit",
+        "cas_config_server_cpu_limit"
+      ],
+    };
+
+    local mem_metrics = {
+      guardian: [
+        "guardian_memory_limit",
+      ],
+      cas: [
+        "cas_server_memory_limit",
+        "cas_mgnt_server_memory_limit",
+        "cas_config_server_memory_limit"
+      ],
+    };
+
+    local unifiedConfig = t.getUnifiedInstanceSettings(config);
+    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
+      cpu_metrics, mem_metrics),
 }

@@ -51,4 +51,9 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [filebeat, logstash, milanoPortal],
+    TCU: {
+      [_filebeatModuleName]: r.moduleTCU(_filebeatModuleName, config),
+      [_logstashModuleName]: r.moduleTCU(_logstashModuleName, config),
+      [_milanoPortalModuleName]: r.moduleTCU(_milanoPortalModuleName, config),
+    },
   }

@@ -56,4 +56,38 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
+
+  /*
+   * Define TCU calculation for each module
+   */
+  moduleTCU(moduleName, config={})::
+    local cpu_metrics = {
+      hyperbase: [
+        "hbase_master_cpu_limit",
+        "hbase_rs_cpu_limit",
+        "hbase_rest_cpu_limit",
+        "hbase_thrift_cpu_limit",
+      ],
+    };
+
+    local mem_metrics = {
+      hyperbase: [
+        "hbase_master_memory_limit",
+        "hbase_rs_memory_limit",
+        "hbase_rest_memory_limit",
+        "hbase_thrift_memory_limit",
+      ],
+    };
+
+    local ssd_metrics = {
+
+    };
+
+    local disk_metrics = {
+
+    };
+
+    local unifiedConfig = t.getUnifiedInstanceSettings(config);
+    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
+      cpu_metrics, mem_metrics, ssd_metrics, disk_metrics),
 }

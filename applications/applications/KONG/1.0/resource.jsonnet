@@ -42,4 +42,30 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
+
+  /*
+   * Define TCU calculation for each module
+   */
+  moduleTCU(moduleName, config={})::
+    local cpu_metrics = {
+      kong: [
+        "kong_cpu_limit",
+      ],
+      "kong-dashboard": [
+        "kong_dashboard_cpu_limit"
+      ],
+    };
+
+    local mem_metrics = {
+      kong: [
+        "kong_memory_limit",
+      ],
+      "kong-dashboard": [
+        "kong_dashboard_memory_limit"
+      ],
+    };
+
+    local unifiedConfig = t.getUnifiedInstanceSettings(config);
+    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
+      cpu_metrics, mem_metrics),
 }

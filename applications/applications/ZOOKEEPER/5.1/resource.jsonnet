@@ -12,7 +12,15 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       zookeeper: {
-        zk_storage_config: t.assembleStorageEntry(config, "zk_storage_config", s.StorageClass, s.DiskNormalSize),
+        zk_storage_config: {
+          storageClass: s.StorageClass,
+          size: s.DiskNormalSize,
+          accessModes: ["ReadWriteOnce"],
+          limits: {
+            "blkio.throttle.read_iops_device": s.ReadIOPS,
+            "blkio.throttle.write_iops_device": s.WriteIOPS,
+          },
+        },
       }
     };
 
@@ -40,4 +48,33 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
+
+  /*
+   * Define TCU calculation for each module
+   */
+  moduleTCU(moduleName, config={})::
+    local unifiedConfig = t.getUnifiedInstanceSettings(config);
+
+    local cpu_metrics = {
+      zookeeper: [
+        "zk_cpu_limit",
+      ],
+    };
+
+    local mem_metrics = {
+      zookeeper: [
+        "zk_memory_limit",
+      ],
+    };
+
+    local ssd_metrics = {
+
+    };
+
+    local disk_metrics = {
+
+    };
+
+    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
+      cpu_metrics, mem_metrics, ssd_metrics, disk_metrics),
 }

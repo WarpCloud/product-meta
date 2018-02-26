@@ -18,4 +18,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [simmail],
+    TCU: {
+      [_simmailModuleName]: r.moduleTCU(_simmailModuleName, config),
+    },
   }

@@ -77,4 +77,7 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [terminal],
+    TCU: {
+      [_terminalModuleName]: r.moduleTCU(_terminalModuleName, config),
+    },
   }
