@@ -7,25 +7,19 @@ local t = import "../../../applib/utils.libsonnet";
    */
   __moduleResourceRaw(moduleName, config={})::
     local Debug_Request = t.objectField(config, "Develop", false);
-    local s = t.extractStorageParams(config);
 
     local resource = {
       guardian:
         {
-          guardian_server_cpu_limit: t.objectField(config, "guardian_server_cpu_limit", 4),
-          guardian_server_memory_limit: t.objectField(config, "guardian_server_memory_limit", 8),
-          guardian_server_cpu_request: t.objectField(config, "guardian_server_cpu_request", 0.1),
-          guardian_server_memory_request: t.objectField(config, "guardian_server_memory_request", 1),
-
-          apacheds_cpu_limit: t.objectField(config, "apacheds_cpu_limit", 1),
-          apacheds_memory_limit: t.objectField(config, "apacheds_memory_limit", 2),
-          apacheds_cpu_request: t.objectField(config, "apacheds_cpu_request", 0.1),
-          apacheds_memory_request: t.objectField(config, "apacheds_memory_request", 1),
+          guardian_cpu_limit: t.objectField(config, "guardian_cpu_limit", 4),
+          guardian_memory_limit: t.objectField(config, "guardian_memory_limit", 8),
+          guardian_cpu_request: t.objectField(config, "guardian_cpu_request", 0.1),
+          guardian_memory_request: t.objectField(config, "guardian_memory_request", 1),
         },
       cas:
         {
-          local cpu_limit = resource.guardian.guardian_server_cpu_limit,
-          local memory_limit = resource.guardian.guardian_server_cpu_limit,
+          local cpu_limit = resource.guardian.guardian_cpu_limit,
+          local memory_limit = resource.guardian.guardian_memory_limit,
 
           cas_server_cpu_limit: t.objectField(config, "cas_server_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=cpu_limit)),
           cas_server_memory_limit: t.objectField(config, "cas_server_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=memory_limit)),
@@ -43,11 +37,7 @@ local t = import "../../../applib/utils.libsonnet";
         },
     };
 
-    local storage = {
-      guardian: {
-        guardian_server_volume_storage: t.assembleStorageEntry(config, "guardian_server_volume_storage", s.StorageClass, s.DiskNormalSize),
-      }
-    };
+    local storage = {};
 
     // Return storage and resource specification
     {
