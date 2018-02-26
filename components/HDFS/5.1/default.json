@@ -31,6 +31,18 @@
           "display_name": "HDFS namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "4096MB"
+        },
+        {
+          "description": "HDFS datanode可以使用的磁盘存储",
+          "display_name": "HDFS datanode磁盘大小",
+          "name": "hdfs_data_storage_size",
+          "value": "20GB"
+        },
+        {
+          "description": "HDFS namenode可以使用的磁盘存储",
+          "display_name": "HDFS namenode磁盘大小",
+          "name": "hdfs_name_storage_size",
+          "value": "10GB"
         }
       ],
       "level": "demo"
@@ -60,6 +72,18 @@
           "display_name": "HDFS namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "8192MB"
+        },
+        {
+          "description": "HDFS datanode可以使用的磁盘存储",
+          "display_name": "HDFS datanode磁盘大小大小",
+          "name": "hdfs_data_storage_size",
+          "value": "100GB"
+        },
+        {
+          "description": "HDFS namenode可以使用的磁盘存储",
+          "display_name": "HDFS namenode磁盘大小",
+          "name": "hdfs_name_storage_size",
+          "value": "50GB"
         }
       ],
       "level": "low"
@@ -89,6 +113,18 @@
           "display_name": "HDFS namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "12288MB"
+        },
+        {
+          "description": "HDFS datanode可以使用的磁盘存储",
+          "display_name": "HDFS datanode磁盘大小",
+          "name": "hdfs_data_storage_size",
+          "value": "200GB"
+        },
+        {
+          "description": "HDFS namenode可以使用的磁盘存储",
+          "display_name": "HDFS namenode磁盘大小",
+          "name": "hdfs_name_storage_size",
+          "value": "100GB"
         }
       ],
       "level": "medium"
@@ -118,6 +154,18 @@
           "display_name": "HDFS namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "24576MB"
+        },
+        {
+          "description": "HDFS datanode可以使用的磁盘存储",
+          "display_name": "HDFS datanode磁盘大小",
+          "name": "hdfs_data_storage_size",
+          "value": "500GB"
+        },
+        {
+          "description": "HDFS namenode可以使用的磁盘存储",
+          "display_name": "HDFS namenode磁盘大小",
+          "name": "hdfs_name_storage_size",
+          "value": "200GB"
         }
       ],
       "level": "high"
