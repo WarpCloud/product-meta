@@ -9,25 +9,10 @@
             "application_type": "GUARDIAN"
          },
          "configs": {
-            "apacheds_cpu_limit": 1,
-            "apacheds_cpu_request": 0.10000000000000001,
-            "apacheds_memory_limit": 2,
-            "apacheds_memory_request": 1,
-            "guardian_server_cpu_limit": 4,
-            "guardian_server_cpu_request": 0.10000000000000001,
-            "guardian_server_memory_limit": 8,
-            "guardian_server_memory_request": 1,
-            "guardian_server_volume_storage": {
-               "accessModes": [
-                  "ReadWriteOnce"
-               ],
-               "limits": {
-                  "blkio.throttle.read_iops_device": 0,
-                  "blkio.throttle.write_iops_device": 0
-               },
-               "size": "10Gi",
-               "storageClass": "silver"
-            }
+            "guardian_cpu_limit": 4,
+            "guardian_cpu_request": 0.10000000000000001,
+            "guardian_memory_limit": 8,
+            "guardian_memory_request": 1
          },
          "instance_settings": { },
          "moduleName": "guardian",
@@ -42,15 +27,15 @@
          "configs": {
             "cas_config_server_cpu_limit": 2,
             "cas_config_server_cpu_request": 0.10000000000000001,
-            "cas_config_server_memory_limit": 2,
+            "cas_config_server_memory_limit": 4,
             "cas_config_server_memory_request": 1,
             "cas_mgnt_server_cpu_limit": 2,
             "cas_mgnt_server_cpu_request": 0.10000000000000001,
-            "cas_mgnt_server_memory_limit": 2,
+            "cas_mgnt_server_memory_limit": 4,
             "cas_mgnt_server_memory_request": 1,
             "cas_server_cpu_limit": 2,
             "cas_server_cpu_request": 0.10000000000000001,
-            "cas_server_memory_limit": 2,
+            "cas_server_memory_limit": 4,
             "cas_server_memory_request": 1
          },
          "dependencies": [
