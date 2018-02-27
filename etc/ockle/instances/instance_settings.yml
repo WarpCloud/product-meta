@@ -346,6 +346,10 @@ notification:
   image:
       default:
         - notification_image
+  resource:
+    node_num:
+      singleton:
+        - notification_replicas
 
 pilot:
   image:
@@ -461,6 +465,10 @@ tdt:
 ticket:
   database:
     name: ticket_txsql_db_name
+  resource:
+    node_num:
+      singleton:
+        - ticket_replicas
 
 txsql:
   resource:
