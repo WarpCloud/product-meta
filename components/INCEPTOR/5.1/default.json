@@ -12,7 +12,7 @@
           "description": "每个executor的CPU core数量",
           "display_name": "Executor CPU核数",
           "name": "inceptor_executor_cpu_limit",
-          "value": "0.1"
+          "value": "1"
         },
         {
           "description": "每个executor可以使用的最大内存",
@@ -24,7 +24,7 @@
           "description": "Inceptor server的CPU core数量",
           "display_name": "Inceptor server CPU核数",
           "name": "inceptor_master_cpu_limit",
-          "value": "0.1"
+          "value": "1"
         },
         {
           "description": "Inceptor server可以使用的最大内存",

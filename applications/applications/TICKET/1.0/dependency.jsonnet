@@ -41,8 +41,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [notification, ticket],
-    TCU: {
-      [_notificationModuleName]: r.moduleTCU(_notificationModuleName, config),
-      [_ticketModuleName]: r.moduleTCU(_ticketModuleName, config),
-    },
   }

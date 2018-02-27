@@ -45,30 +45,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      discover: [
-        "discover_cpu_limit",
-      ],
-      localcran: [
-        "localcran_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      discover: [
-        "discover_memory_limit",
-      ],
-      localcran: [
-        "localcran_memory_limit",
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }

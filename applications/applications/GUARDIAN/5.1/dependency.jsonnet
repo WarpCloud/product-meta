@@ -32,12 +32,6 @@ function(config={})
   local guardian = t.createInstance(_guardianModuleName, config, appVersion) +
     r.moduleResource(_guardianModuleName, config);
 
-  local TCU = {
-    [_casModuleName]: r.moduleTCU(_casModuleName, config),
-    [_guardianModuleName]: r.moduleTCU(_guardianModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [guardian, cas],
-    TCU: TCU,
   }

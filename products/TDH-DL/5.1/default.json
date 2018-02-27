@@ -7,7 +7,8 @@
     "TERMINAL-1.0",
     "PILOT-1.0",
     "TXSQL-5.1",
-    "HDFS-5.1"
+    "HDFS-5.1",
+    "INCEPTOR-5.1"
   ],
   "templates": [
     {

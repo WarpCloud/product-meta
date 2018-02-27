@@ -209,23 +209,41 @@ local app = import "app.libsonnet";
   /*
    * A unified interface to extract storage settings.
    */
-  extractStorageParams(config, normal_size="100Gi", data_size="400Gi", log_size="100Gi",
-    tmp_size="100Gi", read_iops=500, write_iops=500
+  extractStorageParams(config, normal_size="10Gi", data_size="10Gi", log_size="10Gi",
+    tmp_size="10Gi", ssd_size="0Gi", read_iops=0, write_iops=0
   )::
-    local Debug_Request = $.objectField(config, "Develop", false);
     {
-      DiskNormalSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskNormalSize", normal_size),
-      DiskDataSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskDataSize", data_size),
-      DiskLogSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskLogSize", log_size),
-      DiskTmpSize: if Debug_Request then "10Gi" else $.objectField(config, "DiskTmpSize", tmp_size),
+      DiskNormalSize: $.objectField(config, "DiskNormalSize", normal_size),
+      DiskDataSize: $.objectField(config, "DiskDataSize", data_size),
+      DiskLogSize: $.objectField(config, "DiskLogSize", log_size),
+      DiskTmpSize: $.objectField(config, "DiskTmpSize", tmp_size),
 
-      /* ReadIOPS: if Debug_Request then 100 else $.objectField(config, "ReadIOPS", read_iops),
-      WriteIOPS: if Debug_Request then 100 else $.objectField(config, "WriteIOPS", write_iops), */
+      ReadIOPS: $.objectField(config, "ReadIOPS", read_iops),
+      WriteIOPS: $.objectField(config, "WriteIOPS", write_iops),
 
-      /* Disable IO limit temporarily. */
-      ReadIOPS: 0,
-      WriteIOPS: 0,
+      StorageClass: $.objectField(config, "StorageClass", "silver"),
 
-      StorageClass: if Debug_Request then "silver" else $.objectField(config, "StorageClass", "silver"),
+      SSDSize: $.objectField(config, "SSDSize", ssd_size),
+      SSDStorageClass: $.objectField(config, "SSDStorageClass", "golden"),
     },
+
+  /*
+   * Assemble storage setting entry for specific field.
+   */
+  assembleStorageEntry(config, field_name, storageClass="", size="",
+    read_iops=0, write_iops=0, kind="pvc"
+  )::
+    // PVC or TOS_DISK?
+    local accessModeName = if kind == "pvc" then "accessModes" else "accessMode";
+    local accessModeValue = if kind == "pvc" then ["ReadWriteOnce"] else "ReadWriteOnce";
+    local default = {
+      storageClass: storageClass,
+      size: size,
+      [accessModeName]: accessModeValue,
+      limits: {
+        "blkio.throttle.read_iops_device": read_iops,
+        "blkio.throttle.write_iops_device": write_iops,
+      },
+    };
+    $.objectField(config, field_name, default),
 }

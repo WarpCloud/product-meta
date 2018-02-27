@@ -18,7 +18,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [search],
-    TCU: {
-      [_searchModuleName]: r.moduleTCU(_searchModuleName, config),
-    },
   }

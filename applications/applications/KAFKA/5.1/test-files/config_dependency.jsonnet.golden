@@ -1,18 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "kafka": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
-      "kafka-manager": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
@@ -33,7 +21,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "400Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             },
             "kafka_tmp_storage": {
@@ -42,7 +30,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "100Gi",
+               "size": "10Gi",
                "storageClass": "silver"
             }
          },

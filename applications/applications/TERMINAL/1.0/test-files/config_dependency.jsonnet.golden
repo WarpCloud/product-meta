@@ -1,13 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "terminal": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {

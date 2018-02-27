@@ -1,18 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "localcran": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
-      "notebook": {
-         "c": 0.5,
-         "m": 1,
-         "s": 1
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
