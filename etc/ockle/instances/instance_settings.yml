@@ -352,6 +352,9 @@ notification:
         - notification_replicas
 
 pilot:
+  configuration:
+    environment:
+      - pilot_env_list
   image:
     default:
       - pilot_image

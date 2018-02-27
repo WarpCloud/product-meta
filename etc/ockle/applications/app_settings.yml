@@ -94,7 +94,11 @@ TERMINAL:
     - search
     - yarn
 
-#TRANSPORTER:
+TRANSPORTER:
+  configuration:
+    default_file: tdt-site.xml
+    environment:
+      tdt-site.xml: TDT_TDT_SITE_CONFIGS
 
 #TXSQL:
 
