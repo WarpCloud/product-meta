@@ -36,12 +36,6 @@ function(config={})
       }],
     };
 
-  local TCU = {
-    [_discoverModuleName]: r.moduleTCU(_discoverModuleName, config),
-    [_localcranModuleName]: r.moduleTCU(_localcranModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [discover, localcran],
-    TCU: TCU,
   }

@@ -25,7 +25,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [filebeat],
-    TCU: {
-      [_filebeatModuleName]: r.moduleTCU(_filebeatModuleName, config),
-    },
   }

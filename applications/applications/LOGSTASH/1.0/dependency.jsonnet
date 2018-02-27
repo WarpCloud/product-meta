@@ -31,7 +31,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [logstash],
-    TCU: {
-      [_logstashModuleName]: r.moduleTCU(_logstashModuleName, config),
-    },
   }

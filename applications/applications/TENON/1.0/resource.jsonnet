@@ -60,36 +60,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      tenon: [
-        "abacus_cpu_limit",
-        "scanner_cpu_limit",
-      ],
-      gondar: [
-        "gondar_udr_cpu_limit",
-        "gondar_cdr_cpu_limit",
-        "gondar_billing_cpu_limit"
-      ],
-    };
-
-    local mem_metrics = {
-      tenon: [
-        "abacus_memory_limit",
-        "scanner_memory_limit"
-      ],
-      gondar: [
-        "gondar_udr_memory_limit",
-        "gondar_cdr_memory_limit",
-        "gondar_billing_memory_limit"
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }

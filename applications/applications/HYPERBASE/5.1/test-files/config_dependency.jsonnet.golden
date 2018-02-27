@@ -1,13 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "hyperbase": {
-         "c": 2,
-         "m": 4,
-         "s": 4
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {

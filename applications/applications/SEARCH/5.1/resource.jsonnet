@@ -13,33 +13,9 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       elasticsearch: {
-        es_client_storage: {
-          storageClass: s.StorageClass,
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskNormalSize,
-          accessModes: ["ReadWriteOnce"],
-        },
-        es_data_storage: {
-          storageClass: s.StorageClass,
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskNormalSize,
-          accessModes: ["ReadWriteOnce"],
-        },
-        es_master_storage: {
-          storageClass: s.StorageClass,
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskNormalSize,
-          accessModes: ["ReadWriteOnce"],
-        },
+        es_client_storage: t.assembleStorageEntry(config, "es_client_storage", s.StorageClass, s.DiskNormalSize, kind="pvc"),
+        es_data_storage: t.assembleStorageEntry(config, "es_data_storage", s.StorageClass, s.DiskNormalSize, kind="pvc"),
+        es_master_storage: t.assembleStorageEntry(config, "es_master_storage", s.StorageClass, s.DiskNormalSize, kind="pvc"),
       },
     };
 
@@ -80,32 +56,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      elasticsearch: [
-        "es_master_cpu_limit",
-        "es_data_cpu_limit",
-        "es_client_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      elasticsearch: [
-        "es_master_memory_limit",
-        "es_data_memory_limit",
-        "es_client_memory_limit",
-      ],
-    };
-
-    local ssd_metrics = {};
-
-    local disk_metrics = {};
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics, ssd_metrics, disk_metrics),
 }

@@ -47,12 +47,6 @@ function(config={})
       }],
     };
 
-  local TCU = {
-    [_metastoreModuleName]: r.moduleTCU(_metastoreModuleName, config),
-    [_slipstreamModuleName]: r.moduleTCU(_slipstreamModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [metastore, slipstream],
-    TCU: TCU,
   }

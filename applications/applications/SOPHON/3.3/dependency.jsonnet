@@ -38,7 +38,4 @@ function(config={})
 
   t.getDefaultSettings(config) + {
     instance_list: [sophon],
-    TCU: {
-      [_sophonModuleName]: r.moduleTCU(_sophonModuleName, config),
-    },
   }

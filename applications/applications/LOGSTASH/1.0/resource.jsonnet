@@ -22,15 +22,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       logstash: {
-        logstash_tmp_storage: {
-          storageClass: s.StorageClass,
-          limits: {
-            "blkio.throttle.read_iops_device": s.ReadIOPS,
-            "blkio.throttle.write_iops_device": s.WriteIOPS,
-          },
-          size: s.DiskTmpSize,
-          accessMode: "ReadWriteOnce",
-        },
+        logstash_tmp_storage: t.assembleStorageEntry(config, "logstash_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
       }
     };
 
@@ -49,24 +41,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      logstash: [
-        "logstash_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      logstash: [
-        "logstash_memory_limit",
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }

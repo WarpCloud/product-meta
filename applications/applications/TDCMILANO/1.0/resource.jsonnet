@@ -60,36 +60,4 @@ local t = import "../../../applib/utils.libsonnet";
     {
       configs: module.resource + module.storage,
     },
-
-  /*
-   * Define TCU calculation for each module
-   */
-  moduleTCU(moduleName, config={})::
-    local cpu_metrics = {
-      [_filebeatModuleName]: [
-        "filebeat_cpu_limit",
-      ],
-      [_logstashModuleName]: [
-        "logstash_cpu_limit",
-      ],
-      [_milanoPortalModuleName]: [
-        "milano_portal_cpu_limit",
-      ],
-    };
-
-    local mem_metrics = {
-      [_filebeatModuleName]: [
-        "filebeat_memory_limit",
-      ],
-      [_logstashModuleName]: [
-        "logstash_memory_limit",
-      ],
-      [_milanoPortalModuleName]: [
-        "milano_portal_memory_limit",
-      ],
-    };
-
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    t.calculateModuleTCU(moduleName, unifiedConfig, $.__moduleResourceRaw,
-      cpu_metrics, mem_metrics),
 }

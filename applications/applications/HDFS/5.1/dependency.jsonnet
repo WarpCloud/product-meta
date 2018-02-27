@@ -28,12 +28,6 @@ function(config={})
       }],
     };
 
-  local TCU = {
-    [_hdfsModuleName]: r.moduleTCU(_hdfsModuleName, config),
-    [_zkModuleName]: r.moduleTCU(_zkModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [zookeeper, hdfs],
-    TCU: TCU,
   }
