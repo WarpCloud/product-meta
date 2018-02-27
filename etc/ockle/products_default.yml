@@ -48,10 +48,10 @@ HYPERBASE:
   Transwarp_Guardian_LDAP_Bind_Password: Transwarp01!
 
 INCEPTOR:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
 
 KAFKA:
   kafka_image: 172.16.1.99/gold/kafka:transwarp-5.1
@@ -78,10 +78,10 @@ SEARCH:
   es_head_image: 172.16.1.99/gold/search-head:transwarp-5.1
 
 SLIPSTREAM:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1
+  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
 
 SOPHON:
   sophon_server_image: 172.16.1.99/gold/sophon-server:transwarp-5.1
