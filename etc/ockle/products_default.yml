@@ -1,6 +1,13 @@
 common:
   Transwarp_DEBUG: false
 
+CODIS:
+  # TODO: Update us
+  codis_dash_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_proxy_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_server_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_fe_image: 172.16.1.99/gold/codis-all:release3.2
+
 DISCOVER:
   discover_image: 172.16.1.99/gold/discover-ide:transwarp-5.1
   localcran_image: 172.16.1.99/gold/discover-localcran:transwarp-5.1
