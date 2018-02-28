@@ -1,3 +1,6 @@
+# A unified configuration interface for TDC instances.
+# Exampled data fields include:
+# ----
 #instance:
 #  resource:
 #    node_num:
@@ -39,6 +42,28 @@ cas:
       - cas_mgnt_server_env_list
   database:
     name: cas_database_name
+
+codis:
+  resource:
+    node_num:
+      default:
+        - codis_server_replicas
+      singleton:
+        - codis_dash_replicas
+        - codis_proxy_replicas
+        - codis_fe_replicas
+  configuration:
+    environment:
+      - codis_dash_env_list
+      - codis_proxy_env_list
+      - codis_server_env_list
+      - codis_fe_env_list
+  image:
+    default:
+      - codis_dash_image
+      - codis_proxy_image
+      - codis_server_image
+      - codis_fe_image
 
 discover:
   configuration:
