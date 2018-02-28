@@ -30,7 +30,7 @@
           "description": "Inceptor server可以使用的最大内存",
           "display_name": "Inceptor server内存",
           "name": "inceptor_master_memory_limit",
-          "value": "2048MB"
+          "value": "4096MB"
         },
         {
           "description": "Shuffle数据盘数量",
