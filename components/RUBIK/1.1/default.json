@@ -18,7 +18,7 @@
           "description": "Rubik可以使用的最大内存",
           "display_name": "Rubik内存",
           "name": "rubik_memory_limit",
-          "value": "1024MB"
+          "value": "2048MB"
         }
       ],
       "level": "demo"

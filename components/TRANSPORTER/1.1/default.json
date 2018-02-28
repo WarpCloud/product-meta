@@ -18,7 +18,7 @@
           "description": "Transporter可以使用的最大内存",
           "display_name": "Transporter内存",
           "name": "tdt_memory_limit",
-          "value": "1024MB"
+          "value": "2048MB"
         }
       ],
       "level": "demo"

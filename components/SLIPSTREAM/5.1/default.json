@@ -30,7 +30,7 @@
           "description": "Slipstream server内存大小",
           "display_name": "Slipstream server内存",
           "name": "inceptor_master_memory_limit",
-          "value": "2048MB"
+          "value": "4096MB"
         },
         {
           "description": "Shuffle数据盘数量",
