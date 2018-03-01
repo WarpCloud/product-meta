@@ -1,5 +1,5 @@
 {
-  "category": "运维和开发工具",
+  "category": "运维和开发工具,SYSTEM",
   "component_type": "TXSQL",
   "dependencies": "",
   "description": "关系数据库，存放和计算小数据量的数据",
