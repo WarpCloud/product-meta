@@ -12,6 +12,7 @@
          "configs": {
             "logstash_cpu_limit": 1,
             "logstash_cpu_request": 0.10000000000000001,
+            "logstash_heap_size": 1.2,
             "logstash_memory_limit": 2,
             "logstash_memory_request": 1,
             "logstash_tmp_storage": {
