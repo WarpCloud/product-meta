@@ -143,7 +143,7 @@
 
   "SLIPSTREAM": [
     {
-      "port": 4040,
+      "port": 4044,
       "protocol": "HTTP",
       "path": "/jobs",
       "require_gateway_registration": true,
