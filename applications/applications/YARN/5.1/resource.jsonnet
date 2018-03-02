@@ -31,7 +31,7 @@ local t = import "../../../applib/utils.libsonnet";
         yarn_secondary_tmp_storage: t.assembleStorageEntry(config, "yarn_secondary_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
         yarn_historyserver_tmp_storage: t.assembleStorageEntry(config, "yarn_historyserver_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
         yarn_nodemanager_tmp_storage: t.assembleStorageEntry(config, "yarn_nodemanager_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
-        yarn_nodemanager_data_storage: t.assembleStorageEntry(config, "yarn_nodemanager_data_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
+        yarn_nodemanager_data_storage: t.assembleStorageEntry(config, "yarn_nodemanager_data_storage", s.StorageClass, s.DiskDataSize, kind="tosdisk"),
         yarn_timelineserver_tmp_storage: t.assembleStorageEntry(config, "yarn_timelineserver_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk")
       }
     };

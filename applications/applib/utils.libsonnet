@@ -209,8 +209,8 @@ local app = import "app.libsonnet";
   /*
    * A unified interface to extract storage settings.
    */
-  extractStorageParams(config, normal_size="10Gi", data_size="10Gi", log_size="10Gi",
-    tmp_size="10Gi", ssd_size="0Gi", read_iops=0, write_iops=0
+  extractStorageParams(config, normal_size="512Gi", data_size="512Gi", log_size="256Gi",
+    tmp_size="256Gi", ssd_size="256Gi", read_iops=0, write_iops=0
   )::
     {
       DiskNormalSize: $.objectField(config, "DiskNormalSize", normal_size),

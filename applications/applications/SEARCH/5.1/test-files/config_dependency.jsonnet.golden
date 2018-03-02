@@ -21,7 +21,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             },
             "es_data_cpu_limit": 1,
@@ -36,7 +36,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             },
             "es_master_cpu_limit": 1,
@@ -51,7 +51,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             }
          },

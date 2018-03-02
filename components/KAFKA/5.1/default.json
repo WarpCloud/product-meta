@@ -19,6 +19,18 @@
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
           "value": "1024MB"
+        },
+        {
+          "description": "Kafka可以使用的磁盘存储",
+          "display_name": "Kafka数据磁盘大小",
+          "name": "kafka_storage_config",
+          "value": "512GB"
+        },
+        {
+          "description": "Kafka临时数据可以使用的磁盘存储",
+          "display_name": "Kafka临时数据磁盘大小",
+          "name": "kafka_tmp_storage",
+          "value": "128GB"
         }
       ],
       "level": "demo"
@@ -36,6 +48,18 @@
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
           "value": "12288MB"
+        },
+        {
+          "description": "Kafka可以使用的磁盘存储",
+          "display_name": "Kafka数据磁盘大小",
+          "name": "kafka_storage_config",
+          "value": "512GB"
+        },
+        {
+          "description": "Kafka临时数据可以使用的磁盘存储",
+          "display_name": "Kafka临时数据磁盘大小",
+          "name": "kafka_tmp_storage",
+          "value": "256GB"
         }
       ],
       "level": "low"
@@ -53,6 +77,18 @@
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
           "value": "24576MB"
+        },
+        {
+          "description": "Kafka可以使用的磁盘存储",
+          "display_name": "Kafka数据磁盘大小",
+          "name": "kafka_storage_config",
+          "value": "1024GB"
+        },
+        {
+          "description": "Kafka临时数据可以使用的磁盘存储",
+          "display_name": "Kafka临时数据磁盘大小",
+          "name": "kafka_tmp_storage",
+          "value": "512GB"
         }
       ],
       "level": "medium"
@@ -70,6 +106,18 @@
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
           "value": "36864MB"
+        },
+        {
+          "description": "Kafka可以使用的磁盘存储",
+          "display_name": "Kafka数据磁盘大小",
+          "name": "kafka_storage_config",
+          "value": "2048GB"
+        },
+        {
+          "description": "Kafka临时数据可以使用的磁盘存储",
+          "display_name": "Kafka临时数据磁盘大小",
+          "name": "kafka_tmp_storage",
+          "value": "512GB"
         }
       ],
       "level": "high"
