@@ -213,7 +213,7 @@
     {
       "port": 60010,
       "protocol": "HTTP",
-      "path": "/",
+      "path": "/master-status",
       "require_gateway_registration": true,
       "display": {
         "display_name": "HyperBase管理",

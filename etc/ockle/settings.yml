@@ -1,0 +1,14 @@
+#ockle
+#-----
+
+adv_config_white_list:
+  - DISCOVER
+  - KAFKA
+  - HDFS
+  - HYPERBASE
+  - INCEPTOR
+  - NOTEBOOK
+  - RUBIK
+  - SLIPSTREAM
+  - TRANSPORTER
+  - YARN
