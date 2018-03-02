@@ -30,7 +30,7 @@
           "description": "Search Masternode可以使用的最大内存",
           "display_name": "Search Masternode内存",
           "name": "es_master_memory_limit",
-          "value": "1024MB"
+          "value": "2048MB"
         },
         {
           "description": "Search使用的SSD数量",
