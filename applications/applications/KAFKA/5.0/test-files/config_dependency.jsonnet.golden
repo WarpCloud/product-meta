@@ -28,7 +28,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             },
             "kafka_tmp_storage": {
@@ -37,7 +37,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "256Gi",
                "storageClass": "silver"
             }
          },

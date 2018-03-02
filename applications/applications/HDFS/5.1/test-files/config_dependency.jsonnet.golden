@@ -21,7 +21,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             }
          },
@@ -48,7 +48,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             },
             "hdfs_data_tmp_storage": {
@@ -57,7 +57,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "256Gi",
                "storageClass": "silver"
             },
             "hdfs_httpfs_cpu_limit": 2,
@@ -78,7 +78,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "512Gi",
                "storageClass": "silver"
             },
             "hdfs_name_memory_limit": 8,
@@ -89,7 +89,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "10Gi",
+               "size": "256Gi",
                "storageClass": "silver"
             },
             "hdfs_zkfc_cpu_limit": 2,

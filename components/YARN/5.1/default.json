@@ -31,6 +31,18 @@
           "display_name": "YARN ResourceManager内存",
           "name": "yarn_rm_memory_limit",
           "value": "4096MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "128GB"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "128GB"
         }
       ],
       "level": "demo"
@@ -60,6 +72,18 @@
           "display_name": "YARN ResourceManager内存",
           "name": "yarn_rm_memory_limit",
           "value": "8192MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "512GB"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "256GB"
         }
       ],
       "level": "low"
@@ -89,6 +113,18 @@
           "display_name": "YARN ResourceManager内存",
           "name": "yarn_rm_memory_limit",
           "value": "12288MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "1024GB"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "512GB"
         }
       ],
       "level": "medium"
@@ -118,6 +154,18 @@
           "display_name": "YARN ResourceManager内存",
           "name": "yarn_rm_memory_limit",
           "value": "24576MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "2048GB"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "512GB"
         }
       ],
       "level": "high"

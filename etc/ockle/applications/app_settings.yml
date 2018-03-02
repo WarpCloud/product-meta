@@ -3,6 +3,11 @@
 #    default_file: example_site.xml
 #    environment:
 #      example_site.xml: EXAMPLE_SITE_CONFIGS
+#    storage_resource:  # Mapping for jsonnet storage size, see WARP-17653
+#      normal_size_metric_from_template: DiskNormalSize
+#      data_size_metric_from_template: DiskDataSize
+#      log_size_metric_from_template: DiskLogSize
+#      tmp_size_metric_from_template: DiskTmpSize
 #  optional_dependencies:
 #    - example_dependency
 #  security:
@@ -17,12 +22,22 @@ DISCOVER:
 
 #GOVERNOR:
 
+GUARDIAN:
+  configuration:
+    storage_resource:
+      guardian_server_volume_storage: DiskNormalSize
+
 HDFS:
   configuration:
     default_file: hdfs-site.xml
     environment:
       hdfs-site.xml: HDFS_HDFS_SITE_CONFIGS
       core-site.xml: HDFS_CORE_SITE_CONFIGS
+    storage_resource:
+      hdfs_name_data_storage: DiskNormalSize
+      hdfs_data_storage: DiskDataSize
+      hdfs_name_tmp_storage: DiskTmpSize
+      hdfs_data_tmp_storage: DiskTmpSize
 
 HYPERBASE:
   configuration:
@@ -47,6 +62,9 @@ KAFKA:
     default_file: server.properties
     environment:
       server.properties: KAFKA_SERVER_PROPERTIES
+    storage_resource:
+      kafka_storage_config: DiskDataSize
+      kafka_tmp_storage: DiskTmpSize
 
 KIBANA:
   optional_dependencies:
@@ -55,6 +73,9 @@ KIBANA:
 #KONG:
 
 LOGSTASH:
+  configuration:
+    storage_resource:
+      logstash_tmp_storage: DiskTmpSize
   optional_dependencies:
     - search
 
@@ -70,12 +91,15 @@ NOTEBOOK:
 
 #RUBIK:
 
-#SEARCH:
-#  configuration:
-#    default_file: elasticsearch.yml
-#    environment:
-#      elasticsearch.yml: ELASTICSEARCH_YML_CONFIGS
-
+SEARCH:
+ configuration:
+   # default_file: elasticsearch.yml
+   # environment:
+   #   elasticsearch.yml: ELASTICSEARCH_YML_CONFIGS
+   storage_resource:
+     es_master_storage: DiskNormalSize
+     es_data_storage: DiskDataSize
+     es_client_storage: DiskNormalSize
 
 SLIPSTREAM:
   configuration:
@@ -99,6 +123,8 @@ TRANSPORTER:
     default_file: tdt-site.xml
     environment:
       tdt-site.xml: TDT_TDT_SITE_CONFIGS
+    storage_resource:
+      tdt_tmp_storage: DiskTmpSize
 
 #TXSQL:
 
@@ -112,3 +138,15 @@ YARN:
     environment:
       mapred_site: YARN_MAPRED_SITE_CONFIGS
       yarn-site.xml: YARN_YARN_SITE_CONFIGS
+    storage_resource:
+      yarn_nodemanager_data_storage: DiskDataSize
+      yarn_timelineserver_tmp_storage: DiskTmpSize
+      yarn_nodemanager_tmp_storage: DiskTmpSize
+      yarn_historyserver_tmp_storage: DiskTmpSize
+      yarn_secondary_tmp_storage: DiskTmpSize
+      yarn_resourcemanager_tmp_storage: DiskTmpSize
+
+ZOOKEEPER:
+  configuration:
+    storage_resource:
+      zk_storage_config: DiskNormalSize
