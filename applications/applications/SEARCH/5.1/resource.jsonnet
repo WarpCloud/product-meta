@@ -45,7 +45,7 @@ local t = import "../../../applib/utils.libsonnet";
           es_data_env_list: t.objectField(config, "es_data_env_list", []) + [
             {
               "key": "ES_HEAP_SIZE",
-              "value": t.raRange(std.floor(_es_data_memory_limit * 0.6), min=1, max=32)
+              "value": std.toString(t.raRange(std.floor(_es_data_memory_limit * 0.6), min=1, max=32))
             }
           ]
         },

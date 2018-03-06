@@ -29,7 +29,7 @@
             "es_data_env_list": [
                {
                   "key": "ES_HEAP_SIZE",
-                  "value": 2
+                  "value": "2"
                }
             ],
             "es_data_memory_limit": 4,
