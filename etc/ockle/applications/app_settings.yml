@@ -1,8 +1,11 @@
 #APPLICATION:
 #  configuration:
-#    default_file: example_site.xml
-#    environment:
-#      example_site.xml: EXAMPLE_SITE_CONFIGS
+#   advanced_configs:
+#      default_group: group_name
+#      groups:
+#        - name: group_name
+#          env_cfg: ENV_CONFIG
+#          type: group_type (file/config)
 #    storage_resource:  # Mapping for jsonnet storage size, see WARP-17653
 #      normal_size_metric_from_template: DiskNormalSize
 #      data_size_metric_from_template: DiskDataSize
@@ -16,9 +19,12 @@
 
 DISCOVER:
   configuration:
-    default_file: spark-defaults.conf
-    environment:
-      spark-defaults.conf: DISCOVER_SPARK_DEFAULTS_CONFIGS
+    advanced_configs:
+      default_group: spark-defaults.conf
+      groups:
+        - name: spark-defaults.conf
+          env_cfg: DISCOVER_SPARK_DEFAULTS_CONFIGS
+          type: file
 
 #GOVERNOR:
 
@@ -29,10 +35,15 @@ GUARDIAN:
 
 HDFS:
   configuration:
-    default_file: hdfs-site.xml
-    environment:
-      hdfs-site.xml: HDFS_HDFS_SITE_CONFIGS
-      core-site.xml: HDFS_CORE_SITE_CONFIGS
+    advanced_configs:
+      default_group: hdfs-site.xml
+      groups:
+        - name: hdfs-site.xml
+          env_cfg: HDFS_HDFS_SITE_CONFIGS
+          type: file
+        - name: core-site.xml
+          env_cfg: HDFS_CORE_SITE_CONFIGS
+          type: file
     storage_resource:
       hdfs_name_data_storage: DiskNormalSize
       hdfs_data_storage: DiskDataSize
@@ -41,15 +52,27 @@ HDFS:
 
 HYPERBASE:
   configuration:
-    default_file: hbase-site.xml
-    environment:
-      hbase-site.xml: HYPERBASE_HBASE_SITE_CONFIGS
+    advanced_configs:
+      default_group: hbase-site.xml
+      groups:
+        - name: hbase-site.xml
+          env_cfg: HYPERBASE_HBASE_SITE_CONFIGS
+          type: file
 
 INCEPTOR:
   configuration:
-    default_file: hive-site.xml
-    environment:
-      hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
+    advanced_configs:
+      default_group: hive-site.xml
+      groups:
+        - name: hive-site.xml
+          env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
+          type: file
+        - name: extra_driver_opts
+          env_cfg: EXTRA_DRIVER_OPTS
+          type: config
+        - name: extra_executor_opts
+          env_cfg: EXTRA_EXECUTOR_OPTS
+          type: config
   optional_dependencies:
     - hyperbase
     - search
@@ -59,9 +82,12 @@ INCEPTOR:
 
 KAFKA:
   configuration:
-    default_file: server.properties
-    environment:
-      server.properties: KAFKA_SERVER_PROPERTIES
+    advanced_configs:
+      default_group: server.properties
+      groups:
+        - name: server.properties
+          env_cfg: KAFKA_SERVER_PROPERTIES
+          type: file
     storage_resource:
       kafka_storage_config: DiskDataSize
       kafka_tmp_storage: DiskTmpSize
@@ -81,9 +107,12 @@ LOGSTASH:
 
 NOTEBOOK:
   configuration:
-    default_file: zeppelin-site.xml
-    environment:
-      zeppelin-site.xml: DISCOVER_ZEPPELIN_SITE_CONFIGS
+    advanced_configs:
+      default_group: zeppelin-site.xml
+      groups:
+        - name: zeppelin-site.xml
+          env_cfg: DISCOVER_ZEPPELIN_SITE_CONFIGS
+          type: file
 
 #NOTIFICATION:
 
@@ -93,9 +122,6 @@ NOTEBOOK:
 
 SEARCH:
  configuration:
-   # default_file: elasticsearch.yml
-   # environment:
-   #   elasticsearch.yml: ELASTICSEARCH_YML_CONFIGS
    storage_resource:
      es_master_storage: DiskNormalSize
      es_data_storage: DiskDataSize
@@ -103,9 +129,12 @@ SEARCH:
 
 SLIPSTREAM:
   configuration:
-    default_file: hive-site.xml
-    environment:
-      hive-site.xml: INCEPTOR_HIVE_SITE_CONFIGS
+    advanced_configs:
+      default_group: hive-site.xml
+      groups:
+        - name: hive-site.xml
+          env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
+          type: file
   security:
     service_refer:
       metastore: slipstream
@@ -120,9 +149,12 @@ TERMINAL:
 
 TRANSPORTER:
   configuration:
-    default_file: tdt-site.xml
-    environment:
-      tdt-site.xml: TDT_TDT_SITE_CONFIGS
+   advanced_configs:
+    default_group: tdt-site.xml
+    groups:
+      - name: tdt-site.xml
+        env_cfg: TDT_TDT_SITE_CONFIGS
+        type: file
     storage_resource:
       tdt_tmp_storage: DiskTmpSize
 
@@ -134,10 +166,15 @@ WORKFLOW:
 
 YARN:
   configuration:
-    default_file: yarn-site.xml
-    environment:
-      mapred_site: YARN_MAPRED_SITE_CONFIGS
-      yarn-site.xml: YARN_YARN_SITE_CONFIGS
+    advanced_configs:
+      default_group: yarn-site.xml
+      groups:
+        - name: yarn-site.xml
+          env_cfg: YARN_YARN_SITE_CONFIGS
+          type: file
+        - name: mapred_site
+          env_cfg: YARN_MAPRED_SITE_CONFIGS
+          type: file
     storage_resource:
       yarn_nodemanager_data_storage: DiskDataSize
       yarn_timelineserver_tmp_storage: DiskTmpSize

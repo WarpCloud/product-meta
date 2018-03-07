@@ -242,6 +242,18 @@
       "groups": [],
       "name": "spark.driver.port",
       "value": "51888"
+    },
+    {
+      "default": "",
+      "groups": ["extra_driver_opts"],
+      "name": "EXTRA_DRIVER_OPTS",
+      "value": ""
+    },
+    {
+      "default": "",
+      "groups": ["extra_executor_opts"],
+      "name": "EXTRA_EXECUTOR_OPTS",
+      "value": ""
     }
   ],
   "version": "5.1"
