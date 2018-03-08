@@ -17,8 +17,7 @@ local t = import "../../../applib/utils.libsonnet";
           logstash_memory_limit: t.objectField(config, "logstash_memory_limit", 2),
           logstash_cpu_request: t.objectField(config, "logstash_cpu_request", 0.1),
           logstash_memory_request: t.objectField(config, "logstash_memory_request", 1),
-
-          logstash_heap_size: t.objectField(config, "logstash_memory_limit", 2) * 0.6,
+          # logstash_heap_size: std.toString(t.objectField(config, "logstash_memory_limit", 2) * 0.6),
         },
     };
 

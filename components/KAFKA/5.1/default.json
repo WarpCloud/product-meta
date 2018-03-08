@@ -24,13 +24,13 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512GB"
+          "value": "512G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "128GB"
+          "value": "128G"
         }
       ],
       "level": "demo"
@@ -53,13 +53,13 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512GB"
+          "value": "512G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "256GB"
+          "value": "256G"
         }
       ],
       "level": "low"
@@ -82,13 +82,13 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "1024GB"
+          "value": "1024G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "medium"
@@ -111,13 +111,13 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "2048GB"
+          "value": "2048G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "high"

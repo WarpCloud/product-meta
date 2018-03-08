@@ -48,13 +48,13 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "256GB"
+          "value": "256G"
         },
         {
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "demo"
@@ -101,13 +101,13 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "256GB"
+          "value": "256G"
         },
         {
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "low"
@@ -154,13 +154,13 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "512GB"
+          "value": "512G"
         },
         {
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "1024GB"
+          "value": "1024G"
         }
       ],
       "level": "medium"
@@ -207,13 +207,13 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "512GB"
+          "value": "512G"
         },
         {
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "4096GB"
+          "value": "4096G"
         }
       ],
       "level": "high"

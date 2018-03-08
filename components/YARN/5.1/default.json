@@ -36,13 +36,13 @@
           "description": "YARN NodeManager可以使用的磁盘存储",
           "display_name": "YARN NodeManager磁盘大小",
           "name": "yarn_nodemanager_data_storage",
-          "value": "128GB"
+          "value": "128G"
         },
         {
           "description": "YARN NodeManager临时数据可以使用的磁盘存储",
           "display_name": "YARN NodeManager临时数据磁盘大小",
           "name": "yarn_nodemanager_tmp_storage",
-          "value": "128GB"
+          "value": "128G"
         }
       ],
       "level": "demo"
@@ -77,13 +77,13 @@
           "description": "YARN NodeManager可以使用的磁盘存储",
           "display_name": "YARN NodeManager磁盘大小",
           "name": "yarn_nodemanager_data_storage",
-          "value": "512GB"
+          "value": "512G"
         },
         {
           "description": "YARN NodeManager临时数据可以使用的磁盘存储",
           "display_name": "YARN NodeManager临时数据磁盘大小",
           "name": "yarn_nodemanager_tmp_storage",
-          "value": "256GB"
+          "value": "256G"
         }
       ],
       "level": "low"
@@ -118,13 +118,13 @@
           "description": "YARN NodeManager可以使用的磁盘存储",
           "display_name": "YARN NodeManager磁盘大小",
           "name": "yarn_nodemanager_data_storage",
-          "value": "1024GB"
+          "value": "1024G"
         },
         {
           "description": "YARN NodeManager临时数据可以使用的磁盘存储",
           "display_name": "YARN NodeManager临时数据磁盘大小",
           "name": "yarn_nodemanager_tmp_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "medium"
@@ -159,13 +159,13 @@
           "description": "YARN NodeManager可以使用的磁盘存储",
           "display_name": "YARN NodeManager磁盘大小",
           "name": "yarn_nodemanager_data_storage",
-          "value": "2048GB"
+          "value": "2048G"
         },
         {
           "description": "YARN NodeManager临时数据可以使用的磁盘存储",
           "display_name": "YARN NodeManager临时数据磁盘大小",
           "name": "yarn_nodemanager_tmp_storage",
-          "value": "512GB"
+          "value": "512G"
         }
       ],
       "level": "high"
