@@ -2,10 +2,8 @@ instance-type: terminal
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc2
-    min: tdc-1.0.0-rc2
-  - max: tdc-1.0.0-rc3
-    min: tdc-1.0.0-rc3
+  - max: tdc-1.0.0-rc4
+    min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
 images:
@@ -59,6 +57,30 @@ releases:
     image-version:
       terminal_image: tdc-1.0.0-rc3
     release-version: tdc-1.0.0-rc3
+
+  - dependencies:
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: elasticsearch
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: hdfs
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: hyperbase
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: inceptor
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: metastore
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: yarn
+    final: true
+    image-version:
+      terminal_image: tdc-1.0.0-rc4
+    release-version: tdc-1.0.0-rc4
 
   - dependencies:
       - max-version: transwarp-5.1

@@ -2,10 +2,8 @@ instance-type: metastore
 major-version: '5.1'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: transwarp-5.1.0-final
+  - max: transwarp-5.1.2-final
     min: transwarp-5.1.0-final
-  - max: transwarp-5.1.1-final
-    min: transwarp-5.1.1-final
   - max: transwarp-5.1
     min: transwarp-5.1
 images:
@@ -33,6 +31,16 @@ releases:
       metastore_image: transwarp-5.1.1-final
       mysql_image: transwarp-5.1.1-final
     release-version: transwarp-5.1.1-final
+
+  - dependencies:
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: hdfs
+    final: true
+    image-version:
+      metastore_image: transwarp-5.1.2-final
+      mysql_image: transwarp-5.1.2-final
+    release-version: transwarp-5.1.2-final
 
   - dependencies:
       - max-version: transwarp-5.1

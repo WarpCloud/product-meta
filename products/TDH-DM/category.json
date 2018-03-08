@@ -3,5 +3,6 @@
   "description": "数据集市面向部门级业务，提供各种模型用以组织数据，实现交互式分析以及自动化的报表应用构建。",
   "display_name": "数据集市",
   "description_en": "Data Market",
-  "display_name_en": "Data Market"
+  "display_name_en": "Data Market",
+  "final": true
 }

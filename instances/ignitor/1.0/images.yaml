@@ -2,8 +2,8 @@ instance-type: ignitor
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc0
-    min: tdc-1.0.0-rc3
+  - max: tdc-1.0.0-rc4
+    min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
 images:
@@ -45,6 +45,24 @@ releases:
       image-version:
         ignitor_image: tdc-1.0.0-rc3
     release-version: tdc-1.0.0-rc3
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc4
+      min-version: tdc-1.0.0-rc4
+      type: txsql
+    - max-version: tdc-1.0.0-rc4
+      min-version: tdc-1.0.0-rc4
+      type: ockle
+    - max-version: tdc-1.0.0-rc4
+      min-version: tdc-1.0.0-rc4
+      type: simmail
+    - max-version: tdc-1.0.0-rc4
+      min-version: tdc-1.0.0-rc4
+      type: guardian
+    final: true
+      image-version:
+        ignitor_image: tdc-1.0.0-rc4
+    release-version: tdc-1.0.0-rc4
 
   - dependencies:
     - max-version: tdc-1.0
