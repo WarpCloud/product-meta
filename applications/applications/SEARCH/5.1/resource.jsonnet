@@ -41,12 +41,13 @@ local t = import "../../../applib/utils.libsonnet";
           es_client_cpu_request: t.objectField(config, "es_client_cpu_request", 0.1),
           es_client_memory_request: t.objectField(config, "es_client_memory_request", 2),
 
+          local _es_data_heap_size_str = std.toString(t.raRange(std.floor(_es_data_memory_limit * 0.6), min=1, max=32)) + "g",
           # Add ES head size, WARP-21420
           es_data_env_list: t.objectField(config, "es_data_env_list", []) + [
-            # {
-              # "key": "ES_HEAP_SIZE",
-              # "value": std.toString(t.raRange(std.floor(_es_data_memory_limit * 0.6), min=1, max=32))
-            # }
+            {
+              "key": "ES_JAVA_OPTS",
+              "value": "-Xms" + _es_data_heap_size_str + " -Xmx" + _es_data_heap_size_str
+            }
           ]
         },
     };

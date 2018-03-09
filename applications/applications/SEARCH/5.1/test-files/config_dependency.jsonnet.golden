@@ -28,8 +28,8 @@
             "es_data_cpu_request": 0.10000000000000001,
             "es_data_env_list": [
                {
-                  "key": "ES_HEAP_SIZE",
-                  "value": "2"
+                  "key": "ES_JAVA_OPTS",
+                  "value": "-Xms2g -Xmx2g"
                }
             ],
             "es_data_memory_limit": 4,
