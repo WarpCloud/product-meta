@@ -18,6 +18,34 @@ local app = import "app.libsonnet";
     else if std.length(field_value) > 0 then field_value
     else default,
 
+  parseNumber(str)::
+    local array = std.split(str, '.');
+    if std.length(array) == 1 then
+        std.parseInt(array[0])
+    else if std.length(array) == 2 && std.length(array[1]) >= 1 then
+        local digits_after_point = std.length(array[1]);
+        std.parseInt(array[0]) + std.parseInt(array[1])/std.pow(10,digits_after_point)
+    else 0,
+
+  diskSizeInByte(size)::
+    local isDigitOrPoint(ch) = (std.codepoint(ch) >= 48 && std.codepoint(ch) <=57) || std.codepoint(ch) == 46;
+    local digits(ch) = if isDigitOrPoint(ch) then ch else "";
+    local unit(ch) = if isDigitOrPoint(ch) then "" else ch;
+
+    local _size = self.parseNumber(std.join("", std.map(digits, size)));
+    local _unit = std.join("", std.map(unit, size));
+    local toPower(unit) =
+        if std.startsWith(unit, "G") || std.startsWith(unit, "g")
+            then 1024 * 1024 * 1024
+        else if std.startsWith(unit, "M") || std.startsWith(unit, "m")
+            then 1024 * 1024
+        else if std.startsWith(unit, "K") || std.startsWith(unit, "k")
+            then 1024
+        else if std.startsWith(unit, "B") || std.startsWith(unit, "b")
+            then 1
+        else 0;
+    std.floor(_size * toPower(_unit)),
+
   /**
    * Check the value of a field is true or false
    */

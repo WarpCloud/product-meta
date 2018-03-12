@@ -28,6 +28,14 @@ local t = import "../../../applib/utils.libsonnet";
           kafka_memory_limit: t.objectField(config, "kafka_memory_limit", 2),
           kafka_cpu_request: t.objectField(config, "kafka_cpu_request", 0.1),
           kafka_memory_request: t.objectField(config, "kafka_memory_request", 1),
+          kafka_env_list: t.objectField(config, "kafka_env_list", []) + [
+            {
+              "key": "KAFKA_SERVER_PROPERTIES",
+              local _bytes = t.diskSizeInByte(s.DiskDataSize),
+              local _log_retention = if _bytes == 0 then "" else "log.retention.bytes;;;"+std.floor(_bytes * 0.8)+"|||",
+              "value":  _log_retention + "num.partitions;;;3|||default.replication.factor;;;2"
+            }
+          ]
         },
       [_kafkaManagerModuleName]:
         {
