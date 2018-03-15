@@ -14,7 +14,7 @@
             "kafka_env_list": [
                {
                   "key": "KAFKA_SERVER_PROPERTIES",
-                  "value": "log.retention.bytes;;;9448928051|||num.partitions;;;3|||default.replication.factor;;;2"
+                  "value": "log.retention.bytes;;;439804651110|||num.partitions;;;3|||default.replication.factor;;;2"
                }
             ],
             "kafka_memory_limit": 2,
