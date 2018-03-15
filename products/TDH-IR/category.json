@@ -2,7 +2,7 @@
   "category_name": "TDH-IR",
   "description": "PB级别的高速全文检索服务，提供高并发支持，以及字段精确、模糊检索和快速统计功能，支持用SQL做内容检索。",
   "display_name": "信息检索",
-  "description_en": "Information Retrieval",
+  "description_en": "TDH-IR supports accurate/fuzzy retrieval, rapid statistics function. It features high-speed full-text search on PB-level data set, full SQL support and high concurrency.",
   "display_name_en": "Information Retrieval",
   "final": true
 }
