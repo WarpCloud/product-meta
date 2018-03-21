@@ -2,6 +2,8 @@
 
 Organizing products' and components' meta info, including default configurations and price info etc.
 
+Based on [application-jsonent](http://172.16.1.41:10080/TDC/application-jsonnet).
+
 
 ## Folders
 
