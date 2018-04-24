@@ -2,15 +2,16 @@
   "GUARDIAN": [
     {
       "port": 8380,
-      "ldap_port": 10389,
-      "kdc_port": 1088,
       "protocol": "HTTPS",
-      "require_gateway_registration": true
+      "require_gateway_registration": true,
+      "require_display": true,
+      "alias": "GuardianServer"
     },
     {
       "port": 8393,
       "protocol": "HTTPS",
       "require_gateway_registration": true,
+      "require_display": false,
       "alias": "CAS"
     }
   ],
@@ -18,7 +19,8 @@
     {
       "port": 9042,
       "protocol": "HTTP",
-      "require_gateway_registration": true
+      "require_gateway_registration": true,
+      "require_display": true
     }
   ],
   "KIBANA": [

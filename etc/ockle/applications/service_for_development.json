@@ -95,6 +95,7 @@
       "protocol": "HTTPS",
       "path": "/",
       "require_gateway_registration": true,
+      "alias": "GuardianServer",
       "display": {
         "display_name": "安全与权限",
         "display_name_en": "Guardian",
@@ -142,16 +143,22 @@
 
   "SLIPSTREAM": [
     {
-      "port": 4040,
+      "port": 4044,
       "protocol": "HTTP",
       "path": "/jobs",
       "require_gateway_registration": true,
+      "alias": "SLIPSTREAM",
       "display": {
         "display_name": "Slipstream任务监控",
         "display_name_en":"Slipstream UI",
         "description": "Slipstream任务监控页面，提供各流式应用和作业的运行状态以及资源使用情况。",
         "description_en": "Slipstream UI is a web-based tool for monitoring streaming apps & jobs running on Slipstream as well as resource usage."
       }
+    },
+    {
+      "port": 10010,
+      "require_gateway_registration": false,
+      "alias": "HiveServer2"
     }
   ],
 
@@ -174,7 +181,8 @@
     {
       "port": 6066,
       "protocol": "HTTP",
-      "require_gateway_registration": false,
+      "path": "/",
+      "require_gateway_registration": true,
       "require_service_type": "NodePort",
       "display": {
         "display_name": "深度学习",
@@ -205,7 +213,7 @@
     {
       "port": 60010,
       "protocol": "HTTP",
-      "path": "/",
+      "path": "/master-status",
       "require_gateway_registration": true,
       "display": {
         "display_name": "HyperBase管理",

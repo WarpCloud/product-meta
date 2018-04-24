@@ -1,5 +1,6 @@
 {
   "edition": "5.1",
+  "final": true,
   "components": [
     "TXSQL-5.1",
     "TERMINAL-1.0"

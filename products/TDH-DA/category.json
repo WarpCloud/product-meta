@@ -2,6 +2,7 @@
   "category_name": "TDH-DA",
   "description": "数据分析平台为数据科学家提供了丰富的数据挖掘功能，内置多种分布式机器学习算法和行业模型，实现数据到价值信息的转换。",
   "display_name": "数据分析与挖掘",
-  "description_en": "Data Analysis",
-  "display_name_en": "Data Analysis"
+  "description_en": "TDH-DA is a platform mostly serves for data scientists, offering plentiful data  mining functions. More than 60 distributed machine learning algorithms and a variety of industry models are included to facilitate conversion from data into valuable information.",
+  "display_name_en": "Data Analysis and Mining",
+  "final": true
 }

@@ -1,12 +1,14 @@
 {
   "edition": "5.1",
+  "final": true,
   "components": [
     "SOPHON-3.3",
     "YARN-5.1",
     "TERMINAL-1.0",
     "PILOT-1.0",
     "TXSQL-5.1",
-    "HDFS-5.1"
+    "HDFS-5.1",
+    "INCEPTOR-5.1"
   ],
   "templates": [
     {
@@ -25,5 +27,6 @@
         "level": "high",
         "description": "最佳性能模式"
     }
-  ]
+  ],
+  "is_distributed": true
 }

@@ -1,0 +1,17 @@
+{
+   "GUARDIAN": [
+    {
+      "port": 8380,
+      "protocol": "HTTPS",
+      "alias": "GuardianServer"
+    },
+    {
+      "port": 10389,
+      "alias": "LDAP"
+    },
+    {
+      "port": 1088,
+      "alias": "KDC"
+    }
+  ]
+}

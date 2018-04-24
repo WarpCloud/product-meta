@@ -1,5 +1,5 @@
 {
-  "category": "TDH平台产品",
+  "category": "TDH平台产品,SYSTEM",
   "component_type": "SEARCH",
   "dependencies": "",
   "description": "全文检索",
@@ -9,28 +9,28 @@
     {
       "configs": [
         {
-          "description": "每个Search data节点可以使用的CPU core数量",
-          "display_name": "Search data节点CPU核数",
+          "description": "每个Search Datanode可以使用的CPU core数量",
+          "display_name": "Search Datanode CPU核数",
           "name": "es_data_cpu_limit",
           "value": "0.1"
         },
         {
-          "description": "每个Search data节点可以使用的最大内存",
-          "display_name": "Search data节点内存",
+          "description": "每个Search Datanode可以使用的最大内存",
+          "display_name": "Search Datanode内存",
           "name": "es_data_memory_limit",
           "value": "2048MB"
         },
         {
-          "description": "Search主节点可以使用的CPU core数量",
-          "display_name": "Search主节点CPU核数",
+          "description": "Search Masternode可以使用的CPU core数量",
+          "display_name": "Search Masternode CPU核数",
           "name": "es_master_cpu_limit",
           "value": "0.1"
         },
         {
-          "description": "Search主节点可以使用的最大内存",
-          "display_name": "Search主节点内存",
+          "description": "Search Masternode可以使用的最大内存",
+          "display_name": "Search Masternode内存",
           "name": "es_master_memory_limit",
-          "value": "1024MB"
+          "value": "2048MB"
         },
         {
           "description": "Search使用的SSD数量",
@@ -43,6 +43,18 @@
           "display_name": "Search SATA硬盘数量",
           "name": "sata_disks",
           "value": "2"
+        },
+        {
+          "description": "Search Masternode可以使用的磁盘存储",
+          "display_name": "Search Masternode磁盘大小",
+          "name": "es_master_storage",
+          "value": "256G"
+        },
+        {
+          "description": "Search Datanode可以使用的磁盘存储",
+          "display_name": "Search Datanode磁盘大小",
+          "name": "es_data_storage",
+          "value": "512G"
         }
       ],
       "level": "demo"
@@ -50,26 +62,26 @@
     {
       "configs": [
         {
-          "description": "每个Search data节点可以使用的CPU core数量",
-          "display_name": "Search data节点CPU核数",
+          "description": "每个Search Datanode可以使用的CPU core数量",
+          "display_name": "Search Datanode CPU核数",
           "name": "es_data_cpu_limit",
           "value": "6"
         },
         {
-          "description": "每个Search data节点可以使用的最大内存",
-          "display_name": "Search data节点内存",
+          "description": "每个Search Datanode可以使用的最大内存",
+          "display_name": "Search Datanode内存",
           "name": "es_data_memory_limit",
           "value": "16384MB"
         },
         {
-          "description": "Search主节点可以使用的CPU core数量",
-          "display_name": "Search主节点CPU核数",
+          "description": "Search Masternode可以使用的CPU core数量",
+          "display_name": "Search Masternode CPU核数",
           "name": "es_master_cpu_limit",
           "value": "6"
         },
         {
-          "description": "Search主节点可以使用的最大内存",
-          "display_name": "Search主节点内存",
+          "description": "Search Masternode可以使用的最大内存",
+          "display_name": "Search Masternode内存",
           "name": "es_master_memory_limit",
           "value": "65536MB"
         },
@@ -84,6 +96,18 @@
           "display_name": "Search SATA硬盘数量",
           "name": "sata_disks",
           "value": "6"
+        },
+        {
+          "description": "Search Masternode可以使用的磁盘存储",
+          "display_name": "Search Masternode磁盘大小",
+          "name": "es_master_storage",
+          "value": "256G"
+        },
+        {
+          "description": "Search Datanode可以使用的磁盘存储",
+          "display_name": "Search Datanode磁盘大小",
+          "name": "es_data_storage",
+          "value": "512G"
         }
       ],
       "level": "low"
@@ -91,26 +115,26 @@
     {
       "configs": [
         {
-          "description": "每个Search data节点可以使用的CPU core数量",
-          "display_name": "Search data节点CPU核数",
+          "description": "每个Search Datanode可以使用的CPU core数量",
+          "display_name": "Search Datanode CPU核数",
           "name": "es_data_cpu_limit",
           "value": "12"
         },
         {
-          "description": "每个Search data节点可以使用的最大内存",
-          "display_name": "Search data节点内存",
+          "description": "每个Search Datanode可以使用的最大内存",
+          "display_name": "Search Datanode内存",
           "name": "es_data_memory_limit",
           "value": "24576MB"
         },
         {
-          "description": "Search主节点可以使用的CPU core数量",
-          "display_name": "Search主节点CPU核数",
+          "description": "Search Masternode可以使用的CPU core数量",
+          "display_name": "Search Masternode CPU核数",
           "name": "es_master_cpu_limit",
           "value": "8"
         },
         {
-          "description": "Search主节点可以使用的最大内存",
-          "display_name": "Search主节点内存",
+          "description": "Search Masternode可以使用的最大内存",
+          "display_name": "Search Masternode内存",
           "name": "es_master_memory_limit",
           "value": "131072MB"
         },
@@ -125,6 +149,18 @@
           "display_name": "Search SATA硬盘数量",
           "name": "sata_disks",
           "value": "4"
+        },
+        {
+          "description": "Search Masternode可以使用的磁盘存储",
+          "display_name": "Search Masternode磁盘大小",
+          "name": "es_master_storage",
+          "value": "512G"
+        },
+        {
+          "description": "Search Datanode可以使用的磁盘存储",
+          "display_name": "Search Datanode磁盘大小",
+          "name": "es_data_storage",
+          "value": "1024G"
         }
       ],
       "level": "medium"
@@ -132,26 +168,26 @@
     {
       "configs": [
         {
-          "description": "每个Search data节点可以使用的CPU core数量",
-          "display_name": "Search data节点CPU核数",
+          "description": "每个Search Datanode可以使用的CPU core数量",
+          "display_name": "Search Datanode CPU核数",
           "name": "es_data_cpu_limit",
           "value": "16"
         },
         {
-          "description": "每个Search data节点可以使用的最大内存",
-          "display_name": "Search data节点内存",
+          "description": "每个Search Datanode可以使用的最大内存",
+          "display_name": "Search Datanode内存",
           "name": "es_data_memory_limit",
           "value": "32768MB"
         },
         {
-          "description": "Search主节点可以使用的CPU core数量",
-          "display_name": "Search主节点CPU核数",
+          "description": "Search Masternode可以使用的CPU core数量",
+          "display_name": "Search Masternode CPU核数",
           "name": "es_master_cpu_limit",
           "value": "16"
         },
         {
-          "description": "Search主节点可以使用的最大内存",
-          "display_name": "Search主节点内存",
+          "description": "Search Masternode可以使用的最大内存",
+          "display_name": "Search Masternode内存",
           "name": "es_master_memory_limit",
           "value": "262144MB"
         },
@@ -166,6 +202,18 @@
           "display_name": "Search SATA硬盘数量",
           "name": "sata_disks",
           "value": "0"
+        },
+        {
+          "description": "Search Masternode可以使用的磁盘存储",
+          "display_name": "Search Masternode磁盘大小",
+          "name": "es_master_storage",
+          "value": "512G"
+        },
+        {
+          "description": "Search Datanode可以使用的磁盘存储",
+          "display_name": "Search Datanode磁盘大小",
+          "name": "es_data_storage",
+          "value": "4096G"
         }
       ],
       "level": "high"

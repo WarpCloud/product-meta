@@ -9,28 +9,40 @@
     {
       "configs": [
         {
-          "description": "每个HDFS datanode的CPU core数量",
-          "display_name": "HDFS datanode CPU核数",
+          "description": "每个HDFS Datanode的CPU core数量",
+          "display_name": "HDFS Datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
           "value": "0.1"
         },
         {
-          "description": "每个HDFS datanode可以使用的最大内存",
-          "display_name": "HDFS datanode内存",
+          "description": "每个HDFS Datanode可以使用的最大内存",
+          "display_name": "HDFS Datanode内存",
           "name": "hdfs_data_memory_limit",
           "value": "4096MB"
         },
         {
-          "description": "HDFS namenode的CPU core数量",
-          "display_name": "HDFS namenode CPU核数",
+          "description": "HDFS Namenode的CPU core数量",
+          "display_name": "HDFS Namenode CPU核数",
           "name": "hdfs_name_cpu_limit",
           "value": "0.1"
         },
         {
-          "description": "HDFS namenode可以使用的最大内存",
-          "display_name": "HDFS namenode内存",
+          "description": "HDFS Namenode可以使用的最大内存",
+          "display_name": "HDFS Namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "4096MB"
+        },
+        {
+          "description": "HDFS Namenode可以使用的磁盘存储",
+          "display_name": "HDFS Namenode磁盘大小",
+          "name": "hdfs_name_data_storage",
+          "value": "128G"
+        },
+        {
+          "description": "HDFS Datanode可以使用的磁盘存储",
+          "display_name": "HDFS Datanode磁盘大小",
+          "name": "hdfs_data_storage",
+          "value": "512G"
         }
       ],
       "level": "demo"
@@ -38,28 +50,40 @@
     {
       "configs": [
         {
-          "description": "每个HDFS datanode的CPU core数量",
-          "display_name": "HDFS datanode CPU核数",
+          "description": "每个HDFS Datanode的CPU core数量",
+          "display_name": "HDFS Datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
           "value": "6"
         },
         {
-          "description": "每个HDFS datanode可以使用的最大内存",
-          "display_name": "HDFS datanode内存",
+          "description": "每个HDFS Datanode可以使用的最大内存",
+          "display_name": "HDFS Datanode内存",
           "name": "hdfs_data_memory_limit",
           "value": "12288MB"
         },
         {
-          "description": "HDFS namenode的CPU core数量",
-          "display_name": "HDFS namenode CPU核数",
+          "description": "HDFS Namenode的CPU core数量",
+          "display_name": "HDFS Namenode CPU核数",
           "name": "hdfs_name_cpu_limit",
           "value": "6"
         },
         {
-          "description": "HDFS namenode可以使用的最大内存",
-          "display_name": "HDFS namenode内存",
+          "description": "HDFS Namenode可以使用的最大内存",
+          "display_name": "HDFS Namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "8192MB"
+        },
+        {
+          "description": "HDFS Namenode可以使用的磁盘存储",
+          "display_name": "HDFS Namenode磁盘大小",
+          "name": "hdfs_name_data_storage",
+          "value": "256G"
+        },
+        {
+          "description": "HDFS Datanode可以使用的磁盘存储",
+          "display_name": "HDFS Datanode磁盘大小",
+          "name": "hdfs_data_storage",
+          "value": "512G"
         }
       ],
       "level": "low"
@@ -67,28 +91,40 @@
     {
       "configs": [
         {
-          "description": "每个HDFS datanode的CPU core数量",
-          "display_name": "HDFS datanode CPU核数",
+          "description": "每个HDFS Datanode的CPU core数量",
+          "display_name": "HDFS Datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
           "value": "12"
         },
         {
-          "description": "每个HDFS datanode可以使用的最大内存",
-          "display_name": "HDFS datanode内存",
+          "description": "每个HDFS Datanode可以使用的最大内存",
+          "display_name": "HDFS Datanode内存",
           "name": "hdfs_data_memory_limit",
           "value": "24576MB"
         },
         {
-          "description": "HDFS namenode的CPU core数量",
-          "display_name": "HDFS namenode CPU核数",
+          "description": "HDFS Namenode的CPU core数量",
+          "display_name": "HDFS Namenode CPU核数",
           "name": "hdfs_name_cpu_limit",
           "value": "12"
         },
         {
-          "description": "HDFS namenode可以使用的最大内存",
-          "display_name": "HDFS namenode内存",
+          "description": "HDFS Namenode可以使用的最大内存",
+          "display_name": "HDFS Namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "12288MB"
+        },
+        {
+          "description": "HDFS Namenode可以使用的磁盘存储",
+          "display_name": "HDFS Namenode磁盘大小",
+          "name": "hdfs_name_data_storage",
+          "value": "512G"
+        },
+        {
+          "description": "HDFS Datanode可以使用的磁盘存储",
+          "display_name": "HDFS Datanode磁盘大小",
+          "name": "hdfs_data_storage",
+          "value": "1024G"
         }
       ],
       "level": "medium"
@@ -96,28 +132,40 @@
     {
       "configs": [
         {
-          "description": "每个HDFS datanode的CPU core数量",
-          "display_name": "HDFS datanode CPU核数",
+          "description": "每个HDFS Datanode的CPU core数量",
+          "display_name": "HDFS Datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
           "value": "16"
         },
         {
-          "description": "每个HDFS datanode可以使用的最大内存",
-          "display_name": "HDFS datanode内存",
+          "description": "每个HDFS Datanode可以使用的最大内存",
+          "display_name": "HDFS Datanode内存",
           "name": "hdfs_data_memory_limit",
           "value": "36864MB"
         },
         {
-          "description": "HDFS namenode的CPU core数量",
-          "display_name": "HDFS namenode CPU核数",
+          "description": "HDFS Namenode的CPU core数量",
+          "display_name": "HDFS Namenode CPU核数",
           "name": "hdfs_name_cpu_limit",
           "value": "16"
         },
         {
-          "description": "HDFS namenode可以使用的最大内存",
-          "display_name": "HDFS namenode内存",
+          "description": "HDFS Namenode可以使用的最大内存",
+          "display_name": "HDFS Namenode内存",
           "name": "hdfs_name_memory_limit",
           "value": "24576MB"
+        },
+        {
+          "description": "HDFS Namenode可以使用的磁盘存储",
+          "display_name": "HDFS Namenode磁盘大小",
+          "name": "hdfs_name_data_storage",
+          "value": "512G"
+        },
+        {
+          "description": "HDFS Datanode可以使用的磁盘存储",
+          "display_name": "HDFS Datanode磁盘大小",
+          "name": "hdfs_data_storage",
+          "value": "4096G"
         }
       ],
       "level": "high"

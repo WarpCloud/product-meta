@@ -1,0 +1,71 @@
+instance-type: discover
+major-version: '5.1'
+min-tdc-version: tdc-1.0.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.1.2-final
+    min: transwarp-5.1.0-final
+  - max: transwarp-5.1
+    min: transwarp-5.1
+images:
+  - name: discover-ide
+    variable: discover_image
+releases:
+  - release-version: transwarp-5.1.0-final
+    dependencies:
+      - max-version: transwarp-5.1.0-final
+        min-version: transwarp-5.1.0-final
+        type: hdfs
+      - max-version: transwarp-5.1.0-final
+        min-version: transwarp-5.1.0-final
+        type: yarn
+      - max-version: transwarp-5.1.0-final
+        min-version: transwarp-5.1.0-final
+        type: localcran
+    final: true
+    image-version:
+      discover_image: transwarp-5.1.0-final
+
+  - release-version: transwarp-5.1.1-final
+    dependencies:
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
+        type: hdfs
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
+        type: yarn
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
+        type: localcran
+    final: true
+    image-version:
+      discover_image: transwarp-5.1.1-final
+
+  - release-version: transwarp-5.1.2-final
+    dependencies:
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: hdfs
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: yarn
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: localcran
+    final: true
+    image-version:
+      discover_image: transwarp-5.1.2-final
+
+  - release-version: transwarp-5.1
+    dependencies:
+      - max-version: transwarp-5.1
+        min-version: transwarp-5.1
+        type: hdfs
+      - max-version: transwarp-5.1
+        min-version: transwarp-5.1
+        type: yarn
+      - max-version: transwarp-5.1
+        min-version: transwarp-5.1
+        type: localcran
+    final: false
+    image-version:
+      discover_image: transwarp-5.1

@@ -1,6 +1,15 @@
 common:
   Transwarp_DEBUG: false
 
+CODIS:
+  # TODO: Update us
+  codis_dash_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_proxy_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_server_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_fe_image: 172.16.1.99/gold/codis-all:release3.2
+  codis_product_name: "default"
+  codis_product_auth: ""
+
 DISCOVER:
   discover_image: 172.16.1.99/gold/discover-ide:transwarp-5.1
   localcran_image: 172.16.1.99/gold/discover-localcran:transwarp-5.1
@@ -11,8 +20,8 @@ GOVERNOR:
   notification_image: 172.16.1.99/gold/notification:transwarp-5.1
 
 GUARDIAN:
-  apacheds_image: 172.16.1.99/gold/apacheds:transwarp-5.1
-  guardian_server_image: 172.16.1.99/gold/guardian:transwarp-5.1
+  apacheds_image: 172.16.1.99/gold/apacheds:tdc-1.0
+  guardian_server_image: 172.16.1.99/gold/guardian:tdc-1.0
   guardian_init_container_image: 172.16.1.99/gold/guardian-init:tdc-1.0
   gencerts_init_container_image: 172.16.1.99/gold/guardian-gencerts:tdc-1.0
   cas_config_server_image: 172.16.1.99/gold/cas-config-server:tdc-1.0
@@ -20,16 +29,11 @@ GUARDIAN:
   cas_mgnt_server_image: 172.16.1.99/gold/cas-admin-server:tdc-1.0
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"
-  guardian_ds_ha_enabled: false
-  guardian_ds_partition_sync_on_write: "false"
-  guardian_ds_conf_dir: /etc/guardian-apacheds/conf
+  guardian_ds_ha_enabled: true
   guardian_server_tls_enabled: true
-  guardian_server_key_store: /srv/guardian/server.keystore
-  guardian_server_spnego_keytab: /srv/guardian/http.keytab
+  guardian_ds_partition_sync_on_write: "false"
   guardian_server_key_store_pw: changeit
   fortress_bind_pwd: Transwarp01!
-  guardian_ds_root_logger: "INFO,console"
-  guardian_server_root_logger: "INFO,console"
 
 HDFS:
   zk_image: 172.16.1.99/gold/zookeeper:transwarp-5.1
@@ -53,17 +57,17 @@ HYPERBASE:
   Transwarp_Guardian_LDAP_Bind_Password: Transwarp01!
 
 INCEPTOR:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
+  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
 
 KAFKA:
   kafka_image: 172.16.1.99/gold/kafka:transwarp-5.1
   kafka_manager_image: 172.16.1.99/gold/kafka-manager:tdc-1.0
 
 KIBANA:
-  kibana_image: 172.16.1.99/gold/kibana:transwarp-5.1
+  kibana_image: 172.16.1.99/gold/kibana:tdc-1.0
 
 NOTEBOOK:
   notebook_image: 172.16.1.99/gold/discover-notebook:transwarp-5.1
@@ -83,10 +87,10 @@ SEARCH:
   es_head_image: 172.16.1.99/gold/search-head:transwarp-5.1
 
 SLIPSTREAM:
-  inceptor_executor_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  inceptor_master_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  metastore_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
-  mysql_image: 172.16.1.99/transwarp/inceptor:transwarp-5.1.1-rc0
+  inceptor_executor_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
+  mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
 
 SOPHON:
   sophon_server_image: 172.16.1.99/gold/sophon-server:transwarp-5.1
@@ -101,13 +105,13 @@ TERMINAL:
 
 TICKET:
   ticket_image: 172.16.1.99/gold/ticket:tdc-1.0
-  notification_image: 172.16.1.99/gold/notification:transwarp-5.1
+  notification_image: 172.16.1.99/gold/notification:tdc-1.0
 
 TRANSPORTER:
   tdt_image: 172.16.1.99/gold/tdt:transwarp-5.1
 
 TXSQL:
-  txsql_image: 172.16.1.99/gold/mysql:transwarp-5.1
+  txsql_image: 172.16.1.99/gold/mysql:tdc-1.0
   txsql_rootpassword: password
 
 WORKFLOW:

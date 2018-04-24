@@ -1,0 +1,47 @@
+instance-type: guardian
+major-version: '5.1'
+min-tdc-version: tdc-1.0.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.1.2-final
+    min: transwarp-5.1.1-final
+  - max: transwarp-5.1
+    min: transwarp-5.1
+images:
+  - name: apacheds
+    variable: apacheds_image
+  - name: guardian-init
+    variable: guardian_init_container_image
+  - name: guardian
+    variable: guardian_server_image
+releases:
+  - dependencies: []
+    final: true
+    image-version:
+      apacheds_image: tdc-1.0.0-rc2
+      guardian_init_container_image: tdc-1.0.0-rc2
+      guardian_server_image: tdc-1.0.0-rc2
+    release-version: tdc-1.0.0-rc2
+
+  - dependencies: []
+    final: true
+    image-version:
+      apacheds_image: tdc-1.0.0-rc3
+      guardian_init_container_image: tdc-1.0.0-rc3
+      guardian_server_image: tdc-1.0.0-rc3
+    release-version: tdc-1.0.0-rc3
+
+  - dependencies: []
+    final: true
+    image-version:
+      apacheds_image: tdc-1.0.0-rc4
+      guardian_init_container_image: tdc-1.0.0-rc4
+      guardian_server_image: tdc-1.0.0-rc4
+    release-version: tdc-1.0.0-rc4
+
+  - dependencies: []
+    final: false
+    image-version:
+      apacheds_image: tdc-1.0
+      guardian_init_container_image: tdc-1.0
+      guardian_server_image: tdc-1.0
+    release-version: tdc-1.0

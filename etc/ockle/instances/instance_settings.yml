@@ -1,3 +1,6 @@
+# A unified configuration interface for TDC instances.
+# Exampled data fields include:
+# ----
 #instance:
 #  resource:
 #    node_num:
@@ -21,6 +24,9 @@
 #     - example_principal_list
 #   security_on:
 #     - example_security_on_list
+#   security_service:
+#     env_cfg: ENV_CONFIG
+#     type: SERVICE_TYPE
 
 common:
   security:
@@ -35,8 +41,29 @@ cas:
       - cas_server_env_list
       - cas_mgnt_server_env_list
   database:
-    name: MySQL_DATABASE
+    name: cas_database_name
 
+codis:
+  resource:
+    node_num:
+      default:
+        - codis_server_replicas
+      singleton:
+        - codis_dash_replicas
+        - codis_proxy_replicas
+        - codis_fe_replicas
+  configuration:
+    environment:
+      - codis_dash_env_list
+      - codis_proxy_env_list
+      - codis_server_env_list
+      - codis_fe_env_list
+  image:
+    default:
+      - codis_dash_image
+      - codis_proxy_image
+      - codis_server_image
+      - codis_fe_image
 
 discover:
   configuration:
@@ -51,6 +78,8 @@ discover:
     security_on:
       - discover_mounted_kerberos
       - discover_authentication_enableguardian
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 elasticsearch:
   resource:
@@ -103,6 +132,8 @@ governor:
       - zookeeper
     security_on:
       - governor_mounted_kerberos
+#    security_service:
+#      env_cfg: GUARDIAN_SERVICE_ID
 
 guardian:
   configuration:
@@ -142,6 +173,8 @@ hdfs:
       - hdfs
     security_on:
       - hdfs_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 hyperbase:
   resource:
@@ -170,6 +203,8 @@ hyperbase:
       - hbase
     security_on:
       - hbase_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 inceptor:
   resource:
@@ -195,6 +230,8 @@ inceptor:
       - hive
     security_on:
       - inceptor_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 metastore:
   resource:
@@ -215,6 +252,8 @@ metastore:
       - hive
     security_on:
       - inceptor_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 kafka:
   resource:
@@ -232,6 +271,8 @@ kafka:
       - kafka
     security_on:
       - kafka_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 kafka-manager:
   resource:
@@ -317,6 +358,8 @@ notebook:
     security_on:
       - notebook_mounted_kerberos
       - notebook_authentication_enableguardian
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 notification:
   configuration:
@@ -327,8 +370,15 @@ notification:
   image:
       default:
         - notification_image
+  resource:
+    node_num:
+      singleton:
+        - notification_replicas
 
 pilot:
+  configuration:
+    environment:
+      - pilot_env_list
   image:
     default:
       - pilot_image
@@ -337,6 +387,8 @@ pilot:
       - pilot
     security_on:
       - pilot_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 rubik:
   resource:
@@ -356,6 +408,8 @@ rubik:
       - rubik
     security_on:
       - RUBIK_AUTHENTICATION_ENABLEGUARDIAN
+#    security_service:
+#      env_cfg: GUARDIAN_SERVICE_ID
 
 slipstream:
   resource:
@@ -381,6 +435,8 @@ slipstream:
       - HTTP
     security_on:
       - slipstream_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 sophon:
   security:
@@ -388,6 +444,8 @@ sophon:
       - hive
     security_on:
       - sophon_mounted_kerberos
+#    security_service:
+#      env_cfg: GUARDIAN_SERVICE_ID
 
 terminal:
   resource:
@@ -428,10 +486,16 @@ tdt:
       - tdt
     security_on:
       - tdt_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 ticket:
   database:
     name: ticket_txsql_db_name
+  resource:
+    node_num:
+      singleton:
+        - ticket_replicas
 
 txsql:
   resource:
@@ -463,6 +527,8 @@ workflow:
       - workflow
     security_on:
       - workflow_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 yarn:
   resource:
@@ -491,6 +557,8 @@ yarn:
       - yarn
     security_on:
       - yarn_mounted_kerberos
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 zookeeper:
   configuration:

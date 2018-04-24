@@ -7,10 +7,10 @@ FILEPATH=$(cd ${0%/*} && echo $PWD/${0##*/})
 PROJROOT=$(cd $(dirname $FILEPATH) && pwd)
 COMPONENTS="/components"
 RESOURCES="/resources"
-SYS_COMPONENTS="/system_components"
+SYS_COMPONENTS="/components"
 SYS_CONTEXTS="/system_contexts"
 PRODUCTS="/products"
-LIBAPPADAPTER="/dependencies"
+LIBAPPADAPTER="/applications"
 LIBAPPADAPTER_PATH="/applications"
 
 FAILED=0
