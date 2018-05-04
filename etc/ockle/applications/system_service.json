@@ -12,6 +12,17 @@
     {
       "port": 1088,
       "alias": "KDC"
+    },
+    {
+      "port": 8393,
+      "protocol": "HTTPS",
+      "alias": "CAS"
+    }
+   ],
+  "TICKET": [
+    {
+      "port": 11997,
+      "protocol": "HTTP"
     }
   ]
 }

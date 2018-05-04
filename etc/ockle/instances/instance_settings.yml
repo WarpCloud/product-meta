@@ -408,8 +408,8 @@ rubik:
       - rubik
     security_on:
       - RUBIK_AUTHENTICATION_ENABLEGUARDIAN
-#    security_service:
-#      env_cfg: GUARDIAN_SERVICE_ID
+    security_service:
+      env_cfg: GUARDIAN_SERVICE_ID
 
 slipstream:
   resource:
