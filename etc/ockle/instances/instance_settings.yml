@@ -33,6 +33,8 @@ common:
     guardian_address: Transwarp_Guardian_Address
     guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
     auto_injected_volumes: Transwarp_Auto_Injected_Volumes
+    krb_realm: Transwarp_Realm
+    krb_principal_suffix: Transwarp_Principal_Suffix
 
 cas:
   configuration:
