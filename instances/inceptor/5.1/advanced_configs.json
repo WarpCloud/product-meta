@@ -200,12 +200,6 @@
       "value": "1"
     },
     {
-      "default": "4040",
-      "groups": [],
-      "name": "inceptor.ui.port",
-      "value": "4040"
-    },
-    {
       "default": "10000",
       "groups": [
         "hive-site.xml"

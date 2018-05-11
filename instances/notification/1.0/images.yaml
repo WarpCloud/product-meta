@@ -2,14 +2,21 @@ instance-type: notification
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: transwarp-5.1.2-final
+  - max: transwarp-5.1.3-final
     min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
+  - max: tdc-1.0.0-rc7
+    min: tdc-1.0.0-rc0
+  - max: tdc-1.0
+    min: tdc-1.0
 images:
   - name: notification
     variable: notification_image
 releases:
+
+# Notification for TDH
+
   - dependencies:
     - max-version: tdc-1.0.0-rc2
       min-version: tdc-1.0.0-rc2
@@ -29,13 +36,22 @@ releases:
     release-version: transwarp-5.1.1-final
 
   - dependencies:
-    - max-version: tdc-1.0.0-rc4
+    - max-version: tdc-1.0.0-rc6
       min-version: tdc-1.0.0-rc4
       type: txsql
     final: true
     image-version:
       notification_image: transwarp-5.1.2-final
     release-version: transwarp-5.1.2-final
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc7
+      min-version: tdc-1.0.0-rc7
+      type: txsql
+    final: true
+    image-version:
+      notification_image: transwarp-5.1.3-final
+    release-version: transwarp-5.1.3-final
 
   - dependencies:
     - max-version: tdc-1.0
@@ -45,3 +61,68 @@ releases:
     image-version:
       notification_image: transwarp-5.1
     release-version: transwarp-5.1
+
+# Notification for TDC
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc2
+      min-version: tdc-1.0.0-rc2
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc2
+    release-version: tdc-1.0.0-rc2
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc3
+      min-version: tdc-1.0.0-rc3
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc3
+    release-version: tdc-1.0.0-rc3
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc4
+      min-version: tdc-1.0.0-rc4
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc4
+    release-version: tdc-1.0.0-rc4
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc5
+      min-version: tdc-1.0.0-rc5
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc5
+    release-version: tdc-1.0.0-rc5
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc6
+      min-version: tdc-1.0.0-rc6
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc6
+    release-version: tdc-1.0.0-rc6
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc7
+      min-version: tdc-1.0.0-rc7
+      type: txsql
+    final: true
+    image-version:
+      notification_image: tdc-1.0.0-rc7
+    release-version: tdc-1.0.0-rc7
+
+  - dependencies:
+    - max-version: tdc-1.0
+      min-version: tdc-1.0
+      type: txsql
+    final: false
+    image-version:
+      notification_image: tdc-1.0
+    release-version: tdc-1.0
