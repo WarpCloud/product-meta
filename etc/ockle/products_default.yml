@@ -91,7 +91,6 @@ SLIPSTREAM:
   inceptor_master_image: 172.16.1.99/gold/inceptor:transwarp-5.1
   metastore_image: 172.16.1.99/gold/inceptor:transwarp-5.1
   mysql_image: 172.16.1.99/gold/inceptor:transwarp-5.1
-  inceptor_ui_port: 4044
 
 SOPHON:
   sophon_server_image: 172.16.1.99/gold/sophon-server:transwarp-5.1
