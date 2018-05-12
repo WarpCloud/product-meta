@@ -2,6 +2,7 @@
   "PILOT": [
     {
       "port": 8086,
+      "generate_name": "pilot",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -17,6 +18,7 @@
   "NOTEBOOK": [
     {
       "port": 8686,
+      "generate_name": "notebook",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -32,6 +34,7 @@
   "WORKFLOW": [
     {
       "port": 9091,
+      "generate_name": "workflow",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -47,6 +50,7 @@
   "RUBIK": [
     {
       "port": 32125,
+      "generate_name": "rubik",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -62,6 +66,7 @@
   "GOVERNOR": [
     {
       "port": 21000,
+      "generate_name": "governor",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -77,6 +82,7 @@
   "TRANSPORTER": [
     {
       "port": 8100,
+      "generate_name": "tdt",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -92,6 +98,7 @@
   "GUARDIAN": [
     {
       "port": 8380,
+      "generate_name": "gs",
       "protocol": "HTTPS",
       "path": "/",
       "require_gateway_registration": true,
@@ -108,6 +115,7 @@
   "KIBANA": [
     {
       "port": 5601,
+      "generate_name":"kibana",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -123,6 +131,7 @@
   "INCEPTOR": [
     {
       "port": 4040,
+      "generate_name": "inceptor2",
       "protocol": "HTTP",
       "path": "/jobs",
       "require_gateway_registration": true,
@@ -136,6 +145,7 @@
     },
     {
       "port": 10000,
+      "generate_name": "inceptor2",
       "require_gateway_registration": false,
       "alias": "HiveServer2"
     }
@@ -144,6 +154,7 @@
   "SLIPSTREAM": [
     {
       "port": 4040,
+      "generate_name": "slipstream",
       "protocol": "HTTP",
       "path": "/jobs",
       "require_gateway_registration": true,
@@ -157,6 +168,7 @@
     },
     {
       "port": 10010,
+      "generate_name": "slipstream",
       "require_gateway_registration": false,
       "alias": "HiveServer2"
     }
@@ -165,6 +177,7 @@
   "SEARCH": [
     {
       "port": 9200,
+      "generate_name": "es-client",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -180,6 +193,7 @@
   "SOPHON": [
     {
       "port": 6066,
+      "generate_name": "sophonserver",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -196,6 +210,7 @@
   "TERMINAL": [
     {
       "port": 5000,
+      "generate_name": "terminal",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -212,6 +227,7 @@
   "HYPERBASE": [
     {
       "port": 60010,
+      "generate_name": "hbasemaster",
       "protocol": "HTTP",
       "path": "/master-status",
       "require_gateway_registration": true,
@@ -227,6 +243,7 @@
   "HDFS": [
     {
       "port": 50070,
+      "generate_name": "hdfsnamenode, hdfssecondary",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
@@ -242,6 +259,7 @@
   "KAFKA": [
     {
       "port": 8000,
+      "generate_name": "kafkamanager",
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,

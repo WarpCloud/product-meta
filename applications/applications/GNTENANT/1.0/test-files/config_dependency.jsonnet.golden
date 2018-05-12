@@ -8,7 +8,12 @@
             "application_name": "gn1",
             "application_type": "GNTENANT"
          },
-         "configs": { },
+         "configs": {
+            "gn_cpu_limit": 2,
+            "gn_cpu_request": 0.10000000000000001,
+            "gn_memory_limit": 2,
+            "gn_memory_request": 0.5
+         },
          "dependencies": [
             {
                "moduleName": "txsql",

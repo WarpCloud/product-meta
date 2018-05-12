@@ -2,8 +2,6 @@
 local t = import "../../../applib/utils.libsonnet";
 
 {
-  local _gpModuleName = "governor-proxy",
-
   /*
    * Define resource metrics for each module
    */
@@ -11,7 +9,7 @@ local t = import "../../../applib/utils.libsonnet";
     local Debug_Request = t.objectField(config, "Develop", false);
 
     local resource = {
-      _gpModuleName:
+      "governor-proxy":
         {
           governor_proxy_cpu_limit: t.objectField(config, "governor_proxy_cpu_limit", 0.1),
           governor_proxy_memory_limit: t.objectField(config, "governor_proxy_memory_limit", 1),
