@@ -2,7 +2,6 @@
 local t = import "../../../applib/utils.libsonnet";
 
 {
-  local _gtModuleName = "gn-tenant",
   /*
    * Define resource metrics for each module
    */
@@ -10,7 +9,7 @@ local t = import "../../../applib/utils.libsonnet";
     local Debug_Request = t.objectField(config, "Develop", false);
 
     local resource = {
-      _gtModuleName:
+      "gn-tenant":
         {
           gn_cpu_limit: t.objectField(config, "gn_cpu_limit", 2),
           gn_memory_limit: t.objectField(config, "gn_memory_limit", 2),
