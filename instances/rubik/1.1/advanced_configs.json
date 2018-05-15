@@ -14,10 +14,10 @@
       "value": "30"
     },
     {
-      "default": "30000",
+      "default": "2048",
       "groups": [],
       "name": "cube.group.max.size",
-      "value": "30000"
+      "value": "2048"
     },
     {
       "default": "True",
