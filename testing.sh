@@ -169,9 +169,9 @@ function validate_products(){
 
                     for component in $components; do
                         component=${component:1:0-1}
-                        prod_dft_component=$(echo $component | awk -F- '{print $1}')
-                        prod_dft_version=$(echo $component | awk -F- '{print $2}')
-
+                        prod_dft_version=$(echo $component | awk -F- '{print $NF}')
+                        len=`expr ${#prod_dft_version} + 1`
+                        prod_dft_component=${component:0:0-$len}
                         # components in products-default.json should be in the components directory
                         prod_dft_dir=$PROJROOT$COMPONENTS/$prod_dft_component/$prod_dft_version
                         if [[ ! -d $prod_dft_dir ]]; then
@@ -233,9 +233,9 @@ for sys_context in $(ls $context_path | awk -F/ '{print $1}'); do
 
                 for sys_ctxt_dep in $sys_ctxt_components; do
                     sys_ctxt_dep=${sys_ctxt_dep:1:0-1}
-                    sys_ctxt_component=$(echo $sys_ctxt_dep | awk -F- '{print $1}')
-                    sys_ctxt_version=$(echo $sys_ctxt_dep | awk -F- '{print $2}')
-
+                    sys_ctxt_version=$(echo $sys_ctxt_dep | awk -F- '{print $NF}')
+                    len=`expr ${#sys_ctxt_version} + 1`
+                    sys_ctxt_component=${sys_ctxt_dep:0:0-$len}
                     # components in system_context/version/default.json should be in the system_components directory
                     sys_ctxt_dir=$PROJROOT$SYS_COMPONENTS/$sys_ctxt_component/$sys_ctxt_version
                     if [[ ! -d $sys_ctxt_dir ]]; then
