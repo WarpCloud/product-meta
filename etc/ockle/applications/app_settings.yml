@@ -314,7 +314,9 @@ TICKET:
     priority_metrics:
       notification_priority: 0
       ticket_priority: 0
-
+  optional_dependencies:
+    - gntenant
+    - gn-tdc
 
 TRANSPORTER:
   configuration:
