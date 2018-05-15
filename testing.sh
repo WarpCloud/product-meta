@@ -240,7 +240,7 @@ for sys_context in $(ls $context_path | awk -F/ '{print $1}'); do
                     sys_ctxt_dir=$PROJROOT$SYS_COMPONENTS/$sys_ctxt_component/$sys_ctxt_version
                     if [[ ! -d $sys_ctxt_dir ]]; then
                         FAILED=$((FAILED + 1))
-                        echo_failed_message "$context_default_file: wrong dependency, cannot find $sys_ctxt_component/$version in $context_path"
+                        echo_failed_message "$context_default_file: wrong dependency, cannot find $sys_ctxt_component/$sys_ctxt_version in $context_path"
                     fi
                 done
             fi
