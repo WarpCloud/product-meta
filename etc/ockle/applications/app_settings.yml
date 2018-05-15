@@ -228,6 +228,12 @@ RUBIK:
     priority_metrics:
       notification_priority: 0
       rubik_priority: 0
+    advanced_configs:
+      default_group: designer.properties
+      groups:
+        - name: designer.properties
+          env_cfg: RUBIK_CONFIGS
+          type: file
 
 
 SEARCH:
@@ -317,6 +323,7 @@ TICKET:
   optional_dependencies:
     - gntenant
     - gn-tdc
+
 
 TRANSPORTER:
   configuration:
