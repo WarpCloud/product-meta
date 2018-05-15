@@ -79,6 +79,22 @@
     }
   ],
 
+  "GOVERNORPROXY": [
+    {
+      "port": 9527,
+      "generate_name": "governor-proxy",
+      "protocol": "HTTP",
+      "path": "/",
+      "require_gateway_registration": true,
+      "display": {
+        "display_name": "数据共享分析",
+        "display_name_en": "Governor Proxy",
+        "description": "联社数据共享分析工具，支持数据预览，申请，审批，下放，自助式查询，分析，报表展示，下载等功能。",
+        "description_en": "Henan Rural Credit Union data-sharing tool, supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and  download."
+      }
+    }
+  ],
+
   "TRANSPORTER": [
     {
       "port": 8100,

@@ -27,6 +27,13 @@
 #   security_service:
 #     env_cfg: ENV_CONFIG
 #     type: SERVICE_TYPE
+#   cas:
+#      cas_on: cas_on
+#      server_address: cas_server_url
+#      login_address: cas_server_login_url
+#      hl_svc: cas_server_hl_svc
+#      port: cas_server_port
+#      path: cas_server_path
 
 common:
   security:
@@ -121,6 +128,12 @@ filerobot:
     security_on:
       - filerobot_mounted_kerberos
 
+gn-tenant:
+  resource:
+    node_num:
+      singleton:
+        - gn_replicas
+
 governor:
   configuration:
     environment:
@@ -132,16 +145,32 @@ governor:
       - hbase
       - kafka
       - zookeeper
+      - HTTP
     security_on:
       - governor_mounted_kerberos
 #    security_service:
 #      env_cfg: GUARDIAN_SERVICE_ID
+
+
+governor-proxy:
+  configuration:
+    environment:
+      - governor_proxy_env_list
+  security:
+    cas:
+      server_address: cas_server_address
+      hl_svc: cas_server_hl_svc
+      port: CAS_SERVER_PORT
+      path: CAS_SERVER_CONTEXT_PATH
+
 
 guardian:
   configuration:
     environment:
     - apacheds_env_list
     - guardian_server_env_list
+  database:
+    name: guardian_database_name
 
 hdfs:
   resource:
@@ -177,6 +206,10 @@ hdfs:
       - hdfs_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
+    cas:
+      hl_svc: cas_server_hl_svc
+      port: CAS_SERVER_PORT
+      path: CAS_SERVER_CONTEXT_PATH
 
 hyperbase:
   resource:
@@ -234,6 +267,10 @@ inceptor:
       - inceptor_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
+    cas:
+      cas_on: cas_authentication_enabled
+      server_address: cas_server_url_prefix
+      login_address: cas_server_login_url
 
 metastore:
   resource:
