@@ -263,6 +263,7 @@
       "protocol": "HTTP",
       "path": "/",
       "require_gateway_registration": true,
+      "require_service_type": "ClusterIP",
       "display": {
         "display_name": "HDFS管理",
         "display_name_en": "HDFS Namenode UI",
