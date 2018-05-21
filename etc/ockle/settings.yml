@@ -265,11 +265,12 @@ service_for_development:
     alias: HiveServer2
 
   SEARCH: 
-  - port: 9200
-    generate_name: "es-client"
+  - port: 9100
+    generate_name: "es-head"
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    require_service_type: NodePort
     display: 
       display_name: "ES管理器"
       display_name_en: "ES Head"
