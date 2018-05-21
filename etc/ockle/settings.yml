@@ -19,6 +19,19 @@ adv_config_white_list:
   - TRANSPORTER
   - YARN
 
+# A list of configs shared by multiple instances
+instance_configs_sharing:
+  - instance_type: rubik
+    configs_sharing:
+      - instance_type: inceptor
+        dependency: txsql
+        configs:
+          - from:
+              name: MySQL_DATABASE
+            to:
+              name: RUBIK_CONNECTION_DATABASE
+              group: environment
+
 # A list of TDC services that would be depended on by
 # tenant context services.
 # We take a prior assumption that only a single instance
