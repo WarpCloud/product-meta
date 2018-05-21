@@ -1,0 +1,9 @@
+{
+  "name": "KIBANA-1.1",
+  "component_type": "KIBANA",
+  "description": "visualized tool for ES data visualization and management",
+  "edition": "1.1",
+  "category": "SYSTEM",
+  "dependencies": "",
+  "configs": []
+}

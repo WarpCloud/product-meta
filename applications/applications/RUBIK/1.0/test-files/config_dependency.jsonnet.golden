@@ -1,18 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "notification": {
-         "c": 0.25,
-         "m": 0.5,
-         "s": 0.5
-      },
-      "rubik": {
-         "c": 0.5,
-         "m": 1,
-         "s": 1
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
@@ -22,9 +10,9 @@
          },
          "configs": {
             "notification_cpu_limit": 1,
-            "notification_cpu_request": 1,
+            "notification_cpu_request": 0.10000000000000001,
             "notification_memory_limit": 2,
-            "notification_memory_request": 2
+            "notification_memory_request": 1
          },
          "dependencies": [
             {
@@ -44,9 +32,9 @@
          },
          "configs": {
             "rubik_cpu_limit": 2,
-            "rubik_cpu_request": 2,
+            "rubik_cpu_request": 0.10000000000000001,
             "rubik_memory_limit": 4,
-            "rubik_memory_request": 4
+            "rubik_memory_request": 1
          },
          "dependencies": [
             {
@@ -60,6 +48,10 @@
             {
                "moduleName": "txsql",
                "name": "txsql"
+            },
+            {
+               "moduleName": "workflow",
+               "name": "workflow"
             }
          ],
          "instance_settings": { },

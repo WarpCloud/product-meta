@@ -1,0 +1,21 @@
+instance-type: kafka-manager
+major-version: '1.1'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: kafka-manager
+    variable: kafka_manager_image
+releases:
+  - dependencies:
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: kafka
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: zookeeper
+    final: false
+    image-version:
+      kafka_manager_image: tdc-1.1
+    release-version: tdc-1.1

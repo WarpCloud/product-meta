@@ -1,0 +1,32 @@
+{
+  "edition": "5.2",
+  "final": true,
+  "components": [
+    "INCEPTOR-5.2",
+    "TRANSPORTER-1.1",
+    "SEARCH-5.2",
+    "HDFS-5.2",
+    "PILOT-1.1",
+    "TERMINAL-1.1",
+    "TXSQL-5.2"
+  ],
+  "templates": [
+    {
+        "level": "demo",
+        "description": "演示模式"
+    },
+    {
+        "level": "low",
+        "description": "最佳性价比模式"
+    },
+    {
+        "level": "medium",
+        "description": "性能和性价比最佳配比模式"
+    },
+    {
+        "level": "high",
+        "description": "最佳性能模式"
+    }
+  ],
+  "is_distributed": true
+}

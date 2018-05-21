@@ -1,0 +1,33 @@
+instance-type: governor
+major-version: '1.1'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.2
+    min: transwarp-5.2
+images:
+  - name: governor
+    variable: governor_image
+releases:
+  - dependencies:
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: hdfs
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: hyperbase
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: kafka
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: notification
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: elasticsearch
+    - max-version: tdc-1.1
+      min-version: tdc-1.1
+      type: txsql
+    final: false
+    image-version:
+      governor_image: transwarp-5.2
+    release-version: transwarp-5.2

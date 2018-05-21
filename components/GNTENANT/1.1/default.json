@@ -1,0 +1,8 @@
+{
+  "name": "GNTENANT-1.1",
+  "component_type": "GNTENANT",
+  "description": "GN Tenant management service",
+  "edition": "1.1",
+  "category": "SYSTEM",
+  "configs": []
+}

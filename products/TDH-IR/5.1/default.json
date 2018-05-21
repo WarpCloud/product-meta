@@ -3,7 +3,7 @@
   "final": true,
   "components": [
     "INCEPTOR-5.1",
-    "TRANSPORTER-1.1",
+    "TRANSPORTER-1.0",
     "SEARCH-5.1",
     "HDFS-5.1",
     "PILOT-1.0",

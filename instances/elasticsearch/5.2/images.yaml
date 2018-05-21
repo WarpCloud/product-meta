@@ -1,0 +1,30 @@
+instance-type: elasticsearch
+major-version: '5.2'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.2
+    min: transwarp-5.2
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: search
+    variable: es_image
+  - name: search-head
+    variable: es_head_image
+releases:
+
+# Search for TDH
+  - dependencies: []
+    final: false
+    image-version:
+      es_head_image: transwarp-5.2
+      es_image: transwarp-5.2
+    release-version: transwarp-5.2
+
+# Search for TDC
+  - dependencies: []
+    final: false
+    image-version:
+      es_head_image: tdc-1.1
+      es_image: tdc-1.1
+    release-version: tdc-1.1

@@ -1,0 +1,9 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "CODIS",
+  "dependencies": "",
+  "description": "分布式Redis数据库",
+  "edition": "1.1",
+  "name": "CODIS-1.1",
+  "templates": []
+}

@@ -1,0 +1,15 @@
+instance-type: simmail
+major-version: '1.1'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: simmail
+    variable: simmail_image
+releases:
+  - dependencies: []
+    final: false
+    image-version:
+      simmail_image: tdc-1.1
+    release-version: tdc-1.1

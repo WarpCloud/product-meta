@@ -2,7 +2,7 @@ instance-type: cas
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc4
+  - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -60,6 +60,66 @@ releases:
       cas_mgnt_server_image: tdc-1.0.0-rc4
       cas_server_image: tdc-1.0.0-rc4
       gencerts_init_container_image: tdc-1.0.0-rc4
+
+  - release-version: tdc-1.0.0-rc5
+    dependencies:
+      - max-version: tdc-1.0.0-rc5
+        min-version: tdc-1.0.0-rc5
+        type: guardian
+      - max-version: tdc-1.0.0-rc5
+        min-version: tdc-1.0.0-rc5
+        type: txsql
+    final: true
+    image-version:
+      cas_config_server_image: tdc-1.0.0-rc5
+      cas_mgnt_server_image: tdc-1.0.0-rc5
+      cas_server_image: tdc-1.0.0-rc5
+      gencerts_init_container_image: tdc-1.0.0-rc5
+
+  - release-version: tdc-1.0.0-rc6
+    dependencies:
+      - max-version: tdc-1.0.0-rc6
+        min-version: tdc-1.0.0-rc6
+        type: guardian
+      - max-version: tdc-1.0.0-rc6
+        min-version: tdc-1.0.0-rc6
+        type: txsql
+    final: true
+    image-version:
+      cas_config_server_image: tdc-1.0.0-rc6
+      cas_mgnt_server_image: tdc-1.0.0-rc6
+      cas_server_image: tdc-1.0.0-rc6
+      gencerts_init_container_image: tdc-1.0.0-rc6
+
+  - release-version: tdc-1.0.0-rc7
+    dependencies:
+      - max-version: tdc-1.0.0-rc7
+        min-version: tdc-1.0.0-rc7
+        type: guardian
+      - max-version: tdc-1.0.0-rc7
+        min-version: tdc-1.0.0-rc7
+        type: txsql
+    final: true
+    image-version:
+      cas_config_server_image: tdc-1.0.0-rc7
+      cas_mgnt_server_image: tdc-1.0.0-rc7
+      cas_server_image: tdc-1.0.0-rc7
+      gencerts_init_container_image: tdc-1.0.0-rc7
+
+  - release-version: tdc-1.0.0-rc8
+    dependencies:
+      - max-version: tdc-1.0.0-rc8
+        min-version: tdc-1.0.0-rc8
+        type: guardian
+      - max-version: tdc-1.0.0-rc8
+        min-version: tdc-1.0.0-rc8
+        type: txsql
+    final: true
+    image-version:
+      cas_config_server_image: tdc-1.0.0-rc8
+      cas_mgnt_server_image: tdc-1.0.0-rc8
+      cas_server_image: tdc-1.0.0-rc8
+      gencerts_init_container_image: tdc-1.0.0-rc8
 
   - release-version: tdc-1.0
     dependencies:

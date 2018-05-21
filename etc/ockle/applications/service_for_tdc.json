@@ -1,7 +1,0 @@
-{
-  "KONG": {
-    "port": 8001,
-    "dashboard_port": 8080,
-    "protocol": "HTTP"
-  }
-}

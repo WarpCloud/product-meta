@@ -7,7 +7,7 @@ function(config={})
   local appName = config.application_name;
 
   local appVersion = config.application_version;
-  local notificationVersion = "1.0";
+  local notificationVersion = "1.1";
 
   local _inceptorModuleName = "inceptor";
   local _notificationModuleName = "notification";
