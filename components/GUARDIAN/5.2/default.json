@@ -1,0 +1,9 @@
+{
+  "name": "GUARDIAN-5.2",
+  "component_type": "GUARDIAN",
+  "description": "安全、权限和资源管控",
+  "edition": "5.2",
+  "category": "TDH平台产品,SYSTEM",
+  "dependencies": "",
+  "templates": []
+}

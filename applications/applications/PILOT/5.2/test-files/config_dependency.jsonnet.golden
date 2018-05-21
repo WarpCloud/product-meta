@@ -1,0 +1,61 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "pilot1",
+            "application_type": "PILOT",
+            "use_inceptor": "true"
+         },
+         "configs": {
+            "filerobot_cpu_limit": 1,
+            "filerobot_cpu_request": 0.10000000000000001,
+            "filerobot_memory_limit": 4,
+            "filerobot_memory_request": 1
+         },
+         "instance_settings": { },
+         "moduleName": "filerobot",
+         "name": "pilot1-filerobot",
+         "version": "5.2"
+      },
+      {
+         "annotations": {
+            "application_name": "pilot1",
+            "application_type": "PILOT",
+            "use_inceptor": "true"
+         },
+         "configs": {
+            "pilot_cpu_limit": 1,
+            "pilot_cpu_request": 0.10000000000000001,
+            "pilot_memory_limit": 4,
+            "pilot_memory_request": 1
+         },
+         "dependencies": [
+            {
+               "moduleName": "filerobot",
+               "name": "pilot1-filerobot"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            },
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "inceptor",
+               "name": "inceptor"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "pilot",
+         "name": "pilot1-pilot",
+         "version": "5.2"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

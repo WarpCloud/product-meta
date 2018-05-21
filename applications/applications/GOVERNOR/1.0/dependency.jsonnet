@@ -33,21 +33,9 @@ function(config={})
   local governor = t.createInstance(_governorModuleName, config, appVersion) +
     r.moduleResource(_governorModuleName, config) +
     {
-      dependencies: [{
-        moduleName: _hdfsModuleName,
-        name: _hdfsModuleName,
-      }, {
-        moduleName: _hyperbaseModuleName,
-        name: _hyperbaseModuleName,
-      }, {
-        moduleName: _kafkaModuleName,
-        name: _kafkaModuleName,
-      }, {
+      dependencies: [ {
         moduleName: _notificationModuleName,
         name: appName + "-" + _notificationModuleName,
-      }, {
-        moduleName: _searchModuleName,
-        name: _searchModuleName,
       }, {
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
