@@ -1,0 +1,78 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "NOTEBOOK",
+  "dependencies": "",
+  "description": "Notebook IDE",
+  "edition": "5.2",
+  "name": "NOTEBOOK-5.2",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Notebook可以使用的CPU core数量",
+          "display_name": "Notebook CPU核数",
+          "name": "notebook_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Notebook可以使用的最大内存",
+          "display_name": "Notebook内存",
+          "name": "notebook_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Notebook可以使用的CPU core数量",
+          "display_name": "Notebook CPU核数",
+          "name": "notebook_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Notebook可以使用的最大内存",
+          "display_name": "Notebook内存",
+          "name": "notebook_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Notebook可以使用的CPU core数量",
+          "display_name": "Notebook CPU核数",
+          "name": "notebook_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "Notebook可以使用的最大内存",
+          "display_name": "Notebook内存",
+          "name": "notebook_memory_limit",
+          "value": "12288MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Notebook可以使用的CPU core数量",
+          "display_name": "Notebook CPU核数",
+          "name": "notebook_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "Notebook可以使用的最大内存",
+          "display_name": "Notebook内存",
+          "name": "notebook_memory_limit",
+          "value": "24576MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

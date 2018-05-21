@@ -1,0 +1,174 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "YARN",
+  "dependencies": "HDFS",
+  "description": "Spark资源调度",
+  "edition": "5.2",
+  "name": "YARN-5.2",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "YARN NodeManager的CPU core数量",
+          "display_name": "YARN NodeManager CPU核数",
+          "name": "yarn_node_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "YARN NodeManager可以使用的最大内存",
+          "display_name": "YARN NodeManager内存",
+          "name": "yarn_node_memory_limit",
+          "value": "4096MB"
+        },
+        {
+          "description": "YARN ResourceManager的CPU core数量",
+          "display_name": "YARN ResourceManager CPU核数",
+          "name": "yarn_rm_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "YARN ResourceManager可以使用的最大内存",
+          "display_name": "YARN ResourceManager内存",
+          "name": "yarn_rm_memory_limit",
+          "value": "4096MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "128G"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "128G"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "YARN NodeManager的CPU core数量",
+          "display_name": "YARN NodeManager CPU核数",
+          "name": "yarn_node_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "YARN NodeManager可以使用的最大内存",
+          "display_name": "YARN NodeManager内存",
+          "name": "yarn_node_memory_limit",
+          "value": "12288MB"
+        },
+        {
+          "description": "YARN ResourceManager的CPU core数量",
+          "display_name": "YARN ResourceManager CPU核数",
+          "name": "yarn_rm_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "YARN ResourceManager可以使用的最大内存",
+          "display_name": "YARN ResourceManager内存",
+          "name": "yarn_rm_memory_limit",
+          "value": "8192MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "512G"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "256G"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "YARN NodeManager的CPU core数量",
+          "display_name": "YARN NodeManager CPU核数",
+          "name": "yarn_node_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "YARN NodeManager可以使用的最大内存",
+          "display_name": "YARN NodeManager内存",
+          "name": "yarn_node_memory_limit",
+          "value": "24576MB"
+        },
+        {
+          "description": "YARN ResourceManager的CPU core数量",
+          "display_name": "YARN ResourceManager CPU核数",
+          "name": "yarn_rm_cpu_limit",
+          "value": "12"
+        },
+        {
+          "description": "YARN ResourceManager可以使用的最大内存",
+          "display_name": "YARN ResourceManager内存",
+          "name": "yarn_rm_memory_limit",
+          "value": "12288MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "1024G"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "512G"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "YARN NodeManager的CPU core数量",
+          "display_name": "YARN NodeManager CPU核数",
+          "name": "yarn_node_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "YARN NodeManager可以使用的最大内存",
+          "display_name": "YARN NodeManager内存",
+          "name": "yarn_node_memory_limit",
+          "value": "36864MB"
+        },
+        {
+          "description": "YARN ResourceManager的CPU core数量",
+          "display_name": "YARN ResourceManager CPU核数",
+          "name": "yarn_rm_cpu_limit",
+          "value": "16"
+        },
+        {
+          "description": "YARN ResourceManager可以使用的最大内存",
+          "display_name": "YARN ResourceManager内存",
+          "name": "yarn_rm_memory_limit",
+          "value": "24576MB"
+        },
+        {
+          "description": "YARN NodeManager可以使用的磁盘存储",
+          "display_name": "YARN NodeManager磁盘大小",
+          "name": "yarn_nodemanager_data_storage",
+          "value": "2048G"
+        },
+        {
+          "description": "YARN NodeManager临时数据可以使用的磁盘存储",
+          "display_name": "YARN NodeManager临时数据磁盘大小",
+          "name": "yarn_nodemanager_tmp_storage",
+          "value": "512G"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

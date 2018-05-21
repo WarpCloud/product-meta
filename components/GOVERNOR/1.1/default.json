@@ -1,0 +1,78 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "GOVERNOR",
+  "dependencies": "HDFS, HYPERBASE, KAFKA, SEARCH, TXSQL",
+  "description": "元数据管理",
+  "edition": "1.1",
+  "name": "GOVERNOR-1.1",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Governor服务可以使用的CPU core数量",
+          "display_name": "Governor CPU核数",
+          "name": "governor_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Governor可以使用的最大内存",
+          "display_name": "Governor内存",
+          "name": "governor_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Governor服务可以使用的CPU core数量",
+          "display_name": "Governor CPU核数",
+          "name": "governor_cpu_limit",
+          "value": "2"
+        },
+        {
+          "description": "Governor可以使用的最大内存",
+          "display_name": "Governor内存",
+          "name": "governor_memory_limit",
+          "value": "4096MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Governor服务可以使用的CPU core数量",
+          "display_name": "Governor CPU核数",
+          "name": "governor_cpu_limit",
+          "value": "3"
+        },
+        {
+          "description": "Governor可以使用的最大内存",
+          "display_name": "Governor内存",
+          "name": "governor_memory_limit",
+          "value": "6144MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Governor服务可以使用的CPU core数量",
+          "display_name": "Governor CPU核数",
+          "name": "governor_cpu_limit",
+          "value": "4"
+        },
+        {
+          "description": "Governor可以使用的最大内存",
+          "display_name": "Governor内存",
+          "name": "governor_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

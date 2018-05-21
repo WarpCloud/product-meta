@@ -1,13 +1,6 @@
 {
    "Customized_Namespace": "default",
    "Develop": false,
-   "TCU": {
-      "workflow": {
-         "c": 0.5,
-         "m": 1,
-         "s": 1
-      }
-   },
    "Transwarp_Install_ID": "",
    "instance_list": [
       {
@@ -17,9 +10,9 @@
          },
          "configs": {
             "workflow_cpu_limit": 2,
-            "workflow_cpu_request": 2,
+            "workflow_cpu_request": 0.10000000000000001,
             "workflow_memory_limit": 4,
-            "workflow_memory_request": 4
+            "workflow_memory_request": 1
          },
          "dependencies": [
             {

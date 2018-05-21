@@ -1,0 +1,27 @@
+instance-type: tenon
+major-version: '1.1'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: abacus
+    variable: abacus_image
+  - name: scanner
+    variable: scanner_image
+releases:
+  - dependencies:
+      - max-version: tdc-1.1
+        min-version: tdc-1.1
+        type: txsql
+      - max-version: tdc-1.1
+        min-version: tdc-1.1
+        type: kafka
+      - max-version: tdc-1.1
+        min-version: tdc-1.1
+        type: gondar
+    final: false
+    image-version:
+      abacus_image: tdc-1.1
+      scanner_image: tdc-1.1
+    release-version: tdc-1.1

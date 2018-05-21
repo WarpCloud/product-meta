@@ -1,6 +1,6 @@
 {
   "name": "SYSTEM_CONTEXT-5.1",
-  "description": "xxxxxx",
+  "description": "Context services for TDC tenants.",
   "edition": "5.1",
   "components": [
     "GUARDIAN-5.1",

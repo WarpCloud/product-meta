@@ -13,6 +13,7 @@ function(config={})
   local _notificationModuleName = "notification";
   local _txsqlModuleName = "txsql";
   local _rubikModuleName = "rubik";
+  local _workflowModuleName = "workflow";
 
   //-------------------
   // Dependent modules
@@ -39,15 +40,12 @@ function(config={})
       },{
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
+      }, {
+        moduleName: _workflowModuleName,
+        name: _workflowModuleName,
       }],
     };
 
-  local TCU = {
-    [_notificationModuleName]: r.moduleTCU(_notificationModuleName, config),
-    [_rubikModuleName]: r.moduleTCU(_rubikModuleName, config),
-  };
-
   t.getDefaultSettings(config) + {
     instance_list: [notification, rubik],
-    TCU: TCU,
   }

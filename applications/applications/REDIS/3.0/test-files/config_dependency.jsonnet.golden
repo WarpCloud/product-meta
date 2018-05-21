@@ -17,7 +17,7 @@
          "instance_settings": { },
          "moduleName": "redis",
          "name": "redis1-redis",
-         "version": "5.0"
+         "version": "3.0"
       }
    ],
    "instance_settings": { },

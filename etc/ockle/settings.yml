@@ -1,6 +1,12 @@
-#ockle
-#-----
+#----------------
+# ockle Settings
+#----------------
 
+# Version range of Ockle to match current product-meta.
+max-version: 0.3.2
+min-version: 0.3.2
+
+# A list of appliations that accept advanced configurations.
 adv_config_white_list:
   - DISCOVER
   - KAFKA
@@ -12,3 +18,310 @@ adv_config_white_list:
   - SLIPSTREAM
   - TRANSPORTER
   - YARN
+
+# A list of TDC services that would be depended on by
+# tenant context services.
+# We take a prior assumption that only a single instance
+# target application is deployed under `tdcsys` namespace.
+platform_requirements:
+  - application_type: OCKLE
+    instance_type: ockle
+
+  - application_type: GUARDIAN
+    instance_type: guardian
+
+  - application_type: SIMMAIL
+    instance_type: simmail
+
+  - application_type: KONG
+    instance_type: kong
+
+  - application_type: SEARCH
+    instance_type: elasticsearch
+
+  - application_type: KAFKA
+    instance_type: kafka
+
+# A list of system services and ports
+system_service:
+  GUARDIAN:
+    - port: 8380
+      protocol: HTTPS
+      alias: GuardianServer
+    - port: 10389
+      alias: LDAP
+    - port: 1088
+      alias: KDC
+    - port: 8393
+      protocol: HTTPS
+      alias: CAS
+  TICKET:
+    - port: 11997
+      protocol: HTTP
+
+# A list of applications registered for TDC platform.
+service_for_tdc:
+  KONG:
+    port: 8001
+    dashboard_port: 8080
+    protocol: HTTP
+
+# A list of applications registered for tenant.
+service_for_tenant:
+  GUARDIAN:
+    - port: 8380
+      generate_name: gs
+      protocol: HTTPS
+      require_gateway_registration: true
+      require_display: true
+      alias: GuardianServer
+    - port: 8393
+      generate_name: cas-srv
+      protocol: HTTPS
+      require_gateway_registration: true
+      require_display: false
+      alias: CAS
+    - port: 1088
+      generate_name: "apacheds-master, apacheds-slave"
+      require_gateway_registration: false
+      require_display: true
+      alias: KDC
+  TCC:
+    - port: 9042
+      generate_name: tcc
+      protocol: HTTP
+      require_gateway_registration: true
+      require_display: true
+  KIBANA:
+    - port: 5601
+      generate_name: kibana
+      protocol: HTTP
+      require_gateway_registration: true
+      require_display: false
+  TICKET:
+    - port: 11997
+      generate_name: ticket
+      protocol: HTTP
+      require_gateway_registration: true
+      require_display: false
+
+
+# A list of services registered for development portal.
+service_for_development:
+  PILOT: 
+  - port: 8086
+    generate_name: pilot
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "报表工具"
+      display_name_en: Pilot
+      description: "基于Web的报表展现工具。轻量且灵活，支持多维度的分析和自助分析，提供二十余种报表样式，对时序数据有很好的展现。"
+      description_en: "Pilot is a web-based data visualization service focusing on business intelligence reporting. It contains the drag and drop environment for data analysis, and there are more than 20 kinds of graphical charts embedded in the product. Different from other BI tools, it provides extreme interactive analysis and visualization capabilities on big data through a distributed analysis engine. Many data sources are supported, including Transwarp Inceptor, MySQL and other RDBMS."
+
+  NOTEBOOK: 
+  - port: 8686
+    generate_name: notebook
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "数据分析交互平台"
+      display_name_en: Notebook
+      description: "轻量的科学计算开发工具。支持使用R、Scala和SQL做数据分析，提供方便的交互界面，可实现数据清洗、机器学习等任务并可以团队协作处理。"
+      description_en: "Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala, Python and more. Some charts are already included in notebook for data visualization. It contains interpreters for Transwarp Discover and Spark so that data scientists can analysis big data easily."
+
+  WORKFLOW: 
+  - port: 9091
+    generate_name: workflow
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "工作流"
+      display_name_en: Workflow
+      description: "图形化的工作流设计、调试、调度和分析的服务平台。支持Shell、SQL、JDBC、HTTP等任务类型，支持自定义Java任务。提供丰富的分析展现形式协助诊断工作流的执行状况。"
+      description_en: "The web-based tool to design, debug, schedule the job processes and tasks flow. Tasks written in shell, SQL, JDBC and HTTP are supported, and user-defined Java tasks can also be scheduled on big data platform. It provides good analysis capabilities for all scheduled jobs so that tuning tasks are easy, besides good security control are included."
+
+  RUBIK: 
+  - port: 32125
+    generate_name: rubik
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "Cube设计工具"
+      display_name_en: "Rubik "
+      description: "OLAP Cube的可视化设计工具，用于设计OLAP模型并支持实例化，提供雪花模型和星形模型两种模型，并支持多种格式的数据源，可用于加速多维度数据分析。"
+      description_en: "Rubik is a visualized tool to design OLAP Cubes for big data. Both snowflake and star model are supported when designing models, and various data sources including HDFS and remote RDBMS can be used for cube building. With the acceleration of Cube, analytical query can speed up by 10x and give data analysts better interactive experience."
+
+  GOVERNOR: 
+  - port: 21000
+    generate_name: governor
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "数据治理"
+      display_name_en: Governor
+      description: "元数据管理工具，可用于收集、展现和管理元数据，监控数据和程序的更改历史，进行数据血缘分析和影响分析，调试数据问题，追踪问题来源。"
+      description_en: "Governor is a web-based metadata management and data governance tool. It gives user approaches to manage metadata including tables and SQL procedures, monitors all the data and program changing history, analyzes data lineage, and performs impact analysis. Developers can use this tool to debug data problems and root cause issues, and also to analyze what will be impacted before any meta change occurs. Governor aims to aid users improve the data quality for big data."
+
+  GOVERNORPROXY: 
+  - port: 9527
+    generate_name: governor-proxy
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "数据共享分析"
+      display_name_en: "Governor Proxy"
+      description: "数据共享分析工具，支持数据预览，申请，审批，下放，自助式查询，分析，报表展示，下载等功能。"
+      description_en: "Data-sharing tool supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and download."
+
+  TRANSPORTER: 
+  - port: 8100
+    generate_name: tdt
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "ETL工具"
+      display_name_en: Transporter
+      description: "设计和创建ETL任务的可视化工具，支持从RDBMS到TDH的近实时数据同步。Transporter提供完整的数据整合功能，支持多种格式的数据源和丰富的导出格式，以及多种常用的数据转换操作。"
+      description_en: "Transporter is a web-based tool for designing and building ETL jobs for TDH. It offers near real-time data synchronization feature from RDBMS to TDH so that users can migrate the data analysis work from RDBMS to Hadoop for analytics and mining; various data sources including CSV, JDBC, XML, JSON, RDBMS are supported, and Transporter are equipped with frequently used transformers like joining, aggregation, data cleansing and etc. All the data processing jobs generated by Transporter are done in Inceptor with full ACID support."
+
+  GUARDIAN: 
+  - port: 8380
+    generate_name: gs
+    protocol: HTTPS
+    path: "/"
+    require_gateway_registration: true
+    alias: GuardianServer
+    display: 
+      display_name: "安全与权限"
+      display_name_en: Guardian
+      description: "统一的安全和资源管理服务平台，Guardian支持Kerberos和LDAP认证，实现租户级别的资源管理，可以做细粒度的权限控制，为整个集群系统加强安全防护。"
+      description_en: "Guardian is a centralized security and resource management service in TDH. It supports both LDAP and Kerberos to make sure clusters are immune to attacks and security threats. The multi-tenant resource management module controls all the user and resource data, with a graphical tool to set the user privileges and resources quotas."
+
+  KIBANA: 
+  - port: 5601
+    generate_name: kibana
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "日志分析"
+      display_name_en: "Log Analysis Kibana"
+      description: "图形化的日志分析平台，提供日志列表与信息内容，方便的检索接口，以及丰富的数据展示图表，用于对经过集中化处理的集群日志进行实时分析。"
+      description_en: "Kibana is a visualized log analysis platform. It presents the contents of the logs in your cluster, provides convenient log retrieval interface, and offers diverse graphs to shape your log data. All these features are introduced for the purpose to enable easy exploration and visualization on aggregated logs across the cluster."
+
+  INCEPTOR: 
+  - port: 4040
+    generate_name: inceptor2
+    protocol: HTTP
+    path: "/jobs"
+    require_gateway_registration: true
+    alias: INCEPTOR
+    display: 
+      display_name: "Inceptor任务监控"
+      display_name_en: "Inceptor UI"
+      description: "Inceptor任务监控页面，提供各应用运行状态、Holodesk资源使用情况、环境和Executor信息。"
+      description_en: "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs, so developers can use it for performance tuning and problem diagnosing."
+  - port: 10000
+    generate_name: inceptor2
+    require_gateway_registration: false
+    alias: HiveServer2
+
+  SLIPSTREAM: 
+  - port: 4040
+    generate_name: slipstream
+    protocol: HTTP
+    path: "/jobs"
+    require_gateway_registration: true
+    alias: SLIPSTREAM
+    display: 
+      display_name: "Slipstream任务监控"
+      display_name_en: "Slipstream UI"
+      description: "Slipstream任务监控页面，提供各流式应用和作业的运行状态以及资源使用情况。"
+      description_en: "Slipstream UI is a web-based tool for monitoring streaming apps & jobs running on Slipstream as well as resource usage."
+  - port: 10010
+    generate_name: slipstream
+    require_gateway_registration: false
+    alias: HiveServer2
+
+  SEARCH: 
+  - port: 9200
+    generate_name: "es-client"
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "ES管理器"
+      display_name_en: "ES Head"
+      description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询，是ES开发人员的一个非常有用的辅助工具。"
+      description_en: "ES Head is a web-based tool for Elastic Search cluster management, on-line query, data visualization, and CRUD operations. It is widely used by ES users for cluster operating and application development."
+
+  SOPHON: 
+  - port: 6066
+    generate_name: sophonserver
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    require_service_type: NodePort
+    display: 
+      display_name: "深度学习"
+      display_name_en: "Deep Learning Sophon"
+      description: "整合了Tensorflow和MXNet的深度学习通用开发平台，帮助企业用户加速落地人工智能应用。"
+      description_en: "Sophon is a common platform for deep learning development which is integrated with Tensorflow and MXNet. Sophon enables enterprise users to construct artificial intelligence application from scratch in a short period of time."
+
+  TERMINAL: 
+  - port: 5000
+    generate_name: terminal
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    require_service_type: NodePort
+    display: 
+      display_name: "命令行终端"
+      display_name_en: Terminal
+      description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，因此从这个工具进入，可以非常方便的做各种运维操作以及大数据开发工作。"
+      description_en: "A web based console with all utilities for Transwarp big data development and operation assembled, so it provides full capabilities as a console into a remote machine which has all developing environment set up."
+
+  HYPERBASE: 
+  - port: 60010
+    generate_name: hbasemaster
+    protocol: HTTP
+    path: "/master-status"
+    require_gateway_registration: true
+    display: 
+      display_name: "HyperBase管理"
+      display_name_en: "HyperBase Master"
+      description: "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况，包括基本的配置，HDFS和Zookeeper相关的信息，集群的负载情况，表和region的分布情况，以及split key等。"
+      description_en: "The HyperBase Master UI is a useful tool to get an overview of the current status of the cluster. From its page, you can get the version of the running HyperBase, its basic configuration, including the root HDFS path and ZooKeeper quorum, load average of the cluster, and a table, region, and region server list."
+
+  HDFS: 
+  - port: 50070
+    generate_name: "hdfsnamenode, hdfssecondary"
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    require_service_type: ClusterIP
+    display: 
+      display_name: "HDFS管理"
+      display_name_en: "HDFS Namenode UI"
+      description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据；此外，如果有权限，它还可以浏览HDFS的所有文件。"
+      description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
+
+  KAFKA: 
+  - port: 8000
+    generate_name: kafkamanager
+    protocol: HTTP
+    path: "/"
+    require_gateway_registration: true
+    display: 
+      display_name: "Kafka管理"
+      display_name_en: "Kafka Manager"
+      description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。通过它用户可以对Kafka集群进行监控，利用方便的选项创建Topic并定制分区的分配，以及实现一系列与Kafka相关的常用操作。"
+      description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."

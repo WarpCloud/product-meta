@@ -1,0 +1,90 @@
+{
+  "instance_type": "discover",
+  "configs": [
+    {
+      "default": "default",
+      "groups": [],
+      "name": "spark.yarn.queue",
+      "value": "default"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.client.memory",
+      "value": "2048MB"
+    },
+    {
+      "default": "18080",
+      "groups": [],
+      "name": "spark.master.webui.port",
+      "value": "18080"
+    },
+    {
+      "default": "18081",
+      "groups": [],
+      "name": "spark.worker.webui.port",
+      "value": "18081"
+    },
+    {
+      "default": "7077",
+      "groups": [],
+      "name": "spark.master.port",
+      "value": "7077"
+    },
+    {
+      "default": "7078",
+      "groups": [],
+      "name": "spark.worker.port",
+      "value": "7078"
+    },
+    {
+      "default": "18082",
+      "groups": [],
+      "name": "spark.history.ui.port",
+      "value": "18082"
+    },
+    {
+      "default": "2048MB",
+      "groups": [],
+      "name": "spark.driver.memory",
+      "value": "2048MB"
+    },
+    {
+      "default": "1024MB",
+      "groups": [],
+      "name": "spark.excutor.memory",
+      "value": "1024MB"
+    },
+    {
+      "default": "96MB",
+      "groups": [],
+      "name": "spark.reducer.maxSizeInFlight",
+      "value": "96MB"
+    },
+    {
+      "default": "64",
+      "groups": [],
+      "name": "spark.shuffle.file.buffer",
+      "value": "64"
+    },
+    {
+      "default": "90",
+      "groups": [],
+      "name": "spark.files.fetchTimeout",
+      "value": "90"
+    },
+    {
+      "default": "/discover/ide",
+      "groups": [],
+      "name": "discover.ide.home.dir",
+      "value": "/discover/ide"
+    },
+    {
+      "default": "2121",
+      "groups": [],
+      "name": "discover.local-cran.port",
+      "value": "2121"
+    }
+  ],
+  "version": "5.1"
+}

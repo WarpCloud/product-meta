@@ -1,0 +1,33 @@
+instance-type: hyperbase
+major-version: '5.2'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.2
+    min: transwarp-5.2
+images:
+  - name: hbase
+    variable: hbase_master_image
+  - name: hbase
+    variable: hbase_rs_image
+  - name: hbase
+    variable: hbase_thrift_image
+  - name: hbase
+    variable: hbase_rest_image
+releases:
+  - dependencies:
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: hdfs
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: yarn
+    - max-version: transwarp-5.2
+      min-version: transwarp-5.2
+      type: zookeeper
+    final: false
+    image-version:
+      hbase_master_image: transwarp-5.2
+      hbase_rest_image: transwarp-5.2
+      hbase_rs_image: transwarp-5.2
+      hbase_thrift_image: transwarp-5.2
+    release-version: transwarp-5.2

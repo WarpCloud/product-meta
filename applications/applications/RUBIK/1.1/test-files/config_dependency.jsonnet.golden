@@ -23,7 +23,7 @@
          "instance_settings": { },
          "moduleName": "notification",
          "name": "rubik1-notification",
-         "version": "1.0"
+         "version": "1.1"
       },
       {
          "annotations": {

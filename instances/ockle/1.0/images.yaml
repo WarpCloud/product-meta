@@ -2,7 +2,7 @@ instance-type: ockle
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc4
+  - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -15,8 +15,8 @@ releases:
       min-version: tdc-1.0.0-rc2
       type: txsql
     final: true
-      image-version:
-        ockle_image: tdc-1.0.0-rc2
+    image-version:
+      ockle_image: tdc-1.0.0-rc2
     release-version: tdc-1.0.0-rc2
 
   - dependencies:
@@ -24,8 +24,8 @@ releases:
       min-version: tdc-1.0.0-rc3
       type: txsql
     final: true
-      image-version:
-        ockle_image: tdc-1.0.0-rc3
+    image-version:
+      ockle_image: tdc-1.0.0-rc3
     release-version: tdc-1.0.0-rc3
 
   - dependencies:
@@ -33,15 +33,51 @@ releases:
       min-version: tdc-1.0.0-rc4
       type: txsql
     final: true
-      image-version:
-        ockle_image: tdc-1.0.0-rc4
+    image-version:
+      ockle_image: tdc-1.0.0-rc4
     release-version: tdc-1.0.0-rc4
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc5
+      min-version: tdc-1.0.0-rc5
+      type: txsql
+    final: true
+    image-version:
+      ockle_image: tdc-1.0.0-rc5
+    release-version: tdc-1.0.0-rc5
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc6
+      min-version: tdc-1.0.0-rc6
+      type: txsql
+    final: true
+    image-version:
+      ockle_image: tdc-1.0.0-rc6
+    release-version: tdc-1.0.0-rc6
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc7
+      min-version: tdc-1.0.0-rc7
+      type: txsql
+    final: true
+    image-version:
+      ockle_image: tdc-1.0.0-rc7
+    release-version: tdc-1.0.0-rc7
+
+  - dependencies:
+    - max-version: tdc-1.0.0-rc8
+      min-version: tdc-1.0.0-rc8
+      type: txsql
+    final: true
+    image-version:
+      ockle_image: tdc-1.0.0-rc8
+    release-version: tdc-1.0.0-rc8
 
   - dependencies:
     - max-version: tdc-1.0
       min-version: tdc-1.0
       type: txsql
     final: false
-      image-version:
-        ockle_image: tdc-1.0
+    image-version:
+      ockle_image: tdc-1.0
     release-version: tdc-1.0

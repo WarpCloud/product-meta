@@ -2,7 +2,7 @@ instance-type: logstash
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc4
+  - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -17,8 +17,8 @@ releases:
       - max-version: tdc-1.0.0-rc2
         min-version: tdc-1.0.0-rc2
         type: elasticsearch
-      - max-version: tdc-1.0.0-rc2
-        min-version: tdc-1.0.0-rc2
+      - max-version: transwarp-5.1.0-final
+        min-version: transwarp-5.1.0-final
         type: zookeeper
     final: true
     image-version:
@@ -32,8 +32,8 @@ releases:
       - max-version: tdc-1.0.0-rc3
         min-version: tdc-1.0.0-rc3
         type: elasticsearch
-      - max-version: tdc-1.0.0-rc3
-        min-version: tdc-1.0.0-rc3
+      - max-version: transwarp-5.1.1-final
+        min-version: transwarp-5.1.1-final
         type: zookeeper
     final: true
     image-version:
@@ -47,13 +47,73 @@ releases:
       - max-version: tdc-1.0.0-rc4
         min-version: tdc-1.0.0-rc4
         type: elasticsearch
-      - max-version: tdc-1.0.0-rc4
-        min-version: tdc-1.0.0-rc4
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
         type: zookeeper
     final: true
     image-version:
       logstash_image: tdc-1.0.0-rc4
     release-version: tdc-1.0.0-rc4
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc5
+        min-version: tdc-1.0.0-rc5
+        type: kafka
+      - max-version: tdc-1.0.0-rc5
+        min-version: tdc-1.0.0-rc5
+        type: elasticsearch
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: zookeeper
+    final: true
+    image-version:
+      logstash_image: tdc-1.0.0-rc5
+    release-version: tdc-1.0.0-rc5
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc6
+        min-version: tdc-1.0.0-rc6
+        type: kafka
+      - max-version: tdc-1.0.0-rc6
+        min-version: tdc-1.0.0-rc6
+        type: elasticsearch
+      - max-version: transwarp-5.1.2-final
+        min-version: transwarp-5.1.2-final
+        type: zookeeper
+    final: true
+    image-version:
+      logstash_image: tdc-1.0.0-rc6
+    release-version: tdc-1.0.0-rc6
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc7
+        min-version: tdc-1.0.0-rc7
+        type: kafka
+      - max-version: tdc-1.0.0-rc7
+        min-version: tdc-1.0.0-rc7
+        type: elasticsearch
+      - max-version: transwarp-5.1.3-final
+        min-version: transwarp-5.1.3-final
+        type: zookeeper
+    final: true
+    image-version:
+      logstash_image: tdc-1.0.0-rc7
+    release-version: tdc-1.0.0-rc7
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc8
+        min-version: tdc-1.0.0-rc8
+        type: kafka
+      - max-version: tdc-1.0.0-rc8
+        min-version: tdc-1.0.0-rc8
+        type: elasticsearch
+      - max-version: transwarp-5.1.3-final
+        min-version: transwarp-5.1.3-final
+        type: zookeeper
+    final: true
+    image-version:
+      logstash_image: tdc-1.0.0-rc8
+    release-version: tdc-1.0.0-rc8
 
   - dependencies:
       - max-version: tdc-1.0
@@ -62,8 +122,8 @@ releases:
       - max-version: tdc-1.0
         min-version: tdc-1.0
         type: elasticsearch
-      - max-version: tdc-1.0
-        min-version: tdc-1.0
+      - max-version: transwarp-5.1
+        min-version: transwarp-5.1
         type: zookeeper
     final: false
     image-version:

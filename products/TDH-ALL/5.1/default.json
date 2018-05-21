@@ -11,14 +11,14 @@
     "KAFKA-5.1",
     "NOTEBOOK-5.1",
     "PILOT-1.0",
-    "RUBIK-1.1",
+    "RUBIK-1.0",
     "SEARCH-5.1",
     "SLIPSTREAM-5.1",
     "SOPHON-3.3",
     "TERMINAL-1.0",
-    "TRANSPORTER-1.1",
+    "TRANSPORTER-1.0",
     "TXSQL-5.1",
-    "WORKFLOW-1.1",
+    "WORKFLOW-1.0",
     "YARN-5.1"
   ],
   "templates": [

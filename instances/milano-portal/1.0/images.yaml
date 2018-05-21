@@ -2,7 +2,7 @@ instance-type: milano-portal
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc4
+  - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -27,6 +27,30 @@ releases:
     image-version:
       milano_portal_image: tdc-1.0.0-rc4
     release-version: tdc-1.0.0-rc4
+
+  - dependencies: []
+    final: true
+    image-version:
+      milano_portal_image: tdc-1.0.0-rc5
+    release-version: tdc-1.0.0-rc5
+
+  - dependencies: []
+    final: true
+    image-version:
+      milano_portal_image: tdc-1.0.0-rc6
+    release-version: tdc-1.0.0-rc6
+
+  - dependencies: []
+    final: true
+    image-version:
+      milano_portal_image: tdc-1.0.0-rc7
+    release-version: tdc-1.0.0-rc7
+
+  - dependencies: []
+    final: true
+    image-version:
+      milano_portal_image: tdc-1.0.0-rc8
+    release-version: tdc-1.0.0-rc8
 
   - dependencies: []
     final: false

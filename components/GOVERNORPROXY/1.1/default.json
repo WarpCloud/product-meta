@@ -1,0 +1,78 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "GOVERNORPROXY",
+  "dependencies": "",
+  "description": "",
+  "edition": "1.1",
+  "name": "GOVERNORPROXY-1.1",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "GovernorProxy服务可以使用的CPU core数量",
+          "display_name": "GovernorProxy CPU核数",
+          "name": "governor_proxy_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "GovernorProxy可以使用的最大内存",
+          "display_name": "GovernorProxy内存",
+          "name": "governor_proxy_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+         {
+          "description": "GovernorProxy服务可以使用的CPU core数量",
+          "display_name": "GovernorProxy CPU核数",
+          "name": "governor_proxy_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "GovernorProxy可以使用的最大内存",
+          "display_name": "GovernorProxy内存",
+          "name": "governor_proxy_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+         {
+          "description": "GovernorProxy服务可以使用的CPU core数量",
+          "display_name": "GovernorProxy CPU核数",
+          "name": "governor_proxy_cpu_limit",
+          "value": "0.2"
+        },
+        {
+          "description": "GovernorProxy可以使用的最大内存",
+          "display_name": "GovernorProxy内存",
+          "name": "governor_proxy_memory_limit",
+          "value": "2048MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+         {
+          "description": "GovernorProxy服务可以使用的CPU core数量",
+          "display_name": "GovernorProxy CPU核数",
+          "name": "governor_proxy_cpu_limit",
+          "value": "0.5"
+        },
+        {
+          "description": "GovernorProxy可以使用的最大内存",
+          "display_name": "GovernorProxy内存",
+          "name": "governor_proxy_memory_limit",
+          "value": "2048MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

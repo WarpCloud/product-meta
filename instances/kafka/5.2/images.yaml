@@ -1,0 +1,31 @@
+instance-type: kafka
+major-version: '5.2'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.2
+    min: transwarp-5.2
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: kafka
+    variable: kafka_image
+releases:
+# For TDH
+  - dependencies:
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: zookeeper
+    final: false
+    image-version:
+      kafka_image: transwarp-5.2
+    release-version: transwarp-5.2
+
+# For TDC
+  - dependencies:
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: zookeeper
+    final: false
+    image-version:
+      kafka_image: tdc-1.1
+    release-version: tdc-1.1

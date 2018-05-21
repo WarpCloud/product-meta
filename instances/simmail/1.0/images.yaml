@@ -2,7 +2,7 @@ instance-type: simmail
 major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc4
+  - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -12,24 +12,48 @@ images:
 releases:
   - dependencies: []
     final: true
-      image-version:
-        simmail_image: tdc-1.0.0-rc2
+    image-version:
+      simmail_image: tdc-1.0.0-rc2
     release-version: tdc-1.0.0-rc2
 
-  - dependencies: []
+  - dependencies: []  
     final: true
-      image-version:
-        simmail_image: tdc-1.0.0-rc3
+    image-version:
+      simmail_image: tdc-1.0.0-rc3
     release-version: tdc-1.0.0-rc3
 
   - dependencies: []
     final: true
-      image-version:
-        simmail_image: tdc-1.0.0-rc4
+    image-version:
+      simmail_image: tdc-1.0.0-rc4
     release-version: tdc-1.0.0-rc4
 
   - dependencies: []
+    final: true
+    image-version:
+      simmail_image: tdc-1.0.0-rc5
+    release-version: tdc-1.0.0-rc5
+
+  - dependencies: []
+    final: true
+    image-version:
+      simmail_image: tdc-1.0.0-rc6
+    release-version: tdc-1.0.0-rc6
+
+  - dependencies: []
+    final: true
+    image-version:
+      simmail_image: tdc-1.0.0-rc7
+    release-version: tdc-1.0.0-rc7
+
+  - dependencies: []
+    final: true
+    image-version:
+      simmail_image: tdc-1.0.0-rc8
+    release-version: tdc-1.0.0-rc8
+
+  - dependencies: []
     final: false
-      image-version:
-        simmail_image: tdc-1.0
+    image-version:
+      simmail_image: tdc-1.0
     release-version: tdc-1.0

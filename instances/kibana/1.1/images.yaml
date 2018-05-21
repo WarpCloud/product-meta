@@ -1,0 +1,32 @@
+instance-type: kibana
+major-version: '1.1'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: transwarp-5.2
+    min: transwarp-5.2
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: kibana
+    variable: kibana_image
+releases:
+
+# Kibana for TDH
+  - dependencies:
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: elasticsearch
+    final: true
+    image-version:
+      kibana_image: transwarp-5.2
+    release-version: transwarp-5.2
+
+# Kibana for TDC
+  - dependencies:
+      - max-version: tdc-1.1
+        min-version: tdc-1.1
+        type: elasticsearch
+    final: false
+    image-version:
+      kibana_image: tdc-1.1
+    release-version: tdc-1.1

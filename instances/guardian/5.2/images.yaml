@@ -1,0 +1,21 @@
+instance-type: guardian
+major-version: '5.2'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: apacheds
+    variable: apacheds_image
+  - name: guardian-init
+    variable: guardian_init_container_image
+  - name: guardian
+    variable: guardian_server_image
+releases:
+  - dependencies: []
+    final: false
+    image-version:
+      apacheds_image: tdc-1.1
+      guardian_init_container_image: tdc-1.1
+      guardian_server_image: tdc-1.1
+    release-version: tdc-1.1
