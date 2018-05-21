@@ -31,9 +31,6 @@
 #      cas_on: cas_on
 #      server_address: cas_server_url
 #      login_address: cas_server_login_url
-#      hl_svc: cas_server_hl_svc
-#      port: cas_server_port
-#      path: cas_server_path
 
 common:
   security:
@@ -127,6 +124,8 @@ filerobot:
       - filerobot
     security_on:
       - filerobot_mounted_kerberos
+    cas:
+      server_address: cas_server_address
 
 gn-tenant:
   resource:
@@ -159,10 +158,6 @@ governor-proxy:
   security:
     cas:
       server_address: cas_server_address
-      hl_svc: cas_server_hl_svc
-      port: CAS_SERVER_PORT
-      path: CAS_SERVER_CONTEXT_PATH
-
 
 guardian:
   configuration:
@@ -207,9 +202,7 @@ hdfs:
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
     cas:
-      hl_svc: cas_server_hl_svc
-      port: CAS_SERVER_PORT
-      path: CAS_SERVER_CONTEXT_PATH
+      server_address: cas_server_address
 
 hyperbase:
   resource:
@@ -428,6 +421,8 @@ pilot:
       - pilot_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
+    cas:
+      server_address: cas_server_address
 
 rubik:
   resource:

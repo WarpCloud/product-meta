@@ -215,7 +215,8 @@ PILOT:
     priority_metrics:
       filerobot_priority: 0
       pilot_priority: 0
-
+  optional_dependencies:
+    - inceptor
 
 REDIS:
   configuration:
