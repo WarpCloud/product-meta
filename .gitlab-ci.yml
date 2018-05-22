@@ -16,13 +16,16 @@ precommit_build:
     - wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     - rpm -ivh epel-release-latest-7.noarch.rpm
     - yum -y install jq
-    - yum -y install python-devel
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@172.16.1.41:10080/pub/jsonnet.git jsonnet
-    - cd jsonnet
-    - make
+    - WORKDIR=`pwd`
+    - cd /tmp
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@172.16.1.41:10080/TDC/utilities.git
+    - cd utilities && chmod +x install_py.sh && ./install_py.sh 3.6.5
+    - cd /tmp
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@172.16.1.41:10080/pub/jsonnet.git
+    - cd jsonnet && make
     - export JSONNET_BIN=`pwd`/jsonnet
-    - python setup.py install
-    - cd -
+    - python3 setup.py install
+    - cd $WORKDIR
     - sh -e ./testing.sh
   only:
     - /.*_develop_\d+/
