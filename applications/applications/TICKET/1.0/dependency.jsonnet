@@ -7,17 +7,14 @@ function(config={})
   local appName = config.application_name;
   local appVersion = config.application_version;
 
-  local notificationVersion = "1.0";
-
   local _txsqlModuleName = "txsql";
-  local _notificationModuleName = "notification";
   local _ticketModuleName = "ticket";
 
   //-------------------
   // Dependent modules
   //-------------------
-  local notification = t.createInstance(_notificationModuleName, config, notificationVersion) +
-    r.moduleResource(_notificationModuleName, config) +
+  local ticket = t.createInstance(_ticketModuleName, config, appVersion) +
+    r.moduleResource(_ticketModuleName, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,
@@ -25,20 +22,6 @@ function(config={})
       }],
     };
 
-  local ticket = t.createInstance(_ticketModuleName, config, appVersion) +
-    r.moduleResource(_ticketModuleName, config) +
-    {
-      dependencies: [{
-        moduleName: _txsqlModuleName,
-        name: _txsqlModuleName,
-      },
-      {
-        moduleName: _notificationModuleName,
-        name: appName + "-" + _notificationModuleName,
-      }
-      ],
-    };
-
   t.getDefaultSettings(config) + {
-    instance_list: [notification, ticket],
+    instance_list: [ticket],
   }
