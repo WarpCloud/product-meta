@@ -1,6 +1,6 @@
 instance-type: tcc
 major-version: '1.0'
-min-tdc-version: tdc-1.0.0-rc0
+min-tdc-version: tdc-1.0
 hot-fix-ranges:
   - max: tdc-1.0.0-rc8
     min: tdc-1.0.0-rc0
