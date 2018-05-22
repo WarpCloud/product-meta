@@ -6,31 +6,7 @@
       {
          "annotations": {
             "application_name": "ticket1",
-            "application_type": "TICKET",
-            "use_notification": "true"
-         },
-         "configs": {
-            "notification_cpu_limit": 1,
-            "notification_cpu_request": 0.10000000000000001,
-            "notification_memory_limit": 2,
-            "notification_memory_request": 1
-         },
-         "dependencies": [
-            {
-               "moduleName": "txsql",
-               "name": "txsql"
-            }
-         ],
-         "instance_settings": { },
-         "moduleName": "notification",
-         "name": "ticket1-notification",
-         "version": "1.0"
-      },
-      {
-         "annotations": {
-            "application_name": "ticket1",
-            "application_type": "TICKET",
-            "use_notification": "true"
+            "application_type": "TICKET"
          },
          "configs": {
             "ticket_cpu_limit": 1,
@@ -42,10 +18,6 @@
             {
                "moduleName": "txsql",
                "name": "txsql"
-            },
-            {
-               "moduleName": "notification",
-               "name": "ticket1-notification"
             }
          ],
          "instance_settings": { },

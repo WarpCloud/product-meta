@@ -16,16 +16,6 @@ local t = import "../../../applib/utils.libsonnet";
           ticket_cpu_request: t.objectField(config, "ticket_cpu_request", 0.1),
           ticket_memory_request: t.objectField(config, "ticket_memory_request", 1),
         },
-      notification:
-        {
-          local cpu_limit = resource.ticket.ticket_cpu_limit,
-          local memory_limit = resource.ticket.ticket_memory_limit,
-
-          notification_cpu_limit: t.objectField(config, "notification_cpu_limit", t.raRange(cpu_limit * 0.5, min=1, max=4)),
-          notification_memory_limit: t.objectField(config, "notification_memory_limit", t.raRange(memory_limit * 0.5, min=1, max=4)),
-          notification_cpu_request: t.objectField(config, "notification_cpu_request", 0.1),
-          notification_memory_request: t.objectField(config, "notification_memory_request", 1),
-        },
     };
 
     local storage = {};
