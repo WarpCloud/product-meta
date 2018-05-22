@@ -1,6 +1,6 @@
 instance-type: zookeeper
 major-version: '5.2'
-min-tdc-version: tdc-1.1.0-rc0
+min-tdc-version: tdc-1.1
 hot-fix-ranges:
   - max: transwarp-5.2
     min: transwarp-5.2
