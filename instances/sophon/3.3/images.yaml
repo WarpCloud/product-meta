@@ -2,7 +2,7 @@ instance-type: sophon
 major-version: '3.3'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: transwarp-5.1.3-final
+  - max: transwarp-5.1.4-final
     min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
@@ -81,6 +81,24 @@ releases:
     image-version:
       sophon_server_image: transwarp-5.1.3-final
     release-version: transwarp-5.1.3-final
+
+  - dependencies:
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: hdfs
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: yarn
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: zookeeper
+    - max-version: tdc-1.0.0-rc9
+      min-version: tdc-1.0.0-rc9
+      type: txsql
+    final: true
+    image-version:
+      sophon_server_image: transwarp-5.1.4-final
+    release-version: transwarp-5.1.4-final
 
   - dependencies:
     - max-version: transwarp-5.1

@@ -2,7 +2,7 @@ instance-type: inceptor
 major-version: '5.1'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: transwarp-5.1.3-final
+  - max: transwarp-5.1.4-final
     min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
@@ -99,6 +99,28 @@ releases:
       inceptor_executor_image: transwarp-5.1.3-final
       inceptor_master_image: transwarp-5.1.3-final
     release-version: transwarp-5.1.3-final
+
+  - dependencies:
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: metastore
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: hdfs
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: zookeeper
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: hyperbase
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: elasticsearch
+    final: true
+    image-version:
+      inceptor_executor_image: transwarp-5.1.4-final
+      inceptor_master_image: transwarp-5.1.4-final
+    release-version: transwarp-5.1.4-final
 
   - dependencies:
     - max-version: transwarp-5.1

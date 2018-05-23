@@ -2,7 +2,7 @@ instance-type: gondar
 major-version: '1.0'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc8
+  - max: tdc-1.0.0-rc9
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -111,6 +111,20 @@ releases:
       gondar_cdr_image: tdc-1.0.0-rc8
       gondar_billing_image: tdc-1.0.0-rc8
     release-version: tdc-1.0.0-rc8
+
+  - dependencies:
+      - max-version: tdc-1.0.0-rc9
+        min-version: tdc-1.0.0-rc9
+        type: txsql
+      - max-version: tdc-1.0.0-rc9
+        min-version: tdc-1.0.0-rc9
+        type: kafka
+    final: true
+    image-version:
+      gondar_udr_image: tdc-1.0.0-rc9
+      gondar_cdr_image: tdc-1.0.0-rc9
+      gondar_billing_image: tdc-1.0.0-rc9
+    release-version: tdc-1.0.0-rc9
 
   - dependencies:
       - max-version: tdc-1.0

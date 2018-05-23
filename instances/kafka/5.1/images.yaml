@@ -2,11 +2,11 @@ instance-type: kafka
 major-version: '5.1'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: transwarp-5.1.3-final
+  - max: transwarp-5.1.4-final
     min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
-  - max: tdc-1.0.0-rc8
+  - max: tdc-1.0.0-rc9
     min: tdc-1.0.0-rc0
   - max: tdc-1.0
     min: tdc-1.0
@@ -50,6 +50,15 @@ releases:
     image-version:
       kafka_image: transwarp-5.1.3-final
     release-version: transwarp-5.1.3-final
+
+  - dependencies:
+      - max-version: transwarp-5.1.4-final
+        min-version: transwarp-5.1.4-final
+        type: zookeeper
+    final: true
+    image-version:
+      kafka_image: transwarp-5.1.4-final
+    release-version: transwarp-5.1.4-final
 
   - dependencies:
       - max-version: transwarp-5.1
@@ -123,6 +132,15 @@ releases:
     image-version:
       kafka_image: tdc-1.0.0-rc8
     release-version: tdc-1.0.0-rc8
+
+  - dependencies:
+    - max-version: transwarp-5.1.4-final
+      min-version: transwarp-5.1.4-final
+      type: zookeeper
+    final: true
+    image-version:
+      kafka_image: tdc-1.0.0-rc9
+    release-version: tdc-1.0.0-rc9
 
   - dependencies:
     - max-version: transwarp-5.1
