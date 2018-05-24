@@ -32,7 +32,7 @@ local t = import "../../../applib/utils.libsonnet";
             {
               "key": "KAFKA_SERVER_PROPERTIES",
               local _bytes = t.diskSizeInByte(s.DiskDataSize),
-              local _log_retention = if _bytes == 0 then "" else "log.retention.bytes;;;"+std.floor(_bytes * 0.8)+"|||",
+              local _log_retention = if _bytes == 0 then "" else "log.retention.bytes;;;"+std.floor(_bytes * 0.1)+"|||",
               "value":  _log_retention + "num.partitions;;;3|||default.replication.factor;;;2"
             }
           ]
