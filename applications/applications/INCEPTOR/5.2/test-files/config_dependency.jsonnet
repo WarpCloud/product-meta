@@ -5,5 +5,6 @@
   user_config: {
     "use_hyperbase": "true",
     "use_search": "true",
+    "use_txsql": "true",
     }
 }

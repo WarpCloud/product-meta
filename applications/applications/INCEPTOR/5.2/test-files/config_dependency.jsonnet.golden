@@ -8,7 +8,8 @@
             "application_name": "inceptor1",
             "application_type": "INCEPTOR",
             "use_hyperbase": "true",
-            "use_search": "true"
+            "use_search": "true",
+            "use_txsql": "true"
          },
          "configs": {
             "metastore_cpu_limit": 1,
@@ -36,7 +37,8 @@
             "application_name": "inceptor1",
             "application_type": "INCEPTOR",
             "use_hyperbase": "true",
-            "use_search": "true"
+            "use_search": "true",
+            "use_txsql": "true"
          },
          "configs": {
             "inceptor_executor_cpu_limit": 1,
@@ -68,6 +70,10 @@
             {
                "moduleName": "elasticsearch",
                "name": "elasticsearch"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
             }
          ],
          "instance_settings": { },

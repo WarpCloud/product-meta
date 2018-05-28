@@ -26,6 +26,9 @@ releases:
     - max-version: transwarp-5.2
       min-version: transwarp-5.2
       type: elasticsearch
+    - max-version: tdc-1.1
+      min-version: tdc-1.1
+      type: txsql
     final: false
     image-version:
       inceptor_executor_image: transwarp-5.2
