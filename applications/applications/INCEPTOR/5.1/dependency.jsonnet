@@ -11,6 +11,7 @@ function(config={})
 
   local use_hyperbase = t.trueOrFalse(config.user_config, "use_hyperbase");
   local use_search = t.trueOrFalse(config.user_config, "use_search");
+  local use_txsql = t.trueOrFalse(config.user_config, "use_txsql");
 
   local _zkModuleName = "zookeeper";
   local _hdfsModuleName = "hdfs";
@@ -30,6 +31,12 @@ function(config={})
     if use_search then [{
       moduleName: _searchModuleName,
       name: _searchModuleName,
+    }] else [];
+
+  local depend_txsql =
+    if use_txsql then [{
+      moduleName: _txsqlModuleName,
+      name: _txsqlModuleName,
     }] else [];
 
   //-------------------
@@ -58,7 +65,7 @@ function(config={})
       }, {
         moduleName: _zkModuleName,
         name: _zkModuleName,
-      }] + depend_hyperbase + depend_search,
+      }] + depend_hyperbase + depend_search + depend_txsql,
     };
 
   t.getDefaultSettings(config) + {
