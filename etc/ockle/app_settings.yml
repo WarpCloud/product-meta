@@ -139,6 +139,7 @@ INCEPTOR:
   optional_dependencies:
     - hyperbase
     - search
+    - txsql
   security:
     service_refer:
       metastore: inceptor
