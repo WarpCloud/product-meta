@@ -7,6 +7,8 @@ function(config={})
   local appName = config.application_name;
   local appVersion = config.application_version;
 
+  local use_gntenant = t.trueOrFalse(config.user_config, "use_gntenant");
+
   local _txsqlModuleName = "txsql";
   local _ockleModuleName = "ockle";
   local _tccModuleName = "tcc";
@@ -15,10 +17,16 @@ function(config={})
   local _guardianModuleName = "guardian";
   local _kongModuleName = "kong";
   local _casModuleName = "cas";
+  local _gntenantModuleName = "gn-tenant";
 
   //-------------------
   // Dependent modules
   //-------------------
+  local depend_gntenant =
+    if use_gntenant then [{
+      moduleName: _gntenantModuleName,
+      name: _gntenantModuleName,
+    }] else [];
 
   local tcc = t.createInstance(_tccModuleName, config, appVersion) +
     r.moduleResource(_tccModuleName, config) +
@@ -35,7 +43,7 @@ function(config={})
       },{
         moduleName: _casModuleName,
         name: _casModuleName,
-      }],
+      }] + depend_gntenant,
     };
 
   t.getDefaultSettings(config) + {

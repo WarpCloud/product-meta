@@ -285,7 +285,8 @@ TCC:
   configuration:
     priority_metrics:
       tcc_priority: 0
-
+  optional_dependencies:
+    - gntenant
 
 TDCMILANO:
   configuration:
