@@ -6,7 +6,8 @@
       {
          "annotations": {
             "application_name": "tcc1",
-            "application_type": "TCC"
+            "application_type": "TCC",
+            "use_gntenant": "true"
          },
          "configs": {
             "tcc_cpu_limit": 1,
@@ -30,6 +31,10 @@
             {
                "moduleName": "cas",
                "name": "cas"
+            },
+            {
+               "moduleName": "gn-tenant",
+               "name": "gn-tenant"
             }
          ],
          "instance_settings": { },
