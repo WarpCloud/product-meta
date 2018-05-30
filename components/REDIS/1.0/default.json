@@ -1,0 +1,78 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "REDIS",
+  "dependencies": "",
+  "description": "Redis key-value 存储系统",
+  "edition": "1.0",
+  "name": "REDIS-1.0",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Redis 可以使用的CPU core数量",
+          "display_name": "Redis CPU核数",
+          "name": "redis_cpu_limit",
+          "value": "0.1"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存",
+          "name": "redis_memory_limit",
+          "value": "1024MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 可以使用的CPU core数量",
+          "display_name": "Redis CPU核数",
+          "name": "redis_cpu_limit",
+          "value": "2"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存",
+          "name": "redis_memory_limit",
+          "value": "4096MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 可以使用的CPU core数量",
+          "display_name": "Redis CPU核数",
+          "name": "redis_cpu_limit",
+          "value": "4"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存",
+          "name": "redis_memory_limit",
+          "value": "6144MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 可以使用的CPU core数量",
+          "display_name": "Redis CPU核数",
+          "name": "redis_cpu_limit",
+          "value": "6"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存",
+          "name": "redis_memory_limit",
+          "value": "8192MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}
