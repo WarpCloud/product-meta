@@ -124,8 +124,6 @@ filerobot:
       - filerobot
     security_on:
       - filerobot_mounted_kerberos
-    cas:
-      server_address: cas_server_address
 
 gn-tenant:
   resource:
@@ -421,8 +419,6 @@ pilot:
       - pilot_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
-    cas:
-      server_address: cas_server_address
 
 rubik:
   resource:

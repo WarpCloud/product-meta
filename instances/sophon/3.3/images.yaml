@@ -101,16 +101,16 @@ releases:
     release-version: transwarp-5.1.4-final
 
   - dependencies:
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: hdfs
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: yarn
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: zookeeper
-    - max-version: tdc-1.0
+    - max-version: tdc-1.1
       min-version: tdc-1.0
       type: txsql
     final: false
