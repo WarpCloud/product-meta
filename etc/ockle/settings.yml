@@ -3,8 +3,8 @@
 #----------------
 
 # Version range of Ockle to match current product-meta.
-max-version: 0.3.2
-min-version: 0.3.2
+max-version: 0.3.3
+min-version: 0.3.3
 
 # A list of appliations that accept advanced configurations.
 adv_config_white_list:
@@ -339,3 +339,7 @@ service_for_development:
       display_name_en: "Kafka Manager"
       description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。通过它用户可以对Kafka集群进行监控，利用方便的选项创建Topic并定制分区的分配，以及实现一系列与Kafka相关的常用操作。"
       description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
+
+# A list of instances that need to open ha for default
+instance_open_ha:
+  - tcc

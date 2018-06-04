@@ -3,11 +3,10 @@
 # ----
 #instance:
 #  resource:
-#    node_num:
-#     default:
-#       - example_replicas
-#     singleton:
-#       - example_replicas
+#    ha:
+#      - example_replicas
+#    computing_unit:
+#      - example_replicas
 #    disks:
 #      sata_disks:
 #        - example_disks
@@ -51,13 +50,13 @@ cas:
 
 codis:
   resource:
-    node_num:
-      default:
-        - codis_server_replicas
-      singleton:
-        - codis_dash_replicas
-        - codis_proxy_replicas
-        - codis_fe_replicas
+    ha:
+      - codis_dash_replicas
+      - codis_proxy_replicas
+      - codis_fe_replicas
+    computing_unit:
+      - codis_server_replicas
+
   configuration:
     environment:
       - codis_dash_env_list
@@ -89,12 +88,11 @@ discover:
 
 elasticsearch:
   resource:
-    node_num:
-      default:
-        - es_data_replicas
-      singleton:
-        - es_client_replicas
-        - es_master_replicas
+    ha:
+      - es_client_replicas
+      - es_master_replicas
+    computing_unit:
+      - es_data_replicas
   configuration:
     environment:
       - es_master_env_list
@@ -127,9 +125,8 @@ filerobot:
 
 gn-tenant:
   resource:
-    node_num:
-      singleton:
-        - gn_replicas
+    ha:
+      - gn_replicas
 
 governor:
   configuration:
@@ -167,12 +164,12 @@ guardian:
 
 hdfs:
   resource:
-    node_num:
-      default:
-        - hdfs_data_replicas
-        - hdfs_journal_replicas
-      singleton:
-        - hdfs_httpfs_replicas
+    ha:
+      - hdfs_httpfs_replicas
+    computing_unit:
+      - hdfs_data_replicas
+      - hdfs_journal_replicas
+
     disks:
       sata_disks:
         - hdfs_data_disk_replicas
@@ -204,13 +201,12 @@ hdfs:
 
 hyperbase:
   resource:
-    node_num:
-      default:
-        - hbase_rs_replicas
-      singleton:
-        - hbase_master_replicas
-        - hbase_thrift_replicas
-        - hbase_rest_replicas
+    ha:
+      - hbase_master_replicas
+      - hbase_thrift_replicas
+      - hbase_rest_replicas
+    computing_unit:
+      - hbase_rs_replicas
   configuration:
     environment:
       - hbase_master_env_list
@@ -234,11 +230,10 @@ hyperbase:
 
 inceptor:
   resource:
-    node_num:
-      default:
-        - inceptor_executor_replicas
-      singleton:
-        - inceptor_replicas
+    ha:
+      - inceptor_replicas
+    computing_unit:
+      - inceptor_executor_replicas
     disks:
       sata_disks:
         - inceptor_shuffle_dir_counts
@@ -265,9 +260,8 @@ inceptor:
 
 metastore:
   resource:
-    node_num:
-      singleton:
-        - metastore_replicas
+    ha:
+      - metastore_replicas
   configuration:
     environment:
       - metastore_env_list
@@ -287,9 +281,8 @@ metastore:
 
 kafka:
   resource:
-    node_num:
-      default:
-        - kafka_replicas
+    computing_unit:
+      - kafka_replicas
   configuration:
     environment:
       - kafka_env_list
@@ -306,9 +299,8 @@ kafka:
 
 kafka-manager:
   resource:
-    node_num:
-      singleton:
-        - kafka_manager_replicas
+    ha:
+      - kafka_manager_replicas
   configuration:
     environment:
         - kafka_manager_env_list
@@ -318,9 +310,8 @@ kafka-manager:
 
 kibana:
   resource:
-    node_num:
-      singleton:
-        - kibana_replicas
+    ha:
+      - kibana_replicas
   configuration:
     environment:
       - kibana_env_list
@@ -330,9 +321,8 @@ kibana:
 
 kong:
   resource:
-    node_num:
-      singleton:
-        - kong_replicas
+    ha:
+      - kong_replicas
   configuration:
     environment:
       - kong_env_list
@@ -342,9 +332,8 @@ kong:
 
 kong-dashboard:
   resource:
-    node_num:
-      singleton:
-        - kong_dashboard_replicas
+    ha:
+      - kong_dashboard_replicas
   configuration:
     environment:
       - kong_dashboard_env_list
@@ -362,9 +351,8 @@ localcran:
 
 logstash:
   resource:
-    node_num:
-      default:
-        - logstash_replicas
+    computing_unit:
+      - logstash_replicas
   configuration:
     environment:
       - logstash_env_list
@@ -392,6 +380,9 @@ notebook:
       env_cfg: GUARDIAN_SERVICE_ID
 
 notification:
+  resource:
+    ha:
+      - notification_replicas
   configuration:
     environment:
       - notification_env_list
@@ -400,10 +391,7 @@ notification:
   image:
       default:
         - notification_image
-  resource:
-    node_num:
-      singleton:
-        - notification_replicas
+
 
 pilot:
   configuration:
@@ -422,9 +410,8 @@ pilot:
 
 rubik:
   resource:
-    node_num:
-      singleton:
-        - rubik_replicas
+    ha:
+      - rubik_replicas
   configuration:
     environment:
       - rubik_env_list
@@ -443,11 +430,10 @@ rubik:
 
 slipstream:
   resource:
-    node_num:
-      default:
-        - inceptor_executor_replicas
-      singleton:
-        - inceptor_replicas
+    ha:
+      - inceptor_replicas
+    computing_unit:
+      - inceptor_executor_replicas
     disks:
       sata_disks:
         - inceptor_shuffle_dir_counts
@@ -479,9 +465,8 @@ sophon:
 
 terminal:
   resource:
-    node_num:
-      singleton:
-        - terminal_replicas
+    ha:
+      - terminal_replicas
   configuration:
     environment:
       - terminal_env_list
@@ -491,9 +476,8 @@ terminal:
 
 tcc:
   resource:
-    node_num:
-      singleton:
-        - tcc_replicas
+    ha:
+      - tcc_replicas
   configuration:
     environment:
       - tcc_env_list
@@ -502,9 +486,8 @@ tcc:
 
 tdt:
   resource:
-    node_num:
-      singleton:
-        - tdt_replicas
+    ha:
+      - tdt_replicas
   configuration:
     environment:
       - tdt_env_list
@@ -523,15 +506,13 @@ ticket:
   database:
     name: ticket_txsql_db_name
   resource:
-    node_num:
-      singleton:
-        - ticket_replicas
+    ha:
+      - ticket_replicas
 
 txsql:
   resource:
-    node_num:
-      singleton:
-        - txsql_replicas
+    ha:
+      - txsql_replicas
   configuration:
     environment:
       - txsql_env_list
@@ -541,9 +522,8 @@ txsql:
 
 workflow:
   resource:
-    node_num:
-      singleton:
-        - workflow_replicas
+    ha:
+      - workflow_replicas
   configuration:
     environment:
       - workflow_env_list
@@ -562,9 +542,8 @@ workflow:
 
 yarn:
   resource:
-    node_num:
-      default:
-        - yarn_node_replicas
+    computing_unit:
+      - yarn_node_replicas
     disks:
       sata_disks:
         - yarn_data_disk_replicas
