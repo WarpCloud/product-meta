@@ -12,25 +12,29 @@
           "description": "Kafka可以使用的CPU core数量",
           "display_name": "Kafka CPU核数",
           "name": "kafka_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "Kafka可以使用的最大内存",
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
-          "value": "1024MB"
+          "value": "1024MB",
+          "value_type": "memory"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512G"
+          "value": "512G",
+          "value_type": "storage"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "128G"
+          "value": "128G",
+          "value_type": "storage"
         }
       ],
       "level": "demo"
@@ -41,25 +45,29 @@
           "description": "Kafka可以使用的CPU core数量",
           "display_name": "Kafka CPU核数",
           "name": "kafka_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "Kafka可以使用的最大内存",
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
-          "value": "12288MB"
+          "value": "12288MB",
+          "value_type": "memory"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512G"
+          "value": "512G",
+          "value_type": "storage"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "256G"
+          "value": "256G",
+          "value_type": "storage"
         }
       ],
       "level": "low"
@@ -70,25 +78,29 @@
           "description": "Kafka可以使用的CPU core数量",
           "display_name": "Kafka CPU核数",
           "name": "kafka_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "Kafka可以使用的最大内存",
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "1024G"
+          "value": "1024G",
+          "value_type": "storage"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512G"
+          "value": "512G",
+          "value_type": "storage"
         }
       ],
       "level": "medium"
@@ -99,25 +111,29 @@
           "description": "Kafka可以使用的CPU core数量",
           "display_name": "Kafka CPU核数",
           "name": "kafka_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "Kafka可以使用的最大内存",
           "display_name": "Kafka内存",
           "name": "kafka_memory_limit",
-          "value": "36864MB"
+          "value": "36864MB",
+          "value_type": "memory"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "2048G"
+          "value": "2048G",
+          "value_type": "storage"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512G"
+          "value": "512G",
+          "value_type": "storage"
         }
       ],
       "level": "high"

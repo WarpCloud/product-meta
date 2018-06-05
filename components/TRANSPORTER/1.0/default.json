@@ -12,13 +12,15 @@
           "description": "Transporter可以使用的CPU core数量",
           "display_name": "Transporter CPU核数",
           "name": "tdt_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "Transporter可以使用的最大内存",
           "display_name": "Transporter内存",
           "name": "tdt_memory_limit",
-          "value": "2048MB"
+          "value": "2048MB",
+          "value_type": "memory"
         }
       ],
       "level": "demo"
@@ -29,13 +31,15 @@
           "description": "Transporter可以使用的CPU core数量",
           "display_name": "Transporter CPU核数",
           "name": "tdt_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "Transporter可以使用的最大内存",
           "display_name": "Transporter内存",
           "name": "tdt_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
@@ -46,13 +50,15 @@
           "description": "Transporter可以使用的CPU core数量",
           "display_name": "Transporter CPU核数",
           "name": "tdt_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "Transporter可以使用的最大内存",
           "display_name": "Transporter内存",
           "name": "tdt_memory_limit",
-          "value": "12288MB"
+          "value": "12288MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
@@ -63,13 +69,15 @@
           "description": "Transporter可以使用的CPU core数量",
           "display_name": "Transporter CPU核数",
           "name": "tdt_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "Transporter可以使用的最大内存",
           "display_name": "Transporter内存",
           "name": "tdt_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"
