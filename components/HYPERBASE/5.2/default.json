@@ -12,25 +12,29 @@
           "description": "每个Hyperbase region server可以使用的CPU资源数量",
           "display_name": "HBase CPU核数",
           "name": "hbase_rs_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
           "display_name": "HBase region server内存",
           "name": "hbase_rs_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         },
         {
           "description": "每个Hyperbase master的CPU core数量",
           "display_name": "HBase master CPU核数",
           "name": "hbase_master_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase master可以使用的最大内存",
           "display_name": "HBase master内存",
           "name": "hbase_master_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         }
       ],
       "level": "demo"
@@ -41,25 +45,29 @@
           "description": "每个Hyperbase region server可以使用的CPU资源数量",
           "display_name": "HBase CPU核数",
           "name": "hbase_rs_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
           "display_name": "HBase region server内存",
           "name": "hbase_rs_memory_limit",
-          "value": "16384MB"
+          "value": "16384MB",
+          "value_type": "memory"
         },
         {
           "description": "每个Hyperbase master的CPU core数量",
           "display_name": "HBase master CPU核数",
           "name": "hbase_master_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase master可以使用的最大内存",
           "display_name": "HBase master内存",
           "name": "hbase_master_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
@@ -70,25 +78,29 @@
           "description": "每个Hyperbase region server可以使用的CPU资源数量",
           "display_name": "HBase CPU核数",
           "name": "hbase_rs_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
           "display_name": "HBase region server内存",
           "name": "hbase_rs_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         },
         {
           "description": "每个Hyperbase master的CPU core数量",
           "display_name": "HBase master CPU核数",
           "name": "hbase_master_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase master可以使用的最大内存",
           "display_name": "HBase master内存",
           "name": "hbase_master_memory_limit",
-          "value": "12288MB"
+          "value": "12288MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
@@ -99,25 +111,29 @@
           "description": "每个Hyperbase region server可以使用的CPU资源数量",
           "display_name": "HBase CPU核数",
           "name": "hbase_rs_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
           "display_name": "HBase region server内存",
           "name": "hbase_rs_memory_limit",
-          "value": "36864MB"
+          "value": "36864MB",
+          "value_type": "memory"
         },
         {
           "description": "每个Hyperbase master的CPU core数量",
           "display_name": "HBase master CPU核数",
           "name": "hbase_master_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "每个Hyperbase master可以使用的最大内存",
           "display_name": "HBase master内存",
           "name": "hbase_master_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"

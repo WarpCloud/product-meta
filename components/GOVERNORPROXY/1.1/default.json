@@ -12,64 +12,72 @@
           "description": "GovernorProxy服务可以使用的CPU core数量",
           "display_name": "GovernorProxy CPU核数",
           "name": "governor_proxy_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "GovernorProxy可以使用的最大内存",
           "display_name": "GovernorProxy内存",
           "name": "governor_proxy_memory_limit",
-          "value": "1024MB"
+          "value": "1024MB",
+          "value_type": "memory"
         }
       ],
       "level": "demo"
     },
     {
       "configs": [
-         {
+        {
           "description": "GovernorProxy服务可以使用的CPU core数量",
           "display_name": "GovernorProxy CPU核数",
           "name": "governor_proxy_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "GovernorProxy可以使用的最大内存",
           "display_name": "GovernorProxy内存",
           "name": "governor_proxy_memory_limit",
-          "value": "1024MB"
+          "value": "1024MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
     },
     {
       "configs": [
-         {
+        {
           "description": "GovernorProxy服务可以使用的CPU core数量",
           "display_name": "GovernorProxy CPU核数",
           "name": "governor_proxy_cpu_limit",
-          "value": "0.2"
+          "value": "0.2",
+          "value_type": "cpu"
         },
         {
           "description": "GovernorProxy可以使用的最大内存",
           "display_name": "GovernorProxy内存",
           "name": "governor_proxy_memory_limit",
-          "value": "2048MB"
+          "value": "2048MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
     },
     {
       "configs": [
-         {
+        {
           "description": "GovernorProxy服务可以使用的CPU core数量",
           "display_name": "GovernorProxy CPU核数",
           "name": "governor_proxy_cpu_limit",
-          "value": "0.5"
+          "value": "0.5",
+          "value_type": "cpu"
         },
         {
           "description": "GovernorProxy可以使用的最大内存",
           "display_name": "GovernorProxy内存",
           "name": "governor_proxy_memory_limit",
-          "value": "2048MB"
+          "value": "2048MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"

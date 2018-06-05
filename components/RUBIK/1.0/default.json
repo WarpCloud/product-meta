@@ -12,13 +12,15 @@
           "description": "Rubik可以使用的CPU core数量",
           "display_name": "Rubik CPU核数",
           "name": "rubik_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "Rubik可以使用的最大内存",
           "display_name": "Rubik内存",
           "name": "rubik_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
@@ -29,13 +31,15 @@
           "description": "Rubik可以使用的CPU core数量",
           "display_name": "Rubik CPU核数",
           "name": "rubik_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "Rubik可以使用的最大内存",
           "display_name": "Rubik内存",
           "name": "rubik_memory_limit",
-          "value": "12288MB"
+          "value": "12288MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
@@ -46,13 +50,15 @@
           "description": "Rubik可以使用的CPU core数量",
           "display_name": "Rubik CPU核数",
           "name": "rubik_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "Rubik可以使用的最大内存",
           "display_name": "Rubik内存",
           "name": "rubik_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"

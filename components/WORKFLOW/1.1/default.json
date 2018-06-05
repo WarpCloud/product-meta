@@ -12,13 +12,15 @@
           "description": "Workflow可以使用的CPU core数量",
           "display_name": "Workflow CPU核数",
           "name": "workflow_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "Workflow可以使用的最大内存",
           "display_name": "Workflow内存",
           "name": "workflow_memory_limit",
-          "value": "1024MB"
+          "value": "1024MB",
+          "value_type": "memory"
         }
       ],
       "level": "demo"
@@ -29,13 +31,15 @@
           "description": "Workflow可以使用的CPU core数量",
           "display_name": "Workflow CPU核数",
           "name": "workflow_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "Workflow可以使用的最大内存",
           "display_name": "Workflow内存",
           "name": "workflow_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
@@ -46,13 +50,15 @@
           "description": "Workflow可以使用的CPU core数量",
           "display_name": "Workflow CPU核数",
           "name": "workflow_cpu_limit",
-          "value": "12"
+          "value": "12",
+          "value_type": "cpu"
         },
         {
           "description": "Workflow可以使用的最大内存",
           "display_name": "Workflow内存",
           "name": "workflow_memory_limit",
-          "value": "12288MB"
+          "value": "12288MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
@@ -63,13 +69,15 @@
           "description": "Workflow可以使用的CPU core数量",
           "display_name": "Workflow CPU核数",
           "name": "workflow_cpu_limit",
-          "value": "16"
+          "value": "16",
+          "value_type": "cpu"
         },
         {
           "description": "Workflow可以使用的最大内存",
           "display_name": "Workflow内存",
           "name": "workflow_memory_limit",
-          "value": "24576MB"
+          "value": "24576MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"
