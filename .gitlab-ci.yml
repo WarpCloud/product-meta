@@ -3,7 +3,7 @@ before_script:
     - source /etc/profile
     - source /root/.bashrc
     - export PUB_HARBOR=172.16.1.99
-    - export PUB_MAJOR_VERSION=tdc-1.1
+    - export PUB_MAJOR_VERSION=tdc-1.2
 
 stages:
   - precommit_build
