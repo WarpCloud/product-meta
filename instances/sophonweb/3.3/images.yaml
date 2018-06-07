@@ -2,8 +2,6 @@ instance-type: sophonweb
 major-version: '3.3'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: transwarp-5.1.4-final
-    min: transwarp-5.1.0-final
   - max: transwarp-5.1
     min: transwarp-5.1
 images:
@@ -11,124 +9,19 @@ images:
     variable: sophon_server_image
 releases:
   - dependencies:
-    - max-version: transwarp-5.1.0-final
-      min-version: transwarp-5.1.0-final
-      type: hdfs
-    - max-version: transwarp-5.1.0-final
-      min-version: transwarp-5.1.0-final
-      type: yarn
-    - max-version: transwarp-5.1.0-final
-      min-version: transwarp-5.1.0-final
-      type: zookeeper
-    - max-version: tdc-1.0.0-rc9
-      min-version: tdc-1.0.0-rc0
-      type: txsql
-    - max-version: transwarp-5.1.0-final
-      min-version: transwarp-5.1.0-final
-      type: redis
-    final: true
-    image-version:
-      sophon_server_image: transwarp-5.1.0-final
-    release-version: transwarp-5.1.0-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.1-final
-      min-version: transwarp-5.1.1-final
-      type: hdfs
-    - max-version: transwarp-5.1.1-final
-      min-version: transwarp-5.1.1-final
-      type: yarn
-    - max-version: transwarp-5.1.1-final
-      min-version: transwarp-5.1.1-final
-      type: zookeeper
-    - max-version: tdc-1.0.0-final
-      min-version: tdc-1.0.0-rc0
-      type: txsql
-    - max-version: transwarp-5.1.1-final
-      min-version: transwarp-5.1.1-final
-      type: redis
-    final: true
-    image-version:
-      sophon_server_image: transwarp-5.1.1-final
-    release-version: transwarp-5.1.1-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.2-final
-      min-version: transwarp-5.1.2-final
-      type: hdfs
-    - max-version: transwarp-5.1.2-final
-      min-version: transwarp-5.1.2-final
-      type: yarn
-    - max-version: transwarp-5.1.2-final
-      min-version: transwarp-5.1.2-final
-      type: zookeeper
-    - max-version: tdc-1.0.0-final
-      min-version: tdc-1.0.0-rc0
-      type: txsql
-    - max-version: transwarp-5.1.2-final
-      min-version: transwarp-5.1.2-final
-      type: redis
-    final: true
-    image-version:
-      sophon_server_image: transwarp-5.1.2-final
-    release-version: transwarp-5.1.2-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.3-final
-      min-version: transwarp-5.1.3-final
-      type: hdfs
-    - max-version: transwarp-5.1.3-final
-      min-version: transwarp-5.1.3-final
-      type: yarn
-    - max-version: transwarp-5.1.3-final
-      min-version: transwarp-5.1.3-final
-      type: zookeeper
-    - max-version: tdc-1.0.0-final
-      min-version: tdc-1.0.0-rc0
-      type: txsql
-    - max-version: transwarp-5.1.3-final
-      min-version: transwarp-5.1.3-final
-      type: redis
-    final: true
-    image-version:
-      sophon_server_image: transwarp-5.1.3-final
-    release-version: transwarp-5.1.3-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.4-final
-      min-version: transwarp-5.1.4-final
-      type: hdfs
-    - max-version: transwarp-5.1.4-final
-      min-version: transwarp-5.1.4-final
-      type: yarn
-    - max-version: transwarp-5.1.4-final
-      min-version: transwarp-5.1.4-final
-      type: zookeeper
-    - max-version: tdc-1.0.0-final
-      min-version: tdc-1.0.0-rc1
-      type: txsql
-    - max-version: transwarp-5.1.4-final
-      min-version: transwarp-5.1.4-final
-      type: redis
-    final: true
-    image-version:
-      sophon_server_image: transwarp-5.1.4-final
-    release-version: transwarp-5.1.4-final
-
-  - dependencies:
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: hdfs
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: yarn
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: zookeeper
-    - max-version: tdc-1.0
+    - max-version: tdc-1.1
       min-version: tdc-1.0
       type: txsql
-    - max-version: transwarp-5.1
+    - max-version: transwarp-5.2
       min-version: transwarp-5.1
       type: redis
     final: false
