@@ -12,13 +12,15 @@
           "description": "Redis 可以使用的CPU core数量",
           "display_name": "Redis CPU核数",
           "name": "redis_cpu_limit",
-          "value": "0.1"
+          "value": "0.1",
+          "value_type": "cpu"
         },
         {
           "description": "Redis 可以使用的最大内存",
           "display_name": "Redis 内存",
           "name": "redis_memory_limit",
-          "value": "1024MB"
+          "value": "1024MB",
+          "value_type": "memory"
         }
       ],
       "level": "demo"
@@ -29,13 +31,15 @@
           "description": "Redis 可以使用的CPU core数量",
           "display_name": "Redis CPU核数",
           "name": "redis_cpu_limit",
-          "value": "2"
+          "value": "2",
+          "value_type": "cpu"
         },
         {
           "description": "Redis 可以使用的最大内存",
           "display_name": "Redis 内存",
           "name": "redis_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         }
       ],
       "level": "low"
@@ -46,13 +50,15 @@
           "description": "Redis 可以使用的CPU core数量",
           "display_name": "Redis CPU核数",
           "name": "redis_cpu_limit",
-          "value": "4"
+          "value": "4",
+          "value_type": "cpu"
         },
         {
           "description": "Redis 可以使用的最大内存",
           "display_name": "Redis 内存",
           "name": "redis_memory_limit",
-          "value": "6144MB"
+          "value": "6144MB",
+          "value_type": "memory"
         }
       ],
       "level": "medium"
@@ -63,13 +69,15 @@
           "description": "Redis 可以使用的CPU core数量",
           "display_name": "Redis CPU核数",
           "name": "redis_cpu_limit",
-          "value": "6"
+          "value": "6",
+          "value_type": "cpu"
         },
         {
           "description": "Redis 可以使用的最大内存",
           "display_name": "Redis 内存",
           "name": "redis_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         }
       ],
       "level": "high"
