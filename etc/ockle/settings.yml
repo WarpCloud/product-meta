@@ -145,7 +145,19 @@ service_for_development:
       description: "轻量的科学计算开发工具。支持使用R、Scala和SQL做数据分析，提供方便的交互界面，可实现数据清洗、机器学习等任务并可以团队协作处理。"
       description_en: "Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala, Python and more. Some charts are already included in notebook for data visualization. It contains interpreters for Transwarp Discover and Spark so that data scientists can analysis big data easily."
 
-  WORKFLOW: 
+  WEBLOGIC:
+  - port: 7001
+    generate_name: weblogic-admin
+    protocol: HTTP
+    path: "/console"
+    require_gateway_registration: true
+    display:
+      display_name: WebLogic
+      display_name_en: WebLogic
+      description: "开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。"
+      description_en: "Java EE application server."
+
+  WORKFLOW:
   - port: 9091
     generate_name: workflow
     protocol: HTTP

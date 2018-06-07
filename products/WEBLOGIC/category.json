@@ -1,0 +1,8 @@
+{
+  "category_name": "WEBLOGIC",
+  "description": "WebLogic是Oracle出品的application server，用于开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器，将Java的动态功能和Java Enterprise标准的安全性引入大型网络应用的开发、集成、部署和管理之中。",
+  "display_name": "WebLogic",
+  "description_en": "Oracle WebLogic Server is a Java EE application server currently developed by Oracle Corporation.",
+  "display_name_en": "WebLogic",
+  "final": true
+}

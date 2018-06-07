@@ -56,7 +56,6 @@ codis:
       - codis_fe_replicas
     computing_unit:
       - codis_server_replicas
-
   configuration:
     environment:
       - codis_dash_env_list
@@ -169,7 +168,6 @@ hdfs:
     computing_unit:
       - hdfs_data_replicas
       - hdfs_journal_replicas
-
     disks:
       sata_disks:
         - hdfs_data_disk_replicas
@@ -392,7 +390,6 @@ notification:
       default:
         - notification_image
 
-
 pilot:
   resource:
     ha:
@@ -532,6 +529,17 @@ txsql:
   image:
     default:
       - txsql_image
+
+weblogic:
+  resource:
+    computing_unit:
+      - ms_replicas
+  configuration:
+    environment:
+      - ms_env_list
+  image:
+    default:
+      - weblogic_image
 
 workflow:
   resource:
