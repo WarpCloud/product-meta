@@ -394,6 +394,9 @@ notification:
 
 
 pilot:
+  resource:
+    ha:
+      - pilot_replicas
   configuration:
     environment:
       - pilot_env_list
