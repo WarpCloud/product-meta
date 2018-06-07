@@ -2,7 +2,7 @@
   "edition": "5.1",
   "final": true,
   "components": [
-    "SOPHON-3.3",
+    "SOPHONWEB-3.3",
     "YARN-5.1",
     "TERMINAL-1.0",
     "PILOT-1.0",

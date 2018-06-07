@@ -340,6 +340,18 @@ service_for_development:
       description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。通过它用户可以对Kafka集群进行监控，利用方便的选项创建Topic并定制分区的分配，以及实现一系列与Kafka相关的常用操作。"
       description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
 
+
+  SOPHONWEB:
+  - port: 30123
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "Sophon Web"
+      display_name_en: "Sophon Web"
+      description: "Sophon Web 提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
+      description_en: "Sophon Web provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+
 # A list of instances that need to open ha for default
 instance_open_ha:
   - tcc

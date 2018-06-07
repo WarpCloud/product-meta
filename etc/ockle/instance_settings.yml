@@ -463,6 +463,16 @@ sophon:
 #    security_service:
 #      env_cfg: GUARDIAN_SERVICE_ID
 
+sophonweb:
+  security:
+    principal_list:
+      - hive
+      - yarn
+      - HTTP
+    security_on:
+      - sophon_mounted_kerberos
+      - sophon_enable_kerberos
+
 terminal:
   resource:
     ha:
