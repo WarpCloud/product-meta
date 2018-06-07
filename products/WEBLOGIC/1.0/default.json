@@ -1,0 +1,26 @@
+{
+  "edition": "1.0",
+  "final": true,
+  "components": [
+    "WEBLOGIC-1.0"
+  ],
+  "templates": [
+    {
+        "level": "demo",
+        "description": "演示模式"
+    },
+    {
+        "level": "low",
+        "description": "最佳性价比模式"
+    },
+    {
+        "level": "medium",
+        "description": "性能和性价比最佳配比模式"
+    },
+    {
+        "level": "high",
+        "description": "最佳性能模式"
+    }
+  ],
+  "is_distributed": true
+}
