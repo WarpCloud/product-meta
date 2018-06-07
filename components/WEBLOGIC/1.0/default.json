@@ -12,37 +12,43 @@
           "description": "WebLogic Admin Server 内存",
           "display_name": "Admin Server 内存",
           "name": "admin_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Admin Server CPU",
           "display_name": "Admin Server CPU",
           "name": "admin_cpu_limit",
-          "value": "1"
+          "value": "1",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "10"
+          "value": "10",
+          "value_type": "storage"
         },
         {
           "description": "WebLogic Managed Server 内存",
           "display_name": "Managed Server 内存",
           "name": "ms_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Managed Server CPU",
           "display_name": "Managed Server CPU",
           "name": "ms_cpu_limit",
-          "value": "1"
+          "value": "1",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "20"
+          "value": "20",
+          "value_type": "storage"
         }
       ],
       "level": "demo"
@@ -53,37 +59,43 @@
           "description": "WebLogic Admin Server 内存",
           "display_name": "Admin Server 内存",
           "name": "admin_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Admin Server CPU",
           "display_name": "Admin Server CPU",
           "name": "admin_cpu_limit",
-          "value": "2"
+          "value": "2",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "10"
+          "value": "10",
+          "value_type": "storage"
         },
         {
           "description": "WebLogic Managed Server 内存",
           "display_name": "Managed Server 内存",
           "name": "ms_memory_limit",
-          "value": "4096MB"
+          "value": "4096MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Managed Server CPU",
           "display_name": "Managed Server CPU",
           "name": "ms_cpu_limit",
-          "value": "2"
+          "value": "2",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "20"
+          "value": "20",
+          "value_type": "storage"
         }
       ],
       "level": "low"
@@ -94,37 +106,43 @@
           "description": "WebLogic Admin Server 内存",
           "display_name": "Admin Server 内存",
           "name": "admin_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Admin Server CPU",
           "display_name": "Admin Server CPU",
           "name": "admin_cpu_limit",
-          "value": "4"
+          "value": "4",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "15"
+          "value": "15",
+          "value_type": "storage"
         },
         {
           "description": "WebLogic Managed Server 内存",
           "display_name": "Managed Server 内存",
           "name": "ms_memory_limit",
-          "value": "8192MB"
+          "value": "8192MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Managed Server CPU",
           "display_name": "Managed Server CPU",
           "name": "ms_cpu_limit",
-          "value": "2"
+          "value": "2",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "30"
+          "value": "30",
+          "value_type": "storage"
         }
       ],
       "level": "medium"
@@ -135,37 +153,43 @@
           "description": "WebLogic Admin Server 内存",
           "display_name": "Admin Server 内存",
           "name": "admin_memory_limit",
-          "value": "8196MB"
+          "value": "8196MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Admin Server CPU",
           "display_name": "Admin Server CPU",
           "name": "admin_cpu_limit",
-          "value": "8"
+          "value": "8",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "20"
+          "value": "20",
+          "value_type": "storage"
         },
         {
           "description": "WebLogic Managed Server 内存",
           "display_name": "Managed Server 内存",
           "name": "ms_memory_limit",
-          "value": "8196MB"
+          "value": "8196MB",
+          "value_type": "memory"
         },
         {
           "description": "WebLogic Managed Server CPU",
           "display_name": "Managed Server CPU",
           "name": "ms_cpu_limit",
-          "value": "8"
+          "value": "8",
+          "value_type": "cpu"
         },
         {
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "40"
+          "value": "40",
+          "value_type": "storage"
         }
       ],
       "level": "high"
