@@ -3,8 +3,8 @@
   "component_type": "SOPHONWEB",
   "source": "transwarp",
   "description": "交互式数据挖掘，深度学习",
-  "edition": "3.3",
-  "name": "SOPHONWEB-3.3",
+  "edition": "1.2",
+  "name": "SOPHONWEB-1.2",
   "templates": [
     {
       "configs": [

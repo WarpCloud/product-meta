@@ -2,7 +2,9 @@
   "edition": "5.2",
   "final": true,
   "components": [
-    "SOPHONWEB-3.3",
+    "HYPERBASE-5.2",
+    "SEARCH-5.2",
+    "SOPHONWEB-1.2",
     "YARN-5.2",
     "TERMINAL-1.1",
     "PILOT-1.1",
