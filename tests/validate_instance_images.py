@@ -37,7 +37,7 @@ class Product(object):
     def __init__(self, product, json_path, version):
         self.component = list()
         name = str(json_path).split('products/')[1]
-        name = name.split('/5.1')[0]
+        name = name.split('/')[0]
         self.name = name
         self.edition = version
         components = product.get('components')
