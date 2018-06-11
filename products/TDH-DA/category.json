@@ -4,5 +4,6 @@
   "display_name": "数据分析与挖掘",
   "description_en": "TDH-DA is a platform mostly serves for data scientists, offering plentiful data  mining functions. More than 60 distributed machine learning algorithms and a variety of industry models are included to facilitate conversion from data into valuable information.",
   "display_name_en": "Data Analysis and Mining",
+  "source": "transwarp",
   "final": true
 }

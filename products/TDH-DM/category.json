@@ -4,5 +4,6 @@
   "display_name": "数据集市",
   "description_en": "Data mart serves for departmental-level business, and various models are developed to organize data so as to achieve the construction of interactive analysis and automated reporting applications.",
   "display_name_en": "Data Mart",
+  "source": "transwarp",
   "final": true
 }

@@ -4,5 +4,6 @@
   "display_name": "WebLogic",
   "description_en": "Oracle WebLogic Server is a Java EE application server currently developed by Oracle Corporation.",
   "display_name_en": "WebLogic",
+  "source": "third-party",
   "final": true
 }
