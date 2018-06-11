@@ -4,5 +4,6 @@
   "display_name": "深度学习",
   "description_en": "TDH-DL is a data processing platform used for deep learning and artificial intelligence development. It is designed to help enterprises achieve highly intelligent information processing, assisting in enterprise operation and enhancing the efficiency of business man",
   "display_name_en": "Deep Learning",
+  "source": "transwarp",
   "final": true
 }
