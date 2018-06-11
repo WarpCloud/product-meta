@@ -1,0 +1,47 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "despatcher",
+            "application_type": "DESPATCHER"
+         },
+         "configs": {
+            "despatcher_cpu_limit": 1,
+            "despatcher_cpu_request": 0.10000000000000001,
+            "despatcher_memory_limit": 4,
+            "despatcher_memory_request": 1
+         },
+         "dependencies": [
+            {
+               "moduleName": "guardian",
+               "name": "guardian"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            },
+            {
+               "moduleName": "gn-tdc",
+               "name": "gn-tdc"
+            },
+            {
+               "moduleName": "ockle",
+               "name": "ockle"
+            },
+            {
+               "moduleName": "workflow",
+               "name": "workflow"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "despatcher",
+         "name": "despatcher-despatcher",
+         "version": "5.1"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

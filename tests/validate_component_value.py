@@ -30,7 +30,8 @@ if __name__ == '__main__':
     for item in files.items():
         file_name = item[0]
         template = item[1].get('templates')
-        print("checking file {}".format(file_name))
+        name = str(file_name).split("components")[1]
+        print("checking file {}".format(name))
         if template is None:
             continue
         for configs in template:
