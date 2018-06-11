@@ -42,12 +42,6 @@
       "value": "0.0.0.0"
     },
     {
-      "default": "tdtuser",
-      "groups": [],
-      "name": "tdt.jdbc.user.name",
-      "value": "tdtuser"
-    },
-    {
       "default": "password",
       "groups": [],
       "name": "tdt.jdbc.password",

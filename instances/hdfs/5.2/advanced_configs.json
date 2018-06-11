@@ -75,12 +75,6 @@
       "value": "50075"
     },
     {
-      "default": "50020",
-      "groups": [],
-      "name": "datanode.ipc-port",
-      "value": "50020"
-    },
-    {
       "default": "4096MB",
       "groups": [],
       "name": "default.heap.size",
