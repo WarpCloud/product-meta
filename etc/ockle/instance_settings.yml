@@ -40,6 +40,9 @@ common:
     krb_principal_suffix: Transwarp_Principal_Suffix
 
 cas:
+  resource:
+    ha:
+      - cas_server_replicas
   configuration:
     environment:
       - cas_config_server_env_list
@@ -154,6 +157,9 @@ governor-proxy:
       server_address: cas_server_address
 
 guardian:
+  resource:
+    ha:
+      - guardian_server_replicas
   configuration:
     environment:
     - apacheds_env_list
