@@ -13,14 +13,18 @@
           "display_name": "Notebook CPU核数",
           "name": "notebook_cpu_limit",
           "value": "0.1",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Notebook可以使用的最大内存",
           "display_name": "Notebook内存",
           "name": "notebook_memory_limit",
           "value": "1024MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "demo"
@@ -32,14 +36,18 @@
           "display_name": "Notebook CPU核数",
           "name": "notebook_cpu_limit",
           "value": "6",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Notebook可以使用的最大内存",
           "display_name": "Notebook内存",
           "name": "notebook_memory_limit",
           "value": "8192MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "low"
@@ -51,14 +59,18 @@
           "display_name": "Notebook CPU核数",
           "name": "notebook_cpu_limit",
           "value": "12",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Notebook可以使用的最大内存",
           "display_name": "Notebook内存",
           "name": "notebook_memory_limit",
           "value": "12288MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "medium"
@@ -70,14 +82,18 @@
           "display_name": "Notebook CPU核数",
           "name": "notebook_cpu_limit",
           "value": "16",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Notebook可以使用的最大内存",
           "display_name": "Notebook内存",
           "name": "notebook_memory_limit",
           "value": "24576MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "high"

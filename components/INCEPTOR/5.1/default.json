@@ -13,42 +13,54 @@
           "display_name": "Executor CPU核数",
           "name": "inceptor_executor_cpu_limit",
           "value": "1",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
           "value": "3072MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Inceptor server的CPU core数量",
           "display_name": "Inceptor server CPU核数",
           "name": "inceptor_master_cpu_limit",
           "value": "1",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Inceptor server可以使用的最大内存",
           "display_name": "Inceptor server内存",
           "name": "inceptor_master_memory_limit",
           "value": "4096MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Shuffle数据盘数量",
           "display_name": "Shuffle数据盘数量",
           "name": "inceptor_shuffle_dir_counts",
           "value": "4",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         },
         {
           "description": "每个节点SSD盘数量",
           "display_name": "每个节点SSD盘数量",
           "name": "ssd_disks",
           "value": "0",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "demo"
@@ -60,42 +72,54 @@
           "display_name": "Executor CPU核数",
           "name": "inceptor_executor_cpu_limit",
           "value": "6",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
           "value": "12288MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Inceptor server的CPU core数量",
           "display_name": "Inceptor server CPU核数",
           "name": "inceptor_master_cpu_limit",
           "value": "6",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Inceptor server可以使用的最大内存",
           "display_name": "Inceptor server内存",
           "name": "inceptor_master_memory_limit",
           "value": "8192MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Shuffle数据盘数量",
           "display_name": "Shuffle数据盘数量",
           "name": "inceptor_shuffle_dir_counts",
           "value": "4",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         },
         {
           "description": "每个节点SSD盘数量",
           "display_name": "每个节点SSD盘数量",
           "name": "ssd_disks",
           "value": "0",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "low"
@@ -107,42 +131,54 @@
           "display_name": "Executor CPU核数",
           "name": "inceptor_executor_cpu_limit",
           "value": "11",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
           "value": "24576MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Inceptor server的CPU core数量",
           "display_name": "Inceptor server CPU核数",
           "name": "inceptor_master_cpu_limit",
           "value": "11",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Inceptor server可以使用的最大内存",
           "display_name": "Inceptor server内存",
           "name": "inceptor_master_memory_limit",
           "value": "12288MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Shuffle数据盘数量",
           "display_name": "Shuffle数据盘数量",
           "name": "inceptor_shuffle_dir_counts",
           "value": "8",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         },
         {
           "description": "每个节点SSD盘数量",
           "display_name": "每个节点SSD盘数量",
           "name": "ssd_disks",
           "value": "1",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "medium"
@@ -154,42 +190,54 @@
           "display_name": "Executor CPU核数",
           "name": "inceptor_executor_cpu_limit",
           "value": "16",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
           "value": "36864MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Inceptor server的CPU core数量",
           "display_name": "Inceptor server CPU核数",
           "name": "inceptor_master_cpu_limit",
           "value": "16",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "Inceptor server可以使用的最大内存",
           "display_name": "Inceptor server内存",
           "name": "inceptor_master_memory_limit",
           "value": "24576MB",
-          "value_type": "memory"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         },
         {
           "description": "Shuffle数据盘数量",
           "display_name": "Shuffle数据盘数量",
           "name": "inceptor_shuffle_dir_counts",
           "value": "12",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         },
         {
           "description": "每个节点SSD盘数量",
           "display_name": "每个节点SSD盘数量",
           "name": "ssd_disks",
           "value": "3",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "high"

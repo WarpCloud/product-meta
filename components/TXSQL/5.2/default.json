@@ -13,14 +13,18 @@
           "display_name": "TXSQL CPU核数",
           "name": "txsql_cpu_limit",
           "value": "0.1",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "TXSQL可以使用的最大内存",
           "display_name": "TXSQL内存",
           "name": "txsql_mem_limit",
           "value": "1024MB",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "demo"
@@ -32,14 +36,18 @@
           "display_name": "TXSQL CPU核数",
           "name": "txsql_cpu_limit",
           "value": "2",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "TXSQL可以使用的最大内存",
           "display_name": "TXSQL内存",
           "name": "txsql_mem_limit",
           "value": "4096MB",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "low"
@@ -51,14 +59,18 @@
           "display_name": "TXSQL CPU核数",
           "name": "txsql_cpu_limit",
           "value": "4",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "TXSQL可以使用的最大内存",
           "display_name": "TXSQL内存",
           "name": "txsql_mem_limit",
           "value": "8192MB",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "medium"
@@ -70,14 +82,18 @@
           "display_name": "TXSQL CPU核数",
           "name": "txsql_cpu_limit",
           "value": "8",
-          "value_type": "cpu"
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
         },
         {
           "description": "TXSQL可以使用的最大内存",
           "display_name": "TXSQL内存",
           "name": "txsql_mem_limit",
           "value": "12288MB",
-          "value_type": "num"
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
         }
       ],
       "level": "high"
