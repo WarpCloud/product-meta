@@ -41,3 +41,5 @@ if __name__ == '__main__':
                 assert object.get('name') != None
                 assert object.get('display_name') != None
                 assert object.get('description') != None
+                assert object.get('min') !=None
+                assert object.get('max') !=None
