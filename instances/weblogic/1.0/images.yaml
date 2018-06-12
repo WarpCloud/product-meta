@@ -1,15 +1,15 @@
 instance-type: weblogic
 major-version: '1.0'
-min-tdc-version: tdc-1.0.0-rc0
+min-tdc-version: tdc-1.1
 hot-fix-ranges:
-  - max: 12.2.1.3
-    min: 12.2.1.3
+  - max: tdc-1.1
+    min: tdc-1.1
 images:
 - name: weblogic
   variable: weblogic_image
 releases:
   - dependencies: []
-    final: true
+    final: false
     image-version:
-      weblogic_image: 12.2.1.3
-    release-version: 12.2.1.3
+      weblogic_image: tdc-1.1
+    release-version: tdc-1.1
