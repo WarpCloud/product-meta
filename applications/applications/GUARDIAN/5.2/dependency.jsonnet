@@ -7,27 +7,13 @@ function(config={})
   local appName = config.application_name;
 
   local appVersion = config.application_version;
-  local casVersion = "1.1";
 
   local _txsqlModuleName = "txsql";
-  local _casModuleName = "cas";
-  local _guardianModuleName = "guardian";
+  local _guardianModuleName = "guardian-cas";
 
   //-------------------
   // Dependent modules
   //-------------------
-
-  local cas = t.createInstance(_casModuleName, config, casVersion) +
-    r.moduleResource(_casModuleName, config) +
-    {
-      dependencies: [{
-        moduleName: _guardianModuleName,
-        name: appName + "-" + _guardianModuleName,
-      },{
-        moduleName: _txsqlModuleName,
-        name: _txsqlModuleName,
-      }],
-    };
 
   local guardian = t.createInstance(_guardianModuleName, config, appVersion) +
     r.moduleResource(_guardianModuleName, config) +
@@ -39,5 +25,5 @@ function(config={})
     };
 
   t.getDefaultSettings(config) + {
-    instance_list: [guardian, cas],
+    instance_list: [guardian],
   }

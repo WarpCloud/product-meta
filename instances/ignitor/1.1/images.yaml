@@ -20,7 +20,7 @@ releases:
       type: simmail
     - max-version: tdc-1.1
       min-version: tdc-1.1
-      type: guardian
+      type: guardian-cas
     final: false
     image-version:
       ignitor_image: tdc-1.1
