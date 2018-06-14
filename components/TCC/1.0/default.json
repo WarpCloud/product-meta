@@ -1,6 +1,7 @@
 {
   "name": "TCC-1.0",
   "component_type": "TCC",
+  "source": "transwarp",
   "description": "Transwarp Cloud Console",
   "edition": "1.0",
   "category": "SYSTEM",

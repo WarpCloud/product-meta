@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "SLIPSTREAM",
-  "dependencies": "HDFS, YARN",
+  "source": "transwarp",
   "description": "实时计算引擎",
   "edition": "5.1",
   "name": "SLIPSTREAM-5.1",

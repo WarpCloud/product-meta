@@ -1,9 +1,9 @@
 {
   "name": "FILEBEAT-1.1",
   "component_type": "FILEBEAT",
+  "source": "transwarp",
   "description": "File changes detection and content consuming service",
   "edition": "1.1",
   "category": "SYSTEM",
-  "dependencies": "",
   "configs": []
 }

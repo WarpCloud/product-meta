@@ -1,7 +1,7 @@
 {
   "category": "TDH开发套件",
   "component_type": "RUBIK",
-  "dependencies": "INCEPTOR",
+  "source": "transwarp",
   "description": "OLAP Cube设计工具",
   "edition": "1.1",
   "name": "RUBIK-1.1",

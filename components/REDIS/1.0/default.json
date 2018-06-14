@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "REDIS",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "Redis key-value 存储系统",
   "edition": "1.0",
   "name": "REDIS-1.0",

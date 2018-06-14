@@ -1,6 +1,7 @@
 {
   "name": "LOGSTASH-1.1",
   "component_type": "LOGSTASH",
+  "source": "transwarp",
   "description": "service to incrementally consume logs and transfer to destination",
   "edition": "1.1",
   "category": "SYSTEM",
