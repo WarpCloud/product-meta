@@ -7,41 +7,43 @@ function(config={})
   local appName = config.application_name;
   local appVersion = config.application_version;
 
-  local use_gntenant = t.trueOrFalse(config.user_config, "use_gntenant");
-
+  local _ecoModuleName = "tdc-eco";
   local _txsqlModuleName = "txsql";
-  local _ockleModuleName = "ockle";
-  local _tccModuleName = "tcc";
-  local _ticketModuleName = "ticket";
-  local _simmailModuleName = "simmail";
   local _guardianModuleName = "guardian-cas";
-  local _kongModuleName = "kong";
-  local _gntenantModuleName = "gn-tenant";
+  local _ockleModuleName = "ockle";
+  local _ignitorModuleName = "ignitor";
+  local _ticketModuleName = "ticket";
+  local _despatcherModuleName = "despatcher";
 
   //-------------------
   // Dependent modules
   //-------------------
-  local depend_gntenant =
-    if use_gntenant then [{
-      moduleName: _gntenantModuleName,
-      name: _gntenantModuleName,
-    }] else [];
 
-  local tcc = t.createInstance(_tccModuleName, config, appVersion) +
-    r.moduleResource(_tccModuleName, config) +
+  local eco = t.createInstance(_ecoModuleName, config, appVersion) +
+    r.moduleResource(_ecoModuleName, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
       },{
+        moduleName: _guardianModuleName,
+        name: _guardianModuleName,
+      },{
+        moduleName: _ockleModuleName,
+        name: _ockleModuleName,
+      },{
+        moduleName: _ignitorModuleName,
+        name: _ignitorModuleName,
+      },{
         moduleName: _ticketModuleName,
         name: _ticketModuleName,
       },{
-        moduleName: _guardianModuleName,
-        name: _guardianModuleName,
-      }] + depend_gntenant,
+        moduleName: _despatcherModuleName,
+        name: _despatcherModuleName,
+      }],
     };
 
   t.getDefaultSettings(config) + {
-    instance_list: [tcc],
+    instance_list: [eco],
   }
+
