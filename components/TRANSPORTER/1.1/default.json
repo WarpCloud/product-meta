@@ -1,7 +1,7 @@
 {
   "category": "TDH开发套件",
   "component_type": "TRANSPORTER",
-  "dependencies": "HDFS, INCEPTOR",
+  "source": "transwarp",
   "description": "数据流",
   "edition": "1.1",
   "name": "TRANSPORTER-1.1",

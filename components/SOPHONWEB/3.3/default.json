@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "SOPHONWEB",
-  "dependencies": "HDFS, YARN, REDIS",
+  "source": "transwarp",
   "description": "交互式数据挖掘，深度学习",
   "edition": "3.3",
   "name": "SOPHONWEB-3.3",

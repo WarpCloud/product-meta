@@ -1,7 +1,7 @@
 {
   "category": "TDH开发套件",
   "component_type": "GOVERNOR",
-  "dependencies": "HDFS, HYPERBASE, KAFKA, SEARCH, TXSQL",
+  "source": "transwarp",
   "description": "元数据管理",
   "edition": "1.1",
   "name": "GOVERNOR-1.1",

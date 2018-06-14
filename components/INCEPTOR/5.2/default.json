@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "INCEPTOR",
-  "dependencies": "HDFS",
+  "source": "transwarp",
   "description": "分析型数据库",
   "edition": "5.2",
   "name": "INCEPTOR-5.2",

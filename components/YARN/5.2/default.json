@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "YARN",
-  "dependencies": "HDFS",
+  "source": "transwarp",
   "description": "Spark资源调度",
   "edition": "5.2",
   "name": "YARN-5.2",

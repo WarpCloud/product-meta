@@ -1,7 +1,7 @@
 {
   "category": "TDH开发套件",
   "component_type": "PILOT",
-  "dependencies": "TXSQL",
+  "source": "transwarp",
   "description": "报表工具",
   "edition": "1.0",
   "name": "PILOT-1.0",

@@ -1,7 +1,7 @@
 {
   "category": "运维和开发工具,SYSTEM",
   "component_type": "KAFKA",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "消息中间件",
   "edition": "5.2",
   "name": "KAFKA-5.2",

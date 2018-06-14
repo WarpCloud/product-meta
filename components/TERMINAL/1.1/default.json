@@ -1,7 +1,7 @@
 {
   "category": "运维和开发工具,SYSTEM",
   "component_type": "TERMINAL",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "Docker命令行工具",
   "edition": "1.1",
   "name": "TERMINAL-1.1",

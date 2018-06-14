@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品,SYSTEM",
   "component_type": "SEARCH",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "全文检索",
   "edition": "5.2",
   "name": "SEARCH-5.2",

@@ -1,7 +1,7 @@
 {
   "category": "TDH开发套件",
   "component_type": "NOTEBOOK",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "Notebook IDE",
   "edition": "5.2",
   "name": "NOTEBOOK-5.2",

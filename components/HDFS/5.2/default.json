@@ -1,7 +1,7 @@
 {
   "category": "TDH平台产品",
   "component_type": "HDFS",
-  "dependencies": "",
+  "source": "transwarp",
   "description": "分布式存储",
   "edition": "5.2",
   "name": "HDFS-5.2",
