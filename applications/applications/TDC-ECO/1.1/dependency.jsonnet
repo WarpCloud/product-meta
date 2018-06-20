@@ -37,9 +37,6 @@ function(config={})
       },{
         moduleName: _ticketModuleName,
         name: _ticketModuleName,
-      },{
-        moduleName: _despatcherModuleName,
-        name: _despatcherModuleName,
       }],
     };
 

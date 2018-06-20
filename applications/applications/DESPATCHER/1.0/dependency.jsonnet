@@ -22,20 +22,8 @@ function(config={})
     r.moduleResource(_despatcherModuleName, config) +
     {
       dependencies: [{
-        moduleName: _guardianModuleName,
-        name: _guardianModuleName,
-      },
-      {
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
-      },
-      {
-        moduleName: _gnModuleName,
-        name: _gnModuleName,
-      },
-      {
-        moduleName: _ockleModuleName,
-        name: _ockleModuleName,
       },
       {
         moduleName: _workflowModuleName,
