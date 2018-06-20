@@ -38,8 +38,24 @@
          },
          "dependencies": [
             {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
+            },
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
                "moduleName": "notification",
                "name": "governor1-notification"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
             },
             {
                "moduleName": "txsql",
