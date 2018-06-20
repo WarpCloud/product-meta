@@ -8,6 +8,7 @@
     "TXSQL-5.2",
     "KIBANA-1.1",
     "TICKET-1.1",
-    "LOGSTASH-1.1"
+    "LOGSTASH-1.1",
+    "GNTENANT-1.0"
   ]
 }

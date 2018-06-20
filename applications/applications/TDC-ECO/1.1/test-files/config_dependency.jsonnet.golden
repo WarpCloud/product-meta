@@ -30,10 +30,6 @@
             {
                "moduleName": "ticket",
                "name": "ticket"
-            },
-            {
-               "moduleName": "despatcher",
-               "name": "despatcher"
             }
          ],
          "instance_settings": { },

@@ -16,20 +16,8 @@
          },
          "dependencies": [
             {
-               "moduleName": "guardian",
-               "name": "guardian"
-            },
-            {
                "moduleName": "txsql",
                "name": "txsql"
-            },
-            {
-               "moduleName": "gn-tdc",
-               "name": "gn-tdc"
-            },
-            {
-               "moduleName": "ockle",
-               "name": "ockle"
             },
             {
                "moduleName": "workflow",
