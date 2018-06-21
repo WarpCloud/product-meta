@@ -28,7 +28,6 @@ precommit_build:
     - cd $WORKDIR
     - sh -e ./testing.sh
   only:
-    - /.*_develop_\d+/
     - /.*_master_\d+/
   tags:
     - k8s
