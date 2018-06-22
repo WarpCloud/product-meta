@@ -1,0 +1,18 @@
+instance-type: gn-tenant
+major-version: '1.0'
+min-tdc-version: tdc-1.1.0-rc0
+hot-fix-ranges:
+  - max: tdc-1.1
+    min: tdc-1.1
+images:
+  - name: gn-tdc-server
+    variable: gn_image
+releases:
+  - dependencies:
+      - max-version: tdc-1.1
+        min-version: tdc-1.1
+        type: txsql
+    final: false
+    image-version:
+      gn_image: tdc-1.1
+    release-version: tdc-1.1
