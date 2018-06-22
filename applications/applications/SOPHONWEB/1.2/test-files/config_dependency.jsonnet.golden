@@ -40,12 +40,20 @@
             {
                "moduleName": "redis",
                "name": "sophonweb1-redis"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
             }
          ],
          "instance_settings": { },
          "moduleName": "sophonweb",
          "name": "sophonweb1-sophonweb",
-         "version": "3.3"
+         "version": "1.2"
       }
    ],
    "instance_settings": { },

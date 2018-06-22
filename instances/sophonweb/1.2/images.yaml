@@ -1,6 +1,6 @@
 instance-type: sophonweb
 major-version: '1.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.0
 hot-fix-ranges:
   - max: sophonweb-1.2.0-final
     min: sophonweb-1.2.0-final
