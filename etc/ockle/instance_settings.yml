@@ -14,7 +14,8 @@
 #    environment:
 #      - example_env_list
 #  database:
-#    name: example_txsql_db_name
+#    - type: type
+#      name: example_txsql_db_name
 #  image:
 #    default:
 #      - example_image_config
@@ -49,7 +50,7 @@ cas:
       - cas_server_env_list
       - cas_mgnt_server_env_list
   database:
-    name: cas_database_name
+    - name: cas_database_name
 
 codis:
   resource:
@@ -135,7 +136,7 @@ governor:
     environment:
       - governor_env_list
   database:
-    name: governor_txsql_db_name
+    - name: governor_txsql_db_name
   security:
     principal_list:
       - hbase
@@ -165,7 +166,25 @@ guardian:
     - apacheds_env_list
     - guardian_server_env_list
   database:
-    name: guardian_database_name
+    - name: guardian_database_name
+
+guardian-cas:
+  resource:
+    ha:
+      - guardian_server_replicas
+      - cas_server_replicas
+  configuration:
+    environment:
+      - apacheds_env_list
+      - guardian_server_env_list
+      - cas_config_server_env_list
+      - cas_server_env_list
+      - cas_mgnt_server_env_list
+  database:
+    - type: guardian
+      name: guardian_database_name
+    - type: cas
+      name: cas_database_name
 
 hdfs:
   resource:
@@ -391,7 +410,7 @@ notification:
     environment:
       - notification_env_list
   database:
-    name: notification_txsql_db_name
+    - name: notification_txsql_db_name
   image:
       default:
         - notification_image
@@ -413,6 +432,9 @@ pilot:
       - pilot_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
+    cas:
+      server_url_prefix: cas_server_address
+      server_context_path: CAS_SERVER_CONTEXT_PATH
 
 rubik:
   resource:
@@ -422,7 +444,7 @@ rubik:
     environment:
       - rubik_env_list
   database:
-    name: MySQL_DATABASE
+    - name: MySQL_DATABASE
   image:
     default:
       - rubik_image
@@ -498,7 +520,7 @@ tcc:
     environment:
       - tcc_env_list
   database:
-    name: TCC_TXSQL_DB_NAME
+    - name: TCC_TXSQL_DB_NAME
 
 tdt:
   resource:
@@ -520,7 +542,7 @@ tdt:
 
 ticket:
   database:
-    name: ticket_txsql_db_name
+    - name: ticket_txsql_db_name
   resource:
     ha:
       - ticket_replicas
@@ -555,7 +577,7 @@ workflow:
     environment:
       - workflow_env_list
   database:
-    name: workflow_txsql_db_name
+    - name: workflow_txsql_db_name
   image:
     default:
       - workflow_image

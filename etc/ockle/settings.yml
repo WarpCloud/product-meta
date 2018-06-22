@@ -3,8 +3,8 @@
 #----------------
 
 # Version range of Ockle to match current product-meta.
-max-version: 0.3.3
-min-version: 0.3.3
+max-version: 0.3.4
+min-version: 0.3.4
 
 # A list of appliations that accept advanced configurations.
 adv_config_white_list:
@@ -369,3 +369,4 @@ instance_open_ha:
   - tcc
   - cas
   - guardian
+  - guardian-cas
