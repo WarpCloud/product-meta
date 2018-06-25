@@ -15,6 +15,8 @@ function(config={})
   local _redisModuleName = "redis";
   local _redisModuleVersion = "1.0";
   local _sophonwebModuleName = "sophonweb";
+  local _searchModuleName = "elasticsearch";
+  local _hyperbaseModuleName = "hyperbase";
 
   //-------------------
   // Dependent modules
@@ -40,6 +42,12 @@ function(config={})
       }, {
         moduleName: _redisModuleName,
         name: appName  + "-" + _redisModuleName,
+      }, {
+        moduleName: _searchModuleName,
+        name: _searchModuleName,
+      }, {
+        moduleName: _hyperbaseModuleName,
+        name: _hyperbaseModuleName,
       }],
     };
 
