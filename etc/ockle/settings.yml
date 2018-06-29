@@ -355,6 +355,7 @@ service_for_development:
 
   SOPHONWEB:
   - port: 30123
+    generate_name: sophonweb
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
@@ -367,6 +368,6 @@ service_for_development:
 # A list of instances that need to open ha for default
 instance_open_ha:
   - tcc
-  - cas
-  - guardian
-  - guardian-cas
+#  - cas
+#  - guardian
+#  - guardian-cas
