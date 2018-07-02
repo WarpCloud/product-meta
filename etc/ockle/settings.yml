@@ -41,7 +41,7 @@ platform_requirements:
     instance_type: ockle
 
   - application_type: GUARDIAN
-    instance_type: guardian
+    instance_type: guardian-cas
 
   - application_type: SIMMAIL
     instance_type: simmail
