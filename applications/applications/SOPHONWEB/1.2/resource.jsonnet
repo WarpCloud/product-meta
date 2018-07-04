@@ -11,7 +11,7 @@ local t = import "../../../applib/utils.libsonnet";
     local resource = {
       sophon:
         {
-          sophon_cpu_limit: t.objectField(config, "sophon_cpu_limit", 1),
+          sophon_cpu_limit: t.objectField(config, "sophon_cpu_limit", 2),
           sophon_memory_limit: t.objectField(config, "sophon_memory_limit", 8),
           sophon_cpu_request: t.objectField(config, "sophon_cpu_request", 0.1),
           sophon_memory_request: t.objectField(config, "sophon_memory_request", 1),

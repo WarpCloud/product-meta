@@ -81,7 +81,7 @@
           "description": "TXSQL可以使用的CPU core数量",
           "display_name": "TXSQL CPU核数",
           "name": "txsql_cpu_limit",
-          "value": "8",
+          "value": "6",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

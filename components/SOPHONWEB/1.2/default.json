@@ -12,7 +12,7 @@
           "description": "Sophon Web可以使用的CPU core数量",
           "display_name": "Sophon Web CPU核数",
           "name": "sophon_cpu_limit",
-          "value": "2",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -35,7 +35,7 @@
           "description": "Sophon Web可以使用的CPU core数量",
           "display_name": "Sophon Web CPU核数",
           "name": "sophon_cpu_limit",
-          "value": "6",
+          "value": "2",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -58,7 +58,7 @@
           "description": "Sophon Web可以使用的CPU core数量",
           "display_name": "Sophon Web CPU核数",
           "name": "sophon_cpu_limit",
-          "value": "12",
+          "value": "4",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -81,7 +81,7 @@
           "description": "Sophon Web可以使用的CPU core数量",
           "display_name": "Sophon Web CPU核数",
           "name": "sophon_cpu_limit",
-          "value": "16",
+          "value": "8",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
