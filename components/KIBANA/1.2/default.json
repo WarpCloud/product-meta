@@ -1,0 +1,9 @@
+{
+  "name": "KIBANA-1.2",
+  "component_type": "KIBANA",
+  "source": "transwarp",
+  "description": "visualized tool for ES data visualization and management",
+  "edition": "1.2",
+  "category": "SYSTEM",
+  "configs": []
+}

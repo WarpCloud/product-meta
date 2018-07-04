@@ -1,0 +1,31 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "gn-tdc",
+            "application_type": "GN-TDC"
+         },
+         "configs": {
+            "gn_cpu_limit": 1,
+            "gn_cpu_request": 0.10000000000000001,
+            "gn_memory_limit": 4,
+            "gn_memory_request": 1
+         },
+         "dependencies": [
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "gn-tdc",
+         "name": "gn-tdc-gn-tdc",
+         "version": "5.1"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

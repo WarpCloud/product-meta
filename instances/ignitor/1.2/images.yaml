@@ -1,0 +1,27 @@
+instance-type: ignitor
+major-version: '1.2'
+min-tdc-version: tdc-1.2
+hot-fix-ranges:
+  - max: tdc-1.2
+    min: tdc-1.2
+images:
+  - name: ignitor
+    variable: ignitor_image
+releases:
+  - dependencies:
+    - max-version: tdc-1.2
+      min-version: tdc-1.1
+      type: txsql
+    - max-version: tdc-1.2
+      min-version: tdc-1.2
+      type: ockle
+    - max-version: tdc-1.2
+      min-version: tdc-1.2
+      type: simmail
+    - max-version: tdc-1.2
+      min-version: tdc-1.2
+      type: guardian-cas
+    final: false
+    image-version:
+      ignitor_image: tdc-1.2
+    release-version: tdc-1.2

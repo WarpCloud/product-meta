@@ -4,7 +4,7 @@ min-tdc-version: tdc-1.1
 hot-fix-ranges:
   - max: transwarp-5.2
     min: transwarp-5.2
-  - max: tdc-1.1
+  - max: tdc-1.2
     min: tdc-1.1
 images:
   - name: kafka
@@ -29,3 +29,12 @@ releases:
     image-version:
       kafka_image: tdc-1.1
     release-version: tdc-1.1
+
+  - dependencies:
+      - max-version: transwarp-5.2
+        min-version: transwarp-5.2
+        type: zookeeper
+    final: false
+    image-version:
+      kafka_image: tdc-1.2
+    release-version: tdc-1.2

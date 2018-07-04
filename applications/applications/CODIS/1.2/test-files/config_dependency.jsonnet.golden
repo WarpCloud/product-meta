@@ -1,0 +1,43 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "codis1",
+            "application_type": "CODIS"
+         },
+         "configs": {
+            "codis_dash_cpu_limit": 1,
+            "codis_dash_cpu_request": 0.10000000000000001,
+            "codis_dash_memory_limit": 2,
+            "codis_dash_memory_request": 1,
+            "codis_fe_cpu_limit": 1,
+            "codis_fe_cpu_request": 0.10000000000000001,
+            "codis_fe_memory_limit": 2,
+            "codis_fe_memory_request": 1,
+            "codis_proxy_cpu_limit": 1,
+            "codis_proxy_cpu_request": 0.10000000000000001,
+            "codis_proxy_memory_limit": 2,
+            "codis_proxy_memory_request": 1,
+            "codis_server_cpu_limit": 1,
+            "codis_server_cpu_request": 0.10000000000000001,
+            "codis_server_memory_limit": 4,
+            "codis_server_memory_request": 2
+         },
+         "dependencies": [
+            {
+               "moduleName": "zookeeper",
+               "name": "zookeeper"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "codis",
+         "name": "codis1-codis",
+         "version": "1.1"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}
