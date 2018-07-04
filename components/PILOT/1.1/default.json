@@ -35,6 +35,29 @@
           "description": "Pilot可以使用的CPU core数量",
           "display_name": "Pilot CPU核数",
           "name": "pilot_cpu_limit",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Pilot可以使用的最大内存",
+          "display_name": "Pilot内存",
+          "name": "pilot_memory_limit",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Pilot可以使用的CPU core数量",
+          "display_name": "Pilot CPU核数",
+          "name": "pilot_cpu_limit",
           "value": "2",
           "value_type": "cpu",
           "min": "0",
@@ -50,7 +73,7 @@
           "max": "24576MB"
         }
       ],
-      "level": "low"
+      "level": "medium"
     },
     {
       "configs": [
@@ -68,29 +91,6 @@
           "display_name": "Pilot内存",
           "name": "pilot_memory_limit",
           "value": "6144MB",
-          "value_type": "memory",
-          "min": "0MB",
-          "max": "24576MB"
-        }
-      ],
-      "level": "medium"
-    },
-    {
-      "configs": [
-        {
-          "description": "Pilot可以使用的CPU core数量",
-          "display_name": "Pilot CPU核数",
-          "name": "pilot_cpu_limit",
-          "value": "6",
-          "value_type": "cpu",
-          "min": "0",
-          "max": "24"
-        },
-        {
-          "description": "Pilot可以使用的最大内存",
-          "display_name": "Pilot内存",
-          "name": "pilot_memory_limit",
-          "value": "8192MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
