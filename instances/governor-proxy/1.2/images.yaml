@@ -1,0 +1,15 @@
+instance-type: governor-proxy
+major-version: '1.2'
+min-tdc-version: tdc-1.2
+hot-fix-ranges:
+  - max: tdc-1.2
+    min: tdc-1.2
+images:
+  - name: governor-proxy
+    variable: governor_proxy_image
+releases:
+  - dependencies: []
+    final: false
+    image-version:
+      governor_proxy_image: tdc-1.2
+    release-version: tdc-1.2

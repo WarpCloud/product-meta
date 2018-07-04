@@ -12,7 +12,7 @@ releases:
       - max-version: transwarp-5.2
         min-version: transwarp-5.2
         type: filerobot
-      - max-version: tdc-1.1
+      - max-version: tdc-1.2
         min-version: tdc-1.1
         type: txsql
     final: false
