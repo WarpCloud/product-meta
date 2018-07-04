@@ -36,6 +36,12 @@
             "kong_dashboard_memory_limit": 1,
             "kong_dashboard_memory_request": 1
          },
+         "dependencies": [
+            {
+               "moduleName": "kong",
+               "name": "kong1-kong"
+            }
+         ],
          "instance_settings": { },
          "moduleName": "kong-dashboard",
          "name": "kong1-kong-dashboard",

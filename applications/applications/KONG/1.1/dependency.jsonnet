@@ -28,7 +28,13 @@ function(config={})
     };
 
   local kongdashboard = t.createInstance(_kongdashboardModuleName, config, kongdashboardVersion) +
-    r.moduleResource(_kongdashboardModuleName, config);
+    r.moduleResource(_kongdashboardModuleName, config) +
+    {
+      dependencies: [{
+        moduleName: _kongModuleName,
+        name: appName + "-" +  _kongModuleName,
+      }],
+    };
 
   t.getDefaultSettings(config) + {
     instance_list: [kong, kongdashboard],
