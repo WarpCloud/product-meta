@@ -188,8 +188,6 @@ guardian-cas:
 
 hdfs:
   resource:
-    ha:
-      - hdfs_httpfs_replicas
     computing_unit:
       - hdfs_data_replicas
       - hdfs_journal_replicas
