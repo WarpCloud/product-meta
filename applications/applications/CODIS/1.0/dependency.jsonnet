@@ -16,7 +16,7 @@ function(config={})
   // Dependent modules
   //-------------------
   local codis = t.createInstance(_codisModuleName, config, appVersion) +
-    r.moduleResource(_codisModuleName, config) +
+    t.moduleResource(_codisModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _zkModuleName,

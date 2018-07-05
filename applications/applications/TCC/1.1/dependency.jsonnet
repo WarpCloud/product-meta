@@ -28,7 +28,7 @@ function(config={})
     }] else [];
 
   local tcc = t.createInstance(_tccModuleName, config, appVersion) +
-    r.moduleResource(_tccModuleName, config) +
+    t.moduleResource(_tccModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

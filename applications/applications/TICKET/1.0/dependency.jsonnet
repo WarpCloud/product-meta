@@ -14,7 +14,7 @@ function(config={})
   // Dependent modules
   //-------------------
   local ticket = t.createInstance(_ticketModuleName, config, appVersion) +
-    r.moduleResource(_ticketModuleName, config) +
+    t.moduleResource(_ticketModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

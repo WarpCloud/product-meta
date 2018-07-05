@@ -16,7 +16,7 @@ function(config={})
   //-------------------
 
   local zookeeper = t.createInstance(_zkModuleName, config, zkVersion) +
-    r.moduleResource(_zkModuleName, config);
+    t.moduleResource(_zkModuleName, r.__moduleResourceRaw, config);
 
   local TCU = {
     [_zkModuleName]: r.moduleTCU(_zkModuleName, config),

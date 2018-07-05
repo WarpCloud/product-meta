@@ -21,7 +21,7 @@ function(config={})
 
   // Currently metastore depends on MySQL and switches to TxSQL in future version. (2017.08.30)
   local metastore = t.createInstance(_metastoreModuleName, config, metastoreVersion) +
-    r.moduleResource(_metastoreModuleName, config) +
+    t.moduleResource(_metastoreModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,
@@ -30,7 +30,7 @@ function(config={})
     };
 
   local slipstream = t.createInstance(_slipstreamModuleName, config, appVersion) +
-    r.moduleResource(_slipstreamModuleName, config) +
+    t.moduleResource(_slipstreamModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _metastoreModuleName,

@@ -15,7 +15,7 @@ function(config={})
   //-------------------
 
   local filebeat = t.createInstance(_filebeatModuleName, config, appVersion) +
-    r.moduleResource(_filebeatModuleName, config) +
+    t.moduleResource(_filebeatModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,

@@ -15,7 +15,7 @@ function(config={})
   //-------------------
 
   local ockle = t.createInstance(_ockleModuleName, config, appVersion) +
-    r.moduleResource(_ockleModuleName, config) +
+    t.moduleResource(_ockleModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

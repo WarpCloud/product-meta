@@ -19,10 +19,10 @@ function(config={})
   //-------------------
 
   local localcran = t.createInstance(_localcranModuleName, config, localcranVersion) +
-    r.moduleResource(_localcranModuleName, config);
+    t.moduleResource(_localcranModuleName, r.__moduleResourceRaw, config);
 
   local notebook = t.createInstance(_notebookModuleName, config, appVersion) +
-    r.moduleResource(_notebookModuleName, config) +
+    t.moduleResource(_notebookModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

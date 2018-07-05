@@ -19,7 +19,7 @@ function(config={})
   //-------------------
 
   local kong = t.createInstance(_kongModuleName, config, appVersion) +
-    r.moduleResource(_kongModuleName, config) +
+    t.moduleResource(_kongModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,
@@ -28,7 +28,7 @@ function(config={})
     };
 
   local kongdashboard = t.createInstance(_kongdashboardModuleName, config, kongdashboardVersion) +
-    r.moduleResource(_kongdashboardModuleName, config);
+    t.moduleResource(_kongdashboardModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [kong, kongdashboard],

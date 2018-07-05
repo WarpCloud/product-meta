@@ -16,7 +16,7 @@ function(config={})
   //-------------------
 
   local gn = t.createInstance(_moduleName, config, appVersion) +
-    r.moduleResource(_moduleName, config) +
+    t.moduleResource(_moduleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

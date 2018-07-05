@@ -16,7 +16,7 @@ function(config={})
   //-------------------
 
   local guardian = t.createInstance(_guardianModuleName, config, appVersion) +
-    r.moduleResource(_guardianModuleName, config) +
+    t.moduleResource(_guardianModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

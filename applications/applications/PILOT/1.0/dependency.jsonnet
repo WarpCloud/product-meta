@@ -19,10 +19,10 @@ function(config={})
   //-------------------
 
   local filerobot = t.createInstance(_filerobotModuleName, config, filerobotVersion) +
-    r.moduleResource(_filerobotModuleName, config);
+    t.moduleResource(_filerobotModuleName, r.__moduleResourceRaw, config);
 
   local pilot = t.createInstance(_pilotModuleName, config, appVersion) +
-    r.moduleResource(_pilotModuleName, config) +
+    t.moduleResource(_pilotModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _filerobotModuleName,

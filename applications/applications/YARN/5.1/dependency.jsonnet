@@ -17,7 +17,7 @@ function(config={})
   //-------------------
 
   local yarn = t.createInstance(_yarnModuleName, config, appVersion) +
-    r.moduleResource(_yarnModuleName, config) +
+    t.moduleResource(_yarnModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

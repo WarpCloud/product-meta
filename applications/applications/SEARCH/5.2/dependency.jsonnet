@@ -14,7 +14,7 @@ function(config={})
   //-------------------
 
   local search = t.createInstance(_searchModuleName, config, appVersion) +
-    r.moduleResource(_searchModuleName, config);
+    t.moduleResource(_searchModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [search],

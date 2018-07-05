@@ -31,13 +31,4 @@ local t = import "../../../applib/utils.libsonnet";
       resource: if std.objectHas(resource, moduleName) then resource[moduleName] else {},
     },
 
-  /*
-   * Get resurce configs for each module
-   */
-  moduleResource(moduleName, config={})::
-    local unifiedConfig = t.getUnifiedInstanceSettings(config);
-    local module = $.__moduleResourceRaw(moduleName, unifiedConfig);
-    {
-      configs: module.resource + module.storage,
-    },
 }

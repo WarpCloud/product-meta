@@ -19,7 +19,7 @@ function(config={})
   //-------------------
 
   local gondar = t.createInstance(_gondarModuleName, config, gondarVersion) +
-    r.moduleResource(_gondarModuleName, config) +
+    t.moduleResource(_gondarModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,
@@ -31,7 +31,7 @@ function(config={})
     };
 
   local tenon = t.createInstance(_tenonModuleName, config, appVersion) +
-    r.moduleResource(_tenonModuleName, config) +
+    t.moduleResource(_tenonModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,

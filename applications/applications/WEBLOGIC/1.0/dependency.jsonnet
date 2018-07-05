@@ -14,7 +14,7 @@ function(config={})
   //-------------------
 
   local weblogic = t.createInstance(_weblogicModuleName, config, appVersion) +
-    r.moduleResource(_weblogicModuleName, config);
+    t.moduleResource(_weblogicModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [weblogic],

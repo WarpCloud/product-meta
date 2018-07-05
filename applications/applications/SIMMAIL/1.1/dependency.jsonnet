@@ -14,7 +14,7 @@ function(config={})
   //-------------------
 
   local simmail = t.createInstance(_simmailModuleName, config, appVersion) +
-    r.moduleResource(_simmailModuleName, config);
+    t.moduleResource(_simmailModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [simmail],

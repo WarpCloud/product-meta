@@ -17,7 +17,7 @@ function(config={})
   // Dependent modules
   //-------------------
   local kafkaManager = t.createInstance(_kafkaManagerModuleName, config, kafkaManagerVersion) +
-    r.moduleResource(_kafkaManagerModuleName, config) +
+    t.moduleResource(_kafkaManagerModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,
@@ -30,7 +30,7 @@ function(config={})
     };
 
   local kafka = t.createInstance(_kafkaModuleName, config, appVersion) +
-    r.moduleResource(_kafkaModuleName, config) +
+    t.moduleResource(_kafkaModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _zkModuleName,

@@ -22,10 +22,10 @@ function(config={})
   // Dependent modules
   //-------------------
   local redis = t.createInstance(_redisModuleName, config, _redisModuleVersion) +
-    r.moduleResource(_redisModuleName, config);
+    t.moduleResource(_redisModuleName, r.__moduleResourceRaw, config);
 
   local sophonweb = t.createInstance(_sophonwebModuleName, config, appVersion) +
-    r.moduleResource(_sophonwebModuleName, config) +
+    t.moduleResource(_sophonwebModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

@@ -62,7 +62,7 @@ function(config={})
   //-------------------
 
   local terminal = t.createInstance(_terminalModuleName, config, appVersion) +
-    r.moduleResource(_terminalModuleName, config) +
+    t.moduleResource(_terminalModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies:
         depend_search +

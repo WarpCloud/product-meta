@@ -17,7 +17,7 @@ function(config={})
   //-------------------
 
   local notification = t.createInstance(_notificationModuleName, config, notificationVersion) +
-    r.moduleResource(_notificationModuleName, config) +
+    t.moduleResource(_notificationModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

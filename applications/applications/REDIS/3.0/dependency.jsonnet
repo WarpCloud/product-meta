@@ -14,7 +14,7 @@ function(config={})
   //-------------------
 
   local redis = t.createInstance(_redisModuleName, config, appVersion) +
-    r.moduleResource(_redisModuleName, config);
+    t.moduleResource(_redisModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [redis],

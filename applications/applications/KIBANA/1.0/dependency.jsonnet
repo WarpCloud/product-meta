@@ -23,7 +23,7 @@ function(config={})
   //-------------------
 
   local kibana = t.createInstance(_kibanaModuleName, config, appVersion) +
-    r.moduleResource(_kibanaModuleName, config) +
+    t.moduleResource(_kibanaModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: depend_search,
     };
