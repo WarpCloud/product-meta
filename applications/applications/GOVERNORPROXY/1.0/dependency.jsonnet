@@ -15,7 +15,7 @@ function(config={})
   //-------------------
 
   local gp = t.createInstance(_gpModuleName, config, appVersion) +
-    r.moduleResource(_gpModuleName, config);
+    t.moduleResource(_gpModuleName, r.__moduleResourceRaw, config);
     
   t.getDefaultSettings(config) + {
     instance_list: [gp],

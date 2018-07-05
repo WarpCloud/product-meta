@@ -19,7 +19,7 @@ function(config={})
   //-------------------
 
   local sophon = t.createInstance(_sophonModuleName, config, appVersion) +
-    r.moduleResource(_sophonModuleName, config) +
+    t.moduleResource(_sophonModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

@@ -17,7 +17,7 @@ function(config={})
   //-------------------
 
   local transporter = t.createInstance(_transporterModuleName, config, appVersion) +
-  r.moduleResource(_transporterModuleName, config) +
+  t.moduleResource(_transporterModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

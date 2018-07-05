@@ -25,7 +25,7 @@ function(config={})
   //-------------------
 
   local ignitor = t.createInstance(_ignitorModuleName, config, appVersion) +
-    r.moduleResource(_ignitorModuleName, config) +
+    t.moduleResource(_ignitorModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

@@ -17,7 +17,7 @@ function(config={})
   //-------------------
 
   local logstash = t.createInstance(_logstashModuleName, config, appVersion) +
-    r.moduleResource(_logstashModuleName, config) +
+    t.moduleResource(_logstashModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,

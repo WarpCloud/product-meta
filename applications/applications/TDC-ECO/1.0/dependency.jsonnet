@@ -21,7 +21,7 @@ function(config={})
   //-------------------
 
   local eco = t.createInstance(_ecoModuleName, config, appVersion) +
-    r.moduleResource(_ecoModuleName, config) +
+    t.moduleResource(_ecoModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

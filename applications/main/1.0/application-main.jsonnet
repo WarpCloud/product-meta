@@ -20,6 +20,8 @@ function(config={})
       // in each application module. Thus the `configs` would overwrite `instance_settings` field.
       local configs = _instance_settings + _instance_configs;
 
+      // TODO: Validate module resources to asure request <= limit, see WARP-25309
+
       // All instance properties and settings
       local instance = _instance {
         configs: configs,

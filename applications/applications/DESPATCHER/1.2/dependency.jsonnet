@@ -19,7 +19,7 @@ function(config={})
   //-------------------
 
   local despatcher = t.createInstance(_despatcherModuleName, config, appVersion) +
-    r.moduleResource(_despatcherModuleName, config) +
+    t.moduleResource(_despatcherModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _txsqlModuleName,

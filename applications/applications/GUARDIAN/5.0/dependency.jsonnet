@@ -15,7 +15,7 @@ function(config={})
   //-------------------
 
   local guardian = t.createInstance(_guardianModuleName, config, appVersion) +
-    r.moduleResource(_guardianModuleName, config);
+    t.moduleResource(_guardianModuleName, r.__moduleResourceRaw, config);
 
   local TCU = {
     [_guardianModuleName]: r.moduleTCU(_guardianModuleName, config),

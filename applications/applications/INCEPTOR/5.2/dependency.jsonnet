@@ -45,7 +45,7 @@ function(config={})
 
   // Currently metastore depends on MySQL and switches to TxSQL in future version. (2017.08.30)
   local metastore = t.createInstance(_metastoreModuleName, config, metastoreVersion) +
-    r.moduleResource(_metastoreModuleName, config) +
+    t.moduleResource(_metastoreModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,
@@ -54,7 +54,7 @@ function(config={})
     };
 
   local inceptor = t.createInstance(_inceptorModuleName, config, appVersion) +
-    r.moduleResource(_inceptorModuleName, config) +
+    t.moduleResource(_inceptorModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _metastoreModuleName,

@@ -20,7 +20,7 @@ function(config={})
   //-------------------
 
   local hyperbase = t.createInstance(_hyperbaseModuleName, config, appVersion) +
-    r.moduleResource(_hyperbaseModuleName, config) +
+    t.moduleResource(_hyperbaseModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _hdfsModuleName,

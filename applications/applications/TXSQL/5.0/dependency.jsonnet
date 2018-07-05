@@ -15,7 +15,7 @@ function(config={})
   //-------------------
 
   local txsql = t.createInstance(_txsqlModuleName, config, appVersion) +
-    r.moduleResource(_txsqlModuleName, config);
+    t.moduleResource(_txsqlModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [txsql],

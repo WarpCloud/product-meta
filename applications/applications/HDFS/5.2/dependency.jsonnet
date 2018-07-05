@@ -17,10 +17,10 @@ function(config={})
   //-------------------
 
   local zookeeper = t.createInstance(_zkModuleName, config, zkVersion) +
-    r.moduleResource(_zkModuleName, config);
+    t.moduleResource(_zkModuleName, r.__moduleResourceRaw, config);
 
   local hdfs = t.createInstance(_hdfsModuleName, config, appVersion) +
-    r.moduleResource(_hdfsModuleName, config) +
+    t.moduleResource(_hdfsModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _zkModuleName,

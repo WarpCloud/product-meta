@@ -25,7 +25,7 @@ function(config={})
   //-------------------
 
   local filebeat = t.createInstance(_filebeatModuleName, config, filebeatVersion) +
-    r.moduleResource(_filebeatModuleName, config) +
+    t.moduleResource(_filebeatModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,
@@ -34,7 +34,7 @@ function(config={})
     };
 
   local logstash = t.createInstance(_logstashModuleName, config, logstashVersion) +
-    r.moduleResource(_logstashModuleName, config) +
+    t.moduleResource(_logstashModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _kafkaModuleName,
@@ -47,7 +47,7 @@ function(config={})
     };
 
   local milanoPortal = t.createInstance(_milanoPortalModuleName, config, milanoPortalVersion) +
-    r.moduleResource(_milanoPortalModuleName, config);
+    t.moduleResource(_milanoPortalModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [filebeat, logstash, milanoPortal],

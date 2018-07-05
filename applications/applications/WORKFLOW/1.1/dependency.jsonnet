@@ -25,7 +25,7 @@ function(config={})
     }] else [];
 
   local workflow = t.createInstance(_workflowModuleName, config, appVersion) +
-    r.moduleResource(_workflowModuleName, config) +
+    t.moduleResource(_workflowModuleName, r.__moduleResourceRaw, config) +
     {
       dependencies: [{
         moduleName: _zkModuleName,

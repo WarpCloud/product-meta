@@ -16,7 +16,7 @@ function(config={})
   //-------------------
 
   local zipkin = t.createInstance(_zipkinModuleName, config, _zipkinVersion) +
-    r.moduleResource(_zipkinModuleName, config);
+    t.moduleResource(_zipkinModuleName, r.__moduleResourceRaw, config);
 
   t.getDefaultSettings(config) + {
     instance_list: [zipkin],

@@ -274,4 +274,15 @@ local app = import "app.libsonnet";
       },
     };
     $.objectField(config, field_name, default),
+
+  /*
+   * Get resurce configs for each module
+   */
+  moduleResource(moduleName, moduleResourceRaw, config={})::
+    local unifiedConfig = $.getUnifiedInstanceSettings(config);
+    local module = moduleResourceRaw(moduleName, unifiedConfig);
+
+    {
+      configs: module.resource + module.storage,
+    },
 }
