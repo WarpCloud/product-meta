@@ -21,9 +21,9 @@
           "description": "每个executor可以使用的最大内存",
           "display_name": "Executor内存",
           "name": "inceptor_executor_memory_limit",
-          "value": "3072MB",
+          "value": "4096MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "4096MB",
           "max": "24576MB"
         },
         {
@@ -41,7 +41,7 @@
           "name": "inceptor_master_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -82,7 +82,7 @@
           "name": "inceptor_executor_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "4096MB",
           "max": "24576MB"
         },
         {
@@ -100,7 +100,7 @@
           "name": "inceptor_master_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -141,7 +141,7 @@
           "name": "inceptor_executor_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "4096MB",
           "max": "24576MB"
         },
         {
@@ -159,7 +159,7 @@
           "name": "inceptor_master_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -200,7 +200,7 @@
           "name": "inceptor_executor_memory_limit",
           "value": "36864MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "4096MB",
           "max": "24576MB"
         },
         {
@@ -218,7 +218,7 @@
           "name": "inceptor_master_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {

@@ -23,7 +23,7 @@
           "name": "discover_memory_limit",
           "value": "1024MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         }
       ],
@@ -46,7 +46,7 @@
           "name": "discover_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         }
       ],
@@ -69,7 +69,7 @@
           "name": "discover_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         }
       ],
@@ -92,7 +92,7 @@
           "name": "discover_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         }
       ],

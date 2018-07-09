@@ -23,7 +23,7 @@
           "name": "hbase_rs_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         },
         {
@@ -41,7 +41,7 @@
           "name": "hbase_master_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         }
       ],
@@ -64,7 +64,7 @@
           "name": "hbase_rs_memory_limit",
           "value": "16384MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         },
         {
@@ -82,7 +82,7 @@
           "name": "hbase_master_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         }
       ],
@@ -105,7 +105,7 @@
           "name": "hbase_rs_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         },
         {
@@ -123,7 +123,7 @@
           "name": "hbase_master_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         }
       ],
@@ -146,7 +146,7 @@
           "name": "hbase_rs_memory_limit",
           "value": "36864MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "1024MB",
           "max": "24576MB"
         },
         {
@@ -164,7 +164,7 @@
           "name": "hbase_master_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         }
       ],
