@@ -571,9 +571,6 @@ weblogic:
       - weblogic_image
 
 workflow:
-  resource:
-    ha:
-      - workflow_replicas
   configuration:
     environment:
       - workflow_env_list
