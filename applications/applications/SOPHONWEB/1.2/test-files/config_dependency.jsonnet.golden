@@ -19,7 +19,12 @@
             "application_name": "sophonweb1",
             "application_type": "SOPHONWEB"
          },
-         "configs": { },
+         "configs": {
+            "sophon_cpu_limit": 2,
+            "sophon_cpu_request": 0.10000000000000001,
+            "sophon_memory_limit": 8,
+            "sophon_memory_request": 1
+         },
          "dependencies": [
             {
                "moduleName": "hdfs",
