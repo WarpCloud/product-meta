@@ -23,7 +23,7 @@
           "name": "es_data_memory_limit",
           "value": "2048MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -41,7 +41,7 @@
           "name": "es_master_memory_limit",
           "value": "2048MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -100,7 +100,7 @@
           "name": "es_data_memory_limit",
           "value": "16384MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -118,7 +118,7 @@
           "name": "es_master_memory_limit",
           "value": "65536MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -177,7 +177,7 @@
           "name": "es_data_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -195,7 +195,7 @@
           "name": "es_master_memory_limit",
           "value": "131072MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -254,7 +254,7 @@
           "name": "es_data_memory_limit",
           "value": "32768MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
@@ -272,7 +272,7 @@
           "name": "es_master_memory_limit",
           "value": "262144MB",
           "value_type": "memory",
-          "min": "0MB",
+          "min": "2048MB",
           "max": "24576MB"
         },
         {
