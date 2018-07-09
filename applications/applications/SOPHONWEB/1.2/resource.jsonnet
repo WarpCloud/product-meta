@@ -9,7 +9,7 @@ local t = import "../../../applib/utils.libsonnet";
     local Debug_Request = t.objectField(config, "Develop", false);
 
     local resource = {
-      sophon:
+      sophonweb:
         {
           sophon_cpu_limit: t.objectField(config, "sophon_cpu_limit", 2),
           sophon_memory_limit: t.objectField(config, "sophon_memory_limit", 8),
