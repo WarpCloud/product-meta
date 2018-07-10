@@ -540,6 +540,9 @@ tdt:
       - tdt_mounted_kerberos
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
+    cas:
+      server_address: cas_server_address
+      server_context_path: CAS_SERVER_CONTEXT_PATH
 
 ticket:
   database:
@@ -571,6 +574,9 @@ weblogic:
       - weblogic_image
 
 workflow:
+  resource:
+    ha:
+      - workflow_replicas
   configuration:
     environment:
       - workflow_env_list
@@ -587,7 +593,7 @@ workflow:
     security_service:
       env_cfg: GUARDIAN_SERVICE_ID
     cas:
-      server_url_prefix: cas_server_address
+      server_address: cas_server_address
       server_context_path: CAS_SERVER_CONTEXT_PATH
 
 yarn:
