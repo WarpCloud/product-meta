@@ -30,10 +30,12 @@ function(config={})
       }],
     };
 
-  local governor = t.createInstance(_governorModuleName, config, appVersion) +
-    t.moduleResource(_governorModuleName, r.__moduleResourceRaw, config) +
-    {
-      dependencies: [{
+
+  local data_share = t.trueOrFalse(config.user_config, "data_share");
+
+  local extra_dep =
+    if data_share then
+    [] else [{
         moduleName: _hdfsModuleName,
         name: _hdfsModuleName,
       }, {
@@ -43,11 +45,16 @@ function(config={})
         moduleName: _kafkaModuleName,
         name: _kafkaModuleName,
       }, {
-        moduleName: _notificationModuleName,
-        name: appName + "-" + _notificationModuleName,
-      }, {
         moduleName: _searchModuleName,
         name: _searchModuleName,
+      }];
+
+  local governor = t.createInstance(_governorModuleName, config, appVersion) +
+    t.moduleResource(_governorModuleName, r.__moduleResourceRaw, config) +
+    {
+      dependencies: [{
+        moduleName: _notificationModuleName,
+        name: appName + "-" + _notificationModuleName,
       }, {
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
