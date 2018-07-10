@@ -9,8 +9,17 @@
     {
       "configs": [
         {
-          "description": "Kafka可以使用的CPU core数量",
-          "display_name": "Kafka CPU核数",
+          "description": "Kafka分配的CPU核数量",
+          "display_name": "Kafka CPU核数(request)",
+          "name": "kafka_cpu_request",
+          "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Kafka可以使用可以使用的最大CPU核数量",
+          "display_name": "Kafka CPU核数(limit)",
           "name": "kafka_cpu_limit",
           "value": "0.1",
           "value_type": "cpu",
@@ -18,8 +27,17 @@
           "max": "24"
         },
         {
+          "description": "Kafka分配的内存",
+          "display_name": "Kafka内存(request)",
+          "name": "kafka_memory_request",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Kafka可以使用的最大内存",
-          "display_name": "Kafka内存",
+          "display_name": "Kafka内存(limit)",
           "name": "kafka_memory_limit",
           "value": "1024MB",
           "value_type": "memory",
@@ -50,8 +68,17 @@
     {
       "configs": [
         {
-          "description": "Kafka可以使用的CPU core数量",
-          "display_name": "Kafka CPU核数",
+          "description": "Kafka分配的CPU核数量",
+          "display_name": "Kafka CPU核数(request)",
+          "name": "kafka_cpu_request",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Kafka可以使用可以使用的最大CPU核数量",
+          "display_name": "Kafka CPU核数(limit)",
           "name": "kafka_cpu_limit",
           "value": "6",
           "value_type": "cpu",
@@ -59,8 +86,17 @@
           "max": "24"
         },
         {
+          "description": "Kafka分配的内存",
+          "display_name": "Kafka内存(request)",
+          "name": "kafka_memory_request",
+          "value": "12288MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Kafka可以使用的最大内存",
-          "display_name": "Kafka内存",
+          "display_name": "Kafka内存(limit)",
           "name": "kafka_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
@@ -91,8 +127,17 @@
     {
       "configs": [
         {
-          "description": "Kafka可以使用的CPU core数量",
-          "display_name": "Kafka CPU核数",
+          "description": "Kafka分配的CPU核数量",
+          "display_name": "Kafka CPU核数(request)",
+          "name": "kafka_cpu_request",
+          "value": "12",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Kafka可以使用可以使用的最大CPU核数量",
+          "display_name": "Kafka CPU核数(limit)",
           "name": "kafka_cpu_limit",
           "value": "12",
           "value_type": "cpu",
@@ -100,8 +145,17 @@
           "max": "24"
         },
         {
+          "description": "Kafka分配的内存",
+          "display_name": "Kafka内存(request)",
+          "name": "kafka_memory_request",
+          "value": "24576MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Kafka可以使用的最大内存",
-          "display_name": "Kafka内存",
+          "display_name": "Kafka内存(limit)",
           "name": "kafka_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
@@ -132,8 +186,17 @@
     {
       "configs": [
         {
-          "description": "Kafka可以使用的CPU core数量",
-          "display_name": "Kafka CPU核数",
+          "description": "Kafka分配的CPU核数量",
+          "display_name": "Kafka CPU核数(request)",
+          "name": "kafka_cpu_request",
+          "value": "16",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Kafka可以使用可以使用的最大CPU核数量",
+          "display_name": "Kafka CPU核数(limit)",
           "name": "kafka_cpu_limit",
           "value": "16",
           "value_type": "cpu",
@@ -141,8 +204,17 @@
           "max": "24"
         },
         {
+          "description": "Kafka分配的内存",
+          "display_name": "Kafka内存(request)",
+          "name": "kafka_memory_request",
+          "value": "36864MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Kafka可以使用的最大内存",
-          "display_name": "Kafka内存",
+          "display_name": "Kafka内存(limit)",
           "name": "kafka_memory_limit",
           "value": "36864MB",
           "value_type": "memory",

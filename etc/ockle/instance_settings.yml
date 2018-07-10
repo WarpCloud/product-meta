@@ -575,7 +575,7 @@ weblogic:
 
 workflow:
   resource:
-    ha:
+    computing_unit:
       - workflow_replicas
   configuration:
     environment:

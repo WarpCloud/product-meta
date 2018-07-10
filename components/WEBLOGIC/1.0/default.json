@@ -9,8 +9,17 @@
     {
       "configs": [
         {
+          "description": "WebLogic Admin Server 内存分配的内存",
+          "display_name": "Admin Server 内存(request)",
+          "name": "admin_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Admin Server 内存",
-          "display_name": "Admin Server 内存",
+          "display_name": "Admin Server 内存(limit)",
           "name": "admin_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
@@ -18,8 +27,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Admin Server CPU",
-          "display_name": "Admin Server CPU",
+          "description": "WebLogic Admin Server CPU分配的core数量",
+          "display_name": "Admin Server CPU(request)",
+          "name": "admin_cpu_request",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Admin Server CPU可以使用的最大core数量",
+          "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
           "value": "1",
           "value_type": "cpu",
@@ -36,8 +54,17 @@
           "max": "1024G"
         },
         {
+          "description": "WebLogic Managed Server 内存分配的内存",
+          "display_name": "Managed Server 内存(request)",
+          "name": "ms_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Managed Server 内存",
-          "display_name": "Managed Server 内存",
+          "display_name": "Managed Server 内存(limit)",
           "name": "ms_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
@@ -45,8 +72,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Managed Server CPU",
-          "display_name": "Managed Server CPU",
+          "description": "WebLogic Managed Server CPU分配的core数量",
+          "display_name": "Managed Server CPU(request)",
+          "name": "ms_cpu_request",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Managed Server CPU可以使用的最大core数量",
+          "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
           "value": "1",
           "value_type": "cpu",
@@ -68,8 +104,17 @@
     {
       "configs": [
         {
+          "description": "WebLogic Admin Server 内存分配的内存",
+          "display_name": "Admin Server 内存(request)",
+          "name": "admin_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Admin Server 内存",
-          "display_name": "Admin Server 内存",
+          "display_name": "Admin Server 内存(limit)",
           "name": "admin_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
@@ -77,8 +122,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Admin Server CPU",
-          "display_name": "Admin Server CPU",
+          "description": "WebLogic Admin Server CPU分配的core数量",
+          "display_name": "Admin Server CPU(request)",
+          "name": "admin_cpu_request",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Admin Server CPU可以使用的最大core数量",
+          "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
           "value": "2",
           "value_type": "cpu",
@@ -95,8 +149,17 @@
           "max": "1024G"
         },
         {
+          "description": "WebLogic Managed Server 内存分配的内存",
+          "display_name": "Managed Server 内存(request)",
+          "name": "ms_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Managed Server 内存",
-          "display_name": "Managed Server 内存",
+          "display_name": "Managed Server 内存(limit)",
           "name": "ms_memory_limit",
           "value": "4096MB",
           "value_type": "memory",
@@ -104,8 +167,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Managed Server CPU",
-          "display_name": "Managed Server CPU",
+          "description": "WebLogic Managed Server CPU分配的core数量",
+          "display_name": "Managed Server CPU(request)",
+          "name": "ms_cpu_request",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Managed Server CPU可以使用的最大core数量",
+          "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
           "value": "2",
           "value_type": "cpu",
@@ -127,8 +199,17 @@
     {
       "configs": [
         {
+          "description": "WebLogic Admin Server 内存分配的内存",
+          "display_name": "Admin Server 内存(request)",
+          "name": "admin_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Admin Server 内存",
-          "display_name": "Admin Server 内存",
+          "display_name": "Admin Server 内存(limit)",
           "name": "admin_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
@@ -136,8 +217,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Admin Server CPU",
-          "display_name": "Admin Server CPU",
+          "description": "WebLogic Admin Server CPU分配的core数量",
+          "display_name": "Admin Server CPU(request)",
+          "name": "admin_cpu_request",
+          "value": "4",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Admin Server CPU可以使用的最大core数量",
+          "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
           "value": "4",
           "value_type": "cpu",
@@ -154,8 +244,17 @@
           "max": "1024G"
         },
         {
+          "description": "WebLogic Managed Server 内存分配的内存",
+          "display_name": "Managed Server 内存(request)",
+          "name": "ms_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Managed Server 内存",
-          "display_name": "Managed Server 内存",
+          "display_name": "Managed Server 内存(limit)",
           "name": "ms_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
@@ -163,8 +262,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Managed Server CPU",
-          "display_name": "Managed Server CPU",
+          "description": "WebLogic Managed Server CPU分配的core数量",
+          "display_name": "Managed Server CPU(request)",
+          "name": "ms_cpu_request",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Managed Server CPU可以使用的最大core数量",
+          "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
           "value": "2",
           "value_type": "cpu",
@@ -186,8 +294,17 @@
     {
       "configs": [
         {
+          "description": "WebLogic Admin Server 内存分配的内存",
+          "display_name": "Admin Server 内存(request)",
+          "name": "admin_memory_request",
+          "value": "8196MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Admin Server 内存",
-          "display_name": "Admin Server 内存",
+          "display_name": "Admin Server 内存(limit)",
           "name": "admin_memory_limit",
           "value": "8196MB",
           "value_type": "memory",
@@ -195,8 +312,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Admin Server CPU",
-          "display_name": "Admin Server CPU",
+          "description": "WebLogic Admin Server CPU分配的core数量",
+          "display_name": "Admin Server CPU(request)",
+          "name": "admin_cpu_request",
+          "value": "8",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Admin Server CPU可以使用的最大core数量",
+          "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
           "value": "8",
           "value_type": "cpu",
@@ -213,8 +339,17 @@
           "max": "1024G"
         },
         {
+          "description": "WebLogic Managed Server 内存分配的内存",
+          "display_name": "Managed Server 内存(request)",
+          "name": "ms_memory_request",
+          "value": "8196MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "WebLogic Managed Server 内存",
-          "display_name": "Managed Server 内存",
+          "display_name": "Managed Server 内存(limit)",
           "name": "ms_memory_limit",
           "value": "8196MB",
           "value_type": "memory",
@@ -222,8 +357,17 @@
           "max": "24576MB"
         },
         {
-          "description": "WebLogic Managed Server CPU",
-          "display_name": "Managed Server CPU",
+          "description": "WebLogic Managed Server CPU分配的core数量",
+          "display_name": "Managed Server CPU(request)",
+          "name": "ms_cpu_request",
+          "value": "8",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "WebLogic Managed Server CPU可以使用的最大core数量",
+          "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
           "value": "8",
           "value_type": "cpu",
