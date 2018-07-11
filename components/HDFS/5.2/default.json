@@ -12,7 +12,7 @@
           "description": "每个HDFS Datanode的CPU core数量",
           "display_name": "HDFS Datanode CPU核数",
           "name": "hdfs_data_cpu_limit",
-          "value": "0.1",
+          "value": "2",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -30,7 +30,7 @@
           "description": "HDFS Namenode的CPU core数量",
           "display_name": "HDFS Namenode CPU核数",
           "name": "hdfs_name_cpu_limit",
-          "value": "0.1",
+          "value": "2",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
