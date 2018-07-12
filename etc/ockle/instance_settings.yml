@@ -3,6 +3,8 @@
 # ----
 #instance:
 #  resource:
+#    replicas:
+#      - all instance needed replicas(ha+computing_unit+disks)
 #    ha:
 #      - example_replicas
 #    computing_unit:
@@ -42,6 +44,8 @@ common:
 
 cas:
   resource:
+    replicas:
+      - cas_server_replicas
     ha:
       - cas_server_replicas
   configuration:
@@ -54,6 +58,11 @@ cas:
 
 codis:
   resource:
+    replicas:
+      - codis_dash_replicas
+      - codis_proxy_replicas
+      - codis_fe_replicas
+      - codis_server_replicas
     ha:
       - codis_dash_replicas
       - codis_proxy_replicas
@@ -91,6 +100,10 @@ discover:
 
 elasticsearch:
   resource:
+    replicas:
+      - es_client_replicas
+      - es_master_replicas
+      - es_data_replicas
     ha:
       - es_client_replicas
       - es_master_replicas
@@ -128,6 +141,8 @@ filerobot:
 
 gn-tenant:
   resource:
+    replicas:
+      - gn_replicas
     ha:
       - gn_replicas
 
@@ -159,6 +174,8 @@ governor-proxy:
 
 guardian:
   resource:
+    replicas:
+      - guardian_server_replicas
     ha:
       - guardian_server_replicas
   configuration:
@@ -170,6 +187,9 @@ guardian:
 
 guardian-cas:
   resource:
+    replicas:
+      - guardian_server_replicas
+      - cas_server_replicas
     ha:
       - guardian_server_replicas
       - cas_server_replicas
@@ -188,6 +208,11 @@ guardian-cas:
 
 hdfs:
   resource:
+    replicas:
+      - hdfs_httpfs_replicas
+      - hdfs_data_replicas
+      - hdfs_journal_replicas
+      - hdfs_data_disk_replicas
     computing_unit:
       - hdfs_data_replicas
       - hdfs_journal_replicas
@@ -222,6 +247,11 @@ hdfs:
 
 hyperbase:
   resource:
+    replicas:
+      - hbase_master_replicas
+      - hbase_thrift_replicas
+      - hbase_rest_replicas
+      - hbase_rs_replicas
     ha:
       - hbase_master_replicas
       - hbase_thrift_replicas
@@ -251,6 +281,10 @@ hyperbase:
 
 inceptor:
   resource:
+    replicas:
+      - inceptor_replicas
+      - inceptor_executor_replicas
+      - inceptor_shuffle_dir_counts
     ha:
       - inceptor_replicas
     computing_unit:
@@ -281,6 +315,8 @@ inceptor:
 
 metastore:
   resource:
+    replicas:
+      - metastore_replicas
     ha:
       - metastore_replicas
   configuration:
@@ -302,6 +338,8 @@ metastore:
 
 kafka:
   resource:
+    replicas:
+      - kafka_replicas
     computing_unit:
       - kafka_replicas
   configuration:
@@ -320,6 +358,8 @@ kafka:
 
 kafka-manager:
   resource:
+    replicas:
+      - kafka_manager_replicas
     ha:
       - kafka_manager_replicas
   configuration:
@@ -331,6 +371,8 @@ kafka-manager:
 
 kibana:
   resource:
+    replicas:
+      - kibana_replicas
     ha:
       - kibana_replicas
   configuration:
@@ -342,6 +384,8 @@ kibana:
 
 kong:
   resource:
+    replicas:
+      - kong_replicas
     ha:
       - kong_replicas
   configuration:
@@ -353,6 +397,8 @@ kong:
 
 kong-dashboard:
   resource:
+    replicas:
+      - kong_dashboard_replicas
     ha:
       - kong_dashboard_replicas
   configuration:
@@ -372,6 +418,8 @@ localcran:
 
 logstash:
   resource:
+    replicas:
+      - logstash_replicas
     computing_unit:
       - logstash_replicas
   configuration:
@@ -402,6 +450,8 @@ notebook:
 
 notification:
   resource:
+    replicas:
+      - notification_replicas
     ha:
       - notification_replicas
   configuration:
@@ -415,6 +465,8 @@ notification:
 
 pilot:
   resource:
+    replicas:
+      - pilot_replicas
     ha:
       - pilot_replicas
   configuration:
@@ -436,6 +488,8 @@ pilot:
 
 rubik:
   resource:
+    replicas:
+      - rubik_replicas
     ha:
       - rubik_replicas
   configuration:
@@ -459,6 +513,10 @@ rubik:
 
 slipstream:
   resource:
+    replicas:
+      - inceptor_replicas
+      - inceptor_executor_replicas
+      - inceptor_shuffle_dir_counts
     ha:
       - inceptor_replicas
     computing_unit:
@@ -504,6 +562,8 @@ sophonweb:
 
 terminal:
   resource:
+    replicas:
+      - terminal_replicas
     ha:
       - terminal_replicas
   configuration:
@@ -515,6 +575,8 @@ terminal:
 
 tcc:
   resource:
+    replicas:
+      - tcc_replicas
     ha:
       - tcc_replicas
   configuration:
@@ -525,6 +587,8 @@ tcc:
 
 tdt:
   resource:
+    replicas:
+      - tdt_replicas
     ha:
       - tdt_replicas
   configuration:
@@ -548,11 +612,15 @@ ticket:
   database:
     - name: ticket_txsql_db_name
   resource:
+    replicas:
+      - ticket_replicas
     ha:
       - ticket_replicas
 
 txsql:
   resource:
+    replicas:
+      - txsql_replicas
     ha:
       - txsql_replicas
   configuration:
@@ -564,6 +632,8 @@ txsql:
 
 weblogic:
   resource:
+    replicas:
+      - ms_replicas
     computing_unit:
       - ms_replicas
   configuration:
@@ -575,7 +645,7 @@ weblogic:
 
 workflow:
   resource:
-    ha:
+    replicas:
       - workflow_replicas
   configuration:
     environment:
@@ -598,6 +668,9 @@ workflow:
 
 yarn:
   resource:
+    replicas:
+      - yarn_node_replicas
+      - yarn_data_disk_replicas
     computing_unit:
       - yarn_node_replicas
     disks:
@@ -626,6 +699,9 @@ yarn:
       env_cfg: GUARDIAN_SERVICE_ID
 
 zookeeper:
+  resource:
+    replicas:
+      - zk_replicas
   configuration:
     environment:
       - zk_env_list

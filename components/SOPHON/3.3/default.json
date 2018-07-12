@@ -9,11 +9,29 @@
     {
       "configs": [
         {
+          "description": "Spark driver进程的内存大小分配的内存",
+          "name": "spark_driver_memoryrequest",
+          "value": "1024MB",
+          "value_type": "memory",
+          "display_name": "Spark driver进程的内存大小(request)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Spark driver进程的内存大小",
           "name": "spark_driver_memory",
           "value": "1024MB",
           "value_type": "memory",
-          "display_name": "Spark driver进程的内存大小",
+          "display_name": "Spark driver进程的内存大小(limit)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小分配的内存",
+          "name": "spark_executor_memoryrequest",
+          "value": "2048MB",
+          "value_type": "memory",
+          "display_name": "Spark executor 进程的内存大小(request)",
           "min": "0MB",
           "max": "24576MB"
         },
@@ -22,7 +40,7 @@
           "name": "spark_executor_memory",
           "value": "2048MB",
           "value_type": "memory",
-          "display_name": "Spark executor 进程的内存大小",
+          "display_name": "Spark executor 进程的内存大小(limit)",
           "min": "0MB",
           "max": "24576MB"
         }
@@ -32,11 +50,29 @@
     {
       "configs": [
         {
+          "description": "Spark driver进程的内存大小分配的内存",
+          "name": "spark_driver_memoryrequest",
+          "value": "8192MB",
+          "value_type": "memory",
+          "display_name": "Spark driver进程的内存大小(request)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Spark driver进程的内存大小",
           "name": "spark_driver_memory",
           "value": "8192MB",
           "value_type": "memory",
-          "display_name": "Spark driver进程的内存大小",
+          "display_name": "Spark driver进程的内存大小(limit)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小分配的内存",
+          "name": "spark_executor_memoryrequest",
+          "value": "12288MB",
+          "value_type": "memory",
+          "display_name": "Spark executor 进程的内存大小(request)",
           "min": "0MB",
           "max": "24576MB"
         },
@@ -45,7 +81,7 @@
           "name": "spark_executor_memory",
           "value": "12288MB",
           "value_type": "memory",
-          "display_name": "Spark executor 进程的内存大小",
+          "display_name": "Spark executor 进程的内存大小(limit)",
           "min": "0MB",
           "max": "24576MB"
         }
@@ -55,11 +91,29 @@
     {
       "configs": [
         {
+          "description": "Spark driver进程的内存大小分配的内存",
+          "name": "spark_driver_memoryrequest",
+          "value": "12288MB",
+          "value_type": "memory",
+          "display_name": "Spark driver进程的内存大小(request)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Spark driver进程的内存大小",
           "name": "spark_driver_memory",
           "value": "12288MB",
           "value_type": "memory",
-          "display_name": "Spark driver进程的内存大小",
+          "display_name": "Spark driver进程的内存大小(limit)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小分配的内存",
+          "name": "spark_executor_memoryrequest",
+          "value": "24576MB",
+          "value_type": "memory",
+          "display_name": "Spark executor 进程的内存大小(request)",
           "min": "0MB",
           "max": "24576MB"
         },
@@ -68,7 +122,7 @@
           "name": "spark_executor_memory",
           "value": "24576MB",
           "value_type": "memory",
-          "display_name": "Spark executor 进程的内存大小",
+          "display_name": "Spark executor 进程的内存大小(limit)",
           "min": "0MB",
           "max": "24576MB"
         }
@@ -78,11 +132,29 @@
     {
       "configs": [
         {
+          "description": "Spark driver进程的内存大小分配的内存",
+          "name": "spark_driver_memoryrequest",
+          "value": "24576MB",
+          "value_type": "memory",
+          "display_name": "Spark driver进程的内存大小(request)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Spark driver进程的内存大小",
           "name": "spark_driver_memory",
           "value": "24576MB",
           "value_type": "memory",
-          "display_name": "Spark driver进程的内存大小",
+          "display_name": "Spark driver进程的内存大小(limit)",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Spark executor 进程的内存大小分配的内存",
+          "name": "spark_executor_memoryrequest",
+          "value": "36864MB",
+          "value_type": "memory",
+          "display_name": "Spark executor 进程的内存大小(request)",
           "min": "0MB",
           "max": "24576MB"
         },
@@ -91,7 +163,7 @@
           "name": "spark_executor_memory",
           "value": "36864MB",
           "value_type": "memory",
-          "display_name": "Spark executor 进程的内存大小",
+          "display_name": "Spark executor 进程的内存大小(limit)",
           "min": "0MB",
           "max": "24576MB"
         }

@@ -9,10 +9,19 @@
     {
       "configs": [
         {
-          "description": "TXSQL可以使用的CPU core数量",
-          "display_name": "TXSQL CPU核数",
-          "name": "txsql_cpu_limit",
+          "description": "TXSQL分配的CPU核数量",
+          "display_name": "TXSQL CPU核数(request)",
+          "name": "txsql_cpu_request",
           "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "TXSQL可以使用的最大CPU核数量",
+          "display_name": "TXSQL CPU核数(limit)",
+          "name": "txsql_cpu_limit",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -32,8 +41,17 @@
     {
       "configs": [
         {
-          "description": "TXSQL可以使用的CPU core数量",
-          "display_name": "TXSQL CPU核数",
+          "description": "TXSQL分配的CPU核数量",
+          "display_name": "TXSQL CPU核数(request)",
+          "name": "txsql_cpu_request",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "TXSQL可以使用的最大CPU核数量",
+          "display_name": "TXSQL CPU核数(limit)",
           "name": "txsql_cpu_limit",
           "value": "2",
           "value_type": "cpu",
@@ -55,8 +73,17 @@
     {
       "configs": [
         {
-          "description": "TXSQL可以使用的CPU core数量",
-          "display_name": "TXSQL CPU核数",
+          "description": "TXSQL分配的CPU核数量",
+          "display_name": "TXSQL CPU核数(request)",
+          "name": "txsql_cpu_request",
+          "value": "4",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "TXSQL可以使用的最大CPU核数量",
+          "display_name": "TXSQL CPU核数(limit)",
           "name": "txsql_cpu_limit",
           "value": "4",
           "value_type": "cpu",
@@ -78,8 +105,17 @@
     {
       "configs": [
         {
-          "description": "TXSQL可以使用的CPU core数量",
-          "display_name": "TXSQL CPU核数",
+          "description": "TXSQL分配的CPU核数量",
+          "display_name": "TXSQL CPU核数(request)",
+          "name": "txsql_cpu_request",
+          "value": "8",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "TXSQL可以使用的最大CPU核数量",
+          "display_name": "TXSQL CPU核数(limit)",
           "name": "txsql_cpu_limit",
           "value": "8",
           "value_type": "cpu",

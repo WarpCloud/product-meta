@@ -9,17 +9,35 @@
     {
       "configs": [
         {
-          "description": "每个Search Datanode可以使用的CPU core数量",
-          "display_name": "Search Datanode CPU核数",
-          "name": "es_data_cpu_limit",
+          "description": "每个Search Datanode分配的CPU核数量",
+          "display_name": "Search Datanode CPU核数(request)",
+          "name": "es_data_cpu_request",
           "value": "0.1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
         },
         {
+          "description": "每个Search Datanode可以使用的最大CPU核数量",
+          "display_name": "Search Datanode CPU核数(limit)",
+          "name": "es_data_cpu_limit",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "每个Search Datanode分配的内存",
+          "display_name": "Search Datanode内存(request)",
+          "name": "es_data_memory_request",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "每个Search Datanode可以使用的最大内存",
-          "display_name": "Search Datanode内存",
+          "display_name": "Search Datanode内存(limit)",
           "name": "es_data_memory_limit",
           "value": "2048MB",
           "value_type": "memory",
@@ -27,17 +45,35 @@
           "max": "24576MB"
         },
         {
-          "description": "Search Masternode可以使用的CPU core数量",
-          "display_name": "Search Masternode CPU核数",
-          "name": "es_master_cpu_limit",
+          "description": "Search Masternode分配的CPU核数量",
+          "display_name": "Search Masternode CPU核数(request)",
+          "name": "es_master_cpu_request",
           "value": "0.1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
         },
         {
+          "description": "Search Masternode可以使用的最大CPU核数量",
+          "display_name": "Search Masternode CPU核数(limit)",
+          "name": "es_master_cpu_limit",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Search Masternode分配的内存",
+          "display_name": "Search Masternode内存(request)",
+          "name": "es_master_memory_request",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Search Masternode可以使用的最大内存",
-          "display_name": "Search Masternode内存",
+          "display_name": "Search Masternode内存(limit)",
           "name": "es_master_memory_limit",
           "value": "2048MB",
           "value_type": "memory",
@@ -86,8 +122,17 @@
     {
       "configs": [
         {
-          "description": "每个Search Datanode可以使用的CPU core数量",
-          "display_name": "Search Datanode CPU核数",
+          "description": "每个Search Datanode分配的CPU核数量",
+          "display_name": "Search Datanode CPU核数(request)",
+          "name": "es_data_cpu_request",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "每个Search Datanode可以使用的最大CPU核数量",
+          "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
           "value": "6",
           "value_type": "cpu",
@@ -95,8 +140,17 @@
           "max": "24"
         },
         {
+          "description": "每个Search Datanode分配的内存",
+          "display_name": "Search Datanode内存(request)",
+          "name": "es_data_memory_request",
+          "value": "16384MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "每个Search Datanode可以使用的最大内存",
-          "display_name": "Search Datanode内存",
+          "display_name": "Search Datanode内存(limit)",
           "name": "es_data_memory_limit",
           "value": "16384MB",
           "value_type": "memory",
@@ -104,8 +158,17 @@
           "max": "24576MB"
         },
         {
-          "description": "Search Masternode可以使用的CPU core数量",
-          "display_name": "Search Masternode CPU核数",
+          "description": "Search Masternode分配的CPU核数量",
+          "display_name": "Search Masternode CPU核数(request)",
+          "name": "es_master_cpu_request",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Search Masternode可以使用的最大CPU核数量",
+          "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
           "value": "6",
           "value_type": "cpu",
@@ -113,8 +176,17 @@
           "max": "24"
         },
         {
+          "description": "Search Masternode分配的内存",
+          "display_name": "Search Masternode内存(request)",
+          "name": "es_master_memory_request",
+          "value": "65536MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Search Masternode可以使用的最大内存",
-          "display_name": "Search Masternode内存",
+          "display_name": "Search Masternode内存(limit)",
           "name": "es_master_memory_limit",
           "value": "65536MB",
           "value_type": "memory",
@@ -163,8 +235,17 @@
     {
       "configs": [
         {
-          "description": "每个Search Datanode可以使用的CPU core数量",
-          "display_name": "Search Datanode CPU核数",
+          "description": "每个Search Datanode分配的CPU核数量",
+          "display_name": "Search Datanode CPU核数(request)",
+          "name": "es_data_cpu_request",
+          "value": "12",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "每个Search Datanode可以使用的最大CPU核数量",
+          "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
           "value": "12",
           "value_type": "cpu",
@@ -172,8 +253,17 @@
           "max": "24"
         },
         {
+          "description": "每个Search Datanode分配的内存",
+          "display_name": "Search Datanode内存(request)",
+          "name": "es_data_memory_request",
+          "value": "24576MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "每个Search Datanode可以使用的最大内存",
-          "display_name": "Search Datanode内存",
+          "display_name": "Search Datanode内存(limit)",
           "name": "es_data_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
@@ -181,8 +271,17 @@
           "max": "24576MB"
         },
         {
-          "description": "Search Masternode可以使用的CPU core数量",
-          "display_name": "Search Masternode CPU核数",
+          "description": "Search Masternode分配的CPU核数量",
+          "display_name": "Search Masternode CPU核数(request)",
+          "name": "es_master_cpu_request",
+          "value": "8",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Search Masternode可以使用的最大CPU核数量",
+          "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
           "value": "8",
           "value_type": "cpu",
@@ -190,8 +289,17 @@
           "max": "24"
         },
         {
+          "description": "Search Masternode分配的内存",
+          "display_name": "Search Masternode内存(request)",
+          "name": "es_master_memory_request",
+          "value": "131072MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Search Masternode可以使用的最大内存",
-          "display_name": "Search Masternode内存",
+          "display_name": "Search Masternode内存(limit)",
           "name": "es_master_memory_limit",
           "value": "131072MB",
           "value_type": "memory",
@@ -240,8 +348,17 @@
     {
       "configs": [
         {
-          "description": "每个Search Datanode可以使用的CPU core数量",
-          "display_name": "Search Datanode CPU核数",
+          "description": "每个Search Datanode分配的CPU核数量",
+          "display_name": "Search Datanode CPU核数(request)",
+          "name": "es_data_cpu_request",
+          "value": "16",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "每个Search Datanode可以使用的最大CPU核数量",
+          "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
           "value": "16",
           "value_type": "cpu",
@@ -249,8 +366,17 @@
           "max": "24"
         },
         {
+          "description": "每个Search Datanode分配的内存",
+          "display_name": "Search Datanode内存(request)",
+          "name": "es_data_memory_request",
+          "value": "32768MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "每个Search Datanode可以使用的最大内存",
-          "display_name": "Search Datanode内存",
+          "display_name": "Search Datanode内存(limit)",
           "name": "es_data_memory_limit",
           "value": "32768MB",
           "value_type": "memory",
@@ -258,8 +384,17 @@
           "max": "24576MB"
         },
         {
-          "description": "Search Masternode可以使用的CPU core数量",
-          "display_name": "Search Masternode CPU核数",
+          "description": "Search Masternode分配的CPU核数量",
+          "display_name": "Search Masternode CPU核数(request)",
+          "name": "es_master_cpu_request",
+          "value": "16",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Search Masternode可以使用的最大CPU核数量",
+          "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
           "value": "16",
           "value_type": "cpu",
@@ -267,8 +402,17 @@
           "max": "24"
         },
         {
+          "description": "Search Masternode分配的内存",
+          "display_name": "Search Masternode内存(request)",
+          "name": "es_master_memory_request",
+          "value": "262144MB",
+          "value_type": "memory",
+          "min": "2048MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Search Masternode可以使用的最大内存",
-          "display_name": "Search Masternode内存",
+          "display_name": "Search Masternode内存(limit)",
           "name": "es_master_memory_limit",
           "value": "262144MB",
           "value_type": "memory",

@@ -9,17 +9,35 @@
     {
       "configs": [
         {
-          "description": "Terminal可以使用的CPU core数量",
-          "display_name": "Terminal CPU核数",
-          "name": "terminal_cpu_limit",
+          "description": "Terminal分配的CPU核数量",
+          "display_name": "Terminal CPU核数(request)",
+          "name": "terminal_cpu_request",
           "value": "0.1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
         },
         {
+          "description": "Terminal可以使用的最大CPU核数量",
+          "display_name": "Terminal CPU核数(limit)",
+          "name": "terminal_cpu_limit",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal分配的内存",
+          "display_name": "Terminal内存(request)",
+          "name": "terminal_memory_request",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Terminal可以使用的最大内存",
-          "display_name": "Terminal内存",
+          "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
           "value": "1024MB",
           "value_type": "memory",
@@ -32,8 +50,17 @@
     {
       "configs": [
         {
-          "description": "Terminal可以使用的CPU core数量",
-          "display_name": "Terminal CPU核数",
+          "description": "Terminal分配的CPU核数量",
+          "display_name": "Terminal CPU核数(request)",
+          "name": "terminal_cpu_request",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大CPU核数量",
+          "display_name": "Terminal CPU核数(limit)",
           "name": "terminal_cpu_limit",
           "value": "6",
           "value_type": "cpu",
@@ -41,8 +68,17 @@
           "max": "24"
         },
         {
+          "description": "Terminal分配的内存",
+          "display_name": "Terminal内存(request)",
+          "name": "terminal_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Terminal可以使用的最大内存",
-          "display_name": "Terminal内存",
+          "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
           "value": "8192MB",
           "value_type": "memory",
@@ -55,8 +91,17 @@
     {
       "configs": [
         {
-          "description": "Terminal可以使用的CPU core数量",
-          "display_name": "Terminal CPU核数",
+          "description": "Terminal分配的CPU核数量",
+          "display_name": "Terminal CPU核数(request)",
+          "name": "terminal_cpu_request",
+          "value": "12",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大CPU核数量",
+          "display_name": "Terminal CPU核数(limit)",
           "name": "terminal_cpu_limit",
           "value": "12",
           "value_type": "cpu",
@@ -64,8 +109,17 @@
           "max": "24"
         },
         {
+          "description": "Terminal分配的内存",
+          "display_name": "Terminal内存(request)",
+          "name": "terminal_memory_request",
+          "value": "12288MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Terminal可以使用的最大内存",
-          "display_name": "Terminal内存",
+          "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
           "value": "12288MB",
           "value_type": "memory",
@@ -78,8 +132,17 @@
     {
       "configs": [
         {
-          "description": "Terminal可以使用的CPU core数量",
-          "display_name": "Terminal CPU核数",
+          "description": "Terminal分配的CPU核数量",
+          "display_name": "Terminal CPU核数(request)",
+          "name": "terminal_cpu_request",
+          "value": "16",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大CPU核数量",
+          "display_name": "Terminal CPU核数(limit)",
           "name": "terminal_cpu_limit",
           "value": "16",
           "value_type": "cpu",
@@ -87,8 +150,17 @@
           "max": "24"
         },
         {
+          "description": "Terminal分配的内存",
+          "display_name": "Terminal内存(request)",
+          "name": "terminal_memory_request",
+          "value": "24576MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
           "description": "Terminal可以使用的最大内存",
-          "display_name": "Terminal内存",
+          "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
           "value": "24576MB",
           "value_type": "memory",
