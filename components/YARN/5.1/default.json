@@ -21,7 +21,7 @@
           "description": "YARN NodeManager可以使用的最大CPU核数量",
           "display_name": "YARN NodeManager CPU核数(limit)",
           "name": "yarn_node_cpu_limit",
-          "value": "0.1",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -57,7 +57,7 @@
           "description": "YARN ResourceManager可以使用的最大CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(limit)",
           "name": "yarn_rm_cpu_limit",
-          "value": "0.1",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

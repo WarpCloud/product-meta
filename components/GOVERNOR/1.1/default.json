@@ -21,7 +21,7 @@
           "description": "Governor服务可以使用的最大CPU核数量",
           "display_name": "Governor CPU核数(limit)",
           "name": "governor_cpu_limit",
-          "value": "0.1",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

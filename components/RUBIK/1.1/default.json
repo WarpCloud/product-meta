@@ -21,7 +21,7 @@
           "description": "Rubik可以使用的最大CPU核数量",
           "display_name": "Rubik CPU核数(limit)",
           "name": "rubik_cpu_limit",
-          "value": "0.1",
+          "value": "1",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
