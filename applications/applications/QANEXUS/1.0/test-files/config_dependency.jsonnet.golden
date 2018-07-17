@@ -1,0 +1,25 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "nexus",
+            "application_type": "QANEXUS"
+         },
+         "configs": {
+            "nexus_cpu_limit": 2,
+            "nexus_cpu_request": 0.10000000000000001,
+            "nexus_memory_limit": 4,
+            "nexus_memory_request": 1
+         },
+         "instance_settings": { },
+         "moduleName": "qa-nexus",
+         "name": "nexus-qa-nexus",
+         "version": "1.0"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

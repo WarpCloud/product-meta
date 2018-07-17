@@ -1,0 +1,9 @@
+{
+  "category_name": "SMARTBI",
+  "description": "Smartbi 是一款专业的 BI 前端展现工具，具有仪表盘（管理驾驶舱）、灵活查询、电子表格、OLAP多维分析、移动BI应用、Office分析报告插件、自助分析、数据采集等功能模块",
+  "display_name": "SmartBI",
+  "description_en": "Smartbi is a professional BI front-end presentation tool with dashboard (management cockpit), flexible query, spreadsheet, OLAP multi-dimensional analysis, mobile BI application, Office analysis report plug-in, self-service analysis, data acquisition and other functional modules.",
+  "display_name_en": "SmartBI",
+  "source": "third-party",
+  "final": true
+}

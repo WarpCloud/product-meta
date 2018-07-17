@@ -385,3 +385,29 @@ ZOOKEEPER:
       zk_storage_config: DiskNormalSize
     priority_metrics:
       zk_priority: 0
+
+SMARTBI:
+  configuration:
+    priority_metrics:
+      smartbi_tomcat_priority: 0
+      smartbi_mysql_priority: 0
+
+QANEXUS:
+  configuration:
+    priority_metrics:
+      nexus_priority: 0
+
+QAJENKINS:
+  configuration:
+    priority_metrics:
+      jenkins_priority: 0
+
+GITLAB:
+  configuration:
+    priority_metrics:
+      gitlab_priority: 10
+
+HARBOR:
+  configuration:
+    priority_metrics:
+      harbor_priority: 10

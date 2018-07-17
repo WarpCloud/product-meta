@@ -1,0 +1,9 @@
+{
+  "category_name": "GITLAB",
+  "description": "Gitlab 是一款专业的代码托管仓库,具有代码托管，持续构建，流水线，Web钩子等功能",
+  "display_name": "Gitlab",
+  "description_en": "Gitlab is a professional code-managed repository with code hosting, continuous build, pipeline, web hooks, etc.",
+  "display_name_en": "Gitlab",
+  "source": "third-party",
+  "final": true
+}
