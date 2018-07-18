@@ -616,6 +616,9 @@ ticket:
       - ticket_replicas
     ha:
       - ticket_replicas
+  configuration:
+    environment:
+      - ticket_env_list
 
 txsql:
   resource:
