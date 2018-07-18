@@ -59,7 +59,7 @@
           "max": "24"
         },
         {
-          "description": "Pilot可以使用可以使用的最大CPU核数量",
+          "description": "Pilot可以使用的最大CPU核数量",
           "display_name": "Pilot CPU核数(limit)",
           "name": "pilot_cpu_limit",
           "value": "2",
@@ -100,7 +100,7 @@
           "max": "24"
         },
         {
-          "description": "Pilot可以使用可以使用的最大CPU核数量",
+          "description": "Pilot可以使用的最大CPU核数量",
           "display_name": "Pilot CPU核数(limit)",
           "name": "pilot_cpu_limit",
           "value": "4",
@@ -141,7 +141,7 @@
           "max": "24"
         },
         {
-          "description": "Pilot可以使用可以使用的最大CPU核数量",
+          "description": "Pilot可以使用的最大CPU核数量",
           "display_name": "Pilot CPU核数(limit)",
           "name": "pilot_cpu_limit",
           "value": "6",
