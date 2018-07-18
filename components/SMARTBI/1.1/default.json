@@ -33,7 +33,7 @@
           "value": "128MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_TOMCAT可以使用的最大内存",
@@ -42,7 +42,7 @@
           "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL分配的CPU核数量",
@@ -69,7 +69,7 @@
           "value": "128MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL可以使用的最大内存",
@@ -78,7 +78,7 @@
           "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         }
       ],
       "level": "demo"
@@ -110,7 +110,7 @@
           "value": "1024MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_TOMCAT可以使用的最大内存",
@@ -119,7 +119,7 @@
           "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL分配的CPU核数量",
@@ -146,7 +146,7 @@
           "value": "1024MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL可以使用的最大内存",
@@ -155,7 +155,7 @@
           "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         }
       ],
       "level": "low"
@@ -175,7 +175,7 @@
           "description": "SMARTBI_TOMCAT可以使用的最大CPU核数量",
           "display_name": "SMARTBI_TOMCAT CPU核数(limit)",
           "name": "smartbi_tomcat_cpu_limit",
-          "value": "4",
+          "value": "6",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -184,19 +184,19 @@
           "description": "SMARTBI_TOMCAT分配的内存",
           "display_name": "SMARTBI_TOMCAT内存(request)",
           "name": "smartbi_tomcat_memory_request",
-          "value": "2048MB",
+          "value": "8192MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_TOMCAT可以使用的最大内存",
           "display_name": "SMARTBI_TOMCAT内存(limit)",
           "name": "smartbi_tomcat_memory_limit",
-          "value": "4096MB",
+          "value": "24576MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL分配的CPU核数量",
@@ -211,7 +211,7 @@
           "description": "SMARTBI_MYSQL可以使用的最大CPU核数量",
           "display_name": "SMARTBI_MYSQL CPU核数(limit)",
           "name": "smartbi_mysql_cpu_limit",
-          "value": "4",
+          "value": "2",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -220,19 +220,19 @@
           "description": "SMARTBI_MYSQL分配的内存",
           "display_name": "SMARTBI_MYSQL内存(request)",
           "name": "smartbi_mysql_memory_request",
-          "value": "1024MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL可以使用的最大内存",
           "display_name": "SMARTBI_MYSQL内存(limit)",
           "name": "smartbi_mysql_memory_limit",
-          "value": "4096MB",
+          "value": "8192MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         }
       ],
       "level": "medium"
@@ -243,7 +243,7 @@
           "description": "SMARTBI_TOMCAT分配的CPU核数量",
           "display_name": "SMARTBI_TOMCAT CPU核数(request)",
           "name": "smartbi_tomcat_cpu_request",
-          "value": "4",
+          "value": "6",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -252,7 +252,7 @@
           "description": "SMARTBI_TOMCAT可以使用的最大CPU核数量",
           "display_name": "SMARTBI_TOMCAT CPU核数(limit)",
           "name": "smartbi_tomcat_cpu_limit",
-          "value": "4",
+          "value": "8",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -261,19 +261,19 @@
           "description": "SMARTBI_TOMCAT分配的内存",
           "display_name": "SMARTBI_TOMCAT内存(request)",
           "name": "smartbi_tomcat_memory_request",
-          "value": "4096MB",
+          "value": "10240MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_TOMCAT可以使用的最大内存",
           "display_name": "SMARTBI_TOMCAT内存(limit)",
           "name": "smartbi_tomcat_memory_limit",
-          "value": "4096MB",
+          "value": "24576MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL分配的CPU核数量",
@@ -297,19 +297,19 @@
           "description": "SMARTBI_MYSQL分配的内存",
           "display_name": "SMARTBI_MYSQL内存(request)",
           "name": "smartbi_mysql_memory_request",
-          "value": "4096MB",
+          "value": "8196MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         },
         {
           "description": "SMARTBI_MYSQL可以使用的最大内存",
           "display_name": "SMARTBI_MYSQL内存(limit)",
           "name": "smartbi_mysql_memory_limit",
-          "value": "4096MB",
+          "value": "10240MB",
           "value_type": "memory",
           "min": "0MB",
-          "max": "10240MB"
+          "max": "40960MB"
         }
       ],
       "level": "high"

@@ -27,9 +27,18 @@
           "max": "24"
         },
         {
+          "description": "TXSQL分配的内存",
+          "display_name": "TXSQL内存(request)",
+          "name": "txsql_memory_request",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "TXSQL可以使用的最大内存",
-          "display_name": "TXSQL内存",
-          "name": "txsql_mem_limit",
+          "display_name": "TXSQL内存(limit)",
+          "name": "txsql_memory_limit",
           "value": "1024MB",
           "value_type": "num",
           "min": "0",
@@ -59,9 +68,18 @@
           "max": "24"
         },
         {
+          "description": "TXSQL分配的内存",
+          "display_name": "TXSQL内存(request)",
+          "name": "txsql_memory_request",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "TXSQL可以使用的最大内存",
-          "display_name": "TXSQL内存",
-          "name": "txsql_mem_limit",
+          "display_name": "TXSQL内存(limit)",
+          "name": "txsql_memory_limit",
           "value": "4096MB",
           "value_type": "num",
           "min": "0",
@@ -91,9 +109,18 @@
           "max": "24"
         },
         {
+          "description": "TXSQL分配的内存",
+          "display_name": "TXSQL内存(request)",
+          "name": "txsql_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "TXSQL可以使用的最大内存",
-          "display_name": "TXSQL内存",
-          "name": "txsql_mem_limit",
+          "display_name": "TXSQL内存(limit)",
+          "name": "txsql_memory_limit",
           "value": "8192MB",
           "value_type": "num",
           "min": "0",
@@ -108,7 +135,7 @@
           "description": "TXSQL分配的CPU核数量",
           "display_name": "TXSQL CPU核数(request)",
           "name": "txsql_cpu_request",
-          "value": "8",
+          "value": "6",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -117,16 +144,25 @@
           "description": "TXSQL可以使用的最大CPU核数量",
           "display_name": "TXSQL CPU核数(limit)",
           "name": "txsql_cpu_limit",
-          "value": "8",
+          "value": "6",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
         },
         {
+          "description": "TXSQL分配的内存",
+          "display_name": "TXSQL内存(request)",
+          "name": "txsql_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "1024MB",
+          "max": "24576MB"
+        },
+        {
           "description": "TXSQL可以使用的最大内存",
-          "display_name": "TXSQL内存",
-          "name": "txsql_mem_limit",
-          "value": "12288MB",
+          "display_name": "TXSQL内存(limit)",
+          "name": "txsql_memory_limit",
+          "value": "12880MB",
           "value_type": "num",
           "min": "0",
           "max": "10"
