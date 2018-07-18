@@ -1,0 +1,15 @@
+instance-type: harbor
+major-version: '1.1'
+min-tdc-version: tdc-1.1
+hot-fix-ranges:
+- max: tdc-1.1
+  min: tdc-1.1
+images:
+- name: registry
+  variable: harbor_image
+releases:
+- dependencies: []
+  final: false
+  image-version:
+    harbor_image: tdc-1.1
+  release-version: tdc-1.1

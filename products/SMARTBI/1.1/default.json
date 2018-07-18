@@ -1,15 +1,8 @@
 {
-  "edition": "5.2",
+  "edition": "1.1",
   "final": true,
   "components": [
-    "INCEPTOR-5.2",
-    "DISCOVER-5.2",
-    "HDFS-5.2",
-    "YARN-5.2",
-    "NOTEBOOK-5.2",
-    "PILOT-1.1",
-    "TERMINAL-1.2",
-    "TXSQL-5.2"
+    "SMARTBI-1.1"
   ],
   "templates": [
     {

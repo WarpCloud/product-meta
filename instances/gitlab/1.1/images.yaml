@@ -1,0 +1,21 @@
+instance-type: gitlab
+major-version: '1.1'
+min-tdc-version: tdc-1.1
+hot-fix-ranges:
+- max: tdc-1.1
+  min: tdc-1.1
+images:
+- name: gitlab
+  variable: gitlab_image
+- name: redis
+  variable: redis_image
+- name: postgresql
+  variable: postgresql_image
+releases:
+- dependencies: []
+  final: false
+  image-version:
+    gitlab_image: tdc-1.1
+    redis_image: tdc-1.1
+    postgresql_image: tdc-1.1
+  release-version: tdc-1.1

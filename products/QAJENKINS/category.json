@@ -1,0 +1,9 @@
+{
+  "category_name": "QAJENKINS",
+  "description": "Jenkins是一款由Java编写的开源的持续集成工具,Jenkins提供了软件开发的持续集成服务,可以通过各种手段触发构建。例如提交给版本控制系统时被触发，也可以通过类似Cron的机制调度，也可以在其他的构建已经完成时，还可以通过一个特定的URL进行请求。",
+  "display_name": "Jenkins",
+  "description_en": "Jenkins is an open source, continuous integration tool written in Java. Jenkins provides a continuous integration service for software development that can be triggered by various means. For example, when it is submitted to the version control system, it can be triggered. It can also be scheduled through a Cron-like mechanism. It can also be requested through a specific URL when other builds have been completed.",
+  "display_name_en": "Jenkins",
+  "source": "third-party",
+  "final": true
+}

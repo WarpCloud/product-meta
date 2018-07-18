@@ -1,0 +1,15 @@
+{
+  "edition": "1.1",
+  "final": true,
+  "components": [
+    "GITLAB-1.1"
+  ],
+  "templates": [
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    }
+  ],
+  "is_distributed": true
+}
