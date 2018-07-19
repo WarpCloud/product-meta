@@ -1,0 +1,138 @@
+{
+  "category": "数据同步工具",
+  "component_type": "OGG",
+  "source": "transwarp",
+  "description": "基于日志的结构化数据复制方式，实现源数据库与目标数据库同步、双活",
+  "edition": "12.1",
+  "name": "OGG-12.1",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "OGG分配的CPU核数量",
+          "display_name": "OGG CPU核数(request)",
+          "name": "ogg_cpu_request",
+          "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大CPU核数量",
+          "display_name": "OGG CPU核数(limit)",
+          "name": "ogg_cpu_limit",
+          "value": "1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大内存",
+          "display_name": "OGG内存",
+          "name": "ogg_mem_limit",
+          "value": "1024MB",
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "OGG分配的CPU核数量",
+          "display_name": "OGG CPU核数(request)",
+          "name": "ogg_cpu_request",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大CPU核数量",
+          "display_name": "OGG CPU核数(limit)",
+          "name": "ogg_cpu_limit",
+          "value": "2",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大内存",
+          "display_name": "OGG内存",
+          "name": "ogg_mem_limit",
+          "value": "4096MB",
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "OGG分配的CPU核数量",
+          "display_name": "OGG CPU核数(request)",
+          "name": "ogg_cpu_request",
+          "value": "4",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大CPU核数量",
+          "display_name": "OGG CPU核数(limit)",
+          "name": "ogg_cpu_limit",
+          "value": "4",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大内存",
+          "display_name": "OGG内存",
+          "name": "ogg_mem_limit",
+          "value": "8192MB",
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "OGG分配的CPU核数量",
+          "display_name": "OGG CPU核数(request)",
+          "name": "ogg_cpu_request",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大CPU核数量",
+          "display_name": "OGG CPU核数(limit)",
+          "name": "ogg_cpu_limit",
+          "value": "6",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "OGG可以使用的最大内存",
+          "display_name": "OGG内存",
+          "name": "ogg_mem_limit",
+          "value": "12288MB",
+          "value_type": "num",
+          "min": "0",
+          "max": "10"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

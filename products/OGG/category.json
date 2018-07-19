@@ -1,0 +1,9 @@
+{
+  "category_name": "OGG",
+  "description": "Oracle Golden Gate是Oracle出品的一款数据同步工具，以一种基于日志的结构化数据复制方式, 实现源数据库与目标数据库同步.",
+  "display_name": "Oracle Golden Gate",
+  "description_en": "Oracle Golden Gate is a data synchronization tool from Oracle. It uses a log-based structured data replication method to synchronize the source database with the target database.",
+  "display_name_en": "Oracle Golden Gate",
+  "source": "third-party",
+  "final": true
+}
