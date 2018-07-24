@@ -368,6 +368,11 @@ kafka-manager:
   image:
     default:
       - kafka_manager_image
+  security:
+    principal_list:
+      - kafka
+    security_on:
+      - kafka_manager_mounted_kerberos
 
 kibana:
   resource:
