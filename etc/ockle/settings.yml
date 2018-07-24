@@ -368,7 +368,7 @@ service_for_development:
 
   OGG:
   - port: 7809
-    generate_name: ogg
+    generate_name: "ogg, ogg-for-big-data"
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
