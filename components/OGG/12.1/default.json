@@ -2,15 +2,15 @@
   "category": "数据同步工具",
   "component_type": "OGG",
   "source": "transwarp",
-  "description": "基于日志的结构化数据复制方式，实现源数据库与目标数据库同步、双活",
+  "description": "基于日志的结构化数据复制方式，实现源数据库与目标数据库同步、双活。该版本针对于Oracle。",
   "edition": "12.1",
   "name": "OGG-12.1",
   "templates": [
     {
       "configs": [
         {
-          "description": "OGG分配的CPU核数量",
-          "display_name": "OGG CPU核数(request)",
+          "description": "Ogg CPU核数的CPU核数量",
+          "display_name": "Ogg CPU核数(request)",
           "name": "ogg_cpu_request",
           "value": "0.1",
           "value_type": "cpu",
@@ -18,8 +18,8 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大CPU核数量",
-          "display_name": "OGG CPU核数(limit)",
+          "description": "Ogg可以使用的最大CPU核数量",
+          "display_name": "Ogg CPU核数(limit)",
           "name": "ogg_cpu_limit",
           "value": "1",
           "value_type": "cpu",
@@ -27,13 +27,22 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大内存",
-          "display_name": "OGG内存",
-          "name": "ogg_mem_limit",
+          "description": "Ogg CPU核数的内存",
+          "display_name": "Ogg内存(request)",
+          "name": "ogg_memory_request",
           "value": "1024MB",
-          "value_type": "num",
-          "min": "0",
-          "max": "10"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Ogg可以使用的最大内存",
+          "display_name": "Ogg内存(limit)",
+          "name": "ogg_memory_limit",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "demo"
@@ -41,8 +50,8 @@
     {
       "configs": [
         {
-          "description": "OGG分配的CPU核数量",
-          "display_name": "OGG CPU核数(request)",
+          "description": "Ogg CPU核数的CPU核数量",
+          "display_name": "Ogg CPU核数(request)",
           "name": "ogg_cpu_request",
           "value": "2",
           "value_type": "cpu",
@@ -50,8 +59,8 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大CPU核数量",
-          "display_name": "OGG CPU核数(limit)",
+          "description": "Ogg可以使用的最大CPU核数量",
+          "display_name": "Ogg CPU核数(limit)",
           "name": "ogg_cpu_limit",
           "value": "2",
           "value_type": "cpu",
@@ -59,13 +68,22 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大内存",
-          "display_name": "OGG内存",
-          "name": "ogg_mem_limit",
+          "description": "Ogg CPU核数的内存",
+          "display_name": "Ogg内存(request)",
+          "name": "ogg_memory_request",
           "value": "4096MB",
-          "value_type": "num",
-          "min": "0",
-          "max": "10"
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Ogg可以使用的最大内存",
+          "display_name": "Ogg内存(limit)",
+          "name": "ogg_memory_limit",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "low"
@@ -73,8 +91,8 @@
     {
       "configs": [
         {
-          "description": "OGG分配的CPU核数量",
-          "display_name": "OGG CPU核数(request)",
+          "description": "Ogg CPU核数的CPU核数量",
+          "display_name": "Ogg CPU核数(request)",
           "name": "ogg_cpu_request",
           "value": "4",
           "value_type": "cpu",
@@ -82,8 +100,8 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大CPU核数量",
-          "display_name": "OGG CPU核数(limit)",
+          "description": "Ogg可以使用的最大CPU核数量",
+          "display_name": "Ogg CPU核数(limit)",
           "name": "ogg_cpu_limit",
           "value": "4",
           "value_type": "cpu",
@@ -91,13 +109,22 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大内存",
-          "display_name": "OGG内存",
-          "name": "ogg_mem_limit",
-          "value": "8192MB",
-          "value_type": "num",
-          "min": "0",
-          "max": "10"
+          "description": "Ogg CPU核数的内存",
+          "display_name": "Ogg内存(request)",
+          "name": "ogg_memory_request",
+          "value": "6144MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Ogg可以使用的最大内存",
+          "display_name": "Ogg内存(limit)",
+          "name": "ogg_memory_limit",
+          "value": "6144MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "medium"
@@ -105,8 +132,8 @@
     {
       "configs": [
         {
-          "description": "OGG分配的CPU核数量",
-          "display_name": "OGG CPU核数(request)",
+          "description": "Ogg CPU核数的CPU核数量",
+          "display_name": "Ogg CPU核数(request)",
           "name": "ogg_cpu_request",
           "value": "6",
           "value_type": "cpu",
@@ -114,8 +141,8 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大CPU核数量",
-          "display_name": "OGG CPU核数(limit)",
+          "description": "Ogg可以使用的最大CPU核数量",
+          "display_name": "Ogg CPU核数(limit)",
           "name": "ogg_cpu_limit",
           "value": "6",
           "value_type": "cpu",
@@ -123,13 +150,22 @@
           "max": "24"
         },
         {
-          "description": "OGG可以使用的最大内存",
-          "display_name": "OGG内存",
-          "name": "ogg_mem_limit",
-          "value": "12288MB",
-          "value_type": "num",
-          "min": "0",
-          "max": "10"
+          "description": "Ogg CPU核数的内存",
+          "display_name": "Ogg内存(request)",
+          "name": "ogg_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Ogg可以使用的最大内存",
+          "display_name": "Ogg内存(limit)",
+          "name": "ogg_memory_limit",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
         }
       ],
       "level": "high"
