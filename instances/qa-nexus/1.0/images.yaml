@@ -5,7 +5,7 @@ hot-fix-ranges:
 - max: tdc-1.1
   min: tdc-1.1
 images:
-- name: nexus
+- name: nexus3
   variable: nexus_image
 releases:
 - dependencies: []
