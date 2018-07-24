@@ -1,57 +1,15 @@
 instance-type: ogg
 major-version: '12.1'
-min-tdc-version: tdc-1.0
+min-tdc-version: tdc-1.1
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc9
-    min: tdc-1.0.0-rc0
-  - max: tdc-1.0
-    min: tdc-1.0
+  - max: tdc-1.1
+    min: tdc-1.1
 images:
   - name: ogg
     variable: ogg_image
 releases:
   - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc2
-    release-version: tdc-1.0.0-rc2
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc3
-    release-version: tdc-1.0.0-rc3
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc4
-    release-version: tdc-1.0.0-rc4
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc5
-    release-version: tdc-1.0.0-rc5
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc6
-    release-version: tdc-1.0.0-rc6
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc7
-    release-version: tdc-1.0.0-rc7
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc8
-    release-version: tdc-1.0.0-rc8
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: tdc-1.0.0-rc9
-    release-version: tdc-1.0.0-rc9
-  - dependencies: []
     final: false
     image-version:
-      ogg_image: tdc-1.0
-    release-version: tdc-1.0
+      ogg_image: tdc-1.1
+    release-version: tdc-1.1
