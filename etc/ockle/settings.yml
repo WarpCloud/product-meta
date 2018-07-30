@@ -366,6 +366,73 @@ service_for_development:
       description_en: "Sophon Web provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
 
 
+  SMARTBI:
+  - port: 18080
+    generate_name: smartbi
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "SMARTBI"
+      display_name_en: "SMARTBI"
+      description:
+      description_en:
+
+  QAJENKINS:
+  - port: 8000
+    generate_name: qa-jenkins
+    hosts: true
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "SMARTBI"
+      display_name_en: "SMARTBI"
+      description: "Smartbi 是一款专业的 BI 前端展现工具"
+      description_en: "Smartbi is a professional BI front-end presentation tool"
+
+  QANEXUS:
+  - port: 8000
+    generate_name: qa-nexus
+    hosts: true
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "QANEXUS"
+      display_name_en: "QANEXUS"
+      description: "Nexus是一个强大的Maven仓库管理器"
+      description_en: "Nexus is a powerful Maven repository manager"
+
+  HARBOR:
+  - port: 5000
+    generate_name: harbor
+    hosts: true
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "HARBOR"
+      display_name_en: "HARBOR"
+      description: "Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器"
+      description_en: "Harbor is an enterprise-level Registry server for storing and distributing Docker images"
+
+  GITLAB:
+  - port: 8000
+    generate_name: gitlab
+    hosts: true
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    display:
+      display_name: "GITLAB"
+      display_name_en: "GITLAB"
+      description: "Gitlab 是一款专业的代码托管仓库"
+      description_en: "Gitlab is a professional code-managed repository"
+
+
+
+
 
 # A list of instances that need to open ha for default
 instance_open_ha:
