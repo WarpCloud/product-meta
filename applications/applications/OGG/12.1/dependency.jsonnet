@@ -7,9 +7,6 @@ function(config={})
   local appName = config.application_name;
   local appVersion = config.application_version;
 
-  local _hdfsModuleName = "hdfs";
-  local _txsqlModuleName = "txsql";
-  local _transporterModuleName = "tdt";
   local _oggModuleName = "ogg";
 
   //-------------------
@@ -19,16 +16,6 @@ function(config={})
   local ogg = t.createInstance(_oggModuleName, config, appVersion) +
   t.moduleResource(_oggModuleName, r.__moduleResourceRaw, config) +
     {
-      dependencies: [{
-        moduleName: _hdfsModuleName,
-        name: _hdfsModuleName,
-      }, {
-        moduleName: _transporterModuleName,
-        name: _transporterModuleName,
-      }, {
-        moduleName: _txsqlModuleName,
-        name: _txsqlModuleName,
-      }],
     };
 
   t.getDefaultSettings(config) + {

@@ -366,18 +366,6 @@ service_for_development:
       description_en: "Sophon Web provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
 
 
-  OGG:
-  - port: 7809
-    generate_name: "ogg, ogg-for-big-data"
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    display:
-      display_name: "OGG"
-      display_name_en: "OGG"
-      description: "OGG 采用一种基于日志的结构化数据复制方式，实现源数据库与目标数据库同步"
-      description_en: "OGG uses a log-based structured data replication method to synchronize the source database with the target database."
-
 
 # A list of instances that need to open ha for default
 instance_open_ha:

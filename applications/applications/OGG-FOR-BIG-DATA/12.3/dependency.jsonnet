@@ -7,10 +7,7 @@ function(config={})
   local appName = config.application_name;
   local appVersion = config.application_version;
 
-  local _hdfsModuleName = "hdfs";
-  local _txsqlModuleName = "txsql";
-  local _transporterModuleName = "tdt";
-  local _ogg_for_big_dataModuleName = "ogg_for_big_data";
+  local _ogg_for_big_dataModuleName = "ogg-for-big-data";
 
   //-------------------
   // Dependent modules
@@ -19,16 +16,6 @@ function(config={})
   local ogg_for_big_data = t.createInstance(_ogg_for_big_dataModuleName, config, appVersion) +
   t.moduleResource(_ogg_for_big_dataModuleName, r.__moduleResourceRaw, config) +
     {
-      dependencies: [{
-        moduleName: _hdfsModuleName,
-        name: _hdfsModuleName,
-      }, {
-        moduleName: _transporterModuleName,
-        name: _transporterModuleName,
-      }, {
-        moduleName: _txsqlModuleName,
-        name: _txsqlModuleName,
-      }],
     };
 
   t.getDefaultSettings(config) + {

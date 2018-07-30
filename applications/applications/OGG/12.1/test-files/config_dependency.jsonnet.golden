@@ -23,20 +23,6 @@
                "storageClass": "silver"
             }
          },
-         "dependencies": [
-            {
-               "moduleName": "hdfs",
-               "name": "hdfs"
-            },
-            {
-               "moduleName": "tdt",
-               "name": "tdt"
-            },
-            {
-               "moduleName": "txsql",
-               "name": "txsql"
-            }
-         ],
          "instance_settings": { },
          "moduleName": "ogg",
          "name": "ogg-ogg",

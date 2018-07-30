@@ -11,5 +11,5 @@ releases:
   - dependencies: []
     final: false
     image-version:
-      ogg_image: tdc-1.1
+      ogg_image: 12.1
     release-version: tdc-1.1
