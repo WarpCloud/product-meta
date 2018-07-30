@@ -26,5 +26,5 @@
       "description_en": "Best performance model"
     }
   ],
-  "is_distributed": true
+  "is_distributed": false
 }
