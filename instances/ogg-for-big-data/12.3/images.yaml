@@ -5,11 +5,11 @@ hot-fix-ranges:
   - max: tdc-1.1
     min: tdc-1.1
 images:
-  - name: ogg_for_big_data
+  - name: ogg-for-big-data
     variable: ogg_for_big_data_image
 releases:
   - dependencies: []
     final: false
     image-version:
-      ogg_for_big_data_image: tdc-1.1
+      ogg_for_big_data_image: 12.3
     release-version: tdc-1.1

@@ -134,7 +134,7 @@ def scan_project(root_dir, final_version):
             json_path = vpath.joinpath('default.json')
             assert Path(json_path).exists(), \
                 'File default.json absent for {}/{}'.format(product, version)
-            f = open(json_path)
+            f = open(json_path, encoding="UTF-8")
             iter_f = iter(f)
             str = ''
             for line in iter_f:
