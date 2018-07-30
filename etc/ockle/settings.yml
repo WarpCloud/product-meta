@@ -386,10 +386,10 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "SMARTBI"
-      display_name_en: "SMARTBI"
-      description: "Smartbi 是一款专业的 BI 前端展现工具"
-      description_en: "Smartbi is a professional BI front-end presentation tool"
+      display_name: "JENKINS"
+      display_name_en: "JENKINS"
+      description: "Jenkins是一款由Java编写的开源的持续集成工具"
+      description_en: "Jenkins is an open source, continuous integration tool"
 
   QANEXUS:
   - port: 8000
@@ -399,8 +399,8 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "QANEXUS"
-      display_name_en: "QANEXUS"
+      display_name: "NEXUS"
+      display_name_en: "NEXUS"
       description: "Nexus是一个强大的Maven仓库管理器"
       description_en: "Nexus is a powerful Maven repository manager"
 
