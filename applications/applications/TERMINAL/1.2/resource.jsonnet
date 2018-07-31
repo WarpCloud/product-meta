@@ -18,7 +18,21 @@ local t = import "../../../applib/utils.libsonnet";
         },
     };
 
-    local storage = {};
+    local s = t.extractStorageParams(config);
+    local storage = {
+       terminal:
+         {
+           volume_list: [
+             {
+                mount_path: t.objectField(config, "terminal_data_mount_path", "/home"),
+                volume_size: t.objectField(config, "DiskDataSize", "0"),
+                volume_type: "silver",
+             },
+
+           ],
+         }
+    };
+
 
     // Return storage and resource specification
     {
