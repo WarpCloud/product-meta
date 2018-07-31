@@ -80,7 +80,7 @@
           "description": "Terminal分配的内存",
           "display_name": "Terminal内存(request)",
           "name": "terminal_memory_request",
-          "value": "1024MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -89,7 +89,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "1024MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -98,7 +98,7 @@
           "description": "Terminal Data可以使用的磁盘存储",
           "display_name": "Terminal Data磁盘大小",
           "name": "terminal_data_storage",
-          "value": "10Gi",
+          "value": "20Gi",
           "value_type": "storage",
           "min": "0G",
           "max": "1024G"
@@ -130,7 +130,7 @@
           "description": "Terminal分配的内存",
           "display_name": "Terminal内存(request)",
           "name": "terminal_memory_request",
-          "value": "2048MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -139,7 +139,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "2048MB",
+          "value": "6144MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -189,7 +189,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "4096MB",
+          "value": "8192MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -198,7 +198,7 @@
           "description": "Terminal Data可以使用的磁盘存储",
           "display_name": "Terminal Data磁盘大小",
           "name": "terminal_data_storage",
-          "value": "30Gi",
+          "value": "50Gi",
           "value_type": "storage",
           "min": "0G",
           "max": "1024G"

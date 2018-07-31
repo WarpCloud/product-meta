@@ -71,7 +71,7 @@
           "description": "Terminal分配的内存",
           "display_name": "Terminal内存(request)",
           "name": "terminal_memory_request",
-          "value": "8192MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -80,7 +80,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "8192MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -112,7 +112,7 @@
           "description": "Terminal分配的内存",
           "display_name": "Terminal内存(request)",
           "name": "terminal_memory_request",
-          "value": "12288MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -121,7 +121,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "12288MB",
+          "value": "6144MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -153,7 +153,7 @@
           "description": "Terminal分配的内存",
           "display_name": "Terminal内存(request)",
           "name": "terminal_memory_request",
-          "value": "24576MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -162,7 +162,7 @@
           "description": "Terminal可以使用的最大内存",
           "display_name": "Terminal内存(limit)",
           "name": "terminal_memory_limit",
-          "value": "24576MB",
+          "value": "8192MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
