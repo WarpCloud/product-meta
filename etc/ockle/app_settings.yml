@@ -310,6 +310,8 @@ TERMINAL:
   configuration:
     priority_metrics:
       terminal_priority: 0
+    storage_resource:
+      terminal_data_storage: DiskDataSize
   optional_dependencies:
     - hdfs
     - hyperbase

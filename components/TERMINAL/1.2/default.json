@@ -25,6 +25,15 @@
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "1Gi",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
         }
       ],
       "level": "demo"
@@ -48,6 +57,15 @@
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "10Gi",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
         }
       ],
       "level": "low"
@@ -71,6 +89,15 @@
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "20Gi",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
         }
       ],
       "level": "medium"
@@ -94,6 +121,15 @@
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "30Gi",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
         }
       ],
       "level": "high"
