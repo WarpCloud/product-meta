@@ -5,6 +5,7 @@
   "description": "分布式存储",
   "edition": "5.2",
   "name": "HDFS-5.2",
+  "is_share": true,
   "templates": [
     {
       "configs": [
