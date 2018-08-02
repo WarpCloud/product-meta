@@ -1,7 +1,7 @@
 {
   "category": "DEVOPS套件",
   "component_type": "QAJENKINS",
-  "source": "transwarp",
+  "source": "third-party",
   "description": "QAJENKINS 持续集成工具",
   "edition": "1.0",
   "name": "QAJENKINS-1.0",

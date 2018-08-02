@@ -1,7 +1,7 @@
 {
   "category": "DEVOPS套件",
   "component_type": "HARBOR",
-  "source": "transwarp",
+  "source": "third-party",
   "description": "HARBOR docker镜像托管仓库",
   "edition": "1.2",
   "name": "HARBOR-1.2",
