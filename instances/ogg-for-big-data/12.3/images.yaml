@@ -2,8 +2,8 @@ instance-type: ogg-for-big-data
 major-version: '12.3'
 min-tdc-version: tdc-1.1
 hot-fix-ranges:
-  - max: tdc-1.1
-    min: tdc-1.1
+  - max: "12.3"
+    min: "12.3"
 images:
   - name: ogg-for-big-data
     variable: ogg_for_big_data_image
@@ -11,5 +11,5 @@ releases:
   - dependencies: []
     final: false
     image-version:
-      ogg_for_big_data_image: 12.3
-    release-version: tdc-1.1
+      ogg_for_big_data_image: "12.3"
+    release-version: "12.3"
