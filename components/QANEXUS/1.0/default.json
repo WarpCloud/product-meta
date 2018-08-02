@@ -1,7 +1,7 @@
 {
   "category": "DEVOPS套件",
   "component_type": "QANEXUS",
-  "source": "transwarp",
+  "source": "third-party",
   "description": "QANEXUS maven包管理仓库",
   "edition": "1.0",
   "name": "QANEXUS-1.0",

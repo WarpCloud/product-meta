@@ -1,7 +1,7 @@
 {
   "category": "数据分析展现工具",
   "component_type": "SMARTBI",
-  "source": "transwarp",
+  "source": "third-party",
   "description": "数据分析展现工具，用于分析展现星环数据仓库的数据",
   "edition": "1.1",
   "name": "SMARTBI-1.1",
