@@ -2,8 +2,8 @@ instance-type: ogg
 major-version: '12.1'
 min-tdc-version: tdc-1.1
 hot-fix-ranges:
-  - max: tdc-1.1
-    min: tdc-1.1
+  - max: '12.1'
+    min: '12.1'
 images:
   - name: ogg
     variable: ogg_image
@@ -11,5 +11,5 @@ releases:
   - dependencies: []
     final: false
     image-version:
-      ogg_image: 12.1
-    release-version: tdc-1.1
+      ogg_image: '12.1'
+    release-version: '12.1'

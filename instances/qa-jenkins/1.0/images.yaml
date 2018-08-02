@@ -2,7 +2,7 @@ instance-type: qa-jenkins
 major-version: '1.0'
 min-tdc-version: tdc-1.1
 hot-fix-ranges:
-- max: tdc-1.1
+- max: tdc-1.2
   min: tdc-1.1
 images:
 - name: jenkins
@@ -11,5 +11,5 @@ releases:
 - dependencies: []
   final: false
   image-version:
-    jenkins_image: tdc-1.1
-  release-version: tdc-1.1
+    jenkins_image: tdc-1.2
+  release-version: tdc-1.2

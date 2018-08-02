@@ -2,10 +2,14 @@ instance-type: redis
 major-version: '1.0'
 min-tdc-version: tdc-1.0
 hot-fix-ranges:
-  - max: sophonweb-1.2-final
-    min: sophonweb-1.2-final
+  - max: sophonweb-1.2.0-final
+    min: sophonweb-1.2.0-final
   - max: sophonweb-1.2
     min: sophonweb-1.2
+  - max: sophonweb-1.3.0-final
+    min: sophonweb-1.3.0-final
+  - max: sophonweb-1.3
+    min: sophonweb-1.3
 images:
   - name: sophon-redis
     variable: redis_image
@@ -13,11 +17,15 @@ releases:
   - dependencies: []
     final: true
     image-version:
-      redis_image: sophonweb-1.2-final
-    release-version: sophonweb-1.2-final
-
+      redis_image: sophonweb-1.2.0-final
+    release-version: sophonweb-1.2.0-final
+  - dependencies: []
+    final: true
+    image-version:
+      redis_image: sophonweb-1.3.0-final
+    release-version: sophonweb-1.3.0-final
   - dependencies: []
     final: false
     image-version:
-      redis_image: sophonweb-1.2
-    release-version: sophonweb-1.2
+      redis_image: sophonweb-1.3
+    release-version: sophonweb-1.3
