@@ -260,7 +260,7 @@ service_for_development:
     alias: HiveServer2
 
   SLIPSTREAM: 
-  - port: 4044
+  - port: 4040
     generate_name: slipstream
     protocol: HTTP
     path: "/jobs"
