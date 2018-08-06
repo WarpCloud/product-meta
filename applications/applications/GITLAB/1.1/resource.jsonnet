@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
       gitlab:
         {
           gitlab_cpu_limit: t.objectField(config, "gitlab_cpu_limit", 1),
-          gitlab_memory_limit: t.objectField(config, "txsql_memory_limit", 1),
+          gitlab_memory_limit: t.objectField(config, "gitlab_memory_limit", 1),
           gitlab_cpu_request: t.objectField(config, "gitlab_cpu_request", 1),
           gitlab_memory_request: t.objectField(config, "gitlab_memory_request", 1),
           redis_cpu_limit: t.objectField(config, "redis_cpu_limit", 1),
