@@ -394,12 +394,12 @@ SMARTBI:
       smartbi_tomcat_priority: 0
       smartbi_mysql_priority: 0
 
-QANEXUS:
+NEXUS:
   configuration:
     priority_metrics:
       nexus_priority: 0
 
-QAJENKINS:
+JENKINS:
   configuration:
     priority_metrics:
       jenkins_priority: 0
