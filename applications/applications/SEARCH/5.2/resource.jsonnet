@@ -45,8 +45,6 @@ local t = import "../../../applib/utils.libsonnet";
           # Add ES head size, WARP-21420
           es_data_env_list: t.objectField(config, "es_data_env_list", []) + [
             {
-              "key": "ES_JAVA_OPTS",
-              "value": "-Xms" + _es_data_heap_size_str + " -Xmx" + _es_data_heap_size_str
             }
           ]
         },
