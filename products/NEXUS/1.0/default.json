@@ -2,7 +2,7 @@
   "edition": "1.0",
   "final": true,
   "components": [
-    "QANEXUS-1.0"
+    "NEXUS-1.0"
   ],
   "templates": [
     {

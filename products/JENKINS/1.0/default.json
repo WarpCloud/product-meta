@@ -2,7 +2,7 @@
   "edition": "1.0",
   "final": true,
   "components": [
-    "QAJENKINS-1.0"
+    "JENKINS-1.0"
   ],
   "templates": [
     {

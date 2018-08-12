@@ -1,10 +1,10 @@
 {
   "category": "DEVOPS套件",
-  "component_type": "QANEXUS",
+  "component_type": "NEXUS",
   "source": "third-party",
-  "description": "QANEXUS maven包管理仓库",
+  "description": "NEXUS maven包管理仓库",
   "edition": "1.0",
-  "name": "QANEXUS-1.0",
+  "name": "NEXUS-1.0",
   "templates": [
     {
       "configs": [
