@@ -9,11 +9,20 @@ function(config={})
 
   local metastoreVersion = "5.2";
 
+  local use_hyperbase = t.trueOrFalse(config.user_config, "use_hyperbase");
+
   local _hdfsModuleName = "hdfs";
   local _yarnModuleName = "yarn";
   local _zkModuleName = "zookeeper";
   local _slipstreamModuleName = "slipstream";
   local _metastoreModuleName = "metastore";
+  local _hyperbaseModuleName = "hyperbase";
+
+  local depend_hyperbase =
+    if use_hyperbase then [{
+      moduleName: _hyperbaseModuleName,
+      name: _hyperbaseModuleName,
+    }] else [];
 
   //-------------------
   // Dependent modules
@@ -44,7 +53,7 @@ function(config={})
       }, {
         moduleName: _zkModuleName,
         name: _zkModuleName,
-      }],
+      }] + depend_hyperbase,
     };
 
   t.getDefaultSettings(config) + {
