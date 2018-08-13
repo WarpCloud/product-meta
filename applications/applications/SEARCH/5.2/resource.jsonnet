@@ -44,8 +44,6 @@ local t = import "../../../applib/utils.libsonnet";
           local _es_data_heap_size_str = std.toString(t.raRange(std.floor(_es_data_memory_limit * 0.6), min=1, max=32)) + "g",
           # Add ES head size, WARP-21420
           es_data_env_list: t.objectField(config, "es_data_env_list", []) + [
-            {
-            }
           ]
         },
     };

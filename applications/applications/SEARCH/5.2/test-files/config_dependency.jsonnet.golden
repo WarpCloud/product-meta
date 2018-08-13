@@ -26,9 +26,7 @@
             },
             "es_data_cpu_limit": 1,
             "es_data_cpu_request": 0.10000000000000001,
-            "es_data_env_list": [
-               { }
-            ],
+            "es_data_env_list": [ ],
             "es_data_memory_limit": 4,
             "es_data_memory_request": 2,
             "es_data_storage": {
