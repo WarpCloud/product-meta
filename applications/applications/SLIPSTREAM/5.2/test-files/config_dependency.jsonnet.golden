@@ -6,7 +6,8 @@
       {
          "annotations": {
             "application_name": "slipstream1",
-            "application_type": "SLIPSTREAM"
+            "application_type": "SLIPSTREAM",
+            "use_hyperbase": "true"
          },
          "configs": {
             "metastore_cpu_limit": 1,
@@ -32,7 +33,8 @@
       {
          "annotations": {
             "application_name": "slipstream1",
-            "application_type": "SLIPSTREAM"
+            "application_type": "SLIPSTREAM",
+            "use_hyperbase": "true"
          },
          "configs": {
             "inceptor_executor_cpu_limit": 1,
@@ -60,6 +62,10 @@
             {
                "moduleName": "zookeeper",
                "name": "zookeeper"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
             }
          ],
          "instance_settings": { },

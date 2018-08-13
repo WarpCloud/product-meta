@@ -270,6 +270,8 @@ SLIPSTREAM:
       inceptor_executor_priority: 0
       metastore_priority: 0
       mysql_priority: 0
+  optional_dependencies:
+    - hyperbase
   security:
     service_refer:
       metastore: slipstream
