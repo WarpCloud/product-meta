@@ -40,7 +40,7 @@
           "display_name": "TXSQL内存(limit)",
           "name": "txsql_memory_limit",
           "value": "1024MB",
-          "value_type": "num",
+          "value_type": "memory",
           "min": "0",
           "max": "10"
         }
@@ -81,7 +81,7 @@
           "display_name": "TXSQL内存(limit)",
           "name": "txsql_memory_limit",
           "value": "4096MB",
-          "value_type": "num",
+          "value_type": "memory",
           "min": "0",
           "max": "10"
         }
@@ -122,7 +122,7 @@
           "display_name": "TXSQL内存(limit)",
           "name": "txsql_memory_limit",
           "value": "8192MB",
-          "value_type": "num",
+          "value_type": "memory",
           "min": "0",
           "max": "10"
         }
@@ -163,7 +163,7 @@
           "display_name": "TXSQL内存(limit)",
           "name": "txsql_memory_limit",
           "value": "12880MB",
-          "value_type": "num",
+          "value_type": "memory",
           "min": "0",
           "max": "10"
         }
