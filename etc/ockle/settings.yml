@@ -124,6 +124,7 @@ service_for_development:
   PILOT: 
   - port: 8086
     generate_name: pilot
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -136,6 +137,7 @@ service_for_development:
   NOTEBOOK: 
   - port: 8686
     generate_name: notebook
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -148,6 +150,7 @@ service_for_development:
   WEBLOGIC:
   - port: 7001
     generate_name: weblogic-admin
+    hosts: user_set
     protocol: HTTP
     path: "/console"
     require_gateway_registration: true
@@ -160,6 +163,7 @@ service_for_development:
   WORKFLOW:
   - port: 9091
     generate_name: workflow
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -172,6 +176,7 @@ service_for_development:
   RUBIK: 
   - port: 32125
     generate_name: rubik
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -184,6 +189,7 @@ service_for_development:
   GOVERNOR: 
   - port: 21000
     generate_name: governor
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -196,6 +202,7 @@ service_for_development:
   GOVERNORPROXY: 
   - port: 9527
     generate_name: governor-proxy
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -208,6 +215,7 @@ service_for_development:
   TRANSPORTER: 
   - port: 8100
     generate_name: tdt
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -220,6 +228,7 @@ service_for_development:
   GUARDIAN: 
   - port: 8380
     generate_name: gs
+    hosts: user_set
     protocol: HTTPS
     path: "/"
     require_gateway_registration: true
@@ -233,6 +242,7 @@ service_for_development:
   KIBANA: 
   - port: 5601
     generate_name: kibana
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -245,6 +255,7 @@ service_for_development:
   INCEPTOR: 
   - port: 4040
     generate_name: inceptor2
+    hosts: user_set
     protocol: HTTP
     path: "/jobs"
     require_gateway_registration: true
@@ -262,6 +273,7 @@ service_for_development:
   SLIPSTREAM: 
   - port: 4040
     generate_name: slipstream
+    hosts: user_set
     protocol: HTTP
     path: "/jobs"
     require_gateway_registration: true
@@ -279,6 +291,7 @@ service_for_development:
   SEARCH: 
   - port: 9100
     generate_name: "es-head"
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -292,6 +305,7 @@ service_for_development:
   SOPHON: 
   - port: 6066
     generate_name: sophonserver
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -305,6 +319,7 @@ service_for_development:
   TERMINAL: 
   - port: 5000
     generate_name: terminal
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -318,6 +333,7 @@ service_for_development:
   HYPERBASE: 
   - port: 60010
     generate_name: hbasemaster
+    hosts: user_set
     protocol: HTTP
     path: "/master-status"
     require_gateway_registration: true
@@ -330,6 +346,7 @@ service_for_development:
   HDFS: 
   - port: 50070
     generate_name: "hdfsnamenode, hdfssecondary"
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -343,6 +360,7 @@ service_for_development:
   KAFKA: 
   - port: 8000
     generate_name: kafkamanager
+    hosts: user_set
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
@@ -356,6 +374,7 @@ service_for_development:
   SOPHONWEB:
   - port: 30123
     generate_name: sophonweb
+    hosts: user_set
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
@@ -369,6 +388,7 @@ service_for_development:
   SMARTBI:
   - port: 18080
     generate_name: smartbi
+    hosts: user_set
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
