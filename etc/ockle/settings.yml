@@ -130,8 +130,8 @@ service_for_development:
     display: 
       display_name: "报表工具"
       display_name_en: Pilot
-      description: "基于Web的报表展现工具。轻量且灵活，支持多维度的分析和自助分析，提供二十余种报表样式，对时序数据有很好的展现。"
-      description_en: "Pilot is a web-based data visualization service focusing on business intelligence reporting. It contains the drag and drop environment for data analysis, and there are more than 20 kinds of graphical charts embedded in the product. Different from other BI tools, it provides extreme interactive analysis and visualization capabilities on big data through a distributed analysis engine. Many data sources are supported, including Transwarp Inceptor, MySQL and other RDBMS."
+      description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
+      description_en: "Pilot is a web-based data visualization service focusing on business intelligence reporting. It contains the drag and drop environment for data analysis, and there are more than 20 kinds of graphical charts embedded in the product."
 
   NOTEBOOK: 
   - port: 8686
@@ -142,8 +142,8 @@ service_for_development:
     display: 
       display_name: "数据分析交互平台"
       display_name_en: Notebook
-      description: "轻量的科学计算开发工具。支持使用R、Scala和SQL做数据分析，提供方便的交互界面，可实现数据清洗、机器学习等任务并可以团队协作处理。"
-      description_en: "Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala, Python and more. Some charts are already included in notebook for data visualization. It contains interpreters for Transwarp Discover and Spark so that data scientists can analysis big data easily."
+      description: "轻量的科学计算开发工具。支持用R、Scala和SQL做分析，提供方便的交互界面实现机器学习。"
+      description_en: "Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala, Python and more."
 
   WEBLOGIC:
   - port: 7001
@@ -166,8 +166,8 @@ service_for_development:
     display: 
       display_name: "工作流"
       display_name_en: Workflow
-      description: "图形化的工作流设计、调试、调度和分析的服务平台。支持Shell、SQL、JDBC、HTTP等任务类型，支持自定义Java任务。提供丰富的分析展现形式协助诊断工作流的执行状况。"
-      description_en: "The web-based tool to design, debug, schedule the job processes and tasks flow. Tasks written in shell, SQL, JDBC and HTTP are supported, and user-defined Java tasks can also be scheduled on big data platform. It provides good analysis capabilities for all scheduled jobs so that tuning tasks are easy, besides good security control are included."
+      description: "图形化的工作流服务平台。支持多种任务类型，提供丰富的工作流分析展现形式。"
+      description_en: "The web-based tool to design, debug, schedule the job processes and tasks flow. It provides good analysis capabilities for all scheduled jobs so that tuning tasks are easy, besides good security controls are included."
 
   RUBIK: 
   - port: 32125
@@ -178,8 +178,8 @@ service_for_development:
     display: 
       display_name: "Cube设计工具"
       display_name_en: "Rubik "
-      description: "OLAP Cube的可视化设计工具，用于设计OLAP模型并支持实例化，提供雪花模型和星形模型两种模型，并支持多种格式的数据源，可用于加速多维度数据分析。"
-      description_en: "Rubik is a visualized tool to design OLAP Cubes for big data. Both snowflake and star model are supported when designing models, and various data sources including HDFS and remote RDBMS can be used for cube building. With the acceleration of Cube, analytical query can speed up by 10x and give data analysts better interactive experience."
+      description: "OLAP Cube工具。用于OLAP模型设计与实例化，支持多种数据源，加速多维度分析。"
+      description_en: "Rubik is a visualized tool to design OLAP Cubes for big data. With the acceleration of Cube, analytical query can speed up by 10x and give data analysts better interactive experience."
 
   GOVERNOR: 
   - port: 21000
@@ -190,8 +190,8 @@ service_for_development:
     display: 
       display_name: "数据治理"
       display_name_en: Governor
-      description: "元数据管理工具，可用于收集、展现和管理元数据，监控数据和程序的更改历史，进行数据血缘分析和影响分析，调试数据问题，追踪问题来源。"
-      description_en: "Governor is a web-based metadata management and data governance tool. It gives user approaches to manage metadata including tables and SQL procedures, monitors all the data and program changing history, analyzes data lineage, and performs impact analysis. Developers can use this tool to debug data problems and root cause issues, and also to analyze what will be impacted before any meta change occurs. Governor aims to aid users improve the data quality for big data."
+      description: "元数据管理工具。可集中化管理元数据，监控更改历史，进行数据血缘分析和影响分析。"
+      description_en: "Governor is a web-based metadata management and data governance tool. It gives user approaches to manage metadata including tables and SQL procedures, monitors all the data and program changing history, analyzes data lineage, and performs impact analysis."
 
   GOVERNORPROXY: 
   - port: 9527
@@ -214,8 +214,8 @@ service_for_development:
     display: 
       display_name: "ETL工具"
       display_name_en: Transporter
-      description: "设计和创建ETL任务的可视化工具，支持从RDBMS到TDH的近实时数据同步。Transporter提供完整的数据整合功能，支持多种格式的数据源和丰富的导出格式，以及多种常用的数据转换操作。"
-      description_en: "Transporter is a web-based tool for designing and building ETL jobs for TDH. It offers near real-time data synchronization feature from RDBMS to TDH so that users can migrate the data analysis work from RDBMS to Hadoop for analytics and mining; various data sources including CSV, JDBC, XML, JSON, RDBMS are supported, and Transporter are equipped with frequently used transformers like joining, aggregation, data cleansing and etc. All the data processing jobs generated by Transporter are done in Inceptor with full ACID support."
+      description: "可视化ETL管理工具。支持近实时数据同步，提供多种数据格式、转换操作及整合功能。"
+      description_en: "Transporter is a web-based tool for designing and building ETL jobs for TDH. It offers near real-time data synchronization feature from RDBMS to TDH so that users can migrate the data analysis work from RDBMS to Hadoop for analytics and mining; various data sources including CSV, JDBC, XML, JSON, RDBMS are supported."
 
   GUARDIAN: 
   - port: 8380
@@ -227,8 +227,8 @@ service_for_development:
     display: 
       display_name: "安全与权限"
       display_name_en: Guardian
-      description: "统一的安全和资源管理服务平台，Guardian支持Kerberos和LDAP认证，实现租户级别的资源管理，可以做细粒度的权限控制，为整个集群系统加强安全防护。"
-      description_en: "Guardian is a centralized security and resource management service in TDH. It supports both LDAP and Kerberos to make sure clusters are immune to attacks and security threats. The multi-tenant resource management module controls all the user and resource data, with a graphical tool to set the user privileges and resources quotas."
+      description: "统一的安全和资源管理服务平台。支持Kerberos和LDAP认证，提供细粒度的资源和权限管理。"
+      description_en: "Guardian is a centralized security and resource management service in TDH. It supports both LDAP and Kerberos to make sure clusters are immune to attacks and security threats."
 
   KIBANA: 
   - port: 5601
@@ -239,8 +239,8 @@ service_for_development:
     display: 
       display_name: "日志分析"
       display_name_en: "Log Analysis Kibana"
-      description: "图形化的日志分析平台，提供日志列表与信息内容，方便的检索接口，以及丰富的数据展示图表，用于对经过集中化处理的集群日志进行实时分析。"
-      description_en: "Kibana is a visualized log analysis platform. It presents the contents of the logs in your cluster, provides convenient log retrieval interface, and offers diverse graphs to shape your log data. All these features are introduced for the purpose to enable easy exploration and visualization on aggregated logs across the cluster."
+      description: "日志诊断和检索平台。收集平台服务的日志，提供诊断和检索功能，方便系统运维和故障诊断。"
+      description_en: "Kibana is a visualized log analysis platform. It presents the contents of the logs in your cluster, provides convenient log retrieval interface, and offers diverse graphs to shape your log data."
 
   INCEPTOR: 
   - port: 4040
@@ -252,8 +252,8 @@ service_for_development:
     display: 
       display_name: "Inceptor任务监控"
       display_name_en: "Inceptor UI"
-      description: "Inceptor任务监控页面，提供各应用运行状态、Holodesk资源使用情况、环境和Executor信息。"
-      description_en: "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs, so developers can use it for performance tuning and problem diagnosing."
+      description: "Inceptor任务监控页面。提供各应用运行状态、存储资源使用情况、环境和工作节点的信息。"
+      description_en: "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs etc."
   - port: 10000
     generate_name: inceptor2
     require_gateway_registration: false
@@ -286,7 +286,7 @@ service_for_development:
     display: 
       display_name: "ES管理器"
       display_name_en: "ES Head"
-      description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询，是ES开发人员的一个非常有用的辅助工具。"
+      description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询。"
       description_en: "ES Head is a web-based tool for Elastic Search cluster management, on-line query, data visualization, and CRUD operations. It is widely used by ES users for cluster operating and application development."
 
   SOPHON: 
@@ -297,8 +297,8 @@ service_for_development:
     require_gateway_registration: true
     require_service_type: NodePort
     display: 
-      display_name: "深度学习"
-      display_name_en: "Deep Learning Sophon"
+      display_name: "人工智能Sophon"
+      display_name_en: "Sophon AI"
       description: "整合了Tensorflow和MXNet的深度学习通用开发平台，帮助企业用户加速落地人工智能应用。"
       description_en: "Sophon is a common platform for deep learning development which is integrated with Tensorflow and MXNet. Sophon enables enterprise users to construct artificial intelligence application from scratch in a short period of time."
 
@@ -312,7 +312,7 @@ service_for_development:
     display: 
       display_name: "命令行终端"
       display_name_en: Terminal
-      description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，因此从这个工具进入，可以非常方便的做各种运维操作以及大数据开发工作。"
+      description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，方便的做各种运维操作以及大数据开发工作。"
       description_en: "A web based console with all utilities for Transwarp big data development and operation assembled, so it provides full capabilities as a console into a remote machine which has all developing environment set up."
 
   HYPERBASE: 
@@ -324,8 +324,8 @@ service_for_development:
     display: 
       display_name: "HyperBase管理"
       display_name_en: "HyperBase Master"
-      description: "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况，包括基本的配置，HDFS和Zookeeper相关的信息，集群的负载情况，表和region的分布情况，以及split key等。"
-      description_en: "The HyperBase Master UI is a useful tool to get an overview of the current status of the cluster. From its page, you can get the version of the running HyperBase, its basic configuration, including the root HDFS path and ZooKeeper quorum, load average of the cluster, and a table, region, and region server list."
+      description: "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况。"
+      description_en: "The HyperBase Master UI is a useful tool to get an overview of the current status of the cluster. Users can get the basic configuration of Hyperbase, as well as load average of the cluster."
 
   HDFS: 
   - port: 50070
@@ -337,7 +337,7 @@ service_for_development:
     display: 
       display_name: "HDFS管理"
       display_name_en: "HDFS Namenode UI"
-      description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据；此外，如果有权限，它还可以浏览HDFS的所有文件。"
+      description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据。"
       description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
 
   KAFKA: 
@@ -349,7 +349,7 @@ service_for_development:
     display: 
       display_name: "Kafka管理"
       display_name_en: "Kafka Manager"
-      description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。通过它用户可以对Kafka集群进行监控，利用方便的选项创建Topic并定制分区的分配，以及实现一系列与Kafka相关的常用操作。"
+      description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。"
       description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
 
 
@@ -360,10 +360,10 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "Sophon Web"
-      display_name_en: "Sophon Web"
-      description: "Sophon Web 提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
-      description_en: "Sophon Web provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+      display_name: "人工智能Sophon"
+      display_name_en: "Sophon AI"
+      description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
+      description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
 
 
   SMARTBI:
@@ -373,10 +373,10 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "SMARTBI"
-      display_name_en: "SMARTBI"
-      description:
-      description_en:
+      display_name: "SmartBI"
+      display_name_en: "SmartBI"
+      description: "企业级商业智能应用平台。"
+      description_en: "Modern business intelligence platform."
 
   JENKINS:
   - port: 8000
@@ -386,8 +386,8 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "JENKINS"
-      display_name_en: "JENKINS"
+      display_name: "Jenkins"
+      display_name_en: "Jenkins"
       description: "Jenkins是一款由Java编写的开源的持续集成工具"
       description_en: "Jenkins is an open source, continuous integration tool"
 
@@ -399,9 +399,9 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "NEXUS"
-      display_name_en: "NEXUS"
-      description: "Nexus是一个强大的Maven仓库管理器"
+      display_name: "Nexus"
+      display_name_en: "Nexus"
+      description: "Nexus是一个强大的仓库管理器"
       description_en: "Nexus is a powerful Maven repository manager"
 
   HARBOR:
@@ -412,8 +412,8 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "HARBOR"
-      display_name_en: "HARBOR"
+      display_name: "Harbor"
+      display_name_en: "Harbor"
       description: "Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器"
       description_en: "Harbor is an enterprise-level Registry server for storing and distributing Docker images"
 
@@ -425,8 +425,8 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display:
-      display_name: "GITLAB"
-      display_name_en: "GITLAB"
+      display_name: "Gitlab"
+      display_name_en: "Gitlab"
       description: "Gitlab 是一款专业的代码托管仓库"
       description_en: "Gitlab is a professional code-managed repository"
 
