@@ -629,8 +629,6 @@ txsql:
   resource:
     replicas:
       - txsql_replicas
-    ha:
-      - txsql_replicas
   configuration:
     environment:
       - txsql_env_list
