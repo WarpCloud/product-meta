@@ -131,7 +131,7 @@ service_for_development:
       display_name: "报表工具"
       display_name_en: Pilot
       description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
-      description_en: "Pilot is a web-based data visualization service focusing on business intelligence reporting. It contains the drag and drop environment for data analysis, and there are more than 20 kinds of graphical charts embedded in the product."
+      description_en: "A light-weight and flexible web-based reporting tool. Supporting self-service analysis; providing over twenty report graphs."
 
   NOTEBOOK: 
   - port: 8686
@@ -143,7 +143,7 @@ service_for_development:
       display_name: "数据分析交互平台"
       display_name_en: Notebook
       description: "轻量的科学计算开发工具。支持用R、Scala和SQL做分析，提供方便的交互界面实现机器学习。"
-      description_en: "Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala, Python and more."
+      description_en: "A light-weight development tool for data science. Supporting R, Scala, and SQL; providing an interactive interface for machine learning."
 
   WEBLOGIC:
   - port: 7001
@@ -167,7 +167,7 @@ service_for_development:
       display_name: "工作流"
       display_name_en: Workflow
       description: "图形化的工作流服务平台。支持多种任务类型，提供丰富的工作流分析展现形式。"
-      description_en: "The web-based tool to design, debug, schedule the job processes and tasks flow. It provides good analysis capabilities for all scheduled jobs so that tuning tasks are easy, besides good security controls are included."
+      description_en: "A graphical workflow manager. Supporting multiple task types; providing abundant analysis and representation forms for workflows."
 
   RUBIK: 
   - port: 32125
@@ -179,7 +179,7 @@ service_for_development:
       display_name: "Cube设计工具"
       display_name_en: "Rubik "
       description: "OLAP Cube工具。用于OLAP模型设计与实例化，支持多种数据源，加速多维度分析。"
-      description_en: "Rubik is a visualized tool to design OLAP Cubes for big data. With the acceleration of Cube, analytical query can speed up by 10x and give data analysts better interactive experience."
+      description_en: "A tool for OLAP cube model design and instantiation. Supporting multiple data sources; speeding up multidimensional analysis."
 
   GOVERNOR: 
   - port: 21000
@@ -191,7 +191,7 @@ service_for_development:
       display_name: "数据治理"
       display_name_en: Governor
       description: "元数据管理工具。可集中化管理元数据，监控更改历史，进行数据血缘分析和影响分析。"
-      description_en: "Governor is a web-based metadata management and data governance tool. It gives user approaches to manage metadata including tables and SQL procedures, monitors all the data and program changing history, analyzes data lineage, and performs impact analysis."
+      description_en: "A centralized metadata management tool. Monitoring change history; performing data lineage and impact analysis."
 
   GOVERNORPROXY: 
   - port: 9527
@@ -215,7 +215,7 @@ service_for_development:
       display_name: "ETL工具"
       display_name_en: Transporter
       description: "可视化ETL管理工具。支持近实时数据同步，提供多种数据格式、转换操作及整合功能。"
-      description_en: "Transporter is a web-based tool for designing and building ETL jobs for TDH. It offers near real-time data synchronization feature from RDBMS to TDH so that users can migrate the data analysis work from RDBMS to Hadoop for analytics and mining; various data sources including CSV, JDBC, XML, JSON, RDBMS are supported."
+      description_en: "A visualized ETL management tool. Supporting near real-time data synchronization; providing multiple data formats, transformation operations, and integration."
 
   GUARDIAN: 
   - port: 8380
@@ -228,7 +228,7 @@ service_for_development:
       display_name: "安全与权限"
       display_name_en: Guardian
       description: "统一的安全和资源管理服务平台。支持Kerberos和LDAP认证，提供细粒度的资源和权限管理。"
-      description_en: "Guardian is a centralized security and resource management service in TDH. It supports both LDAP and Kerberos to make sure clusters are immune to attacks and security threats."
+      description_en: "A unified security and resource management platform. Supporting Kerberos and LDAP authentication; providing fine-grained resource and permission management services."
 
   KIBANA: 
   - port: 5601
@@ -237,10 +237,10 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     display: 
-      display_name: "日志分析"
-      display_name_en: "Log Analysis Kibana"
+      display_name: "日志服务"
+      display_name_en: "Log Service Milano"
       description: "日志诊断和检索平台。收集平台服务的日志，提供诊断和检索功能，方便系统运维和故障诊断。"
-      description_en: "Kibana is a visualized log analysis platform. It presents the contents of the logs in your cluster, provides convenient log retrieval interface, and offers diverse graphs to shape your log data."
+      description_en: "A platform for log diagnosis and retrieval. Collecting service logs; providing diagnosis and retrieval services; facilitating system maintenance and breakdown diagnosis."
 
   INCEPTOR: 
   - port: 4040
@@ -253,7 +253,7 @@ service_for_development:
       display_name: "Inceptor任务监控"
       display_name_en: "Inceptor UI"
       description: "Inceptor任务监控页面。提供各应用运行状态、存储资源使用情况、环境和工作节点的信息。"
-      description_en: "Inceptor UI is the web tool for Inceptor job & tasks monitoring. It provides fine granularity statistics for each SQL task, including latency, resource consumption, IO costs etc."
+      description_en: "Inceptor task monitor. Displaying application status, storage and resource usage conditions as well as information on environment and executors."
   - port: 10000
     generate_name: inceptor2
     require_gateway_registration: false
@@ -313,7 +313,7 @@ service_for_development:
       display_name: "命令行终端"
       display_name_en: Terminal
       description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，方便的做各种运维操作以及大数据开发工作。"
-      description_en: "A web based console with all utilities for Transwarp big data development and operation assembled, so it provides full capabilities as a console into a remote machine which has all developing environment set up."
+      description_en: "A command line tool for system operation."
 
   HYPERBASE: 
   - port: 60010
