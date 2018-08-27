@@ -5,5 +5,12 @@
   "description_en": "Oracle Golden Gate is a data synchronization tool from Oracle. It uses a log-based structured data replication method to synchronize the source database with the target database. This version services for big data",
   "display_name_en": "Oracle Golden Gate for Big Data",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-ogg-for-big-data.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-ogg-for-big-data.svg"
+  }]
 }

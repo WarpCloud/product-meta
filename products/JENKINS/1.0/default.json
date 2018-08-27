@@ -11,5 +11,9 @@
       "description_en": "Performance and cost-effective matching model"
     }
   ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-jenkins.png"
+  }],
   "is_distributed": false
 }

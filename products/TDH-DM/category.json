@@ -5,5 +5,15 @@
   "description_en": "Data mart serves for departmental-level business, and various models are developed to organize data so as to achieve the construction of interactive analysis and automated reporting applications.",
   "display_name_en": "Data Mart",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-dm.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-dm.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-dm.png"
+  }]
 }

@@ -5,5 +5,12 @@
   "description_en": "Smartbi is a professional BI front-end presentation tool with dashboard (management cockpit), flexible query, spreadsheet, OLAP multi-dimensional analysis, mobile BI application, Office analysis report plug-in, self-service analysis, data acquisition and other functional modules.",
   "display_name_en": "SmartBI",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-smartbi.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-smartbi.svg"
+  }]
 }

@@ -5,5 +5,12 @@
   "description_en": "Harbor is an enterprise-level Registry server for storing and distributing Docker images, extending the open source Docker Distribution by adding some of the business-required features such as security, identity, and management.",
   "display_name_en": "Harbor",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-harbor.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-harbor.svg"
+  }]
 }

@@ -5,5 +5,15 @@
   "description_en": "TDH-IR supports accurate/fuzzy retrieval, rapid statistics function. It features high-speed full-text search on PB-level data set, full SQL support and high concurrency.",
   "display_name_en": "Information Retrieval",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-ir.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-ir.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-ir.png"
+  }]
 }

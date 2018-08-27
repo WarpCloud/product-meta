@@ -5,5 +5,12 @@
   "description_en": "Jenkins is an open source, continuous integration tool written in Java. Jenkins provides a continuous integration service for software development that can be triggered by various means. For example, when it is submitted to the version control system, it can be triggered. It can also be scheduled through a Cron-like mechanism. It can also be requested through a specific URL when other builds have been completed.",
   "display_name_en": "Jenkins",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-jenkins.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-jenkins.svg"
+  }]
 }
