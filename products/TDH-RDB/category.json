@@ -5,5 +5,15 @@
   "description_en": "TDH-RDB is used to build relational database service for enterprises, which usually devotes to OLTP business of data within 500GB. It supports complex SQL queries, providing highly stable, scalable, and consistent data processing services.",
   "display_name_en": "Relational Database",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-rdb.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-rdb.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-rdb.png"
+  }]
 }

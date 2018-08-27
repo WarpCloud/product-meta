@@ -26,5 +26,9 @@
       "description_en": "Best performance model"
     }
   ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-weblogic.png"
+  }],
   "is_distributed": true
 }

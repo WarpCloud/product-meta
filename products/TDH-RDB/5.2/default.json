@@ -27,5 +27,9 @@
       "description_en": "Best performance model"
     }
   ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-tdh-rdb.png"
+  }],
   "is_distributed": false
 }

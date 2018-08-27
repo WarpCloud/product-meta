@@ -26,5 +26,9 @@
       "description_en": "Best performance model"
     }
   ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-ogg.png"
+  }],
   "is_distributed": false
 }

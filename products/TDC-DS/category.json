@@ -5,5 +5,15 @@
   "description_en": "Data Sharing product, supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and  download.",
   "display_name_en": "Data Sharing",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdc-ds.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdc-ds.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdc-ds.png"
+  }]
 }

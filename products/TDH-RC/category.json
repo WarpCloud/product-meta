@@ -5,5 +5,15 @@
   "description_en": "TDH-RC is a stream processing platform on cloud that experts at real-time data collection and real-time processing. It aims to help enterprises build online real-time applications so as to make full use of online information.",
   "display_name_en": "Real-time Computing",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-rc.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-rc.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-rc.png"
+  }]
 }

@@ -5,5 +5,12 @@
   "description_en": "Nexus is a powerful Maven repository manager that provides internal repository maintenance and access to external repositories. It helps developers build Maven private services to accelerate Maven builds, deploy third-party artifacts, and improve stability.",
   "display_name_en": "Nexus",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-nexus.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-nexus.svg"
+  }]
 }

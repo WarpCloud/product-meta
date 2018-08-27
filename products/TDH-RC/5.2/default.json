@@ -33,5 +33,9 @@
       "description_en": "Best performance model"
     }
   ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-tdh-rc.png"
+  }],
   "is_distributed": true
 }

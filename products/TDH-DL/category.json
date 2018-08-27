@@ -5,5 +5,15 @@
   "description_en": "Sophon is a data processing platform used for deep learning and artificial intelligence development. It is designed to help enterprises achieve highly intelligent information processing, assisting in enterprise operation and enhancing the efficiency of business man",
   "display_name_en": "Sophon AI",
   "source": "transwarp",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-dl.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-dl.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-dl.png"
+  }]
 }

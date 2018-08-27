@@ -5,5 +5,12 @@
   "description_en": "Gitlab is a professional code-managed repository with code hosting, continuous build, pipeline, web hooks, etc.",
   "display_name_en": "Gitlab",
   "source": "third-party",
-  "final": true
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-gitlab.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-gitlab.svg"
+  }]
 }
