@@ -1,6 +1,7 @@
 instance-type: ockle
 major-version: '1.2'
-min-tdc-version: tdc-1.2
+min-tdc-version: tdc-1.1
+max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
   - max: tdc-1.2
     min: tdc-1.2

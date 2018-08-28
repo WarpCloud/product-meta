@@ -1,6 +1,7 @@
 instance-type: ogg
 major-version: '12.1'
 min-tdc-version: tdc-1.1
+max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
   - max: '12.1'
     min: '12.1'

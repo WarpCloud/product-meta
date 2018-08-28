@@ -1,6 +1,7 @@
 instance-type: redis
 major-version: '1.0'
 min-tdc-version: tdc-1.0
+max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
   - max: sophonweb-1.2.0-final
     min: sophonweb-1.2.0-final

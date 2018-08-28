@@ -1,6 +1,7 @@
 instance-type: sophon
 major-version: '3.3'
 min-tdc-version: tdc-1.0
+max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
   - max: transwarp-5.1.4-final
     min: transwarp-5.1.0-final
