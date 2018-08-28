@@ -1,6 +1,6 @@
 {
   "category_name": "TDH-DL",
-  "description": "Sophon是用于深度学习和人工智能开发的数据处理平台，帮助企业开发深度学习和AI应用，实现高度智能化的信息处理。",
+  "description": "Sophon打造统一的企业级人工智能平台，现支持超过100种机器学习和深度学习的分布式算法。通过自动建模和内置的行业模板，业务分析师和数据分析师可快速构建、部署及分AI模型；研发工程师可将AI模块嵌入现有应用，以提升业务价值。",
   "display_name": "人工智能",
   "description_en": "Sophon is a data processing platform used for deep learning and artificial intelligence development. It is designed to help enterprises achieve highly intelligent information processing, assisting in enterprise operation and enhancing the efficiency of business man",
   "display_name_en": "Sophon AI",
