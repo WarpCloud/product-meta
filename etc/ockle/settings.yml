@@ -313,7 +313,7 @@ service_for_development:
     display: 
       display_name: "人工智能Sophon"
       display_name_en: "Sophon AI"
-      description: "整合了Tensorflow和MXNet的深度学习通用开发平台，帮助企业用户加速落地人工智能应用。"
+      description: "Sophon打造统一的企业级人工智能平台，支持超过100种机器学习和深度学习的分布式算法，帮助企业用户加速落地人工智能应用。"
       description_en: "Sophon is a common platform for deep learning development which is integrated with Tensorflow and MXNet. Sophon enables enterprise users to construct artificial intelligence application from scratch in a short period of time."
 
   TERMINAL: 
