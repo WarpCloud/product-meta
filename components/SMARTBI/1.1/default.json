@@ -107,7 +107,7 @@
           "description": "SMARTBI_TOMCAT分配的内存",
           "display_name": "SMARTBI_TOMCAT内存(request)",
           "name": "smartbi_tomcat_memory_request",
-          "value": "1024MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "40960MB"
@@ -116,7 +116,7 @@
           "description": "SMARTBI_TOMCAT可以使用的最大内存",
           "display_name": "SMARTBI_TOMCAT内存(limit)",
           "name": "smartbi_tomcat_memory_limit",
-          "value": "2048MB",
+          "value": "4096MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "40960MB"
