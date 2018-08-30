@@ -2,7 +2,7 @@
   "category": "TDH平台产品,SYSTEM",
   "component_type": "SEARCH",
   "source": "transwarp",
-  "description": "全文检索",
+  "description": "大数据搜索引擎",
   "edition": "5.1",
   "name": "SEARCH-5.1",
   "templates": [

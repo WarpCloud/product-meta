@@ -2,7 +2,7 @@
   "category": "TDH开发套件",
   "component_type": "TRANSPORTER",
   "source": "transwarp",
-  "description": "数据流",
+  "description": "数据整合",
   "edition": "1.0",
   "name": "TRANSPORTER-1.0",
   "templates": [
