@@ -2,7 +2,7 @@
   "category": "TDH平台产品",
   "component_type": "HYPERBASE",
   "source": "transwarp",
-  "description": "快速检索和非结构化数据处理",
+  "description": "NewSQL数据库",
   "edition": "5.1",
   "name": "HYPERBASE-5.1",
   "templates": [

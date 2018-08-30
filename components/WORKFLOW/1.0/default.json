@@ -2,7 +2,7 @@
   "category": "TDH开发套件",
   "component_type": "WORKFLOW",
   "source": "transwarp",
-  "description": "调度流",
+  "description": "工作引擎流",
   "edition": "1.0",
   "name": "WORKFLOW-1.0",
   "templates": [

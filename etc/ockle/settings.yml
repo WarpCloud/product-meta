@@ -458,3 +458,12 @@ instance_open_ha:
 #  - cas
 #  - guardian
 #  - guardian-cas
+
+component_type_display_priority:
+  category:
+    - "TDH平台产品"
+    - "TDH开发套件"
+    - "运维和开发工具"
+    - "DEVOPS套件"
+    - "数据同步工具"
+  component_type: []
