@@ -30,6 +30,10 @@
             {
                "moduleName": "ticket",
                "name": "ticket"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
             }
          ],
          "instance_settings": { },
