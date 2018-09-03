@@ -6,6 +6,12 @@
 max-version: 0.3.4
 min-version: 0.3.4
 
+# Default file name of static resources
+default_static_resources:
+  category:
+    - type: banner
+      name: banner-default.png
+
 # A list of appliations that accept advanced configurations.
 adv_config_white_list:
   - DISCOVER
