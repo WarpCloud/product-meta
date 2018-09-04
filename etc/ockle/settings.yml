@@ -3,8 +3,8 @@
 #----------------
 
 # Version range of Ockle to match current product-meta.
-max-version: 0.3.4
-min-version: 0.3.4
+max-version: 0.3.5
+min-version: 0.3.5
 
 # Default file name of static resources
 default_static_resources:
@@ -307,20 +307,6 @@ service_for_development:
       display_name_en: "ES Head"
       description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询。"
       description_en: "ES Head is a web-based tool for Elastic Search cluster management, on-line query, data visualization, and CRUD operations. It is widely used by ES users for cluster operating and application development."
-
-  SOPHON: 
-  - port: 6066
-    generate_name: sophonserver
-    hosts: user_set
-    protocol: HTTP
-    path: "/"
-    require_gateway_registration: true
-    require_service_type: NodePort
-    display: 
-      display_name: "人工智能Sophon"
-      display_name_en: "Sophon AI"
-      description: "Sophon打造统一的企业级人工智能平台，支持超过100种机器学习和深度学习的分布式算法，帮助企业用户加速落地人工智能应用。"
-      description_en: "Sophon is a common platform for deep learning development which is integrated with Tensorflow and MXNet. Sophon enables enterprise users to construct artificial intelligence application from scratch in a short period of time."
 
   TERMINAL: 
   - port: 5000
