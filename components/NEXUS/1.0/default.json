@@ -2,7 +2,8 @@
   "category": "DEVOPS套件",
   "component_type": "NEXUS",
   "source": "third-party",
-  "description": "NEXUS maven包管理仓库",
+  "description": "Maven包管理仓库",
+  "description_en": "Maven Repository Manager",
   "edition": "1.0",
   "name": "NEXUS-1.0",
   "templates": [

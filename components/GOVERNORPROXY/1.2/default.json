@@ -2,7 +2,8 @@
   "category": "TDH开发套件",
   "component_type": "GOVERNORPROXY",
   "source": "transwarp",
-  "description": "",
+  "description": "数据目录展现",
+  "description_en": "Data Catalog Representation",
   "edition": "1.2",
   "name": "GOVERNORPROXY-1.2",
   "templates": [

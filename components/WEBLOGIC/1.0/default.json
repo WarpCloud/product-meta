@@ -2,7 +2,8 @@
   "name": "WEBLOGIC-1.0",
   "component_type": "WEBLOGIC",
   "source": "third-party",
-  "description": "Oracle WebLogic Server",
+  "description": "Java平台企业版",
+  "description_en": "Enterprise Java Platform",
   "edition": "1.0",
   "category": "运维和开发工具",
   "templates": [

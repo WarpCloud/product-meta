@@ -3,6 +3,7 @@
   "component_type": "TERMINAL",
   "source": "transwarp",
   "description": "容器命令行",
+  "description_en": "Command Line Tool",
   "edition": "1.2",
   "name": "TERMINAL-1.2",
   "templates": [

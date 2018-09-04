@@ -1,0 +1,66 @@
+{
+   "Customized_Namespace": "default",
+   "Develop": false,
+   "Transwarp_Install_ID": "",
+   "instance_list": [
+      {
+         "annotations": {
+            "application_name": "sophon1",
+            "application_type": "SOPHON"
+         },
+         "configs": { },
+         "instance_settings": { },
+         "moduleName": "redis",
+         "name": "sophon1-redis",
+         "version": "1.0"
+      },
+      {
+         "annotations": {
+            "application_name": "sophon1",
+            "application_type": "SOPHON"
+         },
+         "configs": {
+            "sophon_cpu_limit": 2,
+            "sophon_cpu_request": 0.10000000000000001,
+            "sophon_memory_limit": 8,
+            "sophon_memory_request": 1
+         },
+         "dependencies": [
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "yarn",
+               "name": "yarn"
+            },
+            {
+               "moduleName": "zookeeper",
+               "name": "zookeeper"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
+            },
+            {
+               "moduleName": "redis",
+               "name": "sophon1-redis"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
+            }
+         ],
+         "instance_settings": { },
+         "moduleName": "sophonweb",
+         "name": "sophon1-sophonweb",
+         "version": "1.3"
+      }
+   ],
+   "instance_settings": { },
+   "version": ""
+}

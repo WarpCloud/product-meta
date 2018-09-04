@@ -2,7 +2,8 @@
   "category": "DEVOPS套件",
   "component_type": "HARBOR",
   "source": "third-party",
-  "description": "HARBOR docker镜像托管仓库",
+  "description": "Docker镜像托管仓库",
+  "description_en": "Docker Image Repository",
   "edition": "1.1",
   "name": "HARBOR-1.1",
   "templates": [

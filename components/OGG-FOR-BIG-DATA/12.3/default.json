@@ -2,7 +2,8 @@
   "category": "数据同步工具",
   "component_type": "OGG-FOR-BIG-DATA",
   "source": "third-party",
-  "description": "基于日志的结构化数据复制方式，实现源数据库与目标数据库同步、双活。该版本针对于Big Data。",
+  "description": "大数据实时同步",
+  "description_en": "Real-time Sync for Big Data",
   "edition": "12.3",
   "name": "OGG-FOR-BIG-DATA-12.3",
   "templates": [

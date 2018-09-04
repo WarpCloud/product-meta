@@ -2,7 +2,8 @@
   "category": "运维和开发工具,SYSTEM",
   "component_type": "TXSQL",
   "source": "transwarp",
-  "description": "关系数据库，存放和计算小数据量的数据",
+  "description": "关系数据库",
+  "description_en": "Relational Database",
   "edition": "5.2",
   "name": "TXSQL-5.2",
   "templates": [

@@ -3,6 +3,7 @@
   "component_type": "SLIPSTREAM",
   "source": "transwarp",
   "description": "实时计算引擎",
+  "description_en": "Real-time Computing Engine",
   "edition": "5.2",
   "name": "SLIPSTREAM-5.2",
   "templates": [

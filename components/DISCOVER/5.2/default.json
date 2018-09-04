@@ -3,6 +3,7 @@
   "component_type": "DISCOVER",
   "source": "transwarp",
   "description": "数据挖掘",
+  "description_en": "Data Mining",
   "edition": "5.2",
   "name": "DISCOVER-5.2",
   "templates": [

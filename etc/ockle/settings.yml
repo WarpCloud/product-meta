@@ -377,7 +377,7 @@ service_for_development:
       description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
 
 
-  SOPHONWEB:
+  SOPHON:
   - port: 30123
     generate_name: sophonweb
     hosts: user_set
