@@ -3,6 +3,7 @@
   "component_type": "YARN",
   "source": "transwarp",
   "description": "Spark资源调度",
+  "description_en": "Spark Resource Scheduler",
   "edition": "5.2",
   "name": "YARN-5.2",
   "templates": [

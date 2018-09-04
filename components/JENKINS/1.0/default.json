@@ -2,7 +2,8 @@
   "category": "DEVOPS套件",
   "component_type": "JENKINS",
   "source": "third-party",
-  "description": "JENKINS 持续集成工具",
+  "description": "持续集成工具",
+  "description_en": "Continuous Integration System",
   "edition": "1.0",
   "name": "JENKINS-1.0",
   "templates": [

@@ -2,7 +2,8 @@
   "category": "DEVOPS套件",
   "component_type": "GITLAB",
   "source": "third-party",
-  "description": "GITLAB 代码托管仓库",
+  "description": "代码托管仓库",
+  "description_en": "Code Repository",
   "edition": "1.1",
   "name": "GITLAB-1.1",
   "templates": [

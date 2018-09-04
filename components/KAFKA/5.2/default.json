@@ -3,6 +3,7 @@
   "component_type": "KAFKA",
   "source": "transwarp",
   "description": "消息中间件",
+  "description_en": "Messaging System",
   "edition": "5.2",
   "name": "KAFKA-5.2",
   "templates": [

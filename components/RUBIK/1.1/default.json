@@ -3,6 +3,7 @@
   "component_type": "RUBIK",
   "source": "transwarp",
   "description": "OLAP Cube设计工具",
+  "description_en": "OLAP Cube Designer",
   "edition": "1.1",
   "name": "RUBIK-1.1",
   "templates": [

@@ -11,9 +11,19 @@ images:
   - name: notification
     variable: notification_image
 releases:
+# Notification for TDH
+  - dependencies:
+    - max-version: tdc-1.2
+      min-version: tdc-1.1
+      type: txsql
+    final: false
+    image-version:
+      notification_image: transwarp-5.2
+    release-version: transwarp-5.2
+
 # Notification for TDC
   - dependencies:
-    - max-version: tdc-1.1
+    - max-version: tdc-1.2
       min-version: tdc-1.1
       type: txsql
     final: false

@@ -3,6 +3,7 @@
   "component_type": "PILOT",
   "source": "transwarp",
   "description": "报表工具",
+  "description_en": "Reporting Tool",
   "edition": "1.1",
   "name": "PILOT-1.1",
   "templates": [

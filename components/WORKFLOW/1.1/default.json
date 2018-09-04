@@ -3,6 +3,7 @@
   "component_type": "WORKFLOW",
   "source": "transwarp",
   "description": "工作引擎流",
+  "description_en": "Workflow Engine",
   "edition": "1.1",
   "name": "WORKFLOW-1.1",
   "templates": [

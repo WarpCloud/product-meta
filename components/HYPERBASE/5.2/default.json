@@ -3,6 +3,7 @@
   "component_type": "HYPERBASE",
   "source": "transwarp",
   "description": "NewSQL数据库",
+  "description_en": "NewSQL Database",
   "edition": "5.2",
   "name": "HYPERBASE-5.2",
   "templates": [

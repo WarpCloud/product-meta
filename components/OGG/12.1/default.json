@@ -2,7 +2,8 @@
   "category": "数据同步工具",
   "component_type": "OGG",
   "source": "third-party",
-  "description": "基于日志的结构化数据复制方式，实现源数据库与目标数据库同步、双活。该版本针对于Oracle。",
+  "description": "结构化数据实时同步",
+  "description_en": "Real-time Sync for Structured Data",
   "edition": "12.1",
   "name": "OGG-12.1",
   "templates": [

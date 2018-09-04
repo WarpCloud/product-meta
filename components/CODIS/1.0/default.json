@@ -3,6 +3,7 @@
   "component_type": "CODIS",
   "source": "transwarp",
   "description": "分布式Redis数据库",
+  "description_en": "Distributed Redis Database",
   "edition": "1.0",
   "name": "CODIS-1.0",
   "templates": []
