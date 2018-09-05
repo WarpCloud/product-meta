@@ -13,7 +13,7 @@
           "description": "单executor分配的CPU核数量",
           "display_name": "Executor CPU核数(request)",
           "name": "inceptor_executor_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -22,7 +22,7 @@
           "description": "单executor可以使用的最大CPU核数量",
           "display_name": "Executor CPU核数(limit)",
           "name": "inceptor_executor_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -49,7 +49,7 @@
           "description": "Slipstream server分配的CPU核数量",
           "display_name": "Slipstream server CPU核数(request)",
           "name": "inceptor_master_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -58,7 +58,7 @@
           "description": "Slipstream server可以使用的最大CPU核数量",
           "display_name": "Slipstream server CPU核数(limit)",
           "name": "inceptor_master_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -108,7 +108,7 @@
           "description": "单executor分配的CPU核数量",
           "display_name": "Executor CPU核数(request)",
           "name": "inceptor_executor_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -117,7 +117,7 @@
           "description": "单executor可以使用的最大CPU核数量",
           "display_name": "Executor CPU核数(limit)",
           "name": "inceptor_executor_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -144,7 +144,7 @@
           "description": "Slipstream server分配的CPU核数量",
           "display_name": "Slipstream server CPU核数(request)",
           "name": "inceptor_master_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -153,7 +153,7 @@
           "description": "Slipstream server可以使用的最大CPU核数量",
           "display_name": "Slipstream server CPU核数(limit)",
           "name": "inceptor_master_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -203,7 +203,7 @@
           "description": "单executor分配的CPU核数量",
           "display_name": "Executor CPU核数(request)",
           "name": "inceptor_executor_cpu_request",
-          "value": "11",
+          "value": "11.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -212,7 +212,7 @@
           "description": "单executor可以使用的最大CPU核数量",
           "display_name": "Executor CPU核数(limit)",
           "name": "inceptor_executor_cpu_limit",
-          "value": "11",
+          "value": "11.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -239,7 +239,7 @@
           "description": "Slipstream server分配的CPU核数量",
           "display_name": "Slipstream server CPU核数(request)",
           "name": "inceptor_master_cpu_request",
-          "value": "11",
+          "value": "11.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -248,7 +248,7 @@
           "description": "Slipstream server可以使用的最大CPU核数量",
           "display_name": "Slipstream server CPU核数(limit)",
           "name": "inceptor_master_cpu_limit",
-          "value": "11",
+          "value": "11.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -298,7 +298,7 @@
           "description": "单executor分配的CPU核数量",
           "display_name": "Executor CPU核数(request)",
           "name": "inceptor_executor_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -307,7 +307,7 @@
           "description": "单executor可以使用的最大CPU核数量",
           "display_name": "Executor CPU核数(limit)",
           "name": "inceptor_executor_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -334,7 +334,7 @@
           "description": "Slipstream server分配的CPU核数量",
           "display_name": "Slipstream server CPU核数(request)",
           "name": "inceptor_master_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -343,7 +343,7 @@
           "description": "Slipstream server可以使用的最大CPU核数量",
           "display_name": "Slipstream server CPU核数(limit)",
           "name": "inceptor_master_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

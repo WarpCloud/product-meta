@@ -23,7 +23,7 @@
           "description": "每个HDFS Datanode可以使用的最大CPU核数量",
           "display_name": "HDFS Datanode CPU核数(limit)",
           "name": "hdfs_data_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -59,7 +59,7 @@
           "description": "HDFS Namenode可以使用的最大CPU核数量",
           "display_name": "HDFS Namenode CPU核数(limit)",
           "name": "hdfs_name_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -109,7 +109,7 @@
           "description": "每个HDFS Datanode分配的CPU核数量",
           "display_name": "HDFS Datanode CPU核数(request)",
           "name": "hdfs_data_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -118,7 +118,7 @@
           "description": "每个HDFS Datanode可以使用的最大CPU核数量",
           "display_name": "HDFS Datanode CPU核数(limit)",
           "name": "hdfs_data_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -145,7 +145,7 @@
           "description": "HDFS Namenode分配的CPU核数量",
           "display_name": "HDFS Namenode CPU核数(request)",
           "name": "hdfs_name_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -154,7 +154,7 @@
           "description": "HDFS Namenode可以使用的最大CPU核数量",
           "display_name": "HDFS Namenode CPU核数(limit)",
           "name": "hdfs_name_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -204,7 +204,7 @@
           "description": "每个HDFS Datanode分配的CPU核数量",
           "display_name": "HDFS Datanode CPU核数(request)",
           "name": "hdfs_data_cpu_request",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -213,7 +213,7 @@
           "description": "每个HDFS Datanode可以使用的最大CPU核数量",
           "display_name": "HDFS Datanode CPU核数(limit)",
           "name": "hdfs_data_cpu_limit",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -240,7 +240,7 @@
           "description": "HDFS Namenode分配的CPU核数量",
           "display_name": "HDFS Namenode CPU核数(request)",
           "name": "hdfs_name_cpu_request",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -249,7 +249,7 @@
           "description": "HDFS Namenode可以使用的最大CPU核数量",
           "display_name": "HDFS Namenode CPU核数(limit)",
           "name": "hdfs_name_cpu_limit",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -299,7 +299,7 @@
           "description": "每个HDFS Datanode分配的CPU核数量",
           "display_name": "HDFS Datanode CPU核数(request)",
           "name": "hdfs_data_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -308,7 +308,7 @@
           "description": "每个HDFS Datanode可以使用的最大CPU核数量",
           "display_name": "HDFS Datanode CPU核数(limit)",
           "name": "hdfs_data_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -335,7 +335,7 @@
           "description": "HDFS Namenode分配的CPU核数量",
           "display_name": "HDFS Namenode CPU核数(request)",
           "name": "hdfs_name_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -344,7 +344,7 @@
           "description": "HDFS Namenode可以使用的最大CPU核数量",
           "display_name": "HDFS Namenode CPU核数(limit)",
           "name": "hdfs_name_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
