@@ -31,7 +31,7 @@
           "description": "WebLogic Admin Server CPU分配的core数量",
           "display_name": "Admin Server CPU(request)",
           "name": "admin_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -40,7 +40,7 @@
           "description": "WebLogic Admin Server CPU可以使用的最大core数量",
           "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -76,7 +76,7 @@
           "description": "WebLogic Managed Server CPU分配的core数量",
           "display_name": "Managed Server CPU(request)",
           "name": "ms_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -85,7 +85,7 @@
           "description": "WebLogic Managed Server CPU可以使用的最大core数量",
           "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -126,7 +126,7 @@
           "description": "WebLogic Admin Server CPU分配的core数量",
           "display_name": "Admin Server CPU(request)",
           "name": "admin_cpu_request",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -135,7 +135,7 @@
           "description": "WebLogic Admin Server CPU可以使用的最大core数量",
           "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -171,7 +171,7 @@
           "description": "WebLogic Managed Server CPU分配的core数量",
           "display_name": "Managed Server CPU(request)",
           "name": "ms_cpu_request",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -180,7 +180,7 @@
           "description": "WebLogic Managed Server CPU可以使用的最大core数量",
           "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -221,7 +221,7 @@
           "description": "WebLogic Admin Server CPU分配的core数量",
           "display_name": "Admin Server CPU(request)",
           "name": "admin_cpu_request",
-          "value": "4",
+          "value": "4.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -230,7 +230,7 @@
           "description": "WebLogic Admin Server CPU可以使用的最大core数量",
           "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
-          "value": "4",
+          "value": "4.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -266,7 +266,7 @@
           "description": "WebLogic Managed Server CPU分配的core数量",
           "display_name": "Managed Server CPU(request)",
           "name": "ms_cpu_request",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -275,7 +275,7 @@
           "description": "WebLogic Managed Server CPU可以使用的最大core数量",
           "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -316,7 +316,7 @@
           "description": "WebLogic Admin Server CPU分配的core数量",
           "display_name": "Admin Server CPU(request)",
           "name": "admin_cpu_request",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -325,7 +325,7 @@
           "description": "WebLogic Admin Server CPU可以使用的最大core数量",
           "display_name": "Admin Server CPU(limit)",
           "name": "admin_cpu_limit",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -361,7 +361,7 @@
           "description": "WebLogic Managed Server CPU分配的core数量",
           "display_name": "Managed Server CPU(request)",
           "name": "ms_cpu_request",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -370,7 +370,7 @@
           "description": "WebLogic Managed Server CPU可以使用的最大core数量",
           "display_name": "Managed Server CPU(limit)",
           "name": "ms_cpu_limit",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

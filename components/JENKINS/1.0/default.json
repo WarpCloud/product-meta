@@ -13,7 +13,7 @@
           "description": "Jenkins 分配的CPU核数量",
           "display_name": "Jenkins CPU核数(request)",
           "name": "jenkins_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -22,7 +22,7 @@
           "description": "Jenkins 可以使用的最大CPU核数量",
           "display_name": "Jenkins CPU核数(limit)",
           "name": "jenkins_cpu_limit",
-          "value": "4",
+          "value": "4.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

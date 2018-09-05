@@ -22,7 +22,7 @@
           "description": "YARN NodeManager可以使用的最大CPU核数量",
           "display_name": "YARN NodeManager CPU核数(limit)",
           "name": "yarn_node_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -58,7 +58,7 @@
           "description": "YARN ResourceManager可以使用的最大CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(limit)",
           "name": "yarn_rm_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -108,7 +108,7 @@
           "description": "YARN NodeManager分配的CPU核数量",
           "display_name": "YARN NodeManager CPU核数(request)",
           "name": "yarn_node_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -117,7 +117,7 @@
           "description": "YARN NodeManager可以使用的最大CPU核数量",
           "display_name": "YARN NodeManager CPU核数(limit)",
           "name": "yarn_node_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -144,7 +144,7 @@
           "description": "YARN ResourceManager分配的CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(request)",
           "name": "yarn_rm_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -153,7 +153,7 @@
           "description": "YARN ResourceManager可以使用的最大CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(limit)",
           "name": "yarn_rm_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -203,7 +203,7 @@
           "description": "YARN NodeManager分配的CPU核数量",
           "display_name": "YARN NodeManager CPU核数(request)",
           "name": "yarn_node_cpu_request",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -212,7 +212,7 @@
           "description": "YARN NodeManager可以使用的最大CPU核数量",
           "display_name": "YARN NodeManager CPU核数(limit)",
           "name": "yarn_node_cpu_limit",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -239,7 +239,7 @@
           "description": "YARN ResourceManager分配的CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(request)",
           "name": "yarn_rm_cpu_request",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -248,7 +248,7 @@
           "description": "YARN ResourceManager可以使用的最大CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(limit)",
           "name": "yarn_rm_cpu_limit",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -298,7 +298,7 @@
           "description": "YARN NodeManager分配的CPU核数量",
           "display_name": "YARN NodeManager CPU核数(request)",
           "name": "yarn_node_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -307,7 +307,7 @@
           "description": "YARN NodeManager可以使用的最大CPU核数量",
           "display_name": "YARN NodeManager CPU核数(limit)",
           "name": "yarn_node_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -334,7 +334,7 @@
           "description": "YARN ResourceManager分配的CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(request)",
           "name": "yarn_rm_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -343,7 +343,7 @@
           "description": "YARN ResourceManager可以使用的最大CPU核数量",
           "display_name": "YARN ResourceManager CPU核数(limit)",
           "name": "yarn_rm_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

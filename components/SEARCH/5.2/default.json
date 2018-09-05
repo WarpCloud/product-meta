@@ -22,7 +22,7 @@
           "description": "每个Search Datanode可以使用的最大CPU核数量",
           "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -58,7 +58,7 @@
           "description": "Search Masternode可以使用的最大CPU核数量",
           "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -126,7 +126,7 @@
           "description": "每个Search Datanode分配的CPU核数量",
           "display_name": "Search Datanode CPU核数(request)",
           "name": "es_data_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -135,7 +135,7 @@
           "description": "每个Search Datanode可以使用的最大CPU核数量",
           "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -162,7 +162,7 @@
           "description": "Search Masternode分配的CPU核数量",
           "display_name": "Search Masternode CPU核数(request)",
           "name": "es_master_cpu_request",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -171,7 +171,7 @@
           "description": "Search Masternode可以使用的最大CPU核数量",
           "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
-          "value": "6",
+          "value": "6.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -239,7 +239,7 @@
           "description": "每个Search Datanode分配的CPU核数量",
           "display_name": "Search Datanode CPU核数(request)",
           "name": "es_data_cpu_request",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -248,7 +248,7 @@
           "description": "每个Search Datanode可以使用的最大CPU核数量",
           "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
-          "value": "12",
+          "value": "12.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -275,7 +275,7 @@
           "description": "Search Masternode分配的CPU核数量",
           "display_name": "Search Masternode CPU核数(request)",
           "name": "es_master_cpu_request",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -284,7 +284,7 @@
           "description": "Search Masternode可以使用的最大CPU核数量",
           "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
-          "value": "8",
+          "value": "8.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -352,7 +352,7 @@
           "description": "每个Search Datanode分配的CPU核数量",
           "display_name": "Search Datanode CPU核数(request)",
           "name": "es_data_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -361,7 +361,7 @@
           "description": "每个Search Datanode可以使用的最大CPU核数量",
           "display_name": "Search Datanode CPU核数(limit)",
           "name": "es_data_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -388,7 +388,7 @@
           "description": "Search Masternode分配的CPU核数量",
           "display_name": "Search Masternode CPU核数(request)",
           "name": "es_master_cpu_request",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -397,7 +397,7 @@
           "description": "Search Masternode可以使用的最大CPU核数量",
           "display_name": "Search Masternode CPU核数(limit)",
           "name": "es_master_cpu_limit",
-          "value": "16",
+          "value": "16.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"

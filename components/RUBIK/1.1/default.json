@@ -22,7 +22,7 @@
           "description": "Rubik可以使用的最大CPU核数量",
           "display_name": "Rubik CPU核数(limit)",
           "name": "rubik_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -54,7 +54,7 @@
           "description": "Rubik分配的CPU核数量",
           "display_name": "Rubik CPU核数(request)",
           "name": "rubik_cpu_request",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -63,7 +63,7 @@
           "description": "Rubik可以使用的最大CPU核数量",
           "display_name": "Rubik CPU核数(limit)",
           "name": "rubik_cpu_limit",
-          "value": "1",
+          "value": "1.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -95,7 +95,7 @@
           "description": "Rubik分配的CPU核数量",
           "display_name": "Rubik CPU核数(request)",
           "name": "rubik_cpu_request",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -104,7 +104,7 @@
           "description": "Rubik可以使用的最大CPU核数量",
           "display_name": "Rubik CPU核数(limit)",
           "name": "rubik_cpu_limit",
-          "value": "2",
+          "value": "2.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -136,7 +136,7 @@
           "description": "Rubik分配的CPU核数量",
           "display_name": "Rubik CPU核数(request)",
           "name": "rubik_cpu_request",
-          "value": "4",
+          "value": "4.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
@@ -145,7 +145,7 @@
           "description": "Rubik可以使用的最大CPU核数量",
           "display_name": "Rubik CPU核数(limit)",
           "name": "rubik_cpu_limit",
-          "value": "4",
+          "value": "4.0",
           "value_type": "cpu",
           "min": "0",
           "max": "24"
