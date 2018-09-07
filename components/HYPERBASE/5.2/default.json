@@ -34,7 +34,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
@@ -43,7 +43,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase master分配的CPU核数量",
@@ -111,7 +111,7 @@
           "value": "16384MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
@@ -120,7 +120,7 @@
           "value": "16384MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase master分配的CPU核数量",
@@ -188,7 +188,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
@@ -197,7 +197,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase master分配的CPU核数量",
@@ -265,7 +265,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase region server可以使用的最大内存",
@@ -274,7 +274,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个Hyperbase master分配的CPU核数量",

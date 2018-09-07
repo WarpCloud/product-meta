@@ -35,7 +35,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个HDFS Datanode可以使用的最大内存",
@@ -44,7 +44,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "HDFS Namenode分配的CPU核数量",
@@ -98,7 +98,7 @@
           "value": "512G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "5120G"
         }
       ],
       "level": "demo"
@@ -130,7 +130,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个HDFS Datanode可以使用的最大内存",
@@ -139,7 +139,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "HDFS Namenode分配的CPU核数量",
@@ -193,7 +193,7 @@
           "value": "512G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "5120G"
         }
       ],
       "level": "low"
@@ -225,7 +225,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个HDFS Datanode可以使用的最大内存",
@@ -234,7 +234,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "HDFS Namenode分配的CPU核数量",
@@ -288,7 +288,7 @@
           "value": "1024G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "5120G"
         }
       ],
       "level": "medium"
@@ -320,7 +320,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个HDFS Datanode可以使用的最大内存",
@@ -329,7 +329,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "HDFS Namenode分配的CPU核数量",
@@ -383,7 +383,7 @@
           "value": "4096G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "5120G"
         }
       ],
       "level": "high"

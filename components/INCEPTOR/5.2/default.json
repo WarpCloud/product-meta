@@ -34,7 +34,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个executor可以使用的最大内存",
@@ -43,7 +43,7 @@
           "value": "4096MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Inceptor server分配的CPU核数量",
@@ -88,7 +88,7 @@
           "value": "4",
           "value_type": "num",
           "min": "0",
-          "max": "10"
+          "max": "15"
         },
         {
           "description": "每个节点SSD盘数量",
@@ -129,7 +129,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个executor可以使用的最大内存",
@@ -138,7 +138,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Inceptor server分配的CPU核数量",
@@ -183,7 +183,7 @@
           "value": "4",
           "value_type": "num",
           "min": "0",
-          "max": "10"
+          "max": "15"
         },
         {
           "description": "每个节点SSD盘数量",
@@ -224,7 +224,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个executor可以使用的最大内存",
@@ -233,7 +233,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Inceptor server分配的CPU核数量",
@@ -278,7 +278,7 @@
           "value": "8",
           "value_type": "num",
           "min": "0",
-          "max": "10"
+          "max": "15"
         },
         {
           "description": "每个节点SSD盘数量",
@@ -319,7 +319,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "每个executor可以使用的最大内存",
@@ -328,7 +328,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "4096MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Inceptor server分配的CPU核数量",
@@ -373,7 +373,7 @@
           "value": "12",
           "value_type": "num",
           "min": "0",
-          "max": "10"
+          "max": "15"
         },
         {
           "description": "每个节点SSD盘数量",

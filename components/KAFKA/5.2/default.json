@@ -34,7 +34,7 @@
           "value": "1024MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的最大内存",
@@ -43,7 +43,7 @@
           "value": "1024MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
@@ -52,7 +52,7 @@
           "value": "512G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "3072G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
@@ -93,7 +93,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的最大内存",
@@ -102,7 +102,7 @@
           "value": "12288MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
@@ -111,7 +111,7 @@
           "value": "512G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "3072G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
@@ -152,7 +152,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的最大内存",
@@ -161,7 +161,7 @@
           "value": "24576MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
@@ -170,7 +170,7 @@
           "value": "1024G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "3072G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
@@ -211,7 +211,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的最大内存",
@@ -220,7 +220,7 @@
           "value": "36864MB",
           "value_type": "memory",
           "min": "1024MB",
-          "max": "24576MB"
+          "max": "49152MB"
         },
         {
           "description": "Kafka可以使用的磁盘存储",
@@ -229,7 +229,7 @@
           "value": "2048G",
           "value_type": "storage",
           "min": "1G",
-          "max": "1024G"
+          "max": "3072G"
         },
         {
           "description": "Kafka临时数据可以使用的磁盘存储",
