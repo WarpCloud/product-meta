@@ -6,6 +6,7 @@
   "description_en": "NewSQL Database",
   "edition": "5.2",
   "name": "HYPERBASE-5.2",
+  "is_share": true,
   "templates": [
     {
       "configs": [

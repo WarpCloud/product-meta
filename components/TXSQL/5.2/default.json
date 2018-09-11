@@ -6,6 +6,7 @@
   "description_en": "Relational Database",
   "edition": "5.2",
   "name": "TXSQL-5.2",
+  "is_share": true,
   "templates": [
     {
       "configs": [
