@@ -789,3 +789,9 @@ harbor:
     default:
       - harbor_image
 
+catalog:
+  security:
+    principal_list:
+      - hbase
+      - kafka
+      - zookeeper
