@@ -2,7 +2,8 @@
   "category": "数据分析展现工具",
   "component_type": "SMARTBI",
   "source": "third-party",
-  "description": "数据分析展现工具，用于分析展现星环数据仓库的数据",
+  "description": "数据分析展现工具",
+  "description_en": "Smart Reporting",
   "edition": "1.1",
   "name": "SMARTBI-1.1",
   "templates": [
