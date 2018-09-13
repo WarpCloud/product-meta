@@ -1,0 +1,23 @@
+instance-type: zookeeper
+major-version: '6.0'
+min-tdc-version: tdc-1.2.0-rc0
+max-tdc-version: tdc-1.2.0-final
+hot-fix-ranges:
+- max: transwarp-6.0.0-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: zookeeper
+  variable: zk_image
+releases:
+- dependencies: []
+  final: true
+  image-version:
+    zk_image: transwarp-6.0.0-final
+  release-version: transwarp-6.0.0-final
+- dependencies: []
+  final: false
+  image-version:
+    zk_image: transwarp-6.0
+  release-version: transwarp-6.0

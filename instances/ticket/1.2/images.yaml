@@ -1,22 +1,35 @@
 instance-type: ticket
 major-version: '1.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.2.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-  - max: tdc-1.2
-    min: tdc-1.2
+- max: tdc-1.2.0-rc0
+  min: tdc-1.2.0-rc0
+- max: tdc-1.2
+  min: tdc-1.2
 images:
-  - name: ticket
-    variable: ticket_image
+- name: ticket
+  variable: ticket_image
 releases:
-  - dependencies:
-      - max-version: tdc-1.2
-        min-version: tdc-1.1
-        type: txsql
-      - max-version: tdc-1.2
-        min-version: tdc-1.2
-        type: notification
-    final: false
-    image-version:
-      ticket_image: tdc-1.2
-    release-version: tdc-1.2
+- dependencies:
+  - max-version: tdc-1.2.0-rc0
+    min-version: tdc-1.2.0-rc0
+    type: txsql
+  - max-version: tdc-1.2.0-rc0
+    min-version: tdc-1.2.0-rc0
+    type: notification
+  final: true
+  image-version:
+    ticket_image: tdc-1.2.0-rc0
+  release-version: tdc-1.2.0-rc0
+- dependencies:
+  - max-version: tdc-1.2
+    min-version: tdc-1.2
+    type: txsql
+  - max-version: tdc-1.2
+    min-version: tdc-1.2
+    type: notification
+  final: false
+  image-version:
+    ticket_image: tdc-1.2
+  release-version: tdc-1.2

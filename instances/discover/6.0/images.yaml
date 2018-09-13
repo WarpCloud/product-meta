@@ -1,0 +1,41 @@
+instance-type: discover
+major-version: '6.0'
+min-tdc-version: tdc-1.2.0-rc0
+max-tdc-version: tdc-1.2.0-final
+hot-fix-ranges:
+- max: transwarp-6.0.0-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: discover-ide
+  variable: discover_image
+releases:
+- release-version: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: hdfs
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: yarn
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: localcran
+  final: true
+  image-version:
+    discover_image: transwarp-6.0.0-final
+- release-version: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: hdfs
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: yarn
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: localcran
+  final: false
+  image-version:
+    discover_image: transwarp-6.0

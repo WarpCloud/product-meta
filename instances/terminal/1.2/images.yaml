@@ -1,34 +1,59 @@
 instance-type: terminal
 major-version: '1.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.2.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-  - max: tdc-1.2
-    min: tdc-1.2
+- max: tdc-1.2.0-rc0
+  min: tdc-1.2.0-rc0
+- max: tdc-1.2
+  min: tdc-1.2
 images:
-  - name: terminal
-    variable: terminal_image
+- name: terminal
+  variable: terminal_image
 releases:
-  - dependencies:
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: elasticsearch
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: hdfs
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: hyperbase
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: inceptor
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: metastore
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: yarn
-    final: false
-    image-version:
-      terminal_image: tdc-1.2
-    release-version: tdc-1.2
+- dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: elasticsearch
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: hdfs
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: hyperbase
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: inceptor
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: metastore
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: yarn
+  final: true
+  image-version:
+    terminal_image: tdc-1.2.0-rc0
+  release-version: tdc-1.2.0-rc0
+- dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: elasticsearch
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: hdfs
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: hyperbase
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: inceptor
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: metastore
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: yarn
+  final: false
+  image-version:
+    terminal_image: tdc-1.2
+  release-version: tdc-1.2
