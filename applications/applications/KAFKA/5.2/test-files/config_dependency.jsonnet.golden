@@ -14,7 +14,7 @@
             "kafka_env_list": [
                {
                   "key": "KAFKA_SERVER_PROPERTIES",
-                  "value": "log.retention.bytes;;;54975581388|||log.retention.hours;;;12|||num.partitions;;;3|||default.replication.factor;;;2"
+                  "value": "log.retention.bytes;;;54975581388|||num.partitions;;;3|||default.replication.factor;;;2|||sasl.kerberos.principal.to.local.rules;;;RULE:[1:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,RULE:[2:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,DEFAULT"
                }
             ],
             "kafka_memory_limit": 2,

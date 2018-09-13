@@ -18,6 +18,10 @@
             {
                "moduleName": "guardian-cas",
                "name": "guardian-cas"
+            },
+            {
+               "moduleName": "txsql",
+               "name": "txsql"
             }
          ],
          "instance_settings": { },

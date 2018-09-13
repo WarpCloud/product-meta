@@ -9,6 +9,7 @@ function(config={})
 
   local _dioclesModuleName = "diocles";
   local _guardianModuleName = "guardian-cas";
+  local _txsqlModuleName = "txsql";
 
   //-------------------
   // Dependent modules
@@ -20,6 +21,9 @@ function(config={})
      dependencies: [{
         moduleName: _guardianModuleName,
         name: _guardianModuleName,
+      },{
+        moduleName: _txsqlModuleName,
+        name: _txsqlModuleName,
       }],
     };
 
