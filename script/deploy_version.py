@@ -4,29 +4,12 @@ import sys
 from ruamel import yaml
 from copy import deepcopy
 import codecs
-
-
-def read_file(path, change_file):
-    files = os.listdir(path)
-    file_dict = dict()
-    for file in files:
-        file_name = path + '/' + file;
-        if os.path.isdir(file_name):
-            temp_dict = file_dict.copy()
-            temp_dict.update(read_file(path + '/' + file, change_file))
-            file_dict = temp_dict
-        elif file == change_file:
-            f = codecs.open(file_name, 'r', 'utf-8')
-            iter_f = iter(f)
-            str = ''
-            for line in iter_f:
-                str += line
-            file_dict[file_name] = yaml.load(str, Loader=yaml.RoundTripLoader)
-    return file_dict
+import copy
+from lib import read_file
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 6:
+    if len(sys.argv) < 6:
         print('ERROR: input params error' + str(len(sys.argv)))
         exit(1)
 
@@ -35,40 +18,77 @@ if __name__ == '__main__':
     update_version = sys.argv[3].split('/')
     is_final = True if sys.argv[4] == 'true' else False
     exclude = sys.argv[5].split('/')
+    if len(sys.argv) == 7:
+        update_release = sys.argv[6].split('/')
+    else:
+        update_release = copy.deepcopy(root_version)
+    rc_or_final_map = dict()
+    for update in update_version:
+        if 'final' in update:
+            rc_or_final_map[update] = 'final'
+        else:
+            rc_or_final_map[update] = 'rc'
     files = read_file(path, 'images.yaml')
     for item in files.items():
         file_name = item[0]
         template = item[1]
         releases = item[1].get('releases')
-        if template.get('instance-type') == 'sophon':
+        if template.get('instance-type') in exclude:
             continue
         is_change = False
         releases_new = list()
         hot_fix_range = list()
-        is_rc_update = False
+        is_rc_update = dict()
+        for version in root_version:
+            is_rc_update[version] = False
         for hot_fix in item[1].get('hot-fix-ranges'):
             if 'rc' in hot_fix.get('max'):
                 # there is rc0, update to rc1
                 version = hot_fix.get('max').split('rc')
                 for update in update_version:
                     if version[0] in update:
+                        if rc_or_final_map[update] != 'rc':
+                            continue
                         hot_fix['max'] = update
-                        is_rc_update = True
+                        for root_is_exist in root_version:
+                            if root_is_exist in version[0]:
+                                is_rc_update[root_is_exist] = True
+                                break
                         continue
-            if hot_fix.get('max') not in root_version:
+            if 'final' in hot_fix.get('max'):
+                version = hot_fix.get('max').split('-')
+                for update in update_version:
+                    if version[0] in update:
+                        hot_fix['max'] = update
+                        if rc_or_final_map[update] != 'final':
+                            continue
+                        for root_is_exist in root_version:
+                            if root_is_exist in version[0] + '-' + version[1]:
+                                is_rc_update[root_is_exist] = True
+                                break
+                        continue
+            if hot_fix.get('max') not in update_release:
                 continue
-            if is_rc_update:
+            if is_rc_update.get(hot_fix.get('max')) is None or is_rc_update.get(hot_fix.get('max')):
                 continue
             # add new rc or final hot_fix version
             hot_fix_new = deepcopy(hot_fix)
-            hot_fix['max'] = update_version[root_version.index(hot_fix.get('max'))]
-            hot_fix['min'] = update_version[root_version.index(hot_fix.get('min'))]
+            hot_fix['max'] = update_version[update_release.index(hot_fix.get('max'))]
+            hot_fix['min'] = update_version[update_release.index(hot_fix.get('min'))]
             hot_fix_range.append(hot_fix_new)
             continue
         for hot_fix in hot_fix_range:
             template['hot-fix-ranges'].append(hot_fix)
         for release in releases:
-            if release.get('release-version') not in root_version:
+            if release.get('release-version') in update_version:
+                # TODO: update version
+                for dependency in release.get('dependencies'):
+                    change_version = dependency.get('max-version')
+                    for version in update_release:
+                        if version in change_version:
+                            dependency['max-version'] = update_version[root_version.index(version)]
+                            is_change = True
+            if release.get('release-version') not in update_release:
                 releases_new.append(release)
                 continue
             # add new
