@@ -302,6 +302,7 @@ inceptor:
     principal_list:
       - HTTP
       - hive
+      - kafka
     security_on:
       - inceptor_mounted_kerberos
     security_service:
