@@ -1,9 +1,13 @@
 instance-type: smartbi
 major-version: '1.1'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-- max: tdc-1.2
+- max: tdc-1.1.0-rc4
+  min: tdc-1.1.0-rc1
+- max: tdc-1.1.1-rc0
+  min: tdc-1.1.0-final
+- max: tdc-1.1
   min: tdc-1.1
 images:
 - name: smartbi-tomcat
@@ -12,8 +16,44 @@ images:
   variable: smartbi_mysql_image
 releases:
 - dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.0-rc1
+    smartbi_mysql_image: tdc-1.1.0-rc1
+  release-version: tdc-1.1.0-rc1
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.0-rc2
+    smartbi_mysql_image: tdc-1.1.0-rc2
+  release-version: tdc-1.1.0-rc2
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.0-rc3
+    smartbi_mysql_image: tdc-1.1.0-rc3
+  release-version: tdc-1.1.0-rc3
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.0-rc4
+    smartbi_mysql_image: tdc-1.1.0-rc4
+  release-version: tdc-1.1.0-rc4
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.0-final
+    smartbi_mysql_image: tdc-1.1.0-final
+  release-version: tdc-1.1.0-final
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: tdc-1.1.1-rc0
+    smartbi_mysql_image: tdc-1.1.1-rc0
+  release-version: tdc-1.1.1-rc0
+- dependencies: []
   final: false
   image-version:
-    smartbi_tomcat_image: tdc-1.2
-    smartbi_mysql_image: tdc-1.2
-  release-version: tdc-1.2
+    smartbi_tomcat_image: tdc-1.1
+    smartbi_mysql_image: tdc-1.1
+  release-version: tdc-1.1

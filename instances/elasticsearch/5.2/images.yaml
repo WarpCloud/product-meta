@@ -1,38 +1,106 @@
 instance-type: elasticsearch
 major-version: '5.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: transwarp-5.2
-    min: transwarp-5.2
-  - max: tdc-1.2
-    min: tdc-1.1
+- max: transwarp-5.2.1-rc2
+  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2.2-final
+  min: transwarp-5.2.1-final
+- max: tdc-1.1.0-rc4
+  min: tdc-1.1.0-rc1
+- max: transwarp-5.2
+  min: transwarp-5.2
+- max: tdc-1.1.1-rc0
+  min: tdc-1.1.0-final
+- max: tdc-1.1
+  min: tdc-1.1
 images:
-  - name: search
-    variable: es_image
-  - name: search-head
-    variable: es_head_image
+- name: search
+  variable: es_image
+- name: search-head
+  variable: es_head_image
 releases:
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: transwarp-5.2.1-rc0
+    es_image: transwarp-5.2.1-rc0
+  release-version: transwarp-5.2.1-rc0
 
-# Search for TDH
-  - dependencies: []
-    final: false
-    image-version:
-      es_head_image: transwarp-5.2
-      es_image: transwarp-5.2
-    release-version: transwarp-5.2
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: transwarp-5.2.1-rc2
+    es_image: transwarp-5.2.1-rc2
+  release-version: transwarp-5.2.1-rc2
 
-# Search for TDC
-  - dependencies: []
-    final: false
-    image-version:
-      es_head_image: tdc-1.1
-      es_image: tdc-1.1
-    release-version: tdc-1.1
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: transwarp-5.2.1-final
+    es_image: transwarp-5.2.1-final
+  release-version: transwarp-5.2.1-final
 
-  - dependencies: []
-    final: false
-    image-version:
-      es_head_image: tdc-1.2
-      es_image: tdc-1.2
-    release-version: tdc-1.2
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: transwarp-5.2.2-final
+    es_image: transwarp-5.2.2-final
+  release-version: transwarp-5.2.2-final
+
+- dependencies: []
+  final: false
+  image-version:
+    es_head_image: transwarp-5.2
+    es_image: transwarp-5.2
+  release-version: transwarp-5.2
+
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-rc0
+    es_image: tdc-1.1.0-rc0
+  release-version: tdc-1.1.0-rc0
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-rc1
+    es_image: tdc-1.1.0-rc1
+  release-version: tdc-1.1.0-rc1
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-rc2
+    es_image: tdc-1.1.0-rc2
+  release-version: tdc-1.1.0-rc2
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-rc3
+    es_image: tdc-1.1.0-rc3
+  release-version: tdc-1.1.0-rc3
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-rc4
+    es_image: tdc-1.1.0-rc4
+  release-version: tdc-1.1.0-rc4
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.0-final
+    es_image: tdc-1.1.0-final
+  release-version: tdc-1.1.0-final
+- dependencies: []
+  final: true
+  image-version:
+    es_head_image: tdc-1.1.1-rc0
+    es_image: tdc-1.1.1-rc0
+  release-version: tdc-1.1.1-rc0
+- dependencies: []
+  final: false
+  image-version:
+    es_head_image: tdc-1.1
+    es_image: tdc-1.1
+  release-version: tdc-1.1

@@ -1,22 +1,60 @@
 instance-type: metastore
 major-version: '5.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: transwarp-5.2
-    min: transwarp-5.2
+- max: transwarp-5.2.2-final
+  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2
+  min: transwarp-5.2
 images:
-  - name: inceptor
-    variable: metastore_image
-  - name: inceptor
-    variable: mysql_image
+- name: inceptor
+  variable: metastore_image
+- name: inceptor
+  variable: mysql_image
 releases:
-  - dependencies:
-      - max-version: transwarp-5.2
-        min-version: transwarp-5.2
-        type: hdfs
-    final: false
-    image-version:
-      metastore_image: transwarp-5.2
-      mysql_image: transwarp-5.2
-    release-version: transwarp-5.2
+- dependencies:
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
+    type: hdfs
+  final: true
+  image-version:
+    metastore_image: transwarp-5.2.1-rc0
+    mysql_image: transwarp-5.2.1-rc0
+  release-version: transwarp-5.2.1-rc0
+- dependencies:
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
+    type: hdfs
+  final: true
+  image-version:
+    metastore_image: transwarp-5.2.1-rc2
+    mysql_image: transwarp-5.2.1-rc2
+  release-version: transwarp-5.2.1-rc2
+- dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  final: true
+  image-version:
+    metastore_image: transwarp-5.2.1-final
+    mysql_image: transwarp-5.2.1-final
+  release-version: transwarp-5.2.1-final
+- dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: hdfs
+  final: true
+  image-version:
+    metastore_image: transwarp-5.2.2-final
+    mysql_image: transwarp-5.2.2-final
+  release-version: transwarp-5.2.2-final
+- dependencies:
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: hdfs
+  final: false
+  image-version:
+    metastore_image: transwarp-5.2
+    mysql_image: transwarp-5.2
+  release-version: transwarp-5.2
