@@ -1,0 +1,34 @@
+{
+  "edition": "12.2",
+  "final": true,
+  "components": [
+    "WEBLOGIC-12.2"
+  ],
+  "templates": [
+    {
+      "level": "demo",
+      "description": "演示模式",
+      "description_en": "Demo mode"
+    },
+    {
+      "level": "low",
+      "description": "最佳性价比模式",
+      "description_en": "Best price/performance model"
+    },
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    },
+    {
+      "level": "high",
+      "description": "最佳性能模式",
+      "description_en": "Best performance model"
+    }
+  ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-weblogic.png"
+  }],
+  "is_distributed": true
+}

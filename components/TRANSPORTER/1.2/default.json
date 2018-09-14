@@ -1,0 +1,175 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "TRANSPORTER",
+  "source": "transwarp",
+  "description": "数据整合",
+  "description_en": "Data Integration",
+  "edition": "1.2",
+  "name": "TRANSPORTER-1.2",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Transporter分配的CPU核数量",
+          "display_name": "Transporter CPU核数(request)",
+          "name": "tdt_cpu_request",
+          "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter可以使用的最大CPU核数量",
+          "display_name": "Transporter CPU核数(limit)",
+          "name": "tdt_cpu_limit",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter分配的内存",
+          "display_name": "Transporter内存(request)",
+          "name": "tdt_memory_request",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Transporter可以使用的最大内存",
+          "display_name": "Transporter内存(limit)",
+          "name": "tdt_memory_limit",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Transporter分配的CPU核数量",
+          "display_name": "Transporter CPU核数(request)",
+          "name": "tdt_cpu_request",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter可以使用的最大CPU核数量",
+          "display_name": "Transporter CPU核数(limit)",
+          "name": "tdt_cpu_limit",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter分配的内存",
+          "display_name": "Transporter内存(request)",
+          "name": "tdt_memory_request",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Transporter可以使用的最大内存",
+          "display_name": "Transporter内存(limit)",
+          "name": "tdt_memory_limit",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Transporter分配的CPU核数量",
+          "display_name": "Transporter CPU核数(request)",
+          "name": "tdt_cpu_request",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter可以使用的最大CPU核数量",
+          "display_name": "Transporter CPU核数(limit)",
+          "name": "tdt_cpu_limit",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter分配的内存",
+          "display_name": "Transporter内存(request)",
+          "name": "tdt_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Transporter可以使用的最大内存",
+          "display_name": "Transporter内存(limit)",
+          "name": "tdt_memory_limit",
+          "value": "6144MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Transporter分配的CPU核数量",
+          "display_name": "Transporter CPU核数(request)",
+          "name": "tdt_cpu_request",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter可以使用的最大CPU核数量",
+          "display_name": "Transporter CPU核数(limit)",
+          "name": "tdt_cpu_limit",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Transporter分配的内存",
+          "display_name": "Transporter内存(request)",
+          "name": "tdt_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Transporter可以使用的最大内存",
+          "display_name": "Transporter内存(limit)",
+          "name": "tdt_memory_limit",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}

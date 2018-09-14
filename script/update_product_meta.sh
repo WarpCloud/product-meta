@@ -8,10 +8,9 @@ PROJROOT="$(cd $(dirname $FILEPATH) && pwd)/.."
 INSTANCEW_PATH="$PROJROOT/instances"
 
 # TODO: add the param for update
-
-ORIGIN_VERSION="tdc-1.1/transwarp-5.2/sophonweb-1.2"
-UPDATE_RELEASE="tdc-1.1"
-UPDATE_VERSION="tdc-1.1.1-rc0/transwarp-5.2.2-final/sophonweb-1.3.0-final"
+ORIGIN_VERSION="tdc-1.2/transwarp-6.0/sophonweb-2.0"
+UPDATE_RELEASE="tdc-1.2"
+UPDATE_VERSION="tdc-1.2.0-rc0/transwarp-6.0.0-final/sophonweb-2.0.0-rc4"
 IS_FINAL="true"
 EXCLUDE="sophon/ogg/ogg-for-big-data"
 
