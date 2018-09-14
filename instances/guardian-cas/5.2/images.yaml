@@ -3,6 +3,10 @@ major-version: '5.2'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
+- max: transwarp-5.2.2-final
+  min: transwarp-5.2.2-final
+- max: transwarp-5.2
+  min: transwarp-5.2
 - max: tdc-1.1.0-rc4
   min: tdc-1.1.0-rc0
 - max: tdc-1.1.1-rc0
@@ -137,3 +141,32 @@ releases:
     cas_server_image: tdc-1.1
     gencerts_init_container_image: tdc-1.1
   release-version: tdc-1.1
+
+- dependencies:
+  - max-version: tdc-1.1.1-rc0
+    min-version: tdc-1.1.0-final
+    type: txsql
+  final: true
+  image-version:
+    apacheds_image: transwarp-5.2.2-final
+    guardian_init_container_image: transwarp-5.2.2-final
+    guardian_server_image: transwarp-5.2.2-final
+    cas_config_server_image: transwarp-5.2.2-final
+    cas_mgnt_server_image: transwarp-5.2.2-final
+    cas_server_image: transwarp-5.2.2-final
+    gencerts_init_container_image: transwarp-5.2.2-final
+  release-version: transwarp-5.2.2-final
+- dependencies:
+  - max-version: tdc-1.1
+    min-version: tdc-1.1
+    type: txsql
+  final: false
+  image-version:
+    apacheds_image: transwarp-5.2
+    guardian_init_container_image: transwarp-5.2
+    guardian_server_image: transwarp-5.2
+    cas_config_server_image: transwarp-5.2
+    cas_mgnt_server_image: transwarp-5.2
+    cas_server_image: transwarp-5.2
+    gencerts_init_container_image: transwarp-5.2
+  release-version: transwarp-5.2

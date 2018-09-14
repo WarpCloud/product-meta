@@ -35,6 +35,7 @@ if __name__ == '__main__':
         releases = item[1].get('releases')
         if template.get('instance-type') in exclude:
             continue
+        print('Updating {}-{}'.format(template['instance-type'], template['major-version']))
         is_change = False
         releases_new = list()
         hot_fix_range = list()

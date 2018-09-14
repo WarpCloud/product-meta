@@ -3,9 +3,9 @@
   "description": "Context services for TDC tenants.",
   "edition": "1.2",
   "components": [
-    "GUARDIAN-5.2",
+    "GUARDIAN-6.0",
     "TCC-1.2",
-    "TXSQL-5.2",
+    "TXSQL-6.0",
     "KIBANA-1.2",
     "TICKET-1.2",
     "LOGSTASH-1.2"
