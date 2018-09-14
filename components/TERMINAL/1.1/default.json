@@ -1,0 +1,139 @@
+{
+  "category": "运维和开发工具,SYSTEM",
+  "component_type": "TERMINAL",
+  "source": "transwarp",
+  "description": "容器命令行",
+  "description_en": "Command Line Tool",
+  "edition": "1.1",
+  "name": "TERMINAL-1.1",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "1G",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "10G",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "2048MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "20G",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Terminal可以使用的CPU core数量",
+          "display_name": "Terminal CPU核数",
+          "name": "terminal_cpu_limit",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Terminal可以使用的最大内存",
+          "display_name": "Terminal内存",
+          "name": "terminal_memory_limit",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Terminal Data可以使用的磁盘存储",
+          "display_name": "Terminal Data磁盘大小",
+          "name": "terminal_data_storage",
+          "value": "30G",
+          "value_type": "storage",
+          "min": "0G",
+          "max": "1024G"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}
