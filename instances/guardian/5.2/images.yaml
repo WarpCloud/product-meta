@@ -1,22 +1,75 @@
 instance-type: guardian
 major-version: '5.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: tdc-1.1
-    min: tdc-1.1
+- max: tdc-1.1.0-rc4
+  min: tdc-1.1.0-rc0
+- max: tdc-1.1.1-rc0
+  min: tdc-1.1.0-final
+- max: tdc-1.1
+  min: tdc-1.1
 images:
-  - name: apacheds
-    variable: apacheds_image
-  - name: guardian-init
-    variable: guardian_init_container_image
-  - name: guardian
-    variable: guardian_server_image
+- name: apacheds
+  variable: apacheds_image
+- name: guardian-init
+  variable: guardian_init_container_image
+- name: guardian
+  variable: guardian_server_image
 releases:
-  - dependencies: []
-    final: false
-    image-version:
-      apacheds_image: tdc-1.1
-      guardian_init_container_image: tdc-1.1
-      guardian_server_image: tdc-1.1
-    release-version: tdc-1.1
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-rc0
+    guardian_init_container_image: tdc-1.1.0-rc0
+    guardian_server_image: tdc-1.1.0-rc0
+  release-version: tdc-1.1.0-rc0
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-rc1
+    guardian_init_container_image: tdc-1.1.0-rc1
+    guardian_server_image: tdc-1.1.0-rc1
+  release-version: tdc-1.1.0-rc1
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-rc2
+    guardian_init_container_image: tdc-1.1.0-rc2
+    guardian_server_image: tdc-1.1.0-rc2
+  release-version: tdc-1.1.0-rc2
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-rc3
+    guardian_init_container_image: tdc-1.1.0-rc3
+    guardian_server_image: tdc-1.1.0-rc3
+  release-version: tdc-1.1.0-rc3
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-rc4
+    guardian_init_container_image: tdc-1.1.0-rc4
+    guardian_server_image: tdc-1.1.0-rc4
+  release-version: tdc-1.1.0-rc4
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.0-final
+    guardian_init_container_image: tdc-1.1.0-final
+    guardian_server_image: tdc-1.1.0-final
+  release-version: tdc-1.1.0-final
+- dependencies: []
+  final: true
+  image-version:
+    apacheds_image: tdc-1.1.1-rc0
+    guardian_init_container_image: tdc-1.1.1-rc0
+    guardian_server_image: tdc-1.1.1-rc0
+  release-version: tdc-1.1.1-rc0
+- dependencies: []
+  final: false
+  image-version:
+    apacheds_image: tdc-1.1
+    guardian_init_container_image: tdc-1.1
+    guardian_server_image: tdc-1.1
+  release-version: tdc-1.1

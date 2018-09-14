@@ -1,32 +1,52 @@
 instance-type: notification
 major-version: '1.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.2.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-  - max: transwarp-5.2
-    min: transwarp-5.2
-  - max: tdc-1.2
-    min: tdc-1.2
+- max: transwarp-6.0.0-final
+  min: transwarp-6.0.0-final
+- max: tdc-1.2.0-rc0
+  min: tdc-1.2.0-rc0
+- max: transwarp-6.0
+  min: transwarp-6.0
+- max: tdc-1.2
+  min: tdc-1.2
 images:
-  - name: notification
-    variable: notification_image
+- name: notification
+  variable: notification_image
 releases:
-# Notification for TDH
-#  - dependencies:
-#    - max-version: tdc-1.2
-#      min-version: tdc-1.1
-#      type: txsql
-#    final: false
-#    image-version:
-#      notification_image: transwarp-5.2
-#    release-version: transwarp-5.2
+ # Notification for TDH
+- dependencies:
+  - max-version: tdc-1.2.0-rc0
+    min-version: tdc-1.2.0-rc0
+    type: txsql
+  final: false
+  image-version:
+    notification_image: transwarp-6.0.0-final
+  release-version: transwarp-6.0.0-final
+- dependencies:
+  - max-version: tdc-1.2
+    min-version: tdc-1.2
+    type: txsql
+  final: false
+  image-version:
+    notification_image: transwarp-6.0
+  release-version: transwarp-6.0
 
 # Notification for TDC
-  - dependencies:
-    - max-version: tdc-1.2
-      min-version: tdc-1.1
-      type: txsql
-    final: false
-    image-version:
-      notification_image: tdc-1.2
-    release-version: tdc-1.2
+- dependencies:
+  - max-version: tdc-1.2.0-rc0
+    min-version: tdc-1.2.0-rc0
+    type: txsql
+  final: true
+  image-version:
+    notification_image: tdc-1.2.0-rc0
+  release-version: tdc-1.2.0-rc0
+- dependencies:
+  - max-version: tdc-1.2
+    min-version: tdc-1.2
+    type: txsql
+  final: false
+  image-version:
+    notification_image: tdc-1.2
+  release-version: tdc-1.2

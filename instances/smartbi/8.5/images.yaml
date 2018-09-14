@@ -1,0 +1,19 @@
+instance-type: smartbi
+major-version: '8.5'
+min-tdc-version: tdc-1.2.0-rc0
+max-tdc-version: tdc-1.2.0-final
+hot-fix-ranges:
+- max: "8.5"
+  min: "8.5"
+images:
+- name: smartbi-tomcat
+  variable: smartbi_tomcat_image
+- name: smartbi-mysql
+  variable: smartbi_mysql_image
+releases:
+- dependencies: []
+  final: true
+  image-version:
+    smartbi_tomcat_image: "8.5"
+    smartbi_mysql_image: "8.5"
+  release-version: "8.5"

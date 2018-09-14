@@ -1,28 +1,123 @@
 instance-type: gondar
 major-version: '1.1'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: tdc-1.1
-    min: tdc-1.1
+- max: tdc-1.1.0-rc4
+  min: tdc-1.1.0-rc0
+- max: tdc-1.1.1-rc0
+  min: tdc-1.1.0-final
+- max: tdc-1.1
+  min: tdc-1.1
 images:
-  - name: gondar-udr
-    variable: gondar_udr_image
-  - name: gondar-cdr
-    variable: gondar_cdr_image
-  - name: gondar-billing
-    variable: gondar_billing_image
+- name: gondar-udr
+  variable: gondar_udr_image
+- name: gondar-cdr
+  variable: gondar_cdr_image
+- name: gondar-billing
+  variable: gondar_billing_image
 releases:
-  - dependencies:
-      - max-version: tdc-1.1
-        min-version: tdc-1.1
-        type: txsql
-      - max-version: tdc-1.1
-        min-version: tdc-1.1
-        type: kafka
-    final: false
-    image-version:
-      gondar_udr_image: tdc-1.1
-      gondar_cdr_image: tdc-1.1
-      gondar_billing_image: tdc-1.1
-    release-version: tdc-1.1
+- dependencies:
+  - max-version: tdc-1.1.0-rc0
+    min-version: tdc-1.1.0-rc0
+    type: txsql
+  - max-version: tdc-1.1.0-rc0
+    min-version: tdc-1.1.0-rc0
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-rc0
+    gondar_cdr_image: tdc-1.1.0-rc0
+    gondar_billing_image: tdc-1.1.0-rc0
+  release-version: tdc-1.1.0-rc0
+- dependencies:
+  - max-version: tdc-1.1.0-rc1
+    min-version: tdc-1.1.0-rc1
+    type: txsql
+  - max-version: tdc-1.1.0-rc1
+    min-version: tdc-1.1.0-rc1
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-rc1
+    gondar_cdr_image: tdc-1.1.0-rc1
+    gondar_billing_image: tdc-1.1.0-rc1
+  release-version: tdc-1.1.0-rc1
+- dependencies:
+  - max-version: tdc-1.1.0-rc2
+    min-version: tdc-1.1.0-rc2
+    type: txsql
+  - max-version: tdc-1.1.0-rc2
+    min-version: tdc-1.1.0-rc2
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-rc2
+    gondar_cdr_image: tdc-1.1.0-rc2
+    gondar_billing_image: tdc-1.1.0-rc2
+  release-version: tdc-1.1.0-rc2
+- dependencies:
+  - max-version: tdc-1.1.0-rc3
+    min-version: tdc-1.1.0-rc3
+    type: txsql
+  - max-version: tdc-1.1.0-rc3
+    min-version: tdc-1.1.0-rc3
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-rc3
+    gondar_cdr_image: tdc-1.1.0-rc3
+    gondar_billing_image: tdc-1.1.0-rc3
+  release-version: tdc-1.1.0-rc3
+- dependencies:
+  - max-version: tdc-1.1.0-rc4
+    min-version: tdc-1.1.0-rc4
+    type: txsql
+  - max-version: tdc-1.1.0-rc4
+    min-version: tdc-1.1.0-rc4
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-rc4
+    gondar_cdr_image: tdc-1.1.0-rc4
+    gondar_billing_image: tdc-1.1.0-rc4
+  release-version: tdc-1.1.0-rc4
+- dependencies:
+  - max-version: tdc-1.1.0-final
+    min-version: tdc-1.1.0-final
+    type: txsql
+  - max-version: tdc-1.1.0-final
+    min-version: tdc-1.1.0-final
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.0-final
+    gondar_cdr_image: tdc-1.1.0-final
+    gondar_billing_image: tdc-1.1.0-final
+  release-version: tdc-1.1.0-final
+- dependencies:
+  - max-version: tdc-1.1.1-rc0
+    min-version: tdc-1.1.1-rc0
+    type: txsql
+  - max-version: tdc-1.1.1-rc0
+    min-version: tdc-1.1.1-rc0
+    type: kafka
+  final: true
+  image-version:
+    gondar_udr_image: tdc-1.1.1-rc0
+    gondar_cdr_image: tdc-1.1.1-rc0
+    gondar_billing_image: tdc-1.1.1-rc0
+  release-version: tdc-1.1.1-rc0
+- dependencies:
+  - max-version: tdc-1.1
+    min-version: tdc-1.1
+    type: txsql
+  - max-version: tdc-1.1
+    min-version: tdc-1.1
+    type: kafka
+  final: false
+  image-version:
+    gondar_udr_image: tdc-1.1
+    gondar_cdr_image: tdc-1.1
+    gondar_billing_image: tdc-1.1
+  release-version: tdc-1.1

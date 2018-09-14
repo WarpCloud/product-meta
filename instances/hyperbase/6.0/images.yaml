@@ -1,0 +1,53 @@
+instance-type: hyperbase
+major-version: '6.0'
+min-tdc-version: tdc-1.2.0-rc0
+max-tdc-version: tdc-1.2.0-final
+hot-fix-ranges:
+- max: transwarp-6.0.0-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: hbase
+  variable: hbase_master_image
+- name: hbase
+  variable: hbase_rs_image
+- name: hbase
+  variable: hbase_thrift_image
+- name: hbase
+  variable: hbase_rest_image
+releases:
+- dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: hdfs
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: yarn
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: zookeeper
+  final: true
+  image-version:
+    hbase_master_image: transwarp-6.0.0-final
+    hbase_rest_image: transwarp-6.0.0-final
+    hbase_rs_image: transwarp-6.0.0-final
+    hbase_thrift_image: transwarp-6.0.0-final
+  release-version: transwarp-6.0.0-final
+- dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: hdfs
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: yarn
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: zookeeper
+  final: false
+  image-version:
+    hbase_master_image: transwarp-6.0
+    hbase_rest_image: transwarp-6.0
+    hbase_rs_image: transwarp-6.0
+    hbase_thrift_image: transwarp-6.0
+  release-version: transwarp-6.0

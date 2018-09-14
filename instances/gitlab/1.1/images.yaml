@@ -1,8 +1,12 @@
 instance-type: gitlab
 major-version: '1.1'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
+- max: tdc-1.1.0-rc4
+  min: tdc-1.1.0-rc1
+- max: tdc-1.1.1-rc0
+  min: tdc-1.1.0-final
 - max: tdc-1.1
   min: tdc-1.1
 images:
@@ -13,6 +17,48 @@ images:
 - name: postgresql
   variable: postgresql_image
 releases:
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.0-rc1
+    redis_image: tdc-1.1.0-rc1
+    postgresql_image: tdc-1.1.0-rc1
+  release-version: tdc-1.1.0-rc1
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.0-rc2
+    redis_image: tdc-1.1.0-rc2
+    postgresql_image: tdc-1.1.0-rc2
+  release-version: tdc-1.1.0-rc2
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.0-rc3
+    redis_image: tdc-1.1.0-rc3
+    postgresql_image: tdc-1.1.0-rc3
+  release-version: tdc-1.1.0-rc3
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.0-rc4
+    redis_image: tdc-1.1.0-rc4
+    postgresql_image: tdc-1.1.0-rc4
+  release-version: tdc-1.1.0-rc4
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.0-final
+    redis_image: tdc-1.1.0-final
+    postgresql_image: tdc-1.1.0-final
+  release-version: tdc-1.1.0-final
+- dependencies: []
+  final: true
+  image-version:
+    gitlab_image: tdc-1.1.1-rc0
+    redis_image: tdc-1.1.1-rc0
+    postgresql_image: tdc-1.1.1-rc0
+  release-version: tdc-1.1.1-rc0
 - dependencies: []
   final: false
   image-version:

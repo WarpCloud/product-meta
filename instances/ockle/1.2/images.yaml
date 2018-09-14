@@ -1,19 +1,29 @@
 instance-type: ockle
 major-version: '1.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.2.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-  - max: tdc-1.2
-    min: tdc-1.2
+- max: tdc-1.2.0-rc0
+  min: tdc-1.2.0-rc0
+- max: tdc-1.2
+  min: tdc-1.2
 images:
-  - name: ockle
-    variable: ockle_image
+- name: ockle
+  variable: ockle_image
 releases:
-  - dependencies:
-    - max-version: tdc-1.2
-      min-version: tdc-1.1
-      type: txsql
-    final: false
-    image-version:
-      ockle_image: tdc-1.2
-    release-version: tdc-1.2
+- dependencies:
+  - max-version: tdc-1.2.0-rc0
+    min-version: tdc-1.2.0-rc0
+    type: txsql
+  final: true
+  image-version:
+    ockle_image: tdc-1.2.0-rc0
+  release-version: tdc-1.2.0-rc0
+- dependencies:
+  - max-version: tdc-1.2
+    min-version: tdc-1.2
+    type: txsql
+  final: false
+  image-version:
+    ockle_image: tdc-1.2
+  release-version: tdc-1.2

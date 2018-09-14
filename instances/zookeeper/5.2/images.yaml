@@ -1,16 +1,40 @@
 instance-type: zookeeper
 major-version: '5.2'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: transwarp-5.2
-    min: transwarp-5.2
+- max: transwarp-5.2.1-rc2
+  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2.2-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
 images:
-  - name: zookeeper
-    variable: zk_image
+- name: zookeeper
+  variable: zk_image
 releases:
-  - dependencies: []
-    final: false
-    image-version:
-      zk_image: transwarp-5.2
-    release-version: transwarp-5.2
+- dependencies: []
+  final: true
+  image-version:
+    zk_image: transwarp-5.2.1-rc0
+  release-version: transwarp-5.2.1-rc0
+- dependencies: []
+  final: true
+  image-version:
+    zk_image: transwarp-5.2.1-rc2
+  release-version: transwarp-5.2.1-rc2
+- dependencies: []
+  final: true
+  image-version:
+    zk_image: transwarp-5.2.1-final
+  release-version: transwarp-5.2.1-final
+- dependencies: []
+  final: true
+  image-version:
+    zk_image: transwarp-5.2.2-final
+  release-version: transwarp-5.2.2-final
+- dependencies: []
+  final: false
+  image-version:
+    zk_image: transwarp-5.2
+  release-version: transwarp-5.2

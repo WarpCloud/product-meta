@@ -1,16 +1,40 @@
 instance-type: filerobot
 major-version: '1.1'
-min-tdc-version: tdc-1.1
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.1.0-final
 hot-fix-ranges:
-  - max: transwarp-5.2
-    min: transwarp-5.2
+- max: transwarp-5.2.1-rc2
+  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2.2-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
 images:
-  - name: filerobot
-    variable: filerobot_image
+- name: filerobot
+  variable: filerobot_image
 releases:
-  - dependencies: []
-    final: false
-    image-version:
-      filerobot_image: transwarp-5.2
-    release-version: transwarp-5.2
+- dependencies: []
+  final: true
+  image-version:
+    filerobot_image: transwarp-5.2.1-rc0
+  release-version: transwarp-5.2.1-rc0
+- dependencies: []
+  final: true
+  image-version:
+    filerobot_image: transwarp-5.2.1-rc2
+  release-version: transwarp-5.2.1-rc2
+- dependencies: []
+  final: true
+  image-version:
+    filerobot_image: transwarp-5.2.1-final
+  release-version: transwarp-5.2.1-final
+- dependencies: []
+  final: true
+  image-version:
+    filerobot_image: transwarp-5.2.2-final
+  release-version: transwarp-5.2.2-final
+- dependencies: []
+  final: false
+  image-version:
+    filerobot_image: transwarp-5.2
+  release-version: transwarp-5.2
