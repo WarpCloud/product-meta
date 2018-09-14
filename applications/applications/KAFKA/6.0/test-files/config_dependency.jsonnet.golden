@@ -75,7 +75,7 @@
          "instance_settings": { },
          "moduleName": "kafka-manager",
          "name": "kafka1-kafka-manager",
-         "version": "1.1"
+         "version": "1.2"
       }
    ],
    "instance_settings": { },

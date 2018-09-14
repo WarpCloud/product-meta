@@ -7,7 +7,7 @@ function(config={})
   local appName = config.application_name;
 
   local appVersion = config.application_version;
-  local kafkaManagerVersion = "1.1";
+  local kafkaManagerVersion = "1.2";
 
   local _zkModuleName = "zookeeper";
   local _kafkaManagerModuleName = "kafka-manager";
