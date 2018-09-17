@@ -1,0 +1,19 @@
+{
+  "edition": "3.12",
+  "final": true,
+  "components": [
+    "NEXUS-3.12"
+  ],
+  "templates": [
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    }
+  ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-nexus.png"
+  }],
+  "is_distributed": false
+}

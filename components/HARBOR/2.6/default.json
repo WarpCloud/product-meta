@@ -1,0 +1,52 @@
+{
+  "category": "DEVOPS套件",
+  "component_type": "HARBOR",
+  "source": "third-party",
+  "description": "Docker镜像托管仓库",
+  "description_en": "Docker Image Repository",
+  "edition": "2.6",
+  "name": "HARBOR-2.6",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Harbor 分配的CPU核数量",
+          "display_name": "Harbor CPU核数(request)",
+          "name": "harbor_cpu_request",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Harbor 可以使用的最大CPU核数量",
+          "display_name": "Harbor CPU核数(limit)",
+          "name": "harbor_cpu_limit",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Harbor 分配的内存",
+          "display_name": "Harbor 内存(request)",
+          "name": "harbor_memory_request",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Harbor 可以使用的最大内存",
+          "display_name": "Harbor 内存(limit)",
+          "name": "harbor_memory_limit",
+          "value": "3072MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "medium"
+    }
+  ]
+}

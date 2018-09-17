@@ -1,0 +1,19 @@
+{
+  "edition": "2.6",
+  "final": true,
+  "components": [
+    "HARBOR-2.6"
+  ],
+  "templates": [
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    }
+  ],
+  "resources": [{
+    "type": "frame",
+    "name": "frame-harbor.png"
+  }],
+  "is_distributed": false
+}
