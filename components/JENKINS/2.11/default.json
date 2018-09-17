@@ -1,0 +1,52 @@
+{
+  "category": "DEVOPS套件",
+  "component_type": "JENKINS",
+  "source": "third-party",
+  "description": "持续集成工具",
+  "description_en": "Continuous Integration System",
+  "edition": "2.11",
+  "name": "JENKINS-2.11",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Jenkins 分配的CPU核数量",
+          "display_name": "Jenkins CPU核数(request)",
+          "name": "jenkins_cpu_request",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Jenkins 可以使用的最大CPU核数量",
+          "display_name": "Jenkins CPU核数(limit)",
+          "name": "jenkins_cpu_limit",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Jenkins 分配的内存",
+          "display_name": "Jenkins 内存(request)",
+          "name": "jenkins_memory_request",
+          "value": "5120MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Jenkins 可以使用的最大内存",
+          "display_name": "Jenkins 内存(limit)",
+          "name": "jenkins_memory_limit",
+          "value": "5120MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "medium"
+    }
+  ]
+}

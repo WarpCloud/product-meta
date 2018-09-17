@@ -1,0 +1,175 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "REDIS",
+  "source": "transwarp",
+  "description": "内存K-V数据库",
+  "description_en": "In-memory K-V Database",
+  "edition": "1.2",
+  "name": "REDIS-1.2",
+  "templates": [
+    {
+      "configs": [
+        {
+          "description": "Redis 分配的CPU核数量",
+          "display_name": "Redis CPU核数(request)",
+          "name": "redis_cpu_request",
+          "value": "0.1",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 可以使用的最大CPU核数量",
+          "display_name": "Redis CPU核数(limit)",
+          "name": "redis_cpu_limit",
+          "value": "1.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 分配的内存",
+          "display_name": "Redis 内存(request)",
+          "name": "redis_memory_request",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存(limit)",
+          "name": "redis_memory_limit",
+          "value": "1024MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "demo"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 分配的CPU核数量",
+          "display_name": "Redis CPU核数(request)",
+          "name": "redis_cpu_request",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 可以使用的最大CPU核数量",
+          "display_name": "Redis CPU核数(limit)",
+          "name": "redis_cpu_limit",
+          "value": "2.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 分配的内存",
+          "display_name": "Redis 内存(request)",
+          "name": "redis_memory_request",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存(limit)",
+          "name": "redis_memory_limit",
+          "value": "4096MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "low"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 分配的CPU核数量",
+          "display_name": "Redis CPU核数(request)",
+          "name": "redis_cpu_request",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 可以使用的最大CPU核数量",
+          "display_name": "Redis CPU核数(limit)",
+          "name": "redis_cpu_limit",
+          "value": "4.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 分配的内存",
+          "display_name": "Redis 内存(request)",
+          "name": "redis_memory_request",
+          "value": "6144MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存(limit)",
+          "name": "redis_memory_limit",
+          "value": "6144MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "medium"
+    },
+    {
+      "configs": [
+        {
+          "description": "Redis 分配的CPU核数量",
+          "display_name": "Redis CPU核数(request)",
+          "name": "redis_cpu_request",
+          "value": "6.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 可以使用的最大CPU核数量",
+          "display_name": "Redis CPU核数(limit)",
+          "name": "redis_cpu_limit",
+          "value": "6.0",
+          "value_type": "cpu",
+          "min": "0",
+          "max": "24"
+        },
+        {
+          "description": "Redis 分配的内存",
+          "display_name": "Redis 内存(request)",
+          "name": "redis_memory_request",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        },
+        {
+          "description": "Redis 可以使用的最大内存",
+          "display_name": "Redis 内存(limit)",
+          "name": "redis_memory_limit",
+          "value": "8192MB",
+          "value_type": "memory",
+          "min": "0MB",
+          "max": "24576MB"
+        }
+      ],
+      "level": "high"
+    }
+  ]
+}
