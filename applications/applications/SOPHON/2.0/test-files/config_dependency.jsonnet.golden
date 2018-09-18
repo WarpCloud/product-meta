@@ -12,7 +12,7 @@
          "instance_settings": { },
          "moduleName": "redis",
          "name": "sophon1-redis",
-         "version": "1.1"
+         "version": "1.2"
       },
       {
          "annotations": {

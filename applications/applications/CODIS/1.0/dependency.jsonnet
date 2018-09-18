@@ -7,7 +7,6 @@ function(config={})
   local appName = config.application_name;
 
   local appVersion = config.application_version;
-  local zkVersion = "5.1";
 
   local _zkModuleName = "zookeeper";
   local _codisModuleName = "codis";

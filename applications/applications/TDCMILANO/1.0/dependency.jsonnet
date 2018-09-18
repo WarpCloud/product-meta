@@ -11,8 +11,6 @@ function(config={})
   local filebeatVersion = "1.0";
   local logstashVersion = "1.0";
   local milanoPortalVersion = "1.0";
-  local zkVersion = "5.0";
-  local kafkaVersion = "5.0";
 
   local _kafkaModuleName = "kafka";
   local _filebeatModuleName = "filebeat";
