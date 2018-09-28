@@ -2,6 +2,7 @@
   "edition": "5.2",
   "final": false,
   "components": [
+    "DISCOVER-5.2",
     "GOVERNOR-1.1",
     "GUARDIAN-5.2",
     "HDFS-5.2",
@@ -13,8 +14,8 @@
     "RUBIK-1.1",
     "SEARCH-5.2",
     "SLIPSTREAM-5.2",
-    "SOPHON-1.3",
-    "TERMINAL-1.2",
+    "SOPHON-1.2",
+    "TERMINAL-1.1",
     "TRANSPORTER-1.1",
     "TXSQL-5.2",
     "WORKFLOW-1.1",
