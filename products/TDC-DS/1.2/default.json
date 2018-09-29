@@ -2,11 +2,11 @@
   "edition": "1.2",
   "final": true,
   "components": [
-      "INCEPTOR-6.0",
-      "HDFS-6.0",
-      "PILOT-1.2",
+      "INCEPTOR-5.2",
+      "HDFS-5.2",
+      "PILOT-1.1",
       "TERMINAL-1.2",
-      "TXSQL-6.0",
+      "TXSQL-5.2",
       "GOVERNORPROXY-1.2"
   ],
   "templates": [

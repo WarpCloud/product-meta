@@ -82,8 +82,7 @@ class ReleaseInfo(object):
         if release.release_version not in cls.__instance_releases[instance_name]:
             cls.__instance_releases[instance_name][release.release_version] = dict()
         else:
-            assert False, 'Duplicated release version {} for {}' \
-                .format(release.release_version, instance_name)
+            print('Duplicated release version {} for {}'.format(release.release_version, instance_name))
         cls.__instance_releases[instance_name][release.release_version] = release
 
         return release
