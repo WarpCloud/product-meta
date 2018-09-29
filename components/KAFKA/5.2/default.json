@@ -49,7 +49,7 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "3072G"
@@ -58,7 +58,7 @@
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "128G",
+          "value": "128G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -108,7 +108,7 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "3072G"
@@ -117,7 +117,7 @@
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "256G",
+          "value": "256G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -167,7 +167,7 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "1024G",
+          "value": "1024G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "3072G"
@@ -176,7 +176,7 @@
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -226,7 +226,7 @@
           "description": "Kafka可以使用的磁盘存储",
           "display_name": "Kafka数据磁盘大小",
           "name": "kafka_storage_config",
-          "value": "2048G",
+          "value": "2048G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "3072G"
@@ -235,7 +235,7 @@
           "description": "Kafka临时数据可以使用的磁盘存储",
           "display_name": "Kafka临时数据磁盘大小",
           "name": "kafka_tmp_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
