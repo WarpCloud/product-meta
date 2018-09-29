@@ -50,7 +50,7 @@ releases:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: zookeeper
-  - max-version: tdc-1.1.1-rc0
+  - max-version: tdc-1.2.0-final
     min-version: tdc-1.1.0-rc0
     type: txsql
   final: true
@@ -61,7 +61,7 @@ releases:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: zookeeper
-  - max-version: tdc-1.1
+  - max-version: tdc-1.2
     min-version: tdc-1.1
     type: txsql
   final: false

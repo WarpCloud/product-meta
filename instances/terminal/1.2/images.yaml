@@ -12,46 +12,46 @@ images:
   variable: terminal_image
 releases:
 - dependencies:
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: elasticsearch
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: hdfs
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: hyperbase
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: inceptor
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: metastore
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
     type: yarn
   final: true
   image-version:
     terminal_image: tdc-1.2.0-rc0
   release-version: tdc-1.2.0-rc0
 - dependencies:
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: elasticsearch
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: hdfs
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: hyperbase
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: inceptor
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: metastore
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: yarn
   final: false
   image-version:

@@ -3,11 +3,9 @@ major-version: '5.2'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: tdc-1.1.0-rc4
+- max: tdc-1.2.0-final
   min: tdc-1.1.0-rc0
-- max: tdc-1.1.1-rc0
-  min: tdc-1.1.0-final
-- max: tdc-1.1
+- max: tdc-1.2
   min: tdc-1.1
 images:
 - name: mysql
@@ -53,3 +51,13 @@ releases:
   image-version:
     txsql_image: tdc-1.1
   release-version: tdc-1.1
+- dependencies: []
+  final: true
+  image-version:
+    txsql_image: tdc-1.2.0-rc0
+  release-version: tdc-1.2.0-rc0
+- dependencies: []
+  final: false
+  image-version:
+    txsql_image: tdc-1.2
+  release-version: tdc-1.2
