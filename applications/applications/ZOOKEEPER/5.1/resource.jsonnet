@@ -12,7 +12,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       zookeeper: {
-        zk_storage_config: t.assembleStorageEntry(config, "zk_storage_config", s.StorageClass, s.DiskNormalSize, kind="pvc"),
+        zk_storage_config: t.assembleStorageEntry(config, "zk_storage_config", s.DiskNormalStorageClass, s.DiskNormalSize, kind="pvc"),
       }
     };
 

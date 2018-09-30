@@ -14,7 +14,7 @@ local t = import "../../../applib/utils.libsonnet";
     local storage = {
       elasticsearch: {
         es_client_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskNormalStorageClass,
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
             "blkio.throttle.write_iops_device": s.WriteIOPS,
@@ -23,7 +23,7 @@ local t = import "../../../applib/utils.libsonnet";
           accessModes: ["ReadWriteOnce"],
         },
         es_data_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskNormalStorageClass,
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
             "blkio.throttle.write_iops_device": s.WriteIOPS,
@@ -32,7 +32,7 @@ local t = import "../../../applib/utils.libsonnet";
           accessModes: ["ReadWriteOnce"],
         },
         es_master_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskNormalStorageClass,
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
             "blkio.throttle.write_iops_device": s.WriteIOPS,

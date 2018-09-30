@@ -13,9 +13,9 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       elasticsearch: {
-        es_client_storage: t.assembleStorageEntry(config, "es_client_storage", s.StorageClass, s.DiskNormalSize, kind="pvc"),
-        es_data_storage: t.assembleStorageEntry(config, "es_data_storage", s.StorageClass, s.DiskDataSize, kind="pvc"),
-        es_master_storage: t.assembleStorageEntry(config, "es_master_storage", s.StorageClass, s.DiskNormalSize, kind="pvc"),
+        es_client_storage: t.assembleStorageEntry(config, "es_client_storage", s.DiskNormalStorageClass, s.DiskNormalSize, kind="pvc"),
+        es_data_storage: t.assembleStorageEntry(config, "es_data_storage", s.DiskDataStorageClass, s.DiskDataSize, kind="pvc"),
+        es_master_storage: t.assembleStorageEntry(config, "es_master_storage", s.DiskNormalStorageClass, s.DiskNormalSize, kind="pvc"),
       },
     };
 
