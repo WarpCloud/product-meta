@@ -103,7 +103,7 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "256G",
+          "value": "256G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -112,7 +112,7 @@
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -216,7 +216,7 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "256G",
+          "value": "256G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -225,7 +225,7 @@
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -329,7 +329,7 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -338,7 +338,7 @@
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "1024G",
+          "value": "1024G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -442,7 +442,7 @@
           "description": "Search Masternode可以使用的磁盘存储",
           "display_name": "Search Masternode磁盘大小",
           "name": "es_master_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -451,7 +451,7 @@
           "description": "Search Datanode可以使用的磁盘存储",
           "display_name": "Search Datanode磁盘大小",
           "name": "es_data_storage",
-          "value": "4096G",
+          "value": "4096G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"

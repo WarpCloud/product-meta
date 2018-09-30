@@ -49,7 +49,7 @@
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "10",
+          "value": "10G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -94,7 +94,7 @@
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "20",
+          "value": "20G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -144,7 +144,7 @@
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "10",
+          "value": "10G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -189,7 +189,7 @@
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "20",
+          "value": "20G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -239,7 +239,7 @@
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "15",
+          "value": "15G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -284,7 +284,7 @@
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "30",
+          "value": "30G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -334,7 +334,7 @@
           "description": "WebLogic Admin Server 存储",
           "display_name": "Admin Server 磁盘限制(Gi)",
           "name": "admin_storage_limit",
-          "value": "20",
+          "value": "20G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -379,7 +379,7 @@
           "description": "WebLogic Managed Server 存储",
           "display_name": "Managed Server 磁盘限制(Gi)",
           "name": "ms_storage_limit",
-          "value": "40",
+          "value": "40G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"

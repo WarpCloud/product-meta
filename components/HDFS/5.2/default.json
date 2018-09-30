@@ -86,7 +86,7 @@
           "description": "HDFS Namenode可以使用的磁盘存储",
           "display_name": "HDFS Namenode磁盘大小",
           "name": "hdfs_name_data_storage",
-          "value": "128G",
+          "value": "128G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -95,7 +95,7 @@
           "description": "HDFS Datanode可以使用的磁盘存储",
           "display_name": "HDFS Datanode磁盘大小",
           "name": "hdfs_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -181,7 +181,7 @@
           "description": "HDFS Namenode可以使用的磁盘存储",
           "display_name": "HDFS Namenode磁盘大小",
           "name": "hdfs_name_data_storage",
-          "value": "256G",
+          "value": "256G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -190,7 +190,7 @@
           "description": "HDFS Datanode可以使用的磁盘存储",
           "display_name": "HDFS Datanode磁盘大小",
           "name": "hdfs_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -276,7 +276,7 @@
           "description": "HDFS Namenode可以使用的磁盘存储",
           "display_name": "HDFS Namenode磁盘大小",
           "name": "hdfs_name_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -285,7 +285,7 @@
           "description": "HDFS Datanode可以使用的磁盘存储",
           "display_name": "HDFS Datanode磁盘大小",
           "name": "hdfs_data_storage",
-          "value": "1024G",
+          "value": "1024G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
@@ -371,7 +371,7 @@
           "description": "HDFS Namenode可以使用的磁盘存储",
           "display_name": "HDFS Namenode磁盘大小",
           "name": "hdfs_name_data_storage",
-          "value": "512G",
+          "value": "512G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "1024G"
@@ -380,7 +380,7 @@
           "description": "HDFS Datanode可以使用的磁盘存储",
           "display_name": "HDFS Datanode磁盘大小",
           "name": "hdfs_data_storage",
-          "value": "4096G",
+          "value": "4096G|silver",
           "value_type": "storage",
           "min": "1G",
           "max": "5120G"
