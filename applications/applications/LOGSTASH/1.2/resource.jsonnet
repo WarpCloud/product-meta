@@ -24,7 +24,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       logstash: {
-        logstash_tmp_storage: t.assembleStorageEntry(config, "logstash_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
+        logstash_tmp_storage: t.assembleStorageEntry(config, "logstash_tmp_storage", s.DiskTmpStorageClass, s.DiskTmpSize, kind="tosdisk"),
       }
     };
 

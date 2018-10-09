@@ -22,7 +22,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       tdt: {
-        tdt_tmp_storage: t.assembleStorageEntry(config, "tdt_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk")
+        tdt_tmp_storage: t.assembleStorageEntry(config, "tdt_tmp_storage", s.DiskTmpStorageClass, s.DiskTmpSize, kind="tosdisk")
       }
     };
 

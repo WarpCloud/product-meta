@@ -13,7 +13,7 @@ local t = import "../../../applib/utils.libsonnet";
     local storage = {
       hdfs: {
         hdfs_data_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskDataStorageClass,
           size: s.DiskDataSize,
           accessModes: ["ReadWriteOnce"],
           limits: {
@@ -22,8 +22,8 @@ local t = import "../../../applib/utils.libsonnet";
           },
         },
         hdfs_data_tmp_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskNormalSize,
+          storageClass: s.DiskTmpStorageClass,
+          size: s.DiskTmpSize,
           accessMode: "ReadWriteOnce",
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
@@ -31,7 +31,7 @@ local t = import "../../../applib/utils.libsonnet";
           },
         },
         hdfs_name_data_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskDataStorageClass,
           size: s.DiskDataSize,
           accessModes: ["ReadWriteOnce"],
           limits: {
@@ -40,8 +40,8 @@ local t = import "../../../applib/utils.libsonnet";
           },
         },
         hdfs_name_tmp_storage: {
-          storageClass: s.StorageClass,
-          size: s.DiskNormalSize,
+          storageClass: s.DiskTmpStorageClass,
+          size: s.DiskTmpSize,
           accessMode: "ReadWriteOnce",
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
@@ -51,7 +51,7 @@ local t = import "../../../applib/utils.libsonnet";
       },
       zookeeper: {
         zk_storage_config: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskNormalStorageClass,
           size: s.DiskNormalSize,
           accessModes: ["ReadWriteOnce"],
           limits: {

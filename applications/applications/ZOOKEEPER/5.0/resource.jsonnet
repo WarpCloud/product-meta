@@ -13,7 +13,7 @@ local t = import "../../../applib/utils.libsonnet";
     local storage = {
       zookeeper: {
         zk_storage_config: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskNormalStorageClass,
           size: s.DiskNormalSize,
           accessModes: ["ReadWriteOnce"],
           limits: {

@@ -69,7 +69,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "512Gi",
+               "size": "256Gi",
                "storageClass": "silver"
             },
             "hdfs_httpfs_cpu_limit": 2,
@@ -101,7 +101,7 @@
                   "blkio.throttle.read_iops_device": 0,
                   "blkio.throttle.write_iops_device": 0
                },
-               "size": "512Gi",
+               "size": "256Gi",
                "storageClass": "silver"
             },
             "hdfs_zkfc_cpu_limit": 2,
