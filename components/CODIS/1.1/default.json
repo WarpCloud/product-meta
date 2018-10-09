@@ -6,5 +6,15 @@
   "description_en": "Distributed Redis Database",
   "edition": "1.1",
   "name": "CODIS-1.1",
-  "templates": []
+  "templates": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-codis.svg"
+    },
+    {
+      "type": "service",
+      "name": "component-codis.svg"
+    }
+  ]
 }

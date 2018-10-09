@@ -5,5 +5,15 @@
   "description": "visualized tool for ES data visualization and management",
   "edition": "1.1",
   "category": "SYSTEM",
-  "configs": []
+  "configs": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-kibana.svg"
+    },
+    {
+      "type": "service",
+      "name": "component-kibana.svg"
+    }
+  ]
 }

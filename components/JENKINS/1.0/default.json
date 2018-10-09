@@ -48,5 +48,15 @@
       ],
       "level": "medium"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-jenkins.svg"
+    },
+    {
+      "type": "service",
+      "name": "component-jenkins.svg"
+    }
   ]
 }
