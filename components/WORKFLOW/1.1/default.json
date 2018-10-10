@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-workflow.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-workflow.svg"
     }
   ]
 }

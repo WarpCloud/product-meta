@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-discover.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-discover.svg"
     }
   ]
 }

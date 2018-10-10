@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-ogg-for-big-data.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-ogg-for-big-data.svg"
     }
   ]
 }

@@ -177,10 +177,6 @@
     {
       "type": "component",
       "name": "component-txsql.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-txsql.svg"
     }
   ]
 }

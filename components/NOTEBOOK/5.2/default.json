@@ -175,10 +175,6 @@
     {
       "type": "component",
       "name": "component-notebook.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-notebook.svg"
     }
   ]
 }

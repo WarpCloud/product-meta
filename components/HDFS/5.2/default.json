@@ -393,10 +393,6 @@
     {
       "type": "component",
       "name": "component-hdfs.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-hdfs.svg"
     }
   ]
 }

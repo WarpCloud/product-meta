@@ -464,10 +464,6 @@
     {
       "type": "component",
       "name": "component-search.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-search.svg"
     }
   ]
 }

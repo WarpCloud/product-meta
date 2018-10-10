@@ -10,10 +10,6 @@
     {
       "type": "component",
       "name": "component-kibana.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-kibana.svg"
     }
   ]
 }

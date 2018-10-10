@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-redis.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-redis.svg"
     }
   ]
 }

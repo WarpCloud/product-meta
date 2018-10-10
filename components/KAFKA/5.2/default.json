@@ -248,10 +248,6 @@
     {
       "type": "component",
       "name": "component-kafka.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-kafka.svg"
     }
   ]
 }

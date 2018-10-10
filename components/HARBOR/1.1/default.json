@@ -53,10 +53,6 @@
     {
       "type": "component",
       "name": "component-harbor.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-harbor.svg"
     }
   ]
 }
