@@ -315,8 +315,6 @@ metastore:
   resource:
     replicas:
       - metastore_replicas
-    ha:
-      - metastore_replicas
   configuration:
     environment:
       - metastore_env_list
