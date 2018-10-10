@@ -285,8 +285,6 @@ inceptor:
       - inceptor_replicas
       - inceptor_executor_replicas
       - inceptor_shuffle_dir_counts
-    ha:
-      - inceptor_replicas
     computing_unit:
       - inceptor_executor_replicas
     disks:
@@ -522,8 +520,6 @@ slipstream:
       - inceptor_replicas
       - inceptor_executor_replicas
       - inceptor_shuffle_dir_counts
-    ha:
-      - inceptor_replicas
     computing_unit:
       - inceptor_executor_replicas
     disks:
