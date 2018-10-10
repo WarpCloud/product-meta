@@ -281,6 +281,19 @@ SOPHON:
   configuration:
     priority_metrics:
       sophon_priority: 0
+  optional_dependencies:
+    - hyperbase
+    - inceptor
+    - search
+
+SOPHONWEB:
+  configuration:
+    priority_metrics:
+      sophon_priority: 0
+  optional_dependencies:
+    - hyperbase
+    - inceptor
+    - search
 
 
 TCC:

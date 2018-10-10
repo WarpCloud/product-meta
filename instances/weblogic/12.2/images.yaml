@@ -1,6 +1,6 @@
 instance-type: weblogic
 major-version: '12.2'
-min-tdc-version: tdc-1.2.0-rc0
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
 - max: "12.2.1"

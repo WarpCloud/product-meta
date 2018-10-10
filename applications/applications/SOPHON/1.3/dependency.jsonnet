@@ -8,6 +8,10 @@ function(config={})
 
   local appVersion = config.application_version;
 
+  local use_hyperbase = t.trueOrFalse(config.user_config, "use_hyperbase");
+  local use_inceptor = t.trueOrFalse(config.user_config, "use_inceptor");
+  local use_search = t.trueOrFalse(config.user_config, "use_search");
+
   local _hdfsModuleName = "hdfs";
   local _yarnModuleName = "yarn";
   local _zkModuleName = "zookeeper";
@@ -17,6 +21,25 @@ function(config={})
   local _sophonwebModuleName = "sophonweb";
   local _searchModuleName = "elasticsearch";
   local _hyperbaseModuleName = "hyperbase";
+  local _inceptorModuleName = "inceptor";
+
+  local depend_hyperbase =
+    if use_hyperbase then [{
+      moduleName: _hyperbaseModuleName,
+      name: _hyperbaseModuleName,
+    }] else [];
+
+  local depend_inceptor =
+    if use_inceptor then [{
+      moduleName: _inceptorModuleName,
+      name: _inceptorModuleName,
+    }] else [];
+
+  local depend_search =
+    if use_search then [{
+      moduleName: _searchModuleName,
+      name: _searchModuleName,
+    }] else [];
 
   //-------------------
   // Dependent modules
@@ -42,13 +65,7 @@ function(config={})
       }, {
         moduleName: _redisModuleName,
         name: appName  + "-" + _redisModuleName,
-      }, {
-        moduleName: _searchModuleName,
-        name: _searchModuleName,
-      }, {
-        moduleName: _hyperbaseModuleName,
-        name: _hyperbaseModuleName,
-      }],
+      }] + depend_hyperbase + depend_inceptor + depend_search,
     };
 
   t.getDefaultSettings(config) + {

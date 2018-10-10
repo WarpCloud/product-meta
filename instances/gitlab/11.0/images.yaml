@@ -1,6 +1,6 @@
 instance-type: gitlab
 major-version: '11.0'
-min-tdc-version: tdc-1.2.0-rc0
+min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
 - max: "11.0.3"
