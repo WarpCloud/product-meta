@@ -135,5 +135,15 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-terminal.svg"
+    },
+    {
+      "type": "service",
+      "name": "component-terminal.svg"
+    }
   ]
 }
