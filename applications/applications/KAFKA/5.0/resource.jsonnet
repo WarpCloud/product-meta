@@ -14,7 +14,7 @@ local t = import "../../../applib/utils.libsonnet";
     local storage = {
       kafka: {
         kafka_tmp_storage: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskTmpStorageClass,
           limits: {
             "blkio.throttle.read_iops_device": s.ReadIOPS,
             "blkio.throttle.write_iops_device": s.WriteIOPS,
@@ -23,7 +23,7 @@ local t = import "../../../applib/utils.libsonnet";
           accessMode: "ReadWriteOnce",
         },
         kafka_storage_config: {
-          storageClass: s.StorageClass,
+          storageClass: s.DiskDataStorageClass,
           size: s.DiskDataSize,
           accessModes: ["ReadWriteOnce"],
           limits: {

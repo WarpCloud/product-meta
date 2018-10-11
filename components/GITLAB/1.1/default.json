@@ -120,5 +120,11 @@
       ],
       "level": "medium"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-gitlab.svg"
+    }
   ]
 }

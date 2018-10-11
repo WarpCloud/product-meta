@@ -94,6 +94,7 @@ service_for_tenant:
       require_gateway_registration: true
       require_display: true
       alias: GuardianServer
+      resource_name: component-guardian.svg
     - port: 8393
       generate_name: cas-srv
       protocol: HTTPS
@@ -117,6 +118,7 @@ service_for_tenant:
       protocol: HTTP
       require_gateway_registration: true
       require_display: false
+      resource_name: component-kibana.svg
   TICKET:
     - port: 11997
       generate_name: ticket
@@ -133,6 +135,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-pilot.svg
     display: 
       display_name: "报表工具"
       display_name_en: Pilot
@@ -145,6 +148,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-notebook.svg
     display: 
       display_name: "数据分析交互平台"
       display_name_en: Notebook
@@ -157,6 +161,7 @@ service_for_development:
     protocol: HTTP
     path: "/console"
     require_gateway_registration: true
+    resource_name: component-weblogic.svg
     display:
       display_name: WebLogic
       display_name_en: WebLogic
@@ -169,6 +174,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-workflow.svg
     display: 
       display_name: "工作流"
       display_name_en: Workflow
@@ -181,6 +187,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-rubik.svg
     display: 
       display_name: "Cube设计工具"
       display_name_en: "Rubik "
@@ -193,6 +200,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-governor.svg
     display: 
       display_name: "数据治理"
       display_name_en: Governor
@@ -205,6 +213,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-governorproxy.svg
     display: 
       display_name: "数据共享分析"
       display_name_en: "Governor Proxy"
@@ -217,6 +226,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-transporter.svg
     display: 
       display_name: "ETL工具"
       display_name_en: Transporter
@@ -230,6 +240,7 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     alias: GuardianServer
+    resource_name: component-guardian.svg
     display: 
       display_name: "安全与权限"
       display_name_en: Guardian
@@ -242,6 +253,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-kibana.svg
     display: 
       display_name: "日志服务"
       display_name_en: "Log Service Milano"
@@ -255,6 +267,7 @@ service_for_development:
     path: "/jobs"
     require_gateway_registration: true
     alias: INCEPTOR
+    resource_name: component-inceptor.svg
     display: 
       display_name: "Inceptor任务监控"
       display_name_en: "Inceptor UI"
@@ -272,6 +285,7 @@ service_for_development:
     path: "/jobs"
     require_gateway_registration: true
     alias: SLIPSTREAM
+    resource_name: component-slipstream.svg
     display: 
       display_name: "Slipstream任务监控"
       display_name_en: "Slipstream UI"
@@ -289,6 +303,7 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     require_service_type: NodePort
+    resource_name: component-search.svg
     display: 
       display_name: "ES管理器"
       display_name_en: "ES Head"
@@ -302,6 +317,7 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     require_service_type: NodePort
+    resource_name: component-terminal.svg
     display: 
       display_name: "命令行终端"
       display_name_en: Terminal
@@ -314,6 +330,7 @@ service_for_development:
     protocol: HTTP
     path: "/master-status"
     require_gateway_registration: true
+    resource_name: component-hyperbase.svg
     display: 
       display_name: "HyperBase管理"
       display_name_en: "HyperBase Master"
@@ -327,6 +344,7 @@ service_for_development:
     path: "/"
     require_gateway_registration: true
     require_service_type: ClusterIP
+    resource_name: component-hdfs.svg
     display: 
       display_name: "HDFS管理"
       display_name_en: "HDFS Namenode UI"
@@ -339,6 +357,7 @@ service_for_development:
     protocol: HTTP
     path: "/"
     require_gateway_registration: true
+    resource_name: component-kafka.svg
     display: 
       display_name: "Kafka管理"
       display_name_en: "Kafka Manager"
@@ -351,6 +370,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-sophon.svg
     display:
       display_name: "人工智能Sophon"
       display_name_en: "Sophon AI"
@@ -363,6 +383,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-sophon.svg
     display:
       display_name: "人工智能Sophon"
       display_name_en: "Sophon AI"
@@ -375,6 +396,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-smartbi.svg
     display:
       display_name: "SmartBI"
       display_name_en: "SmartBI"
@@ -387,6 +409,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-jenkins.svg
     display:
       display_name: "Jenkins"
       display_name_en: "Jenkins"
@@ -399,6 +422,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-nexus.svg
     display:
       display_name: "Nexus"
       display_name_en: "Nexus"
@@ -411,6 +435,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-harbor.svg
     display:
       display_name: "Harbor"
       display_name_en: "Harbor"
@@ -423,6 +448,7 @@ service_for_development:
     protocol: "HTTP"
     path: "/"
     require_gateway_registration: true
+    resource_name: component-gitlab.svg
     display:
       display_name: "Gitlab"
       display_name_en: "Gitlab"

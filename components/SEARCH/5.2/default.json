@@ -459,5 +459,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-search.svg"
+    }
   ]
 }

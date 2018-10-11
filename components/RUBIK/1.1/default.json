@@ -171,5 +171,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-rubik.svg"
+    }
   ]
 }

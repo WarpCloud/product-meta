@@ -22,7 +22,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       ogg_for_big_data: {
-        ogg_for_big_data_tmp_storage: t.assembleStorageEntry(config, "ogg_for_big_data_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk")
+        ogg_for_big_data_tmp_storage: t.assembleStorageEntry(config, "ogg_for_big_data_tmp_storage", s.DiskTmpStorageClass, s.DiskTmpSize, kind="tosdisk")
       }
     };
 

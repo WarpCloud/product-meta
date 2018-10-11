@@ -39,9 +39,9 @@ DISCOVER:
     advanced_configs:
       default_group: spark-defaults.conf
       groups:
-        - name: spark-defaults.conf
-          env_cfg: DISCOVER_SPARK_DEFAULTS_CONFIGS
-          type: file
+      - name: spark-defaults.conf
+        env_cfg: DISCOVER_SPARK_DEFAULTS_CONFIGS
+        type: file
     priority_metrics:
       discover_priority: 0
       localcran_priority: 0
@@ -70,19 +70,19 @@ GUARDIAN:
       cas_mgnt_server_priority: 0
       guardian_server_priority: 0
       apacheds_priority: 0
-
-
+    storage_class_resource:
+      guardian_server_volume_storage: DiskNormalStorageClass
 HDFS:
   configuration:
     advanced_configs:
       default_group: hdfs-site.xml
       groups:
-        - name: hdfs-site.xml
-          env_cfg: HDFS_HDFS_SITE_CONFIGS
-          type: file
-        - name: core-site.xml
-          env_cfg: HDFS_CORE_SITE_CONFIGS
-          type: file
+      - name: hdfs-site.xml
+        env_cfg: HDFS_HDFS_SITE_CONFIGS
+        type: file
+      - name: core-site.xml
+        env_cfg: HDFS_CORE_SITE_CONFIGS
+        type: file
     storage_resource:
       hdfs_name_data_storage: DiskNormalSize
       hdfs_data_storage: DiskDataSize
@@ -94,16 +94,19 @@ HDFS:
       hdfs_journal_priority: 0
       hdfs_name_priority: 0
       zk_priority: 0
-
-
+    storage_class_resource:
+      hdfs_name_data_storage: DiskNormalStorageClass
+      hdfs_data_storage: DiskDataStorageClass
+      hdfs_name_tmp_storage: DiskTmpStorageClass
+      hdfs_data_tmp_storage: DiskTmpStorageClass
 HYPERBASE:
   configuration:
     advanced_configs:
       default_group: hbase-site.xml
       groups:
-        - name: hbase-site.xml
-          env_cfg: HYPERBASE_HBASE_SITE_CONFIGS
-          type: file
+      - name: hbase-site.xml
+        env_cfg: HYPERBASE_HBASE_SITE_CONFIGS
+        type: file
     priority_metrics:
       hbase_rest_priority: 0
       hbase_thrift_priority: 0
@@ -122,24 +125,24 @@ INCEPTOR:
     advanced_configs:
       default_group: hive-site.xml
       groups:
-        - name: hive-site.xml
-          env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
-          type: file
-        - name: extra_driver_opts
-          env_cfg: EXTRA_DRIVER_OPTS
-          type: config
-        - name: extra_executor_opts
-          env_cfg: EXTRA_EXECUTOR_OPTS
-          type: config
+      - name: hive-site.xml
+        env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
+        type: file
+      - name: extra_driver_opts
+        env_cfg: EXTRA_DRIVER_OPTS
+        type: config
+      - name: extra_executor_opts
+        env_cfg: EXTRA_EXECUTOR_OPTS
+        type: config
     priority_metrics:
       inceptor_master_priority: 0
       inceptor_executor_priority: 0
       metastore_priority: 0
       mysql_priority: 0
   optional_dependencies:
-    - hyperbase
-    - search
-    - txsql
+  - hyperbase
+  - search
+  - txsql
   security:
     service_refer:
       metastore: inceptor
@@ -150,23 +153,24 @@ KAFKA:
     advanced_configs:
       default_group: server.properties
       groups:
-        - name: server.properties
-          env_cfg: KAFKA_SERVER_PROPERTIES
-          type: file
+      - name: server.properties
+        env_cfg: KAFKA_SERVER_PROPERTIES
+        type: file
     storage_resource:
       kafka_storage_config: DiskDataSize
       kafka_tmp_storage: DiskTmpSize
     priority_metrics:
       kafka_priority: 0
       kafka_manager_priority: 0
-
-
+    storage_class_resource:
+      kafka_storage_config: DiskDataStorageClass
+      kafka_tmp_storage: DiskTmpStorageClass
 KIBANA:
   configuration:
     priority_metrics:
       kibana_priority: 0
   optional_dependencies:
-    - search
+  - search
 
 
 KONG:
@@ -182,8 +186,10 @@ LOGSTASH:
       logstash_tmp_storage: DiskTmpSize
     priority_metrics:
       logstash_priority: 0
+    storage_class_resource:
+      logstash_tmp_storage: DiskTmpStorageClass
   optional_dependencies:
-    - search
+  - search
 
 
 NOTEBOOK:
@@ -191,9 +197,9 @@ NOTEBOOK:
     advanced_configs:
       default_group: zeppelin-site.xml
       groups:
-        - name: zeppelin-site.xml
-          env_cfg: DISCOVER_ZEPPELIN_SITE_CONFIGS
-          type: file
+      - name: zeppelin-site.xml
+        env_cfg: DISCOVER_ZEPPELIN_SITE_CONFIGS
+        type: file
     priority_metrics:
       notebook_priority: 0
       localcran_priority: 0
@@ -217,7 +223,7 @@ PILOT:
       filerobot_priority: 0
       pilot_priority: 0
   optional_dependencies:
-    - inceptor
+  - inceptor
 
 REDIS:
   configuration:
@@ -233,24 +239,26 @@ RUBIK:
     advanced_configs:
       default_group: designer.properties
       groups:
-        - name: designer.properties
-          env_cfg: RUBIK_CONFIGS
-          type: file
+      - name: designer.properties
+        env_cfg: RUBIK_CONFIGS
+        type: file
 
 
 SEARCH:
- configuration:
-   storage_resource:
-     es_master_storage: DiskNormalSize
-     es_data_storage: DiskDataSize
-     es_client_storage: DiskNormalSize
-   priority_metrics:
-     es_client_priority: 0
-     es_data_priority: 0
-     es_master_priority: 0
-     es_head_priority: 0
-
-
+  configuration:
+    storage_resource:
+      es_master_storage: DiskNormalSize
+      es_data_storage: DiskDataSize
+      es_client_storage: DiskNormalSize
+    priority_metrics:
+      es_client_priority: 0
+      es_data_priority: 0
+      es_master_priority: 0
+      es_head_priority: 0
+    storage_class_resource:
+      es_master_storage: DiskNormalStorageClass
+      es_data_storage: DiskDataStorageClass
+      es_client_storage: DiskNormalStorageClass
 SIMMAIL:
   configuration:
     priority_metrics:
@@ -262,16 +270,16 @@ SLIPSTREAM:
     advanced_configs:
       default_group: hive-site.xml
       groups:
-        - name: hive-site.xml
-          env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
-          type: file
+      - name: hive-site.xml
+        env_cfg: INCEPTOR_HIVE_SITE_CONFIGS
+        type: file
     priority_metrics:
       inceptor_master_priority: 0
       inceptor_executor_priority: 0
       metastore_priority: 0
       mysql_priority: 0
   optional_dependencies:
-    - hyperbase
+  - hyperbase
   security:
     service_refer:
       metastore: slipstream
@@ -301,7 +309,7 @@ TCC:
     priority_metrics:
       tcc_priority: 0
   optional_dependencies:
-    - gntenant
+  - gntenant
 
 TDCMILANO:
   configuration:
@@ -327,12 +335,14 @@ TERMINAL:
       terminal_priority: 0
     storage_resource:
       terminal_data_storage: DiskDataSize
+    storage_class_resource:
+      terminal_data_storage: DiskDataStorageClass
   optional_dependencies:
-    - hdfs
-    - hyperbase
-    - inceptor
-    - search
-    - yarn
+  - hdfs
+  - hyperbase
+  - inceptor
+  - search
+  - yarn
 
 
 TICKET:
@@ -341,8 +351,8 @@ TICKET:
       notification_priority: 0
       ticket_priority: 0
   optional_dependencies:
-    - gntenant
-    - gn-tdc
+  - gntenant
+  - gn-tdc
 
 
 TRANSPORTER:
@@ -352,13 +362,13 @@ TRANSPORTER:
     advanced_configs:
       default_group: tdt-site.xml
       groups:
-        - name: tdt-site.xml
-          env_cfg: TDT_TDT_SITE_CONFIGS
-          type: file
+      - name: tdt-site.xml
+        env_cfg: TDT_TDT_SITE_CONFIGS
+        type: file
     storage_resource:
       tdt_tmp_storage: DiskTmpSize
-
-
+    storage_class_resource:
+      tdt_tmp_storage: DiskTmpStorageClass
 TXSQL:
   configuration:
     priority_metrics:
@@ -370,7 +380,7 @@ WORKFLOW:
     priority_metrics:
       workflow_priority: 0
   optional_dependencies:
-    - transporter
+  - transporter
 
 
 YARN:
@@ -381,12 +391,12 @@ YARN:
     advanced_configs:
       default_group: yarn-site.xml
       groups:
-        - name: yarn-site.xml
-          env_cfg: YARN_YARN_SITE_CONFIGS
-          type: file
-        - name: mapred_site
-          env_cfg: YARN_MAPRED_SITE_CONFIGS
-          type: file
+      - name: yarn-site.xml
+        env_cfg: YARN_YARN_SITE_CONFIGS
+        type: file
+      - name: mapred_site
+        env_cfg: YARN_MAPRED_SITE_CONFIGS
+        type: file
     storage_resource:
       yarn_nodemanager_data_storage: DiskDataSize
       yarn_timelineserver_tmp_storage: DiskTmpSize
@@ -394,15 +404,21 @@ YARN:
       yarn_historyserver_tmp_storage: DiskTmpSize
       yarn_secondary_tmp_storage: DiskTmpSize
       yarn_resourcemanager_tmp_storage: DiskTmpSize
-
-
+    storage_class_resource:
+      yarn_nodemanager_data_storage: DiskDataStorageClass
+      yarn_timelineserver_tmp_storage: DiskTmpStorageClass
+      yarn_nodemanager_tmp_storage: DiskTmpStorageClass
+      yarn_historyserver_tmp_storage: DiskTmpStorageClass
+      yarn_secondary_tmp_storage: DiskTmpStorageClass
+      yarn_resourcemanager_tmp_storage: DiskTmpStorageClass
 ZOOKEEPER:
   configuration:
     storage_resource:
       zk_storage_config: DiskNormalSize
     priority_metrics:
       zk_priority: 0
-
+    storage_class_resource:
+      zk_storage_config: DiskNormalStorageClass
 SMARTBI:
   configuration:
     priority_metrics:

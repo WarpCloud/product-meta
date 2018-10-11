@@ -248,10 +248,16 @@ local app = import "app.libsonnet";
 
       ReadIOPS: $.objectField(config, "ReadIOPS", read_iops),
       WriteIOPS: $.objectField(config, "WriteIOPS", write_iops),
-
+      //storage class part
+      DiskNormalStorageClass: $.objectField(config, "DiskNormalStorageClass", "silver"),
+      DiskDataStorageClass: $.objectField(config, "DiskDataStorageClass", "silver"),
+      DiskLogStorageClass: $.objectField(config, "DiskLogStorageClass", "silver"),
+      DiskTmpStorageClass: $.objectField(config, "DiskTmpStorageClass", "silver"),
+      //deprecated actually
       StorageClass: $.objectField(config, "StorageClass", "silver"),
 
       SSDSize: $.objectField(config, "SSDSize", ssd_size),
+      //deprecated actually
       SSDStorageClass: $.objectField(config, "SSDStorageClass", "golden"),
     },
 

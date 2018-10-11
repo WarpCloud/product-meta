@@ -170,5 +170,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-notebook.svg"
+    }
   ]
 }

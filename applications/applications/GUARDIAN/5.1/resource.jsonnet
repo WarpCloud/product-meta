@@ -45,7 +45,7 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       guardian: {
-        guardian_server_volume_storage: t.assembleStorageEntry(config, "guardian_server_volume_storage", s.StorageClass, s.DiskNormalSize, kind="tosdisk"),
+        guardian_server_volume_storage: t.assembleStorageEntry(config, "guardian_server_volume_storage", s.DiskNormalStorageClass, s.DiskNormalSize, kind="tosdisk"),
       }
     };
 

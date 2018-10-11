@@ -172,5 +172,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-txsql.svg"
+    }
   ]
 }

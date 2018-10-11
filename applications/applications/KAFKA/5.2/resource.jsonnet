@@ -16,8 +16,8 @@ local t = import "../../../applib/utils.libsonnet";
 
     local storage = {
       [_kafkaModuleName]: {
-        kafka_tmp_storage: t.assembleStorageEntry(config, "kafka_tmp_storage", s.StorageClass, s.DiskTmpSize, kind="tosdisk"),
-        kafka_storage_config: t.assembleStorageEntry(config, "kafka_storage_config", s.StorageClass, s.DiskDataSize, kind="pvc"),
+        kafka_tmp_storage: t.assembleStorageEntry(config, "kafka_tmp_storage", s.DiskTmpStorageClass, s.DiskTmpSize, kind="tosdisk"),
+        kafka_storage_config: t.assembleStorageEntry(config, "kafka_storage_config", s.DiskDataStorageClass, s.DiskDataSize, kind="pvc"),
       },
     };
 

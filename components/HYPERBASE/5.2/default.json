@@ -316,5 +316,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-hyperbase.svg"
+    }
   ]
 }

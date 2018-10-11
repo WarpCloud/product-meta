@@ -99,5 +99,11 @@
       ],
       "level": "high"
     }
+  ],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-governorproxy.svg"
+    }
   ]
 }
