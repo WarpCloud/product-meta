@@ -321,10 +321,6 @@
     {
       "type": "component",
       "name": "component-hyperbase.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-hyperbase.svg"
     }
   ]
 }

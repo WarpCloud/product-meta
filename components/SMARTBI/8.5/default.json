@@ -320,10 +320,6 @@
     {
       "type": "component",
       "name": "component-smartbi.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-smartbi.svg"
     }
   ]
 }

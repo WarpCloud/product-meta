@@ -392,10 +392,6 @@
     {
       "type": "component",
       "name": "component-slipstream.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-slipstream.svg"
     }
   ]
 }

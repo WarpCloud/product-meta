@@ -392,10 +392,6 @@
     {
       "type": "component",
       "name": "component-inceptor.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-inceptor.svg"
     }
   ]
 }

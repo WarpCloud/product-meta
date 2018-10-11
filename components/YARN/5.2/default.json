@@ -392,10 +392,6 @@
     {
       "type": "component",
       "name": "component-yarn.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-yarn.svg"
     }
   ]
 }

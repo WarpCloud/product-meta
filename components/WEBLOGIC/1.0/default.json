@@ -392,10 +392,6 @@
     {
       "type": "component",
       "name": "component-weblogic.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-weblogic.svg"
     }
   ]
 }

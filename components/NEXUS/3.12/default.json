@@ -53,10 +53,6 @@
     {
       "type": "component",
       "name": "component-nexus.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-nexus.svg"
     }
   ]
 }

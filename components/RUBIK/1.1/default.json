@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-rubik.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-rubik.svg"
     }
   ]
 }

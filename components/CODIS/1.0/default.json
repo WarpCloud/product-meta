@@ -11,10 +11,6 @@
     {
       "type": "component",
       "name": "component-codis.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-codis.svg"
     }
   ]
 }

@@ -11,10 +11,6 @@
     {
       "type": "component",
       "name": "component-guardian.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-guardian.svg"
     }
   ]
 }

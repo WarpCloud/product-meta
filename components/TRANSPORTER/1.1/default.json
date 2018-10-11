@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-transporter.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-transporter.svg"
     }
   ]
 }

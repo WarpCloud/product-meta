@@ -176,10 +176,6 @@
     {
       "type": "component",
       "name": "component-governor.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-governor.svg"
     }
   ]
 }

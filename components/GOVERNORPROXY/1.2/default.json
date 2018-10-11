@@ -104,10 +104,6 @@
     {
       "type": "component",
       "name": "component-governorproxy.svg"
-    },
-    {
-      "type": "service",
-      "name": "component-governorproxy.svg"
     }
   ]
 }
