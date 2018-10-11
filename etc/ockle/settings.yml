@@ -472,3 +472,6 @@ component_type_display_priority:
     - "DEVOPS套件"
     - "数据同步工具"
   component_type: []
+
+component_type_display_black_list:
+  - SOPHONWEB
