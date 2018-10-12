@@ -550,6 +550,9 @@ sophon:
 #      env_cfg: GUARDIAN_SERVICE_ID
 
 sophonweb:
+  configuration:
+    environment:
+      - sophon_extra_env_list
   security:
     principal_list:
       - hive
