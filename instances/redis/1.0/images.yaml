@@ -68,6 +68,12 @@ releases:
 - dependencies: []
   final: false
   image-version:
+    redis_image: sophonweb-2.1.0-final
+    redis_init_image: tdc-1.2.0-rc0
+  release-version: sophonweb-2.1.0-final
+- dependencies: []
+  final: false
+  image-version:
     redis_image: sophonweb-2.1
     redis_init_image: tdc-1.2
   release-version: sophonweb-2.1
