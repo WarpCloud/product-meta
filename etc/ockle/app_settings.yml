@@ -289,6 +289,30 @@ SOPHON:
   configuration:
     priority_metrics:
       sophon_priority: 0
+    advanced_configs:
+      default_group: yarn-site.xml
+      groups:
+      - name: sophon_spark_master
+        env_cfg: SOPHON_SPARK_MASTER
+        type: config
+      - name: livy.server.session.timeout-check
+        env_cfg: LIVY_SERVER_SESSION_TIMEOUT_CHECK
+        type: config
+      - name: livy.server.session.timeout
+        env_cfg: LIVY_SERVER_SESSION_TIMEOUT
+        type: config
+      - name: livy.server.yarn.app-lookup-timeout
+        env_cfg: LIVY_SERVER_YARN_APP_LOOKUP_TIMEOUT
+        type: config
+      - name: sophon.k8s.session.cleanup.timeout.hours
+        env_cfg: SOPHON_K8S_SESSION_CLEANUP_TIMEOUT_HOURS
+        type: config
+      - name: spring.http.multipart.max-file-size
+        env_cfg: SPRING_HTTP_MULTIPART_MAX_FILE_SIZE
+        type: config
+      - name: spring.http.multipart.max-request-size
+        env_cfg: SPRING_HTTP_MULTIPART_MAX_REQUEST_SIZE
+        type: config
   optional_dependencies:
     - hyperbase
     - inceptor

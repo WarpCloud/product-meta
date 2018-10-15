@@ -24,6 +24,7 @@ adv_config_white_list:
   - SLIPSTREAM
   - TRANSPORTER
   - YARN
+  - SOPHON
 
 # A list of configs shared by multiple instances
 instance_configs_sharing:
