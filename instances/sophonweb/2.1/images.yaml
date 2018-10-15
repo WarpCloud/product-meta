@@ -5,10 +5,50 @@ max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
 - max: sophonweb-2.1
   min: sophonweb-2.1
+- max: sophonweb-2.1.0-final
+  min: sophonweb-2.1.0-final
 images:
 - name: sophon-web
   variable: sophon_server_image
+- name: sophon-driver
+  variable: sophon_driver_image
+- name: sophon-notebook-cpu
+  variable: jupyter_cpu_image
+- name: sophon-notebook-gpu
+  variable: jupyter_gpu_image
 releases:
+- dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: yarn
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: elasticsearch
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: hyperbase
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: inceptor
+  - max-version: tdc-1.2.0-final
+    min-version: tdc-1.1.0-final
+    type: txsql
+  - max-version: sophonweb-2.1.0-final
+    min-version: sophonweb-2.1.0-final
+    type: redis
+  final: true
+  image-version:
+    sophon_server_image: sophonweb-2.1.0-final
+    sophon_driver_image: sophonweb-2.1.0-final
+    jupyter_cpu_image: sophonweb-2.1.0-final
+    jupyter_gpu_image: sophonweb-2.1.0-final
+  release-version: sophonweb-2.1.0-final
 - dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.1
@@ -37,4 +77,7 @@ releases:
   final: false
   image-version:
     sophon_server_image: sophonweb-2.1
+    sophon_driver_image: sophonweb-2.1
+    jupyter_cpu_image: sophonweb-2.1
+    jupyter_gpu_image: sophonweb-2.1
   release-version: sophonweb-2.1

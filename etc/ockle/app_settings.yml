@@ -290,7 +290,7 @@ SOPHON:
     priority_metrics:
       sophon_priority: 0
     advanced_configs:
-      default_group: yarn-site.xml
+      default_group: sophon_spark_master
       groups:
       - name: sophon_spark_master
         env_cfg: SOPHON_SPARK_MASTER
