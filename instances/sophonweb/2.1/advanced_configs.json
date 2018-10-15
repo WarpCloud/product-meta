@@ -7,7 +7,7 @@
         "sophon_spark_master"
       ],
       "name": "SOPHON_SPARK_MASTER",
-      "value": ""
+      "value": "k8s_host"
     },
     {
       "default": "true",
@@ -15,7 +15,7 @@
         "livy.server.session.timeout-check"
       ],
       "name": "LIVY_SERVER_SESSION_TIMEOUT_CHECK",
-      "value": ""
+      "value": "true"
     },
     {
       "default": "1h",
@@ -23,7 +23,7 @@
         "livy.server.session.timeout"
       ],
       "name": "LIVY_SERVER_SESSION_TIMEOUT",
-      "value": ""
+      "value": "1h"
     },
     {
       "default": "360s",
@@ -31,7 +31,7 @@
         "livy.server.yarn.app-lookup-timeout"
       ],
       "name": "LIVY_SERVER_YARN_APP_LOOKUP_TIMEOUT",
-      "value": ""
+      "value": "360s"
     },
     {
       "default": "1",
@@ -39,7 +39,7 @@
         "sophon.k8s.session.cleanup.timeout.hours"
       ],
       "name": "SOPHON_K8S_SESSION_CLEANUP_TIMEOUT_HOURS",
-      "value": ""
+      "value": "1"
     },
     {
       "default": "10240MB",
@@ -47,7 +47,7 @@
         "spring.http.multipart.max-file-size"
       ],
       "name": "SPRING_HTTP_MULTIPART_MAX_FILE_SIZE",
-      "value": ""
+      "value": "10240MB"
     },
     {
       "default": "10240MB",
@@ -55,7 +55,7 @@
         "spring.http.multipart.max-request-size"
       ],
       "name": "SPRING_HTTP_MULTIPART_MAX_REQUEST_SIZE",
-      "value": ""
+      "value": "10240MB"
     }
   ],
   "version": "2.1"
