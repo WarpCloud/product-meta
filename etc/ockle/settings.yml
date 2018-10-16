@@ -24,6 +24,7 @@ adv_config_white_list:
   - SLIPSTREAM
   - TRANSPORTER
   - YARN
+  - SOPHON
 
 # A list of configs shared by multiple instances
 instance_configs_sharing:
@@ -472,3 +473,6 @@ component_type_display_priority:
     - "DEVOPS套件"
     - "数据同步工具"
   component_type: []
+
+component_type_display_black_list:
+  - SOPHONWEB

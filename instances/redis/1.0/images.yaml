@@ -11,6 +11,8 @@ hot-fix-ranges:
   min: sophonweb-1.2
 - max: sophonweb-1.3
   min: sophonweb-1.3
+- max: sophonweb-2.1
+  min: sophonweb-2.1
 - max: tdc-1.2.0-final
   min: tdc-1.1.0-rc0
 - max: tdc-1.1
@@ -63,6 +65,18 @@ releases:
     redis_image: sophonweb-1.3
     redis_init_image: tdc-1.1
   release-version: sophonweb-1.3
+- dependencies: []
+  final: true
+  image-version:
+    redis_image: sophonweb-2.1.0-final
+    redis_init_image: tdc-1.2.0-rc0
+  release-version: sophonweb-2.1.0-final
+- dependencies: []
+  final: false
+  image-version:
+    redis_image: sophonweb-2.1
+    redis_init_image: tdc-1.2
+  release-version: sophonweb-2.1
 - dependencies: []
   final: true
   image-version:
