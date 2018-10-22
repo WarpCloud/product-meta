@@ -8,7 +8,7 @@ local t = import "../../../applib/utils.libsonnet";
   __moduleResourceRaw(moduleName, config={})::
 
     local resource = {
-      rubik:
+      propeller:
         {
           propeller_cpu_limit: t.objectField(config, "propeller_cpu_limit", 2),
           propeller_memory_limit: t.objectField(config, "propeller_memory_limit", 4),
