@@ -3,7 +3,7 @@
 #----------------
 
 # Version range of Ockle to match current product-meta.
-max-version: 0.3.5
+max-version: 0.3.6
 min-version: 0.3.5
 
 # Default file name of static resources
