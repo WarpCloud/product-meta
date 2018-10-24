@@ -58,7 +58,7 @@ function(config={})
       }, {
         moduleName: _txsqlModuleName,
         name: _txsqlModuleName,
-      }],
+      }] + extra_dep,
     };
     
   t.getDefaultSettings(config) + {
