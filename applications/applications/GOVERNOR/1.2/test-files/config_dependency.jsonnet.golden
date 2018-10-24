@@ -46,6 +46,22 @@
             {
                "moduleName": "txsql",
                "name": "txsql"
+            },
+            {
+               "moduleName": "hdfs",
+               "name": "hdfs"
+            },
+            {
+               "moduleName": "hyperbase",
+               "name": "hyperbase"
+            },
+            {
+               "moduleName": "kafka",
+               "name": "kafka"
+            },
+            {
+               "moduleName": "elasticsearch",
+               "name": "elasticsearch"
             }
          ],
          "instance_settings": { },
