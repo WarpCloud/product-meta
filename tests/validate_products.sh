@@ -10,8 +10,6 @@ RESOURCES="/resources"
 SYS_COMPONENTS="/components"
 SYS_CONTEXTS="/system_contexts"
 PRODUCTS="/products"
-LIBAPPADAPTER="/applications"
-LIBAPPADAPTER_PATH="/applications"
 
 FAILED=0
 
@@ -76,15 +74,6 @@ function validate_default_json_dependency(){
     fi
 }
 
-# every components should be a part of libappadapter/dependencies
-function validate_libappadapter_dependency(){
-    component_path=$1
-    product_component=$2
-    libappadapter_path=$PROJROOT$LIBAPPADAPTER$LIBAPPADAPTER_PATH
-    if [[ ! -d $libappadapter_path/$product_component ]]; then
-        echo_failed_message "$component_path/$product_component: wrong dependency, cannot find /$product_component in $libappadapter_path!"
-    fi
-}
 
 # validate directory: /components and /system_components
 # validate the directory structure and some fields in default.json
@@ -100,18 +89,6 @@ function validate_components(){
             for version in $component/*; do
                 if [[ ! -d $version ]];then
                     echo_failed_message $version:' not a valid version directory!'
-                else
-                    # check if every component is in libappadapter
-                    component_subdir=$(basename $component)/$(basename $version)
-                    validate_libappadapter_dependency $components_root_path $component_subdir
-                    default_json_file=$version/default.json
-                    if [[ ! -f $default_json_file ]]; then
-                        echo_failed_message "$default_json_file: not found!"
-                    else
-                        # if /components/componentX/versionY/default.json exists, validate default.json field
-                        validate_default_json_path $components_root_path $default_json_file
-                        validate_default_json_dependency $component_root_path $default_json_file dependencies
-                    fi
                 fi
             done
             fi
@@ -255,7 +232,7 @@ fi
 function is_test_failed() {
   echo
   if [[ $FAILED -eq 0 ]]; then
-  	echo "All dependency test pass."
+  	echo "Modules meta info declaration test pass."
         exit 0
   else
   	echo "FAILED: $FAILED."
@@ -263,15 +240,11 @@ function is_test_failed() {
   fi
 }
 
-$PROJROOT$LIBAPPADAPTER/run_test.sh
-
 is_fmt_json $COMPONENTS
 is_fmt_json $PRODUCTS
 is_fmt_json $RESOURCES
 is_fmt_json $SYS_COMPONENTS
 is_fmt_json $SYS_CONTEXTS
-
-$PROJROOT$LIBAPPADAPTER/run_test.sh clean
 
 validate_components $PROJROOT$COMPONENTS
 validate_components $PROJROOT$SYS_COMPONENTS
