@@ -34,6 +34,10 @@
             {
                "moduleName": "elasticsearch",
                "name": "elasticsearch"
+            },
+            {
+               "moduleName": "diocles",
+               "name": "diocles"
             }
          ],
          "instance_settings": { },
