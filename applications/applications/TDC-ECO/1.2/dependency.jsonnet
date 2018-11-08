@@ -15,6 +15,7 @@ function(config={})
   local _ticketModuleName = "ticket";
   local _despatcherModuleName = "despatcher";
   local _searchModuleName = "elasticsearch";
+  local _dioclesModuleName = "diocles";
 
   //-------------------
   // Dependent modules
@@ -41,6 +42,9 @@ function(config={})
       },{
         moduleName: _searchModuleName,
         name: _searchModuleName,
+      },{
+        moduleName: _dioclesModuleName,
+        name: _dioclesModuleName,
       }],
     };
 
