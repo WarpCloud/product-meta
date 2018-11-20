@@ -1,0 +1,16 @@
+{
+  "category_name": "TDC-TEST",
+  "description": "TDC2.0产品测试",
+  "display_name": "TDC测试",
+  "description_en": "All In",
+  "display_name_en": "All In",
+  "source": "transwarp",
+  "final": false,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-all.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-install-tdh-all.svg"
+  }]
+}
