@@ -1,4 +1,4 @@
-FROM 172.16.1.41:5000/release/basefs:latest
+FROM 172.16.1.99/transwarp/basefs:latest
 
 MAINTAINER xiaming.chen@transwarp.io
 
