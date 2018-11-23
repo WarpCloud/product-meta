@@ -33,7 +33,7 @@ local t = import "../../../applib/utils.libsonnet";
               "key": "KAFKA_SERVER_PROPERTIES",
               local _bytes = t.diskSizeInByte(s.DiskDataSize),
               local _log_retention = if _bytes == 0 then "" else "log.retention.bytes;;;"+std.floor(_bytes * 0.1)+"|||",
-              "value":  _log_retention + "num.partitions;;;3|||default.replication.factor;;;2|||sasl.kerberos.principal.to.local.rules;;;RULE:[1:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,RULE:[2:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,DEFAULT"
+              "value":  _log_retention + "log.retention.hours;;;12|||num.partitions;;;3|||default.replication.factor;;;2|||sasl.kerberos.principal.to.local.rules;;;RULE:[1:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,RULE:[2:$1@$0](^.*@.*$)s/^(.*)@.*$/$1/g,DEFAULT"
             }
           ]
         },

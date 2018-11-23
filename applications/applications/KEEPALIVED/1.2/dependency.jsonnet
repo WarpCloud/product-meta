@@ -16,7 +16,12 @@ function(config={})
 
   local keepalived = t.createInstance(_keepalivedModuleName, config, appVersion) +
   t.moduleResource(_keepalivedModuleName, r.__moduleResourceRaw, config) +
-    {};
+    {
+      dependencies: [{
+        moduleName: "kong",
+        name: "kong",
+      }]
+    };
 
   t.getDefaultSettings(config) + {
     instance_list: [keepalived],
