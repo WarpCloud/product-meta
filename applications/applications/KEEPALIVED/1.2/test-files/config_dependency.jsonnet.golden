@@ -5,38 +5,20 @@
    "instance_list": [
       {
          "annotations": {
-            "application_name": "catalog",
-            "application_type": "CATALOG"
+            "application_name": "kong1",
+            "application_type": "KONG"
          },
-         "configs": {
-
-            "keepalived_cpu_limit": 1,
-            "keepalived_cpu_request": 1,
-            "keepalived_memory_limit": 4,
-            "keepalived_memory_request": 0.10000000000000001
-         },
+         "configs": { },
          "dependencies": [
             {
-               "moduleName": "txsql",
-               "name": "txsql"
-            },
-            {
-               "moduleName": "hyperbase",
-               "name": "hyperbase"
-            },
-            {
-               "moduleName": "kafka",
-               "name": "kafka"
-            },
-            {
-               "moduleName": "elasticsearch",
-               "name": "elasticsearch"
+               "moduleName": "kong",
+               "name": "kong"
             }
          ],
          "instance_settings": { },
-         "moduleName": "catalog",
-         "name": "catalog-catalog",
-         "version": "1.0"
+         "moduleName": "keepalived",
+         "name": "kong1-keepalived",
+         "version": "1.1"
       }
    ],
    "instance_settings": { },
