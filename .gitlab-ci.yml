@@ -3,7 +3,7 @@ before_script:
     - source /etc/profile
     - source /root/.bashrc
     - export PUB_HARBOR=172.16.1.99
-    - export PUB_MAJOR_VERSION=sbdc-1.1
+    - export PUB_MAJOR_VERSION=tdc-2.0
 
 stages:
   - precommit_build
@@ -14,7 +14,7 @@ precommit_build:
   script:
     - sh -e ./testing.sh
   only:
-    - /.*_oem\-sbdc\-1.1.1_\d+/
+    - /.*_master_\d+/
   tags:
     - k8s
 
@@ -30,6 +30,6 @@ gold_build:
       - docker push $PUB_TAG_MAJOR
       - ps aux | grep docker | grep -v "grep" |  awk '{print $2}' | xargs kill -9 || true
   only:
-      - oem-sbdc-1.1.1@TDC/product-meta
+      - master@TDC/product-meta
   tags:
     - k8s
