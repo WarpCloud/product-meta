@@ -31,7 +31,7 @@
           "description": "Workflow分配的内存",
           "display_name": "Workflow内存(request)",
           "name": "workflow_memory_request",
-          "value": "1024MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"
@@ -40,7 +40,7 @@
           "description": "Workflow可以使用的最大内存",
           "display_name": "Workflow内存(limit)",
           "name": "workflow_memory_limit",
-          "value": "1024MB",
+          "value": "2048MB",
           "value_type": "memory",
           "min": "0MB",
           "max": "24576MB"

@@ -336,8 +336,7 @@ if __name__ == '__main__':
 
     products = scan_project(proj_root.joinpath('products'), ['5.1'])
 
-    application = scan_applications(proj_root.joinpath('applications').joinpath('applications'))
-
     validate_dependence_versions()
 
-    validate_product_version(products, application)
+    # application = scan_applications(proj_root.joinpath('applications').joinpath('applications'))
+    # validate_product_version(products, application)
