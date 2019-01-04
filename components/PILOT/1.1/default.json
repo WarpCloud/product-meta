@@ -177,5 +177,6 @@
       "type": "component",
       "name": "component-pilot.svg"
     }
-  ]
+  ],
+  "chart_name": "pilot"
 }

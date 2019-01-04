@@ -12,5 +12,6 @@
       "type": "component",
       "name": "component-guardian.svg"
     }
-  ]
+  ],
+  "chart_name": "guardian"
 }

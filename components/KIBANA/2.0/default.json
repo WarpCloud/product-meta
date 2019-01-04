@@ -1,0 +1,19 @@
+{
+  "name": "KIBANA-2.0",
+  "component_type": "KIBANA",
+  "source": "transwarp",
+  "description": "visualized tool for ES data visualization and management",
+  "edition": "2.0",
+  "category": "SYSTEM",
+  "configs": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-kibana.svg"
+    },
+    {
+      "type": "service",
+      "name": "component-kibana.svg"
+    }
+  ]
+}

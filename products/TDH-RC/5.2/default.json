@@ -7,8 +7,8 @@
     "YARN-5.2",
     "KAFKA-5.2",
     "HYPERBASE-5.2",
-    "PILOT-1.1",
-    "TERMINAL-1.2",
+    "PILOT-5.2",
+    "TERMINAL-5.2",
     "TXSQL-5.2"
   ],
   "templates": [

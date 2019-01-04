@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "GOVERNOR",
+  "source": "transwarp",
+  "description": "数据治理",
+  "description_en": "Data Governance",
+  "edition": "2.0",
+  "name": "GOVERNOR-2.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-governor.svg"
+    }
+  ],
+  "chart_name": "governor"
+}

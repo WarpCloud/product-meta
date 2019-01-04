@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "GOVERNORPROXY",
+  "source": "transwarp",
+  "description": "数据目录展现",
+  "description_en": "Data Catalog Representation",
+  "edition": "2.0",
+  "name": "GOVERNORPROXY-2.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-governorproxy.svg"
+    }
+  ],
+  "chart_name": "governorproxy"
+}

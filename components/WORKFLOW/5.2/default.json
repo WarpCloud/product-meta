@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "WORKFLOW",
+  "source": "transwarp",
+  "description": "工作引擎流",
+  "description_en": "Workflow Engine",
+  "edition": "5.2",
+  "name": "WORKFLOW-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-workflow.svg"
+    }
+  ],
+  "chart_name": "workflow"
+}

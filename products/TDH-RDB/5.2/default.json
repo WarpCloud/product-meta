@@ -3,7 +3,7 @@
   "final": true,
   "components": [
     "TXSQL-5.2",
-    "TERMINAL-1.2"
+    "TERMINAL-5.2"
   ],
   "templates": [
     {
