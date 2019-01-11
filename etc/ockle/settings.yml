@@ -156,19 +156,6 @@ service_for_development:
       description: "轻量的科学计算开发工具。支持用R、Scala和SQL做分析，提供方便的交互界面实现机器学习。"
       description_en: "A light-weight development tool for data science. Supporting R, Scala, and SQL; providing an interactive interface for machine learning."
 
-  WEBLOGIC:
-  - port: 7001
-    generate_name: weblogic-admin
-    protocol: HTTP
-    path: "/console"
-    require_gateway_registration: true
-    resource_name: component-weblogic.svg
-    display:
-      display_name: WebLogic
-      display_name_en: WebLogic
-      description: "开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。"
-      description_en: "Java EE application server."
-
   WORKFLOW:
   - port: 9091
     generate_name: workflow
@@ -390,72 +377,6 @@ service_for_development:
       display_name_en: "Sophon AI"
       description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
       description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
-
-  SMARTBI:
-  - port: 18080
-    generate_name: smartbi
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    resource_name: component-smartbi.svg
-    display:
-      display_name: "SmartBI"
-      display_name_en: "SmartBI"
-      description: "企业级商业智能应用平台。"
-      description_en: "Modern business intelligence platform."
-
-  JENKINS:
-  - port: 8000
-    generate_name: qa-jenkins
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    resource_name: component-jenkins.svg
-    display:
-      display_name: "Jenkins"
-      display_name_en: "Jenkins"
-      description: "Jenkins是一款由Java编写的开源的持续集成工具"
-      description_en: "Jenkins is an open source, continuous integration tool"
-
-  NEXUS:
-  - port: 8000
-    generate_name: qa-nexus
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    resource_name: component-nexus.svg
-    display:
-      display_name: "Nexus"
-      display_name_en: "Nexus"
-      description: "Nexus是一个强大的仓库管理器"
-      description_en: "Nexus is a powerful Maven repository manager"
-
-  HARBOR:
-  - port: 5000
-    generate_name: harbor
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    resource_name: component-harbor.svg
-    display:
-      display_name: "Harbor"
-      display_name_en: "Harbor"
-      description: "Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器"
-      description_en: "Harbor is an enterprise-level Registry server for storing and distributing Docker images"
-
-  GITLAB:
-  - port: 8000
-    generate_name: gitlab
-    protocol: "HTTP"
-    path: "/"
-    require_gateway_registration: true
-    resource_name: component-gitlab.svg
-    display:
-      display_name: "Gitlab"
-      display_name_en: "Gitlab"
-      description: "Gitlab 是一款专业的代码托管仓库"
-      description_en: "Gitlab is a professional code-managed repository"
-
 
 
 # A list of instances that need to open ha for default

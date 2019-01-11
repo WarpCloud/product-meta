@@ -1,6 +1,0 @@
-{
-  application_type: "keepalived",
-  application_name: "keepalived",
-  application_version: "1.2",
-  user_config: {},
-}
