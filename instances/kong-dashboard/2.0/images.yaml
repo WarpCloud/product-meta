@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: kong-dashboard
   variable: kong_dashboard_image
+  role: kong-dashboard
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

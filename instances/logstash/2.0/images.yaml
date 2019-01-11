@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: logstash
   variable: logstash_image
+  role: logstash
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

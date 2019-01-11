@@ -10,16 +10,22 @@ hot-fix-ranges:
 images:
 - name: apacheds
   variable: apacheds_image
+  role: apacheds
 - name: guardian-init
   variable: guardian_init_container_image
+  role: gencerts
 - name: guardian
   variable: guardian_server_image
+  role: guardian
 - name: cas-config-server
   variable: cas_config_server_image
+  role: casconfigserver
 - name: cas-server
   variable: cas_server_image
+  role: casserver
 - name: cas-admin-server
   variable: cas_mgnt_server_image
+  role: casadminserver
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

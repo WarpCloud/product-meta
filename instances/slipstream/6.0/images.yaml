@@ -10,8 +10,10 @@ hot-fix-ranges:
 images:
 - name: inceptor
   variable: inceptor_master_image
+  role: inceptor
 - name: inceptor
   variable: inceptor_executor_image
+  role: executor
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:
