@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "PILOT",
+  "source": "transwarp",
+  "description": "报表工具",
+  "description_en": "Reporting Tool",
+  "edition": "5.2",
+  "name": "PILOT-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-pilot.svg"
+    }
+  ],
+  "chart_name": "pilot"
+}

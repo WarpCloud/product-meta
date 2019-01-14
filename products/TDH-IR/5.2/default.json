@@ -3,11 +3,11 @@
   "final": true,
   "components": [
     "INCEPTOR-5.2",
-    "TRANSPORTER-1.1",
+    "TRANSPORTER-5.2",
     "SEARCH-5.2",
     "HDFS-5.2",
-    "PILOT-1.1",
-    "TERMINAL-1.2",
+    "PILOT-5.2",
+    "TERMINAL-5.2",
     "TXSQL-5.2"
   ],
   "templates": [

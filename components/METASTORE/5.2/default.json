@@ -1,0 +1,17 @@
+{
+  "category": "运维和开发工具,SYSTEM",
+  "component_type": "METASTORE",
+  "source": "transwarp",
+  "description": "分布式元信息管理服务",
+  "description_en": "METASTORE",
+  "edition": "5.2",
+  "name": "METASTORE-5.2",
+  "is_share": false,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-metastore.svg"
+    }
+  ],
+  "chart_name": "metastore"
+}

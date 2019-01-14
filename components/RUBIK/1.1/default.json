@@ -177,5 +177,6 @@
       "type": "component",
       "name": "component-rubik.svg"
     }
-  ]
+  ],
+  "chart_name": "rubik"
 }

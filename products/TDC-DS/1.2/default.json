@@ -4,8 +4,8 @@
   "components": [
       "INCEPTOR-5.2",
       "HDFS-5.2",
-      "PILOT-1.1",
-      "TERMINAL-1.2",
+      "PILOT-5.2",
+      "TERMINAL-5.2",
       "TXSQL-5.2",
       "GOVERNORPROXY-1.2"
   ],

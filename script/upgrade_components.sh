@@ -9,8 +9,16 @@ chmod +x $SCRIPT
 
 echo "From version: $1"
 echo "Upgrade to version: $2"
+echo "Choose component: $3"
 
 for component_type in $COMPONENT_PATH/*; do
+    if [ $3 != '' ];then
+        if [[ $component_type =~ $3 ]];then
+            echo "find $3"
+        else
+            continue
+        fi
+    fi
     for version in $component_type/*; do
         if [ ${version##*/} == $1 ]; then
             if [ ! -d $component_type/$2 ]; then

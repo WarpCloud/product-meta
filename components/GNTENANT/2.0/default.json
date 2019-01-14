@@ -1,0 +1,9 @@
+{
+  "name": "GNTENANT-2.0",
+  "component_type": "GNTENANT",
+  "source": "transwarp",
+  "description": "GN Tenant management service",
+  "edition": "2.0",
+  "category": "SYSTEM",
+  "configs": []
+}

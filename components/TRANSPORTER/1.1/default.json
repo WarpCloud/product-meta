@@ -177,5 +177,6 @@
       "type": "component",
       "name": "component-transporter.svg"
     }
-  ]
+  ],
+  "chart_name": "transporter"
 }

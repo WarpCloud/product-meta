@@ -130,7 +130,7 @@ service_for_tenant:
 
 # A list of services registered for development portal.
 service_for_development:
-  PILOT: 
+  pilot:
   - port: 8086
     generate_name: pilot
     protocol: HTTP
@@ -143,7 +143,7 @@ service_for_development:
       description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
       description_en: "A light-weight and flexible web-based reporting tool. Supporting self-service analysis; providing over twenty report graphs."
 
-  NOTEBOOK: 
+  notebook:
   - port: 8686
     generate_name: notebook
     protocol: HTTP
@@ -156,7 +156,20 @@ service_for_development:
       description: "轻量的科学计算开发工具。支持用R、Scala和SQL做分析，提供方便的交互界面实现机器学习。"
       description_en: "A light-weight development tool for data science. Supporting R, Scala, and SQL; providing an interactive interface for machine learning."
 
-  WORKFLOW:
+  weblogic:
+  - port: 7001
+    generate_name: weblogic-admin
+    protocol: HTTP
+    path: "/console"
+    require_gateway_registration: true
+    resource_name: component-weblogic.svg
+    display:
+      display_name: WebLogic
+      display_name_en: WebLogic
+      description: "开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。"
+      description_en: "Java EE application server."
+
+  workflow:
   - port: 9091
     generate_name: workflow
     protocol: HTTP
@@ -169,7 +182,7 @@ service_for_development:
       description: "图形化的工作流服务平台。支持多种任务类型，提供丰富的工作流分析展现形式。"
       description_en: "A graphical workflow manager. Supporting multiple task types; providing abundant analysis and representation forms for workflows."
 
-  RUBIK: 
+  rubik:
   - port: 32125
     generate_name: rubik
     protocol: HTTP
@@ -182,7 +195,7 @@ service_for_development:
       description: "OLAP Cube工具。用于OLAP模型设计与实例化，支持多种数据源，加速多维度分析。"
       description_en: "A tool for OLAP cube model design and instantiation. Supporting multiple data sources; speeding up multidimensional analysis."
 
-  GOVERNOR: 
+  governer:
   - port: 21000
     generate_name: governor
     protocol: HTTP
@@ -195,7 +208,7 @@ service_for_development:
       description: "元数据管理工具。可集中化管理元数据，监控更改历史，进行数据血缘分析和影响分析。"
       description_en: "A centralized metadata management tool. Monitoring change history; performing data lineage and impact analysis."
 
-  GOVERNORPROXY: 
+  governerproxy:
   - port: 9527
     generate_name: governor-proxy
     protocol: HTTP
@@ -208,7 +221,7 @@ service_for_development:
       description: "数据共享分析工具，支持数据预览，申请，审批，下放，自助式查询，分析，报表展示，下载等功能。"
       description_en: "Data-sharing tool supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and download."
 
-  TRANSPORTER: 
+  transporter:
   - port: 8100
     generate_name: tdt
     protocol: HTTP
@@ -221,7 +234,7 @@ service_for_development:
       description: "可视化ETL管理工具。支持近实时数据同步，提供多种数据格式、转换操作及整合功能。"
       description_en: "A visualized ETL management tool. Supporting near real-time data synchronization; providing multiple data formats, transformation operations, and integration."
 
-  GUARDIAN: 
+  guardian:
   - port: 8380
     generate_name: gs
     protocol: HTTPS
@@ -235,7 +248,7 @@ service_for_development:
       description: "统一的安全和资源管理服务平台。支持Kerberos和LDAP认证，提供细粒度的资源和权限管理。"
       description_en: "A unified security and resource management platform. Supporting Kerberos and LDAP authentication; providing fine-grained resource and permission management services."
 
-  KIBANA: 
+  kibana:
   - port: 5601
     generate_name: kibana
     protocol: HTTP
@@ -248,7 +261,7 @@ service_for_development:
       description: "日志诊断和检索平台。收集平台服务的日志，提供诊断和检索功能，方便系统运维和故障诊断。"
       description_en: "A platform for log diagnosis and retrieval. Collecting service logs; providing diagnosis and retrieval services; facilitating system maintenance and breakdown diagnosis."
 
-  INCEPTOR: 
+  inceptor:
   - port: 4040
     generate_name: inceptor2
     protocol: HTTP
@@ -266,7 +279,7 @@ service_for_development:
     require_gateway_registration: false
     alias: HiveServer2
 
-  SLIPSTREAM: 
+  slipstream:
   - port: 4040
     generate_name: slipstream
     protocol: HTTP
@@ -284,7 +297,7 @@ service_for_development:
     require_gateway_registration: false
     alias: HiveServer2
 
-  SEARCH: 
+  search:
   - port: 9100
     generate_name: "es-head"
     protocol: HTTP
@@ -298,7 +311,7 @@ service_for_development:
       description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询。"
       description_en: "ES Head is a web-based tool for Elastic Search cluster management, on-line query, data visualization, and CRUD operations. It is widely used by ES users for cluster operating and application development."
 
-  TERMINAL: 
+  terminal:
   - port: 5000
     generate_name: terminal
     protocol: HTTP
@@ -312,7 +325,7 @@ service_for_development:
       description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，方便的做各种运维操作以及大数据开发工作。"
       description_en: "A command line tool for system operation."
 
-  HYPERBASE: 
+  hyperbase:
   - port: 60010
     generate_name: hbasemaster
     protocol: HTTP
@@ -325,7 +338,7 @@ service_for_development:
       description: "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况。"
       description_en: "The HyperBase Master UI is a useful tool to get an overview of the current status of the cluster. Users can get the basic configuration of Hyperbase, as well as load average of the cluster."
 
-  HDFS: 
+  hdfs:
   - port: 50070
     generate_name: "hdfsnamenode, hdfssecondary"
     protocol: HTTP
@@ -339,7 +352,7 @@ service_for_development:
       description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据。"
       description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
 
-  KAFKA: 
+  kafka:
   - port: 8000
     generate_name: kafkamanager
     protocol: HTTP
@@ -352,7 +365,7 @@ service_for_development:
       description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。"
       description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
 
-  SOPHON:
+  sophon:
   - port: 30123
     generate_name: sophonweb
     protocol: "HTTP"
@@ -365,7 +378,7 @@ service_for_development:
       description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
       description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
 
-  SOPHONWEB:
+  sophonweb:
   - port: 30123
     generate_name: sophonweb
     protocol: "HTTP"
@@ -377,6 +390,73 @@ service_for_development:
       display_name_en: "Sophon AI"
       description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
       description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+
+  smartbi:
+  - port: 18080
+    generate_name: smartbi
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-smartbi.svg
+    display:
+      display_name: "SmartBI"
+      display_name_en: "SmartBI"
+      description: "企业级商业智能应用平台。"
+      description_en: "Modern business intelligence platform."
+
+  jenkins:
+  - port: 8000
+    generate_name: qa-jenkins
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-jenkins.svg
+    display:
+      display_name: "Jenkins"
+      display_name_en: "Jenkins"
+      description: "Jenkins是一款由Java编写的开源的持续集成工具"
+      description_en: "Jenkins is an open source, continuous integration tool"
+
+  nexus:
+  - port: 8000
+    generate_name: qa-nexus
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-nexus.svg
+    external_add: "https//:172.16.3.234:80012"
+    display:
+      display_name: "Nexus"
+      display_name_en: "Nexus"
+      description: "Nexus是一个强大的仓库管理器"
+      description_en: "Nexus is a powerful Maven repository manager"
+
+  harbor:
+  - port: 5000
+    generate_name: harbor
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-harbor.svg
+    display:
+      display_name: "Harbor"
+      display_name_en: "Harbor"
+      description: "Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器"
+      description_en: "Harbor is an enterprise-level Registry server for storing and distributing Docker images"
+
+  gitlab:
+  - port: 8000
+    generate_name: gitlab
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-gitlab.svg
+    display:
+      display_name: "Gitlab"
+      display_name_en: "Gitlab"
+      description: "Gitlab 是一款专业的代码托管仓库"
+      description_en: "Gitlab is a professional code-managed repository"
+
 
 
 # A list of instances that need to open ha for default
