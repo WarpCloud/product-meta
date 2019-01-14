@@ -10,7 +10,11 @@
     "TERMINAL-5.2",
     "TRANSPORTER-5.2",
     "TXSQL-5.2",
-    "YARN-5.2"
+    "YARN-5.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2",
+    "FILEROBOT-5.2",
+    "NOTIFICATION-5.2"
   ],
   "templates": [
     {
@@ -34,9 +38,11 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [{
-    "type": "frame",
-    "name": "frame-tdh-dm.png"
-  }],
+  "resources": [
+    {
+      "type": "frame",
+      "name": "frame-tdh-dm.png"
+    }
+  ],
   "is_distributed": true
 }
