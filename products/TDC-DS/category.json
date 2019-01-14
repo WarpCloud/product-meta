@@ -4,7 +4,7 @@
   "display_name": "数据共享分析",
   "description_en": "Data Sharing product, supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and  download.",
   "display_name_en": "Data Sharing",
-  "source": "transwarp",
+  "source": "bigdata",
   "final": true,
   "resources": [{
     "type": "icon",
