@@ -10,7 +10,11 @@
     "PILOT-5.2",
     "TXSQL-5.2",
     "HDFS-5.2",
-    "INCEPTOR-5.2"
+    "INCEPTOR-5.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2",
+    "FILEROBOT-5.2",
+    "REDIS-5.2"
   ],
   "templates": [
     {
@@ -34,9 +38,11 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [{
-    "type": "frame",
-    "name": "frame-tdh-dl.png"
-  }],
+  "resources": [
+    {
+      "type": "frame",
+      "name": "frame-tdh-dl.png"
+    }
+  ],
   "is_distributed": true
 }

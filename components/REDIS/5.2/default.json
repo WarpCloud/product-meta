@@ -4,8 +4,8 @@
   "source": "transwarp",
   "description": "内存K-V数据库",
   "description_en": "In-memory K-V Database",
-  "edition": "1.0",
-  "name": "REDIS-1.0",
+  "edition": "5.2",
+  "name": "REDIS-5.2",
   "resources": [
     {
       "type": "component",

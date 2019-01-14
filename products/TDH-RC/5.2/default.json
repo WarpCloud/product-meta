@@ -9,7 +9,10 @@
     "HYPERBASE-5.2",
     "PILOT-5.2",
     "TERMINAL-5.2",
-    "TXSQL-5.2"
+    "TXSQL-5.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2",
+    "FILEROBOT-5.2"
   ],
   "templates": [
     {
@@ -33,9 +36,11 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [{
-    "type": "frame",
-    "name": "frame-tdh-rc.png"
-  }],
+  "resources": [
+    {
+      "type": "frame",
+      "name": "frame-tdh-rc.png"
+    }
+  ],
   "is_distributed": true
 }

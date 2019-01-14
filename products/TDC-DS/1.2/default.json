@@ -2,38 +2,43 @@
   "edition": "1.2",
   "final": true,
   "components": [
-      "INCEPTOR-5.2",
-      "HDFS-5.2",
-      "PILOT-5.2",
-      "TERMINAL-5.2",
-      "TXSQL-5.2",
-      "GOVERNORPROXY-1.2"
+    "INCEPTOR-5.2",
+    "HDFS-5.2",
+    "PILOT-5.2",
+    "TERMINAL-5.2",
+    "TXSQL-5.2",
+    "GOVERNORPROXY-1.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2",
+    "FILEROBOT-5.2"
   ],
   "templates": [
-      {
-          "level": "demo",
-          "description": "演示模式",
-          "description_en": "Demo mode"
-      },
-      {
-          "level": "low",
-          "description": "最佳性价比模式",
-          "description_en": "Best price/performance model"
-      },
-      {
-          "level": "medium",
-          "description": "性能和性价比最佳配比模式",
-          "description_en": "Performance and cost-effective matching model"
-      },
-      {
-          "level": "high",
-          "description": "最佳性能模式",
-          "description_en": "Best performance model"
-      }
+    {
+      "level": "demo",
+      "description": "演示模式",
+      "description_en": "Demo mode"
+    },
+    {
+      "level": "low",
+      "description": "最佳性价比模式",
+      "description_en": "Best price/performance model"
+    },
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    },
+    {
+      "level": "high",
+      "description": "最佳性能模式",
+      "description_en": "Best performance model"
+    }
   ],
-  "resources": [{
-    "type": "frame",
-    "name": "frame-tdc-ds.png"
-  }],
+  "resources": [
+    {
+      "type": "frame",
+      "name": "frame-tdc-ds.png"
+    }
+  ],
   "is_distributed": true
 }
