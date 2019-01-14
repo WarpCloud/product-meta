@@ -4,7 +4,7 @@
   "display_name": "TDC测试",
   "description_en": "All In",
   "display_name_en": "All In",
-  "source": "transwarp",
+  "source": "bigdata",
   "final": false,
   "resources": [{
     "type": "icon",

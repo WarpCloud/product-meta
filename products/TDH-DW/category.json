@@ -4,7 +4,7 @@
   "display_name": "数据仓库",
   "description_en": "As the center of data library and the core of business intelligence, data warehouse focuses on the integration of various data, organizing information into different themes. ",
   "display_name_en": "Data Warehouse",
-  "source": "transwarp",
+  "source": "bigdata",
   "final": true,
   "resources": [{
     "type": "icon",
