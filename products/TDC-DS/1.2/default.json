@@ -34,11 +34,6 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [
-    {
-      "type": "frame",
-      "name": "frame-tdc-ds.png"
-    }
-  ],
+  "resources": [],
   "is_distributed": true
 }

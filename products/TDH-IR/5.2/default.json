@@ -37,8 +37,8 @@
   ],
   "resources": [
     {
-      "type": "frame",
-      "name": "frame-tdh-ir.png"
+      "type": "architecture",
+      "name": "arch-tdh-ir.html"
     }
   ],
   "is_distributed": true

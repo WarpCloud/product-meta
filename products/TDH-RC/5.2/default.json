@@ -38,8 +38,8 @@
   ],
   "resources": [
     {
-      "type": "frame",
-      "name": "frame-tdh-rc.png"
+      "type": "architecture",
+      "name": "arch-tdh-rc.html"
     }
   ],
   "is_distributed": true
