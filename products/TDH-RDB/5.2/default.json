@@ -28,8 +28,8 @@
     }
   ],
   "resources": [{
-    "type": "frame",
-    "name": "frame-tdh-rdb.png"
+    "type": "architecture",
+    "name": "arch-tdh-rdb.html"
   }],
   "is_distributed": false
 }
