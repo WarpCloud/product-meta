@@ -40,6 +40,10 @@
     {
       "type": "architecture",
       "name": "arch-tdh-rc.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-rc.html"
     }
   ],
   "is_distributed": true

@@ -42,6 +42,10 @@
     {
       "type": "architecture",
       "name": "arch-tdh-dm.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-dm.html"
     }
   ],
   "is_distributed": true
