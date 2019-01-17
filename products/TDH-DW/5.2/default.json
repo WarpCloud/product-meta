@@ -37,9 +37,15 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [{
-    "type": "architecture",
-    "name": "arch-tdh-dw.html"
-  }],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-dw.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-dw.html"
+    }
+  ],
   "is_distributed": true
 }

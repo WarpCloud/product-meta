@@ -27,9 +27,15 @@
       "description_en": "Best performance model"
     }
   ],
-  "resources": [{
-    "type": "architecture",
-    "name": "arch-tdh-rdb.html"
-  }],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-rdb.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-rdb.html"
+    }
+  ],
   "is_distributed": false
 }
