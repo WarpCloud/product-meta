@@ -1,4 +1,5 @@
 <html>
+	<meta charset="utf-8">
 	<head>
 		<style>
 			.container {
@@ -32,11 +33,14 @@
 				list-style-type: disc;
 			}
 			
-			h5 {
+			.list li div {
 				margin: 0;
+				font-size: 16px;
+				font-weight: bold;
 			}
-			p {
-				margin: 10px 0 14px -20px;
+			.list li p {
+				margin: 6px 0 24px -20px;
+				line-height: 20px;
 				font-size: 14px;
 			}
 		</style>
@@ -49,23 +53,23 @@
 			<div class="list">
 				<ul>
 					<li>
-						<h5>强大的SQL支持</h5>
+						<div>强大的SQL支持</div>
 						<p>完整支持SQL标准2003，兼容包括Oracle、DB2、Teradata多种方言，以及存储过程和事务语义。同时其内部引擎提供语句深度优化能力，确保业务极速运行。</p>
 					</li>
 					<li>
-						<h5>异构数据互通</h5>
+						<div>异构数据互通</div>
 						<p>轻松实现异构数据互通，无需等待迁移，就可以整合并处理来源于不同系统的数据，是实现企业级数据仓库和数据湖的坚实基础。</p>
 					</li>
 					<li>
-						<h5>混合负载支持</h5>
+						<div>混合负载支持</div>
 						<p>实现灵活的SLA Scheduler，按照用户或负载提供SLA，采用更细粒度的调度算法，动态适配队列拓扑。从而根据当前环境的资源情况，智能的进行调度，有效应对多租户下的资源管理场景。</p>
 					</li>
 					<li>
-						<h5>分布式事务保障</h5>
+						<div>分布式事务保障</div>
 						<p>提供可序列化快照隔离，保障事务在分布式系统下正常运转，高吞吐的事务机制，确保数据强一致，高可用的事务保证。</p>
 					</li>
 					<li>
-						<h5>非结构化数据处理</h5>
+						<div>非结构化数据处理</div>
 						<p>提供对非结构化或者半结构化数据的存储、检索、分析能力，具有影像分析、文本数据挖掘分析等功能，利用广泛的数据资源实现信息的发现与挖掘。</p>
 					</li>
 				</ul>

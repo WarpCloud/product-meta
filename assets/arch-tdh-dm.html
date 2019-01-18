@@ -1,4 +1,5 @@
 <html>
+	<meta charset="utf-8">
 	<head>
 		<style>
 			.container {
@@ -32,11 +33,14 @@
 				list-style-type: disc;
 			}
 			
-			h5 {
+			.list li div {
 				margin: 0;
+				font-size: 16px;
+				font-weight: bold;
 			}
-			p {
-				margin: 10px 0 14px -20px;
+			.list li p {
+				margin: 6px 0 24px -20px;
+				line-height: 20px;
 				font-size: 14px;
 			}
 		</style>
@@ -49,19 +53,19 @@
 			<div class="list">
 				<ul>
 					<li>
-						<h5>面向业务的数据整合</h5>
+						<div>面向业务的数据整合</div>
 						<p>数据集市TDH-DM服务于企业部门或工作组，抽取来自数据仓库的子集，设计、开发、管理特定主题的数据集市，用于某部门或者某些特殊分析目的。通过系统性的数据整合，避免数据孤岛问题。</p>
 					</li>
 					<li>
-						<h5>强大的SQL支持</h5>
+						<div>强大的SQL支持</div>
 						<p>完整支持SQL标准2003，兼容包括Oracle、DB2、Teradata多种方言，灵活的实现各种OLAP分析业务。同时其内部引擎具有深度优化语句的能力，确保语句极速运行。</p>
 					</li>
 					<li>
-						<h5>交互式OLAP分析</h5>
+						<div>交互式OLAP分析</div>
 						<p>采用专为OLAP定制研发的存储引擎Holodesk，实现交互式OLAP分析。TDH-DM通过列式缓存技术和过滤下沉技术，允许灵活的指定聚合字段，无需进行Cube预计算，也可以实时返回计算结果。</p>
 					</li>
 					<li>
-						<h5>高效的开发和运维工具</h5>
+						<div>高效的开发和运维工具</div>
 						<p>TDH-DM内置可视化Cube设计工具Rubik，支持星型和雪花模型，提供从Cube设计到持久化的完整过程，同时通过Cube共享以及消息通知实现高效协同合作。TDH-DM对接可视化报表工具，以视觉方式进行数据分析，同时还提供指标监控和日志管理工具，对异常状态提供报警，简化运维。</p>
 					</li>
 				</ul>

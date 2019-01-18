@@ -1,4 +1,5 @@
 <html>
+	<meta charset="utf-8">
 	<head>
 		<style>
 			.container {
@@ -32,11 +33,14 @@
 				list-style-type: disc;
 			}
 			
-			h5 {
+			.list li div {
 				margin: 0;
+				font-size: 16px;
+				font-weight: bold;
 			}
-			p {
-				margin: 10px 0 14px -20px;
+			.list li p {
+				margin: 6px 0 24px -20px;
+				line-height: 20px;
 				font-size: 14px;
 			}
 		</style>
@@ -49,19 +53,19 @@
 			<div class="list">
 				<ul>
 					<li>
-						<h5>全文搜索</h5>
+						<div>全文搜索</div>
 						<p>支持全文检索，提供精确和模糊的字段查询功能。可跨越数据源、数据格式实现检索，结果返回文件路径和关键词出现的片段，高亮显示查询内容，检索结果按照关联度排序。</p>
 					</li>
 					<li>
-						<h5>利用SQL做检索与分析</h5>
+						<div>利用SQL做检索与分析</div>
 						<p>TDH-IR支持SQL2003语法及全文检索相关扩展，支持检索语义，同API编程相比，采用SQL不仅可以利用编译器的优化能力提供优秀的执行性能，而且可以避免底层存储升级引入的兼容性问题。同时，用SQL对检索结果进行复杂分析处理，实现比单纯数据检索更高级的信息探索能力。</p>
 					</li>
 					<li>
-						<h5>混合存储</h5>
+						<div>混合存储</div>
 						<p>TDH-RI采用冷热数据存储分层的模式，将热数据置于SSD，利用SSD的高IOPS满足大量热数据随机访问，而冷数据置于SATA，满足历史数据查询，从而降低硬件成本，大大提升性能。</p>
 					</li>
 					<li>
-						<h5>标准化的服务接口</h5>
+						<div>标准化的服务接口</div>
 						<p>方便内部IT应用快捷完成数据接入和数据访问，有利于整合不同信息系统，便于数据搜索，获取所需信息。</p>
 					</li>
 				</ul>
