@@ -15,5 +15,7 @@
       "type": "service",
       "name": "component-kibana.svg"
     }
-  ]
+  ],
+  "chart_name": "kibana",
+  "system_type": "tenant"
 }

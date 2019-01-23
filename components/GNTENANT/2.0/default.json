@@ -5,5 +5,7 @@
   "description": "GN Tenant management service",
   "edition": "2.0",
   "category": "SYSTEM",
-  "configs": []
+  "configs": [],
+  "chart_name": "gntenant",
+  "system_type": "tenant"
 }

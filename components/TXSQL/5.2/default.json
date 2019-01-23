@@ -13,5 +13,6 @@
       "name": "component-txsql.svg"
     }
   ],
-  "chart_name": "txsql"
+  "chart_name": "txsql",
+  "system_type": "base"
 }

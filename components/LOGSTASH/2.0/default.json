@@ -21,5 +21,7 @@
       "value": "",
       "description": "es_cli_statefulSet"
     }
-  ]
+  ],
+  "chart_name": "logstash",
+  "system_type": "tenant"
 }

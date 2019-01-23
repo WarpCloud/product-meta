@@ -5,5 +5,7 @@
   "description": "Transwarp Cloud Console",
   "edition": "2.0",
   "category": "SYSTEM",
-  "configs": []
+  "configs": [],
+  "chart_name": "tcc",
+  "system_type": "tenant"
 }

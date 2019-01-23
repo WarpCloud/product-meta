@@ -5,5 +5,7 @@
   "description": "Ticket management service",
   "edition": "2.0",
   "category": "SYSTEM",
-  "configs": []
+  "configs": [],
+  "chart_name": "ticket",
+  "system_type": "tenant"
 }

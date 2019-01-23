@@ -13,5 +13,6 @@
       "name": "component-guardian.svg"
     }
   ],
-  "chart_name": "guardian"
+  "chart_name": "guardian",
+  "system_type": "base"
 }
