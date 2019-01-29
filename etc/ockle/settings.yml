@@ -45,22 +45,16 @@ instance_configs_sharing:
 # target application is deployed under `tdcsys` namespace.
 platform_requirements:
   - application_type: OCKLE
-    instance_type: ockle
-
-  - application_type: GUARDIAN
-    instance_type: guardian-cas
+    chart_name: ockle
 
   - application_type: SIMMAIL
-    instance_type: simmail
-
-  - application_type: KONG
-    instance_type: kong
+    chart_name: simmail
 
   - application_type: SEARCH
-    instance_type: elasticsearch
+    chart_name: elasticsearch
 
   - application_type: KAFKA
-    instance_type: kafka
+    chart_name: kafka
 
 # A list of system services and ports
 system_service:

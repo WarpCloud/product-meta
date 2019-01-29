@@ -1,0 +1,507 @@
+# A unified configuration interface for TDC instances.
+# Exampled data fields include:
+# ----
+#instance:
+#  resource:
+#    replicas:
+#      - all instance needed replicas(ha+computing_unit+disks)
+#    ha:
+#      - example_replicas
+#    computing_unit:
+#      - example_replicas
+#  database:
+#    - type: type
+#      name: example_txsql_db_name
+#  security:
+#   principals:
+#     - user: username
+#       type: user type (*1)
+#
+# ----
+#(*1) principal.type:
+#       'default', (default user of the instance itself)
+#       'spnego', (simple and protected GSSAPI negotiation mechanism, user = 'HTTP')
+#       'stream', (data stream, user = 'kafka')
+#       'rsrcnego' (resource negotiator, user = 'yarn'),
+#       'mapred' (map reduce, user = 'mapred'),
+#       'dc' (distributed coordinator, user = 'zookeeper')
+#       'hbase' (Hadoop database, user = 'hbase')
+
+common:
+  security:
+    guardian_address: Transwarp_Guardian_Address
+    guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
+    auto_injected_volumes: Transwarp_Auto_Injected_Volumes
+    krb_realm: Transwarp_Realm
+    krb_principal_suffix: Transwarp_Principal_Suffix
+
+
+discover:
+  security:
+    principals:
+      - user: discover
+        type: default
+
+elasticsearch:
+  resource:
+    replicas:
+      - elasticsearchmaster
+      - elasticsearchclient
+      - elasticsearchdata
+      - elasticsearchhead
+    ha:
+      - elasticsearchclient
+      - elasticsearchmaster
+    computing_unit:
+      - elasticsearchdata
+  security:
+    principals:
+      - user: es
+        type: default
+
+filebeat:
+  security:
+    principals:
+      - user: filebeat
+        type: default
+
+filerobot:
+  security:
+    principals:
+      - user: filerobot
+        type: default
+
+gn-tenant:
+  resource:
+    replicas:
+      - gn_replicas
+    ha:
+      - gn_replicas
+
+#governor:
+#  database:
+#    - name: governor_txsql_db_name
+#  security:
+#    principals:
+#      - hbase
+#      - kafka
+#      - zookeeper
+#      - HTTP
+#    security_service:
+#      env_cfg: GUARDIAN_SERVICE_ID
+
+
+#governor-proxy:
+
+guardian:
+  resource:
+    replicas:
+      - guardian
+      - apacheds
+      - casconfigserver
+      - casadminserver
+      - casserver
+      - gencerts
+    ha:
+      - guardian
+      - casserver
+
+#guardian-cas:
+#  resource:
+#    replicas:
+#      - guardian_server_replicas
+#      - cas_server_replicas
+#    ha:
+#      - guardian_server_replicas
+#      - cas_server_replicas
+#  configuration:
+#    environment:
+#      - apacheds_env_list
+#      - guardian_server_env_list
+#      - cas_config_server_env_list
+#      - cas_server_env_list
+#      - cas_mgnt_server_env_list
+#  database:
+#    - type: guardian
+#      name: guardian_database_name
+#    - type: cas
+#      name: cas_database_name
+
+hdfs:
+  resource:
+    replicas:
+      - hdfsnamenode
+      - hdfszkfc
+      - hdfsdatanode
+      - hdfsjournalnode
+      - httpfs
+    computing_unit:
+      - hdfsdatanode
+      - hdfsjournalnode
+    stable_unit:
+      - name: httpfs
+        value: 3
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hdfs
+        type: default
+
+hyperbase:
+  resource:
+    replicas:
+      - master
+      - regionserver
+      - thrift
+    ha:
+      - master
+      - thrift
+    computing_unit:
+      - regionserver
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hbase
+        type: default
+
+inceptor:
+  resource:
+    replicas:
+      - inceptor
+      - executor
+    computing_unit:
+      - executor
+    disks:
+      sata_disks:
+        - inceptor_shuffle_dir_counts
+    stable_unit:
+      - name: inceptor
+        value: 1
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: default
+      - user: kafka
+        type: stream
+
+metastore:
+  resource:
+    replicas:
+      - metastore
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: default
+
+kafka:
+  resource:
+    replicas:
+      - kafka
+    computing_unit:
+      - kafka
+  security:
+    principals:
+      - user: kafka
+        type: default
+
+kafka-manager:
+  resource:
+    replicas:
+      - kafka_manager_replicas
+    ha:
+      - kafka_manager_replicas
+  security:
+    principals:
+      - user: kafka
+        type: stream
+
+kibana:
+  resource:
+    replicas:
+      - kibana_replicas
+    ha:
+      - kibana_replicas
+
+kong:
+  resource:
+    replicas:
+      - kong_replicas
+    ha:
+      - kong_replicas
+
+kong-dashboard:
+  resource:
+    replicas:
+      - kong_dashboard_replicas
+    ha:
+      - kong_dashboard_replicas
+
+#localcran:
+
+logstash:
+  resource:
+    replicas:
+      - logstash_replicas
+    computing_unit:
+      - logstash_replicas
+  security:
+    principals:
+      - user: logstash
+        type: default
+      - user: kafka
+        type: stream
+
+#notebook:
+#  security:
+#    principals:
+#      - discover
+#    security_service:
+#      env_cfg: GUARDIAN_SERVICE_ID
+
+notification:
+  resource:
+    replicas:
+      - notification
+    ha:
+      - notification
+  database:
+    - name: notification_txsql_db_name
+
+pilot:
+  resource:
+    replicas:
+      - pilot
+    ha:
+      - pilot
+  configuration:
+    environment:
+      - pilot_env_list
+  security:
+    principals:
+      - user: pilot
+        type: default
+
+rubik:
+  resource:
+    replicas:
+      - rubik
+    ha:
+      - rubik
+  database:
+    - name: MySQL_DATABASE
+  security:
+    principals:
+      - user: rubik
+        type: default
+
+slipstream:
+  resource:
+    replicas:
+      - slipstream
+      - executor
+      - historyserver
+    computing_unit:
+      - executor
+    disks:
+      sata_disks:
+        - inceptor_shuffle_dir_counts
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: default
+
+sophon:
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: default
+
+sophonweb:
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: default
+      - user: yarn
+        type: rsrcnego
+
+terminal:
+  resource:
+    replicas:
+      - terminal
+    ha:
+      - terminal
+
+tcc:
+  resource:
+    replicas:
+      - tcc
+    ha:
+      - tcc
+  database:
+    - name: TCC_TXSQL_DB_NAME
+
+tdt:
+  resource:
+    replicas:
+      - tdt
+    ha:
+      - tdt
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: tdt
+        type: default
+
+ticket:
+  database:
+    - name: ticket_txsql_db_name
+  resource:
+    replicas:
+      - ticket
+    ha:
+      - ticket
+
+txsql:
+  resource:
+    replicas:
+      - txsql
+
+weblogic:
+  resource:
+    replicas:
+      - ms_replicas
+    computing_unit:
+      - ms_replicas
+
+workflow:
+  resource:
+    replicas:
+      - workflow
+  database:
+    - name: workflow_txsql_db_name
+  security:
+    principals:
+      - user: workflow
+        type: default
+
+yarn:
+  resource:
+    replicas:
+      - yarnrm
+      - yarnnm
+      - yarnts
+      - yarnhs
+    computing_unit:
+      - yarnrm
+      - yarnnm
+    disks:
+      sata_disks:
+        - yarn_data_disk_replicas
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: yarn
+        type: default
+      - user: mapred
+        type: mapred
+
+zookeeper:
+  resource:
+    replicas:
+      - zookeeper
+    stable_unit:
+      - name: zookeeper
+        value: 3
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: zookeeper
+        type: default
+
+smartbi:
+  resource:
+    replicas:
+      - smartbi_tomcat_replicas
+    ha:
+      - smartbi_tomcat_replicas
+
+#qa-jenkins:
+#  resource:
+#    replicas:
+#      - jenkins_replicas
+#    ha:
+#      - jenkins_replicas
+#  configuration:
+#    environment:
+#      - jenkins_env_list
+#  image:
+#    default:
+#      - jenkins_image
+
+#qa-nexus:
+#  resource:
+#    replicas:
+#      - nexus_replicas
+#    ha:
+#      - nexus_replicas
+#  configuration:
+#    environment:
+#      - nexus_env_list
+#  image:
+#    default:
+#      - nexus_image
+
+#gitlab:
+#  resource:
+#    replicas:
+#      - gitlab_replicas
+#    ha:
+#      - gitlab_replicas
+#  configuration:
+#    environment:
+#      - gitlab_env_list
+#      - redis_env_list
+#      - postgresql_env_list
+#  image:
+#    default:
+#      - gitlab_image
+#      - redis_image
+#      - postgresql_image
+
+#harbor:
+#  resource:
+#    replicas:
+#      - harbor_replicas
+#    ha:
+#      - harbor_replicas
+#  configuration:
+#    environment:
+#      - harbor_env_list
+#  image:
+#    default:
+#      - harbor_image
+
+catalog:
+  security:
+    principals:
+      - user: hbase
+        type: hbase
+      - user: kafka
+        type: stream
+      - user: zookeeper
+        type: dc
