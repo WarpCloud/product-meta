@@ -1,0 +1,34 @@
+common:
+  Transwarp_DEBUG: false
+
+CODIS:
+  # TODO: Update us
+  codis_product_name: "default"
+  codis_product_auth: ""
+
+DISCOVER:
+  discover_ldap_password: Transwarp01!
+
+GUARDIAN:
+  guardian_ds_root_password: Transwarp01!
+  guardian_ds_admin_password: "123"
+  guardian_ds_ha_enabled: true
+  guardian_server_tls_enabled: true
+  guardian_ds_partition_sync_on_write: "false"
+  guardian_server_key_store_pw: changeit
+  fortress_bind_pwd: Transwarp01!
+
+HYPERBASE:
+  # YARN_TIMELINE_ADDRESS: 0.0.0.0
+  Transwarp_Guardian_LDAP_Bind_Dn: uid=groupmapping/guardian,ou=System,ou=People,dc=tdh
+  Transwarp_Guardian_LDAP_Bind_Password: Transwarp01!
+
+PILOT:
+  license_check: "False"
+
+TCC:
+  GUARDIAN_USERNAME: "admin"
+  GUARDIAN_PASSWORD: "123"
+
+TXSQL:
+  txsql_rootpassword: password
