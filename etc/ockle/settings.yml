@@ -56,71 +56,12 @@ platform_requirements:
   - application_type: KAFKA
     chart_name: kafka
 
-# A list of system services and ports
-#system_service:
-#  GUARDIAN:
-#    - port: 8380
-#      protocol: HTTPS
-#      alias: GuardianServer
-#    - port: 10389
-#      alias: LDAP
-#    - port: 1088
-#      alias: KDC
-#    - port: 8393
-#      protocol: HTTPS
-#      alias: CAS
-#  TICKET:
-#    - port: 11997
-#      protocol: HTTP
-
 # A list of applications registered for TDC platform.
 service_for_tdc:
   KONG:
     port: 8001
     dashboard_port: 8080
     protocol: HTTP
-
-# A list of applications registered for tenant.
-#service_for_tenant:
-#  guardian:
-#    - port: 8380
-#      select_name: gs
-#      protocol: HTTPS
-#      require_gateway_registration: true
-#      require_display: true
-#      alias: GuardianServer
-#      resource_name: component-guardian.svg
-#    - port: 8393
-#      select_name: cas-srv
-#      protocol: HTTPS
-#      require_gateway_registration: true
-#      require_display: false
-#      alias: CAS
-#    - port: 1088
-#      select_name: "apacheds-master, apacheds-slave"
-#      require_gateway_registration: false
-#      require_display: true
-#      alias: KDC
-#  tcc:
-#    - port: 9042
-#      select_name: tcc
-#      protocol: HTTP
-#      require_gateway_registration: true
-#      require_display: true
-#  kibana:
-#    - port: 5601
-#      select_name: kibana
-#      protocol: HTTP
-#      require_gateway_registration: true
-#      require_display: false
-#      resource_name: component-kibana.svg
-#  ticket:
-#    - port: 11997
-#      select_name: ticket
-#      protocol: HTTP
-#      require_gateway_registration: true
-#      require_display: false
-
 
 # A list of services registered for development portal.
 service_description:
@@ -499,4 +440,8 @@ component_type_display_priority:
   component_type: []
 
 component_type_display_black_list:
+  - GUARDIAN
+  - GOVERNOR
+  - GOVERNORPROXY
   - SOPHONWEB
+  - REDIS
