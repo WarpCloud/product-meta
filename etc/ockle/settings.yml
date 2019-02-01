@@ -56,6 +56,9 @@ platform_requirements:
   - application_type: KAFKA
     chart_name: kafka
 
+  - application_type: GNTDC
+    chart_name: gntdc
+
 # A list of applications registered for TDC platform.
 service_for_tdc:
   KONG:
