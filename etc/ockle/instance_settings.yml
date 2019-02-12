@@ -351,6 +351,10 @@ tcc:
       - tcc
   database:
     - name: TCC_TXSQL_DB_NAME
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
 
 tdt:
   resource:
