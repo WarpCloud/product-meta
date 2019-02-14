@@ -15,7 +15,12 @@ images:
 - name: gondar-billing
   variable: gondar_billing_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    gondar_billing_image: tdc-1.2.0-rc0
+    gondar_cdr_image: tdc-1.2.0-rc0
+    gondar_udr_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: txsql
@@ -23,12 +28,12 @@ releases:
     min-version: tdc-1.2.0-rc0
     type: kafka
   final: true
+- release-version: tdc-1.2
   image-version:
-    gondar_udr_image: tdc-1.2.0-rc0
-    gondar_cdr_image: tdc-1.2.0-rc0
-    gondar_billing_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    gondar_billing_image: tdc-1.2
+    gondar_cdr_image: tdc-1.2
+    gondar_udr_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: txsql
@@ -36,8 +41,3 @@ releases:
     min-version: tdc-1.2
     type: kafka
   final: false
-  image-version:
-    gondar_udr_image: tdc-1.2
-    gondar_cdr_image: tdc-1.2
-    gondar_billing_image: tdc-1.2
-  release-version: tdc-1.2

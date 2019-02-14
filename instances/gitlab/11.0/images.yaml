@@ -3,8 +3,8 @@ major-version: '11.0'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: "11.0.3"
-  min: "11.0.3"
+- max: 11.0.3
+  min: 11.0.3
 images:
 - name: gitlab
   variable: gitlab_image
@@ -13,10 +13,10 @@ images:
 - name: postgresql
   variable: postgresql_image
 releases:
-- dependencies: []
-  final: true
+- release-version: 11.0.3
   image-version:
-    gitlab_image: "11.0.3"
-    redis_image: "3.0.5"
-    postgresql_image: "9.6"
-  release-version: "11.0.3"
+    gitlab_image: 11.0.3
+    postgresql_image: '9.6'
+    redis_image: 3.0.5
+  dependencies: []
+  final: true

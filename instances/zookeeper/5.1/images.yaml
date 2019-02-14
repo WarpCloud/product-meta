@@ -3,46 +3,41 @@ major-version: '5.1'
 min-tdc-version: tdc-1.0.0-rc0
 max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
-  - max: transwarp-5.1.4-final
-    min: transwarp-5.1.0-final
-  - max: transwarp-5.1
-    min: transwarp-5.1
+- max: transwarp-5.1.4-final
+  min: transwarp-5.1.0-final
+- max: transwarp-5.1
+  min: transwarp-5.1
 images:
-  - name: zookeeper
-    variable: zk_image
+- name: zookeeper
+  variable: zk_image
 releases:
-  - dependencies: []
-    final: true
-    image-version:
-      zk_image: transwarp-5.1.0-final
-    release-version: transwarp-5.1.0-final
-
-  - dependencies: []
-    final: true
-    image-version:
-      zk_image: transwarp-5.1.1-final
-    release-version: transwarp-5.1.1-final
-
-  - dependencies: []
-    final: true
-    image-version:
-      zk_image: transwarp-5.1.2-final
-    release-version: transwarp-5.1.2-final
-
-  - dependencies: []
-    final: true
-    image-version:
-      zk_image: transwarp-5.1.3-final
-    release-version: transwarp-5.1.3-final
-
-  - dependencies: []
-    final: true
-    image-version:
-      zk_image: transwarp-5.1.4-final
-    release-version: transwarp-5.1.4-final
-
-  - dependencies: []
-    final: false
-    image-version:
-      zk_image: transwarp-5.1
-    release-version: transwarp-5.1
+- release-version: transwarp-5.1.0-final
+  image-version:
+    zk_image: transwarp-5.1.0-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.1.1-final
+  image-version:
+    zk_image: transwarp-5.1.1-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.1.2-final
+  image-version:
+    zk_image: transwarp-5.1.2-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.1.3-final
+  image-version:
+    zk_image: transwarp-5.1.3-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.1.4-final
+  image-version:
+    zk_image: transwarp-5.1.4-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.1
+  image-version:
+    zk_image: transwarp-5.1
+  dependencies: []
+  final: false

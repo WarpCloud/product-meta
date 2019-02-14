@@ -11,19 +11,19 @@ images:
 - name: kong
   variable: kong_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    kong_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: txsql
   final: true
+- release-version: tdc-1.2
   image-version:
-    kong_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    kong_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: txsql
   final: false
-  image-version:
-    kong_image: tdc-1.2
-  release-version: tdc-1.2

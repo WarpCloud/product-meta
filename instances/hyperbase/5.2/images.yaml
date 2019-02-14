@@ -3,10 +3,8 @@ major-version: '5.2'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: transwarp-5.2.1-rc2
-  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2.2-final
-  min: transwarp-5.2.1-final
+  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2
   min: transwarp-5.2
 images:
@@ -19,58 +17,64 @@ images:
 - name: hbase
   variable: hbase_rest_image
 releases:
-- dependencies:
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: yarn
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: zookeeper
-  final: true
+- release-version: transwarp-5.2.1-rc0
   image-version:
     hbase_master_image: transwarp-5.2.1-rc0
     hbase_rest_image: transwarp-5.2.1-rc0
     hbase_rs_image: transwarp-5.2.1-rc0
     hbase_thrift_image: transwarp-5.2.1-rc0
-  release-version: transwarp-5.2.1-rc0
-- dependencies:
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  dependencies:
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: hdfs
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: yarn
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: zookeeper
   final: true
+- release-version: transwarp-5.2.1-rc2
   image-version:
     hbase_master_image: transwarp-5.2.1-rc2
     hbase_rest_image: transwarp-5.2.1-rc2
     hbase_rs_image: transwarp-5.2.1-rc2
     hbase_thrift_image: transwarp-5.2.1-rc2
-  release-version: transwarp-5.2.1-rc2
-- dependencies:
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  dependencies:
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: hdfs
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: yarn
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: zookeeper
   final: true
+- release-version: transwarp-5.2.1-final
   image-version:
     hbase_master_image: transwarp-5.2.1-final
     hbase_rest_image: transwarp-5.2.1-final
     hbase_rs_image: transwarp-5.2.1-final
     hbase_thrift_image: transwarp-5.2.1-final
-  release-version: transwarp-5.2.1-final
-- dependencies:
+  dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: yarn
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    hbase_master_image: transwarp-5.2.2-final
+    hbase_rest_image: transwarp-5.2.2-final
+    hbase_rs_image: transwarp-5.2.2-final
+    hbase_thrift_image: transwarp-5.2.2-final
+  dependencies:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: hdfs
@@ -81,13 +85,13 @@ releases:
     min-version: transwarp-5.2.2-final
     type: zookeeper
   final: true
+- release-version: transwarp-5.2
   image-version:
-    hbase_master_image: transwarp-5.2.2-final
-    hbase_rest_image: transwarp-5.2.2-final
-    hbase_rs_image: transwarp-5.2.2-final
-    hbase_thrift_image: transwarp-5.2.2-final
-  release-version: transwarp-5.2.2-final
-- dependencies:
+    hbase_master_image: transwarp-5.2
+    hbase_rest_image: transwarp-5.2
+    hbase_rs_image: transwarp-5.2
+    hbase_thrift_image: transwarp-5.2
+  dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
@@ -98,9 +102,3 @@ releases:
     min-version: transwarp-5.2
     type: zookeeper
   final: false
-  image-version:
-    hbase_master_image: transwarp-5.2
-    hbase_rest_image: transwarp-5.2
-    hbase_rs_image: transwarp-5.2
-    hbase_thrift_image: transwarp-5.2
-  release-version: transwarp-5.2

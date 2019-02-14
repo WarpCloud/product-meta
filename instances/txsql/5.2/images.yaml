@@ -11,53 +11,53 @@ images:
 - name: mysql
   variable: txsql_image
 releases:
-- dependencies: []
-  final: true
+- release-version: tdc-1.1.0-rc0
   image-version:
     txsql_image: tdc-1.1.0-rc0
-  release-version: tdc-1.1.0-rc0
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.0-rc1
   image-version:
     txsql_image: tdc-1.1.0-rc1
-  release-version: tdc-1.1.0-rc1
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.0-rc2
   image-version:
     txsql_image: tdc-1.1.0-rc2
-  release-version: tdc-1.1.0-rc2
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.0-rc3
   image-version:
     txsql_image: tdc-1.1.0-rc3
-  release-version: tdc-1.1.0-rc3
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.0-rc4
   image-version:
     txsql_image: tdc-1.1.0-rc4
-  release-version: tdc-1.1.0-rc4
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.0-final
   image-version:
     txsql_image: tdc-1.1.0-final
-  release-version: tdc-1.1.0-final
-- dependencies: []
+  dependencies: []
   final: true
+- release-version: tdc-1.1.1-rc0
   image-version:
     txsql_image: tdc-1.1.1-rc0
-  release-version: tdc-1.1.1-rc0
-- dependencies: []
-  final: false
+  dependencies: []
+  final: true
+- release-version: tdc-1.1
   image-version:
     txsql_image: tdc-1.1
-  release-version: tdc-1.1
-- dependencies: []
-  final: true
+  dependencies: []
+  final: false
+- release-version: tdc-1.2.0-rc0
   image-version:
     txsql_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies: []
-  final: false
+  dependencies: []
+  final: true
+- release-version: tdc-1.2
   image-version:
     txsql_image: tdc-1.2
-  release-version: tdc-1.2
+  dependencies: []
+  final: false

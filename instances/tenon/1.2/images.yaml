@@ -13,7 +13,11 @@ images:
 - name: scanner
   variable: scanner_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    abacus_image: tdc-1.2.0-rc0
+    scanner_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: txsql
@@ -24,11 +28,11 @@ releases:
     min-version: tdc-1.2.0-rc0
     type: gondar
   final: true
+- release-version: tdc-1.2
   image-version:
-    abacus_image: tdc-1.2.0-rc0
-    scanner_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    abacus_image: tdc-1.2
+    scanner_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: txsql
@@ -39,7 +43,3 @@ releases:
     min-version: tdc-1.2
     type: gondar
   final: false
-  image-version:
-    abacus_image: tdc-1.2
-    scanner_image: tdc-1.2
-  release-version: tdc-1.2

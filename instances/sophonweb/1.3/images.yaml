@@ -3,100 +3,98 @@ major-version: '1.3'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: sophonweb-1.3.0-rc3
-  min: sophonweb-1.3.0-rc0
 - max: sophonweb-1.3.0-final
-  min: sophonweb-1.3.0-final
+  min: sophonweb-1.3.0-rc0
 - max: sophonweb-1.3
   min: sophonweb-1.3
 images:
 - name: sophon-web
   variable: sophon_server_image
 releases:
-- dependencies:
+- release-version: sophonweb-1.3.0-rc3
+  image-version:
+    sophon_server_image: sophonweb-1.3.0-rc3
+  dependencies:
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: hdfs
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: yarn
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: zookeeper
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: elasticsearch
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: hyperbase
   - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc2
     type: inceptor
-  - max-version: tdc-1.1.0-rc2
-    min-version: tdc-1.1.0-rc0
+  - max-version: tdc-1.1.0-rc1
+    min-version: tdc-1.1.0-rc1
     type: txsql
   - max-version: sophonweb-1.3.0-rc3
     min-version: sophonweb-1.3.0-rc3
     type: redis
   final: true
+- release-version: sophonweb-1.3.0-final
   image-version:
-    sophon_server_image: sophonweb-1.3.0-rc3
-  release-version: sophonweb-1.3.0-rc3
-- dependencies:
-  - max-version: transwarp-5.2.2-final
+    sophon_server_image: sophonweb-1.3.0-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-5.2.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: yarn
-  - max-version: transwarp-5.2.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-5.2.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: transwarp-5.2.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hyperbase
-  - max-version: transwarp-5.2.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: tdc-1.2.0-final
-    min-version: tdc-1.1.0-rc0
+  - max-version: tdc-1.2.1-rc1
+    min-version: tdc-1.1.0-rc2
     type: txsql
   - max-version: sophonweb-1.3.0-final
     min-version: sophonweb-1.3.0-final
     type: redis
   final: true
+- release-version: sophonweb-1.3
   image-version:
-    sophon_server_image: sophonweb-1.3.0-final
-  release-version: sophonweb-1.3.0-final
-- dependencies:
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+    sophon_server_image: sophonweb-1.3
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: hdfs
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: yarn
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: zookeeper
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: elasticsearch
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: hyperbase
-  - max-version: transwarp-5.2
-    min-version: transwarp-5.1
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: inceptor
-  - max-version: tdc-1.2
-    min-version: tdc-1.0
+  - max-version: tdc-2.0
+    min-version: tdc-1.1
     type: txsql
   - max-version: sophonweb-1.3
     min-version: sophonweb-1.3
     type: redis
   final: false
-  image-version:
-    sophon_server_image: sophonweb-1.3
-  release-version: sophonweb-1.3

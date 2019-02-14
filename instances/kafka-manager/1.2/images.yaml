@@ -11,18 +11,21 @@ images:
 - name: kafka-manager
   variable: kafka_manager_image
 releases:
-- dependencies:
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: kafka
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: zookeeper
-  final: true
+- release-version: tdc-1.2.0-rc0
   image-version:
     kafka_manager_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+  dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: kafka
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  final: true
+- release-version: tdc-1.2
+  image-version:
+    kafka_manager_image: tdc-1.2
+  dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: kafka
@@ -30,6 +33,3 @@ releases:
     min-version: transwarp-5.2
     type: zookeeper
   final: false
-  image-version:
-    kafka_manager_image: tdc-1.2
-  release-version: tdc-1.2

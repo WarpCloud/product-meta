@@ -11,7 +11,10 @@ images:
 - name: logstash
   variable: logstash_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    logstash_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: kafka
@@ -19,13 +22,13 @@ releases:
     min-version: tdc-1.2.0-rc0
     type: elasticsearch
   - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.1-final
     type: zookeeper
   final: true
+- release-version: tdc-1.2
   image-version:
-    logstash_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    logstash_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: kafka
@@ -36,6 +39,3 @@ releases:
     min-version: transwarp-5.2
     type: zookeeper
   final: false
-  image-version:
-    logstash_image: tdc-1.2
-  release-version: tdc-1.2

@@ -3,14 +3,14 @@ major-version: '3.12'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: "3.12.1"
-  min: "3.12.1"
+- max: 3.12.1
+  min: 3.12.1
 images:
 - name: nexus3
   variable: nexus_image
 releases:
-- dependencies: []
-  final: true
+- release-version: 3.12.1
   image-version:
-    nexus_image: "3.12.1"
-  release-version: "3.12.1"
+    nexus_image: 3.12.1
+  dependencies: []
+  final: true

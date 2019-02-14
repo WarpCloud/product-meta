@@ -11,7 +11,10 @@ images:
 - name: tcc
   variable: tcc_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    tcc_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: txsql
@@ -22,10 +25,10 @@ releases:
     min-version: tdc-1.2.0-rc0
     type: guardian-cas
   final: true
+- release-version: tdc-1.2
   image-version:
-    tcc_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    tcc_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: txsql
@@ -36,6 +39,3 @@ releases:
     min-version: tdc-1.2
     type: guardian-cas
   final: false
-  image-version:
-    tcc_image: tdc-1.2
-  release-version: tdc-1.2

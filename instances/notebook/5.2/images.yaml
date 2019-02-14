@@ -3,59 +3,60 @@ major-version: '5.2'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: transwarp-5.2.1-rc2
-  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2.2-final
-  min: transwarp-5.2.1-final
+  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2
   min: transwarp-5.2
 images:
 - name: discover-notebook
   variable: notebook_image
 releases:
-- dependencies:
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: yarn
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: localcran
-  final: true
+- release-version: transwarp-5.2.1-rc0
   image-version:
     notebook_image: transwarp-5.2.1-rc0
-  release-version: transwarp-5.2.1-rc0
-- dependencies:
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  dependencies:
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: hdfs
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: yarn
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: localcran
   final: true
+- release-version: transwarp-5.2.1-rc2
   image-version:
     notebook_image: transwarp-5.2.1-rc2
-  release-version: transwarp-5.2.1-rc2
-- dependencies:
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  dependencies:
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: hdfs
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: yarn
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: localcran
   final: true
+- release-version: transwarp-5.2.1-final
   image-version:
     notebook_image: transwarp-5.2.1-final
-  release-version: transwarp-5.2.1-final
-- dependencies:
+  dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: yarn
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: localcran
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    notebook_image: transwarp-5.2.2-final
+  dependencies:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: hdfs
@@ -66,10 +67,10 @@ releases:
     min-version: transwarp-5.2.2-final
     type: localcran
   final: true
+- release-version: transwarp-5.2
   image-version:
-    notebook_image: transwarp-5.2.2-final
-  release-version: transwarp-5.2.2-final
-- dependencies:
+    notebook_image: transwarp-5.2
+  dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
@@ -80,6 +81,3 @@ releases:
     min-version: transwarp-5.2
     type: localcran
   final: false
-  image-version:
-    notebook_image: transwarp-5.2
-  release-version: transwarp-5.2
