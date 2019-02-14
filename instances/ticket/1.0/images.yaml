@@ -3,118 +3,110 @@ major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
-  - max: tdc-1.0.0-rc9
-    min: tdc-1.0.0-rc0
-  - max: tdc-1.0
-    min: tdc-1.0
+- max: tdc-1.0.0-rc9
+  min: tdc-1.0.0-rc0
+- max: tdc-1.0
+  min: tdc-1.0
 images:
-  - name: ticket
-    variable: ticket_image
+- name: ticket
+  variable: ticket_image
 releases:
-  - dependencies:
-      - max-version: tdc-1.0.0-rc2
-        min-version: tdc-1.0.0-rc2
-        type: txsql
-      - max-version: tdc-1.0.0-rc2
-        min-version: tdc-1.0.0-rc2
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc2
-    release-version: tdc-1.0.0-rc2
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc3
-        min-version: tdc-1.0.0-rc3
-        type: txsql
-      - max-version: tdc-1.0.0-rc3
-        min-version: tdc-1.0.0-rc3
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc3
-    release-version: tdc-1.0.0-rc3
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc4
-        min-version: tdc-1.0.0-rc4
-        type: txsql
-      - max-version: tdc-1.0.0-rc4
-        min-version: tdc-1.0.0-rc4
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc4
-    release-version: tdc-1.0.0-rc4
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc5
-        min-version: tdc-1.0.0-rc5
-        type: txsql
-      - max-version: tdc-1.0.0-rc5
-        min-version: tdc-1.0.0-rc5
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc5
-    release-version: tdc-1.0.0-rc5
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc6
-        min-version: tdc-1.0.0-rc6
-        type: txsql
-      - max-version: tdc-1.0.0-rc6
-        min-version: tdc-1.0.0-rc6
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc6
-    release-version: tdc-1.0.0-rc6
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc7
-        min-version: tdc-1.0.0-rc7
-        type: txsql
-      - max-version: tdc-1.0.0-rc7
-        min-version: tdc-1.0.0-rc7
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc7
-    release-version: tdc-1.0.0-rc7
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc8
-        min-version: tdc-1.0.0-rc8
-        type: txsql
-      - max-version: tdc-1.0.0-rc8
-        min-version: tdc-1.0.0-rc8
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc8
-    release-version: tdc-1.0.0-rc8
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc9
-        min-version: tdc-1.0.0-rc9
-        type: txsql
-      - max-version: tdc-1.0.0-rc9
-        min-version: tdc-1.0.0-rc9
-        type: notification
-    final: true
-    image-version:
-      ticket_image: tdc-1.0.0-rc9
-    release-version: tdc-1.0.0-rc9
-
-  - dependencies:
-      - max-version: tdc-1.0
-        min-version: tdc-1.0
-        type: txsql
-      - max-version: tdc-1.0
-        min-version: tdc-1.0
-        type: notification
-    final: false
-    image-version:
-      ticket_image: tdc-1.0
-    release-version: tdc-1.0
+- release-version: tdc-1.0.0-rc2
+  image-version:
+    ticket_image: tdc-1.0.0-rc2
+  dependencies:
+  - max-version: tdc-1.0.0-rc2
+    min-version: tdc-1.0.0-rc2
+    type: txsql
+  - max-version: tdc-1.0.0-rc2
+    min-version: tdc-1.0.0-rc2
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc3
+  image-version:
+    ticket_image: tdc-1.0.0-rc3
+  dependencies:
+  - max-version: tdc-1.0.0-rc3
+    min-version: tdc-1.0.0-rc3
+    type: txsql
+  - max-version: tdc-1.0.0-rc3
+    min-version: tdc-1.0.0-rc3
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc4
+  image-version:
+    ticket_image: tdc-1.0.0-rc4
+  dependencies:
+  - max-version: tdc-1.0.0-rc4
+    min-version: tdc-1.0.0-rc4
+    type: txsql
+  - max-version: tdc-1.0.0-rc4
+    min-version: tdc-1.0.0-rc4
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc5
+  image-version:
+    ticket_image: tdc-1.0.0-rc5
+  dependencies:
+  - max-version: tdc-1.0.0-rc5
+    min-version: tdc-1.0.0-rc5
+    type: txsql
+  - max-version: tdc-1.0.0-rc5
+    min-version: tdc-1.0.0-rc5
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc6
+  image-version:
+    ticket_image: tdc-1.0.0-rc6
+  dependencies:
+  - max-version: tdc-1.0.0-rc6
+    min-version: tdc-1.0.0-rc6
+    type: txsql
+  - max-version: tdc-1.0.0-rc6
+    min-version: tdc-1.0.0-rc6
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc7
+  image-version:
+    ticket_image: tdc-1.0.0-rc7
+  dependencies:
+  - max-version: tdc-1.0.0-rc7
+    min-version: tdc-1.0.0-rc7
+    type: txsql
+  - max-version: tdc-1.0.0-rc7
+    min-version: tdc-1.0.0-rc7
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc8
+  image-version:
+    ticket_image: tdc-1.0.0-rc8
+  dependencies:
+  - max-version: tdc-1.0.0-rc8
+    min-version: tdc-1.0.0-rc8
+    type: txsql
+  - max-version: tdc-1.0.0-rc8
+    min-version: tdc-1.0.0-rc8
+    type: notification
+  final: true
+- release-version: tdc-1.0.0-rc9
+  image-version:
+    ticket_image: tdc-1.0.0-rc9
+  dependencies:
+  - max-version: tdc-1.0.0-rc9
+    min-version: tdc-1.0.0-rc9
+    type: txsql
+  - max-version: tdc-1.0.0-rc9
+    min-version: tdc-1.0.0-rc9
+    type: notification
+  final: true
+- release-version: tdc-1.0
+  image-version:
+    ticket_image: tdc-1.0
+  dependencies:
+  - max-version: tdc-1.0
+    min-version: tdc-1.0
+    type: txsql
+  - max-version: tdc-1.0
+    min-version: tdc-1.0
+    type: notification
+  final: false

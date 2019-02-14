@@ -3,96 +3,91 @@ major-version: '5.1'
 min-tdc-version: tdc-1.0.0-rc0
 max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
-  - max: transwarp-5.1.4-final
-    min: transwarp-5.1.0-final
-  - max: transwarp-5.1
-    min: transwarp-5.1
+- max: transwarp-5.1.4-final
+  min: transwarp-5.1.0-final
+- max: transwarp-5.1
+  min: transwarp-5.1
 images:
-  - name: hdfs
-    variable: hdfs_name_image
-  - name: hdfs
-    variable: hdfs_zkfc_image
-  - name: hdfs
-    variable: hdfs_journal_image
-  - name: hdfs
-    variable: hdfs_data_image
-  - name: httpfs
-    variable: hdfs_httpfs_image
+- name: hdfs
+  variable: hdfs_name_image
+- name: hdfs
+  variable: hdfs_zkfc_image
+- name: hdfs
+  variable: hdfs_journal_image
+- name: hdfs
+  variable: hdfs_data_image
+- name: httpfs
+  variable: hdfs_httpfs_image
 releases:
-  - dependencies:
-    - max-version: transwarp-5.1.0-final
-      min-version: transwarp-5.1.0-final
-      type: zookeeper
-    final: true
-    image-version:
-      hdfs_data_image: transwarp-5.1.0-final
-      hdfs_httpfs_image: transwarp-5.1.0-final
-      hdfs_journal_image: transwarp-5.1.0-final
-      hdfs_name_image: transwarp-5.1.0-final
-      hdfs_zkfc_image: transwarp-5.1.0-final
-    release-version: transwarp-5.1.0-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.1-final
-      min-version: transwarp-5.1.1-final
-      type: zookeeper
-    final: true
-    image-version:
-      hdfs_data_image: transwarp-5.1.1-final
-      hdfs_httpfs_image: transwarp-5.1.1-final
-      hdfs_journal_image: transwarp-5.1.1-final
-      hdfs_name_image: transwarp-5.1.1-final
-      hdfs_zkfc_image: transwarp-5.1.1-final
-    release-version: transwarp-5.1.1-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.2-final
-      min-version: transwarp-5.1.2-final
-      type: zookeeper
-    final: true
-    image-version:
-      hdfs_data_image: transwarp-5.1.2-final
-      hdfs_httpfs_image: transwarp-5.1.2-final
-      hdfs_journal_image: transwarp-5.1.2-final
-      hdfs_name_image: transwarp-5.1.2-final
-      hdfs_zkfc_image: transwarp-5.1.2-final
-    release-version: transwarp-5.1.2-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.3-final
-      min-version: transwarp-5.1.3-final
-      type: zookeeper
-    final: true
-    image-version:
-      hdfs_data_image: transwarp-5.1.3-final
-      hdfs_httpfs_image: transwarp-5.1.3-final
-      hdfs_journal_image: transwarp-5.1.3-final
-      hdfs_name_image: transwarp-5.1.3-final
-      hdfs_zkfc_image: transwarp-5.1.3-final
-    release-version: transwarp-5.1.3-final
-
-  - dependencies:
-    - max-version: transwarp-5.1.4-final
-      min-version: transwarp-5.1.4-final
-      type: zookeeper
-    final: true
-    image-version:
-      hdfs_data_image: transwarp-5.1.4-final
-      hdfs_httpfs_image: transwarp-5.1.4-final
-      hdfs_journal_image: transwarp-5.1.4-final
-      hdfs_name_image: transwarp-5.1.4-final
-      hdfs_zkfc_image: transwarp-5.1.4-final
-    release-version: transwarp-5.1.4-final
-
-  - dependencies:
-    - max-version: transwarp-5.1
-      min-version: transwarp-5.1
-      type: zookeeper
-    final: false
-    image-version:
-      hdfs_data_image: transwarp-5.1
-      hdfs_httpfs_image: transwarp-5.1
-      hdfs_journal_image: transwarp-5.1
-      hdfs_name_image: transwarp-5.1
-      hdfs_zkfc_image: transwarp-5.1
-    release-version: transwarp-5.1
+- release-version: transwarp-5.1.0-final
+  image-version:
+    hdfs_data_image: transwarp-5.1.0-final
+    hdfs_httpfs_image: transwarp-5.1.0-final
+    hdfs_journal_image: transwarp-5.1.0-final
+    hdfs_name_image: transwarp-5.1.0-final
+    hdfs_zkfc_image: transwarp-5.1.0-final
+  dependencies:
+  - max-version: transwarp-5.1.0-final
+    min-version: transwarp-5.1.0-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.1.1-final
+  image-version:
+    hdfs_data_image: transwarp-5.1.1-final
+    hdfs_httpfs_image: transwarp-5.1.1-final
+    hdfs_journal_image: transwarp-5.1.1-final
+    hdfs_name_image: transwarp-5.1.1-final
+    hdfs_zkfc_image: transwarp-5.1.1-final
+  dependencies:
+  - max-version: transwarp-5.1.1-final
+    min-version: transwarp-5.1.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.1.2-final
+  image-version:
+    hdfs_data_image: transwarp-5.1.2-final
+    hdfs_httpfs_image: transwarp-5.1.2-final
+    hdfs_journal_image: transwarp-5.1.2-final
+    hdfs_name_image: transwarp-5.1.2-final
+    hdfs_zkfc_image: transwarp-5.1.2-final
+  dependencies:
+  - max-version: transwarp-5.1.2-final
+    min-version: transwarp-5.1.2-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.1.3-final
+  image-version:
+    hdfs_data_image: transwarp-5.1.3-final
+    hdfs_httpfs_image: transwarp-5.1.3-final
+    hdfs_journal_image: transwarp-5.1.3-final
+    hdfs_name_image: transwarp-5.1.3-final
+    hdfs_zkfc_image: transwarp-5.1.3-final
+  dependencies:
+  - max-version: transwarp-5.1.3-final
+    min-version: transwarp-5.1.3-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.1.4-final
+  image-version:
+    hdfs_data_image: transwarp-5.1.4-final
+    hdfs_httpfs_image: transwarp-5.1.4-final
+    hdfs_journal_image: transwarp-5.1.4-final
+    hdfs_name_image: transwarp-5.1.4-final
+    hdfs_zkfc_image: transwarp-5.1.4-final
+  dependencies:
+  - max-version: transwarp-5.1.4-final
+    min-version: transwarp-5.1.4-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.1
+  image-version:
+    hdfs_data_image: transwarp-5.1
+    hdfs_httpfs_image: transwarp-5.1
+    hdfs_journal_image: transwarp-5.1
+    hdfs_name_image: transwarp-5.1
+    hdfs_zkfc_image: transwarp-5.1
+  dependencies:
+  - max-version: transwarp-5.1
+    min-version: transwarp-5.1
+    type: zookeeper
+  final: false

@@ -3,14 +3,14 @@ major-version: '2.6'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: "2.6.2"
-  min: "2.6.2"
+- max: 2.6.2
+  min: 2.6.2
 images:
 - name: registry
   variable: harbor_image
 releases:
-- dependencies: []
-  final: true
+- release-version: 2.6.2
   image-version:
-    harbor_image: "2.6.2"
-  release-version: "2.6.2"
+    harbor_image: 2.6.2
+  dependencies: []
+  final: true

@@ -11,30 +11,33 @@ images:
 - name: governor
   variable: governor_image
 releases:
-- dependencies:
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: hdfs
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: hyperbase
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: kafka
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: notification
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: elasticsearch
-  - max-version: tdc-1.2.0-rc0
-    min-version: tdc-1.1.0-rc0
-    type: txsql
-  final: true
+- release-version: transwarp-5.2.2-final
   image-version:
     governor_image: transwarp-5.2.2-final
-  release-version: transwarp-5.2.2-final
-- dependencies:
+  dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: hdfs
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: hyperbase
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: kafka
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: notification
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: elasticsearch
+  - max-version: tdc-1.2.1-rc1
+    min-version: tdc-1.1.0-rc4
+    type: txsql
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    governor_image: transwarp-5.2
+  dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
@@ -50,10 +53,7 @@ releases:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: elasticsearch
-  - max-version: tdc-1.2
+  - max-version: tdc-2.0
     min-version: tdc-1.1
     type: txsql
   final: false
-  image-version:
-    governor_image: transwarp-5.2
-  release-version: transwarp-5.2

@@ -11,13 +11,13 @@ images:
 - name: simmail
   variable: simmail_image
 releases:
-- dependencies: []
-  final: true
+- release-version: tdc-1.2.0-rc0
   image-version:
     simmail_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies: []
-  final: false
+  dependencies: []
+  final: true
+- release-version: tdc-1.2
   image-version:
     simmail_image: tdc-1.2
-  release-version: tdc-1.2
+  dependencies: []
+  final: false

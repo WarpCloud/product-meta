@@ -3,14 +3,14 @@ major-version: '2.11'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: "2.11"
-  min: "2.11"
+- max: '2.11'
+  min: '2.11'
 images:
 - name: jenkins
   variable: jenkins_image
 releases:
-- dependencies: []
-  final: true
+- release-version: '2.11'
   image-version:
-    jenkins_image: "2.11"
-  release-version: "2.11"
+    jenkins_image: '2.11'
+  dependencies: []
+  final: true

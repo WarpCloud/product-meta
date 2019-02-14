@@ -3,10 +3,8 @@ major-version: '5.2'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-- max: transwarp-5.2.1-rc2
-  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2.2-final
-  min: transwarp-5.2.1-final
+  min: transwarp-5.2.1-rc0
 - max: transwarp-5.2
   min: transwarp-5.2
 images:
@@ -19,49 +17,55 @@ images:
 - name: yarn
   variable: timeline_server_image
 releases:
-- dependencies:
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: zookeeper
-  final: true
+- release-version: transwarp-5.2.1-rc0
   image-version:
     history_server_image: transwarp-5.2.1-rc0
     node_manager_image: transwarp-5.2.1-rc0
     resource_manager_image: transwarp-5.2.1-rc0
     timeline_server_image: transwarp-5.2.1-rc0
-  release-version: transwarp-5.2.1-rc0
-- dependencies:
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  dependencies:
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: hdfs
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
+  - max-version: transwarp-5.2.1-rc0
+    min-version: transwarp-5.2.1-rc0
     type: zookeeper
   final: true
+- release-version: transwarp-5.2.1-rc2
   image-version:
     history_server_image: transwarp-5.2.1-rc2
     node_manager_image: transwarp-5.2.1-rc2
     resource_manager_image: transwarp-5.2.1-rc2
     timeline_server_image: transwarp-5.2.1-rc2
-  release-version: transwarp-5.2.1-rc2
-- dependencies:
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  dependencies:
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: hdfs
-  - max-version: transwarp-5.2.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: transwarp-5.2.1-rc2
+    min-version: transwarp-5.2.1-rc2
     type: zookeeper
   final: true
+- release-version: transwarp-5.2.1-final
   image-version:
     history_server_image: transwarp-5.2.1-final
     node_manager_image: transwarp-5.2.1-final
     resource_manager_image: transwarp-5.2.1-final
     timeline_server_image: transwarp-5.2.1-final
-  release-version: transwarp-5.2.1-final
-- dependencies:
+  dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    history_server_image: transwarp-5.2.2-final
+    node_manager_image: transwarp-5.2.2-final
+    resource_manager_image: transwarp-5.2.2-final
+    timeline_server_image: transwarp-5.2.2-final
+  dependencies:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: hdfs
@@ -69,13 +73,13 @@ releases:
     min-version: transwarp-5.2.2-final
     type: zookeeper
   final: true
+- release-version: transwarp-5.2
   image-version:
-    history_server_image: transwarp-5.2.2-final
-    node_manager_image: transwarp-5.2.2-final
-    resource_manager_image: transwarp-5.2.2-final
-    timeline_server_image: transwarp-5.2.2-final
-  release-version: transwarp-5.2.2-final
-- dependencies:
+    history_server_image: transwarp-5.2
+    node_manager_image: transwarp-5.2
+    resource_manager_image: transwarp-5.2
+    timeline_server_image: transwarp-5.2
+  dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
@@ -83,9 +87,3 @@ releases:
     min-version: transwarp-5.2
     type: zookeeper
   final: false
-  image-version:
-    history_server_image: transwarp-5.2
-    node_manager_image: transwarp-5.2
-    resource_manager_image: transwarp-5.2
-    timeline_server_image: transwarp-5.2
-  release-version: transwarp-5.2

@@ -11,7 +11,10 @@ images:
 - name: ticket
   variable: ticket_image
 releases:
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    ticket_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: txsql
@@ -19,10 +22,10 @@ releases:
     min-version: tdc-1.2.0-rc0
     type: notification
   final: true
+- release-version: tdc-1.2
   image-version:
-    ticket_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    ticket_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: txsql
@@ -30,6 +33,3 @@ releases:
     min-version: tdc-1.2
     type: notification
   final: false
-  image-version:
-    ticket_image: tdc-1.2
-  release-version: tdc-1.2

@@ -3,14 +3,14 @@ major-version: '12.1'
 min-tdc-version: tdc-1.1.0-rc0
 max-tdc-version: tdc-1.2.0-final
 hot-fix-ranges:
-  - max: "12.1"
-    min: "12.1"
+- max: '12.1'
+  min: '12.1'
 images:
-  - name: ogg
-    variable: ogg_image
+- name: ogg
+  variable: ogg_image
 releases:
-  - dependencies: []
-    final: true
-    image-version:
-      ogg_image: "12.1"
-    release-version: "12.1"
+- release-version: '12.1'
+  image-version:
+    ogg_image: '12.1'
+  dependencies: []
+  final: true

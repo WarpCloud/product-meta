@@ -11,20 +11,19 @@ images:
 - name: kibana
   variable: kibana_image
 releases:
-# Kibana for TDC
-- dependencies:
+- release-version: tdc-1.2.0-rc0
+  image-version:
+    kibana_image: tdc-1.2.0-rc0
+  dependencies:
   - max-version: tdc-1.2.0-rc0
     min-version: tdc-1.2.0-rc0
     type: elasticsearch
   final: true
+- release-version: tdc-1.2
   image-version:
-    kibana_image: tdc-1.2.0-rc0
-  release-version: tdc-1.2.0-rc0
-- dependencies:
+    kibana_image: tdc-1.2
+  dependencies:
   - max-version: tdc-1.2
     min-version: tdc-1.2
     type: elasticsearch
   final: false
-  image-version:
-    kibana_image: tdc-1.2
-  release-version: tdc-1.2

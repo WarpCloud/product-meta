@@ -3,136 +3,119 @@ major-version: '1.0'
 min-tdc-version: tdc-1.0.0-rc0
 max-tdc-version: tdc-1.0.0-final
 hot-fix-ranges:
-  - max: transwarp-5.1.4-final
-    min: transwarp-5.1.0-final
-  - max: transwarp-5.1
-    min: transwarp-5.1
-  - max: tdc-1.0.0-rc9
-    min: tdc-1.0.0-rc0
-  - max: tdc-1.0
-    min: tdc-1.0
+- max: transwarp-5.1.4-final
+  min: transwarp-5.1.0-final
+- max: tdc-1.0.0-rc9
+  min: tdc-1.0.0-rc0
+- max: transwarp-5.1
+  min: transwarp-5.1
+- max: tdc-1.0
+  min: tdc-1.0
 images:
-  - name: kibana
-    variable: kibana_image
+- name: kibana
+  variable: kibana_image
 releases:
-
-# Kibana for TDH
-
-  - dependencies:
-      - max-version: transwarp-5.1.1-final
-        min-version: transwarp-5.1.1-final
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: transwarp-5.1.1-final
-    release-version: transwarp-5.1.1-final
-
-  - dependencies:
-      - max-version: transwarp-5.1.2-final
-        min-version: transwarp-5.1.2-final
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: transwarp-5.1.2-final
-    release-version: transwarp-5.1.2-final
-
-  - dependencies:
-      - max-version: transwarp-5.1.3-final
-        min-version: transwarp-5.1.3-final
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: transwarp-5.1.3-final
-    release-version: transwarp-5.1.3-final
-
-  - dependencies:
-      - max-version: transwarp-5.1.4-final
-        min-version: transwarp-5.1.4-final
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: transwarp-5.1.4-final
-    release-version: transwarp-5.1.4-final
-
-# Kibana for TDC
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc2
-        min-version: tdc-1.0.0-rc2
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc2
-    release-version: tdc-1.0.0-rc2
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc3
-        min-version: tdc-1.0.0-rc3
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc3
-    release-version: tdc-1.0.0-rc3
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc4
-        min-version: tdc-1.0.0-rc4
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc4
-    release-version: tdc-1.0.0-rc4
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc5
-        min-version: tdc-1.0.0-rc5
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc5
-    release-version: tdc-1.0.0-rc5
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc6
-        min-version: tdc-1.0.0-rc6
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc6
-    release-version: tdc-1.0.0-rc6
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc7
-        min-version: tdc-1.0.0-rc7
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc7
-    release-version: tdc-1.0.0-rc7
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc8
-        min-version: tdc-1.0.0-rc8
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc8
-    release-version: tdc-1.0.0-rc8
-
-  - dependencies:
-      - max-version: tdc-1.0.0-rc9
-        min-version: tdc-1.0.0-rc9
-        type: elasticsearch
-    final: true
-    image-version:
-      kibana_image: tdc-1.0.0-rc9
-    release-version: tdc-1.0.0-rc9
-
-  - dependencies:
-      - max-version: tdc-1.0
-        min-version: tdc-1.0
-        type: elasticsearch
-    final: false
-    image-version:
-      kibana_image: tdc-1.0
-    release-version: tdc-1.0
+- release-version: tdc-1.0.0-rc2
+  image-version:
+    kibana_image: tdc-1.0.0-rc2
+  dependencies:
+  - max-version: tdc-1.0.0-rc2
+    min-version: tdc-1.0.0-rc2
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc3
+  image-version:
+    kibana_image: tdc-1.0.0-rc3
+  dependencies:
+  - max-version: tdc-1.0.0-rc3
+    min-version: tdc-1.0.0-rc3
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc4
+  image-version:
+    kibana_image: tdc-1.0.0-rc4
+  dependencies:
+  - max-version: tdc-1.0.0-rc4
+    min-version: tdc-1.0.0-rc4
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc5
+  image-version:
+    kibana_image: tdc-1.0.0-rc5
+  dependencies:
+  - max-version: tdc-1.0.0-rc5
+    min-version: tdc-1.0.0-rc5
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc6
+  image-version:
+    kibana_image: tdc-1.0.0-rc6
+  dependencies:
+  - max-version: tdc-1.0.0-rc6
+    min-version: tdc-1.0.0-rc6
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc7
+  image-version:
+    kibana_image: tdc-1.0.0-rc7
+  dependencies:
+  - max-version: tdc-1.0.0-rc7
+    min-version: tdc-1.0.0-rc7
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc8
+  image-version:
+    kibana_image: tdc-1.0.0-rc8
+  dependencies:
+  - max-version: tdc-1.0.0-rc8
+    min-version: tdc-1.0.0-rc8
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0.0-rc9
+  image-version:
+    kibana_image: tdc-1.0.0-rc9
+  dependencies:
+  - max-version: tdc-1.0.0-rc9
+    min-version: tdc-1.0.0-rc9
+    type: elasticsearch
+  final: true
+- release-version: tdc-1.0
+  image-version:
+    kibana_image: tdc-1.0
+  dependencies:
+  - max-version: tdc-1.0
+    min-version: tdc-1.0
+    type: elasticsearch
+  final: false
+- release-version: transwarp-5.1.1-final
+  image-version:
+    kibana_image: transwarp-5.1.1-final
+  dependencies:
+  - max-version: transwarp-5.1.1-final
+    min-version: transwarp-5.1.1-final
+    type: elasticsearch
+  final: true
+- release-version: transwarp-5.1.2-final
+  image-version:
+    kibana_image: transwarp-5.1.2-final
+  dependencies:
+  - max-version: transwarp-5.1.2-final
+    min-version: transwarp-5.1.2-final
+    type: elasticsearch
+  final: true
+- release-version: transwarp-5.1.3-final
+  image-version:
+    kibana_image: transwarp-5.1.3-final
+  dependencies:
+  - max-version: transwarp-5.1.3-final
+    min-version: transwarp-5.1.3-final
+    type: elasticsearch
+  final: true
+- release-version: transwarp-5.1.4-final
+  image-version:
+    kibana_image: transwarp-5.1.4-final
+  dependencies:
+  - max-version: transwarp-5.1.4-final
+    min-version: transwarp-5.1.4-final
+    type: elasticsearch
+  final: true
