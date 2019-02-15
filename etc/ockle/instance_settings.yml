@@ -355,6 +355,8 @@ tcc:
     principals:
       - user: HTTP
         type: spnego
+      - user: tcc
+        type: default
 
 tdt:
   resource:
