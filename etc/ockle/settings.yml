@@ -59,6 +59,11 @@ platform_requirements:
   - application_type: GNTDC
     chart_name: gntdc
 
+  - application_type: IGNITOR
+    chart_name: ignitor
+
+  - application_type: DIOCLES
+    chart_name: diocles
 # A list of applications registered for TDC platform.
 service_for_tdc:
   KONG:
