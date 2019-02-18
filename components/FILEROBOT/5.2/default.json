@@ -7,10 +7,6 @@
   "edition": "5.2",
   "name": "FILEROBOT-5.2",
   "resources": [
-    {
-      "type": "component",
-      "name": "component-filerobot.svg"
-    }
   ],
   "chart_name": "filerobot"
 }

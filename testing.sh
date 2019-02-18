@@ -21,5 +21,6 @@ pip3 install -r $PROJROOT/requirements-testing.txt\
 chmod +x $PROJROOT/tests/validate_instance_images.py
 python3 $PROJROOT/tests/flex_version.py
 python3 $PROJROOT/tests/validate_instance_images.py
-python3 $PROJROOT/tests/validate_component_value.py
-python3 $PROJROOT/tests/validate_product_value.py
+# python3 $PROJROOT/tests/validate_component_value.py
+python3 $PROJROOT/tests/validate_value.py
+python3 $PROJROOT/tests/validate_etc.py

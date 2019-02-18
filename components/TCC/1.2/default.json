@@ -1,9 +1,0 @@
-{
-  "name": "TCC-1.2",
-  "component_type": "TCC",
-  "source": "transwarp",
-  "description": "Transwarp Cloud Console",
-  "edition": "1.2",
-  "category": "SYSTEM",
-  "configs": []
-}

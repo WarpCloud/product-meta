@@ -1,7 +1,7 @@
 # A unified configuration interface for TDC instances.
 # Exampled data fields include:
 # ----
-#instance:
+#chart name:
 #  resource:
 #    replicas:
 #      - all instance needed replicas(ha+computing_unit+disks)
@@ -64,25 +64,12 @@ filerobot:
       - user: filerobot
         type: default
 
-gn-tenant:
+gntenant:
   resource:
     replicas:
       - gn_replicas
     ha:
       - gn_replicas
-
-#governor:
-#  database:
-#    - name: governor_txsql_db_name
-#  security:
-#    principals:
-#      - hbase
-#      - kafka
-#      - zookeeper
-#      - HTTP
-#    security_service:
-#      env_cfg: GUARDIAN_SERVICE_ID
-
 
 #governor-proxy:
 
@@ -98,27 +85,6 @@ guardian:
     ha:
       - guardian
       - casserver
-
-#guardian-cas:
-#  resource:
-#    replicas:
-#      - guardian_server_replicas
-#      - cas_server_replicas
-#    ha:
-#      - guardian_server_replicas
-#      - cas_server_replicas
-#  configuration:
-#    environment:
-#      - apacheds_env_list
-#      - guardian_server_env_list
-#      - cas_config_server_env_list
-#      - cas_server_env_list
-#      - cas_mgnt_server_env_list
-#  database:
-#    - type: guardian
-#      name: guardian_database_name
-#    - type: cas
-#      name: cas_database_name
 
 hdfs:
   resource:
@@ -429,62 +395,6 @@ smartbi:
       - smartbi_tomcat_replicas
     ha:
       - smartbi_tomcat_replicas
-
-#qa-jenkins:
-#  resource:
-#    replicas:
-#      - jenkins_replicas
-#    ha:
-#      - jenkins_replicas
-#  configuration:
-#    environment:
-#      - jenkins_env_list
-#  image:
-#    default:
-#      - jenkins_image
-
-#qa-nexus:
-#  resource:
-#    replicas:
-#      - nexus_replicas
-#    ha:
-#      - nexus_replicas
-#  configuration:
-#    environment:
-#      - nexus_env_list
-#  image:
-#    default:
-#      - nexus_image
-
-#gitlab:
-#  resource:
-#    replicas:
-#      - gitlab_replicas
-#    ha:
-#      - gitlab_replicas
-#  configuration:
-#    environment:
-#      - gitlab_env_list
-#      - redis_env_list
-#      - postgresql_env_list
-#  image:
-#    default:
-#      - gitlab_image
-#      - redis_image
-#      - postgresql_image
-
-#harbor:
-#  resource:
-#    replicas:
-#      - harbor_replicas
-#    ha:
-#      - harbor_replicas
-#  configuration:
-#    environment:
-#      - harbor_env_list
-#  image:
-#    default:
-#      - harbor_image
 
 catalog:
   security:

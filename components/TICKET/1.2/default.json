@@ -1,9 +1,0 @@
-{
-  "name": "TICKET-1.2",
-  "component_type": "TICKET",
-  "source": "transwarp",
-  "description": "Ticket management service",
-  "edition": "1.2",
-  "category": "SYSTEM",
-  "configs": []
-}
