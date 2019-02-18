@@ -14,12 +14,10 @@ default_static_resources:
 
 # A list of appliations that accept advanced configurations.
 adv_config_white_list:
-  - DISCOVER
   - KAFKA
   - HDFS
   - HYPERBASE
   - INCEPTOR
-  - NOTEBOOK
   - RUBIK
   - SLIPSTREAM
   - TRANSPORTER
@@ -85,19 +83,6 @@ service_description:
         display_name_en: Pilot
         description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
         description_en: "A light-weight and flexible web-based reporting tool. Supporting self-service analysis; providing over twenty report graphs."
-
-  notebook:
-    - port: 8686
-      select_name: notebook
-      protocol: HTTP
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-notebook.svg
-      display:
-        display_name: "数据分析交互平台"
-        display_name_en: Notebook
-        description: "轻量的科学计算开发工具。支持用R、Scala和SQL做分析，提供方便的交互界面实现机器学习。"
-        description_en: "A light-weight development tool for data science. Supporting R, Scala, and SQL; providing an interactive interface for machine learning."
 
   weblogic:
     - port: 7001

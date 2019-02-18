@@ -6,9 +6,6 @@ CODIS:
   codis_product_name: "default"
   codis_product_auth: ""
 
-DISCOVER:
-  discover_ldap_password: Transwarp01!
-
 GUARDIAN:
   guardian_ds_root_password: Transwarp01!
   guardian_ds_admin_password: "123"

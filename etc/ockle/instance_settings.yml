@@ -35,13 +35,6 @@ common:
     krb_realm: Transwarp_Realm
     krb_principal_suffix: Transwarp_Principal_Suffix
 
-
-discover:
-  security:
-    principals:
-      - user: discover
-        type: default
-
 elasticsearch:
   resource:
     replicas:
@@ -242,8 +235,6 @@ kong-dashboard:
     ha:
       - kong_dashboard_replicas
 
-#localcran:
-
 logstash:
   resource:
     replicas:
@@ -256,13 +247,6 @@ logstash:
         type: default
       - user: kafka
         type: stream
-
-#notebook:
-#  security:
-#    principals:
-#      - discover
-#    security_service:
-#      env_cfg: GUARDIAN_SERVICE_ID
 
 notification:
   resource:

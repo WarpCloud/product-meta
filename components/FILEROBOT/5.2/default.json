@@ -9,7 +9,7 @@
   "resources": [
     {
       "type": "component",
-      "name": "component-discover.svg"
+      "name": "component-filerobot.svg"
     }
   ],
   "chart_name": "filerobot"
