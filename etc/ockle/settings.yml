@@ -12,18 +12,6 @@ default_static_resources:
     - type: banner
       name: banner-default.png
 
-# A list of appliations that accept advanced configurations.
-adv_config_white_list:
-  - KAFKA
-  - HDFS
-  - HYPERBASE
-  - INCEPTOR
-  - RUBIK
-  - SLIPSTREAM
-  - TRANSPORTER
-  - YARN
-  - SOPHON
-
 # A list of configs shared by multiple instances
 instance_configs_sharing:
   - instance_type: rubik
@@ -62,16 +50,10 @@ platform_requirements:
 
   - application_type: DIOCLES
     chart_name: diocles
-# A list of applications registered for TDC platform.
-service_for_tdc:
-  KONG:
-    port: 8001
-    dashboard_port: 8080
-    protocol: HTTP
 
 # A list of services registered for development portal.
 service_description:
-  pilot:
+  pilot:  # chart name
     - port: 8086
       select_name: pilot
       protocol: HTTP
@@ -83,19 +65,6 @@ service_description:
         display_name_en: Pilot
         description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
         description_en: "A light-weight and flexible web-based reporting tool. Supporting self-service analysis; providing over twenty report graphs."
-
-  weblogic:
-    - port: 7001
-      select_name: weblogic-admin
-      protocol: HTTP
-      path: "/console"
-      require_gateway_registration: true
-      resource_name: component-weblogic.svg
-      display:
-        display_name: WebLogic
-        display_name_en: WebLogic
-        description: "开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。"
-        description_en: "Java EE application server."
 
   workflow:
     - port: 9091
@@ -123,19 +92,6 @@ service_description:
         description: "OLAP Cube工具。用于OLAP模型设计与实例化，支持多种数据源，加速多维度分析。"
         description_en: "A tool for OLAP cube model design and instantiation. Supporting multiple data sources; speeding up multidimensional analysis."
 
-  governer:
-    - port: 21000
-      select_name: governor
-      protocol: HTTP
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-governor.svg
-      display:
-        display_name: "数据治理"
-        display_name_en: Governor
-        description: "元数据管理工具。可集中化管理元数据，监控更改历史，进行数据血缘分析和影响分析。"
-        description_en: "A centralized metadata management tool. Monitoring change history; performing data lineage and impact analysis."
-
   governerproxy:
     - port: 9527
       select_name: governor-proxy
@@ -149,7 +105,7 @@ service_description:
         description: "数据共享分析工具，支持数据预览，申请，审批，下放，自助式查询，分析，报表展示，下载等功能。"
         description_en: "Data-sharing tool supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and download."
 
-  transporter:
+  tdt:
     - port: 8100
       select_name: tdt
       protocol: HTTP
@@ -254,7 +210,7 @@ service_description:
       require_gateway_registration: false
       alias: HiveServer2
 
-  search:
+  elasticsearch:
     - port: 9100
       select_name: "es-head"
       protocol: HTTP
@@ -360,68 +316,6 @@ service_description:
         display_name_en: "SmartBI"
         description: "企业级商业智能应用平台。"
         description_en: "Modern business intelligence platform."
-
-  jenkins:
-    - port: 8000
-      select_name: qa-jenkins
-      protocol: "HTTP"
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-jenkins.svg
-      display:
-        display_name: "Jenkins"
-        display_name_en: "Jenkins"
-        description: "Jenkins是一款由Java编写的开源的持续集成工具"
-        description_en: "Jenkins is an open source, continuous integration tool"
-
-  nexus:
-    - port: 8000
-      select_name: qa-nexus
-      protocol: "HTTP"
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-nexus.svg
-      external_add: "https//:172.16.3.234:80012"
-      display:
-        display_name: "Nexus"
-        display_name_en: "Nexus"
-        description: "Nexus是一个强大的仓库管理器"
-        description_en: "Nexus is a powerful Maven repository manager"
-
-  harbor:
-    - port: 5000
-      select_name: harbor
-      protocol: "HTTP"
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-harbor.svg
-      display:
-        display_name: "Harbor"
-        display_name_en: "Harbor"
-        description: "Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器"
-        description_en: "Harbor is an enterprise-level Registry server for storing and distributing Docker images"
-
-  gitlab:
-    - port: 8000
-      select_name: gitlab
-      protocol: "HTTP"
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-gitlab.svg
-      display:
-        display_name: "Gitlab"
-        display_name_en: "Gitlab"
-        description: "Gitlab 是一款专业的代码托管仓库"
-        description_en: "Gitlab is a professional code-managed repository"
-
-
-
-# A list of instances that need to open ha for default
-instance_open_ha:
-  - tcc
-#  - cas
-#  - guardian
-#  - guardian-cas
 
 component_type_display_priority:
   category:

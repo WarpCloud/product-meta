@@ -7,10 +7,6 @@
   "edition": "5.2",
   "name": "NOTIFICATION-5.2",
   "resources": [
-    {
-      "type": "component",
-      "name": "component-notification.svg"
-    }
   ],
   "chart_name": "notification"
 }

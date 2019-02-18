@@ -8,10 +8,6 @@
   "name": "METASTORE-5.2",
   "is_share": false,
   "resources": [
-    {
-      "type": "component",
-      "name": "component-metastore.svg"
-    }
   ],
   "chart_name": "metastore"
 }
