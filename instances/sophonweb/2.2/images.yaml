@@ -14,21 +14,27 @@ images:
   variable: sophon_driver_image
 - name: sophon-notebook-cpu
   variable: jupyter_cpu_image
-- name: sophon-notebook-gpu
+- name: sophon-web-ui
+  variable: sophon_server_ui_image
+- name: sophon-notebook-cpu
   variable: jupyter_gpu_image
+- name: sophon-apiserver
+  variable: api_server_image
 releases:
 - release-version: sophonweb-2.2.0-final
   image-version:
+    api_server_image: sophonweb-2.2.0-final
     jupyter_cpu_image: sophonweb-2.2.0-final
     jupyter_gpu_image: sophonweb-2.2.0-final
     sophon_driver_image: sophonweb-2.2.0-final
     sophon_server_image: sophonweb-2.2.0-final
+    sophon_server_ui_image: sophonweb-2.2.0-final
   dependencies:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: sophonweb-2.2.0-final
+    min-version: sophonweb-2.2.0-final
     type: yarn
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
@@ -42,8 +48,11 @@ releases:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: tdc-2.0.0-rc0
-    min-version: tdc-2.0.0-rc0
+  - max-version: sophonweb-2.2.0-final
+    min-version: sophonweb-2.2.0-final
+    type: workflow
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
@@ -51,16 +60,18 @@ releases:
   final: true
 - release-version: sophonweb-2.2
   image-version:
+    api_server_image: sophonweb-2.2
     jupyter_cpu_image: sophonweb-2.2
     jupyter_gpu_image: sophonweb-2.2
     sophon_driver_image: sophonweb-2.2
     sophon_server_image: sophonweb-2.2
+    sophon_server_ui_image: sophonweb-2.2
   dependencies:
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
     type: hdfs
-  - max-version: transwarp-6.0
-    min-version: transwarp-5.2
+  - max-version: sophonweb-2.2
+    min-version: sophonweb-2.2
     type: yarn
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
@@ -74,8 +85,11 @@ releases:
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
     type: inceptor
-  - max-version: tdc-2.0
-    min-version: tdc-2.0
+  - max-version: sophonweb-2.2
+    min-version: sophonweb-2.2
+    type: workflow
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: txsql
   - max-version: sophonweb-2.2
     min-version: sophonweb-2.2
