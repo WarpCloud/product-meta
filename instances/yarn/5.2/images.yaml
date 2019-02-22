@@ -1,10 +1,10 @@
 instance-type: yarn
 major-version: '5.2'
-min-tdc-version: tdc-1.1.0-rc0
-max-tdc-version: tdc-1.2.0-final
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
 hot-fix-ranges:
-- max: transwarp-5.2.2-final
-  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.1-final
 - max: transwarp-5.2
   min: transwarp-5.2
 images:
@@ -17,34 +17,6 @@ images:
 - name: yarn
   variable: timeline_server_image
 releases:
-- release-version: transwarp-5.2.1-rc0
-  image-version:
-    history_server_image: transwarp-5.2.1-rc0
-    node_manager_image: transwarp-5.2.1-rc0
-    resource_manager_image: transwarp-5.2.1-rc0
-    timeline_server_image: transwarp-5.2.1-rc0
-  dependencies:
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: zookeeper
-  final: true
-- release-version: transwarp-5.2.1-rc2
-  image-version:
-    history_server_image: transwarp-5.2.1-rc2
-    node_manager_image: transwarp-5.2.1-rc2
-    resource_manager_image: transwarp-5.2.1-rc2
-    timeline_server_image: transwarp-5.2.1-rc2
-  dependencies:
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: zookeeper
-  final: true
 - release-version: transwarp-5.2.1-final
   image-version:
     history_server_image: transwarp-5.2.1-final
@@ -71,6 +43,20 @@ releases:
     type: hdfs
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    history_server_image: transwarp-5.2.3-final
+    node_manager_image: transwarp-5.2.3-final
+    resource_manager_image: transwarp-5.2.3-final
+    timeline_server_image: transwarp-5.2.3-final
+  dependencies:
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: hdfs
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
     type: zookeeper
   final: true
 - release-version: transwarp-5.2

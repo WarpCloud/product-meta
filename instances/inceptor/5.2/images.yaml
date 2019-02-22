@@ -1,10 +1,10 @@
 instance-type: inceptor
 major-version: '5.2'
-min-tdc-version: tdc-1.1.0-rc0
-max-tdc-version: tdc-1.2.0-final
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
 hot-fix-ranges:
-- max: transwarp-5.2.2-final
-  min: transwarp-5.2.1-rc0
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.1-final
 - max: transwarp-5.2
   min: transwarp-5.2
 images:
@@ -13,54 +13,6 @@ images:
 - name: inceptor
   variable: inceptor_executor_image
 releases:
-- release-version: transwarp-5.2.1-rc0
-  image-version:
-    inceptor_executor_image: transwarp-5.2.1-rc0
-    inceptor_master_image: transwarp-5.2.1-rc0
-  dependencies:
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: metastore
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: zookeeper
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: hyperbase
-  - max-version: transwarp-5.2.1-rc0
-    min-version: transwarp-5.2.1-rc0
-    type: elasticsearch
-  - max-version: tdc-1.1.0-rc0
-    min-version: tdc-1.1.0-rc0
-    type: txsql
-  final: true
-- release-version: transwarp-5.2.1-rc2
-  image-version:
-    inceptor_executor_image: transwarp-5.2.1-rc2
-    inceptor_master_image: transwarp-5.2.1-rc2
-  dependencies:
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: metastore
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: hdfs
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: zookeeper
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: hyperbase
-  - max-version: transwarp-5.2.1-rc2
-    min-version: transwarp-5.2.1-rc2
-    type: elasticsearch
-  - max-version: tdc-1.1.0-rc1
-    min-version: tdc-1.1.0-rc1
-    type: txsql
-  final: true
 - release-version: transwarp-5.2.1-final
   image-version:
     inceptor_executor_image: transwarp-5.2.1-final
@@ -81,8 +33,8 @@ releases:
   - max-version: transwarp-5.2.1-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: tdc-1.2.1-rc1
-    min-version: tdc-1.1.0-rc2
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
     type: txsql
   final: true
 - release-version: transwarp-5.2.2-final
@@ -108,8 +60,35 @@ releases:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: yarn
-  - max-version: tdc-1.2.1-rc1
-    min-version: tdc-1.1.0-rc4
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    inceptor_executor_image: transwarp-5.2.3-final
+    inceptor_master_image: transwarp-5.2.3-final
+  dependencies:
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: metastore
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: hdfs
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: zookeeper
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: hyperbase
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: elasticsearch
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: yarn
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
     type: txsql
   final: true
 - release-version: transwarp-5.2
@@ -135,7 +114,7 @@ releases:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: yarn
-  - max-version: tdc-2.0
-    min-version: tdc-1.1
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
     type: txsql
   final: false

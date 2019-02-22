@@ -1,7 +1,7 @@
 instance-type: sophonweb
 major-version: '2.1'
-min-tdc-version: tdc-1.2.0-rc0
-max-tdc-version: tdc-1.2.0-final
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
 hot-fix-ranges:
 - max: sophonweb-2.1.0-final
   min: sophonweb-2.1.0-final
@@ -42,8 +42,8 @@ releases:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: tdc-1.2.1-rc1
-    min-version: tdc-1.2.0-rc3
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
     type: txsql
   - max-version: sophonweb-2.1.0-final
     min-version: sophonweb-2.1.0-final
@@ -75,7 +75,7 @@ releases:
     min-version: transwarp-5.2
     type: inceptor
   - max-version: tdc-2.0
-    min-version: tdc-1.2
+    min-version: tdc-2.0
     type: txsql
   - max-version: sophonweb-2.1
     min-version: sophonweb-2.1
