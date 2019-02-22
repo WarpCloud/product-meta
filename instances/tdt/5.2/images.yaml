@@ -1,0 +1,69 @@
+instance-type: tdt
+major-version: '5.2'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
+hot-fix-ranges:
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
+images:
+- name: tdt
+  variable: tdt_image
+releases:
+- release-version: transwarp-5.2.1-final
+  image-version:
+    tdt_image: transwarp-5.2.1-final
+  dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: inceptor
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    tdt_image: transwarp-5.2.2-final
+  dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: hdfs
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: inceptor
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    tdt_image: transwarp-5.2.3-final
+  dependencies:
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: hdfs
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: inceptor
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    tdt_image: transwarp-5.2
+  dependencies:
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: hdfs
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: inceptor
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: txsql
+  final: false

@@ -1,0 +1,33 @@
+instance-type: elasticsearch
+major-version: '6.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
+hot-fix-ranges:
+- max: transwarp-6.0.1-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: search
+  variable: es_image
+- name: search-head
+  variable: es_head_image
+releases:
+- release-version: transwarp-6.0.0-final
+  image-version:
+    es_head_image: transwarp-6.0.0-final
+    es_image: transwarp-6.0.0-final
+  dependencies: []
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    es_head_image: transwarp-6.0.1-final
+    es_image: transwarp-6.0.1-final
+  dependencies: []
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    es_head_image: transwarp-6.0
+    es_image: transwarp-6.0
+  dependencies: []
+  final: false
