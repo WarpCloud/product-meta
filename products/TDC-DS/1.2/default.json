@@ -9,8 +9,7 @@
     "TXSQL-5.2",
     "GOVERNORPROXY-1.2",
     "ZOOKEEPER-5.2",
-    "METASTORE-5.2",
-    "FILEROBOT-5.2"
+    "METASTORE-5.2"
   ],
   "templates": [
     {
