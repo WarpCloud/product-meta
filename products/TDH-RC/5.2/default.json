@@ -11,8 +11,7 @@
     "TERMINAL-5.2",
     "TXSQL-5.2",
     "ZOOKEEPER-5.2",
-    "METASTORE-5.2",
-    "FILEROBOT-5.2"
+    "METASTORE-5.2"
   ],
   "templates": [
     {
