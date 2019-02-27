@@ -5,26 +5,12 @@ max-tdc-version: tdc-2.0.0-rc0
 hot-fix-ranges:
 - max: transwarp-5.2.3-final
   min: transwarp-5.2.1-final
-- max: tdc-2.0.0-rc0
-  min: tdc-2.0.0-rc0
 - max: transwarp-5.2
   min: transwarp-5.2
-- max: tdc-2.0
-  min: tdc-2.0
 images:
-- name: mysql
+- name: txsql
   variable: txsql_image
 releases:
-- release-version: tdc-2.0.0-rc0
-  image-version:
-    txsql_image: tdc-2.0.0-rc0
-  dependencies: []
-  final: true
-- release-version: tdc-2.0
-  image-version:
-    txsql_image: tdc-2.0
-  dependencies: []
-  final: false
 - release-version: transwarp-5.2.1-final
   image-version:
     txsql_image: transwarp-5.2.1-final

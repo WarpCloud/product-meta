@@ -5,30 +5,14 @@ max-tdc-version: tdc-2.0.0-rc0
 hot-fix-ranges:
 - max: transwarp-5.2.3-final
   min: transwarp-5.2.1-final
-- max: tdc-2.0.0-rc0
-  min: tdc-2.0.0-rc0
 - max: transwarp-5.2
   min: transwarp-5.2
-- max: tdc-2.0
-  min: tdc-2.0
 images:
 - name: search
   variable: es_image
 - name: search-head
   variable: es_head_image
 releases:
-- release-version: tdc-2.0.0-rc0
-  image-version:
-    es_head_image: tdc-2.0.0-rc0
-    es_image: tdc-2.0.0-rc0
-  dependencies: []
-  final: true
-- release-version: tdc-2.0
-  image-version:
-    es_head_image: tdc-2.0
-    es_image: tdc-2.0
-  dependencies: []
-  final: false
 - release-version: transwarp-5.2.1-final
   image-version:
     es_head_image: transwarp-5.2.1-final
