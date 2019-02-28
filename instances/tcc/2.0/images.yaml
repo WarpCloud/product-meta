@@ -1,0 +1,41 @@
+instance-type: tcc
+major-version: '2.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc0
+hot-fix-ranges:
+- max: tdc-2.0.0-rc0
+  min: tdc-2.0.0-rc0
+- max: tdc-2.0
+  min: tdc-2.0
+images:
+- name: tcc
+  variable: tcc_image
+releases:
+- release-version: tdc-2.0.0-rc0
+  image-version:
+    tcc_image: tdc-2.0.0-rc0
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-5.2.1-final
+    type: txsql
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
+    type: ticket
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-5.2.1-final
+    type: guardian
+  final: true
+- release-version: tdc-2.0
+  image-version:
+    tcc_image: tdc-2.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
+    type: txsql
+  - max-version: tdc-2.0
+    min-version: tdc-2.0
+    type: ticket
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
+    type: guardian
+  final: false
