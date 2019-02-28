@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: rubik
   variable: rubik_image
+  role: rubik
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

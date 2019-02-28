@@ -10,12 +10,14 @@ hot-fix-ranges:
 images:
 - name: sophon-web
   variable: sophon_server_image
+  role: sophonweb
 - name: sophon-driver
   variable: sophon_driver_image
 - name: sophon-notebook-cpu
   variable: jupyter_cpu_image
 - name: sophon-web-ui
   variable: sophon_server_ui_image
+  role: webui
 - name: sophon-notebook-cpu
   variable: jupyter_gpu_image
 - name: sophon-apiserver

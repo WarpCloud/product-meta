@@ -10,14 +10,19 @@ hot-fix-ranges:
 images:
 - name: hdfs
   variable: hdfs_name_image
+  role: hdfsnamenode
 - name: hdfs
   variable: hdfs_zkfc_image
+  role: hdfszkfc
 - name: hdfs
   variable: hdfs_journal_image
+  role: hdfsjournalnode
 - name: hdfs
   variable: hdfs_data_image
+  role: hdfsdatanode
 - name: httpfs
   variable: hdfs_httpfs_image
+  role: httpfs
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:

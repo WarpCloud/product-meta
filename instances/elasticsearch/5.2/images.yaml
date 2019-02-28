@@ -10,8 +10,13 @@ hot-fix-ranges:
 images:
 - name: search
   variable: es_image
+  roles:
+  - elasticsearchmaster
+  - elasticsearchclient
+  - elasticsearchdata
 - name: search-head
   variable: es_head_image
+  role: elasticsearchhead
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

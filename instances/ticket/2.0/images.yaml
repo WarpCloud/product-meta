@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: ticket
   variable: ticket_image
+  role: ticket
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

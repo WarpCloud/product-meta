@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: gn-tdc-server
   variable: gn_image
+  role: application
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

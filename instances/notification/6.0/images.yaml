@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: notification
   variable: notification_image
+  role: notification
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:

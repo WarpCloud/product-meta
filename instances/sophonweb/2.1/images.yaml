@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: sophon-web
   variable: sophon_server_image
+  role: sophonweb
 - name: sophon-driver
   variable: sophon_driver_image
 - name: sophon-notebook-cpu

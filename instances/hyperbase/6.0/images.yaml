@@ -10,10 +10,13 @@ hot-fix-ranges:
 images:
 - name: hbase
   variable: hbase_master_image
+  role: master
 - name: hbase
   variable: hbase_rs_image
+  role: regionserver
 - name: hbase
   variable: hbase_thrift_image
+  role: thrift
 - name: hbase
   variable: hbase_rest_image
 releases:

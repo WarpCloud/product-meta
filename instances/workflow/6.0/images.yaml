@@ -14,6 +14,7 @@ hot-fix-ranges:
 images:
 - name: workflow
   variable: workflow_image
+  role: workflow
 releases:
 - release-version: sophonweb-2.2.0-final
   image-version:

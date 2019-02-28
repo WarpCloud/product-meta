@@ -10,8 +10,10 @@ hot-fix-ranges:
 images:
 - name: pilot
   variable: pilot_image
+  role: pilot
 - name: filerobot
   variable: filerobot_image
+  role: filerobot
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:

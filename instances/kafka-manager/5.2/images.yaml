@@ -10,6 +10,7 @@ hot-fix-ranges:
 images:
 - name: kafka-manager
   variable: kafka_manager_image
+  role: kafka_manager
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:
