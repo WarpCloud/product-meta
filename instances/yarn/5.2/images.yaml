@@ -9,17 +9,17 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: yarn
-  variable: resource_manager_image
   role: yarnrm
+  variable: resource_manager_image
 - name: yarn
-  variable: history_server_image
   role: yarnhs
+  variable: history_server_image
 - name: yarn
-  variable: node_manager_image
   role: yarnnm
+  variable: node_manager_image
 - name: yarn
-  variable: timeline_server_image
   role: yarnts
+  variable: timeline_server_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

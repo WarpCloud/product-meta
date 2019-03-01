@@ -9,8 +9,8 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: terminal
-  variable: terminal_image
   role: terminal
+  variable: terminal_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

@@ -13,8 +13,8 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: txsql
-  variable: txsql_image
   role: txsql
+  variable: txsql_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

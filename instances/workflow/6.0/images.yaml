@@ -13,8 +13,8 @@ hot-fix-ranges:
   min: sophonweb-2.2
 images:
 - name: workflow
-  variable: workflow_image
   role: workflow
+  variable: workflow_image
 releases:
 - release-version: sophonweb-2.2.0-final
   image-version:

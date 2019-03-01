@@ -13,14 +13,14 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: search
-  variable: es_image
   roles:
   - elasticsearchmaster
   - elasticsearchclient
   - elasticsearchdata
+  variable: es_image
 - name: search-head
-  variable: es_head_image
   role: elasticsearchhead
+  variable: es_head_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:

@@ -1,0 +1,18 @@
+{
+  "category": "运维和开发工具,SYSTEM",
+  "component_type": "TXSQL",
+  "source": "transwarp",
+  "description": "关系数据库",
+  "description_en": "Relational Database",
+  "edition": "6.0",
+  "name": "TXSQL-6.0",
+  "is_share": true,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-txsql.svg"
+    }
+  ],
+  "chart_name": "txsql",
+  "system_type": "base"
+}

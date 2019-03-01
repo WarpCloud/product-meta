@@ -9,14 +9,14 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: hbase
-  variable: hbase_master_image
   role: master
+  variable: hbase_master_image
 - name: hbase
-  variable: hbase_rs_image
   role: regionserver
+  variable: hbase_rs_image
 - name: hbase
-  variable: hbase_thrift_image
   role: thrift
+  variable: hbase_thrift_image
 - name: hbase
   variable: hbase_rest_image
 releases:

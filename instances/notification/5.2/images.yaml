@@ -9,8 +9,8 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: notification
-  variable: notification_image
   role: notification
+  variable: notification_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

@@ -9,22 +9,22 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: gn-tdc-server
-  variable: gn_image
   role: application
+  variable: gn_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:
     gn_image: tdc-2.0.0-rc0
   dependencies:
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
     type: txsql
   final: true
 - release-version: tdc-2.0
   image-version:
     gn_image: tdc-2.0
   dependencies:
-  - max-version: transwarp-6.0
-    min-version: transwarp-5.2
+  - max-version: tdc-2.0
+    min-version: tdc-2.0
     type: txsql
   final: false

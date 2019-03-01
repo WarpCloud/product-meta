@@ -15,11 +15,11 @@ hot-fix-ranges:
   min: sophonweb-2.1
 images:
 - name: sophon-redis
+  role: redis
   variable: sophon_redis_image
-  role: redis
 - name: redis
-  variable: redis_image
   role: redis
+  variable: redis_image
 releases:
 - release-version: 3.0.5
   image-version:

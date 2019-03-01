@@ -9,11 +9,11 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: inceptor
+  role: metastore
   variable: metastore_image
-  role: metastore
 - name: inceptor
-  variable: mysql_image
   role: metastore
+  variable: mysql_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

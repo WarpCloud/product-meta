@@ -9,18 +9,22 @@ hot-fix-ranges:
   min: sophonweb-2.2
 images:
 - name: sophon-web
-  variable: sophon_server_image
   role: sophonweb
+  variable: sophon_server_image
 - name: sophon-driver
+  role: unique-path:Advance_Config.sophon_conf.SPARK_IMAGE
   variable: sophon_driver_image
 - name: sophon-notebook-cpu
+  role: unique-path:Advance_Config.sophon_conf.JUPYTER_CPU_IMAGE
   variable: jupyter_cpu_image
 - name: sophon-web-ui
-  variable: sophon_server_ui_image
   role: webui
+  variable: sophon_server_ui_image
 - name: sophon-notebook-cpu
+  role: unique-path:Advance_Config.sophon_conf.JUPYTER_GPU_IMAGE
   variable: jupyter_gpu_image
 - name: sophon-apiserver
+  role: unique-path:Advance_Config.sophon_conf.API_SERVICE_IMAGE
   variable: api_server_image
 releases:
 - release-version: sophonweb-2.2.0-final

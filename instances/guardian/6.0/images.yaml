@@ -13,23 +13,23 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: apacheds
-  variable: apacheds_image
   role: apacheds
+  variable: apacheds_image
 - name: guardian-init
-  variable: guardian_init_container_image
   role: gencerts
+  variable: guardian_init_container_image
 - name: guardian
-  variable: guardian_server_image
   role: guardian
+  variable: guardian_server_image
 - name: cas-config-server
-  variable: cas_config_server_image
   role: casconfigserver
+  variable: cas_config_server_image
 - name: cas-server
-  variable: cas_server_image
   role: casserver
+  variable: cas_server_image
 - name: cas-admin-server
-  variable: cas_mgnt_server_image
   role: casadminserver
+  variable: cas_mgnt_server_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:
