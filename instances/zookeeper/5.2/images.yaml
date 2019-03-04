@@ -9,8 +9,8 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: zookeeper
-  variable: zk_image
   role: zookeeper
+  variable: zk_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

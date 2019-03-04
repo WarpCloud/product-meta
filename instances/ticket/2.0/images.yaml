@@ -9,15 +9,15 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: ticket
-  variable: ticket_image
   role: ticket
+  variable: ticket_image
 releases:
 - release-version: tdc-2.0.0-rc0
   image-version:
     ticket_image: tdc-2.0.0-rc0
   dependencies:
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
     type: txsql
   - max-version: tdc-2.0.0-rc0
     min-version: tdc-2.0.0-rc0
@@ -27,8 +27,8 @@ releases:
   image-version:
     ticket_image: tdc-2.0
   dependencies:
-  - max-version: transwarp-6.0
-    min-version: transwarp-5.2
+  - max-version: tdc-2.0
+    min-version: tdc-2.0
     type: txsql
   - max-version: tdc-2.0
     min-version: tdc-2.0

@@ -9,8 +9,8 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: workflow
-  variable: workflow_image
   role: workflow
+  variable: workflow_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:

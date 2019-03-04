@@ -9,8 +9,8 @@ hot-fix-ranges:
   min: transwarp-6.0
 images:
 - name: tdt
-  variable: tdt_image
   role: tdt
+  variable: tdt_image
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:
