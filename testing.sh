@@ -18,8 +18,6 @@ pip3 install -r $PROJROOT/tests/py-requirements.txt \
 pip3 install -r $PROJROOT/requirements-testing.txt\
 	-U -i http://172.16.1.161:30033/repository/pypi/simple/ \
 	--trusted-host=172.16.1.161
-chmod +x $PROJROOT/tests/validate_instance_images.py
-python3 $PROJROOT/tests/flex_version.py
 python3 $PROJROOT/tests/validate_instance_images.py
 # python3 $PROJROOT/tests/validate_component_value.py
 python3 $PROJROOT/tests/validate_value.py

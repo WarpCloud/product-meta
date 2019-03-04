@@ -7,6 +7,9 @@ import os
 
 from flex_version import FlexVersion
 
+# Customized version suffix ordering
+FlexVersion.ordered_suffix = ['rc', 'final', None]
+
 
 class ReleaseDep(object):
     def __init__(self, dep_desc):
