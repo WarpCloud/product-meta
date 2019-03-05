@@ -14,9 +14,7 @@ precommit_build:
   script:
     - sh -e ./testing.sh
   only:
-    - /.*_master_\d+/
-  tags:
-    - k8s
+  - merge_requests
 
 gold_build:
   stage: gold_build
