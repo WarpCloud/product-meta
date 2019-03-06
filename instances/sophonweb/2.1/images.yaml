@@ -20,13 +20,9 @@ images:
 - name: sophon-notebook-gpu
   role: unique-path:Advance_Config.sophon_conf.JUPYTER_GPU_IMAGE
   variable: jupyter_gpu_image
-- name: sophon-apiserver
-  role: unique-path:Advance_Config.sophon_conf.API_SERVICE_IMAGE
-  variable: api_server_image
 releases:
 - release-version: sophonweb-2.1.0-final
   image-version:
-    api_server_image: sophonweb-2.1.0-final
     jupyter_cpu_image: sophonweb-2.1.0-final
     jupyter_gpu_image: sophonweb-2.1.0-final
     sophon_driver_image: sophonweb-2.1.0-final
@@ -50,8 +46,8 @@ releases:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: tdc-2.0.0-rc0
-    min-version: tdc-2.0.0-rc0
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophonweb-2.1.0-final
     min-version: sophonweb-2.1.0-final
@@ -59,7 +55,6 @@ releases:
   final: true
 - release-version: sophonweb-2.1
   image-version:
-    api_server_image: sophonweb-2.1
     jupyter_cpu_image: sophonweb-2.1
     jupyter_gpu_image: sophonweb-2.1
     sophon_driver_image: sophonweb-2.1
@@ -83,8 +78,8 @@ releases:
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
     type: inceptor
-  - max-version: tdc-2.0
-    min-version: tdc-2.0
+  - max-version: transwarp-6.0
+    min-version: transwarp-5.2
     type: txsql
   - max-version: sophonweb-2.1
     min-version: sophonweb-2.1
