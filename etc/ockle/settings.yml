@@ -51,6 +51,9 @@ platform_requirements:
   - application_type: DIOCLES
     chart_name: diocles
 
+  - application_type: TENON
+    chart_name: tenon
+
 # A list of services registered for development portal.
 service_description:
   pilot:  # chart name
