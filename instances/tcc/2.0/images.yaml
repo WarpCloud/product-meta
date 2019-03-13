@@ -9,7 +9,7 @@ hot-fix-ranges:
   min: tdc-2.0
 images:
 - name: tcc
-  role: application
+  role: tcc
   variable: tcc_image
 releases:
 - release-version: tdc-2.0.0-rc0
