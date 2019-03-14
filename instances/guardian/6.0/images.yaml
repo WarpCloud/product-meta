@@ -1,11 +1,11 @@
 instance-type: guardian
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc1
+max-tdc-version: tdc-2.0.0-rc2
 hot-fix-ranges:
 - max: transwarp-6.0.1-final
   min: transwarp-6.0.0-final
-- max: tdc-2.0.0-rc1
+- max: tdc-2.0.0-rc2
   min: tdc-2.0.0-rc0
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -55,6 +55,19 @@ releases:
   dependencies:
   - max-version: tdc-2.0.0-rc1
     min-version: tdc-2.0.0-rc1
+    type: txsql
+  final: true
+- release-version: tdc-2.0.0-rc2
+  image-version:
+    apacheds_image: tdc-2.0.0-rc2
+    cas_config_server_image: tdc-2.0.0-rc2
+    cas_mgnt_server_image: tdc-2.0.0-rc2
+    cas_server_image: tdc-2.0.0-rc2
+    guardian_init_container_image: tdc-2.0.0-rc2
+    guardian_server_image: tdc-2.0.0-rc2
+  dependencies:
+  - max-version: tdc-2.0.0-rc2
+    min-version: tdc-2.0.0-rc2
     type: txsql
   final: true
 - release-version: tdc-2.0
