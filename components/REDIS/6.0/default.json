@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "REDIS",
+  "source": "transwarp",
+  "description": "内存K-V数据库",
+  "description_en": "In-memory K-V Database",
+  "edition": "6.0",
+  "name": "REDIS-6.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-redis.svg"
+    }
+  ],
+  "chart_name": "redis"
+}

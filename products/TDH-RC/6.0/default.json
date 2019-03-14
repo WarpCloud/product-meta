@@ -1,0 +1,49 @@
+{
+  "edition": "6.0",
+  "final": true,
+  "components": [
+    "SLIPSTREAM-6.0",
+    "HDFS-6.0",
+    "YARN-6.0",
+    "KAFKA-6.0",
+    "HYPERBASE-6.0",
+    "PILOT-6.0",
+    "TERMINAL-5.2",
+    "TXSQL-6.0",
+    "ZOOKEEPER-6.0",
+    "METASTORE-6.0"
+  ],
+  "templates": [
+    {
+      "level": "demo",
+      "description": "演示模式",
+      "description_en": "Demo mode"
+    },
+    {
+      "level": "low",
+      "description": "最佳性价比模式",
+      "description_en": "Best price/performance model"
+    },
+    {
+      "level": "medium",
+      "description": "性能和性价比最佳配比模式",
+      "description_en": "Performance and cost-effective matching model"
+    },
+    {
+      "level": "high",
+      "description": "最佳性能模式",
+      "description_en": "Best performance model"
+    }
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-rc.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-rc.html"
+    }
+  ],
+  "is_distributed": true
+}

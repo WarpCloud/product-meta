@@ -1,0 +1,17 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "HYPERBASE",
+  "source": "transwarp",
+  "description": "NewSQL数据库",
+  "description_en": "NewSQL Database",
+  "edition": "6.0",
+  "name": "HYPERBASE-6.0",
+  "is_share": true,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-hyperbase.svg"
+    }
+  ],
+  "chart_name": "hyperbase"
+}

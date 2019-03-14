@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "YARN",
+  "source": "transwarp",
+  "description": "Spark资源调度",
+  "description_en": "Spark Resource Scheduler",
+  "edition": "6.0",
+  "name": "YARN-6.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-yarn.svg"
+    }
+  ],
+  "chart_name": "yarn"
+}

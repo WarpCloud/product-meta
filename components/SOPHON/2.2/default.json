@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "SOPHON",
+  "source": "transwarp",
+  "description": "一站式人工智能平台",
+  "description_en": "One-stop AI Platform",
+  "edition": "2.2",
+  "name": "SOPHON-2.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-sophon.svg"
+    }
+  ],
+  "chart_name": "sophonweb"
+}
