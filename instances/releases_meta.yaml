@@ -9,3 +9,8 @@ Releases:
   - {max: transwarp-6.0.1-final, min: transwarp-5.2.1-final}
   - {max: sophonweb-2.2.0-final, min: sophonweb-1.3.0-final}
   release_name: tdc-2.0.0-rc1
+- products:
+  - {max: tos-1.9.2-final, min: tos-1.9.2-final}
+  - {max: transwarp-6.0.1-final, min: transwarp-5.2.1-final}
+  - {max: sophonweb-2.2.0-final, min: sophonweb-2.2.0-final}
+  release_name: tdc-2.0.0-rc2
