@@ -26,16 +26,14 @@ python3 $PROJROOT/tests/validate_etc.py
 # Verminator validation
 verminator validate $PROJROOT/instances
 CHANGED=`git status -s | wc -l`
-if [[ $CHANGED -ge 0 ]]; then
+if [[ $CHANGED -gt 0 ]]; then
 echo "------ Git status ------"
 git status -s
-echo "------ Git status ------"
 echo "------ Git diff ------"
 git diff > /tmp/ver_validation.diff
 cat /tmp/ver_validation.diff
 echo "Multiple files failed verminator validation!"
 echo "Please run: verminator validate /path/to/product-meta/instances"
-echo "------ Git diff ------"
 else
 echo "SUCCESS"
 fi
