@@ -9,7 +9,7 @@ hot-fix-ranges:
   min: transwarp-5.2
 images:
 - name: inceptor
-  role: inceptor
+  role: slipstream
   variable: inceptor_master_image
 - name: inceptor
   role: executor
