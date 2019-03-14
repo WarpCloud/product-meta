@@ -1,5 +1,5 @@
 {
-  "edition": "5.2",
+  "edition": "2.1",
   "final": true,
   "components": [
     "HYPERBASE-5.2",
