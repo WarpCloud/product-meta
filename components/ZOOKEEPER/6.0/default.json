@@ -1,0 +1,17 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "ZOOKEEPER",
+  "source": "transwarp",
+  "description": "分布式配置服务",
+  "description_en": "ZOOKEEPER",
+  "edition": "6.0",
+  "name": "ZOOKEEPER-6.0",
+  "is_share": true,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-zookeeper.svg"
+    }
+  ],
+  "chart_name": "zookeeper"
+}

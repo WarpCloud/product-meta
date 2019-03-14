@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "RUBIK",
+  "source": "transwarp",
+  "description": "OLAP Cube设计工具",
+  "description_en": "OLAP Cube Designer",
+  "edition": "6.0",
+  "name": "RUBIK-6.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-rubik.svg"
+    }
+  ],
+  "chart_name": "rubik"
+}
