@@ -1,9 +1,9 @@
 instance-type: sophonweb
 major-version: '2.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc2
+max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
-- max: sophonweb-2.2.0-final
+- max: sophonweb-2.2.1-final
   min: sophonweb-2.2.0-final
 - max: sophonweb-2.2
   min: sophonweb-2.2
@@ -36,32 +36,69 @@ releases:
     sophon_server_image: sophonweb-2.2.0-final
     sophon_server_ui_image: sophonweb-2.2.0-final
   dependencies:
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: hdfs
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
     type: yarn
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: hyperbase
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: inceptor
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
     type: workflow
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
+    type: redis
+  final: true
+- release-version: sophonweb-2.2.1-final
+  image-version:
+    api_server_image: sophonweb-2.2.1-final
+    jupyter_cpu_image: sophonweb-2.2.1-final
+    jupyter_gpu_image: sophonweb-2.2.1-final
+    sophon_driver_image: sophonweb-2.2.1-final
+    sophon_server_image: sophonweb-2.2.1-final
+    sophon_server_ui_image: sophonweb-2.2.1-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: hdfs
+  - max-version: sophonweb-2.2.1-final
+    min-version: sophonweb-2.2.1-final
+    type: yarn
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: elasticsearch
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: hyperbase
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: inceptor
+  - max-version: sophonweb-2.2.1-final
+    min-version: sophonweb-2.2.1-final
+    type: workflow
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: txsql
+  - max-version: sophonweb-2.2.1-final
+    min-version: sophonweb-2.2.1-final
     type: redis
   final: true
 - release-version: sophonweb-2.2

@@ -1,11 +1,11 @@
 instance-type: workflow
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc2
+max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
-- max: transwarp-6.0.1-final
+- max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
-- max: sophonweb-2.2.0-final
+- max: sophonweb-2.2.1-final
   min: sophonweb-2.2.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -20,10 +20,21 @@ releases:
   image-version:
     workflow_image: sophonweb-2.2.0-final
   dependencies:
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-6.0.1-final
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: txsql
+  final: true
+- release-version: sophonweb-2.2.1-final
+  image-version:
+    workflow_image: sophonweb-2.2.1-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
     type: txsql
   final: true
@@ -58,6 +69,17 @@ releases:
     type: zookeeper
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-6.0.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    workflow_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: zookeeper
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
     type: txsql
   final: true
 - release-version: transwarp-6.0

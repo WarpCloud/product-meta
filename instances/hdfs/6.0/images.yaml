@@ -1,9 +1,9 @@
 instance-type: hdfs
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc2
+max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
-- max: transwarp-6.0.1-final
+- max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -46,6 +46,18 @@ releases:
   dependencies:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-6.0.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    hdfs_data_image: transwarp-6.0.2-final
+    hdfs_httpfs_image: transwarp-6.0.2-final
+    hdfs_journal_image: transwarp-6.0.2-final
+    hdfs_name_image: transwarp-6.0.2-final
+    hdfs_zkfc_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
     type: zookeeper
   final: true
 - release-version: transwarp-6.0
