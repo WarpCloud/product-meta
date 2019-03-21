@@ -97,9 +97,6 @@ hdfs:
     computing_unit:
       - hdfsdatanode
       - hdfsjournalnode
-    stable_unit:
-      - name: httpfs
-        value: 3
   security:
     principals:
       - user: HTTP
