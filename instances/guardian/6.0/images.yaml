@@ -1,11 +1,11 @@
 instance-type: guardian
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc2
+max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
-- max: transwarp-6.0.1-final
+- max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
-- max: tdc-2.0.0-rc2
+- max: tdc-2.0.0-rc3
   min: tdc-2.0.0-rc0
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -70,6 +70,19 @@ releases:
     min-version: tdc-2.0.0-rc2
     type: txsql
   final: true
+- release-version: tdc-2.0.0-rc3
+  image-version:
+    apacheds_image: tdc-2.0.0-rc3
+    cas_config_server_image: tdc-2.0.0-rc3
+    cas_mgnt_server_image: tdc-2.0.0-rc3
+    cas_server_image: tdc-2.0.0-rc3
+    guardian_init_container_image: tdc-2.0.0-rc3
+    guardian_server_image: tdc-2.0.0-rc3
+  dependencies:
+  - max-version: tdc-2.0.0-rc3
+    min-version: tdc-2.0.0-rc3
+    type: txsql
+  final: true
 - release-version: tdc-2.0
   image-version:
     apacheds_image: tdc-2.0
@@ -107,6 +120,19 @@ releases:
   dependencies:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-6.0.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    apacheds_image: transwarp-6.0.2-final
+    cas_config_server_image: transwarp-6.0.2-final
+    cas_mgnt_server_image: transwarp-6.0.2-final
+    cas_server_image: transwarp-6.0.2-final
+    guardian_init_container_image: transwarp-6.0.2-final
+    guardian_server_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
     type: txsql
   final: true
 - release-version: transwarp-6.0
