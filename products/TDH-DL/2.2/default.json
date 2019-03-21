@@ -13,7 +13,9 @@
     "INCEPTOR-6.0",
     "ZOOKEEPER-6.0",
     "METASTORE-6.0",
-    "REDIS-6.0"
+    "REDIS-6.0",
+    "KONG-0.11",
+    "MYSQL-5.7"
   ],
   "templates": [
     {

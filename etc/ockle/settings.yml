@@ -330,3 +330,4 @@ component_type_display_priority:
 component_type_display_black_list:
   - GUARDIAN
   - GOVERNORPROXY
+  - SOPHON
