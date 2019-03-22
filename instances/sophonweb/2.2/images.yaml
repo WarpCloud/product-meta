@@ -63,6 +63,9 @@ releases:
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
     type: redis
+  - max-version: tdc-2.0.0-rc3
+    min-version: tdc-2.0.0-rc0
+    type: kong
   final: true
 - release-version: sophonweb-2.2.1-final
   image-version:
@@ -100,6 +103,9 @@ releases:
   - max-version: sophonweb-2.2.1-final
     min-version: sophonweb-2.2.1-final
     type: redis
+  - max-version: tdc-2.0.0-rc3
+    min-version: tdc-2.0.0-rc3
+    type: kong
   final: true
 - release-version: sophonweb-2.2
   image-version:
@@ -137,4 +143,7 @@ releases:
   - max-version: sophonweb-2.2
     min-version: sophonweb-2.2
     type: redis
+  - max-version: tdc-2.0
+    min-version: tdc-2.0
+    type: kong
   final: false
