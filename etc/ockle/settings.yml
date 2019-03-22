@@ -268,7 +268,7 @@ service_description:
         description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据。"
         description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
 
-  kafka:
+  kafkamanager:
     - port: 8000
       select_name: kafkamanager
       protocol: HTTP
