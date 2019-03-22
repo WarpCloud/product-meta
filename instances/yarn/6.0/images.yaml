@@ -32,10 +32,10 @@ releases:
     resource_manager_image: sophonweb-2.2.0-final
     timeline_server_image: sophonweb-2.2.0-final
   dependencies:
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
   final: true
@@ -46,10 +46,10 @@ releases:
     resource_manager_image: sophonweb-2.2.1-final
     timeline_server_image: sophonweb-2.2.1-final
   dependencies:
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
   final: true

@@ -36,28 +36,28 @@ releases:
     sophon_server_image: sophonweb-2.2.0-final
     sophon_server_ui_image: sophonweb-2.2.0-final
   dependencies:
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
     type: yarn
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hyperbase
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
   - max-version: sophonweb-2.2.0-final
     min-version: sophonweb-2.2.0-final
     type: workflow
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophonweb-2.2.0-final
@@ -73,28 +73,28 @@ releases:
     sophon_server_image: sophonweb-2.2.1-final
     sophon_server_ui_image: sophonweb-2.2.1-final
   dependencies:
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
   - max-version: sophonweb-2.2.1-final
     min-version: sophonweb-2.2.1-final
     type: yarn
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: hyperbase
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: inceptor
   - max-version: sophonweb-2.2.1-final
     min-version: sophonweb-2.2.1-final
     type: workflow
-  - max-version: transwarp-6.0.2-final
+  - max-version: transwarp-6.0.1-final
     min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophonweb-2.2.1-final
