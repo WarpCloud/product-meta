@@ -22,18 +22,3 @@ python3 $PROJROOT/tests/validate_instance_images.py
 # python3 $PROJROOT/tests/validate_component_value.py
 python3 $PROJROOT/tests/validate_value.py
 python3 $PROJROOT/tests/validate_etc.py
-
-# Verminator validation
-verminator validate $PROJROOT/instances
-CHANGED=`git status -s | wc -l`
-if [[ $CHANGED -gt 0 ]]; then
-echo "------ Git status ------"
-git status -s
-echo "------ Git diff ------"
-git diff > /tmp/ver_validation.diff
-cat /tmp/ver_validation.diff
-echo "Multiple files failed verminator validation!"
-echo "Please run: verminator validate /path/to/product-meta/instances"
-else
-echo "SUCCESS"
-fi
