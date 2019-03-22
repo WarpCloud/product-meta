@@ -14,6 +14,8 @@ git diff > /tmp/ver_validation.diff
 cat /tmp/ver_validation.diff
 echo "Multiple files failed verminator validation!"
 echo "Please run: verminator validate /path/to/product-meta/instances"
+exit 1
 else
 echo "SUCCESS"
+exit 0
 fi
