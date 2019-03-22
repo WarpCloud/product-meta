@@ -12,6 +12,38 @@ images:
   role: kong
   variable: kong_image
 releases:
+- release-version: tdc-2.0.0-rc0
+  image-version:
+    kong_image: tdc-2.0.0-rc0
+  dependencies:
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
+    type: mysql
+  final: true
+- release-version: tdc-2.0.0-rc1
+  image-version:
+    kong_image: tdc-2.0.0-rc1
+  dependencies:
+  - max-version: tdc-2.0.0-rc1
+    min-version: tdc-2.0.0-rc1
+    type: mysql
+  final: true
+- release-version: tdc-2.0.0-rc2
+  image-version:
+    kong_image: tdc-2.0.0-rc2
+  dependencies:
+  - max-version: tdc-2.0.0-rc2
+    min-version: tdc-2.0.0-rc2
+    type: mysql
+  final: true
+- release-version: tdc-2.0.0-rc3
+  image-version:
+    kong_image: tdc-2.0.0-rc3
+  dependencies:
+  - max-version: tdc-2.0.0-rc3
+    min-version: tdc-2.0.0-rc3
+    type: mysql
+  final: true
 - release-version: tdc-2.0
   image-version:
     kong_image: tdc-2.0

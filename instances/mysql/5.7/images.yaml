@@ -12,6 +12,26 @@ images:
   role: mysql
   variable: mysql_image
 releases:
+- release-version: tdc-2.0.0-rc0
+  image-version:
+    mysql_image: tdc-2.0.0-rc0
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc1
+  image-version:
+    mysql_image: tdc-2.0.0-rc1
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc2
+  image-version:
+    mysql_image: tdc-2.0.0-rc2
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc3
+  image-version:
+    mysql_image: tdc-2.0.0-rc3
+  dependencies: []
+  final: true
 - release-version: tdc-2.0
   image-version:
     mysql_image: tdc-2.0
