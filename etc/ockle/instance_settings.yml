@@ -172,13 +172,13 @@ kafka:
 kafka-manager:
   resource:
     replicas:
-      - kafka_manager_replicas
+      - kafka_manager
     ha:
-      - kafka_manager_replicas
+      - kafka_manager
   security:
     principals:
       - user: kafka
-        type: stream
+        type: default
 
 kibana:
   resource:

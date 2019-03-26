@@ -1,0 +1,16 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "KAFKAMANAGER",
+  "source": "transwarp",
+  "description": "Kafka管理",
+  "description_en": "Kafka Manager",
+  "edition": "5.2",
+  "name": "KAFKAMANAGER-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-kafka.svg"
+    }
+  ],
+  "chart_name": "kafka-manager"
+}

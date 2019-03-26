@@ -55,15 +55,16 @@ platform_requirements:
     chart_name: tenon
 
 # A list of services registered for development portal.
+# Chart name as key
 service_description:
   pilot:  # chart name
-    - port: 8086
-      select_name: pilot
+    - port: 8086  # service discovery required
+      select_name: pilot  # service discovery required
       protocol: HTTP
       path: "/"
-      require_gateway_registration: true
-      resource_name: component-pilot.svg
-      display:
+      require_gateway_registration: true  # svc entrance display required
+      resource_name: component-pilot.svg  # svc entrance display required
+      display:  # svc entrance display required
         display_name: "报表工具"
         display_name_en: Pilot
         description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
@@ -268,9 +269,9 @@ service_description:
         description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据。"
         description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
 
-  kafkamanager:
-    - port: 8000
-      select_name: kafkamanager
+  kafka-manager:
+    - port: 15677
+      select_name: kafka-manager
       protocol: HTTP
       path: "/"
       require_gateway_registration: true

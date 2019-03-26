@@ -1,7 +1,7 @@
 instance-type: sophonweb
 major-version: '2.1'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc3
+max-tdc-version: tdc-2.0.0-rc1
 hot-fix-ranges:
 - max: sophonweb-2.1.0-final
   min: sophonweb-2.1.0-final
@@ -60,25 +60,25 @@ releases:
     sophon_driver_image: sophonweb-2.1
     sophon_server_image: sophonweb-2.1
   dependencies:
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: yarn
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: zookeeper
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: elasticsearch
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hyperbase
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: inceptor
-  - max-version: transwarp-6.0
+  - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: txsql
   - max-version: sophonweb-2.1
