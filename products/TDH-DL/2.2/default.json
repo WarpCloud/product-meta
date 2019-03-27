@@ -5,7 +5,7 @@
     "HYPERBASE-5.2",
     "SEARCH-5.2",
     "SOPHON-2.2",
-    "YARN-6.0",
+    "YARN-5.2",
     "TERMINAL-5.2",
     "PILOT-5.2",
     "TXSQL-5.2",
@@ -16,7 +16,8 @@
     "REDIS-5.2",
     "KONG-0.11",
     "MYSQL-5.7",
-    "WORKFLOW-6.0"
+    "WORKFLOW-5.2"
+
   ],
   "resources": [
     {

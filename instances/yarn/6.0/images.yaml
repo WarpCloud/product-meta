@@ -5,12 +5,8 @@ max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
-- max: sophonweb-2.2.1-final
-  min: sophonweb-2.2.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
-- max: sophonweb-2.2
-  min: sophonweb-2.2
 images:
 - name: yarn
   role: yarnrm
@@ -25,48 +21,6 @@ images:
   role: yarnts
   variable: timeline_server_image
 releases:
-- release-version: sophonweb-2.2.0-final
-  image-version:
-    history_server_image: sophonweb-2.2.0-final
-    node_manager_image: sophonweb-2.2.0-final
-    resource_manager_image: sophonweb-2.2.0-final
-    timeline_server_image: sophonweb-2.2.0-final
-  dependencies:
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
-    type: hdfs
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
-    type: zookeeper
-  final: true
-- release-version: sophonweb-2.2.1-final
-  image-version:
-    history_server_image: sophonweb-2.2.1-final
-    node_manager_image: sophonweb-2.2.1-final
-    resource_manager_image: sophonweb-2.2.1-final
-    timeline_server_image: sophonweb-2.2.1-final
-  dependencies:
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
-    type: hdfs
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-5.2.1-final
-    type: zookeeper
-  final: true
-- release-version: sophonweb-2.2
-  image-version:
-    history_server_image: sophonweb-2.2
-    node_manager_image: sophonweb-2.2
-    resource_manager_image: sophonweb-2.2
-    timeline_server_image: sophonweb-2.2
-  dependencies:
-  - max-version: transwarp-6.0
-    min-version: transwarp-5.2
-    type: hdfs
-  - max-version: transwarp-6.0
-    min-version: transwarp-5.2
-    type: zookeeper
-  final: false
 - release-version: transwarp-6.0.0-final
   image-version:
     history_server_image: transwarp-6.0.0-final
