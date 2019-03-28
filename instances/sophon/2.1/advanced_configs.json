@@ -1,5 +1,5 @@
 {
-  "instance_type": "sophonweb",
+  "instance_type": "sophon",
   "configs": [
     {
       "default": "k8s_host",
@@ -58,5 +58,5 @@
       "value": "10240MB"
     }
   ],
-  "version": "2.2"
+  "version": "2.1"
 }

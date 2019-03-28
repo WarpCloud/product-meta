@@ -1,15 +1,15 @@
-instance-type: sophonweb
+instance-type: sophon
 major-version: '2.1'
 min-tdc-version: tdc-2.0.0-rc0
 max-tdc-version: tdc-2.0.0-rc1
 hot-fix-ranges:
-- max: sophonweb-2.1.0-final
-  min: sophonweb-2.1.0-final
-- max: sophonweb-2.1
-  min: sophonweb-2.1
+- max: sophon-2.1.0-final
+  min: sophon-2.1.0-final
+- max: sophon-2.1
+  min: sophon-2.1
 images:
 - name: sophon-web
-  role: sophonweb
+  role: sophon
   variable: sophon_server_image
 - name: sophon-driver
   role: unique-path:Advance_Config.sophon_conf.SPARK_IMAGE
@@ -21,12 +21,12 @@ images:
   role: unique-path:Advance_Config.sophon_conf.JUPYTER_GPU_IMAGE
   variable: jupyter_gpu_image
 releases:
-- release-version: sophonweb-2.1.0-final
+- release-version: sophon-2.1.0-final
   image-version:
-    jupyter_cpu_image: sophonweb-2.1.0-final
-    jupyter_gpu_image: sophonweb-2.1.0-final
-    sophon_driver_image: sophonweb-2.1.0-final
-    sophon_server_image: sophonweb-2.1.0-final
+    jupyter_cpu_image: sophon-2.1.0-final
+    jupyter_gpu_image: sophon-2.1.0-final
+    sophon_driver_image: sophon-2.1.0-final
+    sophon_server_image: sophon-2.1.0-final
   dependencies:
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.1-final
@@ -49,16 +49,16 @@ releases:
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.1-final
     type: txsql
-  - max-version: sophonweb-2.1.0-final
-    min-version: sophonweb-2.1.0-final
+  - max-version: sophon-2.1.0-final
+    min-version: sophon-2.1.0-final
     type: redis
   final: true
-- release-version: sophonweb-2.1
+- release-version: sophon-2.1
   image-version:
-    jupyter_cpu_image: sophonweb-2.1
-    jupyter_gpu_image: sophonweb-2.1
-    sophon_driver_image: sophonweb-2.1
-    sophon_server_image: sophonweb-2.1
+    jupyter_cpu_image: sophon-2.1
+    jupyter_gpu_image: sophon-2.1
+    sophon_driver_image: sophon-2.1
+    sophon_server_image: sophon-2.1
   dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
@@ -81,7 +81,7 @@ releases:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: txsql
-  - max-version: sophonweb-2.1
-    min-version: sophonweb-2.1
+  - max-version: sophon-2.1
+    min-version: sophon-2.1
     type: redis
   final: false
