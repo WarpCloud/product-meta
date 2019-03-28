@@ -197,7 +197,7 @@ service_description:
       alias: HiveServer2
 
   slipstream:
-    - port: 4040
+    - port: 4044
       select_name: slipstream
       protocol: HTTP
       path: "/jobs"
