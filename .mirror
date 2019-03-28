@@ -8,4 +8,5 @@ script
 system_contexts
 tests
 upgrade
-
+.gitignore
+testing.sh
