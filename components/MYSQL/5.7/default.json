@@ -1,0 +1,9 @@
+{
+  "name": "MYSQL-5.7",
+  "component_type": "MYSQL",
+  "source": "transwarp",
+  "description": "数据库",
+  "edition": "5.7",
+  "category": "transwarp",
+  "chart_name": "mysql"
+}

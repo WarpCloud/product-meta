@@ -1,0 +1,27 @@
+{
+  "edition": "5.2",
+  "final": true,
+  "components": [
+    "SLIPSTREAM-5.2",
+    "HDFS-5.2",
+    "YARN-5.2",
+    "KAFKA-5.2",
+    "KAFKAMANAGER-5.2",
+    "HYPERBASE-5.2",
+    "PILOT-5.2",
+    "TERMINAL-5.2",
+    "TXSQL-5.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2"
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-rc.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-rc.html"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+instance-type: guardian
+major-version: '5.2'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
+images:
+- name: apacheds
+  role: apacheds
+  variable: apacheds_image
+- name: guardian-init
+  role: gencerts
+  variable: guardian_init_container_image
+- name: guardian
+  role: guardian
+  variable: guardian_server_image
+- name: cas-config-server
+  role: casconfigserver
+  variable: cas_config_server_image
+- name: cas-server
+  role: casserver
+  variable: cas_server_image
+- name: cas-admin-server
+  role: casadminserver
+  variable: cas_mgnt_server_image
+releases:
+- release-version: transwarp-5.2.1-final
+  image-version:
+    apacheds_image: transwarp-5.2.1-final
+    cas_config_server_image: transwarp-5.2.1-final
+    cas_mgnt_server_image: transwarp-5.2.1-final
+    cas_server_image: transwarp-5.2.1-final
+    guardian_init_container_image: transwarp-5.2.1-final
+    guardian_server_image: transwarp-5.2.1-final
+  dependencies:
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    apacheds_image: transwarp-5.2.2-final
+    cas_config_server_image: transwarp-5.2.2-final
+    cas_mgnt_server_image: transwarp-5.2.2-final
+    cas_server_image: transwarp-5.2.2-final
+    guardian_init_container_image: transwarp-5.2.2-final
+    guardian_server_image: transwarp-5.2.2-final
+  dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    apacheds_image: transwarp-5.2.3-final
+    cas_config_server_image: transwarp-5.2.3-final
+    cas_mgnt_server_image: transwarp-5.2.3-final
+    cas_server_image: transwarp-5.2.3-final
+    guardian_init_container_image: transwarp-5.2.3-final
+    guardian_server_image: transwarp-5.2.3-final
+  dependencies:
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    apacheds_image: transwarp-5.2
+    cas_config_server_image: transwarp-5.2
+    cas_mgnt_server_image: transwarp-5.2
+    cas_server_image: transwarp-5.2
+    guardian_init_container_image: transwarp-5.2
+    guardian_server_image: transwarp-5.2
+  dependencies:
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: txsql
+  final: false

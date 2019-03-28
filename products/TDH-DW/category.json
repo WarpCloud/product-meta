@@ -1,0 +1,19 @@
+{
+  "category_name": "TDH-DW",
+  "description": "数据仓库是数据中心库，全面整合各类数据，按照主题组织信息，是打造商业智能的核心。",
+  "display_name": "数据仓库",
+  "description_en": "As the center of data library and the core of business intelligence, data warehouse focuses on the integration of various data, organizing information into different themes. ",
+  "display_name_en": "Data Warehouse",
+  "source": "bigdata",
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-dw.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-tdh-dw.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-dw.png"
+  }]
+}

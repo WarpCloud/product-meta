@@ -1,0 +1,16 @@
+{
+  "category": "TDH开发套件",
+  "component_type": "NOTIFICATION",
+  "source": "transwarp",
+  "description": "消息通知队列服务",
+  "description_en": "Queue and Notification Service",
+  "edition": "6.0",
+  "name": "NOTIFICATION-6.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-notification.svg"
+    }
+  ],
+  "chart_name": "notification"
+}

@@ -1,0 +1,79 @@
+instance-type: yarn
+major-version: '6.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-6.0.2-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: yarn
+  role: yarnrm
+  variable: resource_manager_image
+- name: yarn
+  role: yarnhs
+  variable: history_server_image
+- name: yarn
+  role: yarnnm
+  variable: node_manager_image
+- name: yarn
+  role: yarnts
+  variable: timeline_server_image
+releases:
+- release-version: transwarp-6.0.0-final
+  image-version:
+    history_server_image: transwarp-6.0.0-final
+    node_manager_image: transwarp-6.0.0-final
+    resource_manager_image: transwarp-6.0.0-final
+    timeline_server_image: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: hdfs
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    history_server_image: transwarp-6.0.1-final
+    node_manager_image: transwarp-6.0.1-final
+    resource_manager_image: transwarp-6.0.1-final
+    timeline_server_image: transwarp-6.0.1-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: hdfs
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    history_server_image: transwarp-6.0.2-final
+    node_manager_image: transwarp-6.0.2-final
+    resource_manager_image: transwarp-6.0.2-final
+    timeline_server_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: hdfs
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    history_server_image: transwarp-6.0
+    node_manager_image: transwarp-6.0
+    resource_manager_image: transwarp-6.0
+    timeline_server_image: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: hdfs
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: zookeeper
+  final: false

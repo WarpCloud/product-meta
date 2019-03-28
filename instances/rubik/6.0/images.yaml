@@ -1,0 +1,70 @@
+instance-type: rubik
+major-version: '6.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-6.0.2-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: rubik
+  role: rubik
+  variable: rubik_image
+releases:
+- release-version: transwarp-6.0.0-final
+  image-version:
+    rubik_image: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: inceptor
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: notification
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    rubik_image: transwarp-6.0.1-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: inceptor
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: notification
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    rubik_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: inceptor
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: notification
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    rubik_image: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: inceptor
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: notification
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: txsql
+  final: false

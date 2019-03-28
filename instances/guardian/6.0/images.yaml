@@ -1,0 +1,150 @@
+instance-type: guardian
+major-version: '6.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-6.0.2-final
+  min: transwarp-6.0.0-final
+- max: tdc-2.0.0-rc3
+  min: tdc-2.0.0-rc0
+- max: transwarp-6.0
+  min: transwarp-6.0
+- max: tdc-2.0
+  min: tdc-2.0
+images:
+- name: apacheds
+  role: apacheds
+  variable: apacheds_image
+- name: guardian-init
+  role: gencerts
+  variable: guardian_init_container_image
+- name: guardian
+  role: guardian
+  variable: guardian_server_image
+- name: cas-config-server
+  role: casconfigserver
+  variable: cas_config_server_image
+- name: cas-server
+  role: casserver
+  variable: cas_server_image
+- name: cas-admin-server
+  role: casadminserver
+  variable: cas_mgnt_server_image
+releases:
+- release-version: tdc-2.0.0-rc0
+  image-version:
+    apacheds_image: tdc-2.0.0-rc0
+    cas_config_server_image: tdc-2.0.0-rc0
+    cas_mgnt_server_image: tdc-2.0.0-rc0
+    cas_server_image: tdc-2.0.0-rc0
+    guardian_init_container_image: tdc-2.0.0-rc0
+    guardian_server_image: tdc-2.0.0-rc0
+  dependencies:
+  - max-version: tdc-2.0.0-rc0
+    min-version: tdc-2.0.0-rc0
+    type: txsql
+  final: true
+- release-version: tdc-2.0.0-rc1
+  image-version:
+    apacheds_image: tdc-2.0.0-rc1
+    cas_config_server_image: tdc-2.0.0-rc1
+    cas_mgnt_server_image: tdc-2.0.0-rc1
+    cas_server_image: tdc-2.0.0-rc1
+    guardian_init_container_image: tdc-2.0.0-rc1
+    guardian_server_image: tdc-2.0.0-rc1
+  dependencies:
+  - max-version: tdc-2.0.0-rc1
+    min-version: tdc-2.0.0-rc1
+    type: txsql
+  final: true
+- release-version: tdc-2.0.0-rc2
+  image-version:
+    apacheds_image: tdc-2.0.0-rc2
+    cas_config_server_image: tdc-2.0.0-rc2
+    cas_mgnt_server_image: tdc-2.0.0-rc2
+    cas_server_image: tdc-2.0.0-rc2
+    guardian_init_container_image: tdc-2.0.0-rc2
+    guardian_server_image: tdc-2.0.0-rc2
+  dependencies:
+  - max-version: tdc-2.0.0-rc2
+    min-version: tdc-2.0.0-rc2
+    type: txsql
+  final: true
+- release-version: tdc-2.0.0-rc3
+  image-version:
+    apacheds_image: tdc-2.0.0-rc3
+    cas_config_server_image: tdc-2.0.0-rc3
+    cas_mgnt_server_image: tdc-2.0.0-rc3
+    cas_server_image: tdc-2.0.0-rc3
+    guardian_init_container_image: tdc-2.0.0-rc3
+    guardian_server_image: tdc-2.0.0-rc3
+  dependencies:
+  - max-version: tdc-2.0.0-rc3
+    min-version: tdc-2.0.0-rc3
+    type: txsql
+  final: true
+- release-version: tdc-2.0
+  image-version:
+    apacheds_image: tdc-2.0
+    cas_config_server_image: tdc-2.0
+    cas_mgnt_server_image: tdc-2.0
+    cas_server_image: tdc-2.0
+    guardian_init_container_image: tdc-2.0
+    guardian_server_image: tdc-2.0
+  dependencies:
+  - max-version: tdc-2.0
+    min-version: tdc-2.0
+    type: txsql
+  final: false
+- release-version: transwarp-6.0.0-final
+  image-version:
+    apacheds_image: transwarp-6.0.0-final
+    cas_config_server_image: transwarp-6.0.0-final
+    cas_mgnt_server_image: transwarp-6.0.0-final
+    cas_server_image: transwarp-6.0.0-final
+    guardian_init_container_image: transwarp-6.0.0-final
+    guardian_server_image: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    apacheds_image: transwarp-6.0.1-final
+    cas_config_server_image: transwarp-6.0.1-final
+    cas_mgnt_server_image: transwarp-6.0.1-final
+    cas_server_image: transwarp-6.0.1-final
+    guardian_init_container_image: transwarp-6.0.1-final
+    guardian_server_image: transwarp-6.0.1-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    apacheds_image: transwarp-6.0.2-final
+    cas_config_server_image: transwarp-6.0.2-final
+    cas_mgnt_server_image: transwarp-6.0.2-final
+    cas_server_image: transwarp-6.0.2-final
+    guardian_init_container_image: transwarp-6.0.2-final
+    guardian_server_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    apacheds_image: transwarp-6.0
+    cas_config_server_image: transwarp-6.0
+    cas_mgnt_server_image: transwarp-6.0
+    cas_server_image: transwarp-6.0
+    guardian_init_container_image: transwarp-6.0
+    guardian_server_image: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: txsql
+  final: false

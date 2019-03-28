@@ -1,0 +1,17 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "HDFS",
+  "source": "transwarp",
+  "description": "分布式存储",
+  "description_en": "Distributed Storage System",
+  "edition": "5.2",
+  "name": "HDFS-5.2",
+  "is_share": true,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-hdfs.svg"
+    }
+  ],
+  "chart_name": "hdfs"
+}

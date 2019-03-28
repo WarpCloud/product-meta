@@ -1,0 +1,27 @@
+{
+  "name": "LOGSTASH-2.0",
+  "component_type": "LOGSTASH",
+  "source": "transwarp",
+  "description": "service to incrementally consume logs and transfer to destination",
+  "edition": "2.0",
+  "category": "SYSTEM",
+  "configs": [
+    {
+      "name": "logstash_namespace",
+      "value": "",
+      "description": "logstash_namespace"
+    },
+    {
+      "name": "kafka_statefulSet",
+      "value": "",
+      "description": "kafka_statefulSet"
+    },
+    {
+      "name": "es_cli_statefulSet",
+      "value": "",
+      "description": "es_cli_statefulSet"
+    }
+  ],
+  "chart_name": "logstash",
+  "system_type": "tenant"
+}

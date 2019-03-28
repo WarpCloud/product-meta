@@ -1,0 +1,92 @@
+common:
+  baseConfig:
+    Transwarp_License_Address: 172.16.3.232:2191
+    Transwarp_MSL_License_Address: https://172.16.3.231:60907/licence
+    Transwarp_App_Name: xpath[$.release_config.chart_name]
+  transwarpConfig:
+    - variable: Transwarp_Config.Transwarp_Identifier_Annotation
+      value: xpath[$.async_config.external_config.annotations]
+      type: string
+    - variable: Transwarp_Config.Transwarp_Identifier_Pod_Label
+      value: xpath[$.async_config.external_config.labels]
+      type: yaml
+
+tcc:
+  advanceConfig:
+    - variable: Advance_Config.application["tracing.zipkin.enabled"]
+      value: false
+      type: string
+    - variable: Advance_Config.application["tracing.zipkin.sender.type"]
+      value: okhttp
+      type: string
+    - variable: Advance_Config.application["tracing.zipkin.sender.okhttp.service-url"]
+      value:
+      type: string
+    - variable: Advance_Config.application["tenant.uid"]
+      value: xpath[$.instance_config.namespace]
+      type: string
+    - variable: Advance_Config.application["tracing.zipkin.enabled"]
+      value: false
+      type: string
+    - variable: Advance_Config.application["plugins.data-sharing.enabled"]
+      value: false
+      type: string
+    - variable: Advance_Config.features["features.catalog.enabled"]
+      value: true
+      type: string
+    - variable: Advance_Config.features["features.catalog.server-address"]
+      value: http://catalog-web-hl-b6j7c.dataplatform.svc:18080
+      type: string
+
+ticket:
+  advanceConfig:
+    - variable: Advance_Config.application["tenant.uid"]
+      value: xpath[$.instance_config.namespace]
+      type: string
+
+guardian:
+  advanceConfig:
+    - variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.username"]
+      value: admin
+      type: string
+    - variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.password"]
+      value: 123
+      type: string
+    - variable: Advance_Config.guardian.realm
+      value: xpath[$.instance_config.guradian_realm]
+      type: string
+    - variable: Advance_Config.guardian.guardian_site["guardian.client.http.principal"]
+      value: guardian/guardian_xpath[$.instance_config.namespace]
+      type: string
+hdfs:
+  advanceConfig:
+    - variable: Advance_Config.catalog_agent.image
+      value: 172.16.1.99/gold/catalog-agent:tdc-2.0
+      type: string
+    - variable: Advance_Config.catalog_agent.properties["catalog.web.server.address"]
+      value: http://catalog-web-hl-b6j7c.dataplatform.svc:18080
+      type: string
+    - variable: Advance_Config.catalog_agent.enable
+      value: true
+      type: bool
+
+inceptor:
+  advanceConfig:
+    - variable: Advance_Config.catalog_agent.image
+      value: 172.16.1.99/gold/catalog-agent:tdc-2.0
+      type: string
+    - variable: Advance_Config.catalog_agent.properties.atlas_application["atlas.rest.address"]
+      value: http://catalog-platform-hl-b6j7c.dataplatform.svc:18081
+      type: string
+    - variable: Advance_Config.catalog_agent.properties["web_address"]
+      value: http://catalog-web-hl-b6j7c.dataplatform.svc:18080
+      type: string
+    - variable: Advance_Config.catalog_agent.enable
+      value: true
+      type: bool
+    - variable: Advance_Config.catalog_agent.properties.atlas_application["atlas.kafka.bootstrap.servers"]
+      value: kafka-2767w-0.dataplatform.pod:9092,kafka-2767w-1.dataplatform.pod:9092,kafka-2767w-2.dataplatform.pod:9092
+      type: string
+    - variable: Advance_Config.catalog_agent.properties.atlas_application["atlas.kafka.zookeeper.connect"]
+      value: zookeeper-zsp2f-0.dataplatform.pod:2181,zookeeper-zsp2f-1.dataplatform.pod:2181,zookeeper-zsp2f-2.dataplatform.pod:2181
+      type: string

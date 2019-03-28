@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "INCEPTOR",
+  "source": "transwarp",
+  "description": "分析型数据库",
+  "description_en": "Analytical Database",
+  "edition": "5.2",
+  "name": "INCEPTOR-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-inceptor.svg"
+    }
+  ],
+  "chart_name": "inceptor"
+}

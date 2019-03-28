@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "SEARCH",
+  "source": "transwarp",
+  "description": "大数据搜索引擎",
+  "description_en": "Big Data Search Engine",
+  "edition": "5.2",
+  "name": "SEARCH-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-search.svg"
+    }
+  ],
+  "chart_name": "elasticsearch"
+}

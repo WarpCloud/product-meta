@@ -1,0 +1,16 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "SLIPSTREAM",
+  "source": "transwarp",
+  "description": "实时计算引擎",
+  "description_en": "Real-time Computing Engine",
+  "edition": "5.2",
+  "name": "SLIPSTREAM-5.2",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-slipstream.svg"
+    }
+  ],
+  "chart_name": "slipstream"
+}

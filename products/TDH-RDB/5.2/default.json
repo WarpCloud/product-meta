@@ -1,0 +1,18 @@
+{
+  "edition": "5.2",
+  "final": true,
+  "components": [
+    "TXSQL-5.2",
+    "TERMINAL-5.2"
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-rdb.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-rdb.html"
+    }
+  ]
+}

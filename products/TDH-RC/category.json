@@ -1,0 +1,19 @@
+{
+  "category_name": "TDH-RC",
+  "description": "云上的流处理分析平台，对流数据进行实时采集和实时处理，帮助企业构建在线实时应用，充分利用流式数据。",
+  "display_name": "实时计算",
+  "description_en": "TDH-RC is a stream processing platform on cloud that experts at real-time data collection and real-time processing. It aims to help enterprises build online real-time applications so as to make full use of online information.",
+  "display_name_en": "Real-time Computing",
+  "source": "bigdata",
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-rc.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-tdh-rc.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-rc.png"
+  }]
+}

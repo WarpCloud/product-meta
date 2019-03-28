@@ -1,0 +1,19 @@
+{
+  "category_name": "TDH-RDB",
+  "description": "构建企业内部的关系数据库服务，可用于构建OLTP业务。支持复杂的SQL查询，提供高稳定、可扩展、强一致的数据处理服务。",
+  "display_name": "关系数据库",
+  "description_en": "TDH-RDB is used to build relational database service for enterprises, which usually devotes to OLTP business of data within 500GB. It supports complex SQL queries, providing highly stable, scalable, and consistent data processing services.",
+  "display_name_en": "Relational Database",
+  "source": "bigdata",
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-rdb.svg"
+  }, {
+    "type": "install_icon",
+    "name": "category-tdh-rdb.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-rdb.png"
+  }]
+}

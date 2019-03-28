@@ -1,0 +1,11 @@
+{
+  "name": "TCC-2.0",
+  "component_type": "TCC",
+  "source": "transwarp",
+  "description": "Transwarp Cloud Console",
+  "edition": "2.0",
+  "category": "SYSTEM",
+  "configs": [],
+  "chart_name": "tcc",
+  "system_type": "tenant"
+}

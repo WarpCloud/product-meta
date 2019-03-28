@@ -1,0 +1,28 @@
+{
+  "edition": "2.1",
+  "final": true,
+  "components": [
+    "HYPERBASE-5.2",
+    "SEARCH-5.2",
+    "SOPHON-2.1",
+    "YARN-5.2",
+    "TERMINAL-5.2",
+    "PILOT-5.2",
+    "TXSQL-5.2",
+    "HDFS-5.2",
+    "INCEPTOR-5.2",
+    "ZOOKEEPER-5.2",
+    "METASTORE-5.2",
+    "REDIS-5.2"
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-dl.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdh-dl.html"
+    }
+  ]
+}

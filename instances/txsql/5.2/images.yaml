@@ -1,0 +1,34 @@
+instance-type: txsql
+major-version: '5.2'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
+images:
+- name: txsql
+  role: txsql
+  variable: txsql_image
+releases:
+- release-version: transwarp-5.2.1-final
+  image-version:
+    txsql_image: transwarp-5.2.1-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.2.2-final
+  image-version:
+    txsql_image: transwarp-5.2.2-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    txsql_image: transwarp-5.2.3-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    txsql_image: transwarp-5.2
+  dependencies: []
+  final: false

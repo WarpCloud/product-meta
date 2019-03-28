@@ -1,0 +1,74 @@
+instance-type: hdfs
+major-version: '6.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc3
+hot-fix-ranges:
+- max: transwarp-6.0.2-final
+  min: transwarp-6.0.0-final
+- max: transwarp-6.0
+  min: transwarp-6.0
+images:
+- name: hdfs
+  role: hdfsnamenode
+  variable: hdfs_name_image
+- name: hdfs
+  role: hdfszkfc
+  variable: hdfs_zkfc_image
+- name: hdfs
+  role: hdfsjournalnode
+  variable: hdfs_journal_image
+- name: hdfs
+  role: hdfsdatanode
+  variable: hdfs_data_image
+- name: httpfs
+  role: httpfs
+  variable: hdfs_httpfs_image
+releases:
+- release-version: transwarp-6.0.0-final
+  image-version:
+    hdfs_data_image: transwarp-6.0.0-final
+    hdfs_httpfs_image: transwarp-6.0.0-final
+    hdfs_journal_image: transwarp-6.0.0-final
+    hdfs_name_image: transwarp-6.0.0-final
+    hdfs_zkfc_image: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    hdfs_data_image: transwarp-6.0.1-final
+    hdfs_httpfs_image: transwarp-6.0.1-final
+    hdfs_journal_image: transwarp-6.0.1-final
+    hdfs_name_image: transwarp-6.0.1-final
+    hdfs_zkfc_image: transwarp-6.0.1-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    hdfs_data_image: transwarp-6.0.2-final
+    hdfs_httpfs_image: transwarp-6.0.2-final
+    hdfs_journal_image: transwarp-6.0.2-final
+    hdfs_name_image: transwarp-6.0.2-final
+    hdfs_zkfc_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: zookeeper
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    hdfs_data_image: transwarp-6.0
+    hdfs_httpfs_image: transwarp-6.0
+    hdfs_journal_image: transwarp-6.0
+    hdfs_name_image: transwarp-6.0
+    hdfs_zkfc_image: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: zookeeper
+  final: false

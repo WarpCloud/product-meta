@@ -1,0 +1,333 @@
+#----------------
+# ockle Settings
+#----------------
+
+# Version range of Ockle to match current product-meta.
+max-version: 0.4.0
+min-version: 0.4.0
+
+# Default file name of static resources
+default_static_resources:
+  category:
+    - type: banner
+      name: banner-default.png
+
+# A list of configs shared by multiple instances
+instance_configs_sharing:
+  - instance_type: rubik
+    configs_sharing:
+      - instance_type: inceptor
+        dependency: txsql
+        configs:
+          - from:
+              name: MySQL_DATABASE
+            to:
+              name: RUBIK_CONNECTION_DATABASE
+              group: environment
+
+# A list of TDC services that would be depended on by
+# tenant context services.
+# We take a prior assumption that only a single instance
+# target application is deployed under `tdcsys` namespace.
+platform_requirements:
+  - application_type: OCKLE
+    chart_name: ockle
+
+  - application_type: SIMMAIL
+    chart_name: simmail
+
+  - application_type: SEARCH
+    chart_name: elasticsearch
+
+  - application_type: KAFKA
+    chart_name: kafka
+
+  - application_type: GNTDC
+    chart_name: gntdc
+
+  - application_type: IGNITOR
+    chart_name: ignitor
+
+  - application_type: DIOCLES
+    chart_name: diocles
+
+  - application_type: TENON
+    chart_name: tenon
+
+# A list of services registered for development portal.
+# Chart name as key
+service_description:
+  pilot:  # chart name
+    - port: 8086  # service discovery required
+      select_name: pilot  # service discovery required
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true  # svc entrance display required
+      resource_name: component-pilot.svg  # svc entrance display required
+      display:  # svc entrance display required
+        display_name: "报表工具"
+        display_name_en: Pilot
+        description: "基于Web的报表展现工具。轻量且灵活，支持多维度自助分析，提供二十余种报表样式。"
+        description_en: "A light-weight and flexible web-based reporting tool. Supporting self-service analysis; providing over twenty report graphs."
+
+  workflow:
+    - port: 9091
+      select_name: workflow
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-workflow.svg
+      display:
+        display_name: "工作流"
+        display_name_en: Workflow
+        description: "图形化的工作流服务平台。支持多种任务类型，提供丰富的工作流分析展现形式。"
+        description_en: "A graphical workflow manager. Supporting multiple task types; providing abundant analysis and representation forms for workflows."
+
+  rubik:
+    - port: 32125
+      select_name: rubik
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-rubik.svg
+      display:
+        display_name: "Cube设计工具"
+        display_name_en: "Rubik "
+        description: "OLAP Cube工具。用于OLAP模型设计与实例化，支持多种数据源，加速多维度分析。"
+        description_en: "A tool for OLAP cube model design and instantiation. Supporting multiple data sources; speeding up multidimensional analysis."
+
+  governerproxy:
+    - port: 9527
+      select_name: governor-proxy
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-governorproxy.svg
+      display:
+        display_name: "数据共享分析"
+        display_name_en: "Governor Proxy"
+        description: "数据共享分析工具，支持数据预览，申请，审批，下放，自助式查询，分析，报表展示，下载等功能。"
+        description_en: "Data-sharing tool supports for various functions such as data preview, application, approval, sharing, self-service query, analysis, report display and download."
+
+  tdt:
+    - port: 8100
+      select_name: tdt
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-transporter.svg
+      display:
+        display_name: "ETL工具"
+        display_name_en: Transporter
+        description: "可视化ETL管理工具。支持近实时数据同步，提供多种数据格式、转换操作及整合功能。"
+        description_en: "A visualized ETL management tool. Supporting near real-time data synchronization; providing multiple data formats, transformation operations, and integration."
+
+  guardian:
+    - port: 8380
+      port_name: guardian-port
+      select_name: guardian-server
+      protocol: HTTPS
+      path: "/"
+      require_gateway_registration: true
+      alias: GuardianServer
+      resource_name: component-guardian.svg
+      display:
+        display_name: "安全与权限"
+        display_name_en: Guardian
+        description: "统一的安全和资源管理服务平台。支持Kerberos和LDAP认证，提供细粒度的资源和权限管理。"
+        description_en: "A unified security and resource management platform. Supporting Kerberos and LDAP authentication; providing fine-grained resource and permission management services."
+    - port: 8393
+      port_name: cas-server-https-port
+      select_name: cas-srv
+      protocol: HTTPS
+      require_gateway_registration: true
+      alias: CAS
+    - port: 1088
+      port_name: kdc-port
+      select_name: "apacheds-master"
+      require_gateway_registration: false
+      alias: KDC-MASTER
+    - port: 1088
+      port_name: kdc-port
+      select_name: "apacheds-slave"
+      require_gateway_registration: false
+      alias: KDC-SLAVE
+
+  tcc:
+    - port: 9042
+      select_name: tcc
+      protocol: HTTP
+      require_gateway_registration: true
+
+  ticket:
+    - port: 11997
+      select_name: ticket
+      protocol: HTTP
+      require_gateway_registration: true
+
+  kibana:
+    - port: 5601
+      select_name: kibana
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-kibana.svg
+      display:
+        display_name: "日志服务"
+        display_name_en: "Log Service Milano"
+        description: "日志诊断和检索平台。收集平台服务的日志，提供诊断和检索功能，方便系统运维和故障诊断。"
+        description_en: "A platform for log diagnosis and retrieval. Collecting service logs; providing diagnosis and retrieval services; facilitating system maintenance and breakdown diagnosis."
+
+  inceptor:
+    - port: 4040
+      select_name: inceptor
+      protocol: HTTP
+      path: "/jobs"
+      require_gateway_registration: true
+      alias: INCEPTOR
+      resource_name: component-inceptor.svg
+      display:
+        display_name: "Inceptor任务监控"
+        display_name_en: "Inceptor UI"
+        description: "Inceptor任务监控页面。提供各应用运行状态、存储资源使用情况、环境和工作节点的信息。"
+        description_en: "Inceptor task monitor. Displaying application status, storage and resource usage conditions as well as information on environment and executors."
+    - port: 10000
+      select_name: inceptor
+      require_gateway_registration: false
+      alias: HiveServer2
+
+  slipstream:
+    - port: 4040
+      select_name: slipstream
+      protocol: HTTP
+      path: "/jobs"
+      require_gateway_registration: true
+      alias: SLIPSTREAM
+      resource_name: component-slipstream.svg
+      display:
+        display_name: "Slipstream任务监控"
+        display_name_en: "Slipstream UI"
+        description: "Slipstream任务监控页面，提供各流式应用和作业的运行状态以及资源使用情况。"
+        description_en: "Slipstream UI is a web-based tool for monitoring streaming apps & jobs running on Slipstream as well as resource usage."
+    - port: 10010
+      select_name: slipstream
+      require_gateway_registration: false
+      alias: HiveServer2
+
+  elasticsearch:
+    - port: 9100
+      select_name: "es-head"
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      require_service_type: NodePort
+      resource_name: component-search.svg
+      display:
+        display_name: "ES管理器"
+        display_name_en: "ES Head"
+        description: "Elastic Search的网页版本的集群管理工具，支持数据的增删改查，并且可以通过语句进行可视化查询。"
+        description_en: "ES Head is a web-based tool for Elastic Search cluster management, on-line query, data visualization, and CRUD operations. It is widely used by ES users for cluster operating and application development."
+
+  terminal:
+    - port: 5000
+      select_name: terminal
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      require_service_type: NodePort
+      resource_name: component-terminal.svg
+      display:
+        display_name: "命令行终端"
+        display_name_en: Terminal
+        description: "网页版的操作命令行工具，集成了可以操作Transwarp所有服务的命令以及环境设置，方便的做各种运维操作以及大数据开发工作。"
+        description_en: "A command line tool for system operation."
+
+  hyperbase:
+    - port: 60010
+      select_name: hbasemaster
+      protocol: HTTP
+      path: "/master-status"
+      require_gateway_registration: true
+      resource_name: component-hyperbase.svg
+      display:
+        display_name: "HyperBase管理"
+        display_name_en: "HyperBase Master"
+        description: "HyperBase管理页面方便运维人员有效的了解当前HyperBase集群的运行状况。"
+        description_en: "The HyperBase Master UI is a useful tool to get an overview of the current status of the cluster. Users can get the basic configuration of Hyperbase, as well as load average of the cluster."
+
+  hdfs:
+    - port: 50070
+      select_name: "hdfsnamenode, hdfssecondary"
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      require_service_type: ClusterIP
+      resource_name: component-hdfs.svg
+      display:
+        display_name: "HDFS管理"
+        display_name_en: "HDFS Namenode UI"
+        description: "HDFS管理服务用于HDFS的基本信息的查询，能够列出所有的HDFS datanode的基本信息，以及当前服务的一些运行统计数据。"
+        description_en: "It lists the DataNodes in the cluster and basic statistics of the cluster. The web interface can also be used to browse the file system with permission."
+
+  kafka-manager:
+    - port: 15677
+      select_name: kafka-manager
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-kafka.svg
+      display:
+        display_name: "Kafka管理"
+        display_name_en: "Kafka Manager"
+        description: "Kafka管理服务是用于进行Kafka管理的Web可视化操作平台。"
+        description_en: "Kafka Manager is a tool for managing Kafka. It serves as a platform to inspect cluster state, where you can create topics with multiple configs, generate partition assignments, and perform dozens of helpful operations associated with Kafka."
+
+  sophon:
+    - port: 30123
+      select_name: sophonweb
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-sophon.svg
+      display:
+        display_name: "人工智能Sophon"
+        display_name_en: "Sophon AI"
+        description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
+        description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+
+  sophonweb:
+    - port: 30123
+      select_name: sophonweb
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-sophon.svg
+      display:
+        display_name: "人工智能Sophon"
+        display_name_en: "Sophon AI"
+        description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
+        description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+
+  smartbi:
+    - port: 18080
+      select_name: smartbi
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-smartbi.svg
+      display:
+        display_name: "SmartBI"
+        display_name_en: "SmartBI"
+        description: "企业级商业智能应用平台。"
+        description_en: "Modern business intelligence platform."
+
+component_type_display_priority:
+  category:
+    - "TDH平台产品"
+    - "TDH开发套件"
+    - "运维和开发工具"
+  component_type: []
+
+component_type_display_black_list:
+  - GUARDIAN
+  - GOVERNORPROXY

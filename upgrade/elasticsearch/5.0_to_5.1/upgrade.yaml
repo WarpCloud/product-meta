@@ -1,0 +1,28 @@
+instance-type: elasticsearch
+from-major-version: 5.0
+to-major-version: 5.1
+backups:
+- type: pod
+  pod-filter:
+    type: prefix
+    prefix: es-data
+  pods: all
+  function:
+    type: volume-snapshot
+    mount-name: esdatadir
+- type: pod
+  pod-filter:
+    type: prefix
+    prefix: es-master
+  pods: all
+  function:
+    type: volume-snapshot
+    mount-name: esdatadir
+- type: pod
+  pod-filter:
+    type: prefix
+    prefix: es-client
+  pods: all
+  function:
+    type: volume-snapshot
+    mount-name: esdatadir
