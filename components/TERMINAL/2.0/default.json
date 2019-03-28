@@ -4,8 +4,8 @@
   "source": "transwarp",
   "description": "容器命令行",
   "description_en": "Command Line Tool",
-  "edition": "5.2",
-  "name": "TERMINAL-5.2",
+  "edition": "2.0",
+  "name": "TERMINAL-2.0",
   "resources": [
     {
       "type": "component",

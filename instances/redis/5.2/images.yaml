@@ -5,16 +5,16 @@ max-tdc-version: tdc-2.0.0-rc3
 hot-fix-ranges:
 - max: transwarp-5.2.3-final
   min: transwarp-5.2.1-final
-- max: sophonweb-2.2.1-final
-  min: sophonweb-1.3.0-final
+- max: sophon-2.2.1-final
+  min: sophon-1.3.0-final
 - max: 3.0.5
   min: 3.0.5
 - max: transwarp-5.2
   min: transwarp-5.2
-- max: sophonweb-2.1
-  min: sophonweb-2.1
-- max: sophonweb-2.2
-  min: sophonweb-2.2
+- max: sophon-2.1
+  min: sophon-2.1
+- max: sophon-2.2
+  min: sophon-2.2
 images:
 - name: sophon-redis
   role: redis
@@ -28,34 +28,34 @@ releases:
     redis_image: 3.0.5
   dependencies: []
   final: true
-- release-version: sophonweb-1.3.0-final
+- release-version: sophon-1.3.0-final
   image-version:
-    sophon_redis_image: sophonweb-1.3.0-final
+    sophon_redis_image: sophon-1.3.0-final
   dependencies: []
   final: true
-- release-version: sophonweb-2.1.0-final
+- release-version: sophon-2.1.0-final
   image-version:
-    sophon_redis_image: sophonweb-2.1.0-final
+    sophon_redis_image: sophon-2.1.0-final
   dependencies: []
   final: true
-- release-version: sophonweb-2.1
+- release-version: sophon-2.1
   image-version:
-    sophon_redis_image: sophonweb-2.1
+    sophon_redis_image: sophon-2.1
   dependencies: []
   final: false
-- release-version: sophonweb-2.2.0-final
+- release-version: sophon-2.2.0-final
   image-version:
-    sophon_redis_image: sophonweb-2.2.0-final
+    sophon_redis_image: sophon-2.2.0-final
   dependencies: []
   final: true
-- release-version: sophonweb-2.2.1-final
+- release-version: sophon-2.2.1-final
   image-version:
-    sophon_redis_image: sophonweb-2.2.1-final
+    sophon_redis_image: sophon-2.2.1-final
   dependencies: []
   final: true
-- release-version: sophonweb-2.2
+- release-version: sophon-2.2
   image-version:
-    sophon_redis_image: sophonweb-2.2
+    sophon_redis_image: sophon-2.2
   dependencies: []
   final: false
 - release-version: transwarp-5.2.1-final

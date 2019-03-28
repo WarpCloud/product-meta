@@ -275,14 +275,6 @@ sophon:
         type: spnego
       - user: hive
         type: default
-
-sophonweb:
-  security:
-    principals:
-      - user: HTTP
-        type: spnego
-      - user: hive
-        type: default
       - user: yarn
         type: rsrcnego
 
