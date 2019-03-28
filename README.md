@@ -1,30 +1,38 @@
 # Product-Meta
 
-Organizing products' and components' meta info, including default configurations and price info etc.
+Component and product meta info for Transwarp Data Cloud.
 
-Based on [application-jsonent](http://172.16.1.41:10080/TDC/application-jsonnet).
+## Project structure
 
+This project contains the configurable parts of Transwarp Data Cloud.
+It covers the static assets (images, htmls etc.), big-data products/applications, image releases, service configurations, and upgrading and development utilities shipped with official TDC edition.
 
-## Folders
+### Static assets
+Including folders:
+* `assets`: static resources for configurable TDC UI.
 
-<pre>
-product-meta
-|___ components: Official applications
-|___ products: Official TDC products
-|___ system_components: Official TDC platform applications
-|___ system_contexts: Official TDC platform distributions
-|___ dependencies: Application dependency management used by `libappadapter`
-|___ instances: Instance-specific settings
-     |___ instance_advanced_configs: Advanced configs of each instance
-|___ etc
-     |___ ockle: Configuration management
-</pre>
+### Products and components
+Including folders:
+* `products`: official big-data products definitions
+* `components`: official components definitions
 
-## Contribution
+### Image releases
+Including folders:
+* `instances`: offical releases' images and dependencies
+
+### Service configurations
+Including folders:
+* `etc/ockle`: configurations for cluster management service
+* `resources`: configurations for billing service
+* `system_contenxts`: configurations for tenant contenxt services
+* `upgrade`: configurations for upgrading service
+
+### Utilities
+Including folders;
+* `script`: useful tools for cluster operations
+* `tests`: development tools for testing
+
+## Devlopment
 
 * Add new configurations WITHOUT breaking released logic
 * run `./testing.sh` for validation
-
-## Contact
-
-* xiaming.chen@transwarp.io

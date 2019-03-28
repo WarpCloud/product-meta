@@ -12,6 +12,7 @@ stages:
 precommit_build:
   stage: precommit_build
   script:
+    - pip3 install -U -i http://172.16.1.161:30033/repository/pypi/simple/ --trusted-host=172.16.1.161 -r ./tests/py-requirements.txt
     - sh -e ./testing.sh
     - sh -e ./tests/precommit_validation.sh
   only:
