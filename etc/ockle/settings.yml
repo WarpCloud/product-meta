@@ -244,7 +244,7 @@ service_description:
 
   hyperbase:
     - port: 60010
-      select_name: hbasemaster
+      select_name: hbmaster
       protocol: HTTP
       path: "/master-status"
       require_gateway_registration: true
@@ -296,8 +296,8 @@ service_description:
         description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
 
   sophonweb:
-    - port: 30123
-      select_name: sophonweb
+    - port: 8066
+      select_name: sophonweb-ui-hl
       protocol: "HTTP"
       path: "/"
       require_gateway_registration: true
@@ -307,6 +307,20 @@ service_description:
         display_name_en: "Sophon AI"
         description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
         description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
+
+  yarn:
+  - port: 8088
+    select_name: yarnrm1
+    protocol: "HTTP"
+    path: "/"
+    require_gateway_registration: true
+    resource_name: component-yarn.svg
+    display:
+      display_name: "YARN"
+      display_name_en: "YARN"
+      description: "YARN 是Hadoop集群的资源管理系统"
+      description_en: "YARN is a resource management system for Hadoop clusters"
+
 
   smartbi:
     - port: 18080
