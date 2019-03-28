@@ -47,7 +47,7 @@ to_github:
       - git clone https://$GITHUB_USER:$GITHUB_TOKEN@github.com/WarpCloud/product-meta.git
       - cd product-meta
       - git remote add $TRUNK ssh://git@172.16.1.41:10022/TDC/product-meta.git
-      - git merge --allow-unrelated-histories -s ours --no-commit $TRUNK/$SOURCE_BRANCH
+      - git merge -s ours --no-commit $TRUNK/$SOURCE_BRANCH
       - for i in `cat .mirror`; do git checkout $TRUNK/$SOURCE_BRANCH -- $i; done
       - git add . && git commit -m "Mirror" && git push origin $TARGET_BRANCH
   only:
