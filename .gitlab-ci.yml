@@ -50,7 +50,11 @@ to_github:
       - git fetch --all
       - git merge -s ours --no-commit $TRUNK/$SOURCE_BRANCH
       - for i in `cat .mirror`; do git checkout $TRUNK/$SOURCE_BRANCH -- $i; done
-      - git add . && git commit -m "Mirror" && git push origin $TARGET_BRANCH
+      - git config --global user.name "transwarp"
+      - git config --global user.email "transwarp-community@transwarp.io"
+      - CHANGED=`git status -s | wc -l`
+      - if [[ $CHANGED -gt 0 ]]; then git add . && git commit -m "Sync to mirror" && git push origin $TARGET_BRANCH; fi
+      - echo "SUCCESS"
   only:
       - master@TDC/product-meta
   tags:
