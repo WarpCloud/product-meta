@@ -1,9 +1,9 @@
 instance-type: kong
 major-version: '0.11'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc3
+max-tdc-version: tdc-2.0.0-rc4
 hot-fix-ranges:
-- max: tdc-2.0.0-rc3
+- max: tdc-2.0.0-rc4
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -42,6 +42,14 @@ releases:
   dependencies:
   - max-version: tdc-2.0.0-rc3
     min-version: tdc-2.0.0-rc3
+    type: mysql
+  final: true
+- release-version: tdc-2.0.0-rc4
+  image-version:
+    kong_image: tdc-2.0.0-rc4
+  dependencies:
+  - max-version: tdc-2.0.0-rc4
+    min-version: tdc-2.0.0-rc4
     type: mysql
   final: true
 - release-version: tdc-2.0
