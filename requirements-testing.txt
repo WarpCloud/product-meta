@@ -1,4 +1,0 @@
--r tests/py-requirements.txt
-
-tdc_commons>=0.3.3
-verminator>=1.2.0
