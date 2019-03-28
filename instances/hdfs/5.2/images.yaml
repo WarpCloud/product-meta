@@ -1,7 +1,7 @@
 instance-type: hdfs
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc3
+max-tdc-version: tdc-2.0.0-rc4
 hot-fix-ranges:
 - max: transwarp-5.2.3-final
   min: transwarp-5.2.1-final
