@@ -1,0 +1,16 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "TERMINAL",
+  "source": "transwarp",
+  "description": "容器命令行",
+  "description_en": "Command Line Tool",
+  "edition": "2.0",
+  "name": "TERMINAL-2.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-terminal.svg"
+    }
+  ],
+  "chart_name": "terminal"
+}

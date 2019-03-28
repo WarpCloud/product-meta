@@ -1,0 +1,62 @@
+{
+  "instance_type": "sophon",
+  "configs": [
+    {
+      "default": "k8s_host",
+      "groups": [
+        "sophon_spark_master"
+      ],
+      "name": "SOPHON_SPARK_MASTER",
+      "value": "k8s_host"
+    },
+    {
+      "default": "true",
+      "groups": [
+        "livy.server.session.timeout-check"
+      ],
+      "name": "LIVY_SERVER_SESSION_TIMEOUT_CHECK",
+      "value": "true"
+    },
+    {
+      "default": "1h",
+      "groups": [
+        "livy.server.session.timeout"
+      ],
+      "name": "LIVY_SERVER_SESSION_TIMEOUT",
+      "value": "1h"
+    },
+    {
+      "default": "360s",
+      "groups": [
+        "livy.server.yarn.app-lookup-timeout"
+      ],
+      "name": "LIVY_SERVER_YARN_APP_LOOKUP_TIMEOUT",
+      "value": "360s"
+    },
+    {
+      "default": "1",
+      "groups": [
+        "sophon.k8s.session.cleanup.timeout.hours"
+      ],
+      "name": "SOPHON_K8S_SESSION_CLEANUP_TIMEOUT_HOURS",
+      "value": "1"
+    },
+    {
+      "default": "10240MB",
+      "groups": [
+        "spring.http.multipart.max-file-size"
+      ],
+      "name": "SPRING_HTTP_MULTIPART_MAX_FILE_SIZE",
+      "value": "10240MB"
+    },
+    {
+      "default": "10240MB",
+      "groups": [
+        "spring.http.multipart.max-request-size"
+      ],
+      "name": "SPRING_HTTP_MULTIPART_MAX_REQUEST_SIZE",
+      "value": "10240MB"
+    }
+  ],
+  "version": "2.1"
+}
