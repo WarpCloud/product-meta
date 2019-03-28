@@ -284,20 +284,7 @@ service_description:
 
   sophon:
     - port: 30123
-      select_name: sophonweb
-      protocol: "HTTP"
-      path: "/"
-      require_gateway_registration: true
-      resource_name: component-sophon.svg
-      display:
-        display_name: "人工智能Sophon"
-        display_name_en: "Sophon AI"
-        description: "Sophon提供一站式的界面操作，不论是普通的数据分析师和业务人员还是资深的数据科学家，都可以通过高效率的交互式体验和内置的行业模版快速构建AI模型。"
-        description_en: "Sophon provides a powerful and friendly user interface. Both data/business analysts and senior data scientists can quickly build an AI model with built-in industry models and an efficient interactive experience."
-
-  sophonweb:
-    - port: 30123
-      select_name: sophonweb
+      select_name: sophon
       protocol: "HTTP"
       path: "/"
       require_gateway_registration: true
