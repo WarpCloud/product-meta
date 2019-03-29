@@ -267,6 +267,8 @@ slipstream:
         type: spnego
       - user: hive
         type: default
+      - user: kafka
+        type: stream
 
 sophon:
   security:
