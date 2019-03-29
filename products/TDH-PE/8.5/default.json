@@ -1,0 +1,8 @@
+{
+  "edition": "8.5",
+  "final": true,
+  "components": [
+    "PILOTENTERPRISE-8.5"
+  ],
+  "resources": []
+}

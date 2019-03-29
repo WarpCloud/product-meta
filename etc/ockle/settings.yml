@@ -309,18 +309,31 @@ service_description:
       description_en: "YARN is a resource management system for Hadoop clusters"
 
 
+#  smartbi:
+#    - port: 18080
+#      select_name: smartbi
+#      protocol: "HTTP"
+#      path: "/"
+#      require_gateway_registration: true
+#      resource_name: component-smartbi.svg
+#      display:
+#        display_name: "SmartBI"
+#        display_name_en: "SmartBI"
+#        description: "企业级商业智能应用平台。"
+#        description_en: "Modern business intelligence platform."
+
   smartbi:
     - port: 18080
-      select_name: smartbi
+      select_name: smartbi-tomcat
       protocol: "HTTP"
-      path: "/"
+      path: "/pilot"
       require_gateway_registration: true
-      resource_name: component-smartbi.svg
       display:
-        display_name: "SmartBI"
-        display_name_en: "SmartBI"
+        display_name: "Pilot企业版"
+        display_name_en: "Pilot Enterprise"
         description: "企业级商业智能应用平台。"
         description_en: "Modern business intelligence platform."
+
 
 component_type_display_priority:
   category:
