@@ -48,6 +48,16 @@ releases:
     sophon_redis_image: sophon-2.2.0-final
   dependencies: []
   final: true
+- release-version: sophon-2.2.1-rc0
+  image-version:
+    sophon_redis_image: sophon-2.2.1-rc0
+  dependencies: []
+  final: true
+- release-version: sophon-2.2.1-rc1
+  image-version:
+    sophon_redis_image: sophon-2.2.1-rc1
+  dependencies: []
+  final: true
 - release-version: sophon-2.2.1-final
   image-version:
     sophon_redis_image: sophon-2.2.1-final
