@@ -10,3 +10,4 @@ tests
 upgrade
 .gitignore
 testing.sh
+README.md
