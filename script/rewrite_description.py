@@ -33,12 +33,13 @@ def rewrite_component_files(directory, component_type, version):
             json.dump(data, outfile, indent=2, ensure_ascii=False)
 
 
-def remove_useless_description_from_product_files(directory):
-    files_dir = os.path.join(directory)
+def remove_useless_description(directory):
+    prods_dir = os.path.join(directory, 'products')
+    comps_dir = os.path.join(directory, 'components')
 
-    for category_name in os.listdir(files_dir):
-        for ver in os.listdir(os.path.join(files_dir, category_name)):
-            default_file = os.path.join(files_dir, category_name, ver, 'default.json')
+    for category_name in os.listdir(prods_dir):
+        for ver in os.listdir(os.path.join(prods_dir, category_name)):
+            default_file = os.path.join(prods_dir, category_name, ver, 'default.json')
             if os.path.isfile(default_file):
                 with io.open(default_file, 'r', encoding='utf-8') as outfile:
                     data = json.load(outfile)
@@ -57,6 +58,24 @@ def remove_useless_description_from_product_files(directory):
                         json.dump(data, outfile, indent=2, ensure_ascii=False)
                     print('%s rewritten' % default_file)
 
+    for component_type in os.listdir(comps_dir):
+        for ver in os.listdir(os.path.join(comps_dir, component_type)):
+            default_file = os.path.join(comps_dir, component_type, ver, 'default.json')
+            if os.path.isfile(default_file):
+                with io.open(default_file, 'r', encoding='utf-8') as outfile:
+                    data = json.load(outfile)
+
+                rewritten = False
+                if 'templates' in data:
+                    del data['templates']
+                    rewritten = True
+
+                if rewritten:
+                    with io.open(default_file, 'w', encoding='utf-8') as outfile:
+                        json.dump(data, outfile, indent=2, ensure_ascii=False)
+                    print('%s rewritten' % default_file)
+
+
 if __name__ == '__main__':
     path = os.getenv('PROJROOT')
     prods_path = path + '/products'
@@ -73,6 +92,5 @@ if __name__ == '__main__':
         if args.method == 'validate':
             rewrite_component_files(comps_path, args.component_type, args.version)
 
-    if args.type == 'product':
-        if args.method == 'rm-useless':
-            remove_useless_description_from_product_files(prods_path)
+    if args.method == 'rm-useless':
+        remove_useless_description(path)

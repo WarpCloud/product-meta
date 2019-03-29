@@ -1,0 +1,11 @@
+{
+  "category": "数据分析展现工具",
+  "component_type": "PILOTENTERPRISE",
+  "source": "transwarp",
+  "description": "数据分析展现工具",
+  "description_en": "Reporting Tool",
+  "edition": "8.5",
+  "name": "PILOTENTERPRISE-8.5",
+  "resources": [],
+  "chart_name": "smartbi"
+}
