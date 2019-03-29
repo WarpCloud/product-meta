@@ -7,7 +7,7 @@ class OckleFile(object):
     def __init__(self, file_dir):
         settings_file = os.path.join(file_dir, 'settings.yml')
         assert os.path.isfile(settings_file)
-        self.settings = yaml.load(open(settings_file, encoding='utf-8'))
+        self.settings = yaml.load(open(settings_file, encoding='utf-8'), Loader=yaml.FullLoader)
 
     def test_service_description(self, validate_assets):
         for chart_name, d_svcs in self.settings.get('service_description', dict()).items():
