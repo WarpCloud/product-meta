@@ -46,10 +46,8 @@ if [ $1 == component ]; then
         shift 2
         validate_component $2 $3 $1
     fi
-elif [ $1 == product ]; then
-    if [ $2 == rm-useless ]; then
-        python3 $SCRIPT product rm-useless
-    fi
+elif [ $1 == rm-useless ]; then
+    python3 $SCRIPT all rm-useless
 else
     usage
 fi

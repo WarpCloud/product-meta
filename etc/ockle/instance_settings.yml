@@ -384,9 +384,9 @@ zookeeper:
 smartbi:
   resource:
     replicas:
-      - smartbi_tomcat_replicas
+      - tomcat
     ha:
-      - smartbi_tomcat_replicas
+      - tomcat
 
 catalog:
   security:
