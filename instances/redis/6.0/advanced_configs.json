@@ -1,7 +1,0 @@
-{
-  "instance_type": "redis",
-  "configs": [
-    {}
-  ],
-  "version": "6.0"
-}
