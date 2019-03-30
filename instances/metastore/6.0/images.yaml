@@ -5,20 +5,38 @@ max-tdc-version: tdc-2.0.0-rc4
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
+- max: argodb-1.1.0-final
+  min: argodb-1.1.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
 images:
 - name: inceptor
   role: metastore
   variable: metastore_image
-- name: inceptor
+- name: argodb-inceptor
   role: metastore
-  variable: mysql_image
+  variable: argodb_metastore_image
 releases:
+- release-version: argodb-1.1.0-final
+  image-version:
+    argodb_metastore_image: argodb-1.1.0-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: txsql
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: zookeeper
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: ladder
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: shiva
+  final: true
 - release-version: transwarp-6.0.0-final
   image-version:
     metastore_image: transwarp-6.0.0-final
-    mysql_image: transwarp-6.0.0-final
   dependencies:
   - max-version: transwarp-6.0.0-final
     min-version: transwarp-6.0.0-final
@@ -27,7 +45,6 @@ releases:
 - release-version: transwarp-6.0.1-final
   image-version:
     metastore_image: transwarp-6.0.1-final
-    mysql_image: transwarp-6.0.1-final
   dependencies:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-6.0.1-final
@@ -36,7 +53,6 @@ releases:
 - release-version: transwarp-6.0.2-final
   image-version:
     metastore_image: transwarp-6.0.2-final
-    mysql_image: transwarp-6.0.2-final
   dependencies:
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-6.0.2-final
@@ -45,7 +61,6 @@ releases:
 - release-version: transwarp-6.0
   image-version:
     metastore_image: transwarp-6.0
-    mysql_image: transwarp-6.0
   dependencies:
   - max-version: transwarp-6.0
     min-version: transwarp-6.0

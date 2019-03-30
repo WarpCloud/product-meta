@@ -1,0 +1,25 @@
+instance-type: shiva
+major-version: '1.1'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc4
+hot-fix-ranges:
+- max: argodb-1.1.0-final
+  min: argodb-1.1.0-final
+images:
+- name: argodb-shiva-master
+  role: shivamaster
+  variable: shivamaster_image
+- name: argodb-shiva-tabletserverer
+  role: shivatabletserverer
+  variable: shivatabletserver_image
+- name: argodb-shiva-webserverer
+  role: shivawebserver
+  variable: shivawebserver_image
+releases:
+- release-version: argodb-1.1.0-final
+  image-version:
+    shivamaster_image: argodb-1.1.0-final
+    shivatabletserver_image: argodb-1.1.0-final
+    shivawebserver_image: argodb-1.1.0-final
+  dependencies: []
+  final: true

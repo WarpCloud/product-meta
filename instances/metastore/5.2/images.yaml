@@ -11,14 +11,10 @@ images:
 - name: inceptor
   role: metastore
   variable: metastore_image
-- name: inceptor
-  role: metastore
-  variable: mysql_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:
     metastore_image: transwarp-5.2.1-final
-    mysql_image: transwarp-5.2.1-final
   dependencies:
   - max-version: transwarp-5.2.1-final
     min-version: transwarp-5.2.1-final
@@ -27,7 +23,6 @@ releases:
 - release-version: transwarp-5.2.2-final
   image-version:
     metastore_image: transwarp-5.2.2-final
-    mysql_image: transwarp-5.2.2-final
   dependencies:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
@@ -36,7 +31,6 @@ releases:
 - release-version: transwarp-5.2.3-final
   image-version:
     metastore_image: transwarp-5.2.3-final
-    mysql_image: transwarp-5.2.3-final
   dependencies:
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.3-final
@@ -45,7 +39,6 @@ releases:
 - release-version: transwarp-5.2
   image-version:
     metastore_image: transwarp-5.2
-    mysql_image: transwarp-5.2
   dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
