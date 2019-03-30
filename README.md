@@ -18,7 +18,7 @@ Including folders:
 
 ### Image releases
 Including folders:
-* `instances`: offical releases' images and dependencies
+* `instances`: offical releases' images and dependencies (Managed by automatic tool [Verminator](https://github.com/WarpCloud/verminator))
 
 ### Service configurations
 Including folders:
