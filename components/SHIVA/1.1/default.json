@@ -1,0 +1,11 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "SHIVA",
+  "source": "transwarp",
+  "description": "分布式数据管理系统",
+  "description_en": "Reliable Data Distributed Framework",
+  "edition": "1.1",
+  "name": "SHIVA-1.1",
+  "resources": [],
+  "chart_name": "shiva"
+}

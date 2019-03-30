@@ -1,0 +1,21 @@
+instance-type: ladder
+major-version: '1.1'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc4
+hot-fix-ranges:
+- max: argodb-1.1.0-final
+  min: argodb-1.1.0-final
+images:
+- name: argodb-ladder
+  role: master
+  variable: master_image
+- name: argodb-ladder
+  role: worker
+  variable: worker_image
+releases:
+- release-version: argodb-1.1.0-final
+  image-version:
+    master_image: argodb-1.1.0-final
+    worker_image: argodb-1.1.0-final
+  dependencies: []
+  final: true

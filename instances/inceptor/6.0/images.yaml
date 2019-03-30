@@ -5,6 +5,8 @@ max-tdc-version: tdc-2.0.0-rc4
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
+- max: argodb-1.1.0-final
+  min: argodb-1.1.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
 images:
@@ -14,7 +16,34 @@ images:
 - name: inceptor
   role: executor
   variable: inceptor_executor_image
+- name: argodb-inceptor
+  role: inceptor
+  variable: argodb_inceptor_master_image
+- name: argodb-inceptor
+  role: executor
+  variable: argodb_inceptor_executor_image
 releases:
+- release-version: argodb-1.1.0-final
+  image-version:
+    argodb_inceptor_executor_image: argodb-1.1.0-final
+    argodb_inceptor_master_image: argodb-1.1.0-final
+  dependencies:
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: metastore
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: zookeeper
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: ladder
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: shiva
+  - max-version: argodb-1.1.0-final
+    min-version: argodb-1.1.0-final
+    type: dbaservice
+  final: true
 - release-version: transwarp-6.0.0-final
   image-version:
     inceptor_executor_image: transwarp-6.0.0-final
