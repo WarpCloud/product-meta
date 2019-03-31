@@ -1,0 +1,11 @@
+{
+  "category": "TDH平台产品",
+  "component_type": "DBASERVICE",
+  "source": "transwarp",
+  "description": "",
+  "description_en": "",
+  "edition": "1.0",
+  "name": "DBASERVICE-1.0",
+  "resources": [],
+  "chart_name": "dbaservice"
+}

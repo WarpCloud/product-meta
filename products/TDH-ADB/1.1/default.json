@@ -1,0 +1,14 @@
+{
+  "edition": "1.1",
+  "final": true,
+  "components": [
+    "INCEPTOR-6.0",
+    "METASTORE-6.0",
+    "TXSQL-6.0",
+    "ZOOKEEPER-6.0",
+    "SHIVA-1.1",
+    "LADDER-1.1",
+    "DBASERVICE-1.0"
+  ],
+  "resources": []
+}

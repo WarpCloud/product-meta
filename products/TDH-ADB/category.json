@@ -1,0 +1,10 @@
+{
+  "category_name": "TDH-ADB",
+  "description": "",
+  "display_name": "分布式闪存数据库",
+  "description_en": "",
+  "display_name_en": "Distributed Flash Database",
+  "source": "bigdata",
+  "final": true,
+  "resources": []
+}
