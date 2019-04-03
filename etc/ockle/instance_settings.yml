@@ -26,6 +26,12 @@
 #       'mapred' (map reduce, user = 'mapred'),
 #       'dc' (distributed coordinator, user = 'zookeeper')
 #       'hbase' (Hadoop database, user = 'hbase')
+#       'hdfs': (user = 'hdfs')
+#       'hive': (user = 'hive)
+#       'pilot': (user = 'pilot')
+#       'rubik': (user = 'rubik')
+#       'tdt': (user = 'tdt')
+#       'workflow': (user = workflow)
 
 common:
   security:
@@ -287,6 +293,30 @@ terminal:
       - terminal
     ha:
       - terminal
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hbase
+        type: hbase
+      - user: hdfs
+        type: hdfs
+      - user: hive
+        type: hive
+      - user: kafka
+        type: stream
+      - user: pilot
+        type: pilot
+      - user: rubik
+        type: rubik
+      - user: tdt
+        type: tdt
+      - user: workflow
+        type: workflow
+      - user: yarn
+        type: rsrcnego
+      - user: zookeeper
+        type: dc
 
 tcc:
   resource:
