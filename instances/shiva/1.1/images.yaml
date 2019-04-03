@@ -1,7 +1,7 @@
 instance-type: shiva
 major-version: '1.1'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc4
+max-tdc-version: tdc-2.0.0-rc5
 hot-fix-ranges:
 - max: argodb-1.1.0-final
   min: argodb-1.1.0-final

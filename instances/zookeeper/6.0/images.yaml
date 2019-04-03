@@ -1,11 +1,11 @@
 instance-type: zookeeper
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc4
+max-tdc-version: tdc-2.0.0-rc5
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
-- max: tdc-2.0.0-rc4
+- max: tdc-2.0.0-rc5
   min: tdc-2.0.0-rc0
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -39,6 +39,11 @@ releases:
 - release-version: tdc-2.0.0-rc4
   image-version:
     zk_image: tdc-2.0.0-rc4
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc5
+  image-version:
+    zk_image: tdc-2.0.0-rc5
   dependencies: []
   final: true
 - release-version: tdc-2.0
