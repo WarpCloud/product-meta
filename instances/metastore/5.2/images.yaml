@@ -19,6 +19,9 @@ releases:
   - max-version: transwarp-5.2.1-final
     min-version: transwarp-5.2.1-final
     type: hdfs
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
+    type: yarn
   final: true
 - release-version: transwarp-5.2.2-final
   image-version:
@@ -27,6 +30,9 @@ releases:
   - max-version: transwarp-5.2.2-final
     min-version: transwarp-5.2.2-final
     type: hdfs
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: yarn
   final: true
 - release-version: transwarp-5.2.3-final
   image-version:
@@ -35,6 +41,9 @@ releases:
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.3-final
     type: hdfs
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: yarn
   final: true
 - release-version: transwarp-5.2
   image-version:
@@ -43,4 +52,7 @@ releases:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
     type: hdfs
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: yarn
   final: false
