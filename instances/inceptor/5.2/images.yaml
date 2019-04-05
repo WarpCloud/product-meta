@@ -37,6 +37,9 @@ releases:
     type: elasticsearch
   - max-version: transwarp-5.2.1-final
     min-version: transwarp-5.2.1-final
+    type: yarn
+  - max-version: transwarp-5.2.1-final
+    min-version: transwarp-5.2.1-final
     type: txsql
   final: true
 - release-version: transwarp-5.2.2-final

@@ -34,6 +34,9 @@ releases:
   - max-version: transwarp-6.0.1-final
     min-version: transwarp-6.0.1-final
     type: zookeeper
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: yarn
   - max-version: argodb-1.1.0-final
     min-version: argodb-1.1.0-final
     type: ladder
