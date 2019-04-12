@@ -16,7 +16,8 @@
     "REDIS-5.2",
     "KONG-0.11",
     "MYSQL-5.7",
-    "WORKFLOW-5.2"
+    "WORKFLOW-5.2",
+    "TDH-METRICS-EXPORTER-5.2"
 
   ],
   "resources": [

@@ -13,6 +13,7 @@
     "INCEPTOR-5.2",
     "ZOOKEEPER-5.2",
     "METASTORE-5.2",
+    "TDH-METRICS-EXPORTER-5.2",
     "REDIS-5.2"
   ],
   "resources": [

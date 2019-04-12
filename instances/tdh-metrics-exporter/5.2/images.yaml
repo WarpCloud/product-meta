@@ -1,0 +1,58 @@
+instance-type: tdh-metrics-exporter
+major-version: '5.2'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc5
+hot-fix-ranges:
+- max: transwarp-5.2
+  min: transwarp-5.2
+images:
+- name: tdh-exporter
+  role: tdhmetricsexporter
+  variable: tdh_exporter_image
+releases:
+- release-version: transwarp-5.2.2-final
+  image-version:
+    tdh_exporter_image: transwarp-5.2.2-final
+  dependencies:
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: inceptor
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: metastore
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: zookeeper
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: hdfs
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: kafka
+  - max-version: transwarp-5.2.2-final
+    min-version: transwarp-5.2.2-final
+    type: slipstream
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    tdh_exporter_image: transwarp-5.2
+  dependencies:
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: inceptor
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: metastore
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: zookeeper
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: hdfs
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: kafka
+  - max-version: transwarp-5.2
+    min-version: transwarp-5.2
+    type: slipstream
+  final: false
