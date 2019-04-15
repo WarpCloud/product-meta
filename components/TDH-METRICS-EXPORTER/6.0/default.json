@@ -1,0 +1,17 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "TDH-METRICS-EXPORTER",
+  "source": "transwarp",
+  "description": "metrics export",
+  "description_en": "metrics export",
+  "edition": "6.0",
+  "name": "TDH-METRICS-EXPORTER-6.0",
+  "is_share": true,
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-metrics.png"
+    }
+  ],
+  "chart_name": "tdh-metrics-exporter"
+}

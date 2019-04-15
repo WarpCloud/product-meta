@@ -12,7 +12,8 @@
     "TERMINAL-2.0",
     "TXSQL-5.2",
     "ZOOKEEPER-5.2",
-    "METASTORE-5.2"
+    "METASTORE-5.2",
+    "TDH-METRICS-EXPORTER-5.2"
   ],
   "resources": [
     {
@@ -23,5 +24,6 @@
       "type": "highlights",
       "name": "highlights-tdh-dw.html"
     }
-  ]
+  ],
+  "product_line": "transwarp"
 }

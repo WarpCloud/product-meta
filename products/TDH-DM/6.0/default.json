@@ -13,7 +13,8 @@
     "YARN-6.0",
     "ZOOKEEPER-6.0",
     "METASTORE-6.0",
-    "NOTIFICATION-6.0"
+    "NOTIFICATION-6.0",
+    "TDH-METRICS-EXPORTER-6.0"
   ],
   "resources": [
     {
@@ -24,5 +25,6 @@
       "type": "highlights",
       "name": "highlights-tdh-dm.html"
     }
-  ]
+  ],
+  "product_line": "transwarp"
 }
