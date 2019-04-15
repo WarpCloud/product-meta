@@ -11,5 +11,6 @@
     "DBASERVICE-1.0",
     "TDH-METRICS-EXPORTER-6.0"
   ],
-  "resources": []
+  "resources": [],
+  "product_line": "argodb"
 }
