@@ -328,6 +328,7 @@ service_description:
       protocol: "HTTP"
       path: "/pilot"
       require_gateway_registration: true
+      resource_name: component-pilotenterprise.svg
       display:
         display_name: "Pilot企业版"
         display_name_en: "Pilot Enterprise"

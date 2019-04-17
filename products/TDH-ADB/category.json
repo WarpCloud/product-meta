@@ -6,5 +6,11 @@
   "display_name_en": "Distributed Flash Database",
   "source": "bigdata",
   "final": true,
-  "resources": []
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-adb.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-adb.png"
+  }]
 }
