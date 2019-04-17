@@ -197,9 +197,9 @@ kibana:
 kong:
   resource:
     replicas:
-      - kong_replicas
+      - kong
     ha:
-      - kong_replicas
+      - kong
 
 kong-dashboard:
   resource:
