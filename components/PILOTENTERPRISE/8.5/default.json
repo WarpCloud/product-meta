@@ -6,6 +6,11 @@
   "description_en": "Reporting Tool",
   "edition": "8.5",
   "name": "PILOTENTERPRISE-8.5",
-  "resources": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-pilotenterprise.svg"
+    }
+  ],
   "chart_name": "smartbi"
 }

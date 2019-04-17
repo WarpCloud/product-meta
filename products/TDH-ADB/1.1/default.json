@@ -11,6 +11,11 @@
     "DBASERVICE-1.0",
     "TDH-METRICS-EXPORTER-6.0"
   ],
-  "resources": [],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-adb.html"
+    }
+  ],
   "product_line": "argodb"
 }

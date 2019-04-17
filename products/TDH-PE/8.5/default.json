@@ -4,5 +4,10 @@
   "components": [
     "PILOTENTERPRISE-8.5"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-pe.html"
+    }
+  ]
 }

@@ -4,6 +4,12 @@
   "source": "transwarp",
   "description": "数据库",
   "edition": "5.7",
-  "category": "transwarp",
+  "category": "运维和开发工具",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-mysql.png"
+    }
+  ],
   "chart_name": "mysql"
 }
