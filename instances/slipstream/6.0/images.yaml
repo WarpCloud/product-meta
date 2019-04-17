@@ -1,7 +1,7 @@
 instance-type: slipstream
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc5
+max-tdc-version: tdc-2.0.0-rc6
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final

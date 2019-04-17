@@ -1,9 +1,9 @@
 instance-type: mysql
 major-version: '5.7'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc5
+max-tdc-version: tdc-2.0.0-rc6
 hot-fix-ranges:
-- max: tdc-2.0.0-rc5
+- max: tdc-2.0.0-rc6
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -40,6 +40,11 @@ releases:
 - release-version: tdc-2.0.0-rc5
   image-version:
     mysql_image: tdc-2.0.0-rc5
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc6
+  image-version:
+    mysql_image: tdc-2.0.0-rc6
   dependencies: []
   final: true
 - release-version: tdc-2.0
