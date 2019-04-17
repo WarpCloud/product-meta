@@ -6,5 +6,11 @@
   "display_name_en": "Pilot Enterprise",
   "source": "bigdata",
   "final": true,
-  "resources": []
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdh-pe.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdh-pe.png"
+  }]
 }
