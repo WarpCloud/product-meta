@@ -9,10 +9,10 @@ images:
 - name: argodb-shiva-master
   role: shivamaster
   variable: shivamaster_image
-- name: argodb-shiva-tabletserverer
-  role: shivatabletserverer
+- name: argodb-shiva-tabletserver
+  role: shivatabletserver
   variable: shivatabletserver_image
-- name: argodb-shiva-webserverer
+- name: argodb-shiva-webserver
   role: shivawebserver
   variable: shivawebserver_image
 releases:

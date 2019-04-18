@@ -1,6 +1,6 @@
 {
   "category_name": "TDH-ADB",
-  "description": "",
+  "description": "分布式闪存数据库产品ArgoDB，可以替代 Hadoop + MPP 混合架构，一站式满足企业对大数据平台的各种诉求。",
   "display_name": "分布式闪存数据库",
   "description_en": "",
   "display_name_en": "Distributed Flash Database",

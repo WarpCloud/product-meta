@@ -1,0 +1,11 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "INCEPTORGATEWAY",
+  "source": "transwarp",
+  "description": "INCEPTOR客户端与服务器中间件",
+  "description_en": "",
+  "edition": "6.0",
+  "name": "INCEPTORGATEWAY-6.0",
+  "resources": [],
+  "chart_name": "inceptorgateway"
+}
