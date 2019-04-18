@@ -1,8 +1,8 @@
 {
-  "category": "TDH平台产品",
+  "category": "运维和开发工具",
   "component_type": "DBASERVICE",
   "source": "transwarp",
-  "description": "",
+  "description": "数据库服务管理运维工具",
   "description_en": "",
   "edition": "1.0",
   "name": "DBASERVICE-1.0",
