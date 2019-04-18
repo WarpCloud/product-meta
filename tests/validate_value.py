@@ -31,6 +31,28 @@ class Component(ModuleMeta):
         print('Checking Component {}-{} static resources'.format(self.type, self.version))
         super(Component, self).test_resources(validate_assets=validate_assets)
 
+    def test_chart_name(self, comp_type_to_chart_name, chart_name_to_comp_type):
+        print('Checking Component {}-{} chart name'.format(self.type, self.version))
+        chart_name = self.desc['chart_name']
+
+        if chart_name in chart_name_to_comp_type:
+            assert chart_name_to_comp_type[chart_name] == self.type, \
+                'Conflicted component types {}, {} for chart name {}'.format(
+                    self.type, chart_name_to_comp_type[chart_name], chart_name
+                )
+
+        if self.type in comp_type_to_chart_name:
+            assert comp_type_to_chart_name[self.type] == chart_name, \
+                'Conflicted chart names {}, {} for component type {}'.format(
+                    chart_name, comp_type_to_chart_name[self.type], self.type
+                )
+
+        if chart_name not in chart_name_to_comp_type and self.type not in comp_type_to_chart_name:
+            chart_name_to_comp_type[chart_name] = self.type
+            comp_type_to_chart_name[self.type] = chart_name
+
+        return comp_type_to_chart_name, chart_name_to_comp_type
+
 
 class Product(ModuleMeta):
     def __init__(self, type, version, file_dir):
@@ -87,6 +109,11 @@ if __name__ == '__main__':
     assets_name = set(os.listdir(assets_path))
     categories = [Category(n, os.path.join(products_path, n)) for n in os.listdir(products_path)]
     [c.test_resources(assets_name) for c in categories]
+
     components = [Component(type=t, version=v, file_dir=os.path.join(components_path, t, v))
                   for t in os.listdir(components_path) for v in os.listdir(os.path.join(components_path, t))]
-    [c.test_resources(assets_name) for c in components]
+    comp_to_chart = dict()
+    chart_to_comp = dict()
+    for c in components:
+        c.test_resources(assets_name)
+        comp_to_chart, chart_to_comp = c.test_chart_name(comp_to_chart, chart_to_comp)
