@@ -11,6 +11,5 @@ chmod +x $PROJROOT/tests/validate_products.sh
 $PROJROOT/tests/validate_products.sh
 
 python3 $PROJROOT/tests/validate_instance_images.py
-# python3 $PROJROOT/tests/validate_component_value.py
 python3 $PROJROOT/tests/validate_value.py
 python3 $PROJROOT/tests/validate_etc.py
