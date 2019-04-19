@@ -3,7 +3,7 @@
   "component_type": "DBASERVICE",
   "source": "transwarp",
   "description": "数据库服务管理运维工具",
-  "description_en": "",
+  "description_en": "Database Administration Service",
   "edition": "1.0",
   "name": "DBASERVICE-1.0",
   "resources": [],
