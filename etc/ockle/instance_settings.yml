@@ -431,6 +431,38 @@ catalog:
       - user: zookeeper
         type: dc
 
-#shiva:
-#ladder:
-#dbaservice:
+dbaservice:
+  resource:
+    replicas:
+      - dbaservice
+    ha:
+      - dbaservice
+
+inceptorgateway:
+  resource:
+    replicas:
+      - inceptorgateway
+    ha:
+      - inceptorgateway
+
+shiva:
+  resource:
+    replicas:
+      - shivamaster
+      - shivatabletserver
+      - shivawebserver
+    computing_unit:
+      - shivamaster
+      - shivatabletserver
+    ha:
+      - shivawebserver
+
+ladder:
+  resource:
+    replicas:
+      - master
+      - worker
+    computing_unit:
+      - worker
+    ha:
+      - master

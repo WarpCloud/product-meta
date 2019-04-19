@@ -335,6 +335,43 @@ service_description:
         description: "企业级商业智能应用平台。"
         description_en: "Modern business intelligence platform."
 
+  dbaservice:
+    - port: 8888
+      select_name: dbaservice
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      display:
+        display_name: "DBA Service UI"
+        display_name_en: "DBA Service UI"
+        description: "数据库服务管理运维工具DBA Service提供的Web可视化操作平台，用于展示数据库产品的运行情况、性能分析，以及支持运维交互操作。"
+        description_en: "DBA Service UI is a tool to display database service's running status, SQL analysis, as well as to support associated operations."
+
+  inceptorgateway:
+    - port: 6060
+      select_name: inceptorgateway
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      display:
+        display_name: "Inceptor Gateway UI"
+        display_name_en: "Inceptor Gateway UI"
+        description: "INCEPTOR客户端与服务器中间件Inceptor Gateway提供的Web可视化操作平台，用于展示Inceptor Gateway的运行细节，包括配置信息，集群状态以及Inceptor Gateway当前所有连接的详细信息等。"
+        description_en: "Inceptor Gateway UI is a tool to inspect service running details like configurations and cluster state. Also, it displays detailed information of all the connecting Inceptor services."
+
+  shiva:
+    - port: 4567
+      select_name: webserver
+      protocol: "HTTP"
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-shiva.svg
+      display:
+        display_name: "Shiva监控"
+        display_name_en: "Shiva Monitor"
+        description: "Shiva监控是用于进行Shiva服务监控的Web可视化操作平台。提供Shiva集群的基本信息、表信息， Tablet server的基本信息、统计信息，以及集群告警信息。"
+        description_en: "Shiva Monitor is a tool to display Shiva cluster's information, table details, tablet servers' information and metrics, as well as runtime warnings."
+
 
 component_type_display_priority:
   category:
