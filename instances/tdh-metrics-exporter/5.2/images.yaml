@@ -35,6 +35,29 @@ releases:
     min-version: transwarp-5.2.2-final
     type: slipstream
   final: true
+- release-version: transwarp-5.2.3-final
+  image-version:
+    tdh_exporter_image: transwarp-5.2.3-final
+  dependencies:
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: inceptor
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: metastore
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: zookeeper
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: hdfs
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: kafka
+  - max-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.3-final
+    type: slipstream
+  final: true
 - release-version: transwarp-5.2
   image-version:
     tdh_exporter_image: transwarp-5.2
