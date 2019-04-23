@@ -2,7 +2,11 @@ instance-type: inceptorgateway
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
 max-tdc-version: tdc-2.0.0-rc6
-hot-fix-ranges: []
+hot-fix-ranges:
+- max: transwarp-5.2.3-final
+  min: transwarp-5.2.2-final
+- max: transwarp-5.2
+  min: transwarp-5.2
 images:
 - name: inceptor-gateway
   role: inceptorgateway
