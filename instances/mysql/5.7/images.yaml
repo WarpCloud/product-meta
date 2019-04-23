@@ -3,52 +3,15 @@ major-version: '5.7'
 min-tdc-version: tdc-2.0.0-rc0
 max-tdc-version: tdc-2.0.0-rc6
 hot-fix-ranges:
-- max: tdc-2.0.0-rc6
-  min: tdc-2.0.0-rc0
-- max: tdc-2.0
-  min: tdc-2.0
+- max: '5.7'
+  min: '5.7'
 images:
 - name: mysql
   role: mysql
   variable: mysql_image
 releases:
-- release-version: tdc-2.0.0-rc0
+- release-version: '5.7'
   image-version:
-    mysql_image: tdc-2.0.0-rc0
+    mysql_image: '5.7'
   dependencies: []
   final: true
-- release-version: tdc-2.0.0-rc1
-  image-version:
-    mysql_image: tdc-2.0.0-rc1
-  dependencies: []
-  final: true
-- release-version: tdc-2.0.0-rc2
-  image-version:
-    mysql_image: tdc-2.0.0-rc2
-  dependencies: []
-  final: true
-- release-version: tdc-2.0.0-rc3
-  image-version:
-    mysql_image: tdc-2.0.0-rc3
-  dependencies: []
-  final: true
-- release-version: tdc-2.0.0-rc4
-  image-version:
-    mysql_image: tdc-2.0.0-rc4
-  dependencies: []
-  final: true
-- release-version: tdc-2.0.0-rc5
-  image-version:
-    mysql_image: tdc-2.0.0-rc5
-  dependencies: []
-  final: true
-- release-version: tdc-2.0.0-rc6
-  image-version:
-    mysql_image: tdc-2.0.0-rc6
-  dependencies: []
-  final: true
-- release-version: tdc-2.0
-  image-version:
-    mysql_image: tdc-2.0
-  dependencies: []
-  final: false
