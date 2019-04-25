@@ -100,6 +100,7 @@ hdfs:
       - hdfsdatanode
       - hdfsjournalnode
       - httpfs
+      - editlogmetric  # value must be the same with hdfsnamenode
     computing_unit:
       - hdfsdatanode
     stable_unit:
