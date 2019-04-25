@@ -4,7 +4,7 @@ min-tdc-version: tdc-2.0.0-rc0
 max-tdc-version: tdc-2.0.0-rc6
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
-  min: transwarp-6.0.1-final
+  min: transwarp-6.0.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
 images:
@@ -12,6 +12,11 @@ images:
   role: inceptorgateway
   variable: inceptorgateway_image
 releases:
+- release-version: transwarp-6.0.0-final
+  image-version:
+    inceptorgateway_image: transwarp-6.0.0-final
+  dependencies: []
+  final: true
 - release-version: transwarp-6.0.1-final
   image-version:
     inceptorgateway_image: transwarp-6.0.1-final
