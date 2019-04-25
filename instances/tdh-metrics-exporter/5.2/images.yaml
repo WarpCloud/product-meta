@@ -3,64 +3,39 @@ major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
 max-tdc-version: tdc-2.0.0-rc6
 hot-fix-ranges:
-- max: transwarp-5.2.3-final
-  min: transwarp-5.2.2-final
-- max: transwarp-5.2
-  min: transwarp-5.2
+- max: 5.2.2
+  min: 5.2.2
 images:
 - name: tdh-exporter
   role: tdhmetricsexporter
   variable: tdh_exporter_image
 releases:
-- release-version: transwarp-5.2.2-final
+- release-version: 5.2.2
   image-version:
-    tdh_exporter_image: transwarp-5.2.2-final
-  dependencies:
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: inceptor
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: metastore
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: zookeeper
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: hdfs
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: kafka
-  - max-version: transwarp-5.2.2-final
-    min-version: transwarp-5.2.2-final
-    type: slipstream
-  final: true
-- release-version: transwarp-5.2.3-final
-  image-version:
-    tdh_exporter_image: transwarp-5.2.3-final
+    tdh_exporter_image: 5.2.2
   dependencies:
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: inceptor
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: metastore
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: zookeeper
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: hdfs
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: kafka
   - max-version: transwarp-5.2.3-final
-    min-version: transwarp-5.2.3-final
+    min-version: transwarp-5.2.1-final
     type: slipstream
   final: true
-- release-version: transwarp-5.2
+- release-version: '5.2'
   image-version:
-    tdh_exporter_image: transwarp-5.2
+    tdh_exporter_image: '5.2'
   dependencies:
   - max-version: transwarp-5.2
     min-version: transwarp-5.2
