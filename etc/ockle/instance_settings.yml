@@ -215,12 +215,12 @@ logstash:
       - logstash_replicas
     computing_unit:
       - logstash_replicas
-  security:
-    principals:
-      - user: logstash
-        type: default
-      - user: kafka
-        type: stream
+#  security:
+#    principals:
+#      - user: logstash
+#        type: default
+#      - user: kafka
+#        type: stream
 
 notification:
   resource:
