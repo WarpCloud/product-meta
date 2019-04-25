@@ -23,9 +23,13 @@ images:
 - name: httpfs
   role: httpfs
   variable: hdfs_httpfs_image
+- name: hadoop-exporter
+  role: editlogmetric
+  variable: editlogmetric_image
 releases:
 - release-version: transwarp-5.2.1-final
   image-version:
+    editlogmetric_image: '2.0'
     hdfs_data_image: transwarp-5.2.1-final
     hdfs_httpfs_image: transwarp-5.2.1-final
     hdfs_journal_image: transwarp-5.2.1-final
@@ -38,6 +42,7 @@ releases:
   final: true
 - release-version: transwarp-5.2.2-final
   image-version:
+    editlogmetric_image: '2.0'
     hdfs_data_image: transwarp-5.2.2-final
     hdfs_httpfs_image: transwarp-5.2.2-final
     hdfs_journal_image: transwarp-5.2.2-final
@@ -50,6 +55,7 @@ releases:
   final: true
 - release-version: transwarp-5.2.3-final
   image-version:
+    editlogmetric_image: '2.0'
     hdfs_data_image: transwarp-5.2.3-final
     hdfs_httpfs_image: transwarp-5.2.3-final
     hdfs_journal_image: transwarp-5.2.3-final
@@ -62,6 +68,7 @@ releases:
   final: true
 - release-version: transwarp-5.2
   image-version:
+    editlogmetric_image: '2.0'
     hdfs_data_image: transwarp-5.2
     hdfs_httpfs_image: transwarp-5.2
     hdfs_journal_image: transwarp-5.2
