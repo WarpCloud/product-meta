@@ -1,9 +1,9 @@
 instance-type: kibana
 major-version: '2.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc6
+max-tdc-version: tdc-2.0.0-rc7
 hot-fix-ranges:
-- max: tdc-2.0.0-rc6
+- max: tdc-2.0.0-rc7
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -66,6 +66,14 @@ releases:
   dependencies:
   - max-version: tdc-2.0.0-rc6
     min-version: tdc-2.0.0-rc6
+    type: elasticsearch
+  final: true
+- release-version: tdc-2.0.0-rc7
+  image-version:
+    kibana_image: tdc-2.0.0-rc7
+  dependencies:
+  - max-version: tdc-2.0.0-rc7
+    min-version: tdc-2.0.0-rc7
     type: elasticsearch
   final: true
 - release-version: tdc-2.0
