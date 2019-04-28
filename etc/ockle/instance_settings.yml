@@ -258,6 +258,17 @@ rubik:
       - user: rubik
         type: default
 
+kms:
+  resource:
+    replicas:
+      - kms
+  security:
+    principal_list:
+      - HTTP
+      - kms
+  optional:
+    choose_enabled: KMS_ENABLED
+
 slipstream:
   resource:
     replicas:
