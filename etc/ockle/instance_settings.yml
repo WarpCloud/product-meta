@@ -263,9 +263,11 @@ kms:
     replicas:
       - kms
   security:
-    principal_list:
-      - HTTP
-      - kms
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: kms
+        type: default
   optional:
     choose_enabled: KMS_ENABLED
 
