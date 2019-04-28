@@ -1,0 +1,11 @@
+{
+  "category": "SYSTEM",
+  "component_type": "KMS",
+  "source": "transwarp",
+  "description": "KMS",
+  "edition": "6.0",
+  "name": "KMS-6.0",
+  "chart_name": "kms",
+  "system_type": "tenant",
+  "choose_enabled": "KMS_ENABLED"
+}
