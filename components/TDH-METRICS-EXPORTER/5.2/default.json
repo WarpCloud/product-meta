@@ -6,7 +6,7 @@
   "description_en": "metrics export",
   "edition": "5.2",
   "name": "TDH-METRICS-EXPORTER-5.2",
-  "is_share": true,
+  "is_share": false,
   "resources": [
     {
       "type": "component",
