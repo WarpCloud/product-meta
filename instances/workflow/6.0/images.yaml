@@ -7,13 +7,19 @@ hot-fix-ranges:
   min: transwarp-6.0.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
+- max: '6.0'
+  min: '6.0'
 images:
 - name: workflow
   role: workflow
   variable: workflow_image
+- name: tdhclient
+  role: tdhclient
+  variable: tdhclient_image
 releases:
 - release-version: transwarp-6.0.0-final
   image-version:
+    tdhclient_image: '6.0'
     workflow_image: transwarp-6.0.0-final
   dependencies:
   - max-version: transwarp-6.0.0-final
@@ -25,6 +31,7 @@ releases:
   final: true
 - release-version: transwarp-6.0.1-final
   image-version:
+    tdhclient_image: '6.0'
     workflow_image: transwarp-6.0.1-final
   dependencies:
   - max-version: transwarp-6.0.1-final
@@ -36,6 +43,7 @@ releases:
   final: true
 - release-version: transwarp-6.0.2-final
   image-version:
+    tdhclient_image: '6.0'
     workflow_image: transwarp-6.0.2-final
   dependencies:
   - max-version: transwarp-6.0.2-final
@@ -47,6 +55,7 @@ releases:
   final: true
 - release-version: transwarp-6.0
   image-version:
+    tdhclient_image: '6.0'
     workflow_image: transwarp-6.0
   dependencies:
   - max-version: transwarp-6.0
