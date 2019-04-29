@@ -326,7 +326,7 @@ service_description:
     - port: 18080
       select_name: smartbi-tomcat
       protocol: "HTTP"
-      path: "/pilot"
+      subpath: "/pilot"
       require_gateway_registration: true
       resource_name: component-pilotenterprise.svg
       display:
