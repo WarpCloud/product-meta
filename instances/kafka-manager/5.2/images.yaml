@@ -1,9 +1,9 @@
 instance-type: kafka-manager
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc7
+max-tdc-version: tdc-2.0.0-rc8
 hot-fix-ranges:
-- max: tdc-2.0.0-rc7
+- max: tdc-2.0.0-rc8
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -92,6 +92,17 @@ releases:
 - release-version: tdc-2.0.0-rc7
   image-version:
     kafka_manager_image: tdc-2.0.0-rc7
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: kafka
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-5.2.1-final
+    type: zookeeper
+  final: true
+- release-version: tdc-2.0.0-rc8
+  image-version:
+    kafka_manager_image: tdc-2.0.0-rc8
   dependencies:
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
