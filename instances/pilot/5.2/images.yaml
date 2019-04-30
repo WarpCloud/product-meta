@@ -1,9 +1,9 @@
 instance-type: pilot
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc7
+max-tdc-version: tdc-2.0.0-rc8
 hot-fix-ranges:
-- max: transwarp-5.2.3-final
+- max: transwarp-5.2.4-final
   min: transwarp-5.2.1-final
 - max: transwarp-5.2
   min: transwarp-5.2
@@ -40,6 +40,15 @@ releases:
   dependencies:
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.3-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.4-final
+  image-version:
+    filerobot_image: transwarp-5.2.4-final
+    pilot_image: transwarp-5.2.4-final
+  dependencies:
+  - max-version: transwarp-5.2.4-final
+    min-version: transwarp-5.2.4-final
     type: txsql
   final: true
 - release-version: transwarp-5.2
