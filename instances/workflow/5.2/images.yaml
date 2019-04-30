@@ -1,9 +1,9 @@
 instance-type: workflow
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc7
+max-tdc-version: tdc-2.0.0-rc8
 hot-fix-ranges:
-- max: transwarp-5.2.3-final
+- max: transwarp-5.2.4-final
   min: transwarp-5.2.1-final
 - max: sophon-2.2.1-final
   min: sophon-2.2.0-final
@@ -115,6 +115,18 @@ releases:
     type: zookeeper
   - max-version: transwarp-5.2.3-final
     min-version: transwarp-5.2.3-final
+    type: txsql
+  final: true
+- release-version: transwarp-5.2.4-final
+  image-version:
+    tdhclient_image: '5.2'
+    workflow_image: transwarp-5.2.4-final
+  dependencies:
+  - max-version: transwarp-5.2.4-final
+    min-version: transwarp-5.2.4-final
+    type: zookeeper
+  - max-version: transwarp-5.2.4-final
+    min-version: transwarp-5.2.4-final
     type: txsql
   final: true
 - release-version: transwarp-5.2

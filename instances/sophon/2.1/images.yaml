@@ -28,25 +28,25 @@ releases:
     sophon_driver_image: sophon-2.1.0-final
     sophon_server_image: sophon-2.1.0-final
   dependencies:
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: yarn
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: elasticsearch
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: hyperbase
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: txsql
   - max-version: sophon-2.1.0-final

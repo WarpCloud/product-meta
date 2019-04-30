@@ -1,9 +1,9 @@
 instance-type: logstash
 major-version: '2.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc7
+max-tdc-version: tdc-2.0.0-rc8
 hot-fix-ranges:
-- max: tdc-2.0.0-rc7
+- max: tdc-2.0.0-rc8
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -122,6 +122,20 @@ releases:
     type: elasticsearch
   - max-version: tdc-2.0.0-rc7
     min-version: tdc-2.0.0-rc7
+    type: zookeeper
+  final: true
+- release-version: tdc-2.0.0-rc8
+  image-version:
+    logstash_image: tdc-2.0.0-rc8
+  dependencies:
+  - max-version: tdc-2.0.0-rc8
+    min-version: tdc-2.0.0-rc8
+    type: kafka
+  - max-version: tdc-2.0.0-rc8
+    min-version: tdc-2.0.0-rc8
+    type: elasticsearch
+  - max-version: tdc-2.0.0-rc8
+    min-version: tdc-2.0.0-rc8
     type: zookeeper
   final: true
 - release-version: tdc-2.0

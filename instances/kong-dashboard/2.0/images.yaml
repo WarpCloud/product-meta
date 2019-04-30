@@ -1,9 +1,9 @@
 instance-type: kong-dashboard
 major-version: '2.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc7
+max-tdc-version: tdc-2.0.0-rc8
 hot-fix-ranges:
-- max: tdc-2.0.0-rc7
+- max: tdc-2.0.0-rc8
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -50,6 +50,11 @@ releases:
 - release-version: tdc-2.0.0-rc7
   image-version:
     kong_dashboard_image: tdc-2.0.0-rc7
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-rc8
+  image-version:
+    kong_dashboard_image: tdc-2.0.0-rc8
   dependencies: []
   final: true
 - release-version: tdc-2.0
