@@ -112,15 +112,15 @@ Releases:
   - release_name: sophon-2.2.0-final
     products:
       - min: transwarp-5.2.1-final
-        max: transwarp-6.0.1-final
+        max: transwarp-6.0.2-final
   - release_name: sophon-2.2.1-final
     products:
       - min: transwarp-5.2.1-final
-        max: transwarp-6.0.1-final
+        max: transwarp-6.0.2-final
   ###########################################
   # Additional constraints on ArgoDB releases
   ###########################################
   - release_name: argodb-1.1.0-final
     products:
       - min: transwarp-6.0.1-final
-        max: transwarp-6.0.1-final
+        max: transwarp-6.0.2-final

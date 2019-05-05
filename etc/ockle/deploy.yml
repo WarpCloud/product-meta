@@ -46,13 +46,16 @@ ticket:
 
 guardian:
   advanceConfig:
-    - variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.username"]
+    - key: ds_admin_username
+      variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.username"]
       value: admin
       type: string
-    - variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.password"]
+    - key: ds_admin_password
+      variable: Advance_Config.guardian_ds_properties["guardian.ds.admin.password"]
       value: 123
       type: string
-    - variable: Advance_Config.guardian.realm
+    - key: realm
+      variable: Advance_Config.guardian.realm
       value: xpath[$.instance_config.guradian_realm]
       type: string
     - variable: Advance_Config.guardian.guardian_site["guardian.client.http.principal"]
