@@ -13,7 +13,7 @@ images:
 - name: workflow
   role: workflow
   variable: workflow_image
-- name: tdhclient
+- name: tdh-client
   role: tdhclient
   variable: tdhclient_image
 releases:
