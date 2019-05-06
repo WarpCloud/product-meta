@@ -1,0 +1,5 @@
+# Default code reviewers
+* @xiaming.chen @nonetheless @xinxu
+
+# Release images should be review by its owners
+instances/ @xiaming.chen @xinxu
