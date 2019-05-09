@@ -322,7 +322,7 @@ service_description:
 #        description: "企业级商业智能应用平台。"
 #        description_en: "Modern business intelligence platform."
 
-  smartbi:
+  pilotenterprise:
     - port: 18080
       select_name: smartbi-tomcat
       protocol: "HTTP"
