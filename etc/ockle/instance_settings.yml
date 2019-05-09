@@ -132,6 +132,8 @@ hyperbase:
         type: spnego
       - user: hbase
         type: default
+      - user: kafka
+        type: stream
 
 inceptor:
   resource:
@@ -429,6 +431,13 @@ zookeeper:
         type: default
 
 smartbi:
+  resource:
+    replicas:
+      - tomcat
+    ha:
+      - tomcat
+
+pilotenterprise:
   resource:
     replicas:
       - tomcat
