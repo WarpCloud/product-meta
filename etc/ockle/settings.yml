@@ -322,9 +322,22 @@ service_description:
 #        description: "企业级商业智能应用平台。"
 #        description_en: "Modern business intelligence platform."
 
-  pilotenterprise:
+  smartbi:
     - port: 18080
       select_name: smartbi-tomcat
+      protocol: "HTTP"
+      subpath: "/pilot"
+      require_gateway_registration: true
+      resource_name: component-pilotenterprise.svg
+      display:
+        display_name: "Pilot企业版"
+        display_name_en: "Pilot Enterprise"
+        description: "企业级商业智能应用平台。"
+        description_en: "Modern business intelligence platform."
+
+  pilotenterprise:
+    - port: 18080
+      select_name: pilotenterprise-tomcat
       protocol: "HTTP"
       subpath: "/pilot"
       require_gateway_registration: true

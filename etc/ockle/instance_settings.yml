@@ -132,8 +132,6 @@ hyperbase:
         type: spnego
       - user: hbase
         type: default
-      - user: kafka
-        type: stream
 
 inceptor:
   resource:
