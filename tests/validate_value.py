@@ -13,7 +13,7 @@ class ModuleMeta(object):
             for r in resources:
                 assert 'type' in r
                 assert 'name' in r
-                assert r['name'] in validate_assets
+                assert r['name'] in validate_assets, 'Asset name {} does not exist in assets folder'.format(r['name'])
 
 
 class Component(ModuleMeta):

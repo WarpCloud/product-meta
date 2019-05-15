@@ -6,6 +6,11 @@
   "description_en": "Durable Data Distributed File System",
   "edition": "1.1",
   "name": "LADDER-1.1",
-  "resources": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-ladder.svg"
+    }
+  ],
   "chart_name": "ladder"
 }
