@@ -6,6 +6,11 @@
   "description_en": "",
   "edition": "6.0",
   "name": "INCEPTORGATEWAY-6.0",
-  "resources": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-inceptorgateway.svg"
+    }
+  ],
   "chart_name": "inceptorgateway"
 }

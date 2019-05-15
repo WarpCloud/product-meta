@@ -6,6 +6,11 @@
   "description_en": "Database Administration Service",
   "edition": "1.0",
   "name": "DBASERVICE-1.0",
-  "resources": [],
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-dbaservice.svg"
+    }
+  ],
   "chart_name": "dbaservice"
 }
