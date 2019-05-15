@@ -11,11 +11,13 @@ class OckleFile(object):
 
     def test_service_description(self, validate_assets):
         for chart_name, d_svcs in self.settings.get('service_description', dict()).items():
+            print('Checking Chart {} service description'.format(chart_name))
             for d_svc in d_svcs:
                 assert 'port' in d_svc
                 assert 'select_name' in d_svc
                 if 'resource_name' in d_svc:
                     assert d_svc['resource_name'] in validate_assets
+
 
 if __name__ == '__main__':
     path = os.getenv('PROJROOT')

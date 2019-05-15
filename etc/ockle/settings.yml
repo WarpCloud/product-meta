@@ -354,6 +354,7 @@ service_description:
       protocol: "HTTP"
       path: "/"
       require_gateway_registration: true
+      resource_name: component-dbaservice.svg
       display:
         display_name: "DBA Service UI"
         display_name_en: "DBA Service UI"
@@ -366,6 +367,7 @@ service_description:
       protocol: "HTTP"
       path: "/"
       require_gateway_registration: true
+      resource_name: component-inceptorgateway.svg
       display:
         display_name: "Inceptor Gateway UI"
         display_name_en: "Inceptor Gateway UI"
