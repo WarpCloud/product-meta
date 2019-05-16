@@ -1,0 +1,16 @@
+{
+  "category": "实时数据库系统",
+  "component_type": "OPENPLANT",
+  "source": "transwarp",
+  "description": "实时数据库",
+  "description_en": "OPENPLANT",
+  "edition": "4.0",
+  "name": "OPENPLANT-4.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-openplant.png"
+    }
+  ],
+  "chart_name": "openplant"
+}
