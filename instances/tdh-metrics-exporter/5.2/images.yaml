@@ -14,22 +14,22 @@ releases:
   image-version:
     tdh_exporter_image: 5.2.2
   dependencies:
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: inceptor
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: metastore
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: zookeeper
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: hdfs
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: kafka
-  - max-version: transwarp-5.2.3-final
+  - max-version: transwarp-5.2.4-final
     min-version: transwarp-5.2.1-final
     type: slipstream
   final: true

@@ -1,0 +1,31 @@
+instance-type: openplant
+major-version: '4.0'
+min-tdc-version: tdc-2.0.0-rc0
+max-tdc-version: tdc-2.0.0-rc8
+hot-fix-ranges:
+- max: 4.0.13
+  min: 4.0.13
+- max: transwarp-5.2.4-final
+  min: transwarp-5.2.1-final
+- max: transwarp-5.2
+  min: transwarp-5.2
+images:
+- name: openplant
+  role: init
+  variable: init_image
+- name: zookeeper
+  role: openplant
+  variable: openplant_image
+releases:
+- release-version: transwarp-5.2.3-final
+  image-version:
+    init_image: 4.0.13
+    openplant_image: transwarp-5.2.3-final
+  dependencies: []
+  final: true
+- release-version: transwarp-5.2
+  image-version:
+    init_image: 4.0.13
+    openplant_image: transwarp-5.2
+  dependencies: []
+  final: false
