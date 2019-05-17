@@ -487,5 +487,6 @@ ladder:
       - worker
     computing_unit:
       - worker
-    ha:
-      - master
+    stable_unit:
+      - name: master
+        value: 3
