@@ -3,6 +3,7 @@
   "final": true,
   "components": [
     "SLIPSTREAM-6.0",
+    "SLIPSTREAM-STUDIO-6.0",
     "HDFS-6.0",
     "YARN-6.0",
     "KAFKA-6.0",

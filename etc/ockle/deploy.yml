@@ -69,8 +69,9 @@ hdfs:
     - variable: Advance_Config.catalog_agent.properties["catalog.web.server.address"]
       value: http://catalog-web-hl-b6j7c.dataplatform.svc:18080
       type: string
-    - variable: Advance_Config.catalog_agent.enable
-      value: true
+    - key: catalog_agent_enabled
+      variable: Advance_Config.catalog_agent.enable
+      value: xpath[$.async_config.security_config.security_on][if $.async_config.external_config.catalog_agent.catalog_agent_enabled == true else false]
       type: bool
 
 inceptor:
@@ -84,8 +85,9 @@ inceptor:
     - variable: Advance_Config.catalog_agent.properties["web_address"]
       value: http://catalog-web-hl-b6j7c.dataplatform.svc:18080
       type: string
-    - variable: Advance_Config.catalog_agent.enable
-      value: true
+    - key: catalog_agent_enabled
+      variable: Advance_Config.catalog_agent.enable
+      value: xpath[$.async_config.security_config.security_on][if $.async_config.external_config.catalog_agent.catalog_agent_enabled == true else false]
       type: bool
     - variable: Advance_Config.catalog_agent.properties.atlas_application["atlas.kafka.bootstrap.servers"]
       value: kafka-2767w-0.dataplatform.pod:9092,kafka-2767w-1.dataplatform.pod:9092,kafka-2767w-2.dataplatform.pod:9092
