@@ -214,6 +214,19 @@ service_description:
       require_gateway_registration: false
       alias: HiveServer2
 
+  slipstreamstudio:
+    - port: 7100
+      select_name: slipstreamstudio
+      protocol: HTTP
+      path: "/"
+      require_gateway_registration: true
+      resource_name: component-slipstream.svg
+      display:
+        display_name: "Slipstream监控管理"
+        display_name_en: "Slipstream Studio UI"
+        description: "Slipstream监控管理页面，提供图形化界面以及拖拽的方式构建流式任务处理，支持流上的性能指标监控和集群物理资源的监控，集成了规则引擎和算法库功能。"
+        description_en: "Slipstream Studio UI is a web-based graphical tool for designing and monitoring streaming jobs running on Slipstream as well as resource usage."
+
   elasticsearch:
     - port: 9100
       select_name: "es-head"

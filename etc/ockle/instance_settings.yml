@@ -4,14 +4,17 @@
 #chart name:
 #  resource:
 #    replicas:
-#      - all instance needed replicas(ha+computing_unit+disks)
+#      - all instance needed replicas(ha+computing_unit+disks) config name
 #    ha:
-#      - example_replicas
+#      - replicas config name
 #    computing_unit:
-#      - example_replicas
+#      - replicas config name
+#    stable_unit:
+#      - name: replicas config name
+#        value: number
 #  database:
 #    - type: type
-#      name: example_txsql_db_name
+#      name: db name config name
 #  security:
 #   principals:
 #     - user: username
@@ -32,6 +35,7 @@
 #       'rubik': (user = 'rubik')
 #       'tdt': (user = 'tdt')
 #       'workflow': (user = workflow)
+#       'slipstream': (user = 'slipstream')
 
 common:
   security:
@@ -293,6 +297,21 @@ slipstream:
       - user: kafka
         type: stream
 
+slipstreamstudio:
+  resource:
+    replicas:
+      - slipstreamstudio
+  security:
+    principals:
+      - user: HTTP
+        type: spnego
+      - user: hive
+        type: hive
+      - user: kafka
+        type: stream
+      - user: slipstream
+        type: default
+
 sophon:
   security:
     principals:
@@ -454,6 +473,8 @@ catalog:
       - user: zookeeper
         type: dc
 
+# ArgoDB product line
+#---------------------
 dbaservice:
   resource:
     replicas:
