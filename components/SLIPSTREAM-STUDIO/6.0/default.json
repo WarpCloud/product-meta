@@ -1,0 +1,16 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "SLIPSTREAM-STUDIO",
+  "source": "transwarp",
+  "description": "Slipstream监控管理平台",
+  "description_en": "Slipstream Studio",
+  "edition": "6.0",
+  "name": "SLIPSTREAM-STUDIO-6.0",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-slipstream.svg"
+    }
+  ],
+  "chart_name": "slipstreamstudio"
+}
