@@ -1,7 +1,7 @@
 instance-type: sophon
 major-version: '2.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc8
+max-tdc-version: tdc-2.0.0-rc9
 hot-fix-ranges:
 - max: sophon-2.2.1-final
   min: sophon-2.2.0-final
@@ -63,7 +63,7 @@ releases:
   - max-version: sophon-2.2.0-final
     min-version: sophon-2.2.0-final
     type: redis
-  - max-version: tdc-2.0.0-rc8
+  - max-version: tdc-2.0.0-rc9
     min-version: tdc-2.0.0-rc0
     type: kong
   final: true
@@ -103,7 +103,7 @@ releases:
   - max-version: sophon-2.2.1-rc0
     min-version: sophon-2.2.1-rc0
     type: redis
-  - max-version: tdc-2.0.0-rc8
+  - max-version: tdc-2.0.0-rc9
     min-version: tdc-2.0.0-rc3
     type: kong
   final: true
@@ -143,7 +143,7 @@ releases:
   - max-version: sophon-2.2.1-rc1
     min-version: sophon-2.2.1-rc1
     type: redis
-  - max-version: tdc-2.0.0-rc8
+  - max-version: tdc-2.0.0-rc9
     min-version: tdc-2.0.0-rc3
     type: kong
   final: true
@@ -183,7 +183,7 @@ releases:
   - max-version: sophon-2.2.1-final
     min-version: sophon-2.2.1-final
     type: redis
-  - max-version: tdc-2.0.0-rc8
+  - max-version: tdc-2.0.0-rc9
     min-version: tdc-2.0.0-rc3
     type: kong
   final: true

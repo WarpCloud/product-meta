@@ -1,9 +1,9 @@
 instance-type: kms
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc8
+max-tdc-version: tdc-2.0.0-rc9
 hot-fix-ranges:
-- max: tdc-2.0.0-rc8
+- max: tdc-2.0.0-rc9
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -32,6 +32,17 @@ releases:
     type: txsql
   - max-version: tdc-2.0.0-rc8
     min-version: tdc-2.0.0-rc8
+    type: guardian
+  final: true
+- release-version: tdc-2.0.0-rc9
+  image-version:
+    kms_server_image: tdc-2.0.0-rc9
+  dependencies:
+  - max-version: tdc-2.0.0-rc9
+    min-version: tdc-2.0.0-rc9
+    type: txsql
+  - max-version: tdc-2.0.0-rc9
+    min-version: tdc-2.0.0-rc9
     type: guardian
   final: true
 - release-version: tdc-2.0
