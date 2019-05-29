@@ -5,10 +5,14 @@ max-tdc-version: tdc-2.0.0-rc9
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
+- max: sophon-2.2.1-final
+  min: sophon-2.2.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
 - max: '6.0'
   min: '6.0'
+- max: sophon-2.2
+  min: sophon-2.2
 images:
 - name: workflow
   role: workflow
@@ -17,54 +21,6 @@ images:
   role: tdhclient
   variable: tdhclient_image
 releases:
-- release-version: transwarp-6.0.0-final
-  image-version:
-    tdhclient_image: '6.0'
-    workflow_image: transwarp-6.0.0-final
-  dependencies:
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
-    type: zookeeper
-  - max-version: transwarp-6.0.0-final
-    min-version: transwarp-6.0.0-final
-    type: txsql
-  final: true
-- release-version: transwarp-6.0.1-final
-  image-version:
-    tdhclient_image: '6.0'
-    workflow_image: transwarp-6.0.1-final
-  dependencies:
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-6.0.1-final
-    type: zookeeper
-  - max-version: transwarp-6.0.1-final
-    min-version: transwarp-6.0.1-final
-    type: txsql
-  final: true
-- release-version: transwarp-6.0.2-final
-  image-version:
-    tdhclient_image: '6.0'
-    workflow_image: transwarp-6.0.2-final
-  dependencies:
-  - max-version: transwarp-6.0.2-final
-    min-version: transwarp-6.0.2-final
-    type: zookeeper
-  - max-version: transwarp-6.0.2-final
-    min-version: transwarp-6.0.2-final
-    type: txsql
-  final: true
-- release-version: transwarp-6.0
-  image-version:
-    tdhclient_image: '6.0'
-    workflow_image: transwarp-6.0
-  dependencies:
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
-    type: zookeeper
-  - max-version: transwarp-6.0
-    min-version: transwarp-6.0
-    type: txsql
-  final: false
 - release-version: sophon-2.2.0-final
   image-version:
     tdhclient_image: '5.2'
@@ -123,5 +79,53 @@ releases:
     type: zookeeper
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
+    type: txsql
+  final: false
+- release-version: transwarp-6.0.0-final
+  image-version:
+    tdhclient_image: '6.0'
+    workflow_image: transwarp-6.0.0-final
+  dependencies:
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: zookeeper
+  - max-version: transwarp-6.0.0-final
+    min-version: transwarp-6.0.0-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.1-final
+  image-version:
+    tdhclient_image: '6.0'
+    workflow_image: transwarp-6.0.1-final
+  dependencies:
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: zookeeper
+  - max-version: transwarp-6.0.1-final
+    min-version: transwarp-6.0.1-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0.2-final
+  image-version:
+    tdhclient_image: '6.0'
+    workflow_image: transwarp-6.0.2-final
+  dependencies:
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: zookeeper
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
+    type: txsql
+  final: true
+- release-version: transwarp-6.0
+  image-version:
+    tdhclient_image: '6.0'
+    workflow_image: transwarp-6.0
+  dependencies:
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
+    type: zookeeper
+  - max-version: transwarp-6.0
+    min-version: transwarp-6.0
     type: txsql
   final: false
