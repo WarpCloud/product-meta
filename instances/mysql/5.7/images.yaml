@@ -1,7 +1,7 @@
 instance-type: mysql
 major-version: '5.7'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc10
+max-tdc-version: tdc-2.0.0-final
 hot-fix-ranges:
 - max: '5.7'
   min: '5.7'
