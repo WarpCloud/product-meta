@@ -1,9 +1,25 @@
-## instance_advanced_configs
-Application Instance 默认高级参数json模板
+## How to add new version
 
-默认高级参数来源:
+以发布tdc-2.0.0-final为例：
+
+1. 安装verminator（Python 3.6+）
+
 ```bash
-cd ..
-git clone http://172.16.1.41:10080/managability/application-metainfo.git
-git checkout 9b44b3d2df45c4b384b3100251d5aa9fdb06a65e
+pip install -y verminator
+```
+
+2. 添加新版本（必需）
+```bash
+cd product-meta
+verminator genver --releasemeta /path/to/releases_meta.yaml -v tdc-2.0.0-final instances
+```
+
+3. 验证新版本信息（必需）
+```bash
+verminator validate --releasemeta /path/to/releases_meta.yaml -v tdc-2.0.0-final instances
+```
+
+## How to validate instance integrity
+```bash
+verminator validate --releasemeta /path/to/releases_meta.yaml -v tdc-2.0.0-final instances
 ```
