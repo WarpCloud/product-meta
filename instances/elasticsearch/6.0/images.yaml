@@ -1,11 +1,11 @@
 instance-type: elasticsearch
 major-version: '6.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc10
+max-tdc-version: tdc-2.0.0-final
 hot-fix-ranges:
 - max: transwarp-6.0.2-final
   min: transwarp-6.0.0-final
-- max: tdc-2.0.0-rc10
+- max: tdc-2.0.0-final
   min: tdc-2.0.0-rc0
 - max: transwarp-6.0
   min: transwarp-6.0
@@ -86,6 +86,12 @@ releases:
   image-version:
     es_head_image: tdc-2.0.0-rc10
     es_image: tdc-2.0.0-rc10
+  dependencies: []
+  final: true
+- release-version: tdc-2.0.0-final
+  image-version:
+    es_head_image: tdc-2.0.0-final
+    es_image: tdc-2.0.0-final
   dependencies: []
   final: true
 - release-version: tdc-2.0
