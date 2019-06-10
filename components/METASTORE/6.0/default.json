@@ -6,7 +6,6 @@
   "description_en": "METASTORE",
   "edition": "6.0",
   "name": "METASTORE-6.0",
-  "is_share": true,
   "resources": [
     {
       "type": "component",
