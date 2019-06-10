@@ -1,9 +1,9 @@
 instance-type: tcc
 major-version: '2.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-rc10
+max-tdc-version: tdc-2.0.0-final
 hot-fix-ranges:
-- max: tdc-2.0.0-rc10
+- max: tdc-2.0.0-final
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -164,6 +164,20 @@ releases:
     type: ticket
   - max-version: tdc-2.0.0-rc10
     min-version: tdc-2.0.0-rc10
+    type: guardian
+  final: true
+- release-version: tdc-2.0.0-final
+  image-version:
+    tcc_image: tdc-2.0.0-final
+  dependencies:
+  - max-version: tdc-2.0.0-final
+    min-version: tdc-2.0.0-final
+    type: txsql
+  - max-version: tdc-2.0.0-final
+    min-version: tdc-2.0.0-final
+    type: ticket
+  - max-version: tdc-2.0.0-final
+    min-version: tdc-2.0.0-final
     type: guardian
   final: true
 - release-version: tdc-2.0
