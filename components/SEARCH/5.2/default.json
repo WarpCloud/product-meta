@@ -6,6 +6,7 @@
   "description_en": "Big Data Search Engine",
   "edition": "5.2",
   "name": "SEARCH-5.2",
+  "is_share": true,
   "resources": [
     {
       "type": "component",
