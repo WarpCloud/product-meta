@@ -1,7 +1,7 @@
 instance-type: notification
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-final
+max-tdc-version: tdc-2.0.1-rc0
 hot-fix-ranges:
 - max: transwarp-5.2.4-final
   min: transwarp-5.2.1-final
