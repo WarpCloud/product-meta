@@ -26,6 +26,9 @@ images:
 - name: sophon-apiserver
   role: unique-path:Advance_Config.sophon_conf.API_SERVICE_IMAGE
   variable: api_server_image
+- name: share-server
+  role: share
+  variable: sophon_share_image
 releases:
 - release-version: sophon-2.2.0-final
   image-version:
@@ -155,6 +158,7 @@ releases:
     sophon_driver_image: sophon-2.2.1-final
     sophon_server_image: sophon-2.2.1-final
     sophon_server_ui_image: sophon-2.2.1-final
+    sophon_share_image: sophon-2.2.1-final
   dependencies:
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-5.2.1-final
@@ -195,6 +199,7 @@ releases:
     sophon_driver_image: sophon-2.2
     sophon_server_image: sophon-2.2
     sophon_server_ui_image: sophon-2.2
+    sophon_share_image: sophon-2.2
   dependencies:
   - max-version: transwarp-6.0
     min-version: transwarp-5.2
