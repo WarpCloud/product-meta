@@ -1,9 +1,9 @@
 instance-type: gntenant
 major-version: '2.0'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.0-final
+max-tdc-version: tdc-2.0.1-rc0
 hot-fix-ranges:
-- max: tdc-2.0.0-final
+- max: tdc-2.0.1-rc0
   min: tdc-2.0.0-rc0
 - max: tdc-2.0
   min: tdc-2.0
@@ -106,6 +106,14 @@ releases:
   dependencies:
   - max-version: tdc-2.0.0-final
     min-version: tdc-2.0.0-final
+    type: txsql
+  final: true
+- release-version: tdc-2.0.1-rc0
+  image-version:
+    gn_image: tdc-2.0.1-rc0
+  dependencies:
+  - max-version: tdc-2.0.1-rc0
+    min-version: tdc-2.0.1-rc0
     type: txsql
   final: true
 - release-version: tdc-2.0
