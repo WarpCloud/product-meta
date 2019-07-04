@@ -1,0 +1,16 @@
+{
+  "category_name": "TDC-KDB",
+  "description": "高可扩展，高可用，高性能，支持完整事务特性的分布式关系型交易数据库。",
+  "display_name": "分布式交易型数据库KunDB",
+  "description_en": "",
+  "display_name_en": "Distributed OLTP Database",
+  "source": "database",
+  "final": true,
+  "resources": [{
+    "type": "icon",
+    "name": "category-tdc-kdb.svg"
+  }, {
+    "type": "banner",
+    "name": "banner-tdc-kdb.png"
+  }]
+}

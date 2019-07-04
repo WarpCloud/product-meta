@@ -1,0 +1,45 @@
+instance-type: kundb
+major-version: '1.1'
+min-tdc-version: tdc-2.1.0-rc0
+max-tdc-version: tdc-2.1.0-rc0
+hot-fix-ranges:
+- max: kundb-1.1.0-final
+  min: kundb-1.1.0-final
+images:
+- name: kundb-gate
+  role: public_gate
+  variable: public_gate_image
+- name: kundb-gate
+  role: private_gate
+  variable: private_gate_image
+- name: kundb-tablet
+  role: tablet
+  variable: tablet_image
+- name: kundb-tablet
+  role: mfed
+  variable: mfed_image
+- name: kundb-ctld
+  role: ctld
+  variable: ctld_image
+- name: kundb-mysql
+  role: kundb_mysql
+  variable: kundb_mysql_image
+- name: kundb-mariadb
+  role: kundb_mariadb
+  variable: kundb_mariadb_image
+- name: kundb-tools
+  role: tools
+  variable: tools_image
+releases:
+- release-version: kundb-1.1.0-final
+  image-version:
+    ctld_image: kundb-1.1.0-final
+    kundb_mariadb_image: kundb-1.1.0-final
+    kundb_mysql_image: kundb-1.1.0-final
+    mfed_image: kundb-1.1.0-final
+    private_gate_image: kundb-1.1.0-final
+    public_gate_image: kundb-1.1.0-final
+    tablet_image: kundb-1.1.0-final
+    tools_image: kundb-1.1.0-final
+  dependencies: []
+  final: true
