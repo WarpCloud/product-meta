@@ -1,7 +1,7 @@
 instance-type: tdh-metrics-exporter
 major-version: '5.2'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.0.1-final
+max-tdc-version: tdc-2.1.0-rc0
 hot-fix-ranges:
 - max: 5.2.2
   min: 5.2.2
