@@ -1,0 +1,24 @@
+instance-type: zookeeper
+major-version: '2.1'
+min-tdc-version: tdc-2.1.0-rc0
+max-tdc-version: tdc-2.1.0-rc0
+hot-fix-ranges:
+- max: tdc-2.1.0-rc0
+  min: tdc-2.1.0-rc0
+- max: tdc-2.1
+  min: tdc-2.1
+images:
+- name: zookeeper
+  role: zookeeper
+  variable: zk_image
+releases:
+- release-version: tdc-2.1.0-rc0
+  image-version:
+    zk_image: tdc-2.1.0-rc0
+  dependencies: []
+  final: true
+- release-version: tdc-2.1
+  image-version:
+    zk_image: tdc-2.1
+  dependencies: []
+  final: false
