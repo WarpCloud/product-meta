@@ -1,0 +1,55 @@
+instance-type: guardian
+major-version: '2.1'
+min-tdc-version: tdc-2.1.0-rc0
+max-tdc-version: tdc-2.1.0-rc0
+hot-fix-ranges:
+- max: tdc-2.1.0-rc0
+  min: tdc-2.1.0-rc0
+- max: tdc-2.1
+  min: tdc-2.1
+images:
+- name: apacheds
+  role: apacheds
+  variable: apacheds_image
+- name: guardian-init
+  role: gencerts
+  variable: guardian_init_container_image
+- name: guardian
+  role: guardian
+  variable: guardian_server_image
+- name: cas-config-server
+  role: casconfigserver
+  variable: cas_config_server_image
+- name: cas-server
+  role: casserver
+  variable: cas_server_image
+- name: cas-admin-server
+  role: casadminserver
+  variable: cas_mgnt_server_image
+releases:
+- release-version: tdc-2.1.0-rc0
+  image-version:
+    apacheds_image: tdc-2.1.0-rc0
+    cas_config_server_image: tdc-2.1.0-rc0
+    cas_mgnt_server_image: tdc-2.1.0-rc0
+    cas_server_image: tdc-2.1.0-rc0
+    guardian_init_container_image: tdc-2.1.0-rc0
+    guardian_server_image: tdc-2.1.0-rc0
+  dependencies:
+  - max-version: tdc-2.1.0-rc0
+    min-version: tdc-2.1.0-rc0
+    type: txsql
+  final: true
+- release-version: tdc-2.1
+  image-version:
+    apacheds_image: tdc-2.1
+    cas_config_server_image: tdc-2.1
+    cas_mgnt_server_image: tdc-2.1
+    cas_server_image: tdc-2.1
+    guardian_init_container_image: tdc-2.1
+    guardian_server_image: tdc-2.1
+  dependencies:
+  - max-version: tdc-2.1
+    min-version: tdc-2.1
+    type: txsql
+  final: false
