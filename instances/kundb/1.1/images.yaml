@@ -41,5 +41,8 @@ releases:
     public_gate_image: kundb-1.1.0-final
     tablet_image: kundb-1.1.0-final
     tools_image: kundb-1.1.0-final
-  dependencies: []
+  dependencies:
+  - max-version: kundb-1.1.0-final
+    min-version: kundb-1.1.0-final
+    type: zookeeper
   final: true
