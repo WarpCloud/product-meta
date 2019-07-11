@@ -5,6 +5,8 @@ max-tdc-version: tdc-2.1.0-rc0
 hot-fix-ranges:
 - max: tdc-2.1.0-rc0
   min: tdc-2.1.0-rc0
+- max: kundb-1.1.0-final
+  min: kundb-1.1.0-final
 - max: tdc-2.1
   min: tdc-2.1
 images:
@@ -12,6 +14,14 @@ images:
   role: terminal
   variable: terminal_image
 releases:
+- release-version: kundb-1.1.0-final
+  image-version:
+    terminal_image: kundb-1.1.0-final
+  dependencies:
+  - max-version: kundb-1.1.0-final
+    min-version: kundb-1.1.0-final
+    type: zookeeper
+  final: true
 - release-version: tdc-2.1.0-rc0
   image-version:
     terminal_image: tdc-2.1.0-rc0
