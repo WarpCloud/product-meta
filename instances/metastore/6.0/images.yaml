@@ -46,6 +46,9 @@ releases:
     type: txsql
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-6.0.2-final
+    type: hdfs
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
     type: yarn
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-6.0.2-final

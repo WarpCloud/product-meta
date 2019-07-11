@@ -4,6 +4,7 @@
   "components": [
     "INCEPTOR-6.0",
     "METASTORE-6.0",
+    "HDFS-6.0",
     "TXSQL-6.0",
     "ZOOKEEPER-6.0",
     "SHIVA-1.2",
