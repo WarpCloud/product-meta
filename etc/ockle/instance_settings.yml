@@ -512,3 +512,25 @@ ladder:
     stable_unit:
       - name: master
         value: 3
+
+# KunDB product line
+#---------------------
+kundb:
+  resource:
+    replicas:
+      - public_gate
+      - private_gate
+      - tablet
+      - mfed
+      - ctld
+    computing_unit:
+      - public_gate
+      - private_gate
+    stable_unit:
+      - name: ctld
+        value: 3
+      - name: tablet
+        value: 3
+      - name: mfed
+        value: 3
+

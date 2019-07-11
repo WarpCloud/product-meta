@@ -7,6 +7,8 @@ hot-fix-ranges:
   min: transwarp-6.0.0-final
 - max: tdc-2.0.1-final
   min: tdc-2.0.0-rc0
+- max: kundb-1.1.0-final
+  min: kundb-1.1.0-final
 - max: transwarp-6.0
   min: transwarp-6.0
 - max: tdc-2.0
@@ -16,6 +18,11 @@ images:
   role: zookeeper
   variable: zk_image
 releases:
+- release-version: kundb-1.1.0-final
+  image-version:
+    zk_image: kundb-1.1.0-final
+  dependencies: []
+  final: true
 - release-version: tdc-2.0.0-rc0
   image-version:
     zk_image: tdc-2.0.0-rc0

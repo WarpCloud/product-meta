@@ -1,0 +1,16 @@
+{
+  "category": "运维和开发工具",
+  "component_type": "KUNDB",
+  "source": "transwarp",
+  "description": "分布式交易型数据库KunDB",
+  "description_en": "Distributed OLTP Database",
+  "edition": "1.1",
+  "name": "KUNDB-1.1",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-kdb.svg"
+    }
+  ],
+  "chart_name": "kundb"
+}
