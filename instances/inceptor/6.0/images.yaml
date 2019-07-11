@@ -57,6 +57,9 @@ releases:
     type: metastore
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-6.0.2-final
+    type: hdfs
+  - max-version: transwarp-6.0.2-final
+    min-version: transwarp-6.0.2-final
     type: zookeeper
   - max-version: transwarp-6.0.2-final
     min-version: transwarp-6.0.2-final
