@@ -1,0 +1,17 @@
+instance-type: dbaservice
+major-version: '1.2'
+min-tdc-version: tdc-2.1.0-rc0
+max-tdc-version: tdc-2.1.0-rc0
+hot-fix-ranges:
+- max: argodb-1.2.0-final
+  min: argodb-1.2.0-final
+images:
+- name: argodb-dbaservice
+  role: dbaservice
+  variable: dbaservice_image
+releases:
+- release-version: argodb-1.2.0-final
+  image-version:
+    dbaservice_image: argodb-1.2.0-final
+  dependencies: []
+  final: true
