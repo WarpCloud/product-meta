@@ -420,8 +420,9 @@ yarn:
       - yarnnm
       - yarnts
       - yarnhs
-    computing_unit:
+    ha:
       - yarnrm
+    computing_unit:
       - yarnnm
     disks:
       sata_disks:
