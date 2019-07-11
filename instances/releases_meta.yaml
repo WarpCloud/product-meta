@@ -169,7 +169,7 @@ Releases:
       - min: sophon-2.2.0-final
         max: sophon-2.2.1-final
       - min: argodb-1.1.0-final
-        max: argodb-1.1.0-final
+        max: argodb-1.2.0-final
       - min: tos-1.9.2-final
         max: tos-1.9.3-final
   ###########################################
@@ -193,6 +193,10 @@ Releases:
   - release_name: argodb-1.1.0-final
     products:
       - min: transwarp-6.0.1-final
+        max: transwarp-6.0.2-final
+  - release_name: argodb-1.2.0-final
+    products:
+      - min: transwarp-6.0.2-final
         max: transwarp-6.0.2-final
   ###########################################
   # Additional constraints on tdh-metrics-exporter

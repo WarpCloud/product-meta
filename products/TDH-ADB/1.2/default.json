@@ -1,0 +1,21 @@
+{
+  "edition": "1.2",
+  "final": true,
+  "components": [
+    "INCEPTOR-6.0",
+    "METASTORE-6.0",
+    "TXSQL-6.0",
+    "ZOOKEEPER-6.0",
+    "SHIVA-1.2",
+    "LADDER-1.2",
+    "DBASERVICE-1.2",
+    "INCEPTORGATEWAY-6.0"
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdh-adb.html"
+    }
+  ],
+  "product_line": "argodb"
+}

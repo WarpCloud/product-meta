@@ -3,7 +3,7 @@
   "component_type": "INCEPTORGATEWAY",
   "source": "transwarp",
   "description": "INCEPTOR客户端与服务器中间件",
-  "description_en": "",
+  "description_en": "Inceptor Gateway",
   "edition": "6.0",
   "name": "INCEPTORGATEWAY-6.0",
   "resources": [
