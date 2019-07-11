@@ -1,0 +1,20 @@
+{
+  "edition": "1.1",
+  "final": true,
+  "components": [
+    "ZOOKEEPER-6.0",
+    "KUNDB-1.1",
+    "TERMINAL-2.0"
+  ],
+  "resources": [
+    {
+      "type": "architecture",
+      "name": "arch-tdc-kdb.html"
+    },
+    {
+      "type": "highlights",
+      "name": "highlights-tdc-kdb.html"
+    }
+  ],
+  "product_line": "kundb"
+}
