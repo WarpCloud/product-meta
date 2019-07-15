@@ -1,0 +1,15 @@
+{
+  "name": "SYSTEM_CONTEXT-2.1",
+  "description": "Context services for TDC tenants.",
+  "edition": "2.1",
+  "components": [
+    "GUARDIAN-6.0",
+    "TCC-2.1",
+    "TXSQL-6.0",
+    "KIBANA-2.1",
+    "TICKET-2.1",
+    "LOGSTASH-2.1",
+    "GNTENANT-2.1",
+    "KMS-6.0"
+  ]
+}
