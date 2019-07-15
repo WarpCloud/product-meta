@@ -482,6 +482,10 @@ dbaservice:
       - dbaservice
     ha:
       - dbaservice
+  security:
+    principals:
+      - user: hive
+        type: default
 
 inceptorgateway:
   resource:
