@@ -214,3 +214,11 @@ Releases:
     products:
       - min: transwarp-6.0.1-final
         max: transwarp-6.0.3-final
+  ###########################################
+  # Additional constraints on guardian
+  ###########################################
+  - release_name: guardian-3.1.0-final
+    instance: guardian
+    products:
+      - min: tdc-2.1.0-rc0
+        max: tdc-2.1.0-final
