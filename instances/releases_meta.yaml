@@ -221,4 +221,4 @@ Releases:
     instance: guardian
     products:
       - min: tdc-2.1.0-rc0
-        max: tdc-2.1.0-final
+        max: tdc-2.1.0-rc0

@@ -1,7 +1,7 @@
 instance-type: guardian
 major-version: '3.1'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.1.0-final
+max-tdc-version: tdc-2.1.0-rc0
 hot-fix-ranges:
 - max: guardian-3.1.0-final
   min: guardian-3.1.0-final
@@ -36,7 +36,7 @@ releases:
     guardian_init_container_image: guardian-3.1.0-final
     guardian_server_image: guardian-3.1.0-final
   dependencies:
-  - max-version: tdc-2.1.0-final
+  - max-version: tdc-2.1.0-rc0
     min-version: tdc-2.1.0-rc0
     type: txsql
   final: true
