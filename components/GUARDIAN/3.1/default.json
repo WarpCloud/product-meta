@@ -1,0 +1,17 @@
+{
+  "name": "GUARDIAN-3.1",
+  "component_type": "GUARDIAN",
+  "source": "transwarp",
+  "description": "安全、权限和资源管控",
+  "description_en": "Security, Permission, and Resource Management",
+  "edition": "3.1",
+  "category": "TDH平台产品,SYSTEM",
+  "resources": [
+    {
+      "type": "component",
+      "name": "component-guardian.svg"
+    }
+  ],
+  "chart_name": "guardian",
+  "system_type": "base"
+}
