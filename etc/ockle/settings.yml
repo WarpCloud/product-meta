@@ -54,6 +54,23 @@ platform_requirements:
   - application_type: TENON
     chart_name: tenon
 
+  - application_type: GUARDIAN_FEDERATION
+    chart_name: guardian-federation
+
+  - application_type: SPRING_CLOUD_EUREKA
+    chart_name: spring-cloud-eureka
+
+  - application_type: SPRING_CLOUD_CONFIG
+    chart_name: spring-cloud-config
+
+  - application_type: SPRING_CLOUD_IMAGE_BUILDER
+    chart_name: spring-cloud-image-builder
+
+  - application_type: SPRING_CLOUD_ZUUL
+    chart_name: spring-cloud-zuul
+
+  - application_type: ZIPKIN
+    chart_name: zipkin
 # A list of services registered for development portal.
 # Chart name as key
 service_description:
