@@ -186,9 +186,8 @@ Releases:
         max: tos-1.9.3-final
       - min: kundb-1.1.0-final
         max: kundb-1.1.0-final
-      - min: guardian-3.1.0-final
-        max: guardian-3.1.0-final
-
+      - min: guardian-3.1.1-rc2
+        max: guardian-3.1.1-final
   ###########################################
   # Additional constraints on Sophon releases
   ###########################################
