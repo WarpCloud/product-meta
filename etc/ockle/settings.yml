@@ -12,19 +12,6 @@ default_static_resources:
     - type: banner
       name: banner-default.png
 
-# A list of configs shared by multiple instances
-instance_configs_sharing:
-  - instance_type: rubik
-    configs_sharing:
-      - instance_type: inceptor
-        dependency: txsql
-        configs:
-          - from:
-              name: MySQL_DATABASE
-            to:
-              name: RUBIK_CONNECTION_DATABASE
-              group: environment
-
 # A list of TDC services that would be depended on by
 # tenant context services.
 # We take a prior assumption that only a single instance
@@ -337,20 +324,6 @@ service_description:
       display_name_en: "YARN"
       description: "YARN 是Hadoop集群的资源管理系统"
       description_en: "YARN is a resource management system for Hadoop clusters"
-
-
-#  smartbi:
-#    - port: 18080
-#      select_name: smartbi
-#      protocol: "HTTP"
-#      path: "/"
-#      require_gateway_registration: true
-#      resource_name: component-smartbi.svg
-#      display:
-#        display_name: "SmartBI"
-#        display_name_en: "SmartBI"
-#        description: "企业级商业智能应用平台。"
-#        description_en: "Modern business intelligence platform."
 
   smartbi:
     - port: 18080
