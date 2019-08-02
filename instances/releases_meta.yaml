@@ -188,6 +188,20 @@ Releases:
         max: kundb-1.1.0-final
       - min: guardian-3.1.1-rc2
         max: guardian-3.1.1-final
+  - release_name: tdc-2.1.0-rc2
+    products:
+      - min: transwarp-5.2.1-final
+        max: transwarp-6.0.2-final
+      - min: sophon-2.2.0-final
+        max: sophon-2.2.1-final
+      - min: argodb-1.1.0-final
+        max: argodb-1.2.0-final
+      - min: tos-1.9.2-final
+        max: tos-1.9.3-final
+      - min: kundb-1.1.0-final
+        max: kundb-1.1.0-final
+      - min: guardian-3.1.1-rc2
+        max: guardian-3.1.1-final
   ###########################################
   # Additional constraints on Sophon releases
   ###########################################

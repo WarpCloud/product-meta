@@ -1,7 +1,7 @@
 instance-type: pilotenterprise
 major-version: '8.5'
 min-tdc-version: tdc-2.0.0-rc0
-max-tdc-version: tdc-2.1.0-rc1
+max-tdc-version: tdc-2.1.0-rc2
 hot-fix-ranges:
 - max: '8.5'
   min: '8.5'
