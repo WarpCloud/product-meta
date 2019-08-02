@@ -131,8 +131,8 @@ releases:
   - max-version: tdc-2.1.0-rc1
     min-version: tdc-2.1.0-rc1
     type: txsql
-  - max-version: tdc-2.1.0-rc1
-    min-version: tdc-2.1.0-rc1
+  - max-version: guardian-3.1.1-final
+    min-version: guardian-3.1.1-rc2
     type: guardian
   final: true
 - release-version: tdc-2.1.0-rc2
@@ -142,8 +142,8 @@ releases:
   - max-version: tdc-2.1.0-rc2
     min-version: tdc-2.1.0-rc2
     type: txsql
-  - max-version: tdc-2.1.0-rc2
-    min-version: tdc-2.1.0-rc2
+  - max-version: guardian-3.1.1-final
+    min-version: guardian-3.1.1-rc2
     type: guardian
   final: true
 - release-version: tdc-2.1
@@ -153,7 +153,7 @@ releases:
   - max-version: tdc-2.1
     min-version: tdc-2.1
     type: txsql
-  - max-version: tdc-2.1
-    min-version: tdc-2.1
+  - max-version: guardian-3.1
+    min-version: guardian-3.1
     type: guardian
   final: false
