@@ -4,7 +4,7 @@
 #chart name:
 #  resource:
 #    replicas:
-#      - all instance needed replicas(ha+computing_unit+disks) config name
+#      - all instance needed replicas(ha+computing unit+stable unit) config name
 #    ha:
 #      - replicas config name
 #    computing_unit:
@@ -12,13 +12,10 @@
 #    stable_unit:
 #      - name: replicas config name
 #        value: number
-#  database:
-#    - type: type
-#      name: db name config name
 #  security:
-#   principals:
-#     - user: username
-#       type: user type (*1)
+#    principals:
+#    - user: username
+#      type: user type (*1)
 #
 # ----
 #(*1) principal.type:
@@ -36,14 +33,6 @@
 #       'tdt': (user = 'tdt')
 #       'workflow': (user = workflow)
 #       'slipstream': (user = 'slipstream')
-
-common:
-  security:
-    guardian_address: Transwarp_Guardian_Address
-    guardian_ldap_server_address: Transwarp_Guardian_LDAP_Server_Address
-    auto_injected_volumes: Transwarp_Auto_Injected_Volumes
-    krb_realm: Transwarp_Realm
-    krb_principal_suffix: Transwarp_Principal_Suffix
 
 elasticsearch:
   resource:
@@ -80,8 +69,6 @@ gntenant:
       - gn_replicas
     ha:
       - gn_replicas
-
-#governor-proxy:
 
 guardian:
   resource:
@@ -146,9 +133,6 @@ inceptor:
       - executor
     computing_unit:
       - executor
-    disks:
-      sata_disks:
-        - inceptor_shuffle_dir_counts
     stable_unit:
       - name: inceptor
         value: 1
@@ -234,8 +218,6 @@ notification:
       - notification
     ha:
       - notification
-  database:
-    - name: notification_txsql_db_name
 
 pilot:
   resource:
@@ -257,8 +239,6 @@ rubik:
       - rubik
     ha:
       - rubik
-  database:
-    - name: MySQL_DATABASE
   security:
     principals:
       - user: rubik
@@ -285,9 +265,6 @@ slipstream:
       - historyserver
     computing_unit:
       - executor
-    disks:
-      sata_disks:
-        - inceptor_shuffle_dir_counts
   security:
     principals:
       - user: HTTP
@@ -359,8 +336,6 @@ tcc:
       - tcc
     ha:
       - tcc
-  database:
-    - name: TCC_TXSQL_DB_NAME
   security:
     principals:
       - user: HTTP
@@ -382,8 +357,6 @@ tdt:
         type: default
 
 ticket:
-  database:
-    - name: ticket_txsql_db_name
   resource:
     replicas:
       - ticket
@@ -406,8 +379,6 @@ workflow:
   resource:
     replicas:
       - workflow
-  database:
-    - name: workflow_txsql_db_name
   security:
     principals:
       - user: workflow
@@ -424,9 +395,6 @@ yarn:
       - yarnrm
     computing_unit:
       - yarnnm
-    disks:
-      sata_disks:
-        - yarn_data_disk_replicas
   security:
     principals:
       - user: HTTP
@@ -537,4 +505,3 @@ kundb:
         value: 3
       - name: mfed
         value: 3
-
